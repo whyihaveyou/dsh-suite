@@ -1,0 +1,56 @@
+name: x-digest
+
+on:
+  schedule:
+    # 13:30 UTC = 21:30 Beijing (CST) — evening traffic peak
+    - cron: '30 13 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: x-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Generate digest (LLM copy, or template fallback when no DEEPSEEK_API_KEY)
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node bot/digest.mjs
+
+      - name: Post to X (OAuth 1.0a), or dry-run when secrets are absent
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+        run: node bot/post.mjs
+
+      # Runs only if post.mjs exited 0 (real post OR dry-run) — a hard API
+      # failure exits non-zero and leaves yesterday's snapshot in place, so
+      # tomorrow's run re-reports the same diff.
+      - name: Commit updated snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bot/state/last-snapshot.json
+          if git diff --cached --quiet; then
+            echo "no snapshot change to commit"
+          else
+            git commit -m "bot: daily snapshot [skip ci]"
+            git push
+          fi

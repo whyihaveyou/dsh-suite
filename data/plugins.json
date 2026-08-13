@@ -4,7 +4,7 @@
     "generated_at": "2026-08-13T23:47:41+08:00",
     "source": "research/plugins-catalog.json (Eco-Scout, 222 entries verified)",
     "totals": {
-      "plugins": 167,
+      "plugins": 168,
       "watchlist": 57
     },
     "category_mapping": {
@@ -5389,6 +5389,45 @@
       "featured": true,
       "isOfficialBeta": false,
       "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-bash-terminal",
+      "name": "dsh-bash-terminal",
+      "npm": "dsh-bash-terminal",
+      "repo": "MAXeaglet/dsh-bash-terminal",
+      "url": "https://github.com/MAXeaglet/dsh-bash-terminal",
+      "category": "tools",
+      "description": {
+        "en": "One shell tool running PowerShell / Git Bash / WSL on Windows, with a user-chosen default terminal in DSH settings.",
+        "zh": "一个 shell 工具：在 Windows 上统一执行 PowerShell / Git Bash / WSL 命令，默认终端由用户在 DSH 设置中选择。"
+      },
+      "author": "MAXeaglet",
+      "stars": 0,
+      "license": "MIT",
+      "tags": [
+        "shell",
+        "terminal",
+        "windows",
+        "wsl",
+        "git-bash",
+        "pty"
+      ],
+      "dsh": {
+        "minVersion": "0.1.0-rc.6",
+        "peerCordis": "^4.0.1",
+        "node": ">=20"
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
       "sourceNote": ""
     }
   ],

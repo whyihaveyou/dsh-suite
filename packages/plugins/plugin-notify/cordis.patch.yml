@@ -1,0 +1,10 @@
+# @dsh-suite/plugin-notify bundle layer — applied when a profile lists this bundle
+# (its package.json declares `dsh.bundle.patch` pointing here).
+#
+# `insert` adds this plugin's row. `name` is a module specifier resolved through
+# the profile's node_modules (or the `$DSH_HOME/profiles/node_modules` fallback);
+# it matches this package's own name, so `dsh plugin --profile <p> add <this-pkg>`
+# registers the row automatically.
+- insert:
+    - id: plugin-notify
+      name: '@dsh-suite/plugin-notify'

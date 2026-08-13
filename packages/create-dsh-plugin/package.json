@@ -1,0 +1,33 @@
+{
+  "name": "create-dsh-plugin",
+  "version": "0.1.0",
+  "description": "Scaffold a DeepSeek Harness (DSH) plugin in seconds — tool / events / webui templates, next-tag version pinning, and a built-in --verify smoke test.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "create-dsh-plugin": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "templates",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "cordis",
+    "scaffold",
+    "create-dsh-plugin"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "test:verify": "DSH_SMOKE_VERIFY=1 node --test"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

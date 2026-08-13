@@ -1,0 +1,7170 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "generated_at": "2026-08-13T22:30:00+08:00",
+    "source": "research/plugins-catalog.json (Eco-Scout, 222 entries verified)",
+    "totals": {
+      "plugins": 164,
+      "watchlist": 57
+    },
+    "category_mapping": {
+      "tool": "tools",
+      "dev-tool": "tools",
+      "integration": "tools",
+      "ui": "ui",
+      "skin": "ui",
+      "session": "session",
+      "context": "session",
+      "vision": "llm",
+      "workflow": "orchestration",
+      "agent": "orchestration",
+      "launcher": "utility",
+      "list": "utility",
+      "fun": "utility"
+    },
+    "watchlist_reasons": [
+      "占位",
+      "工具链",
+      "蹭tag"
+    ],
+    "compat_status_enum": [
+      "unknown",
+      "ok",
+      "broken",
+      "unmaintained"
+    ]
+  },
+  "plugins": [
+    {
+      "id": "open-managed-agents",
+      "name": "open-managed-agents",
+      "npm": null,
+      "repo": "openma-ai/open-managed-agents",
+      "url": "https://github.com/openma-ai/open-managed-agents",
+      "category": "tools",
+      "description": {
+        "en": "Self-hosted Claude Managed Agents API platform (Cloudflare Workers)",
+        "zh": "Claude Managed Agents API 的开源自托管平台（Cloudflare Workers）"
+      },
+      "author": "openma-ai",
+      "stars": 226,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "TypeScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "role-model",
+      "name": "role-model",
+      "npm": null,
+      "repo": "try-works/role-model",
+      "url": "https://github.com/try-works/role-model",
+      "category": "tools",
+      "description": {
+        "en": "Protocol to route each job to the right model",
+        "zh": "按任务把请求路由到「正确的模型」（本地/云）"
+      },
+      "author": "try-works",
+      "stars": 99,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "TypeScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "irmia-devkit-open",
+      "name": "irmia_devkit_open",
+      "npm": null,
+      "repo": "irmia2026/irmia_devkit_open",
+      "url": "https://github.com/irmia2026/irmia_devkit_open",
+      "category": "tools",
+      "description": {
+        "en": "Python devkit (no description)",
+        "zh": "Python 开发工具包（无描述）"
+      },
+      "author": "irmia2026",
+      "stars": 39,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "Python",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "hologram",
+      "name": "HoloGram",
+      "npm": null,
+      "repo": "834063245-creator/HoloGram",
+      "url": "https://github.com/834063245-creator/HoloGram",
+      "category": "tools",
+      "description": {
+        "en": "3D code dependency graph generator (14 languages)",
+        "zh": "3D 代码依赖拓扑图生成器（14 语言）"
+      },
+      "author": "834063245-creator",
+      "stars": 23,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "TypeScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "dsh-custom-tool",
+      "name": "dsh-custom-tool",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-custom-tool",
+      "url": "https://github.com/omdsh-dev/dsh-custom-tool",
+      "category": "tools",
+      "description": {
+        "en": "Create sandboxed JS tools with Monaco editor",
+        "zh": "Monaco 编辑器创建沙箱 JS 工具"
+      },
+      "author": "omdsh-dev",
+      "stars": 16,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-acp-for-bitfun",
+      "name": "dsh-acp-for-bitfun",
+      "npm": null,
+      "repo": "bobleer/dsh-acp-for-bitfun",
+      "url": "https://github.com/bobleer/dsh-acp-for-bitfun",
+      "category": "tools",
+      "description": {
+        "en": "BitFun ↔ DSH ACP bridge",
+        "zh": "BitFun 与 DSH ACP 交互对接"
+      },
+      "author": "bobleer",
+      "stars": 5,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "fabric",
+      "name": "fabric",
+      "npm": null,
+      "repo": "omdsh-dev/fabric",
+      "url": "https://github.com/omdsh-dev/fabric",
+      "category": "tools",
+      "description": {
+        "en": "MC-Fabric-like hook handler",
+        "zh": "类似 MC Fabric 的 hook 处理器"
+      },
+      "author": "omdsh-dev",
+      "stars": 5,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-git-identity",
+      "name": "dsh-git-identity",
+      "npm": null,
+      "repo": "LoserFox/dsh-git-identity",
+      "url": "https://github.com/LoserFox/dsh-git-identity",
+      "category": "tools",
+      "description": {
+        "en": "Pin git commits to environment author identity",
+        "zh": "git 提交固定使用环境作者身份"
+      },
+      "author": "LoserFox",
+      "stars": 4,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "hypr-agent-protal",
+      "name": "Hypr-Agent-Protal",
+      "npm": null,
+      "repo": "gfhdhytghd/Hypr-Agent-Protal",
+      "url": "https://github.com/gfhdhytghd/Hypr-Agent-Protal",
+      "category": "tools",
+      "description": {
+        "en": "Computer Use MCP for Hyprland",
+        "zh": "Hyprland 的 Computer Use MCP"
+      },
+      "author": "gfhdhytghd",
+      "stars": 4,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "Python",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "telegram",
+      "name": "telegram",
+      "npm": null,
+      "repo": "LoserFox/telegram",
+      "url": "https://github.com/LoserFox/telegram",
+      "category": "tools",
+      "description": {
+        "en": "Telegram Bot API bridge (long polling)",
+        "zh": "Telegram Bot API 桥接（长轮询）"
+      },
+      "author": "LoserFox",
+      "stars": 4,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "agent-knock-knock",
+      "name": "agent-knock-knock",
+      "npm": null,
+      "repo": "scotthuang/agent-knock-knock",
+      "url": "https://github.com/scotthuang/agent-knock-knock",
+      "category": "tools",
+      "description": {
+        "en": "OpenClaw plugin: control local Codex/Claude Code via shared tmux",
+        "zh": "OpenClaw 插件：共享 tmux 控制本地 Codex/Claude Code"
+      },
+      "author": "scotthuang",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "TypeScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "dsh-bash-encoding",
+      "name": "dsh-bash-encoding",
+      "npm": null,
+      "repo": "lhh010/dsh-bash-encoding",
+      "url": "https://github.com/lhh010/dsh-bash-encoding",
+      "category": "tools",
+      "description": {
+        "en": "Auto-detect bash output encoding",
+        "zh": "bash 输出编码自动识别（UTF-16LE/UTF-8/GBK）"
+      },
+      "author": "lhh010",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-data-agent",
+      "name": "dsh-data-agent",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-data-agent",
+      "url": "https://github.com/omdsh-dev/dsh-data-agent",
+      "category": "tools",
+      "description": {
+        "en": "Connect DB and write SQL plugin",
+        "zh": "连数据库、写 SQL 的插件"
+      },
+      "author": "omdsh-dev",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-doctor",
+      "name": "dsh-doctor",
+      "npm": null,
+      "repo": "coppynight/dsh-doctor",
+      "url": "https://github.com/coppynight/dsh-doctor",
+      "category": "tools",
+      "description": {
+        "en": "flutter-doctor-style diagnostics and safe auto-repair",
+        "zh": "flutter-doctor 风格诊断与安全自动修复"
+      },
+      "author": "coppynight",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-interconnect",
+      "name": "dsh-interconnect",
+      "npm": null,
+      "repo": "Chinesezjc/dsh-interconnect",
+      "url": "https://github.com/Chinesezjc/dsh-interconnect",
+      "category": "tools",
+      "description": {
+        "en": "Cross-instance message/event handoff",
+        "zh": "跨实例消息/事件交接插件"
+      },
+      "author": "Chinesezjc",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-openbiliclaw",
+      "name": "dsh-openbiliclaw",
+      "npm": null,
+      "repo": "whiteguo233/dsh-openbiliclaw",
+      "url": "https://github.com/whiteguo233/dsh-openbiliclaw",
+      "category": "tools",
+      "description": {
+        "en": "OpenBiliClaw content-agent bridge for DSH",
+        "zh": "OpenBiliClaw 内容推荐 Agent 接入 DSH"
+      },
+      "author": "whiteguo233",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-plugin-check",
+      "name": "dsh-plugin-check",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-plugin-check",
+      "url": "https://github.com/omdsh-dev/dsh-plugin-check",
+      "category": "tools",
+      "description": {
+        "en": "Scan plugin repo manifest protocol / patch format / build traps",
+        "zh": "扫描插件仓库清单协议/patch 格式/构建陷阱"
+      },
+      "author": "omdsh-dev",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-security-audit",
+      "name": "dsh-security-audit",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-security-audit",
+      "url": "https://github.com/omdsh-dev/dsh-security-audit",
+      "category": "tools",
+      "description": {
+        "en": "Local security audit: config/plugin source/session/network",
+        "zh": "本机安全审计：配置/插件来源/会话/网络暴露面"
+      },
+      "author": "omdsh-dev",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-csv",
+      "name": "dsh-tool-csv",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-csv",
+      "url": "https://github.com/omdsh-dev/dsh-tool-csv",
+      "category": "tools",
+      "description": {
+        "en": "CSV parse/query/stat/transform tool",
+        "zh": "CSV 解析/查询/统计/转换工具"
+      },
+      "author": "omdsh-dev",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-toolkit",
+      "name": "dsh-toolkit",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-toolkit",
+      "url": "https://github.com/omdsh-dev/dsh-toolkit",
+      "category": "tools",
+      "description": {
+        "en": "Zero-dep toolkit collection",
+        "zh": "零依赖工具包合集（time/encoding/json/csv/regex）"
+      },
+      "author": "omdsh-dev",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "atomstudio",
+      "name": "atomstudio",
+      "npm": null,
+      "repo": "AtomicsLaboratory/atomstudio",
+      "url": "https://github.com/AtomicsLaboratory/atomstudio",
+      "category": "tools",
+      "description": {
+        "en": "Document engineering environment for executable documents",
+        "zh": "可执行文档工程环境"
+      },
+      "author": "AtomicsLaboratory",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "JavaScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "dsh-cc-connect",
+      "name": "dsh-cc-connect",
+      "npm": null,
+      "repo": "whiteguo233/dsh-cc-connect",
+      "url": "https://github.com/whiteguo233/dsh-cc-connect",
+      "category": "tools",
+      "description": {
+        "en": "Use DSH remotely via cc-connect",
+        "zh": "通过 cc-connect 远程使用 DSH"
+      },
+      "author": "whiteguo233",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Go",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-mnemon",
+      "name": "dsh-mnemon",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-mnemon",
+      "url": "https://github.com/omdsh-dev/dsh-mnemon",
+      "category": "tools",
+      "description": {
+        "en": "Mnemon three-layer memory deep integration",
+        "zh": "Mnemon 三层记忆体深度集成"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-paseo",
+      "name": "dsh-paseo",
+      "npm": null,
+      "repo": "renat3u/dsh-paseo",
+      "url": "https://github.com/renat3u/dsh-paseo",
+      "category": "tools",
+      "description": {
+        "en": "paseo plugin extension support for DSH",
+        "zh": "DSH 的 paseo 插件扩展支持"
+      },
+      "author": "renat3u",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-plugin-dev",
+      "name": "dsh-plugin-dev",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-plugin-dev",
+      "url": "https://github.com/omdsh-dev/dsh-plugin-dev",
+      "category": "tools",
+      "description": {
+        "en": "DSH plugin-dev pitfalls archive (skill + docs)",
+        "zh": "DSH 插件开发踩坑档案（skill+文档）"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-calculator",
+      "name": "dsh-tool-calculator",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-calculator",
+      "url": "https://github.com/omdsh-dev/dsh-tool-calculator",
+      "category": "tools",
+      "description": {
+        "en": "Safe math expression evaluator",
+        "zh": "安全数学表达式求值器"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-diff",
+      "name": "dsh-tool-diff",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-diff",
+      "url": "https://github.com/omdsh-dev/dsh-tool-diff",
+      "category": "tools",
+      "description": {
+        "en": "Structured diff for text/JSON/CSV/Markdown",
+        "zh": "文本/JSON/CSV/Markdown 结构化 diff"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-encoding",
+      "name": "dsh-tool-encoding",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-encoding",
+      "url": "https://github.com/omdsh-dev/dsh-tool-encoding",
+      "category": "tools",
+      "description": {
+        "en": "base64/hex/url codec + hash tool",
+        "zh": "base64/hex/url 编解码 + 哈希工具"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-json",
+      "name": "dsh-tool-json",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-json",
+      "url": "https://github.com/omdsh-dev/dsh-tool-json",
+      "category": "tools",
+      "description": {
+        "en": "JMESPath JSON query tool",
+        "zh": "JMESPath JSON 查询工具"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-markdown",
+      "name": "dsh-tool-markdown",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-markdown",
+      "url": "https://github.com/omdsh-dev/dsh-tool-markdown",
+      "category": "tools",
+      "description": {
+        "en": "HTML↔Markdown conversion, GFM table normalization",
+        "zh": "HTML↔Markdown 转换、GFM 表格规范化"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-regex",
+      "name": "dsh-tool-regex",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-regex",
+      "url": "https://github.com/omdsh-dev/dsh-tool-regex",
+      "category": "tools",
+      "description": {
+        "en": "Regex test/capture/safe-replace tool",
+        "zh": "正则测试/捕获/安全替换工具"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-schema",
+      "name": "dsh-tool-schema",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-schema",
+      "url": "https://github.com/omdsh-dev/dsh-tool-schema",
+      "category": "tools",
+      "description": {
+        "en": "JSON Schema validation tool",
+        "zh": "JSON Schema 验证工具"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-stat",
+      "name": "dsh-tool-stat",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-stat",
+      "url": "https://github.com/omdsh-dev/dsh-tool-stat",
+      "category": "tools",
+      "description": {
+        "en": "Descriptive stats / percentile / correlation tool",
+        "zh": "描述统计/百分位/相关性工具"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-time",
+      "name": "dsh-tool-time",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-time",
+      "url": "https://github.com/omdsh-dev/dsh-tool-time",
+      "category": "tools",
+      "description": {
+        "en": "ISO 8601 / timezone / calendar math tool",
+        "zh": "ISO 8601/时区/日历运算时间工具"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-trace",
+      "name": "dsh-trace",
+      "npm": null,
+      "repo": "vibeinging/dsh-trace",
+      "url": "https://github.com/vibeinging/dsh-trace",
+      "category": "tools",
+      "description": {
+        "en": "Telemetry backend exporting turns/steps/tools",
+        "zh": "DSH 遥测后端：导出轮次/步骤/工具"
+      },
+      "author": "vibeinging",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "sandbox-micro",
+      "name": "sandbox-micro",
+      "npm": null,
+      "repo": "omdsh-dev/sandbox-micro",
+      "url": "https://github.com/omdsh-dev/sandbox-micro",
+      "category": "tools",
+      "description": {
+        "en": "microsandbox support",
+        "zh": "microsandbox 支持"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "zotero-harvest",
+      "name": "zotero-harvest",
+      "npm": null,
+      "repo": "Fisfzy/zotero-harvest",
+      "url": "https://github.com/Fisfzy/zotero-harvest",
+      "category": "tools",
+      "description": {
+        "en": "Zotero harvest plugin (OpenAlex/arXiv/Crossref)",
+        "zh": "Zotero 文献采集入库插件（OpenAlex/arXiv/Crossref）"
+      },
+      "author": "Fisfzy",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-harness-ops",
+      "name": "dsh-harness-ops",
+      "npm": null,
+      "repo": "fakechris/dsh-harness-ops",
+      "url": "https://github.com/fakechris/dsh-harness-ops",
+      "category": "tools",
+      "description": {
+        "en": "Ops toolkit: daily snapshot A/B slots, one-click rollback",
+        "zh": "DSH 运维工具箱：每日快照 A/B 双槽轮换、一键回滚"
+      },
+      "author": "fakechris",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Shell",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-inspect",
+      "name": "dsh-inspect",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-inspect",
+      "url": "https://github.com/omdsh-dev/dsh-inspect",
+      "category": "tools",
+      "description": {
+        "en": "Adversarial checkup→fix→review loop plugin",
+        "zh": "检查→修复→复查的对抗式闭环插件"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-openmaic",
+      "name": "dsh-openmaic",
+      "npm": null,
+      "repo": "THU-MAIC/dsh-openmaic",
+      "url": "https://github.com/THU-MAIC/dsh-openmaic",
+      "category": "tools",
+      "description": {
+        "en": "OpenMAIC: classrooms, slides, interactive widgets",
+        "zh": "OpenMAIC：课堂/幻灯片/交互式组件"
+      },
+      "author": "THU-MAIC",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-plugin-mineru",
+      "name": "dsh-plugin-mineru",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-mineru",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-mineru",
+      "category": "tools",
+      "description": {
+        "en": "MineRU document parsing tools",
+        "zh": "MineRU 文档解析工具"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-prompt-studio",
+      "name": "dsh-prompt-studio",
+      "npm": null,
+      "repo": "Moeblack/dsh-prompt-studio",
+      "url": "https://github.com/Moeblack/dsh-prompt-studio",
+      "category": "tools",
+      "description": {
+        "en": "Edit user & system prompt sections (live preview)",
+        "zh": "编辑用户与内置系统提示段（实时预览）"
+      },
+      "author": "Moeblack",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-scholar",
+      "name": "dsh-scholar",
+      "npm": null,
+      "repo": "lzszq/dsh-scholar",
+      "url": "https://github.com/lzszq/dsh-scholar",
+      "category": "tools",
+      "description": {
+        "en": "dsh-scholar (literature)",
+        "zh": "dsh-scholar（文献相关）"
+      },
+      "author": "lzszq",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-ssh",
+      "name": "dsh-ssh",
+      "npm": null,
+      "repo": "UynajGI/dsh-ssh",
+      "url": "https://github.com/UynajGI/dsh-ssh",
+      "category": "tools",
+      "description": {
+        "en": "SSH remote-execution: ProxyJump chain, SFTP",
+        "zh": "SSH 远程执行：ProxyJump 链、SFTP"
+      },
+      "author": "UynajGI",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-search",
+      "name": "dsh-tool-search",
+      "npm": null,
+      "repo": "vibeinging/dsh-tool-search",
+      "url": "https://github.com/vibeinging/dsh-tool-search",
+      "category": "tools",
+      "description": {
+        "en": "Per-agent on-demand tool discovery + progressive schema",
+        "zh": "按 agent 按需工具发现与渐进 schema 披露"
+      },
+      "author": "vibeinging",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-webbridge",
+      "name": "dsh-webbridge",
+      "npm": null,
+      "repo": "bill9109/dsh-webbridge",
+      "url": "https://github.com/bill9109/dsh-webbridge",
+      "category": "tools",
+      "description": {
+        "en": "DSH + Kimi WebBridge",
+        "zh": "DSH 结合 Kimi WebBridge"
+      },
+      "author": "bill9109",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "ego-browser",
+      "name": "ego-browser",
+      "npm": null,
+      "repo": "Fisfzy/ego-browser",
+      "url": "https://github.com/Fisfzy/ego-browser",
+      "category": "tools",
+      "description": {
+        "en": "Bridge ego-lite Chromium browser into DSH",
+        "zh": "把 ego-lite 浏览器接入 DSH（给 Agent 用的 Chromium）"
+      },
+      "author": "Fisfzy",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "math-lean",
+      "name": "math-lean",
+      "npm": null,
+      "repo": "Fisfzy/math-lean",
+      "url": "https://github.com/Fisfzy/math-lean",
+      "category": "tools",
+      "description": {
+        "en": "Lean kernel-verified math reasoning plugin",
+        "zh": "Lean 内核验证的数学推理插件"
+      },
+      "author": "Fisfzy",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "plugin-template",
+      "name": "plugin-template",
+      "npm": null,
+      "repo": "omdsh-dev/plugin-template",
+      "url": "https://github.com/omdsh-dev/plugin-template",
+      "category": "tools",
+      "description": {
+        "en": "Plugin template derived from the official turtle ui repo",
+        "zh": "官方 turtle ui 仓库派生的插件模板"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "qwen-mm-plugins",
+      "name": "Qwen-MM-Plugins",
+      "npm": null,
+      "repo": "omdsh-dev/Qwen-MM-Plugins",
+      "url": "https://github.com/omdsh-dev/Qwen-MM-Plugins",
+      "category": "tools",
+      "description": {
+        "en": "Qwen-MM-Plugins support",
+        "zh": "Qwen-MM-Plugins 支持"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "sandbox-mxc",
+      "name": "sandbox-mxc",
+      "npm": null,
+      "repo": "omdsh-dev/sandbox-mxc",
+      "url": "https://github.com/omdsh-dev/sandbox-mxc",
+      "category": "tools",
+      "description": {
+        "en": "Microsoft cross-platform sandbox support",
+        "zh": "微软跨平台沙盒支持"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "sandbox-nono",
+      "name": "sandbox-nono",
+      "npm": null,
+      "repo": "omdsh-dev/sandbox-nono",
+      "url": "https://github.com/omdsh-dev/sandbox-nono",
+      "category": "tools",
+      "description": {
+        "en": "nono sandbox support",
+        "zh": "nono 沙盒支持"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "web-components",
+      "name": "web-components",
+      "npm": null,
+      "repo": "omdsh-dev/web-components",
+      "url": "https://github.com/omdsh-dev/web-components",
+      "category": "tools",
+      "description": {
+        "en": "web-components support",
+        "zh": "web-components 支持"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "zotero-wave-rag",
+      "name": "zotero-wave-rag",
+      "npm": null,
+      "repo": "Fisfzy/zotero-wave-rag",
+      "url": "https://github.com/Fisfzy/zotero-wave-rag",
+      "category": "tools",
+      "description": {
+        "en": "Wave-RAG retrieval for Zotero paper library",
+        "zh": "面向 Zotero 论文库的浪潮式 RAG 检索"
+      },
+      "author": "Fisfzy",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-web-ui",
+      "name": "dsh-web-ui",
+      "npm": null,
+      "repo": "zhu1090093659/dsh-web-ui",
+      "url": "https://github.com/zhu1090093659/dsh-web-ui",
+      "category": "ui",
+      "description": {
+        "en": "DSH Web UI plugin & skin collection: task board, git panel, etc.",
+        "zh": "DSH Web UI 插件与皮肤合集：任务板、Git 面板等"
+      },
+      "author": "zhu1090093659",
+      "stars": 88,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "领跑者"
+    },
+    {
+      "id": "dsh-better-sidebar",
+      "name": "DSH-better-sidebar",
+      "npm": null,
+      "repo": "omdsh-dev/DSH-better-sidebar",
+      "url": "https://github.com/omdsh-dev/DSH-better-sidebar",
+      "category": "ui",
+      "description": {
+        "en": "Sidebar workbench: file render/terminal/git/subagent",
+        "zh": "侧边栏完整工作台：文件渲染/终端/Git/子代理"
+      },
+      "author": "omdsh-dev",
+      "stars": 19,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "ui-status-label",
+      "name": "ui-status-label",
+      "npm": null,
+      "repo": "alingalingling/ui-status-label",
+      "url": "https://github.com/alingalingling/ui-status-label",
+      "category": "ui",
+      "description": {
+        "en": "Customize the whale-girl thinking-status label",
+        "zh": "自定义「鲸鱼娘」思考状态的显示"
+      },
+      "author": "alingalingling",
+      "stars": 13,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-deep-whale",
+      "name": "dsh-deep-whale",
+      "npm": null,
+      "repo": "Small-tailqwq/dsh-deep-whale",
+      "url": "https://github.com/Small-tailqwq/dsh-deep-whale",
+      "category": "ui",
+      "description": {
+        "en": "DSH Web whale-girl skin series",
+        "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊）"
+      },
+      "author": "Small-tailqwq",
+      "stars": 12,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-focus-chat",
+      "name": "dsh-focus-chat",
+      "npm": null,
+      "repo": "dingyi222666/dsh-focus-chat",
+      "url": "https://github.com/dingyi222666/dsh-focus-chat",
+      "category": "ui",
+      "description": {
+        "en": "Focused-chat minimal session view",
+        "zh": "「聚焦会话」精简会话视图"
+      },
+      "author": "dingyi222666",
+      "stars": 3,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-side-panel",
+      "name": "dsh-side-panel",
+      "npm": null,
+      "repo": "ccq1/dsh-side-panel",
+      "url": "https://github.com/ccq1/dsh-side-panel",
+      "category": "ui",
+      "description": {
+        "en": "DSH side panel: file browser, terminal, git review",
+        "zh": "DSH 侧边栏：文件浏览器、终端、Git 审查"
+      },
+      "author": "ccq1",
+      "stars": 3,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-ui-progress",
+      "name": "dsh-ui-progress",
+      "npm": null,
+      "repo": "lhh010/dsh-ui-progress",
+      "url": "https://github.com/lhh010/dsh-ui-progress",
+      "category": "ui",
+      "description": {
+        "en": "Session progress bar: todos progress + live token rate",
+        "zh": "会话进度条：todos 进度/实时 token 速率"
+      },
+      "author": "lhh010",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-ui-whale",
+      "name": "dsh-ui-whale",
+      "npm": null,
+      "repo": "lhh010/dsh-ui-whale",
+      "url": "https://github.com/lhh010/dsh-ui-whale",
+      "category": "ui",
+      "description": {
+        "en": "Hand-drawn pixel whale companion",
+        "zh": "全手绘像素鲸鱼伙伴插件"
+      },
+      "author": "lhh010",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-annotation",
+      "name": "dsh-annotation",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-annotation",
+      "url": "https://github.com/omdsh-dev/dsh-annotation",
+      "category": "ui",
+      "description": {
+        "en": "Selection annotation: select→annotate→send",
+        "zh": "选中批注：选文字→批注→随消息发送"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-chat-width",
+      "name": "dsh-chat-width",
+      "npm": null,
+      "repo": "chen-001/dsh-chat-width",
+      "url": "https://github.com/chen-001/dsh-chat-width",
+      "category": "ui",
+      "description": {
+        "en": "Adjust the width of dsh's reply",
+        "zh": "调整 DSH 回复宽度"
+      },
+      "author": "chen-001",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-companion",
+      "name": "dsh-companion",
+      "npm": null,
+      "repo": "william-jin-cmu/dsh-companion",
+      "url": "https://github.com/william-jin-cmu/dsh-companion",
+      "category": "ui",
+      "description": {
+        "en": "Resident desktop companion: global hotkey/automation/plugin market",
+        "zh": "常驻桌面助手：全局唤起/定时自动化/插件市场"
+      },
+      "author": "william-jin-cmu",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-genui",
+      "name": "dsh-genui",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-genui",
+      "url": "https://github.com/omdsh-dev/dsh-genui",
+      "category": "ui",
+      "description": {
+        "en": "Inline interactive UI components in chat",
+        "zh": "会话内联渲染交互式 UI 组件"
+      },
+      "author": "omdsh-dev",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-input-history",
+      "name": "dsh-input-history",
+      "npm": null,
+      "repo": "lhh010/dsh-input-history",
+      "url": "https://github.com/lhh010/dsh-input-history",
+      "category": "ui",
+      "description": {
+        "en": "Input history: Ctrl+Up/Down to recall sent messages",
+        "zh": "Ctrl+Up/Down 召回已发送消息"
+      },
+      "author": "lhh010",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-navbar",
+      "name": "dsh-navbar",
+      "npm": null,
+      "repo": "vlln/dsh-navbar",
+      "url": "https://github.com/vlln/dsh-navbar",
+      "category": "ui",
+      "description": {
+        "en": "Conversation node navbar",
+        "zh": "对话节点导航条（右缘节点串跳转）"
+      },
+      "author": "vlln",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-paste-input",
+      "name": "dsh-paste-input",
+      "npm": null,
+      "repo": "lhh010/dsh-paste-input",
+      "url": "https://github.com/lhh010/dsh-paste-input",
+      "category": "ui",
+      "description": {
+        "en": "Paste/drag/drop file input enhancement",
+        "zh": "Ctrl+V 粘贴/拖拽/选文件增强"
+      },
+      "author": "lhh010",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-plugin-background",
+      "name": "dsh-plugin-background",
+      "npm": null,
+      "repo": "gameswu/dsh-plugin-background",
+      "url": "https://github.com/gameswu/dsh-plugin-background",
+      "category": "ui",
+      "description": {
+        "en": "DSH wallpaper plugin",
+        "zh": "DSH 壁纸插件"
+      },
+      "author": "gameswu",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "tonghuashun-webui",
+      "name": "tonghuashun-webui",
+      "npm": null,
+      "repo": "renat3u/tonghuashun-webui",
+      "url": "https://github.com/renat3u/tonghuashun-webui",
+      "category": "ui",
+      "description": {
+        "en": "仿同花顺的webui插件",
+        "zh": "仿同花顺的webui插件"
+      },
+      "author": "renat3u",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "低星长尾"
+    },
+    {
+      "id": "dsh-deepcel",
+      "name": "dsh-deepcel",
+      "npm": null,
+      "repo": "Small-tailqwq/dsh-deepcel",
+      "url": "https://github.com/Small-tailqwq/dsh-deepcel",
+      "category": "ui",
+      "description": {
+        "en": "Excel-style DSH skin",
+        "zh": "模仿 Excel 的 DSH 皮肤"
+      },
+      "author": "Small-tailqwq",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-deeplink",
+      "name": "dsh-deeplink",
+      "npm": null,
+      "repo": "qyw233/dsh-deeplink",
+      "url": "https://github.com/qyw233/dsh-deeplink",
+      "category": "ui",
+      "description": {
+        "en": "Deep-link plugin: open session/workspace directly",
+        "zh": "深链插件：?session=/?workspace= 直接打开"
+      },
+      "author": "qyw233",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-diff-viewer",
+      "name": "dsh-diff-viewer",
+      "npm": null,
+      "repo": "lehhair/dsh-diff-viewer",
+      "url": "https://github.com/lehhair/dsh-diff-viewer",
+      "category": "ui",
+      "description": {
+        "en": "PiUI-style diff viewer replacing the stock DiffBlock",
+        "zh": "PiUI 风格 diff 查看器，替换原生 DiffBlock"
+      },
+      "author": "lehhair",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-drag-and-drop",
+      "name": "dsh-drag-and-drop",
+      "npm": null,
+      "repo": "bill9109/dsh-drag-and-drop",
+      "url": "https://github.com/bill9109/dsh-drag-and-drop",
+      "category": "ui",
+      "description": {
+        "en": "Cross-platform file drag & drop with raw path insertion",
+        "zh": "跨平台文件拖拽与原始路径插入"
+      },
+      "author": "bill9109",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-qq2006",
+      "name": "dsh-qq2006",
+      "npm": null,
+      "repo": "LaplaceYoung/dsh-qq2006",
+      "url": "https://github.com/LaplaceYoung/dsh-qq2006",
+      "category": "ui",
+      "description": {
+        "en": "QQ2006 skin plugin",
+        "zh": "QQ2006 皮肤插件"
+      },
+      "author": "LaplaceYoung",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-session-notification",
+      "name": "dsh-session-notification",
+      "npm": null,
+      "repo": "dingyi222666/dsh-session-notification",
+      "url": "https://github.com/dingyi222666/dsh-session-notification",
+      "category": "ui",
+      "description": {
+        "en": "Session completion + 4-state notifications",
+        "zh": "会话完成等四状态通知"
+      },
+      "author": "dingyi222666",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-spotlight",
+      "name": "dsh-spotlight",
+      "npm": null,
+      "repo": "0xsline/dsh-spotlight",
+      "url": "https://github.com/0xsline/dsh-spotlight",
+      "category": "ui",
+      "description": {
+        "en": "Keyboard-first command palette",
+        "zh": "键盘优先的命令面板"
+      },
+      "author": "0xsline",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-ths-skin",
+      "name": "dsh-ths-skin",
+      "npm": null,
+      "repo": "AdamPlatin123/dsh-ths-skin",
+      "url": "https://github.com/AdamPlatin123/dsh-ths-skin",
+      "category": "ui",
+      "description": {
+        "en": "THS terminal-style skin + K-line panel",
+        "zh": "同花顺行情终端风格皮肤 + K 线面板"
+      },
+      "author": "AdamPlatin123",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tps",
+      "name": "dsh-tps",
+      "npm": null,
+      "repo": "Small-tailqwq/dsh-tps",
+      "url": "https://github.com/Small-tailqwq/dsh-tps",
+      "category": "ui",
+      "description": {
+        "en": "TPS skin plugin",
+        "zh": "TPS 皮肤插件"
+      },
+      "author": "Small-tailqwq",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-ultra-ui",
+      "name": "dsh-ultra-ui",
+      "npm": null,
+      "repo": "havingautism/dsh-ultra-ui",
+      "url": "https://github.com/havingautism/dsh-ultra-ui",
+      "category": "ui",
+      "description": {
+        "en": "(no description)",
+        "zh": "(无描述)"
+      },
+      "author": "havingautism",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "低星长尾"
+    },
+    {
+      "id": "dsh-web-ui-notify",
+      "name": "dsh-web-ui-notify",
+      "npm": null,
+      "repo": "bill9109/dsh-web-ui-notify",
+      "url": "https://github.com/bill9109/dsh-web-ui-notify",
+      "category": "ui",
+      "description": {
+        "en": "Desktop notifications for DSH",
+        "zh": "DSH 桌面通知提醒"
+      },
+      "author": "bill9109",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "ex-setting",
+      "name": "ex-setting",
+      "npm": null,
+      "repo": "omdsh-dev/ex-setting",
+      "url": "https://github.com/omdsh-dev/ex-setting",
+      "category": "ui",
+      "description": {
+        "en": "DSH settings extension",
+        "zh": "DSH 设置扩展"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "whale-girl",
+      "name": "whale-girl",
+      "npm": null,
+      "repo": "vlln/whale-girl",
+      "url": "https://github.com/vlln/whale-girl",
+      "category": "ui",
+      "description": {
+        "en": "QQ-pet-style desktop pet plugin",
+        "zh": "QQ 宠物形态的桌面宠物插件"
+      },
+      "author": "vlln",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "pi-discuss-mode",
+      "name": "pi-discuss-mode",
+      "npm": null,
+      "repo": "zwrong/pi-discuss-mode",
+      "url": "https://github.com/zwrong/pi-discuss-mode",
+      "category": "session",
+      "description": {
+        "en": "Read-only discussion mode for Pi Coding Agent",
+        "zh": "Pi Coding Agent 的只读讨论模式"
+      },
+      "author": "zwrong",
+      "stars": 11,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "TypeScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "dsh-turn-rewind",
+      "name": "dsh-turn-rewind",
+      "npm": null,
+      "repo": "Anionex/dsh-turn-rewind",
+      "url": "https://github.com/Anionex/dsh-turn-rewind",
+      "category": "session",
+      "description": {
+        "en": "Rewind conversation and workspace state",
+        "zh": "对话回退：回滚会话与工作区状态"
+      },
+      "author": "Anionex",
+      "stars": 9,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-share",
+      "name": "dsh-share",
+      "npm": null,
+      "repo": "hellodigua/dsh-share",
+      "url": "https://github.com/hellodigua/dsh-share",
+      "category": "session",
+      "description": {
+        "en": "DSH conversation sharing plugin",
+        "zh": "DSH 对话分享插件"
+      },
+      "author": "hellodigua",
+      "stars": 6,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-message-edit",
+      "name": "dsh-message-edit",
+      "npm": null,
+      "repo": "Moeblack/dsh-message-edit",
+      "url": "https://github.com/Moeblack/dsh-message-edit",
+      "category": "session",
+      "description": {
+        "en": "Branch-based message editing, reroll, version timeline",
+        "zh": "分支式消息编辑、reroll、版本时间线"
+      },
+      "author": "Moeblack",
+      "stars": 5,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-context-doctor",
+      "name": "dsh-context-doctor",
+      "npm": null,
+      "repo": "Zhenyu98/dsh-context-doctor",
+      "url": "https://github.com/Zhenyu98/dsh-context-doctor",
+      "category": "session",
+      "description": {
+        "en": "Context injection audit: AGENTS.md/skills/tool-schema token cost",
+        "zh": "上下文注入审计：AGENTS.md/技能/tool schema token 成本"
+      },
+      "author": "Zhenyu98",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-session-health",
+      "name": "dsh-session-health",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-session-health",
+      "url": "https://github.com/omdsh-dev/dsh-session-health",
+      "category": "session",
+      "description": {
+        "en": "Frame-level scan diagnostics for zstd session files",
+        "zh": "多帧 zstd 会话文件帧级扫描诊断"
+      },
+      "author": "omdsh-dev",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-evolve",
+      "name": "dsh-evolve",
+      "npm": null,
+      "repo": "william-jin-cmu/dsh-evolve",
+      "url": "https://github.com/william-jin-cmu/dsh-evolve",
+      "category": "session",
+      "description": {
+        "en": "Self-evolution: agent grows/prunes its own abilities",
+        "zh": "自进化：agent 在会话内给自己长出/剪掉能力"
+      },
+      "author": "william-jin-cmu",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-memory-evolve",
+      "name": "dsh-memory-evolve",
+      "npm": null,
+      "repo": "csyangwen/dsh-memory-evolve",
+      "url": "https://github.com/csyangwen/dsh-memory-evolve",
+      "category": "session",
+      "description": {
+        "en": "Cross-session long-term memory + background self-evolution",
+        "zh": "跨会话长期记忆 + 后台自我进化（纯插件）"
+      },
+      "author": "csyangwen",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-web-archive",
+      "name": "dsh-web-archive",
+      "npm": null,
+      "repo": "renat3u/dsh-web-archive",
+      "url": "https://github.com/renat3u/dsh-web-archive",
+      "category": "session",
+      "description": {
+        "en": "Fold noisy messages (Think/Bash) in conversation",
+        "zh": "折叠对话中无用消息（Think/Bash 等）"
+      },
+      "author": "renat3u",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "deepseek-manners",
+      "name": "deepseek-manners",
+      "npm": null,
+      "repo": "Moeblack/deepseek-manners",
+      "url": "https://github.com/Moeblack/deepseek-manners",
+      "category": "session",
+      "description": {
+        "en": "Inject gratitude into every message",
+        "zh": "给每条消息后注入感谢语"
+      },
+      "author": "Moeblack",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-agent-budget",
+      "name": "dsh-agent-budget",
+      "npm": null,
+      "repo": "vibeinging/dsh-agent-budget",
+      "url": "https://github.com/vibeinging/dsh-agent-budget",
+      "category": "session",
+      "description": {
+        "en": "Native agent-tree token budget plugin",
+        "zh": "原生 agent 树 token 预算插件"
+      },
+      "author": "vibeinging",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-conversation-share",
+      "name": "dsh-conversation-share",
+      "npm": null,
+      "repo": "bill9109/dsh-conversation-share",
+      "url": "https://github.com/bill9109/dsh-conversation-share",
+      "category": "session",
+      "description": {
+        "en": "Share any segment of a DSH conversation",
+        "zh": "分享任意段落对话"
+      },
+      "author": "bill9109",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-kb-sieve",
+      "name": "dsh-kb-sieve",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-kb-sieve",
+      "url": "https://github.com/omdsh-dev/dsh-kb-sieve",
+      "category": "session",
+      "description": {
+        "en": "Auditable knowledge-base packs (references + SQLite)",
+        "zh": "可审计知识库打包（references + SQLite）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-postmortem",
+      "name": "dsh-postmortem",
+      "npm": null,
+      "repo": "zzh-newlearner/dsh-postmortem",
+      "url": "https://github.com/zzh-newlearner/dsh-postmortem",
+      "category": "session",
+      "description": {
+        "en": "Local-first failure postmortems",
+        "zh": "本地优先的会话故障复盘"
+      },
+      "author": "zzh-newlearner",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-session-search",
+      "name": "dsh-session-search",
+      "npm": null,
+      "repo": "Tieboyh/dsh-session-search",
+      "url": "https://github.com/Tieboyh/dsh-session-search",
+      "category": "session",
+      "description": {
+        "en": "Index-free cross-agent session search",
+        "zh": "无索引跨 agent 会话搜索"
+      },
+      "author": "Tieboyh",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-sidechain",
+      "name": "dsh-sidechain",
+      "npm": null,
+      "repo": "Buyi-wsgzg/dsh-sidechain",
+      "url": "https://github.com/Buyi-wsgzg/dsh-sidechain",
+      "category": "session",
+      "description": {
+        "en": "Side-chain sessions: /side persistent + /btw one-off",
+        "zh": "侧会话插件：/side 持续性 + /btw 一次性"
+      },
+      "author": "Buyi-wsgzg",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tool-approval",
+      "name": "dsh-tool-approval",
+      "npm": null,
+      "repo": "ilharp/dsh-tool-approval",
+      "url": "https://github.com/ilharp/dsh-tool-approval",
+      "category": "session",
+      "description": {
+        "en": "Manual approval (Manual/Ask mode)",
+        "zh": "手动审批（Manual/Ask 模式）"
+      },
+      "author": "ilharp",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-turn-navigator",
+      "name": "dsh-turn-navigator",
+      "npm": null,
+      "repo": "vibeinging/dsh-turn-navigator",
+      "url": "https://github.com/vibeinging/dsh-turn-navigator",
+      "category": "session",
+      "description": {
+        "en": "DSH Web turn navigation plugin",
+        "zh": "DSH Web 轮次导航插件"
+      },
+      "author": "vibeinging",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-vision-toolkit",
+      "name": "dsh-vision-toolkit",
+      "npm": null,
+      "repo": "Anionex/dsh-vision-toolkit",
+      "url": "https://github.com/Anionex/dsh-vision-toolkit",
+      "category": "llm",
+      "description": {
+        "en": "Vision for text-only models: image QA, screenshot OCR, UI reconstruction",
+        "zh": "给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原"
+      },
+      "author": "Anionex",
+      "stars": 28,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "deepseek-omnimodal",
+      "name": "Deepseek-omnimodal",
+      "npm": null,
+      "repo": "good-boy4069/Deepseek-omnimodal",
+      "url": "https://github.com/good-boy4069/Deepseek-omnimodal",
+      "category": "llm",
+      "description": {
+        "en": "Open-source multimodal MCP for text-only agents",
+        "zh": "面向纯文本 Agent 的开源多模态 MCP"
+      },
+      "author": "good-boy4069",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-computer-use",
+      "name": "dsh-computer-use",
+      "npm": null,
+      "repo": "Anionex/dsh-computer-use",
+      "url": "https://github.com/Anionex/dsh-computer-use",
+      "category": "llm",
+      "description": {
+        "en": "Computer-use plugin (accessibility observation + scoped permission)",
+        "zh": "电脑控制插件（Accessibility 观测 + 作用域权限）"
+      },
+      "author": "Anionex",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-vision",
+      "name": "dsh-vision",
+      "npm": null,
+      "repo": "william-jin-cmu/dsh-vision",
+      "url": "https://github.com/william-jin-cmu/dsh-vision",
+      "category": "llm",
+      "description": {
+        "en": "view_image tool bridging any OpenAI-compatible VLM",
+        "zh": "view_image 工具桥接任意 OpenAI 兼容 VLM"
+      },
+      "author": "william-jin-cmu",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "openhanako",
+      "name": "openhanako",
+      "npm": null,
+      "repo": "liliMozi/openhanako",
+      "url": "https://github.com/liliMozi/openhanako",
+      "category": "orchestration",
+      "description": {
+        "en": "Personal AI agent with memory, personality and autonomy",
+        "zh": "带记忆、人格与自主性的个人 AI 智能体"
+      },
+      "author": "liliMozi",
+      "stars": 5975,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "TypeScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "exo",
+      "name": "exo",
+      "npm": null,
+      "repo": "exoharness/exo",
+      "url": "https://github.com/exoharness/exo",
+      "category": "orchestration",
+      "description": {
+        "en": "Fully recursive agent+harness that self-edits at runtime",
+        "zh": "可递归自编辑自身的 agent+harness 架构"
+      },
+      "author": "exoharness",
+      "stars": 639,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "Rust",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "synergy",
+      "name": "synergy",
+      "npm": null,
+      "repo": "SII-Holos/synergy",
+      "url": "https://github.com/SII-Holos/synergy",
+      "category": "orchestration",
+      "description": {
+        "en": "General-purpose agent for the Open Agentic Web",
+        "zh": "面向 Open Agentic Web 的通用智能体"
+      },
+      "author": "SII-Holos",
+      "stars": 542,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "TypeScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "ccteam",
+      "name": "ccteam",
+      "npm": null,
+      "repo": "firstintent/ccteam",
+      "url": "https://github.com/firstintent/ccteam",
+      "category": "orchestration",
+      "description": {
+        "en": "Orchestrates Claude Code/Codex/Grok/Kimi into one team",
+        "zh": "把 Claude Code/Codex/Grok/Kimi 编成团队，Telegram/飞书指挥"
+      },
+      "author": "firstintent",
+      "stars": 142,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "Rust",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "matebot",
+      "name": "MateBot",
+      "npm": null,
+      "repo": "aresbit/MateBot",
+      "url": "https://github.com/aresbit/MateBot",
+      "category": "orchestration",
+      "description": {
+        "en": "A claudeclaw clone",
+        "zh": "claudeclaw 复刻"
+      },
+      "author": "aresbit",
+      "stars": 46,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "JavaScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "mstar-harness",
+      "name": "mstar-harness",
+      "npm": null,
+      "repo": "btspoony/mstar-harness",
+      "url": "https://github.com/btspoony/mstar-harness",
+      "category": "orchestration",
+      "description": {
+        "en": "Skill-driven harness/loop engineering workflow plugin",
+        "zh": "Skill 驱动的 Harness/Loop 工程工作流插件"
+      },
+      "author": "btspoony",
+      "stars": 35,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-workflow",
+      "name": "dsh_workflow",
+      "npm": null,
+      "repo": "icetomoyo/dsh_workflow",
+      "url": "https://github.com/icetomoyo/dsh_workflow",
+      "category": "orchestration",
+      "description": {
+        "en": "Bring Claude Code's UltraCode mode to DSH with governable multi-agent orchestration",
+        "zh": "把 Claude Code 的 UltraCode 模式带给 DSH，多 Agent 调度可治理"
+      },
+      "author": "icetomoyo",
+      "stars": 16,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "agents-go",
+      "name": "agents-go",
+      "npm": null,
+      "repo": "zzir/agents-go",
+      "url": "https://github.com/zzir/agents-go",
+      "category": "orchestration",
+      "description": {
+        "en": "Multi-agent framework in Go",
+        "zh": "Go 语言多 agent 框架"
+      },
+      "author": "zzir",
+      "stars": 13,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "Go",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "distill",
+      "name": "distill",
+      "npm": null,
+      "repo": "LoserFox/distill",
+      "url": "https://github.com/LoserFox/distill",
+      "category": "orchestration",
+      "description": {
+        "en": "Auto conversation distillation: background subagent reflection",
+        "zh": "自动对话蒸馏：后台 subagent 反省 + 技能更新"
+      },
+      "author": "LoserFox",
+      "stars": 7,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-agent-teams",
+      "name": "dsh-agent-teams",
+      "npm": null,
+      "repo": "NanmiCoder/dsh-agent-teams",
+      "url": "https://github.com/NanmiCoder/dsh-agent-teams",
+      "category": "orchestration",
+      "description": {
+        "en": "AgentTeams plugin",
+        "zh": "AgentTeams 插件"
+      },
+      "author": "NanmiCoder",
+      "stars": 5,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-automation",
+      "name": "dsh-automation",
+      "npm": null,
+      "repo": "titanwings/dsh-automation",
+      "url": "https://github.com/titanwings/dsh-automation",
+      "category": "orchestration",
+      "description": {
+        "en": "Run scheduled tasks in fresh sessions per plan",
+        "zh": "让任务按计划在全新 Session 中运行定时任务"
+      },
+      "author": "titanwings",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-loop",
+      "name": "dsh-loop",
+      "npm": null,
+      "repo": "vlln/dsh-loop",
+      "url": "https://github.com/vlln/dsh-loop",
+      "category": "orchestration",
+      "description": {
+        "en": "Scheduled loop (/loop command + tool)",
+        "zh": "定时循环（/loop 命令 + loop 工具）"
+      },
+      "author": "vlln",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-plannotator",
+      "name": "dsh-plannotator",
+      "npm": null,
+      "repo": "titanwings/dsh-plannotator",
+      "url": "https://github.com/titanwings/dsh-plannotator",
+      "category": "orchestration",
+      "description": {
+        "en": "Plan annotator: annotate plan text line-by-line",
+        "zh": "计划批注：选中计划原文逐条批注"
+      },
+      "author": "titanwings",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-task-status",
+      "name": "dsh-task-status",
+      "npm": null,
+      "repo": "vlln/dsh-task-status",
+      "url": "https://github.com/vlln/dsh-task-status",
+      "category": "orchestration",
+      "description": {
+        "en": "Background task status bar",
+        "zh": "后台任务状态条（进度 + 实时 tail）"
+      },
+      "author": "vlln",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-work",
+      "name": "dsh-work",
+      "npm": null,
+      "repo": "vibeinging/dsh-work",
+      "url": "https://github.com/vibeinging/dsh-work",
+      "category": "orchestration",
+      "description": {
+        "en": "Local-first AI workbench for DSH plugins",
+        "zh": "本地优先 DSH 插件工作台"
+      },
+      "author": "vibeinging",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-advisor",
+      "name": "dsh-advisor",
+      "npm": null,
+      "repo": "btspoony/dsh-advisor",
+      "url": "https://github.com/btspoony/dsh-advisor",
+      "category": "orchestration",
+      "description": {
+        "en": "Second model passively reviews each turn and injects advice",
+        "zh": "第二模型被动审查每轮并注入建议"
+      },
+      "author": "btspoony",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-artifact",
+      "name": "dsh-artifact",
+      "npm": null,
+      "repo": "william-jin-cmu/dsh-artifact",
+      "url": "https://github.com/william-jin-cmu/dsh-artifact",
+      "category": "orchestration",
+      "description": {
+        "en": "File delivery protocol: send_artifact tool",
+        "zh": "文件交付协议：send_artifact 工具"
+      },
+      "author": "william-jin-cmu",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-deep-research",
+      "name": "dsh-deep-research",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-deep-research",
+      "url": "https://github.com/omdsh-dev/dsh-deep-research",
+      "category": "orchestration",
+      "description": {
+        "en": "Adaptive deep-research orchestrator plugin",
+        "zh": "自适应深度研究编排插件"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-explain",
+      "name": "dsh-explain",
+      "npm": null,
+      "repo": "yuezengwu/dsh-explain",
+      "url": "https://github.com/yuezengwu/dsh-explain",
+      "category": "orchestration",
+      "description": {
+        "en": "Local-first learning mode: cross-session learning thread",
+        "zh": "本地优先学习模式：跨会话全局学习线程"
+      },
+      "author": "yuezengwu",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-llm-fallbacks",
+      "name": "dsh-llm-fallbacks",
+      "npm": null,
+      "repo": "btspoony/dsh-llm-fallbacks",
+      "url": "https://github.com/btspoony/dsh-llm-fallbacks",
+      "category": "orchestration",
+      "description": {
+        "en": "Role-based LLM retry & fallback strategy",
+        "zh": "基于角色的模型重试备用策略"
+      },
+      "author": "btspoony",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-sentinel",
+      "name": "dsh-sentinel",
+      "npm": null,
+      "repo": "fuhefei/dsh-sentinel",
+      "url": "https://github.com/fuhefei/dsh-sentinel",
+      "category": "orchestration",
+      "description": {
+        "en": "Condition-driven wakeup: durable file/command/http triggers",
+        "zh": "条件驱动唤醒：持久文件/命令/http 触发"
+      },
+      "author": "fuhefei",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-track",
+      "name": "dsh-track",
+      "npm": null,
+      "repo": "fakechris/dsh-track",
+      "url": "https://github.com/fakechris/dsh-track",
+      "category": "orchestration",
+      "description": {
+        "en": "Embedded task management engine: decision-point protocol",
+        "zh": "嵌入式任务管理引擎：决策点协议、Linear 形 issue"
+      },
+      "author": "fakechris",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "eragear-code-copilot",
+      "name": "eragear-code-copilot",
+      "npm": null,
+      "repo": "TongDucThanhNam/eragear-code-copilot",
+      "url": "https://github.com/TongDucThanhNam/eragear-code-copilot",
+      "category": "orchestration",
+      "description": {
+        "en": "Empty shell repo (no description)",
+        "zh": "空壳仓库（无描述）"
+      },
+      "author": "TongDucThanhNam",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "TypeScript",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "echobird",
+      "name": "EchoBird",
+      "npm": null,
+      "repo": "edison7009/EchoBird",
+      "url": "https://github.com/edison7009/EchoBird",
+      "category": "utility",
+      "description": {
+        "en": "One-click install + model switch across 20+ coding agents",
+        "zh": "一键安装+切换 Claude Code/Codex/Kimi/Qwen 等 20+ 编码智能体"
+      },
+      "author": "edison7009",
+      "stars": 3012,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "Rust",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "awesome-dsh-plugins",
+      "name": "awesome-dsh-plugins",
+      "npm": null,
+      "repo": "AdamPlatin123/awesome-dsh-plugins",
+      "url": "https://github.com/AdamPlatin123/awesome-dsh-plugins",
+      "category": "utility",
+      "description": {
+        "en": "DSH plugin directory with daily compatibility tracking",
+        "zh": "DSH 插件目录，带每日兼容性跟踪"
+      },
+      "author": "AdamPlatin123",
+      "stars": 51,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Shell",
+      "sourceNote": ""
+    },
+    {
+      "id": "deepseek-harness-applicants",
+      "name": "deepseek-harness-applicants",
+      "npm": null,
+      "repo": "Octo-o-o-o/deepseek-harness-applicants",
+      "url": "https://github.com/Octo-o-o-o/deepseek-harness-applicants",
+      "category": "utility",
+      "description": {
+        "en": "DSH internal-test applicants list",
+        "zh": "DSH 内测申请者名单"
+      },
+      "author": "Octo-o-o-o",
+      "stars": 48,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "awesome-deepseek-harness",
+      "name": "awesome-deepseek-harness",
+      "npm": null,
+      "repo": "0xsline/awesome-deepseek-harness",
+      "url": "https://github.com/0xsline/awesome-deepseek-harness",
+      "category": "utility",
+      "description": {
+        "en": "DSH ecosystem curation: plugins, tools, infra",
+        "zh": "DSH 生态精选：插件、工具与基建"
+      },
+      "author": "0xsline",
+      "stars": 24,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-tianshu-tui",
+      "name": "dsh-tianshu-tui",
+      "npm": null,
+      "repo": "huiliyi37/dsh-tianshu-tui",
+      "url": "https://github.com/huiliyi37/dsh-tianshu-tui",
+      "category": "utility",
+      "description": {
+        "en": "DeepSeek Harness terminal UI",
+        "zh": "DSH 终端 UI（TUI）"
+      },
+      "author": "huiliyi37",
+      "stars": 22,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "agent-skills",
+      "name": "agent-skills",
+      "npm": null,
+      "repo": "GitHubxsy/agent-skills",
+      "url": "https://github.com/GitHubxsy/agent-skills",
+      "category": "utility",
+      "description": {
+        "en": "Reusable skills for AI coding agents",
+        "zh": "面向 AI 编码智能体的可复用 skills 合集"
+      },
+      "author": "GitHubxsy",
+      "stars": 20,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": true,
+      "language": "Python",
+      "sourceNote": "内测伙伴"
+    },
+    {
+      "id": "dsh-at-file",
+      "name": "dsh-at-file",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-at-file",
+      "url": "https://github.com/omdsh-dev/dsh-at-file",
+      "category": "utility",
+      "description": {
+        "en": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts.",
+        "zh": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts."
+      },
+      "author": "omdsh-dev",
+      "stars": 18,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-open-in-vscode",
+      "name": "dsh-open-in-vscode",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-open-in-vscode",
+      "url": "https://github.com/omdsh-dev/dsh-open-in-vscode",
+      "category": "utility",
+      "description": {
+        "en": "Open DeepSeek Harness workspace directories in VS Code directly from the web GUI.",
+        "zh": "Open DeepSeek Harness workspace directories in VS Code directly from the web GUI."
+      },
+      "author": "omdsh-dev",
+      "stars": 18,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-notification",
+      "name": "dsh-notification",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-notification",
+      "url": "https://github.com/omdsh-dev/dsh-notification",
+      "category": "utility",
+      "description": {
+        "en": "Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules.",
+        "zh": "Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules."
+      },
+      "author": "omdsh-dev",
+      "stars": 16,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-ads",
+      "name": "dsh-ads",
+      "npm": null,
+      "repo": "Nagi-ovo/dsh-ads",
+      "url": "https://github.com/Nagi-ovo/dsh-ads",
+      "category": "utility",
+      "description": {
+        "en": "2005-style sidebar ads plugin (parody)",
+        "zh": "2005 年中文站点风格侧栏广告插件（恶搞）"
+      },
+      "author": "Nagi-ovo",
+      "stars": 15,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-group-photo",
+      "name": "dsh-group-photo",
+      "npm": null,
+      "repo": "SenmuuuuW/dsh-group-photo",
+      "url": "https://github.com/SenmuuuuW/dsh-group-photo",
+      "category": "utility",
+      "description": {
+        "en": "DSH 内测收官合影墙：GitHub OAuth 零权限登录 + 冻结白名单校验的拍立得合影站（含 DSH Skill 包装）",
+        "zh": "DSH 内测收官合影墙：GitHub OAuth 零权限登录 + 冻结白名单校验的拍立得合影站（含 DSH Skill 包装）"
+      },
+      "author": "SenmuuuuW",
+      "stars": 10,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "HTML",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-openpencil",
+      "name": "dsh-openpencil",
+      "npm": null,
+      "repo": "ZSeven-W/dsh-openpencil",
+      "url": "https://github.com/ZSeven-W/dsh-openpencil",
+      "category": "utility",
+      "description": {
+        "en": "OpenPencil design preview and editing plugin for DSH",
+        "zh": "OpenPencil design preview and editing plugin for DSH"
+      },
+      "author": "ZSeven-W",
+      "stars": 8,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "oh-dsh-desktop",
+      "name": "oh-dsh-desktop",
+      "npm": null,
+      "repo": "hust-open-atom-club/oh-dsh-desktop",
+      "url": "https://github.com/hust-open-atom-club/oh-dsh-desktop",
+      "category": "utility",
+      "description": {
+        "en": "Extensible macOS DSH workbench with native PTY",
+        "zh": "可扩展的 macOS DSH 工作台（原生 PTY）"
+      },
+      "author": "hust-open-atom-club",
+      "stars": 8,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-visualize",
+      "name": "dsh-visualize",
+      "npm": null,
+      "repo": "Nagi-ovo/dsh-visualize",
+      "url": "https://github.com/Nagi-ovo/dsh-visualize",
+      "category": "utility",
+      "description": {
+        "en": "In-chat generative UI: interactive HTML cards",
+        "zh": "对话内生成式 UI：把交互式 HTML 卡片画进会话"
+      },
+      "author": "Nagi-ovo",
+      "stars": 6,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "awesome-dsh-plugin",
+      "name": "awesome-DSH-plugin",
+      "npm": null,
+      "repo": "Alex-Yanggg/awesome-DSH-plugin",
+      "url": "https://github.com/Alex-Yanggg/awesome-DSH-plugin",
+      "category": "utility",
+      "description": {
+        "en": "Curated list of DSH plugins, extensions and tools",
+        "zh": "精选 DSH 插件/扩展/工具列表"
+      },
+      "author": "Alex-Yanggg",
+      "stars": 4,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": ""
+    },
+    {
+      "id": "oh-my-dsh",
+      "name": "oh-my-dsh",
+      "npm": null,
+      "repo": "LaplaceYoung/oh-my-dsh",
+      "url": "https://github.com/LaplaceYoung/oh-my-dsh",
+      "category": "utility",
+      "description": {
+        "en": "DSH plugin ecosystem (700+ plugins)",
+        "zh": "面向 DSH 的插件生态（700+ 插件）"
+      },
+      "author": "LaplaceYoung",
+      "stars": 4,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-gomoku",
+      "name": "dsh-gomoku",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-gomoku",
+      "url": "https://github.com/omdsh-dev/dsh-gomoku",
+      "category": "utility",
+      "description": {
+        "en": "Play Gomoku against AI in DSH",
+        "zh": "在 DSH 里与 AI 下五子棋"
+      },
+      "author": "omdsh-dev",
+      "stars": 3,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-web-review",
+      "name": "dsh-web-review",
+      "npm": null,
+      "repo": "CanglongCl/dsh-web-review",
+      "url": "https://github.com/CanglongCl/dsh-web-review",
+      "category": "utility",
+      "description": {
+        "en": "DeepSeek Harness Web GUI 的网页预览与元素批注插件，让 AI 根据可视化反馈直接修改前端源码。",
+        "zh": "DeepSeek Harness Web GUI 的网页预览与元素批注插件，让 AI 根据可视化反馈直接修改前端源码。"
+      },
+      "author": "CanglongCl",
+      "stars": 3,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-emoji",
+      "name": "dsh-emoji",
+      "npm": null,
+      "repo": "hellodigua/dsh-emoji",
+      "url": "https://github.com/hellodigua/dsh-emoji",
+      "category": "utility",
+      "description": {
+        "en": "Auto-add emoji to AI replies",
+        "zh": "为 AI 回复自动添加表情"
+      },
+      "author": "hellodigua",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-grok-tui",
+      "name": "dsh-grok-tui",
+      "npm": null,
+      "repo": "chen-001/dsh-grok-tui",
+      "url": "https://github.com/chen-001/dsh-grok-tui",
+      "category": "utility",
+      "description": {
+        "en": "Use dsh via grok-build's TUI",
+        "zh": "用 grok-build 的 TUI 跑 DSH"
+      },
+      "author": "chen-001",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-stock-market",
+      "name": "dsh-stock-market",
+      "npm": null,
+      "repo": "AnacondaKC/dsh-stock-market",
+      "url": "https://github.com/AnacondaKC/dsh-stock-market",
+      "category": "utility",
+      "description": {
+        "en": "Parody: lose money while coding",
+        "zh": "写代码时账户同时亏钱的恶搞插件"
+      },
+      "author": "AnacondaKC",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "top",
+      "name": "Top",
+      "npm": null,
+      "repo": "xiaohai-78/Top",
+      "url": "https://github.com/xiaohai-78/Top",
+      "category": "utility",
+      "description": {
+        "en": "Daily leaderboard for the dsh-external plugin ecosystem",
+        "zh": "dsh-external 插件生态每日榜单"
+      },
+      "author": "xiaohai-78",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "",
+      "sourceNote": ""
+    },
+    {
+      "id": "awesome-dsh-plugin-bruc3van",
+      "name": "awesome-dsh-plugin",
+      "npm": null,
+      "repo": "bruc3van/awesome-dsh-plugin",
+      "url": "https://github.com/bruc3van/awesome-dsh-plugin",
+      "category": "utility",
+      "description": {
+        "en": "Bilingual complete list of the DSH plugin ecosystem",
+        "zh": "双语 DSH 插件生态完整列表"
+      },
+      "author": "bruc3van",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-launcher",
+      "name": "dsh-launcher",
+      "npm": null,
+      "repo": "Ruler4396/dsh-launcher",
+      "url": "https://github.com/Ruler4396/dsh-launcher",
+      "category": "utility",
+      "description": {
+        "en": "WebView2-based DSH launcher",
+        "zh": "基于 WebView2 的 DSH 启动器"
+      },
+      "author": "Ruler4396",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "C#",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-minigames",
+      "name": "dsh-minigames",
+      "npm": null,
+      "repo": "lhh010/dsh-minigames",
+      "url": "https://github.com/lhh010/dsh-minigames",
+      "category": "utility",
+      "description": {
+        "en": "Side game panel (18 offline mini-games)",
+        "zh": "右侧小游戏面板（18 款离线小游戏）"
+      },
+      "author": "lhh010",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-stickers",
+      "name": "dsh-stickers",
+      "npm": null,
+      "repo": "william-jin-cmu/dsh-stickers",
+      "url": "https://github.com/william-jin-cmu/dsh-stickers",
+      "category": "utility",
+      "description": {
+        "en": "Bidirectional sticker reactions",
+        "zh": "双向表情贴纸插件"
+      },
+      "author": "william-jin-cmu",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "oh-my-dsh-wangshunnn",
+      "name": "oh-my-dsh",
+      "npm": null,
+      "repo": "wangshunnn/oh-my-dsh",
+      "url": "https://github.com/wangshunnn/oh-my-dsh",
+      "category": "utility",
+      "description": {
+        "en": "DeepSeek harness plugins",
+        "zh": "DeepSeek harness 插件集"
+      },
+      "author": "wangshunnn",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "",
+      "sourceNote": ""
+    },
+    {
+      "id": "orbis",
+      "name": "orbis",
+      "npm": null,
+      "repo": "icodesign/orbis",
+      "url": "https://github.com/icodesign/orbis",
+      "category": "utility",
+      "description": {
+        "en": "Mobile client for DSH remote control",
+        "zh": "DSH 远程控制的移动客户端"
+      },
+      "author": "icodesign",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "plugin-registry",
+      "name": "plugin-registry",
+      "npm": null,
+      "repo": "vlln/plugin-registry",
+      "url": "https://github.com/vlln/plugin-registry",
+      "category": "utility",
+      "description": {
+        "en": "DSH plugin registry infra: browser panel for official repository plugins",
+        "zh": "DSH 插件生态基建：浏览器面板管理官方 repository 插件"
+      },
+      "author": "vlln",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-101",
+      "name": "dsh-101",
+      "npm": null,
+      "repo": "bill9109/dsh-101",
+      "url": "https://github.com/bill9109/dsh-101",
+      "category": "utility",
+      "description": {
+        "en": "DSH document reading mode",
+        "zh": "DSH 文档阅读模式"
+      },
+      "author": "bill9109",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-desktop-electron",
+      "name": "dsh-desktop-electron",
+      "npm": null,
+      "repo": "Void0312Aurora/dsh-desktop-electron",
+      "url": "https://github.com/Void0312Aurora/dsh-desktop-electron",
+      "category": "utility",
+      "description": {
+        "en": "Cross-platform Electron desktop shell (tray-resident)",
+        "zh": "跨平台 Electron 桌面壳（托盘常驻）"
+      },
+      "author": "Void0312Aurora",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-douyin",
+      "name": "dsh-douyin",
+      "npm": null,
+      "repo": "AnacondaKC/dsh-douyin",
+      "url": "https://github.com/AnacondaKC/dsh-douyin",
+      "category": "utility",
+      "description": {
+        "en": "Sidebar short-video plugin",
+        "zh": "侧栏短视频插件（原生播放器）"
+      },
+      "author": "AnacondaKC",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-launcher-snowcrescenter-tech",
+      "name": "dsh-launcher",
+      "npm": null,
+      "repo": "SnowCrescenter-tech/dsh-launcher",
+      "url": "https://github.com/SnowCrescenter-tech/dsh-launcher",
+      "category": "utility",
+      "description": {
+        "en": "One-click portable DSH launcher (Windows)",
+        "zh": "DSH 一键启动器（Windows 便携免安装）"
+      },
+      "author": "SnowCrescenter-tech",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "",
+      "sourceNote": ""
+    },
+    {
+      "id": "dsh-notebooks",
+      "name": "dsh-notebooks",
+      "npm": null,
+      "repo": "havingautism/dsh-notebooks",
+      "url": "https://github.com/havingautism/dsh-notebooks",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "(无描述)"
+      },
+      "author": "havingautism",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "低星长尾"
+    },
+    {
+      "id": "dsh-plugin-d399",
+      "name": "dsh-plugin-d399",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-d399",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-d399",
+      "category": "utility",
+      "description": {
+        "en": "Pop-up mini-game menu while model generates",
+        "zh": "模型生成时弹出小游戏菜单"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": ""
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "openbiliclaw",
+      "name": "OpenBiliClaw",
+      "npm": null,
+      "repo": "whiteguo233/OpenBiliClaw",
+      "url": "https://github.com/whiteguo233/OpenBiliClaw",
+      "category": "tools",
+      "description": {
+        "en": "Cross-platform AI content discovery agent (Bilibili/XHS/Douyin…)",
+        "zh": "跨平台 AI 内容发现 Agent（B站/小红书/抖音等）"
+      },
+      "author": "whiteguo233",
+      "stars": 1713,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "蹭tag",
+      "watchReason": "蹭tag"
+    },
+    {
+      "id": "loushang",
+      "name": "loushang",
+      "npm": null,
+      "repo": "zhnt/loushang",
+      "url": "https://github.com/zhnt/loushang",
+      "category": "orchestration",
+      "description": {
+        "en": "Python-native AI coding harness (multi-model orchestration)",
+        "zh": "python 原生 AI 编码工作流 harness（多模型编排）"
+      },
+      "author": "zhnt",
+      "stars": 1111,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "tianshu-tui",
+      "name": "Tianshu-Tui",
+      "npm": null,
+      "repo": "huiliyi37/Tianshu-Tui",
+      "url": "https://github.com/huiliyi37/Tianshu-Tui",
+      "category": "utility",
+      "description": {
+        "en": "Tianshu: terminal coding-agent runtime (TUI) for DeepSeek V4",
+        "zh": "天枢：面向 DeepSeek V4 的终端编程智能体运行时（TUI）"
+      },
+      "author": "huiliyi37",
+      "stars": 200,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "learn-workbuddy",
+      "name": "learn-workbuddy",
+      "npm": null,
+      "repo": "adongwanai/learn-workbuddy",
+      "url": "https://github.com/adongwanai/learn-workbuddy",
+      "category": "utility",
+      "description": {
+        "en": "24-chapter tutorial replicating WorkBuddy-style harness",
+        "zh": "从 0 复刻 WorkBuddy 桌面 AI 助手（24 章教程）"
+      },
+      "author": "adongwanai",
+      "stars": 144,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "phi",
+      "name": "phi",
+      "npm": null,
+      "repo": "pulseaiclub/phi",
+      "url": "https://github.com/pulseaiclub/phi",
+      "category": "orchestration",
+      "description": {
+        "en": "Coding agent from pi (sub-agents, hashline edits, permission gate)",
+        "zh": "来自 pi 的编码 Agent（子代理/哈希行编辑/权限门）"
+      },
+      "author": "pulseaiclub",
+      "stars": 65,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Go",
+      "sourceNote": "蹭tag",
+      "watchReason": "蹭tag"
+    },
+    {
+      "id": "deepseek-harness-morlay",
+      "name": "deepseek-harness",
+      "npm": null,
+      "repo": "morlay/deepseek-harness",
+      "url": "https://github.com/morlay/deepseek-harness",
+      "category": "utility",
+      "description": {
+        "en": "Deprecated, redirect to playpen",
+        "zh": "已弃用，重定向到 playpen"
+      },
+      "author": "morlay",
+      "stars": 55,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deepseek-auto-evolving-harness",
+      "name": "deepseek-auto-evolving-harness",
+      "npm": null,
+      "repo": "liuchen6667/deepseek-auto-evolving-harness",
+      "url": "https://github.com/liuchen6667/deepseek-auto-evolving-harness",
+      "category": "orchestration",
+      "description": {
+        "en": "Auto-evolving LLM agent harness (benchmark-driven)",
+        "zh": "自动进化的 LLM agent harness（基准驱动）"
+      },
+      "author": "liuchen6667",
+      "stars": 27,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deepseek-harness-henryz838978",
+      "name": "deepseek-harness",
+      "npm": null,
+      "repo": "HenryZ838978/deepseek-harness",
+      "url": "https://github.com/HenryZ838978/deepseek-harness",
+      "category": "orchestration",
+      "description": {
+        "en": "Python harness for DeepSeek V4 (pip install)",
+        "zh": "DeepSeek V4-Pro/Flash 的 Python harness（pip 安装）"
+      },
+      "author": "HenryZ838978",
+      "stars": 27,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deepseek-v4-flash-0731-vision-dspark-1m-nvfp4-kv-2x-dgx-spark",
+      "name": "DeepSeek-v4-Flash-0731-Vision-DSpark-1M-NVFP4-KV-2x-DGX-Spark",
+      "npm": null,
+      "repo": "tonyd2wild/DeepSeek-v4-Flash-0731-Vision-DSpark-1M-NVFP4-KV-2x-DGX-Spark",
+      "url": "https://github.com/tonyd2wild/DeepSeek-v4-Flash-0731-Vision-DSpark-1M-NVFP4-KV-2x-DGX-Spark",
+      "category": "tools",
+      "description": {
+        "en": "Vision shim + local VLM for V4-Flash",
+        "zh": "给 V4-Flash 加视觉的 OpenAI 兼容 shim + 本地 VLM"
+      },
+      "author": "tonyd2wild",
+      "stars": 22,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "illusion-agent",
+      "name": "illusion-agent",
+      "npm": null,
+      "repo": "YunTaiHua/illusion-agent",
+      "url": "https://github.com/YunTaiHua/illusion-agent",
+      "category": "orchestration",
+      "description": {
+        "en": "AI agent platform (fantasy meets functionality)",
+        "zh": "「幻想与功能相遇」的 AI agent 平台"
+      },
+      "author": "YunTaiHua",
+      "stars": 15,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "蹭tag",
+      "watchReason": "蹭tag"
+    },
+    {
+      "id": "dsh-tianshu-tui-placeholder",
+      "name": "dsh-tianshu-tui-placeholder",
+      "npm": null,
+      "repo": "huiliyi37/dsh-tianshu-tui-placeholder",
+      "url": "https://github.com/huiliyi37/dsh-tianshu-tui-placeholder",
+      "category": "utility",
+      "description": {
+        "en": "Tianshu TUI placeholder repo",
+        "zh": "天枢 TUI 占位仓库"
+      },
+      "author": "huiliyi37",
+      "stars": 12,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "zagens",
+      "name": "zagens",
+      "npm": null,
+      "repo": "didclawapp-ai/zagens",
+      "url": "https://github.com/didclawapp-ai/zagens",
+      "category": "orchestration",
+      "description": {
+        "en": "Open-source agent harness for DeepSeek V4",
+        "zh": "DeepSeek V4 的开源 agent harness"
+      },
+      "author": "didclawapp-ai",
+      "stars": 12,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Rust",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "learn-hermes-agent",
+      "name": "learn-hermes-agent",
+      "npm": null,
+      "repo": "Ericcc-Ma/learn-hermes-agent",
+      "url": "https://github.com/Ericcc-Ma/learn-hermes-agent",
+      "category": "utility",
+      "description": {
+        "en": "12-lesson: build a self-evolving harness from scratch",
+        "zh": "从零构建自进化 agent harness（12 课）"
+      },
+      "author": "Ericcc-Ma",
+      "stars": 11,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deepseek-v4-flash-gb10",
+      "name": "deepseek-v4-flash-gb10",
+      "npm": null,
+      "repo": "hazyumps/deepseek-v4-flash-gb10",
+      "url": "https://github.com/hazyumps/deepseek-v4-flash-gb10",
+      "category": "tools",
+      "description": {
+        "en": "Serve DeepSeek-V4-Flash on 2x GB10 recipe",
+        "zh": "2x NVIDIA GB10 部署 DeepSeek-V4-Flash 配方"
+      },
+      "author": "hazyumps",
+      "stars": 9,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deepact",
+      "name": "deepAct",
+      "npm": null,
+      "repo": "hxs996-beep/deepAct",
+      "url": "https://github.com/hxs996-beep/deepAct",
+      "category": "orchestration",
+      "description": {
+        "en": "CLI coding agent guarding every action",
+        "zh": "每步守卫的 CLI 编码智能体"
+      },
+      "author": "hxs996-beep",
+      "stars": 7,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Go",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "ghostycode",
+      "name": "ghostycode",
+      "npm": null,
+      "repo": "blissito/ghostycode",
+      "url": "https://github.com/blissito/ghostycode",
+      "category": "orchestration",
+      "description": {
+        "en": "DeepSeek V4 terminal coding agent + constitutional harness",
+        "zh": "DeepSeek V4 终端编码智能体 + 宪章式 harness"
+      },
+      "author": "blissito",
+      "stars": 7,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Rust",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deep-pi",
+      "name": "deep-pi",
+      "npm": null,
+      "repo": "christopherarter/deep-pi",
+      "url": "https://github.com/christopherarter/deep-pi",
+      "category": "tools",
+      "description": {
+        "en": "DeepSeek API optimizer on Pi harness",
+        "zh": "Pi harness 上的 DeepSeek API 优化器"
+      },
+      "author": "christopherarter",
+      "stars": 5,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "dsh-find-plugins",
+      "name": "dsh-find-plugins",
+      "npm": null,
+      "repo": "Nagi-ovo/dsh-find-plugins",
+      "url": "https://github.com/Nagi-ovo/dsh-find-plugins",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "Nagi-ovo",
+      "stars": 5,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "flashcoder",
+      "name": "FlashCoder",
+      "npm": null,
+      "repo": "Owen718/FlashCoder",
+      "url": "https://github.com/Owen718/FlashCoder",
+      "category": "orchestration",
+      "description": {
+        "en": "Simple harness for DeepSeek models",
+        "zh": "面向 DeepSeek 模型的简单 harness"
+      },
+      "author": "Owen718",
+      "stars": 5,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "chimera",
+      "name": "chimera",
+      "npm": null,
+      "repo": "coding-chimera/chimera",
+      "url": "https://github.com/coding-chimera/chimera",
+      "category": "orchestration",
+      "description": {
+        "en": "AI coding CLI with CodeGraph impact analysis",
+        "zh": "带 CodeGraph 影响分析的 AI 编码 CLI"
+      },
+      "author": "coding-chimera",
+      "stars": 4,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "ds-forge",
+      "name": "ds-forge",
+      "npm": null,
+      "repo": "liubf21/ds-forge",
+      "url": "https://github.com/liubf21/ds-forge",
+      "category": "orchestration",
+      "description": {
+        "en": "Lightweight agent harness for DeepSeek V4",
+        "zh": "DeepSeek V4 轻量 agent harness"
+      },
+      "author": "liubf21",
+      "stars": 4,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deepseek-v4-flash-0731-sm120",
+      "name": "deepseek-v4-flash-0731-sm120",
+      "npm": null,
+      "repo": "jacklarmer/deepseek-v4-flash-0731-sm120",
+      "url": "https://github.com/jacklarmer/deepseek-v4-flash-0731-sm120",
+      "category": "tools",
+      "description": {
+        "en": "V4-Flash + DSpark speculative recipe",
+        "zh": "DeepSeek-V4-Flash + DSpark speculative 部署配方"
+      },
+      "author": "jacklarmer",
+      "stars": 3,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "dsh-mygo",
+      "name": "dsh-mygo",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-mygo",
+      "url": "https://github.com/omdsh-dev/dsh-mygo",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 3,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "reasonix-hermes",
+      "name": "reasonix-hermes",
+      "npm": null,
+      "repo": "aliatx2017/reasonix-hermes",
+      "url": "https://github.com/aliatx2017/reasonix-hermes",
+      "category": "orchestration",
+      "description": {
+        "en": "DeepSeek coding harness blending reasonix features",
+        "zh": "融合 reasonix 特性的 Deepseek 编码 harness"
+      },
+      "author": "aliatx2017",
+      "stars": 3,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Go",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "whalefall",
+      "name": "whalefall",
+      "npm": null,
+      "repo": "Parker617/whalefall",
+      "url": "https://github.com/Parker617/whalefall",
+      "category": "orchestration",
+      "description": {
+        "en": "Hackable pure-Python local harness (Claude Code style)",
+        "zh": "纯 Python 可 hack 本地 harness（Claude Code 风）"
+      },
+      "author": "Parker617",
+      "stars": 3,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deepagents-mini-harness",
+      "name": "deepagents-mini-harness",
+      "npm": null,
+      "repo": "winsurelab/deepagents-mini-harness",
+      "url": "https://github.com/winsurelab/deepagents-mini-harness",
+      "category": "orchestration",
+      "description": {
+        "en": "Minimal harness built with DeepAgents (5 modules)",
+        "zh": "基于 DeepAgents 的极简 harness（5 模块）"
+      },
+      "author": "winsurelab",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "oh-my-deepseek-harness",
+      "name": "oh-my-deepseek-harness",
+      "npm": null,
+      "repo": "yuanchenglu/oh-my-deepseek-harness",
+      "url": "https://github.com/yuanchenglu/oh-my-deepseek-harness",
+      "category": "utility",
+      "description": {
+        "en": "DeepSeek-optimized plugin for Hermes",
+        "zh": "适用于 Hermes、面向 DeepSeek 优化的插件"
+      },
+      "author": "yuanchenglu",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "puddingagent",
+      "name": "PuddingAgent",
+      "npm": null,
+      "repo": "PuddingAgent/PuddingAgent",
+      "url": "https://github.com/PuddingAgent/PuddingAgent",
+      "category": "orchestration",
+      "description": {
+        "en": "Harness agent system for DeepSeek",
+        "zh": "DeepSeek 的 harness Agent 系统"
+      },
+      "author": "PuddingAgent",
+      "stars": 2,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "C#",
+      "sourceNote": "工具链",
+      "watchReason": "工具链"
+    },
+    {
+      "id": "deepseek-harness-huggingface",
+      "name": "deepseek-harness-huggingface",
+      "npm": null,
+      "repo": "emredeveloper/deepseek-harness-huggingface",
+      "url": "https://github.com/emredeveloper/deepseek-harness-huggingface",
+      "category": "tools",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "emredeveloper",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-auto-approval",
+      "name": "dsh-auto-approval",
+      "npm": null,
+      "repo": "Andy8647/dsh-auto-approval",
+      "url": "https://github.com/Andy8647/dsh-auto-approval",
+      "category": "orchestration",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "Andy8647",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "lujo-mcp",
+      "name": "Lujo-MCP",
+      "npm": null,
+      "repo": "lujoai/Lujo-MCP",
+      "url": "https://github.com/lujoai/Lujo-MCP",
+      "category": "tools",
+      "description": {
+        "en": "MCP-based AI debugging & tracing platform",
+        "zh": "基于 MCP 的 AI 调试追踪平台"
+      },
+      "author": "lujoai",
+      "stars": 1,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "sourceNote": "蹭tag",
+      "watchReason": "蹭tag"
+    },
+    {
+      "id": "7d7d",
+      "name": "7d7d",
+      "npm": null,
+      "repo": "omdsh-dev/7d7d",
+      "url": "https://github.com/omdsh-dev/7d7d",
+      "category": "tools",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "HTML",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-custom-css",
+      "name": "dsh-custom-css",
+      "npm": null,
+      "repo": "AnacondaKC/dsh-custom-css",
+      "url": "https://github.com/AnacondaKC/dsh-custom-css",
+      "category": "ui",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "AnacondaKC",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-deepresearch",
+      "name": "dsh-deepresearch",
+      "npm": null,
+      "repo": "havingautism/dsh-deepresearch",
+      "url": "https://github.com/havingautism/dsh-deepresearch",
+      "category": "orchestration",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "havingautism",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-github-integration",
+      "name": "dsh-github-integration",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-github-integration",
+      "url": "https://github.com/omdsh-dev/dsh-github-integration",
+      "category": "tools",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-hub",
+      "name": "dsh-hub",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-hub",
+      "url": "https://github.com/omdsh-dev/dsh-hub",
+      "category": "utility",
+      "description": {
+        "en": "(no description, placeholder)",
+        "zh": "（无描述，占位）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-hub-workshop",
+      "name": "dsh-hub-workshop",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-hub-workshop",
+      "url": "https://github.com/omdsh-dev/dsh-hub-workshop",
+      "category": "tools",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "CSS",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-mobile",
+      "name": "dsh-mobile",
+      "npm": null,
+      "repo": "lehhair/dsh-mobile",
+      "url": "https://github.com/lehhair/dsh-mobile",
+      "category": "ui",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "lehhair",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-aigc-canvas",
+      "name": "dsh-plugin-aigc-canvas",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-aigc-canvas",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-aigc-canvas",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-anti-ads",
+      "name": "dsh-plugin-anti-ads",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-anti-ads",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-anti-ads",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-auto-blame",
+      "name": "dsh-plugin-auto-blame",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-auto-blame",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-auto-blame",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-better-sidebar-plugin-office",
+      "name": "dsh-plugin-better-sidebar-plugin-office",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-better-sidebar-plugin-office",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-office",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-interpreters",
+      "name": "dsh-plugin-interpreters",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-interpreters",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-interpreters",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-pet-rs",
+      "name": "dsh-plugin-pet-rs",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-pet-rs",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-pet-rs",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Rust",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-sleep",
+      "name": "dsh-plugin-sleep",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-sleep",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-sleep",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-spur",
+      "name": "dsh-plugin-spur",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-spur",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-spur",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-ya-workspace-sidebar",
+      "name": "dsh-plugin-ya-workspace-sidebar",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-ya-workspace-sidebar",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-ya-workspace-sidebar",
+      "category": "utility",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-plugin-yet-another-subagent",
+      "name": "dsh-plugin-yet-another-subagent",
+      "npm": null,
+      "repo": "HuanLinOTO/dsh-plugin-yet-another-subagent",
+      "url": "https://github.com/HuanLinOTO/dsh-plugin-yet-another-subagent",
+      "category": "orchestration",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "HuanLinOTO",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-split-panes",
+      "name": "dsh-split-panes",
+      "npm": null,
+      "repo": "lehhair/dsh-split-panes",
+      "url": "https://github.com/lehhair/dsh-split-panes",
+      "category": "ui",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "lehhair",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-super-injector",
+      "name": "dsh-super-injector",
+      "npm": null,
+      "repo": "yjh051108/dsh-super-injector",
+      "url": "https://github.com/yjh051108/dsh-super-injector",
+      "category": "orchestration",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "yjh051108",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dsh-tool-browser",
+      "name": "dsh-tool-browser",
+      "npm": null,
+      "repo": "omdsh-dev/dsh-tool-browser",
+      "url": "https://github.com/omdsh-dev/dsh-tool-browser",
+      "category": "tools",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "dshfind",
+      "name": "dshfind",
+      "npm": null,
+      "repo": "hikariming/dshfind",
+      "url": "https://github.com/hikariming/dshfind",
+      "category": "utility",
+      "description": {
+        "en": "DSH learning & sharing community",
+        "zh": "DSH 学习与分享社区"
+      },
+      "author": "hikariming",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "MDX",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "omdsh",
+      "name": "omdsh",
+      "npm": null,
+      "repo": "omdsh-dev/omdsh",
+      "url": "https://github.com/omdsh-dev/omdsh",
+      "category": "tools",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "omdsh-runtime",
+      "name": "omdsh-runtime",
+      "npm": null,
+      "repo": "omdsh-dev/omdsh-runtime",
+      "url": "https://github.com/omdsh-dev/omdsh-runtime",
+      "category": "tools",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "remoteops",
+      "name": "RemoteOps",
+      "npm": null,
+      "repo": "jark006/RemoteOps",
+      "url": "https://github.com/jark006/RemoteOps",
+      "category": "tools",
+      "description": {
+        "en": "MCP tool for remote system maintenance",
+        "zh": "面向远程系统维护的 MCP 工具"
+      },
+      "author": "jark006",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Rust",
+      "sourceNote": "蹭tag",
+      "watchReason": "蹭tag"
+    },
+    {
+      "id": "session-teleport",
+      "name": "session-teleport",
+      "npm": null,
+      "repo": "omdsh-dev/session-teleport",
+      "url": "https://github.com/omdsh-dev/session-teleport",
+      "category": "session",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    },
+    {
+      "id": "toybox",
+      "name": "toybox",
+      "npm": null,
+      "repo": "omdsh-dev/toybox",
+      "url": "https://github.com/omdsh-dev/toybox",
+      "category": "tools",
+      "description": {
+        "en": "(no description)",
+        "zh": "（无描述）"
+      },
+      "author": "omdsh-dev",
+      "stars": 0,
+      "license": "unknown",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "占位",
+      "watchReason": "占位"
+    }
+  ]
+}

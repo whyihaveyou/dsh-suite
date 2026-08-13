@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: DeepSeek Harness 官方仓库 / Upstream
+    url: https://github.com/deepseek-ai/deepseek-harness
+    about: DSH 本身的 bug 或功能需求请提给官方仓库，不是这里。
+  - name: 讨论 / Discussions
+    url: https://github.com/whyihaveyou/dsh-suite/discussions
+    about: 想聊生态、提想法、问怎么迁移插件？去 Discussions。

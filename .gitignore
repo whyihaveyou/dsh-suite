@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+*.tsbuildinfo
+
+# logs
+*.log
+
+# env & secrets
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# editor
+.idea/
+.vscode/

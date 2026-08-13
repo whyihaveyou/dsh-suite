@@ -1,0 +1,16 @@
+{
+  "name": "dsh-suite",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bilingual curated DeepSeek Harness plugin directory — daily compat CI, create-dsh-plugin scaffold, own plugins.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "gen:readme": "node scripts/gen-readme.mjs",
+    "compat:check": "node scripts/compat-check.mjs",
+    "compat:check:layer1": "node scripts/compat-check.mjs --layers 1"
+  }
+}

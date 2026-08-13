@@ -1,0 +1,35 @@
+{
+  "name": "{{PKG_NAME}}",
+  "version": "0.1.0",
+  "description": "{{PKG_DESCRIPTION}}",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^{{CORDIS_VERSION}}"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^{{CORDIS_VERSION}}",
+    "@deepseek-ai/dsh-tools": "{{DSH_TOOLS_VERSION}}",
+    "@deepseek-ai/dsh-session": "{{DSH_SESSION_VERSION}}",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0"
+  }
+}

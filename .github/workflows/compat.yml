@@ -1,0 +1,52 @@
+name: compat-check
+
+on:
+  schedule:
+    # UTC 00:00 daily = 08:00 Beijing (CST)
+    - cron: '0 0 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: compat-check
+  cancel-in-progress: false
+
+jobs:
+  compat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          # Node 24 satisfies the widest engines range seen in the catalog
+          # (some plugins require >=22.19 or >=24); DSH itself declares no engines.
+          node-version: 24
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: "Run compatibility check (layer 1 — static peer comparison)"
+        # --write persists ok/broken verdicts back into data/plugins.json.
+        # Layer 2 (install check) and layer 3 (config assembly) are stubbed
+        # in scripts/compat-check.mjs — TODO until DSH stabilizes its API.
+        run: node scripts/compat-check.mjs --write
+
+      - name: Commit report and status changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/compat-report.json data/plugins.json
+          if git diff --cached --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "compat: daily check $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      # TODO(compat): open an issue via actions/github-script when any plugin
+      # flips ok -> broken (architecture §6 step 5). Deferred until layer 2/3
+      # are live so the issue body can carry the failing layer's details.

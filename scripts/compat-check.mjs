@@ -163,8 +163,8 @@ function npmViewJson(pkg, fields, timeoutMs = 12000) {
 function isNpmTarget(name) {
   if (!name) return false;
   if (/^(https?:|git\+|file:|workspace:|link:)/i.test(name)) return false;
-  if (name.includes('/')) return false; // scoped names use @scope/name; a bare slash means repo path
-  if (name.startsWith('@')) return true; // scoped
+  if (name.startsWith('@')) return true; // scoped package: @scope/name (contains '/', must check first)
+  if (name.includes('/')) return false; // non-scoped bare slash -> owner/repo git path
   return true;
 }
 

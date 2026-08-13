@@ -1,6 +1,6 @@
 {
   "name": "@dsh-suite/plugin-session-export",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSH plugin: export the append-only session log as human-readable Markdown or HTML, grouped by trajectory source (system prompt / reasoning / tool calls / subagent).",
   "license": "MIT",
   "type": "module",

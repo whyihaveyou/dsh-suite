@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-13T14:49:08.015Z",
+  "generated_at": "2026-08-13T15:47:55.432Z",
   "repo": "whyihaveyou/dsh-suite",
   "totals": {
-    "curated": 164,
+    "curated": 167,
     "watchlist": 57,
-    "featured": 12
+    "featured": 15
   },
   "plugins": [
     {
@@ -1845,6 +1845,24 @@
       "watchReason": ""
     },
     {
+      "id": "plugin-session-export",
+      "name": "plugin-session-export",
+      "repo": "whyihaveyou/dsh-suite",
+      "url": "https://github.com/whyihaveyou/dsh-suite",
+      "category": "session",
+      "desc_en": "Export the append-only session log as human-readable Markdown / HTML, grouped by trajectory source (system prompt / reasoning / tool calls / subagent).",
+      "desc_zh": "把 append-only 会话日志导出成人读的 Markdown / HTML，按来源分组渲染（系统提示 / 思维链 / 工具调用 / 子agent）。",
+      "author": "whyihaveyou",
+      "stars": 0,
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "isOfficialBeta": false,
+      "compatStatus": "ok",
+      "installCmd": "dsh plugin add @dsh-suite/plugin-session-export",
+      "watchReason": ""
+    },
+    {
       "id": "dsh-vision-toolkit",
       "name": "dsh-vision-toolkit",
       "repo": "Anionex/dsh-vision-toolkit",
@@ -2853,6 +2871,24 @@
       "watchReason": ""
     },
     {
+      "id": "create-dsh-plugin",
+      "name": "create-dsh-plugin",
+      "repo": "whyihaveyou/dsh-suite",
+      "url": "https://github.com/whyihaveyou/dsh-suite",
+      "category": "utility",
+      "desc_en": "Scaffold a DeepSeek Harness (DSH) plugin in seconds — tool / events / webui templates, next-tag version pinning, and a built-in --verify smoke test.",
+      "desc_zh": "一键脚手架生成 DeepSeek Harness (DSH) 插件：tool / events / webui 三套模板、next 标签版本锁定、内置 --verify 冒烟测试。",
+      "author": "whyihaveyou",
+      "stars": 0,
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "isOfficialBeta": false,
+      "compatStatus": "ok",
+      "installCmd": "npm create dsh-plugin@latest",
+      "watchReason": ""
+    },
+    {
       "id": "dsh-101",
       "name": "dsh-101",
       "repo": "bill9109/dsh-101",
@@ -2958,6 +2994,24 @@
       "isOfficialBeta": false,
       "compatStatus": "unknown",
       "installCmd": "dsh plugin add git+https://github.com/HuanLinOTO/dsh-plugin-d399",
+      "watchReason": ""
+    },
+    {
+      "id": "plugin-notify",
+      "name": "plugin-notify",
+      "repo": "whyihaveyou/dsh-suite",
+      "url": "https://github.com/whyihaveyou/dsh-suite",
+      "category": "utility",
+      "desc_en": "Send IM webhook + local notifications on turn completion / error / approval (Feishu / WeCom / DingTalk / Slack / Discord / custom).",
+      "desc_zh": "回合完成 / 出错 / 待审批时，把通知推到 IM webhook（飞书 / 企业微信 / 钉钉 / Slack / Discord / 自定义）+ 本机系统通知。",
+      "author": "whyihaveyou",
+      "stars": 0,
+      "language": "TypeScript",
+      "license": "MIT",
+      "featured": true,
+      "isOfficialBeta": false,
+      "compatStatus": "ok",
+      "installCmd": "dsh plugin add @dsh-suite/plugin-notify",
       "watchReason": ""
     }
   ],

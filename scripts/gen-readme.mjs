@@ -139,8 +139,11 @@ function renderCatalog(plugins, lang) {
 
 function inject(template, catalogMarkdown, pluginCount) {
   let s = template;
-  // Replace badge count placeholder.
+  // Badge count: handle the first-run placeholder AND re-derive every run.
+  // The shields badge URL embeds the count, so it must not be a one-shot
+  // replacement (otherwise re-runs leave a stale plugins-<N>).
   s = s.split(COUNT_PLACEHOLDER).join(String(pluginCount));
+  s = s.replace(/(badge\/plugins-)\d+(-)/, `$1${pluginCount}$2`);
   // Replace the marker-delimited region (must already exist).
   const startIdx = s.indexOf(CATALOG_START);
   const endIdx = s.indexOf(CATALOG_END);

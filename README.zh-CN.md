@@ -1,7 +1,7 @@
 # dsh-suite
 
 ![GitHub stars](https://img.shields.io/github/stars/whyihaveyou/dsh-suite?style=flat-square&color=facc15)
-![Plugins](https://img.shields.io/badge/plugins-164-facc15?style=flat-square)
+![Plugins](https://img.shields.io/badge/plugins-167-facc15?style=flat-square)
 ![Daily compat](https://img.shields.io/github/actions/workflow/status/whyihaveyou/dsh-suite/compat.yml?branch=main&label=daily-compat-check&style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-3b82f6?style=flat-square)
 
@@ -54,6 +54,9 @@ npm create dsh-plugin@latest my-plugin
 | [distill](https://github.com/LoserFox/distill) | 7 | ⚪ unknown | 自动对话蒸馏：后台 subagent 反省 + 技能更新 |
 | [dsh-share](https://github.com/hellodigua/dsh-share) | 6 | ⚪ unknown | DSH 对话分享插件 |
 | [dsh-acp-for-bitfun](https://github.com/bobleer/dsh-acp-for-bitfun) | 5 | ⚪ unknown | BitFun 与 DSH ACP 交互对接 |
+| [plugin-session-export](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | 把 append-only 会话日志导出成人读的 Markdown / HTML，按来源分组渲染（系统提示 / 思维链 / 工具调用 / 子agent）。 |
+| [create-dsh-plugin](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | 一键脚手架生成 DeepSeek Harness (DSH) 插件：tool / events / webui 三套模板、next 标签版本锁定、内置 --verify 冒烟测试。 |
+| [plugin-notify](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | 回合完成 / 出错 / 待审批时，把通知推到 IM webhook（飞书 / 企业微信 / 钉钉 / Slack / Discord / 自定义）+ 本机系统通知。 |
 
 ### 🧰 工具
 
@@ -171,6 +174,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-sidechain](https://github.com/Buyi-wsgzg/dsh-sidechain) | 0 | ⚪ unknown | 侧会话插件：/side 持续性 + /btw 一次性 |
 | [dsh-tool-approval](https://github.com/ilharp/dsh-tool-approval) | 0 | ⚪ unknown | 手动审批（Manual/Ask 模式） |
 | [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) | 0 | ⚪ unknown | DSH Web 轮次导航插件 |
+| [plugin-session-export](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | 把 append-only 会话日志导出成人读的 Markdown / HTML，按来源分组渲染（系统提示 / 思维链 / 工具调用 / 子agent）。 |
 
 ### 🧠 模型
 
@@ -242,15 +246,17 @@ npm create dsh-plugin@latest my-plugin
 | [oh-my-dsh](https://github.com/wangshunnn/oh-my-dsh) | 1 | ⚪ unknown | DeepSeek harness 插件集 |
 | [orbis](https://github.com/icodesign/orbis) | 1 | ⚪ unknown | DSH 远程控制的移动客户端 |
 | [plugin-registry](https://github.com/vlln/plugin-registry) | 1 | ⚪ unknown | DSH 插件生态基建：浏览器面板管理官方 repository 插件 |
+| [create-dsh-plugin](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | 一键脚手架生成 DeepSeek Harness (DSH) 插件：tool / events / webui 三套模板、next 标签版本锁定、内置 --verify 冒烟测试。 |
 | [dsh-101](https://github.com/bill9109/dsh-101) | 0 | ⚪ unknown | DSH 文档阅读模式 |
 | [dsh-desktop-electron](https://github.com/Void0312Aurora/dsh-desktop-electron) | 0 | ⚪ unknown | 跨平台 Electron 桌面壳（托盘常驻） |
 | [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) | 0 | ⚪ unknown | 侧栏短视频插件（原生播放器） |
 | [dsh-launcher](https://github.com/SnowCrescenter-tech/dsh-launcher) | 0 | ⚪ unknown | DSH 一键启动器（Windows 便携免安装） |
 | [dsh-notebooks](https://github.com/havingautism/dsh-notebooks) | 0 | ⚪ unknown | (无描述) |
 | [dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) | 0 | ⚪ unknown | 模型生成时弹出小游戏菜单 |
+| [plugin-notify](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | 回合完成 / 出错 / 待审批时，把通知推到 IM webhook（飞书 / 企业微信 / 钉钉 / Slack / Discord / 自定义）+ 本机系统通知。 |
 
 > 徽章含义：🟢 兼容 · 🔴 不兼容 · ⚪ 未实测 · ⚫ 弃坑。
-> 共 164 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
+> 共 167 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
 <!-- CATALOG:END -->
 
 ## 兼容性

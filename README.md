@@ -1,7 +1,7 @@
 # dsh-suite
 
 ![GitHub stars](https://img.shields.io/github/stars/whyihaveyou/dsh-suite?style=flat-square&color=facc15)
-![Plugins](https://img.shields.io/badge/plugins-164-facc15?style=flat-square)
+![Plugins](https://img.shields.io/badge/plugins-167-facc15?style=flat-square)
 ![Daily compat](https://img.shields.io/github/actions/workflow/status/whyihaveyou/dsh-suite/compat.yml?branch=main&label=daily-compat-check&style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-3b82f6?style=flat-square)
 
@@ -54,6 +54,9 @@ npm create dsh-plugin@latest my-plugin
 | [distill](https://github.com/LoserFox/distill) | 7 | ⚪ unknown | Auto conversation distillation: background subagent reflection |
 | [dsh-share](https://github.com/hellodigua/dsh-share) | 6 | ⚪ unknown | DSH conversation sharing plugin |
 | [dsh-acp-for-bitfun](https://github.com/bobleer/dsh-acp-for-bitfun) | 5 | ⚪ unknown | BitFun ↔ DSH ACP bridge |
+| [plugin-session-export](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | Export the append-only session log as human-readable Markdown / HTML, grouped by trajectory source (system prompt / reasoning / t… |
+| [create-dsh-plugin](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | Scaffold a DeepSeek Harness (DSH) plugin in seconds — tool / events / webui templates, next-tag version pinning, and a built-in -… |
+| [plugin-notify](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | Send IM webhook + local notifications on turn completion / error / approval (Feishu / WeCom / DingTalk / Slack / Discord / custom… |
 
 ### 🧰 Tools
 
@@ -171,6 +174,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-sidechain](https://github.com/Buyi-wsgzg/dsh-sidechain) | 0 | ⚪ unknown | Side-chain sessions: /side persistent + /btw one-off |
 | [dsh-tool-approval](https://github.com/ilharp/dsh-tool-approval) | 0 | ⚪ unknown | Manual approval (Manual/Ask mode) |
 | [dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) | 0 | ⚪ unknown | DSH Web turn navigation plugin |
+| [plugin-session-export](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | Export the append-only session log as human-readable Markdown / HTML, grouped by trajectory source (system prompt / reasoning / t… |
 
 ### 🧠 LLM
 
@@ -242,15 +246,17 @@ npm create dsh-plugin@latest my-plugin
 | [oh-my-dsh](https://github.com/wangshunnn/oh-my-dsh) | 1 | ⚪ unknown | DeepSeek harness plugins |
 | [orbis](https://github.com/icodesign/orbis) | 1 | ⚪ unknown | Mobile client for DSH remote control |
 | [plugin-registry](https://github.com/vlln/plugin-registry) | 1 | ⚪ unknown | DSH plugin registry infra: browser panel for official repository plugins |
+| [create-dsh-plugin](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | Scaffold a DeepSeek Harness (DSH) plugin in seconds — tool / events / webui templates, next-tag version pinning, and a built-in -… |
 | [dsh-101](https://github.com/bill9109/dsh-101) | 0 | ⚪ unknown | DSH document reading mode |
 | [dsh-desktop-electron](https://github.com/Void0312Aurora/dsh-desktop-electron) | 0 | ⚪ unknown | Cross-platform Electron desktop shell (tray-resident) |
 | [dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) | 0 | ⚪ unknown | Sidebar short-video plugin |
 | [dsh-launcher](https://github.com/SnowCrescenter-tech/dsh-launcher) | 0 | ⚪ unknown | One-click portable DSH launcher (Windows) |
 | [dsh-notebooks](https://github.com/havingautism/dsh-notebooks) | 0 | ⚪ unknown | (no description) |
 | [dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) | 0 | ⚪ unknown | Pop-up mini-game menu while model generates |
+| [plugin-notify](https://github.com/whyihaveyou/dsh-suite) | 0 | 🟢 ok | Send IM webhook + local notifications on turn completion / error / approval (Feishu / WeCom / DingTalk / Slack / Discord / custom… |
 
 > Badges: 🟢 compatible · 🔴 broken · ⚪ unverified · ⚫ unmaintained.
-> 164 entries total, grouped by category, sorted by ⭐ within each. Schema dictionary: [docs/catalog-schema.md](docs/catalog-schema.md).
+> 167 entries total, grouped by category, sorted by ⭐ within each. Schema dictionary: [docs/catalog-schema.md](docs/catalog-schema.md).
 <!-- CATALOG:END -->
 
 ## Compatibility

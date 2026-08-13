@@ -1,10 +1,10 @@
 {
   "_meta": {
     "schema_version": "1.0",
-    "generated_at": "2026-08-13T22:30:00+08:00",
+    "generated_at": "2026-08-13T23:47:41+08:00",
     "source": "research/plugins-catalog.json (Eco-Scout, 222 entries verified)",
     "totals": {
-      "plugins": 164,
+      "plugins": 167,
       "watchlist": 57
     },
     "category_mapping": {
@@ -3300,6 +3300,42 @@
       "sourceNote": ""
     },
     {
+      "id": "plugin-session-export",
+      "name": "plugin-session-export",
+      "npm": "@dsh-suite/plugin-session-export",
+      "repo": "whyihaveyou/dsh-suite",
+      "url": "https://github.com/whyihaveyou/dsh-suite",
+      "category": "session",
+      "description": {
+        "en": "Export the append-only session log as human-readable Markdown / HTML, grouped by trajectory source (system prompt / reasoning / tool calls / subagent).",
+        "zh": "把 append-only 会话日志导出成人读的 Markdown / HTML，按来源分组渲染（系统提示 / 思维链 / 工具调用 / 子agent）。"
+      },
+      "author": "whyihaveyou",
+      "stars": 0,
+      "license": "MIT",
+      "tags": [
+        "session",
+        "export",
+        "markdown"
+      ],
+      "dsh": {
+        "minVersion": "0.1.0-rc.6",
+        "peerCordis": "^4.0.1",
+        "node": ""
+      },
+      "compat": {
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-13",
+        "note": ""
+      },
+      "install": "dsh plugin add @dsh-suite/plugin-session-export",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
       "id": "dsh-vision-toolkit",
       "name": "dsh-vision-toolkit",
       "npm": null,
@@ -5092,6 +5128,42 @@
       "sourceNote": ""
     },
     {
+      "id": "create-dsh-plugin",
+      "name": "create-dsh-plugin",
+      "npm": "create-dsh-plugin",
+      "repo": "whyihaveyou/dsh-suite",
+      "url": "https://github.com/whyihaveyou/dsh-suite",
+      "category": "utility",
+      "description": {
+        "en": "Scaffold a DeepSeek Harness (DSH) plugin in seconds — tool / events / webui templates, next-tag version pinning, and a built-in --verify smoke test.",
+        "zh": "一键脚手架生成 DeepSeek Harness (DSH) 插件：tool / events / webui 三套模板、next 标签版本锁定、内置 --verify 冒烟测试。"
+      },
+      "author": "whyihaveyou",
+      "stars": 0,
+      "license": "MIT",
+      "tags": [
+        "scaffold",
+        "cli",
+        "tooling"
+      ],
+      "dsh": {
+        "minVersion": "0.1.0-rc.6",
+        "peerCordis": "",
+        "node": "^22.19 || >=24"
+      },
+      "compat": {
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-13",
+        "note": ""
+      },
+      "install": "npm create dsh-plugin@latest",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": ""
+    },
+    {
       "id": "dsh-101",
       "name": "dsh-101",
       "npm": null,
@@ -5281,6 +5353,42 @@
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
+      "sourceNote": ""
+    },
+    {
+      "id": "plugin-notify",
+      "name": "plugin-notify",
+      "npm": "@dsh-suite/plugin-notify",
+      "repo": "whyihaveyou/dsh-suite",
+      "url": "https://github.com/whyihaveyou/dsh-suite",
+      "category": "utility",
+      "description": {
+        "en": "Send IM webhook + local notifications on turn completion / error / approval (Feishu / WeCom / DingTalk / Slack / Discord / custom).",
+        "zh": "回合完成 / 出错 / 待审批时，把通知推到 IM webhook（飞书 / 企业微信 / 钉钉 / Slack / Discord / 自定义）+ 本机系统通知。"
+      },
+      "author": "whyihaveyou",
+      "stars": 0,
+      "license": "MIT",
+      "tags": [
+        "notification",
+        "webhook",
+        "im"
+      ],
+      "dsh": {
+        "minVersion": "0.1.0-rc.6",
+        "peerCordis": "^4.0.1",
+        "node": ""
+      },
+      "compat": {
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-13",
+        "note": ""
+      },
+      "install": "dsh plugin add @dsh-suite/plugin-notify",
+      "featured": true,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
       "sourceNote": ""
     }
   ],

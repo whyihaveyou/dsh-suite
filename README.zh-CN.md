@@ -11,6 +11,8 @@
 
 `dsh-suite` 是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）插件的**中英双语精选目录**——每天用 CI 对照最新 DSH 版本重测一遍兼容性——外加 `create-dsh-plugin` 脚手架和几个自研插件。
 
+![demo：一条命令生成并验证一个 DSH 插件](site/assets/demo.gif)
+
 ---
 
 ## 为什么做 dsh-suite

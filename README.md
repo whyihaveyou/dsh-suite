@@ -11,6 +11,8 @@
 
 `dsh-suite` is a bilingual, curated directory of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH) plugins — re-checked against the latest DSH release every day by CI — plus a `create-dsh-plugin` scaffolder and a small set of first-party plugins.
 
+![demo: scaffold and verify a DSH plugin in one command](site/assets/demo.gif)
+
 ---
 
 ## Why dsh-suite

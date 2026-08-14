@@ -12,7 +12,7 @@
 #     intentionally lags until the next daily compat run; that skew is fine
 #     because compat-report is a derived artifact, not the source of truth.
 #
-# README / site idempotency: Test-Runner's CI asserts README.md + README.zh-CN.md
+# README / site idempotency: Test-Runner's CI asserts README.md + README.en.md
 # and the site artifacts always match data/plugins.json. Because this commit is
 # [skip ci]-tagged (no Pages rebuild via push), we regenerate BOTH here —
 # scripts/gen-readme.mjs (README tables) and site/build.mjs (site catalog/html) —
@@ -64,7 +64,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/plugins.json README.md README.zh-CN.md site/
+          git add data/plugins.json README.md README.en.md site/
           if git diff --cached --quiet; then
             echo "no data change — nothing to commit"
             exit 0

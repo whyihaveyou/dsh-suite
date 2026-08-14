@@ -102,12 +102,12 @@ function checkBuild() {
 function checkReadme() {
   const t0 = ts()
   runOk('node', ['scripts/gen-readme.mjs'], { cwd: ROOT })
-  const r = run('git', ['diff', '--exit-code', '--', 'README.md', 'README.zh-CN.md'], { cwd: ROOT })
+  const r = run('git', ['diff', '--exit-code', '--', 'README.md', 'README.en.md'], { cwd: ROOT })
   const ms = ts() - t0
   if (r.code !== 0) {
     const detail = (r.stdout || '').split('\n').slice(0, 40).join('\n')
     const err = new Error(
-      'README drift: data/plugins.json changed but README.md / README.zh-CN.md were not regenerated.\n' +
+      'README drift: data/plugins.json changed but README.md / README.en.md were not regenerated.\n' +
       'Fix: run `node scripts/gen-readme.mjs` and commit the regenerated READMEs.\n' +
       `--- diff (first 40 lines) ---\n${detail}`,
     )

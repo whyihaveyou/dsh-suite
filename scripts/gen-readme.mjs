@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * gen-readme.mjs — statically generate the bilingual plugin-catalog tables
- * in README.md (English-primary) and README.zh-CN.md (Chinese-primary).
+ * in README.md (Chinese-primary, default) and README.en.md (English).
  *
  * Single source of truth: data/plugins.json. Never hand-edit the tables —
  * re-run this script after touching data/plugins.json.
@@ -19,8 +19,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
 const DATA_PATH = join(ROOT, 'data', 'plugins.json');
-const README_EN = join(ROOT, 'README.md');
-const README_ZH = join(ROOT, 'README.zh-CN.md');
+const README_EN = join(ROOT, 'README.en.md');
+const README_ZH = join(ROOT, 'README.md');
 
 const CATALOG_START = '<!-- CATALOG:START -->';
 const CATALOG_END = '<!-- CATALOG:END -->';
@@ -187,8 +187,8 @@ function main() {
 
   console.log('gen-readme: OK');
   console.log(`  data/plugins.json: ${plugins.length} plugins (+${watchlistCount} watchlist), ${featuredCount} featured`);
-  console.log(`  README.md          -> ${enRows} table rows (${expectedRows} expected)`);
-  console.log(`  README.zh-CN.md    -> ${zhRows} table rows (${expectedRows} expected)`);
+  console.log(`  README.en.md       -> ${enRows} table rows (${expectedRows} expected)`);
+  console.log(`  README.md          -> ${zhRows} table rows (${expectedRows} expected)`);
 
   if (enRows !== expectedRows || zhRows !== expectedRows) {
     console.error('  ERROR: table row count != expected — data drift detected.');

@@ -1,6 +1,6 @@
 # 贡献指南 / Contributing
 
-> 🌐 返回目录首页：[English README](README.md) · [中文 README](README.zh-CN.md)
+> 🌐 返回目录首页：[中文 README](README.md) · [English README](README.en.md)
 
 > 中文为主，English below each section. 先看 [目录收录标准](#目录收录标准)，再决定是「收录第三方插件」还是「开发自研插件」。
 

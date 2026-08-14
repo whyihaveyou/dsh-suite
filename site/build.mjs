@@ -139,6 +139,32 @@ const LEARN_RESOURCES = [
 /* 文案（中英双语，对齐 research/launch-kit.md §1 §3）                  */
 /* ------------------------------------------------------------------ */
 
+  const THEME_SCRIPT = `<script>
+  (function () {
+    var current = null;
+    try { current = localStorage.getItem('dshTheme'); } catch (e) {}
+    if (current !== 'light' && current !== 'dark') {
+      current = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+    }
+    function apply(t) {
+      current = t;
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('dshTheme', t); } catch (e) {}
+      var btns = document.querySelectorAll('[data-theme-toggle]');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].textContent = t === 'dark' ? '\u{1F319}' : '\u{2600}\u{FE0F}';
+        btns[i].setAttribute('aria-label', t === 'dark' ? '\u5207\u6362\u5230\u6d45\u8272\u6a21\u5f0f' : '\u5207\u6362\u5230\u6df1\u8272\u6a21\u5f0f');
+      }
+    }
+    apply(current);
+    document.addEventListener('DOMContentLoaded', function () { apply(current); });
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-theme-toggle]');
+      if (!b) return;
+      apply(current === 'dark' ? 'light' : 'dark');
+    });
+  })();
+</script>`;
 const SEO_KEYWORDS = 'DeepSeek Harness plugins, dsh 插件, dsh-plugin, dsh, deepseek, awesome-list, plugins, cordis, scaffold, agent-framework, developer-tools';
 
 const I18N = {
@@ -613,6 +639,7 @@ function renderPage(t, data, baseUrl, snapshot) {
   <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
+  ${THEME_SCRIPT}
   ${langRedirect}
 </head>
 <body>
@@ -622,6 +649,7 @@ function renderPage(t, data, baseUrl, snapshot) {
       <a class="nav-lb" href="${isZh(t) ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
       <a class="nav-lb" href="https://whyihaveyou.github.io/dsh-themes/" target="_blank" rel="noopener noreferrer">${isZh(t) ? '皮肤画廊' : 'Themes'}</a>
       <a class="nav-lb" href="${isZh(t) ? 'learn-zh.html' : 'learn.html'}">${esc(t.learnNav)}</a>
+      <button class="nav-theme" type="button" data-theme-toggle aria-label="切换主题">🌙</button>
       <a class="nav-lang" href="${t.otherHref}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
     </nav>
@@ -971,6 +999,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
   <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
+  ${THEME_SCRIPT}
   ${redirect}
 </head>
 <body>
@@ -979,6 +1008,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
     <nav class="nav">
       <a class="nav-lb" href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbDir)}</a>
       <a class="nav-lb" href="${isZ ? 'learn-zh.html' : 'learn.html'}">${esc(t.learnNav)}</a>
+      <button class="nav-theme" type="button" data-theme-toggle aria-label="切换主题">🌙</button>
       <a class="nav-lang" href="${isZ ? 'stars.html' : 'stars-zh.html'}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
     </nav>
@@ -1137,6 +1167,7 @@ function renderLearnPage(t, data, baseUrl) {
   <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
+  ${THEME_SCRIPT}
   ${redirect}
 </head>
 <body>
@@ -1145,6 +1176,7 @@ function renderLearnPage(t, data, baseUrl) {
     <nav class="nav">
       <a class="nav-lb" href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbDir)}</a>
       <a class="nav-lb" href="${isZ ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
+      <button class="nav-theme" type="button" data-theme-toggle aria-label="切换主题">🌙</button>
       <a class="nav-lang" href="${isZ ? 'learn.html' : 'learn-zh.html'}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
     </nav>

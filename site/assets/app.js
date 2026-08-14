@@ -199,7 +199,7 @@
       canvas.width = w * scale;
       canvas.height = h * scale;
       var ctx = canvas.getContext('2d');
-      ctx.fillStyle = '#0b0f1a';
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() || '#0b0f1a';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
       var a = document.createElement('a');

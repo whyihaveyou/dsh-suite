@@ -458,3 +458,48 @@ section { margin-bottom: 48px; }
 .fp-note { margin: 0; font-size: 12px; color: var(--faint); }
 .fp-img { width: 300px; max-width: 42%; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); }
 @media (max-width: 880px) { .fp-img { width: 100%; max-width: 100%; } }
+
+
+/* ---------- 日间模式（light theme） ---------- */
+html[data-theme="light"] {
+  --bg: #f4f6fb;
+  --bg-soft: #eef1f8;
+  --surface: #ffffff;
+  --border: #ccd6e4;
+  --border-soft: #dde4ef;
+  --text: #1b2536;
+  --muted: #5a6a82;
+  --faint: #7b8aa0;
+  --brand: #4d6bfe;
+  --brand-bright: #3d5af1;
+  --brand-deep: #3552e0;
+  --brand-soft: rgba(77, 107, 254, .12);
+  --green: #138a5c;
+  --yellow: #a87808;
+  --blue: #2563eb;
+  --red: #d92d20;
+  --violet: #7c5cf0;
+  --shadow: 0 8px 24px rgba(15, 23, 42, .10);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, .16);
+  --header-bg: rgba(255, 255, 255, .92);
+  color-scheme: light;
+}
+html[data-theme="light"] .slogan {
+  background-image: linear-gradient(120deg, #101c36, #3d5af1 55%, #4d6bfe);
+}
+html[data-theme="light"] .mascot-card { background: transparent; }
+html[data-theme="light"] .hero-badges .hbadge { background: #fff; }
+html[data-theme="light"] .store-panel,
+html[data-theme="light"] .fp-card { background: linear-gradient(135deg, rgba(77, 107, 254, .08), rgba(52, 211, 153, .04)), #fff; }
+html[data-theme="light"] .btn-outline { border-color: var(--border); }
+html[data-theme="light"] code.install-cmd,
+html[data-theme="light"] .store-cmd,
+html[data-theme="light"] .cta-cmd { background: var(--bg-soft); }
+
+/* 主题切换按钮 */
+.nav-theme {
+  padding: 6px 10px; font-size: 15px; line-height: 1; cursor: pointer;
+  background: none; border: 1px solid var(--border); border-radius: var(--radius-badge);
+  color: var(--text); transition: border-color .15s, background .15s;
+}
+.nav-theme:hover { border-color: var(--brand); background: var(--brand-soft); }

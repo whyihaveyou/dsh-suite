@@ -24,6 +24,32 @@
   <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
+  <script>
+  (function () {
+    var current = null;
+    try { current = localStorage.getItem('dshTheme'); } catch (e) {}
+    if (current !== 'light' && current !== 'dark') {
+      current = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+    }
+    function apply(t) {
+      current = t;
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('dshTheme', t); } catch (e) {}
+      var btns = document.querySelectorAll('[data-theme-toggle]');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].textContent = t === 'dark' ? '🌙' : '☀️';
+        btns[i].setAttribute('aria-label', t === 'dark' ? '切换到浅色模式' : '切换到深色模式');
+      }
+    }
+    apply(current);
+    document.addEventListener('DOMContentLoaded', function () { apply(current); });
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-theme-toggle]');
+      if (!b) return;
+      apply(current === 'dark' ? 'light' : 'dark');
+    });
+  })();
+</script>
   
 </head>
 <body>
@@ -33,6 +59,7 @@
       <a class="nav-lb" href="stars-zh.html">Star 榜</a>
       <a class="nav-lb" href="https://whyihaveyou.github.io/dsh-themes/" target="_blank" rel="noopener noreferrer">皮肤画廊</a>
       <a class="nav-lb" href="learn-zh.html">学习</a>
+      <button class="nav-theme" type="button" data-theme-toggle aria-label="切换主题">🌙</button>
       <a class="nav-lang" href="index.html" onclick="try{localStorage.setItem('dshLang','en')}catch(e){}">English</a>
       <a class="nav-gh" href="https://github.com/whyihaveyou/dsh-suite" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
     </nav>

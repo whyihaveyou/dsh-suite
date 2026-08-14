@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-14T01:22:22Z",
+  "generated_at": "2026-08-14T02:20:55Z",
   "dshVersion": "0.1.0-rc.6",
   "cordisVersion": "4.0.1",
-  "nodeVersion": "24.19.0",
+  "nodeVersion": "22.17.0",
   "layers_run": [
     1
   ],
   "summary": {
-    "total": 224,
-    "ok": 10,
-    "broken": 0,
-    "unknown": 31,
-    "unavailable": 183,
+    "total": 821,
+    "ok": 41,
+    "broken": 29,
+    "unknown": 130,
+    "unavailable": 621,
     "skipped": 0
   },
   "summary_catalog": {
-    "total": 167,
-    "ok": 8,
-    "broken": 0,
-    "unknown": 24,
-    "unavailable": 135,
+    "total": 538,
+    "ok": 32,
+    "broken": 24,
+    "unknown": 60,
+    "unavailable": 422,
     "skipped": 0
   },
   "summary_watchlist": {
-    "total": 57,
-    "ok": 2,
-    "broken": 0,
-    "unknown": 7,
-    "unavailable": 48,
+    "total": 283,
+    "ok": 9,
+    "broken": 5,
+    "unknown": 70,
+    "unavailable": 199,
     "skipped": 0
   },
   "results": [
@@ -36,8 +36,8 @@
       "name": "open-managed-agents",
       "npmName": "open-managed-agents",
       "section": "catalog",
-      "verdict": "unknown",
-      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \">=22.19.0\"",
       "pkgVersion": "0.1.2",
       "peerCordis": null,
       "peerDsh": null,
@@ -1084,8 +1084,8 @@
       "name": "dsh-advisor",
       "npmName": "dsh-advisor",
       "section": "catalog",
-      "verdict": "ok",
-      "note": "",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19 || >=24\"",
       "pkgVersion": "0.1.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
@@ -1317,8 +1317,8 @@
       "name": "dsh-grok-tui",
       "npmName": "dsh-grok-tui",
       "section": "catalog",
-      "verdict": "ok",
-      "note": "",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
       "pkgVersion": "0.3.8",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
@@ -1415,8 +1415,8 @@
       "name": "create-dsh-plugin",
       "npmName": "create-dsh-plugin",
       "section": "catalog",
-      "verdict": "unknown",
-      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
       "pkgVersion": "0.1.1",
       "peerCordis": null,
       "peerDsh": null,
@@ -1483,6 +1483,3293 @@
       "nodeRange": null
     },
     {
+      "id": "modlens",
+      "name": "modlens",
+      "npmName": "modlens",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "agent-vision-toolkit",
+      "name": "agent-vision-toolkit",
+      "npmName": "agent-vision-toolkit",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "modsearch",
+      "name": "modsearch",
+      "npmName": "modsearch",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-browser",
+      "name": "dsh-browser",
+      "npmName": "dsh-browser",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-chat-import",
+      "name": "dsh-chat-import",
+      "npmName": "dsh-chat-import",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22"
+    },
+    {
+      "id": "dsh-openapi",
+      "name": "dsh-openapi",
+      "npmName": "dsh-openapi",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-lark-bot",
+      "name": "dsh-lark-bot",
+      "npmName": "dsh-lark-bot",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \">=22.19.0\"",
+      "pkgVersion": "0.2.8",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.19.0"
+    },
+    {
+      "id": "dsh-plugin-skills",
+      "name": "dsh-plugin-skills",
+      "npmName": "dsh-plugin-skills",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-status-rotator",
+      "name": "dsh-status-rotator",
+      "npmName": "dsh-status-rotator",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-win-notify",
+      "name": "dsh-win-notify",
+      "npmName": "dsh-win-notify",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-agent-messaging",
+      "name": "dsh-agent-messaging",
+      "npmName": "dsh-agent-messaging",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-turbo",
+      "name": "dsh-tool-turbo",
+      "npmName": "dsh-tool-turbo",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-companion-yyh-001",
+      "name": "dsh-companion",
+      "npmName": "dsh-companion",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-cost-tracker",
+      "name": "dsh-plugin-cost-tracker",
+      "npmName": "dsh-plugin-cost-tracker",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-plugin-product-subagents",
+      "name": "dsh-plugin-product-subagents",
+      "npmName": "dsh-plugin-product-subagents",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-stream-rules",
+      "name": "dsh-stream-rules",
+      "npmName": "dsh-stream-rules",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.2",
+      "peerCordis": ">=4.0.1 <5",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-cost",
+      "name": "dsh-cost",
+      "npmName": "dsh-cost",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-wechat-notify",
+      "name": "dsh-wechat-notify",
+      "npmName": "dsh-wechat-notify",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-lan",
+      "name": "dsh-lan",
+      "npmName": "dsh-lan",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-better-browser",
+      "name": "dsh-better-browser",
+      "npmName": "dsh-better-browser",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ramify",
+      "name": "dsh-ramify",
+      "npmName": "dsh-ramify",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-compaction-instant",
+      "name": "dsh-compaction-instant",
+      "npmName": "dsh-compaction-instant",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.3",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-xiaohei",
+      "name": "dsh-xiaohei",
+      "npmName": "dsh-xiaohei",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vision-proxy",
+      "name": "dsh-vision-proxy",
+      "npmName": "dsh-vision-proxy",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-worktree",
+      "name": "dsh-worktree",
+      "npmName": "dsh-worktree",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-xiaoyao-skins",
+      "name": "dsh-xiaoyao-skins",
+      "npmName": "dsh-xiaoyao-skins",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-her-eyes",
+      "name": "dsh-her-eyes",
+      "npmName": "dsh-her-eyes",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "graycode-for-dsh",
+      "name": "graycode-for-dsh",
+      "npmName": "graycode-for-dsh",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-milestone",
+      "name": "dsh-milestone",
+      "npmName": "dsh-milestone",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.5.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-telegram-relay",
+      "name": "DSH-Telegram-Relay",
+      "npmName": "dsh-telegram-relay",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-recall",
+      "name": "dsh-recall",
+      "npmName": "dsh-recall",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-onlyne",
+      "name": "dsh-onlyne",
+      "npmName": "dsh-onlyne",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "shopline-ai-toolkit-dsh",
+      "name": "shopline-ai-toolkit-dsh",
+      "npmName": "shopline-ai-toolkit-dsh",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-codex-bridge",
+      "name": "dsh-plugin-codex-bridge",
+      "npmName": "dsh-plugin-codex-bridge",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-expression",
+      "name": "dsh-expression",
+      "npmName": "dsh-expression",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-director-toolkit",
+      "name": "dsh-director-toolkit",
+      "npmName": "dsh-director-toolkit",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "codex-plugin-dsh",
+      "name": "codex-plugin-dsh",
+      "npmName": "codex-plugin-dsh",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-prompt-persona",
+      "name": "dsh-prompt-persona",
+      "npmName": "dsh-prompt-persona",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-recommend",
+      "name": "dsh-recommend",
+      "npmName": "dsh-recommend",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": ">=18.17"
+    },
+    {
+      "id": "dsh-tool-policy",
+      "name": "dsh-tool-policy",
+      "npmName": "dsh-tool-policy",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-claude-bridge",
+      "name": "dsh-plugin-claude-bridge",
+      "npmName": "dsh-plugin-claude-bridge",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-plugin-graph",
+      "name": "dsh-plugin-graph",
+      "npmName": "dsh-plugin-graph",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=18.0.0"
+    },
+    {
+      "id": "dsh-playwright-cli",
+      "name": "dsh-playwright-cli",
+      "npmName": "dsh-playwright-cli",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-research-notes",
+      "name": "dsh-research-notes",
+      "npmName": "dsh-research-notes",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "nowledge-mem-deepseek-harness",
+      "name": "nowledge-mem-deepseek-harness",
+      "npmName": "nowledge-mem-deepseek-harness",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vsc-integration",
+      "name": "dsh-vsc-integration",
+      "npmName": "dsh-vsc-integration",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-safe-delete",
+      "name": "dsh-safe-delete",
+      "npmName": "dsh-safe-delete",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.11",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-goal-mode-enhance",
+      "name": "dsh-goal-mode-enhance",
+      "npmName": "dsh-goal-mode-enhance",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugins",
+      "name": "dsh-plugins",
+      "npmName": "dsh-plugins",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-report-html",
+      "name": "dsh-report-html",
+      "npmName": "dsh-report-html",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-review-loop",
+      "name": "dsh-review-loop",
+      "npmName": "dsh-review-loop",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "context-vista",
+      "name": "context-vista",
+      "npmName": "context-vista",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-wikilink",
+      "name": "dsh-wikilink",
+      "npmName": "dsh-wikilink",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-hdc-bridge",
+      "name": "dsh-hdc-bridge",
+      "npmName": "dsh-hdc-bridge",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-lark",
+      "name": "dsh-lark",
+      "npmName": "dsh-lark",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-claude-move",
+      "name": "dsh-claude-move",
+      "npmName": "dsh-claude-move",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ergonomics",
+      "name": "dsh-ergonomics",
+      "npmName": "dsh-ergonomics",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.2",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "securstack-dsh-plugin",
+      "name": "securstack-dsh-plugin",
+      "npmName": "securstack-dsh-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-deepeye",
+      "name": "dsh-plugin-deepeye",
+      "npmName": "dsh-plugin-deepeye",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \">=22.19.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22.19.0"
+    },
+    {
+      "id": "dsh-multi-cot",
+      "name": "dsh-multi-cot",
+      "npmName": "dsh-multi-cot",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "widget-dock",
+      "name": "widget-dock",
+      "npmName": "widget-dock",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-opencode-bridge",
+      "name": "dsh-plugin-opencode-bridge",
+      "npmName": "dsh-plugin-opencode-bridge",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-openai-codex-auth",
+      "name": "dsh-openai-codex-auth",
+      "npmName": "dsh-openai-codex-auth",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-model-config-sync",
+      "name": "dsh-model-config-sync",
+      "npmName": "dsh-model-config-sync",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tiered-approval",
+      "name": "dsh-tiered-approval",
+      "npmName": "dsh-tiered-approval",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "deepseek-harness-skin",
+      "name": "deepseek-harness-skin",
+      "npmName": "deepseek-harness-skin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-github-connector",
+      "name": "dsh-github-connector",
+      "npmName": "dsh-github-connector",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-pet",
+      "name": "deepseek-pet",
+      "npmName": "deepseek-pet",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-undo",
+      "name": "dsh-undo",
+      "npmName": "dsh-undo",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "unparseable peer range (cordis=\"^4.0.1-rc.1\" dsh=\"undefined\")",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1-rc.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-session-timeline",
+      "name": "dsh-session-timeline",
+      "npmName": "dsh-session-timeline",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-index",
+      "name": "dsh-index",
+      "npmName": "dsh-index",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-git-plugin",
+      "name": "dsh-git-plugin",
+      "npmName": "dsh-git-plugin",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-plugins-yihong89",
+      "name": "dsh-plugins",
+      "npmName": "dsh-plugins",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-plugin-pi-bridge",
+      "name": "dsh-plugin-pi-bridge",
+      "npmName": "dsh-plugin-pi-bridge",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-mcp-manager",
+      "name": "dsh-mcp-manager",
+      "npmName": "dsh-mcp-manager",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-enhance",
+      "name": "dsh-enhance",
+      "npmName": "dsh-enhance",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-web-search-firecrawl",
+      "name": "dsh-web-search-firecrawl",
+      "npmName": "dsh-web-search-firecrawl",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ark-quota",
+      "name": "dsh-ark-quota",
+      "npmName": "dsh-ark-quota",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-plugin-mcp",
+      "name": "deepseek-harness-plugin-mcp",
+      "npmName": "deepseek-harness-plugin-mcp",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-llm-codex-oauth",
+      "name": "dsh-llm-codex-oauth",
+      "npmName": "dsh-llm-codex-oauth",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-superpowers",
+      "name": "dsh-superpowers",
+      "npmName": "dsh-superpowers",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-plugin-template",
+      "name": "dsh-plugin-template",
+      "npmName": "dsh-plugin-template",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-search-mcp",
+      "name": "dsh-search-mcp",
+      "npmName": "dsh-search-mcp",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-sound-effects-plugin",
+      "name": "dsh-sound-effects-plugin",
+      "npmName": "dsh-sound-effects-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-kanban",
+      "name": "dsh-kanban",
+      "npmName": "dsh-kanban",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "billion-context-dsh",
+      "name": "billion-context-dsh",
+      "npmName": "billion-context-dsh",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "deepseek-harness-fnos",
+      "name": "deepseek-harness-fnos",
+      "npmName": "deepseek-harness-fnos",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugins-raincode",
+      "name": "dsh-plugins-raincode",
+      "npmName": "dsh-plugins-raincode",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-composer-history",
+      "name": "dsh-composer-history",
+      "npmName": "dsh-composer-history",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-agent-arcade",
+      "name": "dsh-agent-arcade",
+      "npmName": "dsh-agent-arcade",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-fun-ticker",
+      "name": "dsh-fun-ticker",
+      "npmName": "dsh-fun-ticker",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-codex-bridge",
+      "name": "dsh-codex-bridge",
+      "npmName": "dsh-codex-bridge",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "jumpserver-dsh",
+      "name": "jumpserver-dsh",
+      "npmName": "jumpserver-dsh",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-skillport",
+      "name": "dsh-skillport",
+      "npmName": "dsh-skillport",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-miliastra-toolbox",
+      "name": "dsh-plugin-miliastra-toolbox",
+      "npmName": "dsh-plugin-miliastra-toolbox",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-session-pins",
+      "name": "dsh-session-pins",
+      "npmName": "dsh-session-pins",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-payload-capture",
+      "name": "dsh-payload-capture",
+      "npmName": "dsh-payload-capture",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-browser-ben7am1n",
+      "name": "dsh-browser",
+      "npmName": "dsh-browser",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-dev-actions",
+      "name": "dsh-dev-actions",
+      "npmName": "dsh-dev-actions",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "doubao-vision-dsh",
+      "name": "doubao-vision-dsh",
+      "npmName": "doubao-vision-dsh",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-event-auditor",
+      "name": "dsh-event-auditor",
+      "npmName": "dsh-event-auditor",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-doctor",
+      "name": "dsh-plugin-doctor",
+      "npmName": "dsh-plugin-doctor",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-web-search-tavily",
+      "name": "dsh-web-search-tavily",
+      "npmName": "dsh-web-search-tavily",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vision-lmstudio",
+      "name": "dsh-vision-LMstudio",
+      "npmName": "dsh-vision-lmstudio",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-book2skill",
+      "name": "dsh-book2skill",
+      "npmName": "dsh-book2skill",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-pet",
+      "name": "dsh-pet",
+      "npmName": "dsh-pet",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-cue-plugin",
+      "name": "dsh-cue-plugin",
+      "npmName": "dsh-cue-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-background",
+      "name": "deepseek-harness-background",
+      "npmName": "deepseek-harness-background",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-prime-agent",
+      "name": "dsh-prime-agent",
+      "npmName": "dsh-prime-agent",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-fail-logger",
+      "name": "dsh-fail-logger",
+      "npmName": "dsh-fail-logger",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "task-passport",
+      "name": "task-passport",
+      "npmName": "task-passport",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.2",
+      "peerCordis": ">=4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-tool-vision",
+      "name": "dsh-tool-vision",
+      "npmName": "dsh-tool-vision",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.3.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.18"
+    },
+    {
+      "id": "dsh-routines",
+      "name": "dsh-routines",
+      "npmName": "dsh-routines",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-prompt-presets",
+      "name": "dsh-prompt-presets",
+      "npmName": "dsh-prompt-presets",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-memento",
+      "name": "dsh-memento",
+      "npmName": "dsh-memento",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-archive-viewer",
+      "name": "dsh-archive-viewer",
+      "npmName": "dsh-archive-viewer",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-hub-coderperseus",
+      "name": "dsh-hub",
+      "npmName": "dsh-hub",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-memory",
+      "name": "dsh-memory",
+      "npmName": "dsh-memory",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-plugin-colorscheme",
+      "name": "dsh-plugin-colorscheme",
+      "npmName": "dsh-plugin-colorscheme",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugins-hyls9527",
+      "name": "dsh-plugins",
+      "npmName": "dsh-plugins",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-scout",
+      "name": "dsh-scout",
+      "npmName": "dsh-scout",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-screenshot-diff",
+      "name": "dsh-screenshot-diff",
+      "npmName": "dsh-screenshot-diff",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-opencode-usage",
+      "name": "dsh-opencode-usage",
+      "npmName": "dsh-opencode-usage",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-turn-index",
+      "name": "dsh-turn-index",
+      "npmName": "dsh-turn-index",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-session-hub",
+      "name": "dsh-session-hub",
+      "npmName": "dsh-session-hub",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-reasoning-translator",
+      "name": "dsh-reasoning-translator",
+      "npmName": "dsh-reasoning-translator",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mobile-control",
+      "name": "dsh-mobile-control",
+      "npmName": "dsh-mobile-control",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-skill-manager",
+      "name": "dsh-skill-manager",
+      "npmName": "dsh-skill-manager",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-memento-perrylink",
+      "name": "dsh-memento",
+      "npmName": "dsh-memento",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-archive-viewer-keepermttl",
+      "name": "dsh-archive-viewer",
+      "npmName": "dsh-archive-viewer",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-hub-coderperseus-coderperseus",
+      "name": "dsh-hub",
+      "npmName": "dsh-hub",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-monitor",
+      "name": "dsh-tool-monitor",
+      "npmName": "dsh-tool-monitor",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-auto-docs",
+      "name": "dsh-plugin-auto-docs",
+      "npmName": "dsh-plugin-auto-docs",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-chatnode-wechat",
+      "name": "dsh-chatnode-wechat",
+      "npmName": "dsh-chatnode-wechat",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-suggest-prompt",
+      "name": "dsh-suggest-prompt",
+      "npmName": "dsh-suggest-prompt",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-effort-tweak",
+      "name": "dsh-effort-tweak",
+      "npmName": "dsh-effort-tweak",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-toolbelt",
+      "name": "dsh-toolbelt",
+      "npmName": "dsh-toolbelt",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-codex-provider",
+      "name": "dsh-codex-provider",
+      "npmName": "dsh-codex-provider",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22"
+    },
+    {
+      "id": "dsh-plugin-code-review",
+      "name": "dsh-plugin-code-review",
+      "npmName": "dsh-plugin-code-review",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-memory-jesse-njx",
+      "name": "dsh-memory",
+      "npmName": "dsh-memory",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-cloudflare-browser-run",
+      "name": "dsh-cloudflare-browser-run",
+      "npmName": "dsh-cloudflare-browser-run",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.0.0"
+    },
+    {
+      "id": "dsh-miku-skin",
+      "name": "dsh-miku-skin",
+      "npmName": "dsh-miku-skin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "safe-find-dsh-plugins",
+      "name": "safe-find-dsh-plugins",
+      "npmName": "safe-find-dsh-plugins",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "falsify-dsh",
+      "name": "falsify-dsh",
+      "npmName": "falsify-dsh",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-all-search",
+      "name": "dsh-all-search",
+      "npmName": "dsh-all-search",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.0.0"
+    },
+    {
+      "id": "dsh-plugin-pixluna",
+      "name": "dsh-plugin-pixluna",
+      "npmName": "dsh-plugin-pixluna",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "1.0.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-workbench",
+      "name": "dsh-workbench",
+      "npmName": "dsh-workbench",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-audio-dub",
+      "name": "dsh-audio-dub",
+      "npmName": "dsh-audio-dub",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugins-hub",
+      "name": "dsh-plugins-hub",
+      "npmName": "dsh-plugins-hub",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ui-workbench",
+      "name": "dsh-ui-workbench",
+      "npmName": "dsh-ui-workbench",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-find-skill",
+      "name": "dsh-find-skill",
+      "npmName": "dsh-find-skill",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-huadongbianzuqi",
+      "name": "dsh-huadongbianzuqi",
+      "npmName": "dsh-huadongbianzuqi",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-soul-md",
+      "name": "dsh-soul-md",
+      "npmName": "dsh-soul-md",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.18"
+    },
+    {
+      "id": "dsh-governance",
+      "name": "dsh-governance",
+      "npmName": "dsh-governance",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-daily-fortune",
+      "name": "dsh-daily-fortune",
+      "npmName": "dsh-daily-fortune",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-codex-import",
+      "name": "dsh-codex-import",
+      "npmName": "dsh-codex-import",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-rag",
+      "name": "dsh-plugin-rag",
+      "npmName": "dsh-plugin-rag",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-clawrouter",
+      "name": "dsh-clawrouter",
+      "npmName": "dsh-clawrouter",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19 || >=24\"",
+      "pkgVersion": "0.1.1",
+      "peerCordis": ">=4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19 || >=24"
+    },
+    {
+      "id": "dsh-model-selector",
+      "name": "dsh-model-selector",
+      "npmName": "dsh-model-selector",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-credentials-keychain",
+      "name": "dsh-credentials-keychain",
+      "npmName": "dsh-credentials-keychain",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-github",
+      "name": "dsh-github",
+      "npmName": "dsh-github",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "multimodal-bridge",
+      "name": "multimodal-bridge",
+      "npmName": "multimodal-bridge",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-session-pin",
+      "name": "dsh-session-pin",
+      "npmName": "dsh-session-pin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-prompt-stash",
+      "name": "dsh-prompt-stash",
+      "npmName": "dsh-prompt-stash",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-review",
+      "name": "dsh-plugin-review",
+      "npmName": "dsh-plugin-review",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-live-stats",
+      "name": "dsh-live-stats",
+      "npmName": "dsh-live-stats",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-chrome-devtools",
+      "name": "DSH-Chrome-devtools",
+      "npmName": "dsh-chrome-devtools",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ui-spec",
+      "name": "dsh-ui-spec",
+      "npmName": "dsh-ui-spec",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-open-in-finder",
+      "name": "dsh-open-in-finder",
+      "npmName": "dsh-open-in-finder",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-self-control-guard",
+      "name": "dsh-self-control-guard",
+      "npmName": "dsh-self-control-guard",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-turn-budget",
+      "name": "dsh-turn-budget",
+      "npmName": "dsh-turn-budget",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mcp-proxy",
+      "name": "dsh-mcp-proxy",
+      "npmName": "dsh-mcp-proxy",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dizzy-dsh",
+      "name": "DIzzy-DSH",
+      "npmName": "dizzy-dsh",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "spike-faye-lei-dsh-skills",
+      "name": "spike-faye-lei-dsh-skills",
+      "npmName": "spike-faye-lei-dsh-skills",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-vision-toolkit",
+      "name": "dsh-plugin-vision-toolkit",
+      "npmName": "dsh-plugin-vision-toolkit",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-fun-weather",
+      "name": "dsh-fun-weather",
+      "npmName": "dsh-fun-weather",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-nocturne-memory",
+      "name": "dsh-nocturne-memory",
+      "npmName": "dsh-nocturne-memory",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.0.0"
+    },
+    {
+      "id": "dsh-academic-skill",
+      "name": "dsh-academic-skill",
+      "npmName": "dsh-academic-skill",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-file-explorer",
+      "name": "dsh-file-explorer",
+      "npmName": "dsh-file-explorer",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-reqpipe",
+      "name": "dsh-tool-reqpipe",
+      "npmName": "dsh-tool-reqpipe",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-ajw",
+      "name": "dsh-ajw",
+      "npmName": "dsh-ajw",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-fun-typewriter",
+      "name": "dsh-fun-typewriter",
+      "npmName": "dsh-fun-typewriter",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-port-guard",
+      "name": "dsh-port-guard",
+      "npmName": "dsh-port-guard",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-harness-mcp-server",
+      "name": "dsh-harness-mcp-server",
+      "npmName": "dsh-harness-mcp-server",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-usage-cost",
+      "name": "dsh-usage-cost",
+      "npmName": "dsh-usage-cost",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-deepseek-balance",
+      "name": "dsh-deepseek-balance",
+      "npmName": "dsh-deepseek-balance",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-deepseek-usage",
+      "name": "dsh-deepseek-usage",
+      "npmName": "dsh-deepseek-usage",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-test-runner",
+      "name": "dsh-test-runner",
+      "npmName": "dsh-test-runner",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mimo-vision-hint",
+      "name": "dsh-mimo-vision-hint",
+      "npmName": "dsh-mimo-vision-hint",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-im-bridge",
+      "name": "dsh-im-bridge",
+      "npmName": "dsh-im-bridge",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "qiushi-dsh-evidence-audit",
+      "name": "qiushi-dsh-evidence-audit",
+      "npmName": "qiushi-dsh-evidence-audit",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-web-search-firecrawl-crayonlu",
+      "name": "dsh-web-search-firecrawl",
+      "npmName": "dsh-web-search-firecrawl",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-web-background",
+      "name": "dsh-web-background",
+      "npmName": "dsh-web-background",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-balance-display",
+      "name": "dsh-balance-display",
+      "npmName": "dsh-balance-display",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-balance",
+      "name": "dsh-balance",
+      "npmName": "dsh-balance",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.6",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-multimodal",
+      "name": "dsh-multimodal",
+      "npmName": "dsh-multimodal",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-github-io",
+      "name": "dsh-plugin.github.io",
+      "npmName": "dsh-plugin.github.io",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mneme",
+      "name": "dsh-mneme",
+      "npmName": "dsh-mneme",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-verify",
+      "name": "dsh-plugin-verify",
+      "npmName": "dsh-plugin-verify",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-weixin",
+      "name": "dsh-weixin",
+      "npmName": "dsh-weixin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-cost-meter",
+      "name": "dsh-cost-meter",
+      "npmName": "dsh-cost-meter",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-lens-lite",
+      "name": "dsh-lens-lite",
+      "npmName": "dsh-lens-lite",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-lark-bridge",
+      "name": "dsh-lark-bridge",
+      "npmName": "dsh-lark-bridge",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tavily-search",
+      "name": "dsh-tavily-search",
+      "npmName": "dsh-tavily-search",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-schedule",
+      "name": "dsh-schedule",
+      "npmName": "dsh-schedule",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vision-helper",
+      "name": "dsh-vision-helper",
+      "npmName": "dsh-vision-helper",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-claude-mem",
+      "name": "dsh-claude-mem",
+      "npmName": "dsh-claude-mem",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-sticky-disclosure",
+      "name": "dsh-sticky-disclosure",
+      "npmName": "dsh-sticky-disclosure",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-revive",
+      "name": "dsh-revive",
+      "npmName": "dsh-revive",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-openai-codex-oauth",
+      "name": "dsh-openai-codex-oauth",
+      "npmName": "dsh-openai-codex-oauth",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dshx",
+      "name": "dshx",
+      "npmName": "dshx",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "ds-balance-card",
+      "name": "ds-balance-card",
+      "npmName": "ds-balance-card",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-openclaw-acp",
+      "name": "dsh-openclaw-acp",
+      "npmName": "dsh-openclaw-acp",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-model-modes",
+      "name": "dsh-model-modes",
+      "npmName": "dsh-model-modes",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-wepre",
+      "name": "dsh-plugin-wepre",
+      "npmName": "dsh-plugin-wepre",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-reloader",
+      "name": "dsh-reloader",
+      "npmName": "dsh-reloader",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-pet-corner",
+      "name": "dsh-pet-corner",
+      "npmName": "dsh-pet-corner",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-bisect-debug",
+      "name": "dsh-bisect-debug",
+      "npmName": "dsh-bisect-debug",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-auto-chess",
+      "name": "dsh-auto-chess",
+      "npmName": "dsh-auto-chess",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-turn-meta",
+      "name": "dsh-turn-meta",
+      "npmName": "dsh-turn-meta",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "pwiki",
+      "name": "Pwiki",
+      "npmName": "pwiki",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "governed-workflow-for-dsh",
+      "name": "governed-workflow-for-dsh",
+      "npmName": "governed-workflow-for-dsh",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-browser-mashedpotato817",
+      "name": "dsh-tool-browser",
+      "npmName": "dsh-tool-browser",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-plugin-meta-memory",
+      "name": "dsh-plugin-meta-memory",
+      "npmName": "dsh-plugin-meta-memory",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-music-plugin",
+      "name": "dsh-music-plugin",
+      "npmName": "dsh-music-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-auto-review",
+      "name": "dsh-auto-review",
+      "npmName": "dsh-auto-review",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-balance-monitor",
+      "name": "dsh-balance-monitor",
+      "npmName": "dsh-balance-monitor",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-for-vs-code",
+      "name": "DeepSeek-Harness-for-VS-Code",
+      "npmName": "deepseek-harness-for-vs-code",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-context-compressor",
+      "name": "dsh-plugin-context-compressor",
+      "npmName": "dsh-plugin-context-compressor",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-batch-regression",
+      "name": "dsh-batch-regression",
+      "npmName": "dsh-batch-regression",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-context-taxonomy",
+      "name": "dsh-context-taxonomy",
+      "npmName": "dsh-context-taxonomy",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-kimi-bridge",
+      "name": "dsh-kimi-bridge",
+      "npmName": "dsh-kimi-bridge",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-browser-control",
+      "name": "dsh-browser-control",
+      "npmName": "dsh-browser-control",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-code-ide",
+      "name": "dsh-code-ide",
+      "npmName": "dsh-code-ide",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tdai-memory",
+      "name": "dsh-tdai-memory",
+      "npmName": "dsh-tdai-memory",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \">=22.18\"",
+      "pkgVersion": "0.2.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.18"
+    },
+    {
+      "id": "dsh-skins",
+      "name": "dsh-skins",
+      "npmName": "dsh-skins",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-agent-eval",
+      "name": "dsh-agent-eval",
+      "npmName": "dsh-agent-eval",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-eco-router",
+      "name": "dsh-eco-router",
+      "npmName": "dsh-eco-router",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-effort-config",
+      "name": "dsh-effort-config",
+      "npmName": "dsh-effort-config",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-portable-tavern",
+      "name": "dsh-portable-tavern",
+      "npmName": "dsh-portable-tavern",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-lan",
+      "name": "deepseek-harness-lan",
+      "npmName": "deepseek-harness-lan",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-image-to-path",
+      "name": "dsh-image-to-path",
+      "npmName": "dsh-image-to-path",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vision-xiaoshihou514",
+      "name": "dsh-vision",
+      "npmName": "dsh-vision",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-context-lens",
+      "name": "dsh-context-lens",
+      "npmName": "dsh-context-lens",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "matlab-modelsim-vivado-plugin",
+      "name": "matlab-modelsim-vivado-plugin",
+      "npmName": "matlab-modelsim-vivado-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-agent-dashboard",
+      "name": "dsh-plugin-agent-dashboard",
+      "npmName": "dsh-plugin-agent-dashboard",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-usage-meter",
+      "name": "dsh-usage-meter",
+      "npmName": "dsh-usage-meter",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-session-import",
+      "name": "dsh-plugin-session-import",
+      "npmName": "dsh-plugin-session-import",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "unparseable peer range (cordis=\"undefined\" dsh=\">=0.1.0-rc.6\")",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": ">=0.1.0-rc.6",
+      "nodeRange": ">=22.5"
+    },
+    {
+      "id": "dsh-plugin-clawrouters",
+      "name": "dsh-plugin-clawrouters",
+      "npmName": "dsh-plugin-clawrouters",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "amber-protocol",
+      "name": "amber-protocol",
+      "npmName": "amber-protocol",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.5.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^20.19.0 || ^22.12.0 || >=23"
+    },
+    {
+      "id": "dsh-resume-plugin",
+      "name": "dsh-resume-plugin",
+      "npmName": "dsh-resume-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-cost-ledger",
+      "name": "dsh-cost-ledger",
+      "npmName": "dsh-cost-ledger",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-eval-harness",
+      "name": "dsh-eval-harness",
+      "npmName": "dsh-eval-harness",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-codex",
+      "name": "dsh-codex",
+      "npmName": "dsh-codex",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "unparseable peer range (cordis=\"^4.0.1-rc.1\" dsh=\"undefined\")",
+      "pkgVersion": "0.2.1",
+      "peerCordis": "^4.0.1-rc.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "sai",
+      "name": "sai",
+      "npmName": "sai",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-plugin-codex-import",
+      "name": "dsh-plugin-codex-import",
+      "npmName": "dsh-plugin-codex-import",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugins-0sour",
+      "name": "dsh-plugins",
+      "npmName": "dsh-plugins",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-builtin-toggles",
+      "name": "dsh-builtin-toggles",
+      "npmName": "dsh-builtin-toggles",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-mac-vision",
+      "name": "dsh-mac-vision",
+      "npmName": "dsh-mac-vision",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22"
+    },
+    {
+      "id": "dsh-continual-evolve",
+      "name": "dsh-continual-evolve",
+      "npmName": "dsh-continual-evolve",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-llm-codex",
+      "name": "dsh-plugin-llm-codex",
+      "npmName": "dsh-plugin-llm-codex",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-2origin",
+      "name": "dsh-2origin",
+      "npmName": "dsh-2origin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-science",
+      "name": "dsh-science",
+      "npmName": "dsh-science",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-command-opt",
+      "name": "dsh-command-opt",
+      "npmName": "dsh-command-opt",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-terminal",
+      "name": "dsh-terminal",
+      "npmName": "dsh-terminal",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-telemetry-redactor",
+      "name": "dsh-telemetry-redactor",
+      "npmName": "dsh-telemetry-redactor",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-skin",
+      "name": "dsh-skin",
+      "npmName": "dsh-skin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-revdiff",
+      "name": "dsh-revdiff",
+      "npmName": "dsh-revdiff",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "vpshub",
+      "name": "vpshub",
+      "npmName": "vpshub",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-survey",
+      "name": "dsh-survey",
+      "npmName": "dsh-survey",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-pomodoro",
+      "name": "dsh-pomodoro",
+      "npmName": "dsh-pomodoro",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "deepseek-harness-plugin-manager",
+      "name": "deepseek-harness-plugin-manager",
+      "npmName": "deepseek-harness-plugin-manager",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-usage-widget",
+      "name": "dsh-usage-widget",
+      "npmName": "dsh-usage-widget",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-think-flow-flow",
+      "name": "dsh-think-flow-flow",
+      "npmName": "dsh-think-flow-flow",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-co-authored-by",
+      "name": "dsh-co-authored-by",
+      "npmName": "dsh-co-authored-by",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugs",
+      "name": "DSH-Plugs",
+      "npmName": "dsh-plugs",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-theme-neko",
+      "name": "dsh-theme-neko",
+      "npmName": "dsh-theme-neko",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-host-web-compat",
+      "name": "dsh-host-web-compat",
+      "npmName": "dsh-host-web-compat",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-prompt-profile",
+      "name": "dsh-prompt-profile",
+      "npmName": "dsh-prompt-profile",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-flow",
+      "name": "deepseek-harness-flow",
+      "npmName": "deepseek-harness-flow",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-doctor-jorinyang",
+      "name": "dsh-doctor",
+      "npmName": "dsh-doctor",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-code-intel",
+      "name": "dsh-code-intel",
+      "npmName": "dsh-code-intel",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-same-mode-sandbox-noop",
+      "name": "dsh-same-mode-sandbox-noop",
+      "npmName": "dsh-same-mode-sandbox-noop",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-doctor-asdf17128",
+      "name": "dsh-doctor",
+      "npmName": "dsh-doctor",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-polyglot",
+      "name": "dsh-polyglot",
+      "npmName": "dsh-polyglot",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "jina-dsh-plugin",
+      "name": "jina-dsh-plugin",
+      "npmName": "jina-dsh-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-backup-sync",
+      "name": "dsh-backup-sync",
+      "npmName": "dsh-backup-sync",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-voice",
+      "name": "dsh-voice",
+      "npmName": "dsh-voice",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-auto",
+      "name": "dsh-auto",
+      "npmName": "dsh-auto",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-shell-termux",
+      "name": "dsh-shell-termux",
+      "npmName": "dsh-shell-termux",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-product-delivery-workflow",
+      "name": "dsh-product-delivery-workflow",
+      "npmName": "dsh-product-delivery-workflow",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-k12-lesson-builder",
+      "name": "dsh-k12-lesson-builder",
+      "npmName": "dsh-k12-lesson-builder",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-annotate",
+      "name": "dsh-annotate",
+      "npmName": "dsh-annotate",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-seismicx",
+      "name": "dsh-seismicx",
+      "npmName": "dsh-seismicx",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-codex-connect",
+      "name": "dsh-codex-connect",
+      "npmName": "dsh-codex-connect",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-decktop",
+      "name": "DSH-Decktop",
+      "npmName": "dsh-decktop",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-token-stats",
+      "name": "dsh-token-stats",
+      "npmName": "dsh-token-stats",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-cad-review",
+      "name": "dsh-cad-review",
+      "npmName": "dsh-cad-review",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-balance-meter",
+      "name": "dsh-balance-meter",
+      "npmName": "dsh-balance-meter",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-cost-chip",
+      "name": "dsh-cost-chip",
+      "npmName": "dsh-cost-chip",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-lsp-actions",
+      "name": "dsh-lsp-actions",
+      "npmName": "dsh-lsp-actions",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-web-attention-badge",
+      "name": "dsh-web-attention-badge",
+      "npmName": "dsh-web-attention-badge",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-latex-tools",
+      "name": "dsh-latex-tools",
+      "npmName": "dsh-latex-tools",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-tool-notify",
+      "name": "dsh-tool-notify",
+      "npmName": "dsh-tool-notify",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-xai",
+      "name": "dsh-xai",
+      "npmName": "dsh-xai",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-academic-research",
+      "name": "dsh-academic-research",
+      "npmName": "dsh-academic-research",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-hello",
+      "name": "dsh-plugin-hello",
+      "npmName": "dsh-plugin-hello",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-memory-towzai",
+      "name": "dsh-memory",
+      "npmName": "dsh-memory",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh2wechat",
+      "name": "dsh2wechat",
+      "npmName": "dsh2wechat",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "harness-whale",
+      "name": "harness-whale",
+      "npmName": "harness-whale",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-dev-skill",
+      "name": "dsh-plugin-dev-skill",
+      "npmName": "dsh-plugin-dev-skill",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-chrome",
+      "name": "dsh-chrome",
+      "npmName": "dsh-chrome",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-rs",
+      "name": "deepseek-harness-rs",
+      "npmName": "deepseek-harness-rs",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "vscode-deepseek-harness",
+      "name": "vscode-deepseek-harness",
+      "npmName": "vscode-deepseek-harness",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-prompt-enhancer",
+      "name": "dsh-prompt-enhancer",
+      "npmName": "dsh-prompt-enhancer",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-specflow",
+      "name": "dsh-specflow",
+      "npmName": "dsh-specflow",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-gitflow",
+      "name": "dsh-gitflow",
+      "npmName": "dsh-gitflow",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-exa-mcp",
+      "name": "dsh-exa-mcp",
+      "npmName": "dsh-exa-mcp",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugins-ohtokaah-sys",
+      "name": "dsh-plugins",
+      "npmName": "dsh-plugins",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-cost-dongsheng123132",
+      "name": "dsh-cost",
+      "npmName": "dsh-cost",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "mindspace-dsh-session-memory",
+      "name": "mindspace-dsh-session-memory",
+      "npmName": "mindspace-dsh-session-memory",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-usage-report",
+      "name": "dsh-plugin-usage-report",
+      "npmName": "dsh-plugin-usage-report",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "rpg-maker-mac-skill",
+      "name": "rpg-maker-mac-skill",
+      "npmName": "rpg-maker-mac-skill",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-verified-search",
+      "name": "dsh-plugin-verified-search",
+      "npmName": "dsh-plugin-verified-search",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-verification-receipt",
+      "name": "dsh-verification-receipt",
+      "npmName": "dsh-verification-receipt",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-landscape",
+      "name": "dsh-landscape",
+      "npmName": "dsh-landscape",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-conversation-indicator",
+      "name": "dsh-conversation-indicator",
+      "npmName": "dsh-conversation-indicator",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-chaos",
+      "name": "dsh-tool-chaos",
+      "npmName": "dsh-tool-chaos",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-auto-compact",
+      "name": "dsh-auto-compact",
+      "npmName": "dsh-auto-compact",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-black-whale",
+      "name": "dsh-black-whale",
+      "npmName": "dsh-black-whale",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-wecom",
+      "name": "dsh-wecom",
+      "npmName": "dsh-wecom",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugins-karuisawa-mrs",
+      "name": "dsh-plugins",
+      "npmName": "dsh-plugins",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-client-ui-responsive",
+      "name": "dsh-client-ui-responsive",
+      "npmName": "dsh-client-ui-responsive",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-robotic-harness",
+      "name": "dsh-robotic-harness",
+      "npmName": "dsh-robotic-harness",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ui-skins",
+      "name": "dsh-ui-skins",
+      "npmName": "dsh-ui-skins",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-codex-subscription",
+      "name": "dsh-codex-subscription",
+      "npmName": "dsh-codex-subscription",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-push",
+      "name": "dsh-push",
+      "npmName": "dsh-push",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24\"",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24"
+    },
+    {
+      "id": "sai-dsh-plugins",
+      "name": "sai-dsh-plugins",
+      "npmName": "sai-dsh-plugins",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-model-thinking",
+      "name": "dsh-model-thinking",
+      "npmName": "dsh-model-thinking",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-shift-router",
+      "name": "dsh-shift-router",
+      "npmName": "dsh-shift-router",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vision-sidecar",
+      "name": "dsh-vision-sidecar",
+      "npmName": "dsh-vision-sidecar",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dash",
+      "name": "dash",
+      "npmName": "dash",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "owlx-mcp",
+      "name": "owlx-mcp",
+      "npmName": "owlx-mcp",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-qwen-mm",
+      "name": "dsh-qwen-mm",
+      "npmName": "dsh-qwen-mm",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "delivery-review-dsh-plugin",
+      "name": "delivery-review-dsh-plugin",
+      "npmName": "delivery-review-dsh-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "nightwhale",
+      "name": "nightwhale",
+      "npmName": "nightwhale",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-hotkeys",
+      "name": "dsh-hotkeys",
+      "npmName": "dsh-hotkeys",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-jinji",
+      "name": "dsh-plugin-jinji",
+      "npmName": "dsh-plugin-jinji",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-switch",
+      "name": "dsh-switch",
+      "npmName": "dsh-switch",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-sticky-note",
+      "name": "dsh-sticky-note",
+      "npmName": "dsh-sticky-note",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-gen3d",
+      "name": "dsh-gen3d",
+      "npmName": "dsh-gen3d",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-bash-win",
+      "name": "dsh-bash-win",
+      "npmName": "dsh-bash-win",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-memory-amengclass",
+      "name": "dsh-memory",
+      "npmName": "dsh-memory",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-supervisor",
+      "name": "dsh-supervisor",
+      "npmName": "dsh-supervisor",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-archive-viewer-csiroqa",
+      "name": "dsh-archive-viewer",
+      "npmName": "dsh-archive-viewer",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mdbox",
+      "name": "dsh-mdbox",
+      "npmName": "dsh-mdbox",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-kanban-isolat-3k",
+      "name": "dsh-kanban",
+      "npmName": "dsh-kanban",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "noatmark-dsh-plugin",
+      "name": "noatmark-dsh-plugin",
+      "npmName": "noatmark-dsh-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-gatedflow",
+      "name": "dsh-gatedflow",
+      "npmName": "dsh-gatedflow",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-git",
+      "name": "dsh-tool-git",
+      "npmName": "dsh-tool-git",
+      "section": "catalog",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "pkgVersion": "0.1.2",
+      "peerCordis": "^4.0.0",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-browser-bridge",
+      "name": "dsh-browser-bridge",
+      "npmName": "dsh-browser-bridge",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-header-status",
+      "name": "dsh-header-status",
+      "npmName": "dsh-header-status",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mcp-manager-1a125",
+      "name": "dsh-mcp-manager",
+      "npmName": "dsh-mcp-manager",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-deepseek-balance-wangxiang0605qvq",
+      "name": "dsh-deepseek-balance",
+      "npmName": "dsh-deepseek-balance",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-asmemory",
+      "name": "dsh-plugin-asmemory",
+      "npmName": "dsh-plugin-asmemory",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepjit",
+      "name": "DeepJIT",
+      "npmName": "deepjit",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-cost-display",
+      "name": "dsh-cost-display",
+      "npmName": "dsh-cost-display",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-provider-quota",
+      "name": "dsh-plugin-provider-quota",
+      "npmName": "dsh-plugin-provider-quota",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-codebuddy",
+      "name": "dsh-codebuddy",
+      "npmName": "dsh-codebuddy",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-skill-manager-jimmyjin2006",
+      "name": "dsh-skill-manager",
+      "npmName": "dsh-skill-manager",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-tray",
+      "name": "dsh-tray",
+      "npmName": "dsh-tray",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
       "id": "openbiliclaw",
       "name": "OpenBiliClaw",
       "npmName": "openbiliclaw",
@@ -1503,8 +4790,8 @@
       "name": "Tianshu-Tui",
       "npmName": "tianshu-tui",
       "section": "watchlist",
-      "verdict": "unknown",
-      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \">=24\"",
       "pkgVersion": "3.1.2",
       "peerCordis": null,
       "peerDsh": null,
@@ -1972,6 +5259,2089 @@
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
+    },
+    {
+      "id": "colleague-skill",
+      "name": "colleague-skill",
+      "npmName": "colleague-skill",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "ipollowork",
+      "name": "iPolloWork",
+      "npmName": "ipollowork",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deeptide",
+      "name": "deeptide",
+      "npmName": "deeptide",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.11.8",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18.0.0"
+    },
+    {
+      "id": "mobius",
+      "name": "mobius",
+      "npmName": "mobius",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "helloagents",
+      "name": "helloagents",
+      "npmName": "helloagents",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "4.0.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.19.0"
+    },
+    {
+      "id": "harmony-next-skills",
+      "name": "harmony-next.skills",
+      "npmName": "harmony-next.skills",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "abu-cowork",
+      "name": "Abu-Cowork",
+      "npmName": "abu-cowork",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tui",
+      "name": "dsh-TUI",
+      "npmName": "dsh-tui",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "claude-paper",
+      "name": "claude-paper",
+      "npmName": "claude-paper",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "axern",
+      "name": "axern",
+      "npmName": "axern",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "mcp-for-stata",
+      "name": "mcp-for-stata",
+      "npmName": "mcp-for-stata",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "rea",
+      "name": "rea",
+      "npmName": "rea",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.0.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=0.4.0"
+    },
+    {
+      "id": "awesome-dsh-plugin-awesome-dsh-plugin",
+      "name": "awesome-dsh-plugin",
+      "npmName": "awesome-dsh-plugin",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "open-record-replay",
+      "name": "open-record-replay",
+      "npmName": "open-record-replay",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.0.0"
+    },
+    {
+      "id": "oh-dsh",
+      "name": "oh-dsh",
+      "npmName": "oh-dsh",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "argo",
+      "name": "argo",
+      "npmName": "argo",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "promentor",
+      "name": "ProMentor",
+      "npmName": "promentor",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "jacobian",
+      "name": "jacobian",
+      "npmName": "jacobian",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.12.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-handbook",
+      "name": "dsh-handbook",
+      "npmName": "dsh-handbook",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "flameox",
+      "name": "flameox",
+      "npmName": "flameox",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.12",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "zeromd",
+      "name": "zeromd",
+      "npmName": "zeromd",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "browser-bridge",
+      "name": "browser-bridge",
+      "npmName": "browser-bridge",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "openguardrails",
+      "name": "openguardrails",
+      "npmName": "openguardrails",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "6.7.17",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.0.0"
+    },
+    {
+      "id": "allinluna",
+      "name": "allinluna",
+      "npmName": "allinluna",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "leantoken",
+      "name": "leantoken",
+      "npmName": "leantoken",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.26",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-tianshu-build",
+      "name": "dsh-tianshu-build",
+      "npmName": "dsh-tianshu-build",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-multica-runtime",
+      "name": "dsh-multica-runtime",
+      "npmName": "dsh-multica-runtime",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-deepseek-harness-dominic789654",
+      "name": "awesome-deepseek-harness",
+      "npmName": "awesome-deepseek-harness",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseekharnessdesktop",
+      "name": "DeepSeekHarnessDesktop",
+      "npmName": "deepseekharnessdesktop",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "cobsidian",
+      "name": "Cobsidian",
+      "npmName": "cobsidian",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "internalcot",
+      "name": "internalcot",
+      "npmName": "internalcot",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.13.0"
+    },
+    {
+      "id": "dsh-desktop",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "re-framework",
+      "name": "RE-Framework",
+      "npmName": "re-framework",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vision-router",
+      "name": "dsh-vision-router",
+      "npmName": "dsh-vision-router",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "ds-api-usage",
+      "name": "ds-api-usage",
+      "npmName": "ds-api-usage",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dshcode",
+      "name": "dshcode",
+      "npmName": "dshcode",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tui-openguardrails",
+      "name": "dsh-tui",
+      "npmName": "dsh-tui",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-plugins-marketplace",
+      "name": "DSH-Plugins-Marketplace",
+      "npmName": "dsh-plugins-marketplace",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "anchorlaw",
+      "name": "anchorlaw",
+      "npmName": "anchorlaw",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "eyes-for-deepseek",
+      "name": "eyes-for-deepseek",
+      "npmName": "eyes-for-deepseek",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "graphlint",
+      "name": "graphlint",
+      "npmName": "graphlint",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "image-vision",
+      "name": "image-vision",
+      "npmName": "image-vision",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "hello-dsh",
+      "name": "hello-dsh",
+      "npmName": "hello-dsh",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-dsh-bridges",
+      "name": "awesome-dsh-bridges",
+      "npmName": "awesome-dsh-bridges",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "resanity",
+      "name": "reSanity",
+      "npmName": "resanity",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "agent-skills-octoparse",
+      "name": "agent-skills",
+      "npmName": "agent-skills",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "deepseek-harness-tui",
+      "name": "deepseek-harness-tui",
+      "npmName": "deepseek-harness-tui",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "litestartup-skills",
+      "name": "litestartup-skills",
+      "npmName": "litestartup-skills",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "vibemeter",
+      "name": "vibemeter",
+      "npmName": "vibemeter",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-docker",
+      "name": "deepseek-harness-docker",
+      "npmName": "deepseek-harness-docker",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-launcher-ryun601",
+      "name": "dsh-launcher",
+      "npmName": "dsh-launcher",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-desktop-longyu065",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "agent-extensions",
+      "name": "Agent_Extensions",
+      "npmName": "agent_extensions",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "grassvison",
+      "name": "GrassVison",
+      "npmName": "grassvison",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "gitcontribute",
+      "name": "gitcontribute",
+      "npmName": "gitcontribute",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "3.0.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "deepseek-harness-desktop",
+      "name": "Deepseek-Harness-Desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-plugins-lwmxiaobei",
+      "name": "dsh-plugins",
+      "npmName": "dsh-plugins",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-plugin-installer",
+      "name": "dsh-plugin-installer",
+      "npmName": "dsh-plugin-installer",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "smokinggun",
+      "name": "smokinggun",
+      "npmName": "smokinggun",
+      "section": "watchlist",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \">=22.18\"",
+      "pkgVersion": "4.0.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.18"
+    },
+    {
+      "id": "openflowframes",
+      "name": "OpenFlowFrames",
+      "npmName": "openflowframes",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "8x-skills",
+      "name": "8x-skills",
+      "npmName": "8x-skills",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-humanize",
+      "name": "dsh-humanize",
+      "npmName": "dsh-humanize",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "shadow-vision",
+      "name": "shadow-vision",
+      "npmName": "shadow-vision",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-web-search-pro",
+      "name": "dsh-web-search-pro",
+      "npmName": "dsh-web-search-pro",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "session-persistence-rdb",
+      "name": "session-persistence-rdb",
+      "npmName": "session-persistence-rdb",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "tokilake-ai-gateway",
+      "name": "tokilake-ai-gateway",
+      "npmName": "tokilake-ai-gateway",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-side-panel-xyz1024-alt",
+      "name": "dsh-side-panel",
+      "npmName": "dsh-side-panel",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-mac-desktop",
+      "name": "dsh-mac-desktop",
+      "npmName": "dsh-mac-desktop",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-deepseek-harness-plugins",
+      "name": "awesome-deepseek-harness-plugins",
+      "npmName": "awesome-deepseek-harness-plugins",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-drop-to-path",
+      "name": "dsh-drop-to-path",
+      "npmName": "dsh-drop-to-path",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "project-blueprint",
+      "name": "project-blueprint",
+      "npmName": "project-blueprint",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.0.5",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-plugin-guide",
+      "name": "dsh-plugin-guide",
+      "npmName": "dsh-plugin-guide",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-desktop-snowcrescenter-tech",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "deepseek-harness-desktop-haoyueqin",
+      "name": "deepseek-harness-desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "awesome-deepseek-harness-plugins-vvlife",
+      "name": "awesome-deepseek-harness-plugins",
+      "npmName": "awesome-deepseek-harness-plugins",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-working-activity",
+      "name": "dsh-working-activity",
+      "npmName": "dsh-working-activity",
+      "section": "watchlist",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \"^22.19 || >=24\"",
+      "pkgVersion": "0.2.3",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19 || >=24"
+    },
+    {
+      "id": "plaindeck",
+      "name": "PlainDeck",
+      "npmName": "plaindeck",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.7.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22"
+    },
+    {
+      "id": "dsh-context-viewer",
+      "name": "dsh-context-viewer",
+      "npmName": "dsh-context-viewer",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-deepseek-harness-libukai",
+      "name": "awesome-deepseek-harness",
+      "npmName": "awesome-deepseek-harness",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-local-filetree",
+      "name": "dsh-local-filetree",
+      "npmName": "dsh-local-filetree",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-desktop-chyra-moon",
+      "name": "deepseek-harness-desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-llm-wiki",
+      "name": "dsh-llm-wiki",
+      "npmName": "dsh-llm-wiki",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "pack-agent",
+      "name": "pack-agent",
+      "npmName": "pack-agent",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-desktop-mrbbbaixue",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "deepseek-harness-typescript-sdk",
+      "name": "deepseek-harness-typescript-sdk",
+      "npmName": "deepseek-harness-typescript-sdk",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-tui-openma-ai",
+      "name": "deepseek-harness-tui",
+      "npmName": "deepseek-harness-tui",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-notify-windows",
+      "name": "dsh-notify-windows",
+      "npmName": "dsh-notify-windows",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.5.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-desktop-zsyu9779",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-learn-everything",
+      "name": "dsh-learn-everything",
+      "npmName": "dsh-learn-everything",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-email",
+      "name": "dsh-email",
+      "npmName": "dsh-email",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.5.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-record-replay",
+      "name": "dsh-record-replay",
+      "npmName": "dsh-record-replay",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-github-pivotstackintelligence",
+      "name": "dsh-github",
+      "npmName": "dsh-github",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-dsh-plugins-cccakeee",
+      "name": "awesome-dsh-plugins",
+      "npmName": "awesome-dsh-plugins",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-blue-whale-maid",
+      "name": "dsh-blue-whale-maid",
+      "npmName": "dsh-blue-whale-maid",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "turtle-ui",
+      "name": "turtle-ui",
+      "npmName": "turtle-ui",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "2.0.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-launcher-entireyu",
+      "name": "dsh-launcher",
+      "npmName": "dsh-launcher",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tui-orriduck",
+      "name": "dsh-tui",
+      "npmName": "dsh-tui",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-token-usage",
+      "name": "dsh-token-usage",
+      "npmName": "dsh-token-usage",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-usage-dashboard",
+      "name": "dsh-usage-dashboard",
+      "npmName": "dsh-usage-dashboard",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "pawin-brain-deepseek-harness",
+      "name": "pawin-brain-deepseek-harness",
+      "npmName": "pawin-brain-deepseek-harness",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tui-xiaoshihou514",
+      "name": "dsh-tui",
+      "npmName": "dsh-tui",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-review-skills",
+      "name": "dsh-review-skills",
+      "npmName": "dsh-review-skills",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-meta-orchestrator",
+      "name": "dsh-meta-orchestrator",
+      "npmName": "dsh-meta-orchestrator",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-webfetch",
+      "name": "dsh-webfetch",
+      "npmName": "dsh-webfetch",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-cowork",
+      "name": "dsh-cowork",
+      "npmName": "dsh-cowork",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "ai-sdk-provider-dsh",
+      "name": "ai-sdk-provider-dsh",
+      "npmName": "ai-sdk-provider-dsh",
+      "section": "watchlist",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \">=22.19.0\"",
+      "pkgVersion": "0.2.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.19.0"
+    },
+    {
+      "id": "dsh-promotion-toolkit",
+      "name": "dsh-promotion-toolkit",
+      "npmName": "dsh-promotion-toolkit",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-desktop-kevenxz",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-security-scan",
+      "name": "dsh-security-scan",
+      "npmName": "dsh-security-scan",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "agent-fix",
+      "name": "agent-fix",
+      "npmName": "agent-fix",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-skill-pack-security",
+      "name": "dsh-skill-pack-security",
+      "npmName": "dsh-skill-pack-security",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-underseal",
+      "name": "dsh-tool-underseal",
+      "npmName": "dsh-tool-underseal",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-apple-mode",
+      "name": "dsh-apple-mode",
+      "npmName": "dsh-apple-mode",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-desktop-window",
+      "name": "dsh-desktop-window",
+      "npmName": "dsh-desktop-window",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-publisher",
+      "name": "dsh-plugin-publisher",
+      "npmName": "dsh-plugin-publisher",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deep-option",
+      "name": "deep_option",
+      "npmName": "deep_option",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tonghuashun",
+      "name": "dsh-tonghuashun",
+      "npmName": "dsh-tonghuashun",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-github",
+      "name": "dsh-tool-github",
+      "npmName": "dsh-tool-github",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-promotion-toolkit-lhmd",
+      "name": "dsh-promotion-toolkit",
+      "npmName": "dsh-promotion-toolkit",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-translator",
+      "name": "dsh-translator",
+      "npmName": "dsh-translator",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-voice-funasr",
+      "name": "dsh-voice-funasr",
+      "npmName": "dsh-voice-funasr",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-task-checklist",
+      "name": "dsh-task-checklist",
+      "npmName": "dsh-task-checklist",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-desktop-kyorakuyk",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-longbridge",
+      "name": "dsh-longbridge",
+      "npmName": "dsh-longbridge",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-webhook-bridge",
+      "name": "dsh-webhook-bridge",
+      "npmName": "dsh-webhook-bridge",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-notify",
+      "name": "dsh-notify",
+      "npmName": "dsh-notify",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-capability-inspector",
+      "name": "dsh-capability-inspector",
+      "npmName": "dsh-capability-inspector",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-godot-skill",
+      "name": "dsh-godot-skill",
+      "npmName": "dsh-godot-skill",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "contextgate",
+      "name": "ContextGate",
+      "npmName": "contextgate",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "visual-to-editable-ppt-skill",
+      "name": "visual-to-editable-ppt-skill",
+      "npmName": "visual-to-editable-ppt-skill",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-as-desktop",
+      "name": "Deepseek-Harness-as-Desktop",
+      "npmName": "deepseek-harness-as-desktop",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-wiki",
+      "name": "DSH-Wiki",
+      "npmName": "dsh-wiki",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-switch",
+      "name": "DSH-plugin-switch",
+      "npmName": "dsh-plugin-switch",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-desktop-kncrjvirx",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-web-plugin-manager",
+      "name": "dsh-web-plugin-manager",
+      "npmName": "dsh-web-plugin-manager",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-code-check",
+      "name": "dsh-code-check",
+      "npmName": "dsh-code-check",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-netdoctor",
+      "name": "dsh-netdoctor",
+      "npmName": "dsh-netdoctor",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-marketplace",
+      "name": "dsh-plugin-marketplace",
+      "npmName": "dsh-plugin-marketplace",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.18"
+    },
+    {
+      "id": "ironlaw",
+      "name": "ironlaw",
+      "npmName": "ironlaw",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-archive-manager",
+      "name": "dsh-archive-manager",
+      "npmName": "dsh-archive-manager",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "chat2skill",
+      "name": "chat2skill",
+      "npmName": "chat2skill",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "intent-gate",
+      "name": "intent-gate",
+      "npmName": "intent-gate",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "content-to-editable-ppt-skill",
+      "name": "content-to-editable-ppt-skill",
+      "npmName": "content-to-editable-ppt-skill",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-paddle-ocr",
+      "name": "dsh-paddle-ocr",
+      "npmName": "dsh-paddle-ocr",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "computer-use-plus",
+      "name": "computer-use-plus",
+      "npmName": "computer-use-plus",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "liuhe",
+      "name": "LiuHe",
+      "npmName": "liuhe",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-atuin",
+      "name": "dsh-atuin",
+      "npmName": "dsh-atuin",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.0.0"
+    },
+    {
+      "id": "dsh-ssh-remote",
+      "name": "dsh-ssh-remote",
+      "npmName": "dsh-ssh-remote",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-client-usage",
+      "name": "dsh-client-usage",
+      "npmName": "dsh-client-usage",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "peanut-dsh-plugin",
+      "name": "peanut-dsh-plugin",
+      "npmName": "peanut-dsh-plugin",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "sidesight",
+      "name": "sidesight",
+      "npmName": "sidesight",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22"
+    },
+    {
+      "id": "dsh-agent-message",
+      "name": "dsh-agent-message",
+      "npmName": "dsh-agent-message",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-deeptutor",
+      "name": "dsh-deeptutor",
+      "npmName": "dsh-deeptutor",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.3",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-telegram",
+      "name": "dsh-telegram",
+      "npmName": "dsh-telegram",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-task-progress-notifier",
+      "name": "dsh-task-progress-notifier",
+      "npmName": "dsh-task-progress-notifier",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-plugin-from-scratch",
+      "name": "deepseek-harness-plugin-from-scratch",
+      "npmName": "deepseek-harness-plugin-from-scratch",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-desktop-czzzlq",
+      "name": "deepseek-harness-desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-daily-progress",
+      "name": "dsh-daily-progress",
+      "npmName": "dsh-daily-progress",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-vision-plugin",
+      "name": "deepseek-harness-vision-plugin",
+      "npmName": "deepseek-harness-vision-plugin",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-dsh-plugins-kejixiaoliang",
+      "name": "awesome-dsh-plugins",
+      "npmName": "awesome-dsh-plugins",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "design-playbook",
+      "name": "design-playbook",
+      "npmName": "design-playbook",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-session-index",
+      "name": "dsh-session-index",
+      "npmName": "dsh-session-index",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-obsidian-export",
+      "name": "dsh-obsidian-export",
+      "npmName": "dsh-obsidian-export",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-launcher-tttnny",
+      "name": "DSH-Launcher",
+      "npmName": "dsh-launcher",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "intent-flow",
+      "name": "intent-flow",
+      "npmName": "intent-flow",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "inferglow",
+      "name": "inferglow",
+      "npmName": "inferglow",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ernie-image",
+      "name": "dsh-ernie-image",
+      "npmName": "dsh-ernie-image",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-theme-ti",
+      "name": "dsh-theme-ti",
+      "npmName": "dsh-theme-ti",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-wallpaper",
+      "name": "dsh-wallpaper",
+      "npmName": "dsh-wallpaper",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tui-mashedpotato817",
+      "name": "dsh-tui",
+      "npmName": "dsh-tui",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-checkpoint-rewind",
+      "name": "dsh-checkpoint-rewind",
+      "npmName": "dsh-checkpoint-rewind",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-benchmark",
+      "name": "dsh-benchmark",
+      "npmName": "dsh-benchmark",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-find-plugin",
+      "name": "dsh-find-plugin",
+      "npmName": "dsh-find-plugin",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.3.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-desktop-xiaoyuxiaoyuqwq",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-tui-rabbitknight",
+      "name": "dsh-tui",
+      "npmName": "dsh-tui",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-permission-rules",
+      "name": "dsh-permission-rules",
+      "npmName": "dsh-permission-rules",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-desktop-yisfl",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-lineage",
+      "name": "dsh-lineage",
+      "npmName": "dsh-lineage",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "git-skills",
+      "name": "git-skills",
+      "npmName": "git-skills",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-dev-guide",
+      "name": "dsh-plugin-dev-guide",
+      "npmName": "dsh-plugin-dev-guide",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-eval",
+      "name": "dsh-eval",
+      "npmName": "dsh-eval",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-desktop-cnskycn",
+      "name": "deepseek-harness-desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dshp",
+      "name": "dshp",
+      "npmName": "dshp",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-eval-regression",
+      "name": "dsh-eval-regression",
+      "npmName": "dsh-eval-regression",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-slack",
+      "name": "dsh-slack",
+      "npmName": "dsh-slack",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-plugin-dedup",
+      "name": "dsh-plugin-dedup",
+      "npmName": "dsh-plugin-dedup",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-crosstalk",
+      "name": "dsh-crosstalk",
+      "npmName": "dsh-crosstalk",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-jingle",
+      "name": "dsh-jingle",
+      "npmName": "dsh-jingle",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-qq-bot",
+      "name": "dsh-qq-bot",
+      "npmName": "dsh-qq-bot",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-archived-sessions",
+      "name": "dsh-archived-sessions",
+      "npmName": "dsh-archived-sessions",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-hotswap",
+      "name": "dsh-hotswap",
+      "npmName": "dsh-hotswap",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-plugin-manager-registry",
+      "name": "dsh-plugin-manager-registry",
+      "npmName": "dsh-plugin-manager-registry",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "knowledge-from-literature-and-bilibili",
+      "name": "knowledge-from-literature-and-bilibili",
+      "npmName": "knowledge-from-literature-and-bilibili",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-desktop-xiangshangya",
+      "name": "deepseek-harness-desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-plugin-wechat",
+      "name": "dsh-plugin-wechat",
+      "npmName": "dsh-plugin-wechat",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.3.3",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22"
+    },
+    {
+      "id": "dsh-plugin-marketplace-yelebai",
+      "name": "dsh-plugin-marketplace",
+      "npmName": "dsh-plugin-marketplace",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20.18"
+    },
+    {
+      "id": "dsh-dingtalk",
+      "name": "dsh-dingtalk",
+      "npmName": "dsh-dingtalk",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-desktop-qingchunnh",
+      "name": "dsh-desktop",
+      "npmName": "dsh-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "awesome-dsh-plugins-dongsheng123132",
+      "name": "awesome-dsh-plugins",
+      "npmName": "awesome-dsh-plugins",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-remote-sandbox",
+      "name": "dsh-remote-sandbox",
+      "npmName": "dsh-remote-sandbox",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "northstar-exam",
+      "name": "northstar-exam",
+      "npmName": "northstar-exam",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-output-styles",
+      "name": "dsh-output-styles",
+      "npmName": "dsh-output-styles",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-release-proof",
+      "name": "dsh-release-proof",
+      "npmName": "dsh-release-proof",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vscode",
+      "name": "dsh-vscode",
+      "npmName": "dsh-vscode",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-bash-terminal",
+      "name": "dsh-bash-terminal",
+      "npmName": "dsh-bash-terminal",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.3.11",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-model-plus",
+      "name": "dsh-model-plus",
+      "npmName": "dsh-model-plus",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-session-stars",
+      "name": "dsh-session-stars",
+      "npmName": "dsh-session-stars",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-calendar",
+      "name": "dsh-calendar",
+      "npmName": "dsh-calendar",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-guardian",
+      "name": "dsh-guardian",
+      "npmName": "dsh-guardian",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-webui-glass-theme",
+      "name": "dsh-webUI-Glass-Theme",
+      "npmName": "dsh-webui-glass-theme",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-conversation-rewind",
+      "name": "dsh-conversation-rewind",
+      "npmName": "dsh-conversation-rewind",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-agnes-paseo",
+      "name": "dsh-agnes-paseo",
+      "npmName": "dsh-agnes-paseo",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "oh-my-dsh-like-study1",
+      "name": "Oh-My-DSH",
+      "npmName": "oh-my-dsh",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-quant-workspace",
+      "name": "dsh-quant-workspace",
+      "npmName": "dsh-quant-workspace",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "agentframe-v3",
+      "name": "AgentFrame-v3",
+      "npmName": "agentframe-v3",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-describe-image",
+      "name": "dsh-tool-describe-image",
+      "npmName": "dsh-tool-describe-image",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "ds-web-ui",
+      "name": "ds-web-ui",
+      "npmName": "ds-web-ui",
+      "section": "watchlist",
+      "verdict": "broken",
+      "note": "node 22.17.0 not in engines \">=22.19.0\"",
+      "pkgVersion": "0.1.9",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.19.0"
+    },
+    {
+      "id": "dsh-git",
+      "name": "dsh-git",
+      "npmName": "dsh-git",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "unparseable peer range (cordis=\"^0.1.0-rc.5\" dsh=\"undefined\")",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^0.1.0-rc.5",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "deepseek-harness-desktop-easyhoov",
+      "name": "deepseek-harness-desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-at",
+      "name": "dsh-at",
+      "npmName": "dsh-at",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugins-store",
+      "name": "dsh-plugins-store",
+      "npmName": "dsh-plugins-store",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-task-console",
+      "name": "dsh-task-console",
+      "npmName": "dsh-task-console",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "marketplace",
+      "name": "marketplace",
+      "npmName": "marketplace",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-native-playbook",
+      "name": "dsh-native-playbook",
+      "npmName": "dsh-native-playbook",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-web-search-duckduckgo",
+      "name": "dsh-web-search-duckduckgo",
+      "npmName": "dsh-web-search-duckduckgo",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mobile-apk",
+      "name": "dsh-mobile-apk",
+      "npmName": "dsh-mobile-apk",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
     }
   ]
 }

@@ -174,4 +174,42 @@
       document.body.removeChild(ta);
     }
   });
+
+  /* SVG → PNG 下载（仪表盘图表，零依赖：序列化 → var() 解析 → canvas → toDataURL → a.download） */
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.png-btn');
+    if (!btn) return;
+    var svg = document.querySelector(btn.getAttribute('data-svg') + ' svg');
+    if (!svg) svg = document.querySelector(btn.getAttribute('data-svg'));
+    if (!svg) return;
+    var rect = svg.getBoundingClientRect();
+    var w = Math.round(rect.width) || 640;
+    var h = Math.round(rect.height) || 300;
+    var clone = svg.cloneNode(true);
+    clone.setAttribute('width', w);
+    clone.setAttribute('height', h);
+    var cs = getComputedStyle(document.documentElement);
+    var xml = new XMLSerializer().serializeToString(clone).replace(/var\(--[\w-]+\)/g, function (m) {
+      return cs.getPropertyValue(m.slice(4, -1)).trim() || '#fff';
+    });
+    var img = new Image();
+    img.onload = function () {
+      var scale = 2;
+      var canvas = document.createElement('canvas');
+      canvas.width = w * scale;
+      canvas.height = h * scale;
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#0b0f1a';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      var a = document.createElement('a');
+      a.download = btn.getAttribute('data-name') + '.png';
+      a.href = canvas.toDataURL('image/png');
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    };
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(xml);
+  });
 })();
+

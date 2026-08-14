@@ -189,6 +189,13 @@ const I18N = {
     expandAll: 'Expand all', collapse: 'Collapse',
     badgeTitle: 'Copy badge code — for plugin authors to embed in README',
     badgeCopied: 'Badge code copied — paste it at the top of your README',
+    dashTitle: 'Ecosystem at a glance',
+    dashSource: 'Source: GitHub dsh-plugin topic + catalog snapshot · updated',
+    dashCatalog: 'catalog entries', dashStars: 'total stars', dashNew: 'new in 48h', dashOk: 'compat OK rate',
+    dashGrowth: 'Ecosystem growth', dashDist: 'Star distribution',
+    png: 'PNG',
+    storeTitle: 'Plugin Store',
+    storeDesc: 'Browse {n}+ plugins right inside DSH — compat badges, one-click install.',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -242,6 +249,13 @@ const I18N = {
     expandAll: '展开全部', collapse: '收起',
     badgeTitle: '复制徽章代码 · 供插件作者嵌入 README',
     badgeCopied: '徽章代码已复制，粘贴到你的 README 顶部即可展示',
+    dashTitle: '生态仪表盘',
+    dashSource: '数据源：GitHub dsh-plugin topic + 目录快照 · 更新于',
+    dashCatalog: '目录条目', dashStars: '总星数', dashNew: '今日新增', dashOk: '兼容 ok 率',
+    dashGrowth: '生态增长', dashDist: '星数分布',
+    png: 'PNG',
+    storeTitle: '插件商店',
+    storeDesc: '在 DSH 里直接逛 {n}+ 插件：看兼容徽章、一键安装。',
   },
 };
 
@@ -458,6 +472,17 @@ function renderPage(t, data, baseUrl, snapshot) {
   const snapRepos = new Set(Object.keys((snapshot && snapshot.stars_by_repo) || {}));
   const newArrivals = catalog.filter(p => p.repo && !snapRepos.has(p.repo)).sort(sortByStarsDesc).slice(0, 12);
 
+  // 生态仪表盘（数据与 stars 页共用公共函数，全部构建期现算）
+  const eco = computeEcoTotals(data, snapshot);
+  const dashBuckets = computeBuckets([...catalog, ...watchlist]);
+  const dashGp = computeGrowthPoints(loadGrowthHistory(), eco.total, isZh(t) ? '现在' : 'now');
+  const dashGrowthSvg = dashGp ? lbLineChart([{ values: dashGp.topicVals }, { values: dashGp.catalogVals }], dashGp.labels) : '';
+  const dashDistSvg = lbChartBars(dashBuckets);
+  const dNow = new Date();
+  const todayStamp = `${dNow.getFullYear()}-${String(dNow.getMonth() + 1).padStart(2, '0')}-${String(dNow.getDate()).padStart(2, '0')}`;
+  const storeCmd = 'dsh plugin --profile web add @dsh-suite/plugin-manager';
+  const storeDescText = t.storeDesc.replace('{n}', catalog.length);
+
   const thisUrl = baseUrl + (isZh(t) ? 'zh.html' : '');
   const altUrl = baseUrl + (isZh(t) ? '' : 'zh.html');
 
@@ -489,6 +514,48 @@ function renderPage(t, data, baseUrl, snapshot) {
       } catch (e) {}
     })();
   </script>`;
+
+  const dashSection = `
+    <section class="eco-dash" id="dashboard" aria-label="${esc(t.dashTitle)}">
+      <h2 class="section-title">${esc(t.dashTitle)}</h2>
+      <div class="dash-stats">
+        <div class="dash-stat"><span class="ds-num">${eco.catalogCount}</span><span class="ds-label">${esc(t.dashCatalog)}</span></div>
+        <div class="dash-stat"><span class="ds-num">★ ${fmtStars(eco.totalStars)}</span><span class="ds-label">${esc(t.dashStars)}</span></div>
+        <div class="dash-stat"><span class="ds-num ds-num-new">+${eco.newCount}</span><span class="ds-label">${esc(t.dashNew)}</span></div>
+        <div class="dash-stat"><span class="ds-num">${eco.okRatio.toFixed(1)}%</span><span class="ds-label">${esc(t.dashOk)}</span></div>
+      </div>
+      <div class="dash-charts">
+        <figure class="dash-chart">
+          <figcaption class="dash-chart-head">
+            <span class="dash-chart-title">${esc(t.dashGrowth)}</span>
+            <button class="png-btn" type="button" data-svg="#dash-growth-svg" data-name="dsh-suite-growth-${todayStamp}" title="${esc(t.png)}">⬇ ${esc(t.png)}</button>
+          </figcaption>
+          <div class="dash-svg" id="dash-growth-svg">${dashGrowthSvg}</div>
+          <p class="dash-cap">${esc(t.dashSource)} ${todayStamp}</p>
+        </figure>
+        <figure class="dash-chart">
+          <figcaption class="dash-chart-head">
+            <span class="dash-chart-title">${esc(t.dashDist)}</span>
+            <button class="png-btn" type="button" data-svg="#dash-dist-svg" data-name="dsh-suite-distribution-${todayStamp}" title="${esc(t.png)}">⬇ ${esc(t.png)}</button>
+          </figcaption>
+          <div class="dash-svg" id="dash-dist-svg">${dashDistSvg}</div>
+          <p class="dash-cap">${esc(t.dashSource)} ${todayStamp}</p>
+        </figure>
+      </div>
+    </section>
+
+    <section class="store-panel" id="plugin-store">
+      <div class="store-text">
+        <h2 class="section-title">🛍 ${esc(t.storeTitle)}</h2>
+        <p class="store-desc">${esc(storeDescText)}</p>
+        <div class="store-install">
+          <code class="install-cmd store-cmd">${esc(storeCmd)}</code>
+          <button class="copy-btn" type="button" data-cmd="${esc(storeCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
+        </div>
+      </div>
+      <img class="store-img" src="assets/store-tab.png" alt="${esc(t.storeTitle)}" loading="lazy">
+    </section>
+`;
 
   const jsonBlob = JSON.stringify({ catalog, meta: { total: catalog.length, watchlist: watchlist.length, featured: featuredList.length, categories: cats } });
 
@@ -555,6 +622,7 @@ function renderPage(t, data, baseUrl, snapshot) {
       </div>
     </section>
 
+${dashSection}
     <section class="controls" aria-label="search and filters">
       <div class="controls-row">
         <input id="search" type="search" placeholder="${esc(t.searchPlaceholder)}" autocomplete="off" spellcheck="false">
@@ -636,6 +704,47 @@ function loadGrowthHistory() {
   const p = resolve(REPO_ROOT, 'bot', 'state', 'growth-history.json');
   if (!existsSync(p)) return null;
   try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; }
+}
+
+/** 星数分布桶（0/1–3/4–10/11–50/51–100/100+）——stars 页与首页仪表盘共用 */
+function computeBuckets(all) {
+  const s = (p) => p.stars || 0;
+  return [
+    { label: '0 ★', value: all.filter(p => s(p) === 0).length, color: 'var(--faint)' },
+    { label: '1–3 ★', value: all.filter(p => s(p) >= 1 && s(p) <= 3).length, color: 'var(--muted)' },
+    { label: '4–9 ★', value: all.filter(p => s(p) >= 4 && s(p) <= 9).length, color: 'var(--brand-deep)' },
+    { label: '10–49 ★', value: all.filter(p => s(p) >= 10 && s(p) <= 49).length, color: 'var(--brand)' },
+    { label: '50–499 ★', value: all.filter(p => s(p) >= 50 && s(p) <= 499).length, color: 'var(--brand-bright)' },
+    { label: '500+ ★', value: all.filter(p => s(p) >= 500).length, color: 'var(--green)' },
+  ];
+}
+
+/** 生态总览数字——首页仪表盘与 stars 页共用（全部构建期现算） */
+function computeEcoTotals(data, snapshot) {
+  const { catalog, watchlist } = data;
+  const all = [...catalog, ...watchlist];
+  const total = all.length;
+  const totalStars = all.reduce((s, p) => s + (p.stars || 0), 0);
+  const okCount = catalog.filter(p => p.compatStatus === 'ok').length;  // normalizeCurated 已压平成 compatStatus
+  const okRatio = catalog.length ? (okCount / catalog.length * 100) : 0;
+  const snapRepos = new Set(Object.keys((snapshot && snapshot.stars_by_repo) || {}));
+  const newCount = catalog.filter(p => p.repo && !snapRepos.has(p.repo)).length;
+  return { catalogCount: catalog.length, watchlistCount: watchlist.length, total, totalStars, okCount, okRatio, newCount };
+}
+
+/** 增长曲线数据点（历史快照 + 现值）——stars 页与首页仪表盘共用 */
+function computeGrowthPoints(growth, presentTotal, nowLabel) {
+  if (!growth || !Array.isArray(growth.points) || !growth.points.length) return null;
+  const labels = [], topicVals = [], catalogVals = [];
+  for (const pt of growth.points) {
+    labels.push((pt.date || '').slice(5));
+    topicVals.push(Number(pt.topic) || 0);
+    catalogVals.push(Number(pt.catalog) || 0);
+  }
+  labels.push(nowLabel);
+  topicVals.push(Number(growth.topic_now) || topicVals[topicVals.length - 1] || 0);
+  catalogVals.push(presentTotal);
+  return { labels, topicVals, catalogVals };
 }
 
 /** 折线图（内联 SVG，多序列） */
@@ -722,30 +831,12 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
   const zeroRatio = total ? (zeroCount / total * 100) : 0;
   const lowCount = all.filter(p => (p.stars || 0) <= 3).length;
   const lowRatio = total ? (lowCount / total * 100) : 0;
-  const buckets = [
-    { label: '0 ★', value: all.filter(p => (p.stars || 0) === 0).length, color: 'var(--faint)' },
-    { label: '1–3 ★', value: all.filter(p => (p.stars || 0) >= 1 && (p.stars || 0) <= 3).length, color: 'var(--muted)' },
-    { label: '4–9 ★', value: all.filter(p => (p.stars || 0) >= 4 && (p.stars || 0) <= 9).length, color: 'var(--brand-deep)' },
-    { label: '10–49 ★', value: all.filter(p => (p.stars || 0) >= 10 && (p.stars || 0) <= 49).length, color: 'var(--brand)' },
-    { label: '50–499 ★', value: all.filter(p => (p.stars || 0) >= 50 && (p.stars || 0) <= 499).length, color: 'var(--brand-bright)' },
-    { label: '500+ ★', value: all.filter(p => (p.stars || 0) >= 500).length, color: 'var(--green)' },
-  ];
+  const buckets = computeBuckets(all);
 
-  // 增长曲线（历史快照 + 现值）
+  // 增长曲线（历史快照 + 现值，公共函数）
   const growth = loadGrowthHistory();
-  let growthChart = '';
-  if (growth && Array.isArray(growth.points) && growth.points.length) {
-    const gl = [], gt = [], gc = [];
-    for (const pt of growth.points) {
-      gl.push((pt.date || '').slice(5));
-      gt.push(Number(pt.topic) || 0);
-      gc.push(Number(pt.catalog) || 0);
-    }
-    gl.push(isZ ? '现在' : 'now');
-    gt.push(Number(growth.topic_now) || gt[gt.length - 1] || 0);
-    gc.push(total);
-    growthChart = lbLineChart([{ values: gt }, { values: gc }], gl);
-  }
+  const gp = computeGrowthPoints(growth, total, isZ ? '现在' : 'now');
+  const growthChart = gp ? lbLineChart([{ values: gp.topicVals }, { values: gp.catalogVals }], gp.labels) : '';
 
   // 作者排行榜（按作者聚合条目数 + 总星数）
   const authorMap = new Map();

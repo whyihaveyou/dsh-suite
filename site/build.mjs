@@ -615,6 +615,7 @@ function renderPage(t, data, baseUrl, snapshot) {
     <a class="brand" href="${isZh(t) ? 'zh.html' : 'index.html'}"><span class="brand-mark">dsh</span>&nbsp;suite</a>
     <nav class="nav">
       <a class="nav-lb" href="${isZh(t) ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
+      <a class="nav-lb" href="https://whyihaveyou.github.io/dsh-themes/" target="_blank" rel="noopener noreferrer">${isZh(t) ? '皮肤画廊' : 'Themes'}</a>
       <a class="nav-lb" href="${isZh(t) ? 'learn-zh.html' : 'learn.html'}">${esc(t.learnNav)}</a>
       <a class="nav-lang" href="${t.otherHref}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>

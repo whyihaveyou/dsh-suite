@@ -5,46 +5,46 @@
 ![Daily compat](https://img.shields.io/github/actions/workflow/status/whyihaveyou/dsh-suite/compat.yml?branch=main&label=daily-compat-check&style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-3b82f6?style=flat-square)
 
-> 🌐 English · [中文](README.zh-CN.md)
+> 🌐 中文 · [English](README.en.md)
 
-**Stop scrolling the `dsh-plugin` topic. Find plugins that still work.**
+**别再翻 `dsh-plugin` topic 了，这里都是还能跑的插件。**
 
-`dsh-suite` is a bilingual, living directory of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH) plugins — **refreshed hourly, compat-tested daily** — plus an in-app **Plugin Store**, a `create-dsh-plugin` scaffolder, and a set of first-party plugins.
+`dsh-suite` 是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）插件的**活目录**——**每小时自动刷新、每日兼容实测**——外加 DSH 内置**插件商店**、`create-dsh-plugin` 脚手架和几个自研插件。
 
-[![Website](https://img.shields.io/badge/🌐_directory_website-whyihaveyou.github.io/dsh--suite-4d6bfe?style=for-the-badge)](https://whyihaveyou.github.io/dsh-suite/)
+[![目录网站](https://img.shields.io/badge/🌐_目录网站-whyihaveyou.github.io/dsh--suite-4d6bfe?style=for-the-badge)](https://whyihaveyou.github.io/dsh-suite/zh.html)
 
-[![dsh-suite directory](https://whyihaveyou.github.io/dsh-suite/preview/2026-08-14/home-en.png)](https://whyihaveyou.github.io/dsh-suite/)
+[![dsh-suite 目录网站](https://whyihaveyou.github.io/dsh-suite/preview/2026-08-14/home-zh.png)](https://whyihaveyou.github.io/dsh-suite/zh.html)
 
 ---
 
-## Why dsh-suite
+## 为什么做 dsh-suite
 
-DSH launched without an official plugin registry. Discovery today is the GitHub `dsh-plugin` topic (hundreds of one-off repos, most unverified) plus a few static awesome-lists — and DSH itself is still shipping **compatibility-breaking changes**.
+DSH 发布时没有官方插件 registry。现在找插件只能翻 GitHub 的 `dsh-plugin` topic（50+ 个零散小插件）和当天冒出来的几个静态 awesome-list——而 DSH 自己还在发**破坏性变更**（breaking changes）。
 
-So we built four things:
+所以我们做了四件事：
 
-1. **A live directory** — 880+ curated plugins, refreshed **hourly** by CI; compatibility badges re-tested **daily** (each entry actually installed into a throwaway profile).
-2. **An in-app Plugin Store** — `@dsh-suite/plugin-manager` adds a **Store** tab right inside the DSH Web UI: browse the catalog, search, see compat badges, one-click install — without leaving DSH.
-3. **A scaffolder** — `npm create dsh-plugin` generates a working `dsh.bundle` + Cordis skeleton. The official repo ships none, and "how do I migrate my plugin" is a top community request.
-4. **First-party plugins** — a small set we actually maintain, not just links.
+1. **一个「活」目录**——880+ 精选插件，CI **每小时**刷新数据、**每天**把收录的包真实装进临时 profile 重测兼容性。
+2. **一个内置插件商店**——`@dsh-suite/plugin-manager` 在 DSH Web UI 的设置页里加一个 **Store** 标签：逛目录、搜索、看徽章、一键安装，全程不用离开 DSH。
+3. **一个脚手架**——`npm create dsh-plugin` 一条命令生成可跑的 `dsh.bundle` + Cordis 骨架。官方没给脚手架，而「怎么迁移我的插件」是社区呼声最高的需求之一。
+4. **几个自研插件**——不是纯搬运，有第一方产出。
 
-## Quick Start
+## 快速开始
 
 ```bash
-# 1. Browse the directory website
-open https://whyihaveyou.github.io/dsh-suite/
+# 1. 逛目录网站
+open https://whyihaveyou.github.io/dsh-suite/zh.html
 
-# 2. Add the Plugin Store to your DSH Web UI
+# 2. 把插件商店装进你的 DSH Web UI
 npx @deepseek-ai/dsh plugin --profile web add @dsh-suite/plugin-manager
-#    → restart the Web UI, then Settings → Plugins → Store
+#    → 重启 Web UI，然后 设置 → Plugins → Store
 
-# 3. (For developers) Scaffold your own plugin
+# 3.（开发者）造一个自己的插件
 npm create dsh-plugin@latest my-plugin
 ```
 
-![Plugin Store tab inside DSH Web UI](site/assets/store-tab.png)
+![DSH Web UI 里的插件商店 Store 标签页](site/assets/store-tab.png)
 
-## 📚 Plugin Catalog
+## 📚 插件目录
 
 <!-- CATALOG:START -->
 ### ⭐ 精选
@@ -1292,26 +1292,26 @@ npm create dsh-plugin@latest my-plugin
 > 共 1162 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
 <!-- CATALOG:END -->
 
-## Compatibility
+## 兼容性
 
-Each entry carries a badge that CI re-checks daily against the latest DSH release (static peer comparison → install check → config assembly, all key-free):
+每个条目带一枚徽章，CI 每天对照最新 DSH 版本重测（静态 peer 比对 → 安装检查 → 配置组装，三层均无需 key）：
 
-| Badge | Meaning |
+| 徽章 | 含义 |
 |---|---|
-| 🟢 ok | Verified compatible with the latest DSH release |
-| 🔴 broken | Fails against the latest DSH release |
-| ⚪ unknown | Not yet verified (first-time listing) |
-| ⚫ unmaintained | Abandoned upstream |
+| 🟢 ok | 已实测与最新 DSH 版本兼容 |
+| 🔴 broken | 与最新 DSH 版本不兼容 |
+| ⚪ unknown | 尚未实测（首次收录） |
+| ⚫ unmaintained | 上游已弃坑 |
 
-Machine-readable daily results live in [`data/compat-report.json`](data/compat-report.json); the workflow is [`.github/workflows/compat.yml`](.github/workflows/compat.yml).
+机器可读的每日结果见 [`data/compat-report.json`](data/compat-report.json)，工作流见 [`.github/workflows/compat.yml`](.github/workflows/compat.yml)。
 
-## 🧩 First-party Plugins
+## 🧩 自研插件
 
-| Plugin | Description |
+| 插件 | 说明 |
 |---|---|
-| `@dsh-suite/plugin-notify` | Turn-completion notifications to IM webhooks (Feishu / Slack / Discord / custom) + local toast |
-| `@dsh-suite/plugin-session-export` | Human-readable Markdown / HTML session export (official only exports raw JSONL) |
-| `@dsh-suite/plugin-team-board` | Lightweight multi-agent task board (roadmap) |
+| `@dsh-suite/plugin-notify` | 回合完成/出错时发 IM webhook 通知（飞书 / Slack / Discord / 自定义）+ 本机弹窗 |
+| `@dsh-suite/plugin-session-export` | 把人读的 Markdown / HTML 会话导出（官方只导 raw JSONL） |
+| `@dsh-suite/plugin-team-board` | 轻量多 agent 任务板（路线图中） |
 
 ## 🛠 create-dsh-plugin
 
@@ -1319,16 +1319,16 @@ Machine-readable daily results live in [`data/compat-report.json`](data/compat-r
 npm create dsh-plugin@latest
 ```
 
-An interactive scaffolder with multiple templates and a Claude Code / MCP migration guide. See [`docs/migration-guide.en.md`](docs/migration-guide.en.md).
+交互式脚手架，多套模板 + Claude Code / MCP 迁移指南，见 [`docs/migration-guide.zh-CN.md`](docs/migration-guide.zh-CN.md)。
 
-## Contributing
+## 贡献
 
-Add a catalog entry, submit a plugin, or review the [15 plugin design principles](CONTRIBUTING.md). Inclusion criteria and the submission flow are documented in [`CONTRIBUTING.md`](CONTRIBUTING.md); open an issue with the [inclusion-request](.github/ISSUE_TEMPLATE/plugin-submission.md) template to propose a new entry.
+收录目录条目、提交插件，或阅读 [15 条插件设计准则](CONTRIBUTING.md)。收录标准与提交流程见 [`CONTRIBUTING.md`](CONTRIBUTING.md)；想提名新条目，用[收录申请](.github/ISSUE_TEMPLATE/plugin-submission.md)模板开 issue。
 
-## Roadmap
+## 路线图
 
-- **Now (MVP)** — directory + compat CI (layer 1) + scaffolder + 2 first-party plugins.
-- **Next** — install / config-assembly compat layers, star auto-refresh, migration guide, `plugin-team-board`.
+- **现在（MVP）**——目录 + 兼容性 CI（第一层）+ 脚手架 + 2 个自研插件。
+- **接下来**——安装 / 配置组装两层兼容验证、star 自动刷新、迁移指南、`plugin-team-board`。
 
 ## License
 
@@ -1336,8 +1336,7 @@ Add a catalog entry, submit a plugin, or review the [15 plugin design principles
 
 ---
 
-## 📚 Docs
+## 📚 文档
 
-- [Contributing](CONTRIBUTING.md) — inclusion criteria, submission flow, and the 15 plugin design principles
-- [Docs](docs/) — catalog schema, category definitions, and the migration guide
-- [Plugin Dev Guide](https://github.com/whyihaveyou/dsh-plugin-tutorial) — the bilingual book edition (mirrored at `docs/plugin-dev-guide.en.md` / `.zh-CN.md`)
+- [贡献指南](CONTRIBUTING.md)——收录标准、提交流程与 15 条插件设计准则
+- [文档](docs/)——字段词典、分类体系与迁移指南

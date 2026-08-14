@@ -14,7 +14,7 @@ window.__ModuleLoader__.load({
     const React = require('react')
 
     const h = React.createElement
-    const { useState, useEffect, useMemo } = React
+    const { useState, useEffect, useMemo, useRef } = React
 
     const NS = 'pluginManager'
     const CATALOG_URL = 'https://whyihaveyou.github.io/dsh-suite/catalog.json'
@@ -24,24 +24,26 @@ window.__ModuleLoader__.load({
       all: '全部', byStars: '星标 ↓', byVerified: '最近验证', byCompat: '兼容优先',
       install: '安装', installing: '安装中…', copy: '复制命令', copied: '已复制',
       installed: '已装', confirmTitle: '确认安装', confirm: '确认', cancel: '取消',
-      needRestart: '安装成功，需重启 harness 生效', installFailed: '安装失败',
+      needRestart: '安装成功，请立即重启 DSH（重新运行 dsh web）使其生效', installFailed: '安装失败',
       timedOut: '安装超时，请到终端手动执行', retry: '重试',
       loading: '加载目录中…', empty: '没有匹配的插件', emptyCatalog: '目录为空',
       fetchError: '无法连接目录源', clear: '清除筛选',
       source: '数据源', plugins: '精选', installedCount: '已装',
       unknownLicense: '未知 license（请自行确认）', broken: '已知不兼容',
+      manualCopyTitle: '复制命令', manualCopyHint: '请手动复制以下命令：', installedNotMounted: '已安装为依赖但未挂载到 bundle（可能缺 dsh.bundle 或为 monorepo 根包），请检查包结构',
     }
     const en = {
       tab: 'Store', search: 'Search plugins…', category: 'Category', sort: 'Sort',
       all: 'All', byStars: 'Stars ↓', byVerified: 'Recently verified', byCompat: 'Compat first',
       install: 'Install', installing: 'Installing…', copy: 'Copy cmd', copied: 'Copied',
       installed: 'Installed', confirmTitle: 'Confirm install', confirm: 'Confirm', cancel: 'Cancel',
-      needRestart: 'Installed — restart harness to take effect', installFailed: 'Install failed',
+      needRestart: 'Installed — restart DSH now (re-run dsh web) to take effect', installFailed: 'Install failed',
       timedOut: 'Install timed out — run manually', retry: 'Retry',
       loading: 'Loading catalog…', empty: 'No matching plugins', emptyCatalog: 'Catalog is empty',
       fetchError: 'Cannot reach catalog source', clear: 'Clear filters',
       source: 'Source', plugins: 'curated', installedCount: 'installed',
       unknownLicense: 'unknown license (verify yourself)', broken: 'known incompatible',
+      manualCopyTitle: 'Copy command', manualCopyHint: 'Copy the command below manually:', installedNotMounted: 'Installed as a dependency but NOT mounted (may lack dsh.bundle or be a monorepo root) — check the package',
     }
 
     const BADGE = {
@@ -96,6 +98,44 @@ window.__ModuleLoader__.load({
       return String(installCmd || '').replace(/^dsh\s+plugin\s+add\s+/, '').trim()
     }
 
+    // Lazy GitHub opengraph thumbnail: IntersectionObserver gates the load so
+    // 780+ cards never fetch images off-screen; onerror hides the img; click
+    // toggles collapsed 68px <-> expanded 220px.
+    function LazyImage(props) {
+      const ref = useRef(null)
+      const [show, setShow] = useState(false)
+      const [expanded, setExpanded] = useState(false)
+      const [failed, setFailed] = useState(false)
+      useEffect(() => {
+        const el = ref.current
+        if (!el) return
+        if ('IntersectionObserver' in window) {
+          const io = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) { setShow(true); io.disconnect() }
+          }, { rootMargin: '240px' })
+          io.observe(el)
+          return () => io.disconnect()
+        }
+        setShow(true)
+      }, [])
+      if (failed) return null
+      return h('div', {
+        ref,
+        onClick: () => setExpanded((e) => !e),
+        title: expanded ? 'collapse' : 'expand',
+        style: { width: '100%', height: expanded ? 220 : 68, overflow: 'hidden', borderRadius: '6px', background: '#0d1117', cursor: 'zoom-in', border: '1px solid #21262d' },
+      },
+        show
+          ? h('img', {
+              src: props.src, alt: props.alt || '',
+              loading: 'lazy',
+              onError: () => setFailed(true),
+              style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' },
+            })
+          : h('div', { style: { height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#30363d', fontSize: '11px' } }, '…'),
+      )
+    }
+
     // ---------- Store tab component ----------
     function StoreTab(props) {
       const t = props.t
@@ -109,6 +149,8 @@ window.__ModuleLoader__.load({
       const [installing, setInstalling] = useState(null)
       const [results, setResults] = useState({})
       const [confirmPkg, setConfirmPkg] = useState(null)
+      const [copied, setCopied] = useState(null)
+      const [manualCopy, setManualCopy] = useState(null)
 
       useEffect(() => {
         let alive = true
@@ -165,8 +207,36 @@ window.__ModuleLoader__.load({
         }
       }
 
-      function copyCmd(cmd) {
-        if (navigator.clipboard) navigator.clipboard.writeText(cmd).catch(() => {})
+      function copyCmd(p) {
+        const cmd = p.installCmd
+        const done = () => {
+          setCopied(p.name)
+          setTimeout(() => setCopied((c) => (c === p.name ? null : c)), 1500)
+        }
+        // 1. modern Clipboard API (secure context + permission)
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(cmd).then(done).catch(() => legacyCopy(cmd, done))
+          return
+        }
+        legacyCopy(cmd, done)
+      }
+      function legacyCopy(cmd, done) {
+        // 2. legacy execCommand('copy') fallback (works on insecure http origins)
+        try {
+          const ta = document.createElement('textarea')
+          ta.value = cmd
+          ta.style.position = 'fixed'
+          ta.style.opacity = '0'
+          ta.style.left = '-9999px'
+          document.body.appendChild(ta)
+          ta.focus()
+          ta.select()
+          const ok = document.execCommand('copy')
+          document.body.removeChild(ta)
+          if (ok) { done(); return }
+        } catch { /* fall through */ }
+        // 3. last resort: show the command in a popup for manual copy
+        setManualCopy(cmd)
       }
 
       // ---- render ----
@@ -202,6 +272,7 @@ window.__ModuleLoader__.load({
             : h('button', { key: 'i', style: isBroken ? { ...C.btn, background: '#9e6a03' } : C.btn, onClick: () => setConfirmPkg(p) }, t('install'))
 
         return h('div', { key: p.id || p.name, style: C.card },
+          p.repo ? h(LazyImage, { src: 'https://opengraph.githubassets.com/1/' + p.repo, alt: p.repo }) : null,
           h('div', { style: C.name },
             h('span', null, p.name),
             h('span', { style: C.badge(bad[1]) }, bad[0]),
@@ -213,11 +284,12 @@ window.__ModuleLoader__.load({
             h('span', null, (p.stars || 0) + '★'),
             p.license ? h('span', null, p.license) : null),
           isBroken ? h('div', { style: C.warn }, '⚠ ' + t('broken')) : null,
-          res && !res.ok ? h('div', { style: { color: '#f85149', fontSize: '11px', whiteSpace: 'pre-wrap', maxHeight: '80px', overflow: 'auto' } }, res.log) : null,
-          res && res.ok ? h('div', { style: { color: '#3fb950', fontSize: '11px' } }, t('needRestart')) : null,
+          res && res.ok === false ? h('div', { style: { color: '#f85149', fontSize: '11px', whiteSpace: 'pre-wrap', maxHeight: '90px', overflow: 'auto' } }, '❌ ' + t('installFailed') + ':' + '\n' + (res.log || '')) : null,
+          res && res.ok === true && res.mounted === false ? h('div', { style: { color: '#d29922', fontSize: '11px', padding: '6px', border: '1px solid #9e6a03', borderRadius: '6px' } }, '⚠ ' + t('installedNotMounted') + ': ' + (res.installed || []).join(', ')) : null,
+          res && res.ok === true && res.mounted === true ? h('div', { style: { color: '#3fb950', fontSize: '12px', fontWeight: '700', padding: '8px', background: 'rgba(63,185,80,0.12)', border: '1px solid #238636', borderRadius: '6px' } }, '✅ ' + t('needRestart')) : null,
           h('div', { style: { display: 'flex', gap: '8px', marginTop: 'auto' } },
             installBtn,
-            h('button', { style: C.btnGhost, onClick: () => copyCmd(p.installCmd) }, '📋')),
+            h('button', { style: copied === p.name ? { ...C.btnGhost, color: '#3fb950', borderColor: '#238636' } : C.btnGhost, onClick: () => copyCmd(p) }, copied === p.name ? '✓ ' + t('copied') : '📋')),
         )
       })
 
@@ -246,7 +318,19 @@ window.__ModuleLoader__.load({
           ))
       }
 
-      return h('div', null, toolbar, status, h('div', { style: C.grid }, cards), empty, modal)
+      let manualModal = null
+      if (manualCopy) {
+        manualModal = h('div', { style: C.modalBack, onClick: () => setManualCopy(null) },
+          h('div', { style: C.modal, onClick: (e) => e.stopPropagation() },
+            h('div', { style: { fontSize: '15px', fontWeight: '600', color: '#e6edf3', marginBottom: '10px' } }, t('manualCopyTitle')),
+            h('div', { style: C.desc, marginBottom: '8px' }, t('manualCopyHint')),
+            h('div', { style: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '6px', padding: '10px', fontSize: '12px', color: '#c9d1d9', wordBreak: 'break-all', marginBottom: '14px' } }, manualCopy),
+            h('div', { style: { display: 'flex', justifyContent: 'flex-end' } },
+              h('button', { style: C.btnGhost, onClick: () => setManualCopy(null) }, t('cancel'))),
+          ))
+      }
+
+      return h('div', null, toolbar, status, h('div', { style: C.grid }, cards), empty, modal, manualModal)
     }
 
     return {

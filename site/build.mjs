@@ -186,6 +186,9 @@ const I18N = {
     growthTopic: 'topic repos', growthCatalog: 'catalog entries',
     authorBoard: 'Author leaderboard', authorBoardHint: 'Top plugin authors by entry count and total stars.',
     authorPlugins: 'plugins', authorStars: 'stars',
+    expandAll: 'Expand all', collapse: 'Collapse',
+    badgeTitle: 'Copy badge code — for plugin authors to embed in README',
+    badgeCopied: 'Badge code copied — paste it at the top of your README',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -236,6 +239,9 @@ const I18N = {
     growthTopic: 'topic 仓库', growthCatalog: '目录条目',
     authorBoard: '作者排行榜', authorBoardHint: '按收录条目数与总星数排名的顶级插件作者。',
     authorPlugins: '个插件', authorStars: '星',
+    expandAll: '展开全部', collapse: '收起',
+    badgeTitle: '复制徽章代码 · 供插件作者嵌入 README',
+    badgeCopied: '徽章代码已复制，粘贴到你的 README 顶部即可展示',
   },
 };
 
@@ -389,7 +395,7 @@ function renderCard(p, t, { featured = false, watch = false } = {}) {
   const copyBtn = p.installCmd
     ? `<button class="copy-btn" type="button" data-cmd="${esc(p.installCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>`
     : '';
-  const badgeBtn = `<button class="copy-btn copy-badge" type="button" data-cmd="${esc(BADGE_MD)}" aria-label="${esc(t.cardBadge)}" title="${esc(t.cardBadge)}">📛 ${esc(t.cardBadge)}</button>`;
+  const badgeBtn = `<button class="copy-btn copy-badge" type="button" data-cmd="${esc(BADGE_MD)}" data-copied-text="${esc(t.badgeCopied)}" aria-label="${esc(t.badgeTitle)}" title="${esc(t.badgeTitle)}">📛 ${esc(t.cardBadge)}</button>`;
 
   const author = p.author ? `<span class="card-author">@${esc(p.author)}</span>` : '';
   const stars = `<span class="card-stars" title="${p.stars} ${esc(t.cardStars)}">★ ${fmtStars(p.stars)}</span>`;
@@ -752,6 +758,20 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
   const authors = [...authorMap.entries()].map(([name, m]) => ({ name, ...m }))
     .sort((a, b) => b.count - a.count || b.stars - a.stars).slice(0, 20);
 
+  // Top 10 默认显示 + 展开全部
+  const SHOW = 10;
+  const risingShow = rising.slice(0, SHOW);
+  const risingRest = rising.slice(SHOW);
+  const topShow = top50.slice(0, SHOW);
+  const topRest = top50.slice(SHOW);
+  const risingRowsHtml = rising.length
+    ? risingShow.map((x, i) => lbRow(x.p, t, i + 1, { delta: x.delta })).join('\n')
+    : `<p class="section-hint">${esc(t.lbNoRising)}</p>`;
+  const topRowsHtml = topShow.map((p, i) => lbRow(p, t, i + 1)).join('\n');
+  const risingRestHtml = risingRest.length ? `<div id="rising-rest" hidden>${risingRest.map((x, i) => lbRow(x.p, t, i + 1 + SHOW, { delta: x.delta })).join('\n')}</div>` : '';
+  const topRestHtml = topRest.length ? `<div id="top-rest" hidden>${topRest.map((p, i) => lbRow(p, t, i + 1 + SHOW)).join('\n')}</div>` : '';
+  const expandBtn = (id) => `<button class="expand-btn" type="button" data-target="${id}" data-expand-label="${esc(t.expandAll)}" data-collapse-label="${esc(t.collapse)}">${esc(t.expandAll)}</button>`;
+
   const thisUrl = baseUrl + (isZ ? 'stars-zh.html' : 'stars.html');
 
   const redirect = isZ ? '' : `
@@ -830,38 +850,55 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
       <h2 class="section-title">${esc(t.lbEco)}</h2>
       <p class="section-hint">${esc(t.lbEcoHint)}</p>
       ${statCards}
-      <div class="lb-panel">
-        <h3 class="lb-panel-title">${esc(t.ecoLongTail)}</h3>
-        ${lbChartBars(buckets)}
-        <p class="lb-note"><strong>${lowRatio.toFixed(0)}%</strong> ${esc(t.ecoLowTail)}</p>
+    </section>
+
+    
+
+<section class="lb-section" id="top">
+      <h2 class="section-title">${esc(t.lbTop)}</h2>
+      <p class="section-hint">${esc(t.lbTopHint)}</p>
+      <div class="lb-rows">${topRowsHtml}</div>
+      ${topRestHtml}
+      ${topRest.length ? expandBtn('top-rest') : ''}
+    </section>
+
+    
+
+<section class="lb-section" id="rising">
+      <h2 class="section-title">${esc(t.lbRising)}</h2>
+      <p class="section-hint">${esc(t.lbRisingHint)}${risingHead}</p>
+      <div class="lb-rows">${risingRowsHtml}</div>
+      ${risingRestHtml}
+      ${risingRest.length ? expandBtn('rising-rest') : ''}
+    </section>
+
+    
+
+<section class="lb-section" id="growth">
+      <h2 class="section-title">${esc(t.growth)}</h2>
+      <p class="section-hint">${esc(t.growthHint)}</p>
+      ${growthChart ? `<div class="lb-panel lb-growth">${growthChart}</div>` : ''}
+    </section>
+
+    
+
+<section class="lb-section" id="charts">
+      <div class="lb-charts">
+        <div class="lb-panel">
+          <h3 class="lb-panel-title">${esc(t.ecoLongTail)}</h3>
+          ${lbChartBars(buckets)}
+          <p class="lb-note"><strong>${lowRatio.toFixed(0)}%</strong> ${esc(t.ecoLowTail)}</p>
+        </div>
+        <div class="lb-panel">
+          <h3 class="lb-panel-title">${esc(t.lbCategory)}</h3>
+          ${lbChartBars(catItems)}
+        </div>
       </div>
     </section>
 
-    <section class="lb-section" id="category">
-      <h2 class="section-title">${esc(t.lbCategory)}</h2>
-      <p class="section-hint">${esc(t.lbCategoryHint)}</p>
-      <div class="lb-panel">${lbChartBars(catItems)}</div>
-    </section>
+    
 
-    <section class="lb-section" id="growth">
-      <h2 class="section-title">${esc(t.growth)}</h2>
-      <p class="section-hint">${esc(t.growthHint)}</p>
-      ${growthChart ? `<div class="lb-panel">${growthChart}</div>` : ''}
-    </section>
-
-    <section class="lb-section" id="rising">
-      <h2 class="section-title">${esc(t.lbRising)}</h2>
-      <p class="section-hint">${esc(t.lbRisingHint)}${risingHead}</p>
-      <div class="lb-rows">${risingRows}</div>
-    </section>
-
-    <section class="lb-section" id="top">
-      <h2 class="section-title">${esc(t.lbTop)}</h2>
-      <p class="section-hint">${esc(t.lbTopHint)}</p>
-      <div class="lb-rows">${topRows}</div>
-    </section>
-
-    <section class="lb-section" id="authors">
+<section class="lb-section" id="authors">
       <h2 class="section-title">${esc(t.authorBoard)}</h2>
       <p class="section-hint">${esc(t.authorBoardHint)}</p>
       <div class="lb-rows">${authors.map((a, i) => lbAuthorRow(a, i, t)).join('\n')}</div>
@@ -880,6 +917,19 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
       <a href="sitemap.xml">sitemap.xml</a>
     </nav>
   </footer>
+  <script>
+    (function () {
+      document.querySelectorAll('.expand-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var target = document.getElementById(btn.getAttribute('data-target'));
+          if (!target) return;
+          var wasHidden = target.hasAttribute('hidden');
+          if (wasHidden) target.removeAttribute('hidden'); else target.setAttribute('hidden', '');
+          btn.textContent = wasHidden ? btn.getAttribute('data-collapse-label') : btn.getAttribute('data-expand-label');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
 `;

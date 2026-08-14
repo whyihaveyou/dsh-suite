@@ -15,12 +15,16 @@
     en: {
       results: 'results',
       copy: 'Copy', copied: 'Copied!', repo: 'Repo', stars: 'stars', badge: 'Badge',
+      badgeTitle: 'Copy badge code — for plugin authors to embed in README',
+      badgeCopied: 'Badge code copied — paste it at the top of your README',
       featured: 'Featured', beta: 'Beta',
       compat: { ok: 'Compatible', broken: 'Broken', unknown: 'Unverified', unmaintained: 'Unmaintained' },
     },
     zh: {
       results: '条结果',
       copy: '复制', copied: '已复制！', repo: '仓库', stars: '星', badge: '徽章',
+      badgeTitle: '复制徽章代码 · 供插件作者嵌入 README',
+      badgeCopied: '徽章代码已复制，粘贴到你的 README 顶部即可展示',
       featured: '精选', beta: '内测',
       compat: { ok: '兼容', broken: '损坏', unknown: '未验证', unmaintained: '弃坑' },
     },
@@ -86,7 +90,7 @@
     var copyBtn = p.installCmd
       ? '<button class="copy-btn" type="button" data-cmd="' + esc(p.installCmd) + '" aria-label="' + esc(T.copy) + '">' + esc(T.copy) + '</button>'
       : '';
-    var badgeBtn = '<button class="copy-btn copy-badge" type="button" data-cmd="' + BADGE_MD + '" aria-label="' + esc(T.badge) + '">📛 ' + esc(T.badge) + '</button>';
+    var badgeBtn = '<button class="copy-btn copy-badge" type="button" data-cmd="' + BADGE_MD + '" data-copied-text="' + esc(T.badgeCopied) + '" aria-label="' + esc(T.badgeTitle) + '" title="' + esc(T.badgeTitle) + '">📛 ' + esc(T.badge) + '</button>';
 
     return (
       '<article class="card' + (opts.featured ? ' card-featured' : '') + '" data-id="' + esc(p.id) + '" data-name="' + esc(p.name) + '" data-category="' + esc(p.category) + '" data-stars="' + p.stars + '">' +
@@ -155,9 +159,9 @@
     var cmd = btn.getAttribute('data-cmd');
     function done() {
       var prev = btn.textContent;
-      btn.textContent = T.copied;
+      btn.textContent = btn.getAttribute('data-copied-text') || T.copied;
       btn.classList.add('copied');
-      setTimeout(function () { btn.textContent = prev; btn.classList.remove('copied'); }, 1500);
+      setTimeout(function () { btn.textContent = prev; btn.classList.remove('copied'); }, 2600);
     }
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(cmd).then(done, function () { fallback(); });

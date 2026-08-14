@@ -364,3 +364,31 @@ section { margin-bottom: 48px; }
 
 /* ---------- line chart ---------- */
 .lb-line { width: 100%; height: auto; }
+
+
+/* ---------- UX 修正 v2 ---------- */
+/* Learn 卡片统一：截图缩为 3:2 小图，全部卡等高 */
+.learn-grid { grid-auto-rows: 1fr; }
+.learn-img { aspect-ratio: 3 / 2; object-fit: cover; max-height: 150px; width: 100%; }
+
+/* Star 榜紧凑化：生态总览 5 卡一行 */
+.lb-stats { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; }
+.lb-stat { flex: 1 1 150px; flex-direction: row; align-items: baseline; gap: 8px; padding: 10px 14px; }
+.lb-stat-num { font-size: 20px; }
+.lb-stat-label { font-size: 12px; }
+
+/* 两图并排（桌面端） */
+.lb-charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+@media (max-width: 760px) { .lb-charts { grid-template-columns: 1fr; } }
+
+/* 增长曲线限高 ≤300px */
+.lb-growth { padding: 12px 16px; }
+.lb-growth .lb-line { height: 250px; width: auto; max-width: 100%; display: block; margin: 0 auto; }
+
+/* 展开全部按钮 */
+.expand-btn {
+  margin-top: 12px; padding: 8px 16px; border-radius: var(--radius-sm);
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--brand-bright);
+  font-size: 13px; font-weight: 600; cursor: pointer; transition: border-color .15s;
+}
+.expand-btn:hover { border-color: var(--brand); }

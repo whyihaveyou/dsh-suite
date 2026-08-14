@@ -59,7 +59,21 @@ jobs:
           git add data/plugins.json
           if git diff --cached --quiet; then
             echo "no data change — nothing to commit"
-          else
-            git commit -m "data: hourly refresh [skip ci]"
-            git push
+            exit 0
           fi
+          git commit -m "data: hourly refresh [skip ci]"
+          # Concurrent commits land on main (compat.yml, x-digest, teammates),
+          # so a bare push can be rejected. Rebase onto the latest main and
+          # retry a few times before giving up. data/plugins.json is only
+          # touched by this workflow and compat.yml, so rebase auto-merges
+          # cleanly (different lines: stars vs compat fields).
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — retrying"
+            sleep 5
+          done
+          echo "push failed after 5 attempts"
+          exit 1

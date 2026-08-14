@@ -64,7 +64,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/plugins.json README.md README.en.md site/
+          git add data/plugins.json data/deleted-repos.json README.md README.en.md site/
           if git diff --cached --quiet; then
             echo "no data change — nothing to commit"
             exit 0
@@ -76,10 +76,15 @@ jobs:
           # touched by this workflow and compat.yml, so rebase auto-merges
           # cleanly (different lines: stars vs compat fields).
           for attempt in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push; then
+            # -X theirs: during rebase, "theirs" is OUR bot commit (fresh data
+            # snapshot); a concurrent data commit on main resolves toward ours
+            # instead of leaving the retry loop stuck on unmerged files.
+            if git pull --rebase -X theirs origin main && git push; then
               echo "pushed on attempt $attempt"
               exit 0
             fi
+            # clean any half-finished rebase so the next attempt starts fresh
+            git rebase --abort 2>/dev/null || true
             echo "push rejected (attempt $attempt) — retrying"
             sleep 5
           done

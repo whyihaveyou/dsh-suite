@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-08-14T19:23:59.489Z",
+  "repos": [
+    {
+      "repo": "Alexis-fish/dsh-worktrees",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/Alexis-fish/dsh-worktrees"
+    },
+    {
+      "repo": "bitterSmilezzz/dsh-mac-desktop",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.302Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/bitterSmilezzz/dsh-mac-desktop"
+    },
+    {
+      "repo": "bitterSmilezzz/dsh-model-selector",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/bitterSmilezzz/dsh-model-selector"
+    },
+    {
+      "repo": "bitterSmilezzz/dsh-skill-manager",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/bitterSmilezzz/dsh-skill-manager"
+    },
+    {
+      "repo": "D-Robotics/dsh-plugin-rdk",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.302Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/D-Robotics/dsh-plugin-rdk"
+    },
+    {
+      "repo": "DreamZhongJu/dsh-codex-sync",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/DreamZhongJu/dsh-codex-sync"
+    },
+    {
+      "repo": "echo-escape/dsh-workbench",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/echo-escape/dsh-workbench"
+    },
+    {
+      "repo": "kanallas/api-cost-meter",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/kanallas/api-cost-meter"
+    },
+    {
+      "repo": "ohtokaah-sys/dsh-plugins",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 0,
+      "lastPush": "",
+      "lastKnownUrl": "https://github.com/ohtokaah-sys/dsh-plugins"
+    },
+    {
+      "repo": "Roy-oss1/dsh-lark",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.479Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/Roy-oss1/dsh-lark"
+    },
+    {
+      "repo": "yeshimei/dsh-sound",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.301Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/yeshimei/dsh-sound"
+    },
+    {
+      "repo": "YisfL/dsh-desktop",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-14T19:22:19.302Z",
+      "lastDetectedAt": "2026-08-14T19:23:59.480Z",
+      "lastStars": 0,
+      "lastPush": "",
+      "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
+    }
+  ]
+}

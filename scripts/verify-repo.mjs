@@ -120,7 +120,7 @@ function checkReadme() {
 /** 4. data/plugins.json structural validation. */
 function checkData() {
   const t0 = ts()
-  const CATEGORIES = ['tools', 'skills', 'ui', 'session', 'llm', 'sandbox', 'orchestration', 'storage', 'acp', 'preset', 'utility']
+  const CATEGORIES = ['tools', 'skills', 'ui', 'skin', 'session', 'llm', 'sandbox', 'orchestration', 'storage', 'acp', 'preset', 'utility']
   const COMPAT_STATUSES = ['unknown', 'ok', 'broken', 'unmaintained']
   const WATCH_REASONS = ['占位', '工具链', '蹭tag']
   const MIN_FEATURED = 15

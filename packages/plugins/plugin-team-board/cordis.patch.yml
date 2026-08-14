@@ -1,0 +1,11 @@
+# @dsh-suite/plugin-team-board bundle layer — applied when a profile lists this
+# bundle (its package.json declares `dsh.bundle.patch` pointing here).
+#
+# `insert` adds this plugin's row. `name` is a module specifier resolved through
+# the profile's node_modules (or the `$DSH_HOME/profiles/node_modules` fallback);
+# it matches this package's own name, so `dsh plugin --profile <p> add <this-pkg>`
+# registers the row automatically. The module default-exports a Cordis Service
+# (the board), which the Loader instantiates once its `inject` deps are ready.
+- insert:
+    - id: team-board
+      name: '@dsh-suite/plugin-team-board'

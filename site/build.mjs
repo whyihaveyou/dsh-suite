@@ -128,6 +128,11 @@ const LEARN_RESOURCES = [
     name_en: 'awesome-deepseek-harness (peer list)', name_zh: 'awesome-deepseek-harness（竞品列表）',
     desc_en: 'A curated list of DSH plugins, skills, MCP servers & orchestration tools.',
     desc_zh: 'DSH 插件、skills、MCP 服务器与编排工具的精选列表。' },
+  { id: 'deepseekdocs', type: 'chinese-docs', lang: '中文',
+    url: 'https://deepseekdocs.com/',
+    name_en: 'deepseekdocs.com (Chinese docs site)', name_zh: 'deepseekdocs.com（中文文档站）',
+    desc_en: 'An unofficial Chinese DSH usage docs site — install, capabilities and FAQ.',
+    desc_zh: '非官方的中文 DSH 使用文档站——安装、能力与 FAQ。' },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -180,7 +185,7 @@ const I18N = {
     learnDescription: 'Learning resources for the DeepSeek Harness plugin ecosystem: official docs, our plugin dev guide, the Cordis paper, migration guide, and open links to peer lists.',
     learnH1: 'Learn',
     learnSubtitle: 'Curated resources to go from zero to a working DSH plugin.',
-    learnTypeOfficial: 'Official', learnTypeCommunity: 'Community', learnTypePaper: 'Paper',
+    learnTypeOfficial: 'Official', learnTypeCommunity: 'Community', learnTypePaper: 'Paper', learnTypeDocsCn: 'Chinese docs',
     newArrivals: 'New arrivals', newArrivalsHint: 'Plugins discovered in the last 48h — sorted by stars.',
     growth: 'Ecosystem growth', growthHint: 'dsh-plugin topic repos vs. catalog entries, since launch.',
     growthTopic: 'topic repos', growthCatalog: 'catalog entries',
@@ -245,7 +250,7 @@ const I18N = {
     learnDescription: 'DeepSeek Harness 插件生态学习资源：官方文档、我们的插件开发指南、Cordis 论文、迁移指南、以及开放互链的竞品列表。',
     learnH1: '学习资源',
     learnSubtitle: '从零到写出能跑的 DSH 插件，一路资源齐了。',
-    learnTypeOfficial: '官方', learnTypeCommunity: '社区', learnTypePaper: '论文',
+    learnTypeOfficial: '官方', learnTypeCommunity: '社区', learnTypePaper: '论文', learnTypeDocsCn: '中文文档站',
     newArrivals: '今日新增', newArrivalsHint: '最近 48 小时发现的插件，按星数排序。',
     growth: '生态增长', growthHint: 'dsh-plugin topic 仓库数 vs 目录条目数，自发布以来。',
     growthTopic: 'topic 仓库', growthCatalog: '目录条目',
@@ -1078,7 +1083,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
 
 function renderLearnPage(t, data, baseUrl) {
   const isZ = isZh(t);
-  const typeLabel = { official: t.learnTypeOfficial, community: t.learnTypeCommunity, paper: t.learnTypePaper };
+  const typeLabel = { official: t.learnTypeOfficial, community: t.learnTypeCommunity, paper: t.learnTypePaper, 'chinese-docs': t.learnTypeDocsCn };
   const cards = LEARN_RESOURCES.map((r) => {
     const name = isZ ? r.name_zh : r.name_en;
     const desc = isZ ? r.desc_zh : r.desc_en;

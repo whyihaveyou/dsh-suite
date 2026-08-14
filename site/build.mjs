@@ -37,6 +37,9 @@ const REPO_URL = `https://github.com/${REPO}`;
 // GitHub Pages 绝对基址（project site）—— Lead 开 Pages 后即此地址
 const DEFAULT_BASE_URL = `https://whyihaveyou.github.io/dsh-suite/`;
 
+// 精选徽章 markdown（全部收录插件自助可用，链接到站点首页）
+const BADGE_MD = '[![featured on dsh-suite](https://img.shields.io/badge/featured%20on-dsh--suite-4d6bfe)](https://whyihaveyou.github.io/dsh-suite/)';
+
 // 数据源候选（按优先级）
 const DATA_CANDIDATES = [
   { path: resolve(REPO_ROOT, 'data', 'plugins.json'), kind: 'normalized' },
@@ -113,7 +116,7 @@ const I18N = {
     watchlist: 'Watchlist', watchlistHint: 'Under review — collected from the dsh-plugin topic but not yet verified as installable DSH plugins.',
     results: 'result(s)',
     empty: 'No plugins match your search. Try a different keyword or category.',
-    cardCopy: 'Copy', cardCopied: 'Copied!', cardRepo: 'Repo', cardStars: 'stars',
+    cardCopy: 'Copy', cardCopied: 'Copied!', cardRepo: 'Repo', cardStars: 'stars', cardBadge: 'Badge',
     badgeFeatured: 'Featured', badgeBeta: 'Beta',
     footAbout: 'A bilingual curated directory, a create-dsh-plugin scaffolder, and first-party plugins for DeepSeek Harness.',
     footBuilt: 'Built from', footPlugins: 'plugins',
@@ -152,7 +155,7 @@ const I18N = {
     watchlist: '待审核', watchlistHint: '待审核 — 从 dsh-plugin topic 收集、但尚未核实为可安装 DSH 插件的项目。',
     results: '条结果',
     empty: '没有匹配的插件，换个关键词或分类试试。',
-    cardCopy: '复制', cardCopied: '已复制！', cardRepo: '仓库', cardStars: '星',
+    cardCopy: '复制', cardCopied: '已复制！', cardRepo: '仓库', cardStars: '星', cardBadge: '徽章',
     badgeFeatured: '精选', badgeBeta: '内测',
     footAbout: '中英双语精选目录 + create-dsh-plugin 脚手架 + 第一方插件，为 DeepSeek Harness 而生。',
     footBuilt: '由', footPlugins: '个插件',
@@ -325,6 +328,7 @@ function renderCard(p, t, { featured = false, watch = false } = {}) {
   const copyBtn = p.installCmd
     ? `<button class="copy-btn" type="button" data-cmd="${esc(p.installCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>`
     : '';
+  const badgeBtn = `<button class="copy-btn copy-badge" type="button" data-cmd="${esc(BADGE_MD)}" aria-label="${esc(t.cardBadge)}" title="${esc(t.cardBadge)}">📛 ${esc(t.cardBadge)}</button>`;
 
   const author = p.author ? `<span class="card-author">@${esc(p.author)}</span>` : '';
   const stars = `<span class="card-stars" title="${p.stars} ${esc(t.cardStars)}">★ ${fmtStars(p.stars)}</span>`;
@@ -348,6 +352,7 @@ function renderCard(p, t, { featured = false, watch = false } = {}) {
     <div class="card-foot">
       <code class="install-cmd">${esc(p.installCmd || '')}</code>
       ${copyBtn}
+      ${badgeBtn}
       <a class="repo-link" href="${esc(p.url || REPO_URL)}" target="_blank" rel="noopener noreferrer">${esc(t.cardRepo)} ↗</a>
     </div>
   </article>`;

@@ -233,6 +233,10 @@ section { margin-bottom: 48px; }
 .repo-link { font-size: 12px; color: var(--muted); white-space: nowrap; }
 .repo-link:hover { color: var(--text); }
 
+
+.copy-btn.copy-badge { border-style: dashed; border-color: var(--border); }
+.copy-btn.copy-badge:hover { border-color: var(--brand); color: var(--brand-bright); }
+
 /* ---------- watchlist ---------- */
 .watchlist details { border: 1px dashed var(--border); border-radius: var(--radius); padding: 16px; background: var(--bg-soft); }
 .watchlist summary { cursor: pointer; font-weight: 700; font-size: 16px; color: var(--muted); }

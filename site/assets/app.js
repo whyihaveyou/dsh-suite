@@ -14,18 +14,20 @@
   var I18N = {
     en: {
       results: 'results',
-      copy: 'Copy', copied: 'Copied!', repo: 'Repo', stars: 'stars',
+      copy: 'Copy', copied: 'Copied!', repo: 'Repo', stars: 'stars', badge: 'Badge',
       featured: 'Featured', beta: 'Beta',
       compat: { ok: 'Compatible', broken: 'Broken', unknown: 'Unverified', unmaintained: 'Unmaintained' },
     },
     zh: {
       results: '条结果',
-      copy: '复制', copied: '已复制！', repo: '仓库', stars: '星',
+      copy: '复制', copied: '已复制！', repo: '仓库', stars: '星', badge: '徽章',
       featured: '精选', beta: '内测',
       compat: { ok: '兼容', broken: '损坏', unknown: '未验证', unmaintained: '弃坑' },
     },
   };
   var T = I18N[LANG];
+
+  var BADGE_MD = '[![featured on dsh-suite](https://img.shields.io/badge/featured%20on-dsh--suite-4d6bfe)](https://whyihaveyou.github.io/dsh-suite/)';
 
   var COMPAT_ICON = { ok: '🟢', broken: '🔴', unknown: '⚪', unmaintained: '⚫' };
 
@@ -84,6 +86,7 @@
     var copyBtn = p.installCmd
       ? '<button class="copy-btn" type="button" data-cmd="' + esc(p.installCmd) + '" aria-label="' + esc(T.copy) + '">' + esc(T.copy) + '</button>'
       : '';
+    var badgeBtn = '<button class="copy-btn copy-badge" type="button" data-cmd="' + BADGE_MD + '" aria-label="' + esc(T.badge) + '">📛 ' + esc(T.badge) + '</button>';
 
     return (
       '<article class="card' + (opts.featured ? ' card-featured' : '') + '" data-id="' + esc(p.id) + '" data-name="' + esc(p.name) + '" data-category="' + esc(p.category) + '" data-stars="' + p.stars + '">' +
@@ -102,6 +105,7 @@
         '<div class="card-foot">' +
           '<code class="install-cmd">' + esc(p.installCmd || '') + '</code>' +
           copyBtn +
+          badgeBtn +
           '<a class="repo-link" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">' + esc(T.repo) + ' ↗</a>' +
         '</div>' +
       '</article>'

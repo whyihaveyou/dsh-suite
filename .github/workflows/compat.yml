@@ -35,17 +35,34 @@ jobs:
         # in scripts/compat-check.mjs — TODO until DSH stabilizes its API.
         run: node scripts/compat-check.mjs --write
 
+      - name: Regenerate README tables (compat badges changed)
+        # Test-Runner's CI asserts README == data/plugins.json. --write flips
+        # compat.status, which the README renders as badges, so re-run gen-readme.
+        # (The site HTML is rebuilt by pages.yml on this commit's push — it has
+        # no [skip ci] tag — so build.mjs is NOT needed here.)
+        run: node scripts/gen-readme.mjs
+
       - name: Commit report and status changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/compat-report.json data/plugins.json
+          git add data/compat-report.json data/plugins.json README.md README.zh-CN.md
           if git diff --cached --quiet; then
             echo "no change to commit"
-          else
-            git commit -m "compat: daily check $(date -u +%Y-%m-%d)"
-            git push
+            exit 0
           fi
+          git commit -m "compat: daily check $(date -u +%Y-%m-%d)"
+          # Same race as hourly-refresh: a concurrent commit may land on main.
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — retrying"
+            sleep 5
+          done
+          echo "push failed after 5 attempts"
+          exit 1
 
       # TODO(compat): open an issue via actions/github-script when any plugin
       # flips ok -> broken (architecture §6 step 5). Deferred until layer 2/3

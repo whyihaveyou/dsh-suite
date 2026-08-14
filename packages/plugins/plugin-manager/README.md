@@ -1,6 +1,6 @@
 # @dsh-suite/plugin-manager — DSH 插件应用商店 / Plugin Store for DSH Web UI
 
-> v0.3.0 — 复制按钮反馈修复 + GitHub opengraph 卡片预览缩略图（lazy）。
+> v0.4.0 — 复制按钮反馈修复 + GitHub opengraph 卡片预览缩略图（lazy）。
 
 > 嵌入 DSH Web UI 设置页的插件商店面板：目录浏览 / 搜索 / 一键安装 / 兼容徽章 / 已装列表。
 > A plugin-store panel embedded in DSH Web UI: catalog browse / search / one-click install / compat badges / installed list.
@@ -54,13 +54,25 @@ npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 
 ## 变更 / Changelog
 
+- **v0.4.0**：新增「已装管理」视图（与 Store 顶部切换）——按来源分组（官方内建 @deepseek-ai/* / 第三方 npm / git 源 / 自研 @dsh-suite/* / 其他）+ 搜索过滤 + 各组计数徽标 + 版本/来源/状态；每项 Remove 按钮 + 确认框（显示名称/来源/「需重启完全卸载」提示），执行 `dsh plugin remove`（pnpm remove + bundle 协调）。
+
+## 变更 / Changelog
+
 - **v0.3.0**：首屏提速（宿主侧 `/plugin-manager/catalog` 裁剪目录路由，只含面板必需字段 + gzip/deflate，缓存 1h，浏览器优先走宿主路由、失败回退 Pages 完整版）；已装 npm 源插件更新检查（`npm view` 批量查询，并发 ≤4、缓存 1h，卡片加「⬆ 有更新」角标，git/link 源跳过）。
+
+## 变更 / Changelog
+
+- **v0.4.0**：新增「已装管理」视图（与 Store 顶部切换）——按来源分组（官方内建 @deepseek-ai/* / 第三方 npm / git 源 / 自研 @dsh-suite/* / 其他）+ 搜索过滤 + 各组计数徽标 + 版本/来源/状态；每项 Remove 按钮 + 确认框（显示名称/来源/「需重启完全卸载」提示），执行 `dsh plugin remove`（pnpm remove + bundle 协调）。
 
 ## 变更 / Changelog
 
 - **v0.2.0**：复制按钮修复（剪贴板降级链 navigator.clipboard → execCommand('copy') → 命令文本弹层）+ 复制成功 ✓ 反馈；卡片顶部 GitHub opengraph 预览缩略图（IntersectionObserver 按需加载、onerror 隐藏、点击展开）；装完提示加「立即重启」指引。
 - **v0.2.0 (P1 修复)**：安装成功判定不再只看 exit 0——改成「exit 0 + 解析 pnpm `+ <name>` 确认依赖真加了 + `--dump-config` 确认包进了 bundle 栈」才翻绿；未挂载（monorepo 根包/缺 dsh.bundle）显示黄色警告，失败显示 stderr 摘要；目标 profile 从硬编码 `web` 改为从启动 argv 探测当前 profile。
 - **v0.1.1**：复制按钮无反馈 bug 修复（同 0.2 降级链）。
+
+## 与官方「Plugin list」的差异 / vs the official Plugin list
+
+官方「Plugin list」是**清单**（只读平铺，160+ 个名字难找）；本插件的「已装管理」是**管理**——分组、搜索、显示版本/来源/状态，并可移除。两者共存于 Settings → Plugins 的 tab 栏。
 
 ## 已知限制 / Known limitations
 

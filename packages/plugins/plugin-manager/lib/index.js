@@ -150,6 +150,17 @@ function installedVersion(profile, name) {
   } catch { return null }
 }
 
+// Management-view source bucket: official (@deepseek-ai/*) / self (@dsh-suite/*) /
+// git source / third-party npm / other (link, workspace, file, unknown).
+function classifySource(name, spec) {
+  if (name.startsWith('@deepseek-ai/')) return 'official'
+  if (name.startsWith('@dsh-suite/')) return 'self'
+  const s = String(spec || '').trim()
+  if (s.startsWith('git') || s.startsWith('github:') || s.startsWith('gitlab:') || s.startsWith('bitbucket:') || /^git\+/.test(s)) return 'git'
+  if (s && !s.startsWith('link:') && !s.startsWith('workspace:') && !s.startsWith('file:')) return 'npm'
+  return 'other'
+}
+
 async function npmViewVersion(name) {
   const c = updateCache.get(name)
   if (c && Date.now() - c.at < UPDATE_TTL_MS) return c.version
@@ -247,9 +258,47 @@ export function apply(ctx) {
       },
     })
 
+    const disposeInstalled = ctx.webServer.register({
+      kind: 'exact',
+      path: '/plugin-manager/installed',
+      handler: (_req, res) => {
+        const profile = currentProfile()
+        const pkg = readProfilePkg(profile)
+        const deps = pkg ? { ...(pkg.dependencies || {}), ...(pkg.devDependencies || {}) } : {}
+        const value = []
+        for (const entry of ctx.loader.entries()) {
+          if (entry.options.group) continue
+          const name = entry.options.name
+          value.push({
+            name,
+            id: entry.id,
+            enabled: !entry.disabled,
+            source: classifySource(name, deps[name] || ''),
+            spec: deps[name] || '',
+            version: installedVersion(profile, name),
+          })
+        }
+        json(res, { ok: true, value })
+      },
+    })
+
+    const disposeUninstall = ctx.webServer.register({
+      kind: 'exact',
+      path: '/plugin-manager/uninstall',
+      handler: async (req, res) => {
+        const body = await readJsonBody(req)
+        const pkg = body && typeof body.pkg === 'string' && body.pkg.trim() ? body.pkg.trim() : null
+        if (!pkg) return json(res, { ok: false, error: 'missing pkg' }, 400)
+        const profile = typeof body.profile === 'string' && body.profile ? body.profile : currentProfile()
+        // `dsh plugin` is a thin pnpm forwarder: `remove <pkg>` == `pnpm remove <pkg>` + reconcile
+        const r = await spawnCmd('dsh', ['plugin', '--profile', profile, 'remove', pkg], INSTALL_TIMEOUT_MS)
+        json(res, { ok: r.ok, log: r.log, exitCode: r.exitCode, needRestart: r.ok, profile })
+      },
+    })
+
     // warm the catalog cache in the background so the first Store open is fast
     fetchCatalog().catch(() => {})
 
-    return () => { disposeInstall(); disposeList(); disposeCatalog(); disposeUpdates() }
+    return () => { disposeInstall(); disposeList(); disposeCatalog(); disposeUpdates(); disposeInstalled(); disposeUninstall() }
   }, 'plugin-manager: routes')
 }

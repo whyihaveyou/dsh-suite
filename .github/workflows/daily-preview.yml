@@ -1,0 +1,61 @@
+name: daily-preview
+
+on:
+  schedule:
+    # UTC 01:00 — after compat.yml (00:00), once per day
+    - cron: '0 1 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-preview
+  cancel-in-progress: false
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Build site
+        run: node site/build.mjs
+
+      - name: Setup Python + Playwright (chromium)
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          playwright install chromium --with-deps
+
+      - name: Take previews
+        run: node scripts/take-previews.mjs
+
+      - name: Commit & push (retry on concurrent main)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/preview
+          if git diff --cached --quiet; then
+            echo "no preview change — nothing to commit"
+            exit 0
+          fi
+          git commit -m "chore: daily site previews $(date +%F) [skip ci]"
+          # Concurrent commits land on main (hourly-refresh, compat, teammates),
+          # so a bare push can be rejected — rebase and retry.
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — retrying"
+            sleep 5
+          done
+          echo "push failed after 5 attempts"
+          exit 1

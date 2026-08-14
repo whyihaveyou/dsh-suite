@@ -30,7 +30,7 @@ window.__ModuleLoader__.load({
       fetchError: '无法连接目录源', clear: '清除筛选',
       source: '数据源', plugins: '精选', installedCount: '已装',
       unknownLicense: '未知 license（请自行确认）', broken: '已知不兼容',
-      manualCopyTitle: '复制命令', manualCopyHint: '请手动复制以下命令：', installedNotMounted: '已安装为依赖但未挂载到 bundle（可能缺 dsh.bundle 或为 monorepo 根包），请检查包结构',
+      manualCopyTitle: '复制命令', manualCopyHint: '请手动复制以下命令：', update: '有更新', installedNotMounted: '已安装为依赖但未挂载到 bundle（可能缺 dsh.bundle 或为 monorepo 根包），请检查包结构',
     }
     const en = {
       tab: 'Store', search: 'Search plugins…', category: 'Category', sort: 'Sort',
@@ -43,7 +43,7 @@ window.__ModuleLoader__.load({
       fetchError: 'Cannot reach catalog source', clear: 'Clear filters',
       source: 'Source', plugins: 'curated', installedCount: 'installed',
       unknownLicense: 'unknown license (verify yourself)', broken: 'known incompatible',
-      manualCopyTitle: 'Copy command', manualCopyHint: 'Copy the command below manually:', installedNotMounted: 'Installed as a dependency but NOT mounted (may lack dsh.bundle or be a monorepo root) — check the package',
+      manualCopyTitle: 'Copy command', manualCopyHint: 'Copy the command below manually:', update: 'update', installedNotMounted: 'Installed as a dependency but NOT mounted (may lack dsh.bundle or be a monorepo root) — check the package',
     }
 
     const BADGE = {
@@ -151,16 +151,18 @@ window.__ModuleLoader__.load({
       const [confirmPkg, setConfirmPkg] = useState(null)
       const [copied, setCopied] = useState(null)
       const [manualCopy, setManualCopy] = useState(null)
+      const [updates, setUpdates] = useState([])
 
       useEffect(() => {
         let alive = true
         ;(async () => {
           try {
-            const [cat, list] = await Promise.all([
-              fetchJson(CATALOG_URL).then((c) => c.plugins || []),
+            const [cat, list, ups] = await Promise.all([
+              fetchCatalogPlugins(),
               fetchJson('/plugin-manager/list').then((r) => (r.ok ? r.value : [])).catch(() => []),
+              fetchJson('/plugin-manager/updates').then((r) => (r.ok ? r.value : [])).catch(() => []),
             ])
-            if (alive) { setCatalog(cat); setInstalled(list); setLoading(false) }
+            if (alive) { setCatalog(cat); setInstalled(list); setUpdates(ups); setLoading(false) }
           } catch (e) {
             if (alive) { setError(e.message); setLoading(false) }
           }
@@ -238,6 +240,18 @@ window.__ModuleLoader__.load({
         // 3. last resort: show the command in a popup for manual copy
         setManualCopy(cmd)
       }
+      async function fetchCatalogPlugins() {
+        // host trimmed route first (fast, gzip); fall back to the full GH Pages copy
+        try {
+          const r = await fetch('/plugin-manager/catalog')
+          if (r.ok) {
+            const c = await r.json()
+            if (c && Array.isArray(c.plugins) && c.plugins.length) return c.plugins
+          }
+        } catch { /* fall through */ }
+        const c = await fetch(CATALOG_URL).then((r) => r.json())
+        return c.plugins || []
+      }
 
       // ---- render ----
       const toolbar = h('div', { style: C.toolbar },
@@ -261,6 +275,8 @@ window.__ModuleLoader__.load({
 
       const cards = filtered.map((p) => {
         const installedHere = isInstalled(p, names)
+        const spec = pkgSpec(p.installCmd)
+        const hasUpdate = !!spec && updates.some((u) => u.name === spec)
         const bad = BADGE[p.compatStatus] || BADGE.unknown
         const res = results[p.name]
         const busy = installing === p.name
@@ -276,7 +292,8 @@ window.__ModuleLoader__.load({
           h('div', { style: C.name },
             h('span', null, p.name),
             h('span', { style: C.badge(bad[1]) }, bad[0]),
-            installedHere ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, '✅') : null),
+            installedHere ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, '✅') : null,
+            hasUpdate ? h('span', { style: { fontSize: '11px', color: '#d29922', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update')) : null),
           p.desc_en ? h('div', { style: C.desc }, p.desc_en) : null,
           p.desc_zh ? h('div', { style: C.descZh }, p.desc_zh) : null,
           h('div', { style: C.meta },

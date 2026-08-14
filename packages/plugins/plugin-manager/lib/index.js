@@ -1,24 +1,29 @@
-// plugin-manager host half — the "install" capability + installed list.
-// Runs in the DSH host (Node) process; the browser half can only reach these
-// operations through the /plugin-manager/* routes registered below (a browser
-// cannot spawn `dsh plugin add` itself).
+// plugin-manager host half — install + installed list + trimmed catalog + update check.
 //
-// P1 fix (real-user bug: green "success" but not installed):
-// 1. The target profile is DETECTED from the launcher argv (`dsh --profile X`
-//    or the `dsh web` alias) — never hardcoded to "web", so a custom-profile
-//    Web UI installs into the profile it is actually running under.
-// 2. Success is NOT exit-code-only: we parse pnpm's `+ <name>` lines to prove a
-//    dependency was added, THEN run `dsh --profile <name> --dump-config` to
-//    prove the package is actually in the bundle stack (a git+ monorepo root
-//    without `dsh.bundle` installs "successfully" but never loads).
+// v0.3 additions:
+// - /plugin-manager/catalog : trimmed, gzip/deflate-compressed copy of the GH
+//   Pages catalog (panel-only fields), cached 1h. First screen stops paying the
+//   850KB cold-CDN transfer — the browser pulls a ~1/2 (uncompressed) payload
+//   from localhost instead.
+// - /plugin-manager/updates  : for installed npm-source plugins, batch
+//   `npm view <pkg> version` (concurrency <= 4, cache 1h) and diff against the
+//   installed version. git/link/workspace sources are skipped.
 
 import { spawn } from 'node:child_process'
+import { readFileSync } from 'node:fs'
+import { homedir } from 'node:os'
+import { join } from 'node:path'
+import { gzipSync, deflateSync } from 'node:zlib'
 
 export const name = 'plugin-manager'
 export const inject = ['webServer', 'loader']
 
 const INSTALL_TIMEOUT_MS = 120_000
 const VERIFY_TIMEOUT_MS = 60_000
+const CATALOG_URL = 'https://whyihaveyou.github.io/dsh-suite/catalog.json'
+const CATALOG_TTL_MS = 60 * 60 * 1000
+const UPDATE_TTL_MS = 60 * 60 * 1000
+const UPDATE_CONCURRENCY = 4
 
 function json(res, value, status = 200) {
   res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' })
@@ -38,8 +43,6 @@ async function readJsonBody(req) {
   try { return JSON.parse(text) } catch { return null }
 }
 
-// The profile this Web UI process is running under. `dsh web` == `--profile web`;
-// a custom launch is `dsh --profile <name>`. Never assume 'web'.
 function currentProfile() {
   const argv = process.argv
   const i = argv.indexOf('--profile')
@@ -48,22 +51,24 @@ function currentProfile() {
   return 'web'
 }
 
-// Spawn `dsh ...` and capture stdout/stderr with a timeout. Resolves
-// { ok, out, log, exitCode, timedOut } — ok is strictly `exit code === 0`.
-function spawnDsh(args, timeoutMs) {
+function dshHome() {
+  return process.env.DSH_HOME || join(homedir(), '.dsh')
+}
+
+function spawnCmd(cmd, args, timeoutMs) {
   return new Promise((resolve) => {
-    const child = spawn('dsh', args, { env: process.env, stdio: ['ignore', 'pipe', 'pipe'] })
+    const child = spawn(cmd, args, { env: process.env, stdio: ['ignore', 'pipe', 'pipe'] })
     let out = ''
     let err = ''
     child.stdout.on('data', (d) => { out += d })
     child.stderr.on('data', (d) => { err += d })
     const timer = setTimeout(() => {
       child.kill('SIGKILL')
-      resolve({ ok: false, out, log: (out + err).trim() || 'install timed out', exitCode: null, timedOut: true })
+      resolve({ ok: false, out, log: (out + err).trim() || cmd + ' timed out', exitCode: null, timedOut: true })
     }, timeoutMs)
     child.on('error', (e) => {
       clearTimeout(timer)
-      resolve({ ok: false, out, log: `spawn failed: ${e.message}`, exitCode: null, timedOut: false })
+      resolve({ ok: false, out, log: 'spawn failed: ' + e.message, exitCode: null, timedOut: false })
     })
     child.on('close', (code) => {
       clearTimeout(timer)
@@ -72,8 +77,6 @@ function spawnDsh(args, timeoutMs) {
   })
 }
 
-// Parse pnpm's `+ <name> <spec>` lines out of `dsh plugin add` stdout — the
-// RESOLVED package names (for git+ specs the spec is a URL, the name is real).
 function parseAdded(stdout) {
   const names = []
   for (const line of stdout.split('\n')) {
@@ -83,31 +86,101 @@ function parseAdded(stdout) {
   return names
 }
 
+// ---- install (with exit-0 + dependency-added + mounted verification) ----
+
 async function runInstall(pkg, profile) {
-  const add = await spawnDsh(['plugin', '--profile', profile, 'add', pkg], INSTALL_TIMEOUT_MS)
+  const add = await spawnCmd('dsh', ['plugin', '--profile', profile, 'add', pkg], INSTALL_TIMEOUT_MS)
   if (!add.ok) {
     return { ok: false, log: add.log || '(no output)', exitCode: add.exitCode, needRestart: false, timedOut: add.timedOut, profile }
   }
-  // exit 0 is NOT enough — pnpm can "succeed" while adding nothing usable.
   const added = parseAdded(add.out)
   if (added.length === 0) {
     return { ok: false, log: (add.log + '\n⚠ exit 0 but pnpm reported no added dependency — install did not take effect').trim(), exitCode: 0, needRestart: false, timedOut: false, profile }
   }
-  // Second verification: is the package actually in the profile's bundle stack?
-  // A git+ monorepo root without dsh.bundle installs "successfully" but never
-  // loads, so we fail (mounted=false) rather than show a green success.
-  const dump = await spawnDsh(['--profile', profile, '--dump-config'], VERIFY_TIMEOUT_MS)
+  const dump = await spawnCmd('dsh', ['--profile', profile, '--dump-config'], VERIFY_TIMEOUT_MS)
   const mounted = added.some((name) => dump.out.includes(name))
+  return { ok: true, log: add.log, exitCode: 0, needRestart: true, timedOut: false, installed: added, mounted, profile }
+}
+
+// ---- trimmed catalog (cached 1h, panel-only fields) ----
+
+const catalogCache = { at: 0, plugins: null }
+
+function trimPlugin(p) {
   return {
-    ok: true,
-    log: add.log,
-    exitCode: 0,
-    needRestart: true,
-    timedOut: false,
-    installed: added,
-    mounted,
-    profile,
+    id: p.id, name: p.name,
+    desc_en: p.desc_en, desc_zh: p.desc_zh,
+    author: p.author, stars: p.stars,
+    category: p.category, compatStatus: p.compatStatus,
+    installCmd: p.installCmd, repo: p.repo, license: p.license,
   }
+}
+
+async function fetchCatalog() {
+  if (catalogCache.plugins && Date.now() - catalogCache.at < CATALOG_TTL_MS) return catalogCache.plugins
+  const res = await fetch(CATALOG_URL, { signal: AbortSignal.timeout(60_000) })
+  if (!res.ok) throw new Error('catalog fetch HTTP ' + res.status)
+  const full = await res.json()
+  const plugins = (full.plugins || []).map(trimPlugin)
+  catalogCache.at = Date.now()
+  catalogCache.plugins = plugins
+  return plugins
+}
+
+// ---- update check (npm-source only, concurrency <= 4, cache 1h) ----
+
+const updateCache = new Map()
+
+function isNpmSpec(spec) {
+  const s = String(spec || '').trim()
+  if (!s) return false
+  if (s.startsWith('link:') || s.startsWith('workspace:') || s.startsWith('file:')) return false
+  if (s.startsWith('git') || s.startsWith('github:') || s.startsWith('gitlab:') || s.startsWith('bitbucket:')) return false
+  if (/^https?:/.test(s) || /^git\+/.test(s)) return false
+  return true
+}
+
+function readProfilePkg(profile) {
+  try { return JSON.parse(readFileSync(join(dshHome(), 'profiles', profile, 'package.json'), 'utf8')) } catch { return null }
+}
+
+function installedVersion(profile, name) {
+  try {
+    return JSON.parse(readFileSync(join(dshHome(), 'profiles', profile, 'node_modules', name, 'package.json'), 'utf8')).version || null
+  } catch { return null }
+}
+
+async function npmViewVersion(name) {
+  const c = updateCache.get(name)
+  if (c && Date.now() - c.at < UPDATE_TTL_MS) return c.version
+  const r = await spawnCmd('npm', ['view', name, 'version'], 20_000)
+  const version = r.ok && r.out ? r.out.split('\n')[0].trim() : null
+  if (version) updateCache.set(name, { at: Date.now(), version })
+  return version
+}
+
+async function runPool(items, limit, fn) {
+  const results = new Array(items.length)
+  let i = 0
+  const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (i < items.length) { const idx = i++; results[idx] = await fn(items[idx]) }
+  })
+  await Promise.all(workers)
+  return results
+}
+
+async function computeUpdates(profile) {
+  const pkg = readProfilePkg(profile)
+  const deps = pkg ? { ...(pkg.dependencies || {}), ...(pkg.devDependencies || {}) } : {}
+  const npmDeps = Object.keys(deps).filter((n) => isNpmSpec(deps[n]))
+  const checked = await runPool(npmDeps, UPDATE_CONCURRENCY, async (name) => {
+    try {
+      const installed = installedVersion(profile, name)
+      const latest = await npmViewVersion(name)
+      return { name, installed, latest, hasUpdate: !!(installed && latest && installed !== latest) }
+    } catch { return { name, installed: null, latest: null, hasUpdate: false } }
+  })
+  return checked.filter((c) => c.hasUpdate)
 }
 
 export function apply(ctx) {
@@ -120,8 +193,7 @@ export function apply(ctx) {
         const pkg = body && typeof body.pkg === 'string' && body.pkg.trim() ? body.pkg.trim() : null
         if (!pkg) return json(res, { ok: false, error: 'missing pkg' }, 400)
         const profile = typeof body.profile === 'string' && body.profile ? body.profile : currentProfile()
-        const result = await runInstall(pkg, profile)
-        json(res, result)
+        json(res, await runInstall(pkg, profile))
       },
     })
 
@@ -138,6 +210,46 @@ export function apply(ctx) {
       },
     })
 
-    return () => { disposeInstall(); disposeList() }
+    const disposeCatalog = ctx.webServer.register({
+      kind: 'exact',
+      path: '/plugin-manager/catalog',
+      handler: async (req, res) => {
+        try {
+          const plugins = await fetchCatalog()
+          const body = Buffer.from(JSON.stringify({ plugins }), 'utf8')
+          const ae = String(req.headers['accept-encoding'] || '')
+          let payload = body
+          let encoding = null
+          if (/\bgzip\b/.test(ae)) { payload = gzipSync(body); encoding = 'gzip' }
+          else if (/\bdeflate\b/.test(ae)) { payload = deflateSync(body); encoding = 'deflate' }
+          res.writeHead(200, {
+            'content-type': 'application/json; charset=utf-8',
+            ...(encoding ? { 'content-encoding': encoding } : {}),
+            'content-length': payload.length,
+            'cache-control': 'no-store',
+          })
+          res.end(payload)
+        } catch (e) {
+          json(res, { ok: false, error: String(e && e.message ? e.message : e) }, 502)
+        }
+      },
+    })
+
+    const disposeUpdates = ctx.webServer.register({
+      kind: 'exact',
+      path: '/plugin-manager/updates',
+      handler: async (_req, res) => {
+        try {
+          json(res, { ok: true, value: await computeUpdates(currentProfile()) })
+        } catch (e) {
+          json(res, { ok: false, error: String(e && e.message ? e.message : e) }, 500)
+        }
+      },
+    })
+
+    // warm the catalog cache in the background so the first Store open is fast
+    fetchCatalog().catch(() => {})
+
+    return () => { disposeInstall(); disposeList(); disposeCatalog(); disposeUpdates() }
   }, 'plugin-manager: routes')
 }

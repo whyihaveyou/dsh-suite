@@ -1,6 +1,6 @@
 # @dsh-suite/plugin-manager — DSH 插件应用商店 / Plugin Store for DSH Web UI
 
-> v0.2.0 — 复制按钮反馈修复 + GitHub opengraph 卡片预览缩略图（lazy）。
+> v0.3.0 — 复制按钮反馈修复 + GitHub opengraph 卡片预览缩略图（lazy）。
 
 > 嵌入 DSH Web UI 设置页的插件商店面板：目录浏览 / 搜索 / 一键安装 / 兼容徽章 / 已装列表。
 > A plugin-store panel embedded in DSH Web UI: catalog browse / search / one-click install / compat badges / installed list.
@@ -51,6 +51,10 @@ npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 | installTimeoutMs | 120000 | spawn 超时 |
 | confirmBeforeInstall | true | 安装前二次确认 |
 | allowInstall | true | 安装开关 |
+
+## 变更 / Changelog
+
+- **v0.3.0**：首屏提速（宿主侧 `/plugin-manager/catalog` 裁剪目录路由，只含面板必需字段 + gzip/deflate，缓存 1h，浏览器优先走宿主路由、失败回退 Pages 完整版）；已装 npm 源插件更新检查（`npm view` 批量查询，并发 ≤4、缓存 1h，卡片加「⬆ 有更新」角标，git/link 源跳过）。
 
 ## 变更 / Changelog
 

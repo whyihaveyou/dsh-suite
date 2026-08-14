@@ -438,3 +438,23 @@ section { margin-bottom: 48px; }
   .store-panel { flex-direction: column; align-items: flex-start; }
   .store-img { width: 100%; max-width: 100%; }
 }
+
+
+/* ---------- 第一方工具双卡（商店 + 皮肤中心） ---------- */
+.first-party { margin-bottom: 40px; }
+.fp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 880px) { .fp-grid { grid-template-columns: 1fr; } }
+.fp-card {
+  display: flex; align-items: center; gap: 18px; padding: 16px 18px;
+  background: linear-gradient(135deg, rgba(77, 107, 254, .10), rgba(52, 211, 153, .05)), var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  transition: border-color .15s, transform .15s; color: var(--text);
+}
+.fp-link:hover { border-color: var(--brand); transform: translateY(-2px); text-decoration: none; }
+.fp-text { flex: 1; min-width: 0; }
+.fp-title { margin: 0 0 6px; font-size: 15px; font-weight: 800; }
+.fp-badge { font-size: 10px; font-weight: 700; color: var(--brand-bright); background: var(--brand-soft); padding: 2px 7px; border-radius: var(--radius-badge); vertical-align: 2px; }
+.fp-desc { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; line-height: 1.55; }
+.fp-note { margin: 0; font-size: 12px; color: var(--faint); }
+.fp-img { width: 300px; max-width: 42%; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); }
+@media (max-width: 880px) { .fp-img { width: 100%; max-width: 100%; } }

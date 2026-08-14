@@ -196,6 +196,11 @@ const I18N = {
     png: 'PNG',
     storeTitle: 'Plugin Store',
     storeDesc: 'Browse {n}+ plugins right inside DSH — compat badges, one-click install.',
+    dashVerified: 'daily OK',
+    firstParty: 'First-party tools',
+    themesTitle: 'Skin Center',
+    themesDesc: '151 day/night skin pairs — one-click preview.',
+    themesNote: 'Try-on panel coming soon',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -256,6 +261,11 @@ const I18N = {
     png: 'PNG',
     storeTitle: '插件商店',
     storeDesc: '在 DSH 里直接逛 {n}+ 插件：看兼容徽章、一键安装。',
+    dashVerified: '日检通过',
+    firstParty: '第一方工具',
+    themesTitle: '皮肤中心',
+    themesDesc: '151 款昼夜成对皮肤，一键试穿。',
+    themesNote: '试穿面板即将上线',
   },
 };
 
@@ -476,7 +486,7 @@ function renderPage(t, data, baseUrl, snapshot) {
   const eco = computeEcoTotals(data, snapshot);
   const dashBuckets = computeBuckets([...catalog, ...watchlist]);
   const dashGp = computeGrowthPoints(loadGrowthHistory(), eco.total, isZh(t) ? '现在' : 'now');
-  const dashGrowthSvg = dashGp ? lbLineChart([{ values: dashGp.topicVals }, { values: dashGp.catalogVals }], dashGp.labels) : '';
+  const dashGrowthSvg = dashGp ? lbLineChart([{ name: t.growthTopic, values: dashGp.topicVals }, { name: t.growthCatalog, values: dashGp.catalogVals }], dashGp.labels) : '';
   const dashDistSvg = lbChartBars(dashBuckets);
   const dNow = new Date();
   const todayStamp = `${dNow.getFullYear()}-${String(dNow.getMonth() + 1).padStart(2, '0')}-${String(dNow.getDate()).padStart(2, '0')}`;
@@ -522,7 +532,7 @@ function renderPage(t, data, baseUrl, snapshot) {
         <div class="dash-stat"><span class="ds-num">${eco.catalogCount}</span><span class="ds-label">${esc(t.dashCatalog)}</span></div>
         <div class="dash-stat"><span class="ds-num">★ ${fmtStars(eco.totalStars)}</span><span class="ds-label">${esc(t.dashStars)}</span></div>
         <div class="dash-stat"><span class="ds-num ds-num-new">+${eco.newCount}</span><span class="ds-label">${esc(t.dashNew)}</span></div>
-        <div class="dash-stat"><span class="ds-num">${eco.okRatio.toFixed(1)}%</span><span class="ds-label">${esc(t.dashOk)}</span></div>
+        <div class="dash-stat"><span class="ds-num">${eco.okCount}</span><span class="ds-label">${esc(t.dashVerified)}</span></div>
       </div>
       <div class="dash-charts">
         <figure class="dash-chart">
@@ -544,16 +554,29 @@ function renderPage(t, data, baseUrl, snapshot) {
       </div>
     </section>
 
-    <section class="store-panel" id="plugin-store">
-      <div class="store-text">
-        <h2 class="section-title">🛍 ${esc(t.storeTitle)}</h2>
-        <p class="store-desc">${esc(storeDescText)}</p>
-        <div class="store-install">
-          <code class="install-cmd store-cmd">${esc(storeCmd)}</code>
-          <button class="copy-btn" type="button" data-cmd="${esc(storeCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
+    <section class="first-party" id="first-party">
+      <h2 class="section-title">${esc(t.firstParty)}</h2>
+      <div class="fp-grid">
+        <div class="fp-card">
+          <div class="fp-text">
+            <h3 class="fp-title">🛍 ${esc(t.storeTitle)}</h3>
+            <p class="fp-desc">${esc(storeDescText)}</p>
+            <div class="store-install">
+              <code class="install-cmd store-cmd">${esc(storeCmd)}</code>
+              <button class="copy-btn" type="button" data-cmd="${esc(storeCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
+            </div>
+          </div>
+          <img class="fp-img" src="assets/store-tab.png" alt="${esc(t.storeTitle)}" loading="lazy">
         </div>
+        <a class="fp-card fp-link" href="https://github.com/whyihaveyou/dsh-themes" target="_blank" rel="noopener noreferrer">
+          <div class="fp-text">
+            <h3 class="fp-title">🎨 ${esc(t.themesTitle)} <span class="fp-badge">dsh-themes</span></h3>
+            <p class="fp-desc">${esc(t.themesDesc)}</p>
+            <p class="fp-note">${esc(t.themesNote)} ↗</p>
+          </div>
+          <img class="fp-img" src="assets/themes/themes-preview.png" alt="${esc(t.themesTitle)}" loading="lazy">
+        </a>
       </div>
-      <img class="store-img" src="assets/store-tab.png" alt="${esc(t.storeTitle)}" loading="lazy">
     </section>
 `;
 
@@ -748,34 +771,58 @@ function computeGrowthPoints(growth, presentTotal, nowLabel) {
 }
 
 /** 折线图（内联 SVG，多序列） */
-function lbLineChart(series, labels, { colorTop = '#7b96ff', colorBottom = '#34d399' } = {}) {
-  const W = 640, H = 240, padL = 48, padR = 14, padT = 16, padB = 30;
+/** 折线图（内联 SVG，多序列：面积渐变 + hover 数据点 + 网格/刻度/图例） */
+let __chartSeq = 0;
+function lbLineChart(series, labels, { colors = ['#7b96ff', '#34d399'] } = {}) {
+  const W = 640, H = 250, padL = 54, padR = 18, padT = 26, padB = 32;
   const maxV = Math.max(1, ...series.flatMap(s => s.values));
   const n = labels.length;
   const x = (i) => padL + (i * (W - padL - padR) / Math.max(1, n - 1));
   const y = (v) => padT + (1 - v / maxV) * (H - padT - padB);
-  const yTicks = [0, Math.round(maxV / 2), maxV];
-  const grid = yTicks.map(v => `  <line x1="${padL}" y1="${y(v)}" x2="${W - padR}" y2="${y(v)}" stroke="var(--border-soft)" stroke-width="1"></line>\n  <text x="${padL - 8}" y="${y(v) + 4}" font-size="11" fill="var(--faint)" text-anchor="end">${fmtStars(v)}</text>`).join('\n');
+  const uid = 'lg' + (++__chartSeq);
+  const grid = [0, 0.25, 0.5, 0.75, 1].map(f => {
+    const v = maxV * f, yy = y(v);
+    return `  <line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}" stroke="var(--border-soft)" stroke-width="1"></line>\n  <text x="${padL - 9}" y="${(yy + 4).toFixed(1)}" font-size="10.5" fill="var(--faint)" text-anchor="end">${fmtStars(Math.round(v))}</text>`;
+  }).join('\n');
+  const vgrid = labels.map((lb, i) => `  <line x1="${x(i).toFixed(1)}" y1="${padT}" x2="${x(i).toFixed(1)}" y2="${H - padB}" stroke="var(--border-soft)" stroke-width="0.7" stroke-dasharray="2 5"></line>`).join('\n');
+  const defs = series.map((s, si) => `<linearGradient id="${uid}-${si}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${colors[si]}" stop-opacity="0.34"/><stop offset="100%" stop-color="${colors[si]}" stop-opacity="0.02"/></linearGradient>`).join('');
+  const areas = series.map((s, si) => {
+    const pts = s.values.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    return `  <polygon points="${padL},${H - padB} ${pts} ${x(n - 1).toFixed(1)},${H - padB}" fill="url(#${uid}-${si})" stroke="none"></polygon>`;
+  }).join('\n');
   const lines = series.map((s, si) => {
     const pts = s.values.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
-    return `<polyline points="${pts}" fill="none" stroke="${si === 0 ? colorTop : colorBottom}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></polyline>`;
+    return `  <polyline points="${pts}" fill="none" stroke="${colors[si]}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></polyline>`;
   }).join('\n');
-  const dots = series.flatMap((s, si) => s.values.map((v, i) => `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.5" fill="${si === 0 ? colorTop : colorBottom}"></circle>`)).join('\n');
-  const xlabels = labels.map((lb, i) => `<text x="${x(i)}" y="${H - 8}" font-size="11" fill="var(--muted)" text-anchor="middle">${esc(lb)}</text>`).join('\n');
-  return `<svg class="lb-chart lb-line" viewBox="0 0 ${W} ${H}" role="img" aria-hidden="true">\n${grid}\n${lines}\n${dots}\n${xlabels}\n</svg>`;
+  const dots = series.flatMap((s, si) => s.values.map((v, i) =>
+    `  <circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="4" fill="${colors[si]}" stroke="#0b0f1a" stroke-width="1.5"><title>${esc(labels[i])} · ${esc(s.name || '')}: ${fmtStars(v)}</title></circle>`
+  )).join('\n');
+  const legend = series.map((s, si) => `  <g><rect x="${padL + si * 104}" y="8" width="10" height="10" rx="2" fill="${colors[si]}"></rect><text x="${padL + si * 104 + 14}" y="17" font-size="10.5" fill="var(--muted)">${esc(s.name || `S${si + 1}`)}</text></g>`).join('\n');
+  const xlabels = labels.map((lb, i) => `  <text x="${x(i)}" y="${H - 8}" font-size="11" fill="var(--muted)" text-anchor="middle">${esc(lb)}</text>`).join('\n');
+  return `<svg class="lb-chart lb-line" viewBox="0 0 ${W} ${H}" role="img" aria-hidden="true">\n<defs>${defs}</defs>\n${grid}\n${vgrid}\n${areas}\n${lines}\n${dots}\n${legend}\n${xlabels}\n</svg>`;
 }
 
-/** 横向条形图（内联 SVG，无外部依赖） */
+/** 横向条形图（内联 SVG：顶部刻度/网格线 + 数值与占比标注） */
 function lbChartBars(items) {
   const max = Math.max(1, ...items.map(i => i.value));
-  const rowH = 28, barW = 300, labelW = 96, valW = 52;
-  const H = items.length * rowH + 4;
+  const total = items.reduce((s, i) => s + i.value, 0);
+  const rowH = 28, barW = 240, labelW = 96, valW = 92, axisH = 18;
+  const H = items.length * rowH + 4 + axisH;
+  const axis = [0, 0.25, 0.5, 0.75, 1].map(f => {
+    const v = max * f, bx = labelW + (v / max) * barW;
+    return `  <line x1="${bx.toFixed(1)}" y1="${axisH}" x2="${bx.toFixed(1)}" y2="${H - 4}" stroke="var(--border-soft)" stroke-width="0.7" stroke-dasharray="2 4"></line>\n  <text x="${bx.toFixed(1)}" y="${axisH - 5}" font-size="9.5" fill="var(--faint)" text-anchor="middle">${fmtStars(Math.round(v))}</text>`;
+  }).join('\n');
   const rows = items.map((it, i) => {
     const w = Math.max(3, Math.round((it.value / max) * barW));
-    const y = i * rowH + 2;
-    return `  <g>\n    <text x="0" y="${y + 17}" font-size="13" fill="var(--muted)">${esc(it.label)}</text>\n    <rect x="${labelW}" y="${y}" width="${w}" height="18" rx="5" fill="${it.color || 'var(--brand)'}" opacity="0.92"></rect>\n    <text x="${labelW + w + 8}" y="${y + 15}" font-size="12" fill="var(--text)">${it.value}</text>\n  </g>`;
+    const y = axisH + i * rowH + 2;
+    const pct = total ? (it.value / total * 100) : 0;
+    const pctTxt = (pct >= 10 ? pct.toFixed(0) : pct.toFixed(1)) + '%';
+    const valIn = w > 46
+      ? `    <text x="${labelW + w - 8}" y="${y + 15}" font-size="11.5" font-weight="700" fill="#f8fafc" text-anchor="end">${it.value}</text>`
+      : `    <text x="${labelW + w + 7}" y="${y + 15}" font-size="11.5" fill="var(--text)">${it.value}</text>`;
+    return `  <g>\n    <text x="0" y="${y + 17}" font-size="13" fill="var(--muted)">${esc(it.label)}</text>\n    <rect x="${labelW}" y="${y}" width="${w}" height="18" rx="5" fill="${it.color || 'var(--brand)'}" opacity="0.92"></rect>\n${valIn}\n    <text x="${(labelW + Math.max(w, 44) + 7).toFixed(1)}" y="${y + 15}" font-size="10.5" fill="var(--faint)">${pctTxt}</text>\n  </g>`;
   }).join('\n');
-  return `<svg class="lb-chart" viewBox="0 0 ${labelW + barW + valW} ${H}" role="img" aria-hidden="true">\n${rows}\n</svg>`;
+  return `<svg class="lb-chart" viewBox="0 0 ${labelW + barW + valW} ${H}" role="img" aria-hidden="true">\n${axis}\n${rows}\n</svg>`;
 }
 
 /** 榜单行 */
@@ -836,7 +883,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
   // 增长曲线（历史快照 + 现值，公共函数）
   const growth = loadGrowthHistory();
   const gp = computeGrowthPoints(growth, total, isZ ? '现在' : 'now');
-  const growthChart = gp ? lbLineChart([{ values: gp.topicVals }, { values: gp.catalogVals }], gp.labels) : '';
+  const growthChart = gp ? lbLineChart([{ name: t.growthTopic, values: gp.topicVals }, { name: t.growthCatalog, values: gp.catalogVals }], gp.labels) : '';
 
   // 作者排行榜（按作者聚合条目数 + 总星数）
   const authorMap = new Map();

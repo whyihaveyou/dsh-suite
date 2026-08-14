@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T19:26:56.816Z",
+  "generated_at": "2026-08-14T19:32:52.010Z",
   "repo": "whyihaveyou/dsh-suite",
   "totals": {
-    "curated": 1155,
+    "curated": 1156,
     "watchlist": 610,
     "featured": 19
   },
@@ -25437,7 +25437,7 @@
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
       },
-      "installCmd": "dsh plugin add git+https://github.com/zjzqs/dsh-client-ui-voice-input",
+      "installCmd": "dsh plugin add github:zjzqs/dsh-client-ui-voice-input",
       "watchReason": ""
     },
     {
@@ -28576,6 +28576,35 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/LaplaceYoung/dsh-of-your-own",
+      "watchReason": ""
+    },
+    {
+      "id": "deepseek-skin-studio",
+      "name": "deepseek-skin-studio",
+      "repo": "JueMing2049/deepseek-skin-studio",
+      "url": "https://github.com/JueMing2049/deepseek-skin-studio",
+      "category": "ui",
+      "desc_en": "DSH skin studio: turn one image into a Web UI skin; bookmark/CDP/native injection, visual workshop, 13 built-in themes, DSH-SKIN-SPEC export.",
+      "desc_zh": "DSH 换肤工作室：一张图一套皮肤；书签/CDP/原生三通道注入 + 可视化工坊 + 13 套内置主题 + DSH-SKIN-SPEC 导出。",
+      "author": "JueMing2049",
+      "stars": 0,
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": false,
+      "isOfficialBeta": false,
+      "compatStatus": "unknown",
+      "risk": {
+        "installScript": false,
+        "networkEgress": null,
+        "noLicense": false,
+        "shellAccess": null
+      },
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核; L3 pending"
+      },
+      "installCmd": "dsh plugin add @metaskin/dsh-skin-studio",
       "watchReason": ""
     }
   ],

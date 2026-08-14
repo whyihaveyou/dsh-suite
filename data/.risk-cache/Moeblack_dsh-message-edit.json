@@ -1,0 +1,17 @@
+{
+ "repo": "Moeblack/dsh-message-edit",
+ "sub": null,
+ "entryPath": "index.mjs",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": false,
+  "shellAccess": false,
+  "noLicense": true
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:11"
+}

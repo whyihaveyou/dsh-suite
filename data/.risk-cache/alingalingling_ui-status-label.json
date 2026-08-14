@@ -1,0 +1,17 @@
+{
+ "repo": "alingalingling/ui-status-label",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": false,
+  "shellAccess": false,
+  "noLicense": true
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:05"
+}

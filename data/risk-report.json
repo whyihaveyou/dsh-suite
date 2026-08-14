@@ -1,0 +1,1019 @@
+{
+  "generated": "2026-08-14T18:24",
+  "mode": "top",
+  "topN": 200,
+  "scanned": 200,
+  "failed": 0,
+  "evidence": {
+    "L1": 1109,
+    "L2": 6
+  },
+  "flagCounts": {
+    "installScript": 6,
+    "networkEgress": 28,
+    "shellAccess": 20,
+    "noLicense": 27
+  },
+  "entriesWithRisk": 66,
+  "entriesClean": 134,
+  "topHits": [
+    {
+      "id": "dsh-acp-for-bitfun",
+      "repo": "bobleer/dsh-acp-for-bitfun",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "62: const probe = spawnSync(command, ['--version'], { stdio: ['ignore', 'pipe', 'pipe'] })"
+        ]
+      }
+    },
+    {
+      "id": "fabric",
+      "repo": "omdsh-dev/fabric",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-git-identity",
+      "repo": "LoserFox/dsh-git-identity",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "39: const value = execFileSync('git', ['config', '--global', '--get', key], {",
+          "52: execFileSync('git', ['config', '--global', key, value], { stdio: 'ignore' })",
+          "65: const raw = execFileSync('gh', ['api', 'user', '--jq', '{ login, id }'], {"
+        ]
+      }
+    },
+    {
+      "id": "telegram",
+      "repo": "LoserFox/telegram",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-openbiliclaw",
+      "repo": "whiteguo233/dsh-openbiliclaw",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "40: const resp = await fetch(endpoint, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-mnemon",
+      "repo": "omdsh-dev/dsh-mnemon",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "2002: const child = spawn(command, [...args], {"
+        ]
+      }
+    },
+    {
+      "id": "dsh-plugin-dev",
+      "repo": "omdsh-dev/dsh-plugin-dev",
+      "flags": {
+        "installScript": null,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-plugin-mineru",
+      "repo": "HuanLinOTO/dsh-plugin-mineru",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "129: const response = await fetch(`${this.baseURL}${path}`, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "ego-browser",
+      "repo": "Fisfzy/ego-browser",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [
+          "684: const r = await fetch(`http://127.0.0.1:${port}/api/flush`, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "ui-status-label",
+      "repo": "alingalingling/ui-status-label",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-deep-whale",
+      "repo": "Small-tailqwq/dsh-deep-whale",
+      "flags": {
+        "installScript": null,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-focus-chat",
+      "repo": "dingyi222666/dsh-focus-chat",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-side-panel",
+      "repo": "ccq1/dsh-side-panel",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "445: const terminal = spawn(\"script\", ["
+        ]
+      }
+    },
+    {
+      "id": "dsh-deepcel",
+      "repo": "Small-tailqwq/dsh-deepcel",
+      "flags": {
+        "installScript": null,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-diff-viewer",
+      "repo": "lehhair/dsh-diff-viewer",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-session-notification",
+      "repo": "dingyi222666/dsh-session-notification",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "pi-discuss-mode",
+      "repo": "zwrong/pi-discuss-mode",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-message-edit",
+      "repo": "Moeblack/dsh-message-edit",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-evolve",
+      "repo": "william-jin-cmu/dsh-evolve",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-memory-evolve",
+      "repo": "csyangwen/dsh-memory-evolve",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "718: const result = spawnSync('wslpath', ['-w', path], { encoding: 'utf8' })",
+          "1507: const child = spawn(command, args, { stdio: 'ignore' })"
+        ]
+      }
+    },
+    {
+      "id": "deepseek-manners",
+      "repo": "Moeblack/deepseek-manners",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "openhanako",
+      "repo": "liliMozi/openhanako",
+      "flags": {
+        "installScript": true,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "matebot",
+      "repo": "aresbit/MateBot",
+      "flags": {
+        "installScript": null,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "mstar-harness",
+      "repo": "btspoony/mstar-harness",
+      "flags": {
+        "installScript": true,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "distill",
+      "repo": "LoserFox/distill",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-agent-teams",
+      "repo": "NanmiCoder/dsh-agent-teams",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "62: // member spawn (`spawnMember`), the earliest point the provider list is"
+        ]
+      }
+    },
+    {
+      "id": "dsh-work",
+      "repo": "vibeinging/dsh-work",
+      "flags": {
+        "installScript": true,
+        "networkEgress": true,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "915: fetch: (url, options) => net.fetch(url, options),"
+        ],
+        "shellAccess": [
+          "767: const child = spawn(cmd, args, { cwd: SERVER_DIR, env, stdio: ['ignore', 'inherit', 'inher"
+        ]
+      }
+    },
+    {
+      "id": "dsh-sentinel",
+      "repo": "fuhefei/dsh-sentinel",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "371: const response = await fetch(target, {",
+          "1289: const response = await fetch(url, {",
+          "1798: void fetch(CANCEL_URL + '?sessionId=' + encodeURIComponent(sessionId) + '&id=' + encodeURI"
+        ],
+        "shellAccess": [
+          "350: exec(target, {",
+          "403: execFile(\"pgrep\", [\"-af\", target], {"
+        ]
+      }
+    },
+    {
+      "id": "echobird",
+      "repo": "edison7009/EchoBird",
+      "flags": {
+        "installScript": true,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": false
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-tianshu-tui",
+      "repo": "huiliyi37/dsh-tianshu-tui",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "101: const res = await fetch(url, { signal: AbortSignal.timeout(timeoutMs) });",
+          "16627: this.items = await sources.refetch();"
+        ],
+        "shellAccess": [
+          "108: const child = spawn(\"pnpm\", [\"add\", `${TUI_PACKAGE}@${latest}`], {",
+          "3577: const output = execSync(\"git ls-files --cached --others --exclude-standard\", {",
+          "12559: child = spawn(this.command, {"
+        ]
+      }
+    },
+    {
+      "id": "dsh-open-in-vscode",
+      "repo": "omdsh-dev/dsh-open-in-vscode",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "918: const child = spawn(executable, [...args, path], {"
+        ]
+      }
+    },
+    {
+      "id": "dsh-ads",
+      "repo": "Nagi-ovo/dsh-ads",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [
+          "1779: const response = await fetch(url, {",
+          "1907: return classifyStarStatus((await fetch(`https://api.github.com/user/starred/${repo}`, { he"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-visualize",
+      "repo": "Nagi-ovo/dsh-visualize",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "oh-my-dsh",
+      "repo": "LaplaceYoung/oh-my-dsh",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-web-review",
+      "repo": "CanglongCl/dsh-web-review",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-grok-tui",
+      "repo": "chen-001/dsh-grok-tui",
+      "flags": {
+        "installScript": true,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": false
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-lan",
+      "repo": "moxisuki/dsh-lan",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-better-browser",
+      "repo": "titanwings/dsh-better-browser",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "75: response = await fetch(`${baseUrl}/command`, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-ramify",
+      "repo": "yanglongyun/dsh-ramify",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "86: const response = await fetch(`${this.url}${path}`, {",
+          "167: const response = await fetch(`${this.url}/api/health`, { signal: AbortSignal.timeout(500) "
+        ],
+        "shellAccess": [
+          "117: const child = spawn(process.execPath, [serverEntry], {"
+        ]
+      }
+    },
+    {
+      "id": "dsh-vision-proxy",
+      "repo": "Flyvhidbwo/dsh-vision-proxy",
+      "flags": {
+        "installScript": true,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "224: const post = () => fetch(url, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-director-toolkit",
+      "repo": "lhmd/dsh-director-toolkit",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "235: const response = await fetch(baseUrl || DEFAULT_BASE_URL, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-recommend",
+      "repo": "zp-home/dsh-recommend",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "58: const res = await fetch(config.dataUrl);"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-mcp-manager",
+      "repo": "hyqhyq3/dsh-mcp-manager",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "82: const resp = await fetch(url, {",
+          "101: const resp = await fetch(url, {",
+          "127: const resp = await fetch(`${issuer}/.well-known/oauth-authorization-server`, { signal: Abo"
+        ],
+        "shellAccess": [
+          "340: const child = spawn(server.command, server.args ?? [], {"
+        ]
+      }
+    },
+    {
+      "id": "dsh-pet",
+      "repo": "FlytoMAYDAY80/dsh-pet",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "52: const res = await fetch(`${DSH_URL}/api/${method}`, {",
+          "132: fetch(`${DSH_URL}${path}`, { signal: ctrl.signal })"
+        ],
+        "shellAccess": [
+          "475: afplayProc = spawn('afplay', [f])"
+        ]
+      }
+    },
+    {
+      "id": "dsh-balance",
+      "repo": "TwotwoPiggy/dsh-balance",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [
+          "254: const res = await fetch(`${config.baseUrl.replace(/\\/+$/, '')}/user/balance`, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-cost-meter",
+      "repo": "Han-1413141/dsh-cost-meter",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "198: const response = await fetch(balanceEndpoint(baseURL), {",
+          "252: const response = await fetch(OFFICIAL_PRICING_URL, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-balance-monitor",
+      "repo": "jelly-000/dsh-balance-monitor",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "53: const res = await fetch(BALANCE_API, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-codex",
+      "repo": "Yan-Zero/dsh-codex",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "352: const response = await fetch(OPENAI_CODEX_USAGE_URL, {",
+          "631: const response = await fetch(url, {",
+          "989: response = await fetch(OPENAI_CODEX_SEARCH_URL, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-codex-connect",
+      "repo": "franksong2702/dsh-codex-connect",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "357: const response = await fetch(OPENAI_CODEX_USAGE_URL, {",
+          "1317: response = await fetch(OPENAI_CODEX_SEARCH_URL, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-balance-meter",
+      "repo": "Ghost011118/dsh-balance-meter",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "602: response = await fetch(url, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-usage-stats",
+      "repo": "Ychris12138/dsh-usage-stats",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "902: const response = await fetch(spec.url(baseURL), {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "deepseek-harness-qqbot",
+      "repo": "sliverp/DeepSeek-harness-qqbot",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "257: const response = await fetch(url, { signal: AbortSignal.timeout(timeoutMs) });"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "powercontext-dsh",
+      "repo": "knqiufan/powercontext-dsh",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "1114: const child = spawn(\"git\", args, {"
+        ]
+      }
+    },
+    {
+      "id": "dsh-codex-subscription-yequ172672",
+      "repo": "yequ172672/dsh-codex-subscription",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [
+          "116: fetch: (url, init) => getTransport().then((transport) => transport.fetch(url, init)),"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-vision-oil-oil",
+      "repo": "oil-oil/dsh-vision",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "570: const response = await fetch(`${provider.baseURL.replace(/\\/$/u, \"\")}/chat/completions`, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-plugin-workshop",
+      "repo": "yyyyukari/dsh-plugin-workshop",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "61: const r = spawnSync('git', ['--version'], { encoding: 'utf8', timeout: 10000, windowsHide:",
+          "73: return spawnSync(cmd, args, { encoding: 'utf8', timeout: timeoutMs || 180000, windowsHide:",
+          "313: const child = spawn('cmd', ['/c', file], { detached: true, stdio: 'ignore', windowsHide: t"
+        ]
+      }
+    },
+    {
+      "id": "superpowers-dsh",
+      "repo": "LayneChai/superpowers-dsh",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-remote",
+      "repo": "flymysql/dsh-remote",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "315: exec(command, timeoutMs) {"
+        ]
+      }
+    },
+    {
+      "id": "museai",
+      "repo": "yejiming/MuseAI",
+      "flags": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": null,
+        "noLicense": true
+      },
+      "matched": {}
+    },
+    {
+      "id": "dsh-llm-codebuddy",
+      "repo": "Axiaohungry/dsh-llm-codebuddy",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "139: response = await fetch(CONFIG_URL, {"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-git-graph",
+      "repo": "1841220388zzzcccxxx-star/dsh-git-graph",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "5: // Commands are executed with execFile (no shell), fixed argument lists only.",
+          "22: execFile('git', ['-C', repo, ...args], { maxBuffer, windowsHide: true }, (err, stdout, std"
+        ]
+      }
+    },
+    {
+      "id": "plugin-manager",
+      "repo": "whyihaveyou/dsh-suite",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "121: const res = await fetch(CATALOG_URL, { signal: AbortSignal.timeout(60_000) })"
+        ],
+        "shellAccess": [
+          "60: const child = spawn(cmd, args, { env: process.env, stdio: ['ignore', 'pipe', 'pipe'] })"
+        ]
+      }
+    },
+    {
+      "id": "dsh-file-explorer-joejojoking-cloud",
+      "repo": "joejojoking-cloud/dsh-file-explorer",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": false,
+        "noLicense": true
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "dsh-toy",
+      "repo": "c3ll256/dsh-toy",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "43: function openWebSocket(url, options, timeoutMs, signal) {",
+          "46: const socket = new WebSocket(url, options);",
+          "92: function closeWebSocket(socket, timeoutMs = 1e3) {"
+        ],
+        "shellAccess": [
+          "958: execFile(executable, [\"--server-version\"], {",
+          "1052: spawn(executable, port, userDeviceConfigPath, signal) {",
+          "1053: const child = spawn(executable, intifaceArguments(port, userDeviceConfigPath), {"
+        ]
+      }
+    },
+    {
+      "id": "dsh-vision-linenxi-ctrl",
+      "repo": "linenxi-ctrl/dsh-vision",
+      "flags": {
+        "installScript": false,
+        "networkEgress": true,
+        "shellAccess": false,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [
+          "246: const connectReq = http.request({",
+          "259: const req = https.request({"
+        ],
+        "shellAccess": []
+      }
+    },
+    {
+      "id": "blender",
+      "repo": "CheshireJCat/blender",
+      "flags": {
+        "installScript": false,
+        "networkEgress": false,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "matched": {
+        "networkEgress": [],
+        "shellAccess": [
+          "423: const child = spawn(command, args, { stdio: ['ignore', 'pipe', 'pipe'], windowsHide: true "
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "repo": "Fisfzy/ego-browser",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": true
+ },
+ "matched": {
+  "networkEgress": [
+   "684: const r = await fetch(`http://127.0.0.1:${port}/api/flush`, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:14"
+}

@@ -1,0 +1,20 @@
+{
+ "repo": "csyangwen/dsh-memory-evolve",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": false,
+  "shellAccess": true,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": [
+   "718: const result = spawnSync('wslpath', ['-w', path], { encoding: 'utf8' })",
+   "1507: const child = spawn(command, args, { stdio: 'ignore' })"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:04"
+}

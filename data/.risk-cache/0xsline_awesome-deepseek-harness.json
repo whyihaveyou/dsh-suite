@@ -1,0 +1,14 @@
+{
+ "repo": "0xsline/awesome-deepseek-harness",
+ "sub": null,
+ "entryPath": null,
+ "scannedPkg": false,
+ "flags": {
+  "installScript": null,
+  "networkEgress": null,
+  "shellAccess": null,
+  "noLicense": false
+ },
+ "matched": {},
+ "scannedAt": "2026-08-14T18:02"
+}

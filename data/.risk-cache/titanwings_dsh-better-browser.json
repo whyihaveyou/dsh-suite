@@ -1,0 +1,19 @@
+{
+ "repo": "titanwings/dsh-better-browser",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "75: response = await fetch(`${baseUrl}/command`, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:18"
+}

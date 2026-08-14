@@ -1,0 +1,21 @@
+{
+ "repo": "LoserFox/dsh-git-identity",
+ "sub": null,
+ "entryPath": "index.mjs",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": false,
+  "shellAccess": true,
+  "noLicense": true
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": [
+   "39: const value = execFileSync('git', ['config', '--global', '--get', key], {",
+   "52: execFileSync('git', ['config', '--global', key, value], { stdio: 'ignore' })",
+   "65: const raw = execFileSync('gh', ['api', 'user', '--jq', '{ login, id }'], {"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:18"
+}

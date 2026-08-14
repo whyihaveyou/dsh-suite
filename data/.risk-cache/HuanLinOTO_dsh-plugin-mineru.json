@@ -1,0 +1,19 @@
+{
+ "repo": "HuanLinOTO/dsh-plugin-mineru",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "129: const response = await fetch(`${this.baseURL}${path}`, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:15"
+}

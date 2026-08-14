@@ -1,0 +1,21 @@
+{
+ "repo": "vibeinging/dsh-work",
+ "sub": null,
+ "entryPath": "electron/main.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": true,
+  "networkEgress": true,
+  "shellAccess": true,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "915: fetch: (url, options) => net.fetch(url, options),"
+  ],
+  "shellAccess": [
+   "767: const child = spawn(cmd, args, { cwd: SERVER_DIR, env, stdio: ['ignore', 'inherit', 'inher"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:06"
+}

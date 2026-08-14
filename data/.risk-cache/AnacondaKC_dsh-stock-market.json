@@ -1,0 +1,14 @@
+{
+ "repo": "AnacondaKC/dsh-stock-market",
+ "sub": null,
+ "entryPath": null,
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": null,
+  "shellAccess": null,
+  "noLicense": false
+ },
+ "matched": {},
+ "scannedAt": "2026-08-14T18:15"
+}

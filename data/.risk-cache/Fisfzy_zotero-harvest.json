@@ -1,0 +1,19 @@
+{
+ "repo": "Fisfzy/zotero-harvest",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "832: const data = await (await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T17:59"
+}

@@ -1,0 +1,19 @@
+{
+ "repo": "TwotwoPiggy/dsh-balance",
+ "sub": null,
+ "entryPath": "src/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": true
+ },
+ "matched": {
+  "networkEgress": [
+   "254: const res = await fetch(`${config.baseUrl.replace(/\\/+$/, '')}/user/balance`, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:23"
+}

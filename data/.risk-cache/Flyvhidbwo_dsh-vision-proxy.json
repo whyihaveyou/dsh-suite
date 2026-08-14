@@ -1,0 +1,19 @@
+{
+ "repo": "Flyvhidbwo/dsh-vision-proxy",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": true,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "224: const post = () => fetch(url, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:22"
+}

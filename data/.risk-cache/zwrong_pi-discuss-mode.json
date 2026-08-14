@@ -1,0 +1,14 @@
+{
+ "repo": "zwrong/pi-discuss-mode",
+ "sub": null,
+ "entryPath": null,
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": null,
+  "shellAccess": null,
+  "noLicense": true
+ },
+ "matched": {},
+ "scannedAt": "2026-08-14T18:15"
+}

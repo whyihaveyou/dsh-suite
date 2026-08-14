@@ -1,0 +1,19 @@
+{
+ "repo": "lhmd/dsh-director-toolkit",
+ "sub": null,
+ "entryPath": "src/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "235: const response = await fetch(baseUrl || DEFAULT_BASE_URL, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:18"
+}

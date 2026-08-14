@@ -1,0 +1,19 @@
+{
+ "repo": "Ychris12138/dsh-usage-stats",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "902: const response = await fetch(spec.url(baseURL), {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:12"
+}

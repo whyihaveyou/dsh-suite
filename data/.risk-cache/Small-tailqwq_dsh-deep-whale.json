@@ -1,0 +1,14 @@
+{
+ "repo": "Small-tailqwq/dsh-deep-whale",
+ "sub": null,
+ "entryPath": null,
+ "scannedPkg": false,
+ "flags": {
+  "installScript": null,
+  "networkEgress": null,
+  "shellAccess": null,
+  "noLicense": true
+ },
+ "matched": {},
+ "scannedAt": "2026-08-14T18:02"
+}

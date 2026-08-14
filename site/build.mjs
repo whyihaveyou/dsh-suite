@@ -182,7 +182,7 @@ const I18N = {
     sortLabel: 'Sort',
     sortStarsDesc: 'Most stars', sortStarsAsc: 'Fewest stars', sortNameAsc: 'Name A\u2013Z', sortNameDesc: 'Name Z\u2013A',
     featured: 'Featured', featuredHint: 'Hand-picked highlights from the catalog.',
-    catalog: 'All plugins', catalogHint: 'Every curated plugin, sorted by stars.',
+    catalog: 'All plugins', catalogHint: 'Every curated plugin, sorted by stars.', catalogNote: 'Badges are evidence, not endorsement — compat checks & static scans are informational only.',
     watchlist: 'Watchlist', watchlistHint: 'Under review — collected from the dsh-plugin topic but not yet verified as installable DSH plugins.',
     results: 'result(s)',
     empty: 'No plugins match your search. Try a different keyword or category.',
@@ -247,7 +247,7 @@ const I18N = {
     sortLabel: '排序',
     sortStarsDesc: '星数降序', sortStarsAsc: '星数升序', sortNameAsc: '名称 A\u2013Z', sortNameDesc: '名称 Z\u2013A',
     featured: '精选插件', featuredHint: '从目录里手工挑出的亮点。',
-    catalog: '全部插件', catalogHint: '所有精选插件，按星数排序。',
+    catalog: '全部插件', catalogHint: '所有精选插件，按星数排序。', catalogNote: '徽章即证据而非背书——兼容测试与静态扫描仅供参考，不代表官方认可。',
     watchlist: '待审核', watchlistHint: '待审核 — 从 dsh-plugin topic 收集、但尚未核实为可安装 DSH 插件的项目。',
     results: '条结果',
     empty: '没有匹配的插件，换个关键词或分类试试。',
@@ -349,6 +349,8 @@ function normalizeCurated(e) {
     featured: !!e.featured,
     isOfficialBeta: !!e.isOfficialBeta,
     compatStatus: (e.compat && e.compat.status) || 'unknown',
+    risk: e.risk || null,
+    evidence: e.evidence || null,
     installCmd: buildInstallCmd(e),
     watchReason: e.watchReason || '',
   };
@@ -430,6 +432,40 @@ function compatBadge(status, t) {
   return `<span class="badge badge-compat badge-${c.cls}" title="${esc(label)}">${c.icon} ${esc(label)}</span>`;
 }
 
+/** 证据等级徽章：L1 已声明 → L2 peer 校验通过 → L3 真实安装验证（L3 由 compat layer2/3 填充，未测则注明） */
+const EVIDENCE = {
+  1: { en: 'L1 declared', zh: 'L1 已声明', cls: 'ev1' },
+  2: { en: 'L2 peer-verified', zh: 'L2 peer 校验通过', cls: 'ev2' },
+  3: { en: 'L3 install-verified', zh: 'L3 真实安装验证', cls: 'ev3' },
+};
+function evidenceBadge(ev, t) {
+  if (!ev) return '';
+  const lvl = ev.l3Verified ? 3 : Math.max(1, ev.level || 1);
+  const d = EVIDENCE[lvl] || EVIDENCE[1];
+  const label = isZh(t) ? d.zh : d.en;
+  const done = ev.l3Verified || lvl >= 3;
+  const title = isZh(t)
+    ? `证据等级：${label}（L1 已声明 → L2 peer 校验通过 → L3 真实安装验证${done ? '' : '；L3 未测'}）`
+    : `Evidence: ${label} (L1 declared → L2 peer-verified → L3 install-verified${done ? '' : '; L3 untested'})`;
+  return `<span class="badge badge-ev badge-${d.cls}" title="${esc(title)}">🛡 ${esc(label)}</span>`;
+}
+
+/** 风险标志：静态扫描命中显示 ⚠（hover 说明），全干净显示 ✓，未扫描不显示 */
+const RISK_KEYS = { installScript: ['安装脚本', 'install script'], networkEgress: ['网络外发', 'network egress'], shellAccess: ['shell 调用', 'shell access'], noLicense: ['无 LICENSE', 'no license'] };
+function riskIcon(p, t) {
+  const r = p.risk;
+  if (!r || typeof r !== 'object') return '';
+  const zh = isZh(t);
+  const hits = Object.keys(RISK_KEYS).filter(k => r[k] === true);
+  if (!hits.length) {
+    const title = zh ? '静态扫描未发现风险（安装脚本 / 网络外发 / shell 调用 / 许可证）' : 'Static scan: no risk flags (install script / network egress / shell / license)';
+    return `<span class="badge badge-risk badge-risk-clean" title="${esc(title)}">✓</span>`;
+  }
+  const names = hits.map(k => (zh ? RISK_KEYS[k][0] : RISK_KEYS[k][1])).join(' · ');
+  const title = zh ? `⚠ 静态扫描命中：${names}（证据而非背书，仅供参考）` : `⚠ static scan flags: ${names} (evidence, not endorsement)`;
+  return `<span class="badge badge-risk" title="${esc(title)}">⚠</span>`;
+}
+
 function renderCard(p, t, { featured = false, watch = false } = {}) {
   const cat = CATEGORY_LABEL[p.category] || { en: p.category, zh: p.category };
   const catLabel = isZh(t) ? cat.zh : cat.en;
@@ -465,6 +501,8 @@ function renderCard(p, t, { featured = false, watch = false } = {}) {
     <p class="card-desc">${esc(desc || '')}</p>
     <div class="card-meta">
       ${compatBadge(p.compatStatus, t)}
+      ${evidenceBadge(p.evidence, t)}
+      ${riskIcon(p, t)}
       ${watchBadge}
       ${langBadge}
       ${author}
@@ -709,6 +747,7 @@ ${dashSection}
     <section class="catalog" id="catalog">
       <h2 class="section-title">${esc(t.catalog)}</h2>
       <p class="section-hint">${esc(t.catalogHint)}</p>
+      <p class="section-hint catalog-note">${esc(t.catalogNote)}</p>
       <div class="grid" id="catalog-grid">${renderGrid(sortedCatalog, t)}</div>
     </section>
 

@@ -1,0 +1,19 @@
+{
+ "repo": "jelly-000/dsh-balance-monitor",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "53: const res = await fetch(BALANCE_API, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:19"
+}

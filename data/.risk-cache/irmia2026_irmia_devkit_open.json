@@ -1,0 +1,14 @@
+{
+ "repo": "irmia2026/irmia_devkit_open",
+ "sub": null,
+ "entryPath": null,
+ "scannedPkg": false,
+ "flags": {
+  "installScript": null,
+  "networkEgress": null,
+  "shellAccess": null,
+  "noLicense": false
+ },
+ "matched": {},
+ "scannedAt": "2026-08-14T18:04"
+}

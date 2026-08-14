@@ -1,0 +1,14 @@
+{
+ "repo": "Octo-o-o-o/deepseek-harness-applicants",
+ "sub": null,
+ "entryPath": null,
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": null,
+  "shellAccess": null,
+  "noLicense": false
+ },
+ "matched": {},
+ "scannedAt": "2026-08-14T18:04"
+}

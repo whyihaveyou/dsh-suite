@@ -1,0 +1,19 @@
+{
+ "repo": "Axiaohungry/dsh-llm-codebuddy",
+ "sub": null,
+ "entryPath": "index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "139: response = await fetch(CONFIG_URL, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:22"
+}

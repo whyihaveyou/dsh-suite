@@ -1,0 +1,24 @@
+{
+ "repo": "huiliyi37/dsh-tianshu-tui",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": true,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "101: const res = await fetch(url, { signal: AbortSignal.timeout(timeoutMs) });",
+   "16627: this.items = await sources.refetch();"
+  ],
+  "shellAccess": [
+   "108: const child = spawn(\"pnpm\", [\"add\", `${TUI_PACKAGE}@${latest}`], {",
+   "3577: const output = execSync(\"git ls-files --cached --others --exclude-standard\", {",
+   "12559: child = spawn(this.command, {"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:03"
+}

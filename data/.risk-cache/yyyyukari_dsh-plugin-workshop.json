@@ -1,0 +1,21 @@
+{
+ "repo": "yyyyukari/dsh-plugin-workshop",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": false,
+  "shellAccess": true,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": [
+   "61: const r = spawnSync('git', ['--version'], { encoding: 'utf8', timeout: 10000, windowsHide:",
+   "73: return spawnSync(cmd, args, { encoding: 'utf8', timeout: timeoutMs || 180000, windowsHide:",
+   "313: const child = spawn('cmd', ['/c', file], { detached: true, stdio: 'ignore', windowsHide: t"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:13"
+}

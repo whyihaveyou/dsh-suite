@@ -1,0 +1,17 @@
+{
+ "repo": "btspoony/mstar-harness",
+ "sub": null,
+ "entryPath": "packages/opencode/src/mstar.ts",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": true,
+  "networkEgress": false,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:04"
+}

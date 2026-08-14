@@ -1,0 +1,21 @@
+{
+ "repo": "Yan-Zero/dsh-codex",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "352: const response = await fetch(OPENAI_CODEX_USAGE_URL, {",
+   "631: const response = await fetch(url, {",
+   "989: response = await fetch(OPENAI_CODEX_SEARCH_URL, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:20"
+}

@@ -1,0 +1,20 @@
+{
+ "repo": "1841220388zzzcccxxx-star/dsh-git-graph",
+ "sub": null,
+ "entryPath": "index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": false,
+  "shellAccess": true,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": [
+   "5: // Commands are executed with execFile (no shell), fixed argument lists only.",
+   "22: execFile('git', ['-C', repo, ...args], { maxBuffer, windowsHide: true }, (err, stdout, std"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:21"
+}

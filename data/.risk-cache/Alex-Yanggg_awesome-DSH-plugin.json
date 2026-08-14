@@ -1,0 +1,14 @@
+{
+ "repo": "Alex-Yanggg/awesome-DSH-plugin",
+ "sub": null,
+ "entryPath": null,
+ "scannedPkg": false,
+ "flags": {
+  "installScript": null,
+  "networkEgress": null,
+  "shellAccess": null,
+  "noLicense": false
+ },
+ "matched": {},
+ "scannedAt": "2026-08-14T18:04"
+}

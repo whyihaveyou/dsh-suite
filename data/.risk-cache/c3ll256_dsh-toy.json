@@ -1,0 +1,25 @@
+{
+ "repo": "c3ll256/dsh-toy",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": true,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "43: function openWebSocket(url, options, timeoutMs, signal) {",
+   "46: const socket = new WebSocket(url, options);",
+   "92: function closeWebSocket(socket, timeoutMs = 1e3) {"
+  ],
+  "shellAccess": [
+   "958: execFile(executable, [\"--server-version\"], {",
+   "1052: spawn(executable, port, userDeviceConfigPath, signal) {",
+   "1053: const child = spawn(executable, intifaceArguments(port, userDeviceConfigPath), {"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:06"
+}

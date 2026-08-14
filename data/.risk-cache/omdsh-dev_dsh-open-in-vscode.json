@@ -1,0 +1,19 @@
+{
+ "repo": "omdsh-dev/dsh-open-in-vscode",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": false,
+  "shellAccess": true,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": [
+   "918: const child = spawn(executable, [...args, path], {"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:04"
+}

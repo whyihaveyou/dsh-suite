@@ -1,0 +1,23 @@
+{
+ "repo": "hyqhyq3/dsh-mcp-manager",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": true,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "82: const resp = await fetch(url, {",
+   "101: const resp = await fetch(url, {",
+   "127: const resp = await fetch(`${issuer}/.well-known/oauth-authorization-server`, { signal: Abo"
+  ],
+  "shellAccess": [
+   "340: const child = spawn(server.command, server.args ?? [], {"
+  ]
+ },
+ "scannedAt": "2026-08-14T18:23"
+}

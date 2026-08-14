@@ -1,0 +1,17 @@
+{
+ "repo": "Anionex/dsh-turn-rewind",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": false,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:04"
+}

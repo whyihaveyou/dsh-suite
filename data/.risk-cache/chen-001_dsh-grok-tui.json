@@ -1,0 +1,14 @@
+{
+ "repo": "chen-001/dsh-grok-tui",
+ "sub": null,
+ "entryPath": null,
+ "scannedPkg": true,
+ "flags": {
+  "installScript": true,
+  "networkEgress": null,
+  "shellAccess": null,
+  "noLicense": false
+ },
+ "matched": {},
+ "scannedAt": "2026-08-14T18:17"
+}

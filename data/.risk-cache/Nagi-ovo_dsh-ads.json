@@ -1,0 +1,20 @@
+{
+ "repo": "Nagi-ovo/dsh-ads",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": true
+ },
+ "matched": {
+  "networkEgress": [
+   "1779: const response = await fetch(url, {",
+   "1907: return classifyStarStatus((await fetch(`https://api.github.com/user/starred/${repo}`, { he"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:02"
+}

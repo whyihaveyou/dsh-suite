@@ -503,3 +503,15 @@ html[data-theme="light"] .cta-cmd { background: var(--bg-soft); }
   color: var(--text); transition: border-color .15s, background .15s;
 }
 .nav-theme:hover { border-color: var(--brand); background: var(--brand-soft); }
+
+
+/* ---------- 证据等级徽章 + 风险标志（证据而非背书） ---------- */
+.badge-ev { cursor: help; }
+.badge-ev.badge-ev1 { background: rgba(148, 163, 184, .16); color: var(--muted); }
+.badge-ev.badge-ev2 { background: rgba(52, 211, 153, .15); color: var(--green); }
+.badge-ev.badge-ev3 { background: rgba(167, 139, 250, .18); color: var(--violet); }
+.badge-risk { background: rgba(250, 204, 21, .18); color: #d9a406; cursor: help; }
+.badge-risk:not(:hover) { opacity: .95; }
+.badge-risk-clean { background: rgba(52, 211, 153, .12); color: var(--green); cursor: help; }
+html[data-theme="light"] .badge-risk { color: #a87808; }
+.catalog-note { color: var(--faint); font-size: 12.5px; }

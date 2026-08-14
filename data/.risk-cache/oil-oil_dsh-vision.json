@@ -1,0 +1,19 @@
+{
+ "repo": "oil-oil/dsh-vision",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "570: const response = await fetch(`${provider.baseURL.replace(/\\/$/u, \"\")}/chat/completions`, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:12"
+}

@@ -1,0 +1,19 @@
+{
+ "repo": "sliverp/DeepSeek-harness-qqbot",
+ "sub": null,
+ "entryPath": "dist/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "257: const response = await fetch(url, { signal: AbortSignal.timeout(timeoutMs) });"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:22"
+}

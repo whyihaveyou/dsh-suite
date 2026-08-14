@@ -1,0 +1,19 @@
+{
+ "repo": "whiteguo233/dsh-openbiliclaw",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "40: const resp = await fetch(endpoint, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:09"
+}

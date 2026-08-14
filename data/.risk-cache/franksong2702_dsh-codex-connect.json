@@ -1,0 +1,20 @@
+{
+ "repo": "franksong2702/dsh-codex-connect",
+ "sub": null,
+ "entryPath": "lib/index.js",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "357: const response = await fetch(OPENAI_CODEX_USAGE_URL, {",
+   "1317: response = await fetch(OPENAI_CODEX_SEARCH_URL, {"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:23"
+}

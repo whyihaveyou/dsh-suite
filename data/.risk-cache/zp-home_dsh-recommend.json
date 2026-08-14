@@ -1,0 +1,19 @@
+{
+ "repo": "zp-home/dsh-recommend",
+ "sub": null,
+ "entryPath": "lib/host/index.mjs",
+ "scannedPkg": true,
+ "flags": {
+  "installScript": false,
+  "networkEgress": true,
+  "shellAccess": false,
+  "noLicense": false
+ },
+ "matched": {
+  "networkEgress": [
+   "58: const res = await fetch(config.dataUrl);"
+  ],
+  "shellAccess": []
+ },
+ "scannedAt": "2026-08-14T18:15"
+}

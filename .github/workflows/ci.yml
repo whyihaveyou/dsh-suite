@@ -1,0 +1,64 @@
+# .github/workflows/ci.yml
+#
+# Repository-level quality gate for every push to main and every PR.
+# This is the "code changed → run the tests" counterpart to the data-side
+# workflows: compat.yml (daily layer-1 peer check) and refresh.yml (hourly
+# stars/discovery, [skip ci]). This gate is deliberately data-agnostic — it
+# never depends on refresh-stars.mjs / discover-plugins.mjs — it validates the
+# committed artifacts and the plugins' own sources.
+#
+# Checks (all zero-dependency, Node built-ins; see scripts/verify-repo.mjs):
+#   test    create-dsh-plugin smoke tests (7 cases)
+#   build   packages/plugins/* tsc build
+#   readme  gen-readme idempotency (README must match data/plugins.json)
+#   data    data/plugins.json structural validation
+#   leak    secret / absolute-path leak scan over committed files
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # pnpm 10 matches pnpm-lock.yaml (lockfileVersion 9.0).
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          # Node 24 satisfies the widest engines range in the catalog; the
+          # create-dsh-plugin scaffolder itself wants ^22.19 || >=24.
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Scaffold smoke tests
+        run: node scripts/verify-repo.mjs --only test
+
+      - name: Plugins tsc build
+        run: node scripts/verify-repo.mjs --only build
+
+      - name: README idempotency
+        run: node scripts/verify-repo.mjs --only readme
+
+      - name: data/plugins.json validation
+        run: node scripts/verify-repo.mjs --only data
+
+      - name: Leak scan
+        run: node scripts/verify-repo.mjs --only leak

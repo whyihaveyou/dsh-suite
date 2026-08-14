@@ -1,4 +1,4 @@
-# plugin-manager — DSH 插件应用商店 / Plugin Store for DSH Web UI
+# @dsh-suite/plugin-manager — DSH 插件应用商店 / Plugin Store for DSH Web UI
 
 > 嵌入 DSH Web UI 设置页的插件商店面板：目录浏览 / 搜索 / 一键安装 / 兼容徽章 / 已装列表。
 > A plugin-store panel embedded in DSH Web UI: catalog browse / search / one-click install / compat badges / installed list.
@@ -35,7 +35,7 @@ plugin-manager/
 
 ```sh
 export DSH_HOME=/tmp/dsh-pm
-npx -y @deepseek-ai/dsh plugin --profile web add /path/to/packages/plugins/plugin-manager
+npx -y @deepseek-ai/dsh plugin --profile web add @dsh-suite/plugin-manager
 npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 # 设置 Settings → Plugins → 「Store 商店」tab
 ```

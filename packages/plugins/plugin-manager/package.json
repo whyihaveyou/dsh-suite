@@ -1,13 +1,34 @@
 {
-  "name": "plugin-manager",
+  "name": "@dsh-suite/plugin-manager",
   "version": "0.1.0",
-  "description": "DSH Web UI plugin store — catalog browse / search / one-click install / compat badges / installed list.",
+  "description": "DSH Web UI 插件应用商店：目录浏览/搜索/一键安装/兼容徽章/已装列表。A plugin store for DSH Web UI — catalog browse, search, one-click install, compat badges, installed list.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
     "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin-manager",
+    "plugin-store",
+    "dsh"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whyihaveyou/dsh-suite.git",
+    "directory": "packages/plugins/plugin-manager"
+  },
+  "engines": {
+    "node": "^22.19 || >=24"
   },
   "dsh": {
     "bundle": {

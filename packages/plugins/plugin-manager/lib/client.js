@@ -9,7 +9,7 @@
 // slots.register; host side effects are reported, never silently swallowed.
 
 window.__ModuleLoader__.load({
-  id: 'plugin-manager',
+  id: '@dsh-suite/plugin-manager',
   factory: (require) => {
     const React = require('react')
 

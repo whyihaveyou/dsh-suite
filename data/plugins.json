@@ -1400,9 +1400,9 @@
         "node": ""
       },
       "compat": {
-        "status": "unknown",
-        "dshVersion": "",
-        "lastVerified": "",
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-14",
         "note": ""
       },
       "install": "",
@@ -1816,9 +1816,9 @@
         "node": ""
       },
       "compat": {
-        "status": "unknown",
-        "dshVersion": "",
-        "lastVerified": "",
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-14",
         "note": ""
       },
       "install": "",
@@ -3256,9 +3256,9 @@
         "node": ""
       },
       "compat": {
-        "status": "unknown",
-        "dshVersion": "",
-        "lastVerified": "",
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-14",
         "note": ""
       },
       "install": "",
@@ -3964,9 +3964,9 @@
         "node": ""
       },
       "compat": {
-        "status": "unknown",
-        "dshVersion": "",
-        "lastVerified": "",
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-14",
         "note": ""
       },
       "install": "",
@@ -4092,9 +4092,9 @@
         "node": ""
       },
       "compat": {
-        "status": "unknown",
-        "dshVersion": "",
-        "lastVerified": "",
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-14",
         "note": ""
       },
       "install": "",
@@ -4828,9 +4828,9 @@
         "node": ""
       },
       "compat": {
-        "status": "unknown",
-        "dshVersion": "",
-        "lastVerified": "",
+        "status": "ok",
+        "dshVersion": "0.1.0-rc.6",
+        "lastVerified": "2026-08-14",
         "note": ""
       },
       "install": "",

@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-08-13T15:56:40Z",
+  "generated_at": "2026-08-14T01:22:22Z",
   "dshVersion": "0.1.0-rc.6",
   "cordisVersion": "4.0.1",
-  "nodeVersion": "22.17.0",
+  "nodeVersion": "24.19.0",
   "layers_run": [
     1
   ],
   "summary": {
     "total": 224,
-    "ok": 5,
-    "broken": 4,
-    "unknown": 27,
-    "unavailable": 188,
+    "ok": 10,
+    "broken": 0,
+    "unknown": 31,
+    "unavailable": 183,
     "skipped": 0
   },
   "summary_catalog": {
     "total": 167,
-    "ok": 4,
-    "broken": 3,
-    "unknown": 21,
-    "unavailable": 139,
+    "ok": 8,
+    "broken": 0,
+    "unknown": 24,
+    "unavailable": 135,
     "skipped": 0
   },
   "summary_watchlist": {
     "total": 57,
-    "ok": 1,
-    "broken": 1,
-    "unknown": 6,
-    "unavailable": 49,
+    "ok": 2,
+    "broken": 0,
+    "unknown": 7,
+    "unavailable": 48,
     "skipped": 0
   },
   "results": [
@@ -36,8 +36,8 @@
       "name": "open-managed-agents",
       "npmName": "open-managed-agents",
       "section": "catalog",
-      "verdict": "broken",
-      "note": "node 22.17.0 not in engines \">=22.19.0\"",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
       "pkgVersion": "0.1.2",
       "peerCordis": null,
       "peerDsh": null,
@@ -230,8 +230,12 @@
       "name": "dsh-mnemon",
       "npmName": "dsh-mnemon",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
     },
     {
       "id": "dsh-paseo",
@@ -390,8 +394,12 @@
       "name": "dsh-scholar",
       "npmName": "dsh-scholar",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22"
     },
     {
       "id": "dsh-ssh",
@@ -507,7 +515,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.10.2",
+      "pkgVersion": "0.10.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -1076,8 +1084,12 @@
       "name": "dsh-advisor",
       "npmName": "dsh-advisor",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19 || >=24"
     },
     {
       "id": "dsh-artifact",
@@ -1108,8 +1120,12 @@
       "name": "dsh-llm-fallbacks",
       "npmName": "dsh-llm-fallbacks",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0-alpha.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22"
     },
     {
       "id": "dsh-sentinel",
@@ -1301,9 +1317,9 @@
       "name": "dsh-grok-tui",
       "npmName": "dsh-grok-tui",
       "section": "catalog",
-      "verdict": "broken",
-      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
-      "pkgVersion": "0.3.7",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.3.8",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -1399,8 +1415,8 @@
       "name": "create-dsh-plugin",
       "npmName": "create-dsh-plugin",
       "section": "catalog",
-      "verdict": "broken",
-      "note": "node 22.17.0 not in engines \"^22.19.0 || >=24.0.0\"",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
       "pkgVersion": "0.1.1",
       "peerCordis": null,
       "peerDsh": null,
@@ -1487,8 +1503,8 @@
       "name": "Tianshu-Tui",
       "npmName": "tianshu-tui",
       "section": "watchlist",
-      "verdict": "broken",
-      "note": "node 22.17.0 not in engines \">=24\"",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
       "pkgVersion": "3.1.2",
       "peerCordis": null,
       "peerDsh": null,
@@ -1895,8 +1911,12 @@
       "name": "dsh-tool-browser",
       "npmName": "dsh-tool-browser",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=18"
     },
     {
       "id": "dshfind",

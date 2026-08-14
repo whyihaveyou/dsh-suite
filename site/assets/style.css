@@ -328,3 +328,39 @@ section { margin-bottom: 48px; }
   .lb-cat { display: none; }
   .lb-desc { white-space: normal; }
 }
+
+
+/* ---------- learn page ---------- */
+.learn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.learn-card {
+  display: flex; flex-direction: column; gap: 12px; padding: 16px;
+  background: var(--surface); border: 1px solid var(--border-soft); border-radius: var(--radius);
+  transition: border-color .18s, transform .18s, box-shadow .18s; color: var(--text); text-decoration: none;
+}
+.learn-card:hover { border-color: var(--brand); transform: translateY(-3px); box-shadow: var(--shadow-lg); text-decoration: none; }
+.learn-img { display: block; width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); }
+.learn-body { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.learn-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.learn-name { font-weight: 700; font-size: 15px; color: var(--text); }
+.learn-type { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: var(--radius-badge); white-space: nowrap; }
+.learn-type-official { background: var(--brand-soft); color: var(--brand-bright); }
+.learn-type-community { background: rgba(96, 165, 250, .15); color: var(--blue); }
+.learn-type-paper { background: rgba(167, 139, 250, .15); color: var(--violet); }
+.learn-desc { margin: 0; color: var(--muted); font-size: 13.5px; line-height: 1.5; flex: 1; }
+.learn-lang { font-size: 11px; color: var(--faint); font-weight: 600; }
+
+/* ---------- new arrivals feed ---------- */
+.new-arrivals { margin-bottom: 48px; }
+.na-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.na-item {
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+  background: var(--surface); border: 1px solid var(--border-soft); border-radius: var(--radius-sm);
+  color: var(--text); text-decoration: none; transition: border-color .15s;
+}
+.na-item:hover { border-color: var(--brand); text-decoration: none; }
+.na-name { flex: 1; min-width: 0; font-weight: 600; font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.na-cat { font-size: 10.5px; font-weight: 700; color: var(--brand-bright); background: var(--brand-soft); padding: 2px 7px; border-radius: var(--radius-badge); white-space: nowrap; }
+.na-stars { font-size: 12px; font-weight: 700; color: var(--yellow); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* ---------- line chart ---------- */
+.lb-line { width: 100%; height: auto; }

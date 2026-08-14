@@ -91,6 +91,45 @@ const RAW_CATEGORY_MAP = {
   launcher: 'utility', list: 'utility', fun: 'utility',
 };
 
+/* Learn 学习资源（中英双语，手工维护的精选列表） */
+const LEARN_RESOURCES = [
+  { id: 'official-docs', type: 'official', lang: 'EN / 中文',
+    url: 'https://deepseek-harness.github.io/',
+    name_en: 'DeepSeek Harness official docs', name_zh: 'DeepSeek Harness 官方文档',
+    desc_en: 'The official "orange paper" — install, config and plugin API reference.',
+    desc_zh: '官方「橙皮书」——安装、配置与插件 API 的权威参考。' },
+  { id: 'dev-guide', type: 'community', lang: 'EN / 中文', img: 'assets/learn/02-plugin-code.png',
+    url: 'https://github.com/whyihaveyou/dsh-plugin-tutorial',
+    name_en: 'DSH plugin dev guide', name_zh: 'DSH 插件开发指南',
+    desc_en: 'Plugins from zero to one — registration, deps, effects, teardown, with real code.',
+    desc_zh: '从 0 到 1 写插件——注册 / 依赖 / 副作用 / 卸载，配真实代码截图。' },
+  { id: 'cordis-paper', type: 'paper', lang: 'EN',
+    url: 'https://github.com/cordiverse/paper',
+    name_en: 'Cordis paper', name_zh: 'Cordis 论文',
+    desc_en: 'Spatiotemporal composability — the formal foundation of DSH\'s plugin system.',
+    desc_zh: '时空可组合性——DSH 插件体系的形式化基础。' },
+  { id: 'migration-guide', type: 'community', lang: 'EN / 中文',
+    url: 'https://github.com/whyihaveyou/dsh-suite/blob/main/docs/migration-guide.zh-CN.md',
+    name_en: 'Migration guide', name_zh: '迁移指南',
+    desc_en: 'Step-by-step guide to port Claude Code / MCP plugins to DSH.',
+    desc_zh: '把 Claude Code / MCP 插件移植到 DSH 的分步指南。' },
+  { id: 'awesome-adam', type: 'community', lang: 'EN',
+    url: 'https://github.com/AdamPlatin123/awesome-dsh-plugins',
+    name_en: 'awesome-dsh-plugins (peer list)', name_zh: 'awesome-dsh-plugins（竞品列表）',
+    desc_en: 'A peer-curated DSH plugin list — we link out, openly.',
+    desc_zh: '第三方精选 DSH 插件列表——姿态开放，互链共赢。' },
+  { id: 'awesome-dsh-plugin', type: 'community', lang: 'EN',
+    url: 'https://github.com/awesome-dsh-plugin/awesome-dsh-plugin',
+    name_en: 'awesome-dsh-plugin (peer list)', name_zh: 'awesome-dsh-plugin（竞品列表）',
+    desc_en: 'Another community DSH plugin list.',
+    desc_zh: '另一个社区 DSH 插件列表。' },
+  { id: 'awesome-0xsline', type: 'community', lang: 'EN',
+    url: 'https://github.com/0xsline/awesome-deepseek-harness',
+    name_en: 'awesome-deepseek-harness (peer list)', name_zh: 'awesome-deepseek-harness（竞品列表）',
+    desc_en: 'A curated list of DSH plugins, skills, MCP servers & orchestration tools.',
+    desc_zh: 'DSH 插件、skills、MCP 服务器与编排工具的精选列表。' },
+];
+
 /* ------------------------------------------------------------------ */
 /* 文案（中英双语，对齐 research/launch-kit.md §1 §3）                  */
 /* ------------------------------------------------------------------ */
@@ -136,6 +175,17 @@ const I18N = {
     lbEco: 'Ecosystem overview', lbEcoHint: 'The long tail, in numbers.',
     ecoTotal: 'Total entries', ecoCurated: 'Curated', ecoWatch: 'Watchlist', ecoTotalStars: 'Total stars', ecoZero: '0-star ratio',
     ecoLongTail: 'Star distribution (curated + watchlist)', ecoLowTail: 'of entries have ≤ 3 stars — the long tail',
+    learnNav: 'Learn',
+    learnTitle: 'dsh-suite — Learn',
+    learnDescription: 'Learning resources for the DeepSeek Harness plugin ecosystem: official docs, our plugin dev guide, the Cordis paper, migration guide, and open links to peer lists.',
+    learnH1: 'Learn',
+    learnSubtitle: 'Curated resources to go from zero to a working DSH plugin.',
+    learnTypeOfficial: 'Official', learnTypeCommunity: 'Community', learnTypePaper: 'Paper',
+    newArrivals: 'New arrivals', newArrivalsHint: 'Plugins discovered in the last 48h — sorted by stars.',
+    growth: 'Ecosystem growth', growthHint: 'dsh-plugin topic repos vs. catalog entries, since launch.',
+    growthTopic: 'topic repos', growthCatalog: 'catalog entries',
+    authorBoard: 'Author leaderboard', authorBoardHint: 'Top plugin authors by entry count and total stars.',
+    authorPlugins: 'plugins', authorStars: 'stars',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -175,6 +225,17 @@ const I18N = {
     lbEco: '生态总览', lbEcoHint: '长尾生态，用数字说话。',
     ecoTotal: '总条目', ecoCurated: '主目录', ecoWatch: '观察区', ecoTotalStars: '总星数', ecoZero: '0 星占比',
     ecoLongTail: '星数分布（主目录 + 观察区）', ecoLowTail: '的条目 ≤3 星——长尾灌水',
+    learnNav: '学习',
+    learnTitle: 'dsh-suite — 学习资源',
+    learnDescription: 'DeepSeek Harness 插件生态学习资源：官方文档、我们的插件开发指南、Cordis 论文、迁移指南、以及开放互链的竞品列表。',
+    learnH1: '学习资源',
+    learnSubtitle: '从零到写出能跑的 DSH 插件，一路资源齐了。',
+    learnTypeOfficial: '官方', learnTypeCommunity: '社区', learnTypePaper: '论文',
+    newArrivals: '今日新增', newArrivalsHint: '最近 48 小时发现的插件，按星数排序。',
+    growth: '生态增长', growthHint: 'dsh-plugin topic 仓库数 vs 目录条目数，自发布以来。',
+    growthTopic: 'topic 仓库', growthCatalog: '目录条目',
+    authorBoard: '作者排行榜', authorBoardHint: '按收录条目数与总星数排名的顶级插件作者。',
+    authorPlugins: '个插件', authorStars: '星',
   },
 };
 
@@ -358,11 +419,25 @@ function renderCard(p, t, { featured = false, watch = false } = {}) {
   </article>`;
 }
 
+function renderNewArrival(p, t) {
+  const cat = CATEGORY_LABEL[p.category] || { en: p.category, zh: p.category };
+  return `<a class="na-item" href="${esc(p.url || REPO_URL)}" target="_blank" rel="noopener noreferrer">`
+    + `<span class="na-name">${esc(p.name)}</span>`
+    + `<span class="na-cat">${esc(isZh(t) ? cat.zh : cat.en)}</span>`
+    + `<span class="na-stars">★ ${fmtStars(p.stars)}</span>`
+    + `</a>`;
+}
+
+function lbAuthorRow(a, i, t) {
+  const rankTop = i < 3 ? ' lb-rank-top' : '';
+  return `<div class="lb-row"><span class="lb-rank${rankTop}">${i + 1}</span><div class="lb-main"><span class="lb-name">@${esc(a.name)}</span></div><span class="lb-cat">${a.count} ${esc(t.authorPlugins)}</span><span class="lb-stars">★ ${fmtStars(a.stars)}</span></div>`;
+}
+
 function renderGrid(items, t, opts = {}) {
   return items.map(p => renderCard(p, t, opts)).join('\n');
 }
 
-function renderPage(t, data, baseUrl) {
+function renderPage(t, data, baseUrl, snapshot) {
   const { catalog, watchlist } = data;
   const cats = [...new Set(catalog.map(p => p.category))];
   const featuredList = catalog.filter(p => p.featured);
@@ -372,6 +447,10 @@ function renderPage(t, data, baseUrl) {
   const sortedCatalog = [...catalog].sort(sortByStarsDesc);
   const sortedFeatured = [...featuredList].sort(sortByStarsDesc);
   const sortedWatch = [...watchlist].sort(sortByStarsDesc);
+
+  // 今日新增：目录里不在快照中的插件（最近 48h discover 新增），按星数倒序取前 12
+  const snapRepos = new Set(Object.keys((snapshot && snapshot.stars_by_repo) || {}));
+  const newArrivals = catalog.filter(p => p.repo && !snapRepos.has(p.repo)).sort(sortByStarsDesc).slice(0, 12);
 
   const thisUrl = baseUrl + (isZh(t) ? 'zh.html' : '');
   const altUrl = baseUrl + (isZh(t) ? '' : 'zh.html');
@@ -440,6 +519,7 @@ function renderPage(t, data, baseUrl) {
     <a class="brand" href="${isZh(t) ? 'zh.html' : 'index.html'}"><span class="brand-mark">dsh</span>&nbsp;suite</a>
     <nav class="nav">
       <a class="nav-lb" href="${isZh(t) ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
+      <a class="nav-lb" href="${isZh(t) ? 'learn-zh.html' : 'learn.html'}">${esc(t.learnNav)}</a>
       <a class="nav-lang" href="${t.otherHref}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
     </nav>
@@ -489,6 +569,12 @@ function renderPage(t, data, baseUrl) {
       <div class="grid" id="featured-grid">${renderGrid(sortedFeatured, t, { featured: true })}</div>
     </section>
 
+    <section class="new-arrivals" id="new-arrivals">
+      <h2 class="section-title">${esc(t.newArrivals)}</h2>
+      <p class="section-hint">${esc(t.newArrivalsHint)}</p>
+      <div class="na-grid">${newArrivals.map(p => renderNewArrival(p, t)).join('\n')}</div>
+    </section>
+
     <section class="catalog" id="catalog">
       <h2 class="section-title">${esc(t.catalog)}</h2>
       <p class="section-hint">${esc(t.catalogHint)}</p>
@@ -536,6 +622,31 @@ function loadSnapshot() {
     const s = JSON.parse(readFileSync(p, 'utf8'));
     return (s && s.stars_by_repo) ? s : null;
   } catch { return null; }
+}
+
+/** 读生态增长历史（bot/state/growth-history.json），用于增长曲线 */
+function loadGrowthHistory() {
+  const p = resolve(REPO_ROOT, 'bot', 'state', 'growth-history.json');
+  if (!existsSync(p)) return null;
+  try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; }
+}
+
+/** 折线图（内联 SVG，多序列） */
+function lbLineChart(series, labels, { colorTop = '#7b96ff', colorBottom = '#34d399' } = {}) {
+  const W = 640, H = 240, padL = 48, padR = 14, padT = 16, padB = 30;
+  const maxV = Math.max(1, ...series.flatMap(s => s.values));
+  const n = labels.length;
+  const x = (i) => padL + (i * (W - padL - padR) / Math.max(1, n - 1));
+  const y = (v) => padT + (1 - v / maxV) * (H - padT - padB);
+  const yTicks = [0, Math.round(maxV / 2), maxV];
+  const grid = yTicks.map(v => `  <line x1="${padL}" y1="${y(v)}" x2="${W - padR}" y2="${y(v)}" stroke="var(--border-soft)" stroke-width="1"></line>\n  <text x="${padL - 8}" y="${y(v) + 4}" font-size="11" fill="var(--faint)" text-anchor="end">${fmtStars(v)}</text>`).join('\n');
+  const lines = series.map((s, si) => {
+    const pts = s.values.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    return `<polyline points="${pts}" fill="none" stroke="${si === 0 ? colorTop : colorBottom}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></polyline>`;
+  }).join('\n');
+  const dots = series.flatMap((s, si) => s.values.map((v, i) => `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.5" fill="${si === 0 ? colorTop : colorBottom}"></circle>`)).join('\n');
+  const xlabels = labels.map((lb, i) => `<text x="${x(i)}" y="${H - 8}" font-size="11" fill="var(--muted)" text-anchor="middle">${esc(lb)}</text>`).join('\n');
+  return `<svg class="lb-chart lb-line" viewBox="0 0 ${W} ${H}" role="img" aria-hidden="true">\n${grid}\n${lines}\n${dots}\n${xlabels}\n</svg>`;
 }
 
 /** 横向条形图（内联 SVG，无外部依赖） */
@@ -613,6 +724,34 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
     { label: '500+ ★', value: all.filter(p => (p.stars || 0) >= 500).length, color: 'var(--green)' },
   ];
 
+  // 增长曲线（历史快照 + 现值）
+  const growth = loadGrowthHistory();
+  let growthChart = '';
+  if (growth && Array.isArray(growth.points) && growth.points.length) {
+    const gl = [], gt = [], gc = [];
+    for (const pt of growth.points) {
+      gl.push((pt.date || '').slice(5));
+      gt.push(Number(pt.topic) || 0);
+      gc.push(Number(pt.catalog) || 0);
+    }
+    gl.push(isZ ? '现在' : 'now');
+    gt.push(Number(growth.topic_now) || gt[gt.length - 1] || 0);
+    gc.push(total);
+    growthChart = lbLineChart([{ values: gt }, { values: gc }], gl);
+  }
+
+  // 作者排行榜（按作者聚合条目数 + 总星数）
+  const authorMap = new Map();
+  for (const p of all) {
+    const a = p.author || (p.repo || '').split('/')[0] || '';
+    if (!a) continue;
+    const m = authorMap.get(a) || { count: 0, stars: 0 };
+    m.count++; m.stars += p.stars || 0;
+    authorMap.set(a, m);
+  }
+  const authors = [...authorMap.entries()].map(([name, m]) => ({ name, ...m }))
+    .sort((a, b) => b.count - a.count || b.stars - a.stars).slice(0, 20);
+
   const thisUrl = baseUrl + (isZ ? 'stars-zh.html' : 'stars.html');
 
   const redirect = isZ ? '' : `
@@ -674,6 +813,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
     <a class="brand" href="${isZ ? 'zh.html' : 'index.html'}"><span class="brand-mark">dsh</span>&nbsp;suite</a>
     <nav class="nav">
       <a class="nav-lb" href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbDir)}</a>
+      <a class="nav-lb" href="${isZ ? 'learn-zh.html' : 'learn.html'}">${esc(t.learnNav)}</a>
       <a class="nav-lang" href="${isZ ? 'stars.html' : 'stars-zh.html'}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
     </nav>
@@ -703,6 +843,12 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
       <div class="lb-panel">${lbChartBars(catItems)}</div>
     </section>
 
+    <section class="lb-section" id="growth">
+      <h2 class="section-title">${esc(t.growth)}</h2>
+      <p class="section-hint">${esc(t.growthHint)}</p>
+      ${growthChart ? `<div class="lb-panel">${growthChart}</div>` : ''}
+    </section>
+
     <section class="lb-section" id="rising">
       <h2 class="section-title">${esc(t.lbRising)}</h2>
       <p class="section-hint">${esc(t.lbRisingHint)}${risingHead}</p>
@@ -713,6 +859,110 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
       <h2 class="section-title">${esc(t.lbTop)}</h2>
       <p class="section-hint">${esc(t.lbTopHint)}</p>
       <div class="lb-rows">${topRows}</div>
+    </section>
+
+    <section class="lb-section" id="authors">
+      <h2 class="section-title">${esc(t.authorBoard)}</h2>
+      <p class="section-hint">${esc(t.authorBoardHint)}</p>
+      <div class="lb-rows">${authors.map((a, i) => lbAuthorRow(a, i, t)).join('\n')}</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="foot-about">${esc(t.footAbout)}</p>
+    <nav class="foot-links">
+      <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)}</a>
+      <a href="https://www.npmjs.com/package/create-dsh-plugin" target="_blank" rel="noopener noreferrer">create-dsh-plugin</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-notify" target="_blank" rel="noopener noreferrer">plugin-notify</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-session-export" target="_blank" rel="noopener noreferrer">plugin-session-export</a>
+      <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${esc(t.footContributing)}</a>
+      <a href="${REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+      <a href="sitemap.xml">sitemap.xml</a>
+    </nav>
+  </footer>
+</body>
+</html>
+`;
+}
+
+function renderLearnPage(t, data, baseUrl) {
+  const isZ = isZh(t);
+  const typeLabel = { official: t.learnTypeOfficial, community: t.learnTypeCommunity, paper: t.learnTypePaper };
+  const cards = LEARN_RESOURCES.map((r) => {
+    const name = isZ ? r.name_zh : r.name_en;
+    const desc = isZ ? r.desc_zh : r.desc_en;
+    const tl = typeLabel[r.type] || r.type;
+    const img = r.img ? `<img class="learn-img" src="${esc(r.img)}" alt="${esc(name)}" loading="lazy">` : '';
+    return `  <a class="learn-card" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">
+    ${img}
+    <div class="learn-body">
+      <div class="learn-top"><span class="learn-name">${esc(name)}</span><span class="learn-type learn-type-${r.type}">${esc(tl)}</span></div>
+      <p class="learn-desc">${esc(desc)}</p>
+      <span class="learn-lang">${esc(r.lang)}</span>
+    </div>
+  </a>`;
+  }).join('\n');
+
+  const thisUrl = baseUrl + (isZ ? 'learn-zh.html' : 'learn.html');
+
+  const redirect = isZ ? '' : `
+  <script>
+    (function () {
+      try {
+        var q = new URL(location.href).searchParams.get('lang');
+        if (q === 'zh' || q === 'en') { try { localStorage.setItem('dshLang', q); } catch (e) {} if (q === 'zh' && location.pathname.indexOf('learn-zh.html') < 0) location.replace('learn-zh.html'); return; }
+        if (localStorage.getItem('dshLang')) return;
+        if ((navigator.language || '').toLowerCase().indexOf('zh') === 0) { try { localStorage.setItem('dshLang', 'zh'); } catch (e) {} location.replace('learn-zh.html'); }
+      } catch (e) {}
+    })();
+  </script>`;
+
+  return `<!doctype html>
+<html lang="${t.lang}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(t.learnTitle)}</title>
+  <meta name="description" content="${esc(t.learnDescription)}">
+  <meta name="keywords" content="${esc(SEO_KEYWORDS)}">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="canonical" href="${esc(thisUrl)}">
+  <link rel="alternate" hreflang="en" href="${esc(baseUrl)}learn.html">
+  <link rel="alternate" hreflang="zh-CN" href="${esc(baseUrl)}learn-zh.html">
+  <link rel="alternate" hreflang="x-default" href="${esc(baseUrl)}learn.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="dsh-suite">
+  <meta property="og:title" content="${esc(t.learnTitle)}">
+  <meta property="og:description" content="${esc(t.learnDescription)}">
+  <meta property="og:url" content="${esc(thisUrl)}">
+  <meta property="og:image" content="${esc(baseUrl)}assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  ${redirect}
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="${isZ ? 'zh.html' : 'index.html'}"><span class="brand-mark">dsh</span>&nbsp;suite</a>
+    <nav class="nav">
+      <a class="nav-lb" href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbDir)}</a>
+      <a class="nav-lb" href="${isZ ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
+      <a class="nav-lang" href="${isZ ? 'learn.html' : 'learn-zh.html'}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
+      <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
+    </nav>
+  </header>
+
+  <main class="lb-page">
+    <section class="lb-hero">
+      <p class="lb-back"><a href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbBack)}</a></p>
+      <h1 class="lb-title">${esc(t.learnH1)}</h1>
+      <p class="lb-subtitle">${esc(t.learnSubtitle)}</p>
+    </section>
+
+    <section class="lb-section">
+      <div class="learn-grid">${cards}</div>
     </section>
   </main>
 
@@ -769,13 +1019,15 @@ function main() {
   mkdirSync(join(__dirname, 'assets'), { recursive: true });
 
   // 1) 英文 / 中文 HTML
-  writeFileSync(join(__dirname, 'index.html'), renderPage(I18N.en, data, baseUrl));
-  writeFileSync(join(__dirname, 'zh.html'), renderPage(I18N.zh, data, baseUrl));
-
-  // 1b) Star 榜页（EN + ZH）
   const snapshot = loadSnapshot();
+
+  // 1) 首页 + Star 榜 + Learn（EN / ZH）
+  writeFileSync(join(__dirname, 'index.html'), renderPage(I18N.en, data, baseUrl, snapshot));
+  writeFileSync(join(__dirname, 'zh.html'), renderPage(I18N.zh, data, baseUrl, snapshot));
   writeFileSync(join(__dirname, 'stars.html'), renderStarsPage(I18N.en, data, baseUrl, snapshot));
   writeFileSync(join(__dirname, 'stars-zh.html'), renderStarsPage(I18N.zh, data, baseUrl, snapshot));
+  writeFileSync(join(__dirname, 'learn.html'), renderLearnPage(I18N.en, data, baseUrl));
+  writeFileSync(join(__dirname, 'learn-zh.html'), renderLearnPage(I18N.zh, data, baseUrl));
 
   // 2) 公开搜索索引（供 shields 端点 / 程序化消费）
   const catalogIndex = {
@@ -817,7 +1069,7 @@ function main() {
   console.log('[build] curated:', catalog.length, '| watchlist:', watchlist.length, '| featured:', catalog.filter(p => p.featured).length);
   console.log('[build] 分类:', [...new Set(catalog.map(p => p.category))].join(', '));
   console.log('[build] 输出目录:', __dirname);
-  console.log('[build] 产物: index.html, zh.html, stars.html, stars-zh.html, catalog.json, sitemap.xml, robots.txt, .nojekyll');
+  console.log('[build] 产物: index.html, zh.html, stars.html, stars-zh.html, learn.html, learn-zh.html, catalog.json, sitemap.xml, robots.txt, .nojekyll');
   const totalEntries = catalog.length + watchlist.length;
   console.log(`[build] Star 榜校验: 总条目 ${totalEntries} = 主目录 ${catalog.length} + 观察区 ${watchlist.length} — ${totalEntries === catalog.length + watchlist.length ? 'OK' : 'MISMATCH'}`);
   console.log(`[build] Star 榜校验: 总榜 Top ${Math.min(50, catalog.length)} / 飙升 Top ${(snapshot && snapshot.stars_by_repo) ? '20' : '0（无快照）'}`);

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dsh-suite — Learn</title>
+  <meta name="description" content="Learning resources for the DeepSeek Harness plugin ecosystem: official docs, our plugin dev guide, the Cordis paper, migration guide, and open links to peer lists.">
+  <meta name="keywords" content="DeepSeek Harness plugins, dsh 插件, dsh-plugin, dsh, deepseek, awesome-list, plugins, cordis, scaffold, agent-framework, developer-tools">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="canonical" href="https://whyihaveyou.github.io/dsh-suite/learn.html">
+  <link rel="alternate" hreflang="en" href="https://whyihaveyou.github.io/dsh-suite/learn.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://whyihaveyou.github.io/dsh-suite/learn-zh.html">
+  <link rel="alternate" hreflang="x-default" href="https://whyihaveyou.github.io/dsh-suite/learn.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="dsh-suite">
+  <meta property="og:title" content="dsh-suite — Learn">
+  <meta property="og:description" content="Learning resources for the DeepSeek Harness plugin ecosystem: official docs, our plugin dev guide, the Cordis paper, migration guide, and open links to peer lists.">
+  <meta property="og:url" content="https://whyihaveyou.github.io/dsh-suite/learn.html">
+  <meta property="og:image" content="https://whyihaveyou.github.io/dsh-suite/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  
+  <script>
+    (function () {
+      try {
+        var q = new URL(location.href).searchParams.get('lang');
+        if (q === 'zh' || q === 'en') { try { localStorage.setItem('dshLang', q); } catch (e) {} if (q === 'zh' && location.pathname.indexOf('learn-zh.html') < 0) location.replace('learn-zh.html'); return; }
+        if (localStorage.getItem('dshLang')) return;
+        if ((navigator.language || '').toLowerCase().indexOf('zh') === 0) { try { localStorage.setItem('dshLang', 'zh'); } catch (e) {} location.replace('learn-zh.html'); }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">dsh</span>&nbsp;suite</a>
+    <nav class="nav">
+      <a class="nav-lb" href="index.html">Directory</a>
+      <a class="nav-lb" href="stars.html">Leaderboard</a>
+      <a class="nav-lang" href="learn-zh.html" onclick="try{localStorage.setItem('dshLang','zh')}catch(e){}">中文</a>
+      <a class="nav-gh" href="https://github.com/whyihaveyou/dsh-suite" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main class="lb-page">
+    <section class="lb-hero">
+      <p class="lb-back"><a href="index.html">← Directory</a></p>
+      <h1 class="lb-title">Learn</h1>
+      <p class="lb-subtitle">Curated resources to go from zero to a working DSH plugin.</p>
+    </section>
+
+    <section class="lb-section">
+      <div class="learn-grid">  <a class="learn-card" href="https://deepseek-harness.github.io/" target="_blank" rel="noopener noreferrer">
+    
+    <div class="learn-body">
+      <div class="learn-top"><span class="learn-name">DeepSeek Harness official docs</span><span class="learn-type learn-type-official">Official</span></div>
+      <p class="learn-desc">The official &quot;orange paper&quot; — install, config and plugin API reference.</p>
+      <span class="learn-lang">EN / 中文</span>
+    </div>
+  </a>
+  <a class="learn-card" href="https://github.com/whyihaveyou/dsh-plugin-tutorial" target="_blank" rel="noopener noreferrer">
+    <img class="learn-img" src="assets/learn/02-plugin-code.png" alt="DSH plugin dev guide" loading="lazy">
+    <div class="learn-body">
+      <div class="learn-top"><span class="learn-name">DSH plugin dev guide</span><span class="learn-type learn-type-community">Community</span></div>
+      <p class="learn-desc">Plugins from zero to one — registration, deps, effects, teardown, with real code.</p>
+      <span class="learn-lang">EN / 中文</span>
+    </div>
+  </a>
+  <a class="learn-card" href="https://github.com/cordiverse/paper" target="_blank" rel="noopener noreferrer">
+    
+    <div class="learn-body">
+      <div class="learn-top"><span class="learn-name">Cordis paper</span><span class="learn-type learn-type-paper">Paper</span></div>
+      <p class="learn-desc">Spatiotemporal composability — the formal foundation of DSH&#39;s plugin system.</p>
+      <span class="learn-lang">EN</span>
+    </div>
+  </a>
+  <a class="learn-card" href="https://github.com/whyihaveyou/dsh-suite/blob/main/docs/migration-guide.zh-CN.md" target="_blank" rel="noopener noreferrer">
+    
+    <div class="learn-body">
+      <div class="learn-top"><span class="learn-name">Migration guide</span><span class="learn-type learn-type-community">Community</span></div>
+      <p class="learn-desc">Step-by-step guide to port Claude Code / MCP plugins to DSH.</p>
+      <span class="learn-lang">EN / 中文</span>
+    </div>
+  </a>
+  <a class="learn-card" href="https://github.com/AdamPlatin123/awesome-dsh-plugins" target="_blank" rel="noopener noreferrer">
+    
+    <div class="learn-body">
+      <div class="learn-top"><span class="learn-name">awesome-dsh-plugins (peer list)</span><span class="learn-type learn-type-community">Community</span></div>
+      <p class="learn-desc">A peer-curated DSH plugin list — we link out, openly.</p>
+      <span class="learn-lang">EN</span>
+    </div>
+  </a>
+  <a class="learn-card" href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" target="_blank" rel="noopener noreferrer">
+    
+    <div class="learn-body">
+      <div class="learn-top"><span class="learn-name">awesome-dsh-plugin (peer list)</span><span class="learn-type learn-type-community">Community</span></div>
+      <p class="learn-desc">Another community DSH plugin list.</p>
+      <span class="learn-lang">EN</span>
+    </div>
+  </a>
+  <a class="learn-card" href="https://github.com/0xsline/awesome-deepseek-harness" target="_blank" rel="noopener noreferrer">
+    
+    <div class="learn-body">
+      <div class="learn-top"><span class="learn-name">awesome-deepseek-harness (peer list)</span><span class="learn-type learn-type-community">Community</span></div>
+      <p class="learn-desc">A curated list of DSH plugins, skills, MCP servers &amp; orchestration tools.</p>
+      <span class="learn-lang">EN</span>
+    </div>
+  </a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="foot-about">A bilingual curated directory, a create-dsh-plugin scaffolder, and first-party plugins for DeepSeek Harness.</p>
+    <nav class="foot-links">
+      <a href="https://github.com/whyihaveyou/dsh-suite" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.npmjs.com/package/create-dsh-plugin" target="_blank" rel="noopener noreferrer">create-dsh-plugin</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-notify" target="_blank" rel="noopener noreferrer">plugin-notify</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-session-export" target="_blank" rel="noopener noreferrer">plugin-session-export</a>
+      <a href="https://github.com/whyihaveyou/dsh-suite/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing</a>
+      <a href="https://github.com/whyihaveyou/dsh-suite/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+      <a href="sitemap.xml">sitemap.xml</a>
+    </nav>
+  </footer>
+</body>
+</html>

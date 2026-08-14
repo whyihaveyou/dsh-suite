@@ -606,6 +606,7 @@ function renderPage(t, data, baseUrl, snapshot) {
       <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${esc(t.footContributing)}</a>
       <a href="${REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
       <a href="sitemap.xml">sitemap.xml</a>
+      <a href="https://awesome-dsh-plugin.com" target="_blank" rel="noopener noreferrer"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin" style="height:20px;vertical-align:middle"></a>
     </nav>
   </footer>
 
@@ -915,6 +916,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
       <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${esc(t.footContributing)}</a>
       <a href="${REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
       <a href="sitemap.xml">sitemap.xml</a>
+      <a href="https://awesome-dsh-plugin.com" target="_blank" rel="noopener noreferrer"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin" style="height:20px;vertical-align:middle"></a>
     </nav>
   </footer>
   <script>
@@ -1026,6 +1028,7 @@ function renderLearnPage(t, data, baseUrl) {
       <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${esc(t.footContributing)}</a>
       <a href="${REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
       <a href="sitemap.xml">sitemap.xml</a>
+      <a href="https://awesome-dsh-plugin.com" target="_blank" rel="noopener noreferrer"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin" style="height:20px;vertical-align:middle"></a>
     </nav>
   </footer>
 </body>

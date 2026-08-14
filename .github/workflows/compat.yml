@@ -17,6 +17,9 @@ concurrency:
 jobs:
   compat:
     runs-on: ubuntu-latest
+    # Daily tier + Sunday git tier of real installs can take a while;
+    # bound it so a wedged install cannot burn the whole 6h default.
+    timeout-minutes: 120
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,11 +32,23 @@ jobs:
           node-version: 24
           registry-url: 'https://registry.npmjs.org'
 
-      - name: "Run compatibility check (layer 1 — static peer comparison)"
+      - name: Setup pnpm
+        # dsh plugin forwards to the system pnpm binary (apps/cli/src/plugin.ts
+        # spawns `pnpm` from PATH — "pnpm not found" would fail every layer-2
+        # install). Keep the same major as our local toolchain (pnpm 10).
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: "Run compatibility check (layers 1-3 — static peer + real install + config assembly)"
         # --write persists ok/broken verdicts back into data/plugins.json.
-        # Layer 2 (install check) and layer 3 (config assembly) are stubbed
-        # in scripts/compat-check.mjs — TODO until DSH stabilizes its API.
-        run: node scripts/compat-check.mjs --write
+        # --layers all activates layer 2 (dsh plugin add into a throwaway
+        # profile) and layer 3 (--dump-config assembly). --scope auto selects
+        # the frequency tiers: featured/high-star npm entries daily, the rest
+        # of the npm entries in weekly id-hash shards (one per UTC weekday),
+        # and git-source repos on Sundays. Install concurrency is capped at 4
+        # inside the script; per-install timeouts: npm 120s, git 600s.
+        run: node scripts/compat-check.mjs --write --layers all --scope auto
 
       - name: Regenerate README tables (compat badges changed)
         # Test-Runner's CI asserts README == data/plugins.json. --write flips

@@ -1,0 +1,713 @@
+{
+  "generated_at": "2026-08-14T18:37:53.449Z",
+  "top_n": 100,
+  "summary": {
+    "npm_ok": 31,
+    "npm_mismatch": 15,
+    "build_from_source": 43,
+    "not_a_plugin": 11,
+    "error": 0
+  },
+  "entries": [
+    {
+      "repo": "liliMozi/openhanako",
+      "stars": 6048,
+      "verdict": "npm_mismatch",
+      "npmName": "hanako",
+      "note": ""
+    },
+    {
+      "repo": "edison7009/EchoBird",
+      "stars": 3016,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "no dsh.bundle manifest"
+    },
+    {
+      "repo": "foryourhealth111-pixel/Vibe-Skills",
+      "stars": 2743,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "zhu1090093659/dsh-web-ui",
+      "stars": 1864,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "liustack/modlens",
+      "stars": 1250,
+      "verdict": "npm_mismatch",
+      "npmName": "@liustack/modlens",
+      "note": ""
+    },
+    {
+      "repo": "Anionex/agent-vision-toolkit",
+      "stars": 819,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "AdamPlatin123/awesome-dsh-plugins",
+      "stars": 806,
+      "verdict": "npm_ok",
+      "npmName": "awesome-dsh-plugins",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/DSH-better-sidebar",
+      "stars": 731,
+      "verdict": "npm_mismatch",
+      "npmName": "dsh-better-sidebar",
+      "note": ""
+    },
+    {
+      "repo": "exoharness/exo",
+      "stars": 646,
+      "verdict": "npm_ok",
+      "npmName": "exo",
+      "note": ""
+    },
+    {
+      "repo": "Small-tailqwq/dsh-deep-whale",
+      "stars": 567,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "SII-Holos/synergy",
+      "stars": 542,
+      "verdict": "npm_ok",
+      "npmName": "synergy",
+      "note": ""
+    },
+    {
+      "repo": "yejiming/MuseAI",
+      "stars": 539,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "0xsline/awesome-deepseek-harness",
+      "stars": 392,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "Nagi-ovo/dsh-ads",
+      "stars": 328,
+      "verdict": "npm_ok",
+      "npmName": "dsh-ads",
+      "note": ""
+    },
+    {
+      "repo": "Anionex/dsh-vision-toolkit",
+      "stars": 316,
+      "verdict": "npm_mismatch",
+      "npmName": "@anionex/dsh-vision-toolkit",
+      "note": ""
+    },
+    {
+      "repo": "NanmiCoder/dsh-agent-teams",
+      "stars": 241,
+      "verdict": "npm_mismatch",
+      "npmName": "@nanmicoder/dsh-agent-teams",
+      "note": ""
+    },
+    {
+      "repo": "openma-ai/open-managed-agents",
+      "stars": 235,
+      "verdict": "npm_ok",
+      "npmName": "open-managed-agents",
+      "note": ""
+    },
+    {
+      "repo": "hust-open-atom-club/oh-dsh-desktop",
+      "stars": 165,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "firstintent/ccteam",
+      "stars": 155,
+      "verdict": "npm_ok",
+      "npmName": "ccteam",
+      "note": ""
+    },
+    {
+      "repo": "xiaobright/dsh-anchored-standard",
+      "stars": 146,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "huiliyi37/dsh-tianshu-tui",
+      "stars": 132,
+      "verdict": "npm_mismatch",
+      "npmName": "@huiliyi37/dsh-tianshu-tui",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-at-file",
+      "stars": 126,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "vlln/whale-girl",
+      "stars": 124,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "try-works/role-model",
+      "stars": 101,
+      "verdict": "npm_ok",
+      "npmName": "role-model",
+      "note": ""
+    },
+    {
+      "repo": "bruc3van/awesome-dsh-plugin",
+      "stars": 96,
+      "verdict": "npm_ok",
+      "npmName": "awesome-dsh-plugin",
+      "note": ""
+    },
+    {
+      "repo": "liustack/modsearch",
+      "stars": 88,
+      "verdict": "npm_ok",
+      "npmName": "modsearch",
+      "note": ""
+    },
+    {
+      "repo": "Lum1104/dsh-browser",
+      "stars": 87,
+      "verdict": "npm_ok",
+      "npmName": "dsh-browser",
+      "note": ""
+    },
+    {
+      "repo": "Nagi-ovo/dsh-visualize",
+      "stars": 82,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "Ruler4396/dsh-launcher",
+      "stars": 74,
+      "verdict": "npm_ok",
+      "npmName": "dsh-launcher",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-genui",
+      "stars": 73,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "ZSeven-W/dsh-openpencil",
+      "stars": 66,
+      "verdict": "npm_mismatch",
+      "npmName": "@zseven-w/dsh-openpencil",
+      "note": ""
+    },
+    {
+      "repo": "csyangwen/dsh-memory-evolve",
+      "stars": 54,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "icetomoyo/dsh_workflow",
+      "stars": 54,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "Octo-o-o-o/deepseek-harness-applicants",
+      "stars": 50,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "Alex-Yanggg/awesome-DSH-plugin",
+      "stars": 50,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "aresbit/MateBot",
+      "stars": 46,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "LaplaceYoung/oh-my-dsh",
+      "stars": 44,
+      "verdict": "npm_ok",
+      "npmName": "oh-my-dsh",
+      "note": ""
+    },
+    {
+      "repo": "btspoony/mstar-harness",
+      "stars": 43,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "irmia2026/irmia_devkit_open",
+      "stars": 39,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "omdsh-dev/dsh-annotation",
+      "stars": 39,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "Anionex/dsh-turn-rewind",
+      "stars": 39,
+      "verdict": "npm_mismatch",
+      "npmName": "@anionex/dsh-turn-rewind",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-open-in-vscode",
+      "stars": 39,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "omdsh-dev/dsh-notification",
+      "stars": 38,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "vlln/plugin-registry",
+      "stars": 35,
+      "verdict": "npm_ok",
+      "npmName": "plugin-registry",
+      "note": ""
+    },
+    {
+      "repo": "titanwings/dsh-automation",
+      "stars": 31,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "alingalingling/ui-status-label",
+      "stars": 29,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "lhh010/dsh-ui-whale",
+      "stars": 27,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "bowenliang123/dsh-context",
+      "stars": 26,
+      "verdict": "npm_ok",
+      "npmName": "dsh-context",
+      "note": ""
+    },
+    {
+      "repo": "c3ll256/dsh-toy",
+      "stars": 26,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "vibeinging/dsh-work",
+      "stars": 25,
+      "verdict": "npm_mismatch",
+      "npmName": "dsh-desktop",
+      "note": ""
+    },
+    {
+      "repo": "Chinesezjc/dsh-interconnect",
+      "stars": 24,
+      "verdict": "npm_ok",
+      "npmName": "dsh-interconnect",
+      "note": ""
+    },
+    {
+      "repo": "HeiGeAi/deepseek-harness-skin",
+      "stars": 24,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "834063245-creator/HoloGram",
+      "stars": 23,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "Nwflower/dsh-chat-import",
+      "stars": 23,
+      "verdict": "npm_ok",
+      "npmName": "dsh-chat-import",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-custom-tool",
+      "stars": 22,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "dancingmemory/dskin",
+      "stars": 22,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "tianji-qingtian/dsh-model-router",
+      "stars": 22,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "whiteguo233/dsh-openbiliclaw",
+      "stars": 21,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "Fishquito7/dsh-skill-viewer",
+      "stars": 21,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "GitHubxsy/agent-skills",
+      "stars": 20,
+      "verdict": "npm_ok",
+      "npmName": "agent-skills",
+      "note": ""
+    },
+    {
+      "repo": "tianji-qingtian/dsh-composer-polish",
+      "stars": 20,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "william-jin-cmu/dsh-vision",
+      "stars": 19,
+      "verdict": "npm_ok",
+      "npmName": "dsh-vision",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-data-agent",
+      "stars": 18,
+      "verdict": "npm_mismatch",
+      "npmName": "@yejiming/dsh-data-agent",
+      "note": ""
+    },
+    {
+      "repo": "Moeblack/dsh-message-edit",
+      "stars": 18,
+      "verdict": "npm_ok",
+      "npmName": "dsh-message-edit",
+      "note": ""
+    },
+    {
+      "repo": "Anionex/dsh-computer-use",
+      "stars": 18,
+      "verdict": "npm_mismatch",
+      "npmName": "@anionex/dsh-computer-use",
+      "note": ""
+    },
+    {
+      "repo": "JustGenius-s/DSH-Decktop",
+      "stars": 18,
+      "verdict": "npm_mismatch",
+      "npmName": "dsh-desktop",
+      "note": ""
+    },
+    {
+      "repo": "DietCokewithSugar/dsh-user-experience",
+      "stars": 18,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "cpj-dev/dsh-plugin-cc",
+      "stars": 18,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "anysearch-team/anysearch-dsh",
+      "stars": 18,
+      "verdict": "npm_mismatch",
+      "npmName": "@anysearch/anysearch-dsh",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-plugin-check",
+      "stars": 17,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "ccq1/dsh-side-panel",
+      "stars": 17,
+      "verdict": "npm_ok",
+      "npmName": "dsh-side-panel",
+      "note": ""
+    },
+    {
+      "repo": "vlln/dsh-navbar",
+      "stars": 17,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "bugmaker2/dsh-plugin-template",
+      "stars": 17,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "Ychris12138/dsh-usage-stats",
+      "stars": 17,
+      "verdict": "npm_ok",
+      "npmName": "dsh-usage-stats",
+      "note": ""
+    },
+    {
+      "repo": "oil-oil/dsh-vision",
+      "stars": 17,
+      "verdict": "npm_ok",
+      "npmName": "dsh-vision",
+      "note": ""
+    },
+    {
+      "repo": "hellodigua/dsh-share",
+      "stars": 16,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "147228/dsh-xiaoyao-skins",
+      "stars": 16,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "LayneChai/superpowers-dsh",
+      "stars": 16,
+      "verdict": "npm_ok",
+      "npmName": "superpowers-dsh",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-toolkit",
+      "stars": 15,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "LoserFox/distill",
+      "stars": 15,
+      "verdict": "npm_ok",
+      "npmName": "distill",
+      "note": ""
+    },
+    {
+      "repo": "whyihaveyou/dsh-suite",
+      "stars": 15,
+      "verdict": "npm_ok",
+      "npmName": "@dsh-suite/all",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-mnemon",
+      "stars": 14,
+      "verdict": "npm_ok",
+      "npmName": "dsh-mnemon",
+      "note": ""
+    },
+    {
+      "repo": "lzszq/dsh-scholar",
+      "stars": 14,
+      "verdict": "npm_ok",
+      "npmName": "dsh-scholar",
+      "note": ""
+    },
+    {
+      "repo": "SenmuuuuW/dsh-group-photo",
+      "stars": 14,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "CanglongCl/dsh-web-review",
+      "stars": 14,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "omdsh-dev/dsh-lark",
+      "stars": 14,
+      "verdict": "npm_ok",
+      "npmName": "dsh-lark",
+      "note": ""
+    },
+    {
+      "repo": "yyyyukari/dsh-plugin-workshop",
+      "stars": 14,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "liyupi/dsh-kun-like-pet",
+      "stars": 14,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "no dsh.bundle manifest"
+    },
+    {
+      "repo": "tencent-connect/dsh-qqbot",
+      "stars": 14,
+      "verdict": "npm_mismatch",
+      "npmName": "@tencent-connect/dsh-qqbot",
+      "note": ""
+    },
+    {
+      "repo": "Fisfzy/ego-browser",
+      "stars": 13,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "dingyi222666/dsh-focus-chat",
+      "stars": 13,
+      "verdict": "npm_mismatch",
+      "npmName": "@dingyi222666/dsh-focus-chat",
+      "note": ""
+    },
+    {
+      "repo": "zzir/agents-go",
+      "stars": 13,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "lhh010/dsh-minigames",
+      "stars": 13,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "Ghost011118/dsh-balance-meter",
+      "stars": 13,
+      "verdict": "npm_ok",
+      "npmName": "dsh-balance-meter",
+      "note": ""
+    },
+    {
+      "repo": "omdsh-dev/dsh-gomoku",
+      "stars": 12,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "dingkaihu63/dsh-robotic-harness",
+      "stars": 12,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "private:true"
+    },
+    {
+      "repo": "Ericwong5021/deepseek-plugin-store",
+      "stars": 12,
+      "verdict": "build_from_source",
+      "npmName": null,
+      "note": "unpublished npm name"
+    },
+    {
+      "repo": "the-beating-light-of-the-nail/dsh-meme-hub",
+      "stars": 12,
+      "verdict": "not_a_plugin",
+      "npmName": null,
+      "note": "no root package.json"
+    },
+    {
+      "repo": "joejojoking-cloud/dsh-file-explorer",
+      "stars": 12,
+      "verdict": "npm_ok",
+      "npmName": "dsh-file-explorer",
+      "note": ""
+    },
+    {
+      "repo": "zwrong/pi-discuss-mode",
+      "stars": 11,
+      "verdict": "npm_ok",
+      "npmName": "pi-discuss-mode",
+      "note": ""
+    }
+  ]
+}

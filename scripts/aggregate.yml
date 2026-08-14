@@ -1,0 +1,17 @@
+# DSH All-in-One aggregate manifest —— 聚合声明单一真相源。
+# 子插件改版后运行: node scripts/aggregate.mjs（重生成 patch + 校验 range 并同步 dependencies）。
+meta:
+  name: '@dsh-suite/all'
+  version: '0.1.0'
+  description_en: 'One-command install of the curated first-party DSH plugin suite (store / notify / session-export / team-board).'
+  description_zh: '一键安装 DeepSeek Harness 第一方最佳插件全家桶（商店 / 通知 / 会话导出 / 任务板）。'
+  keywords: [deepseek, harness, dsh, plugin, all-in-one, bundle, 全家桶]
+# members: 每行 `<相对仓库根的本地包路径> | <npm 依赖 range>`
+members:
+  - packages/plugins/plugin-manager | ^0.4.0
+  - packages/plugins/plugin-notify | ^0.1.0
+  - packages/plugins/plugin-session-export | ^0.1.0
+  - packages/plugins/plugin-team-board | ^0.1.0
+output:
+  dir: packages/all
+  patch: cordis.patch.yml

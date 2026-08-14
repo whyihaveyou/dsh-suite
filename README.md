@@ -991,3 +991,4 @@ Add a catalog entry, submit a plugin, or review the [15 plugin design principles
 
 - [Contributing](CONTRIBUTING.md) — inclusion criteria, submission flow, and the 15 plugin design principles
 - [Docs](docs/) — catalog schema, category definitions, and the migration guide
+- [Plugin Dev Guide](https://github.com/whyihaveyou/dsh-plugin-tutorial) — the bilingual book edition (mirrored at `docs/plugin-dev-guide.en.md` / `.zh-CN.md`)

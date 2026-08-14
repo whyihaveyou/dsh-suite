@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T17:38:30.990Z",
+  "generated_at": "2026-08-14T17:50:19.283Z",
   "repo": "whyihaveyou/dsh-suite",
   "totals": {
-    "curated": 1114,
+    "curated": 1115,
     "watchlist": 595,
-    "featured": 17
+    "featured": 18
   },
   "plugins": [
     {
@@ -20058,6 +20058,24 @@
       "isOfficialBeta": false,
       "compatStatus": "unknown",
       "installCmd": "dsh plugin add git+https://github.com/Civitasv/dsh-plugin-diff-review",
+      "watchReason": ""
+    },
+    {
+      "id": "all",
+      "name": "all (全家桶)",
+      "repo": "whyihaveyou/dsh-suite",
+      "url": "https://github.com/whyihaveyou/dsh-suite",
+      "category": "preset",
+      "desc_en": "All-in-one meta-package: one install brings the first-party suite — plugin-manager store, notify, session-export, team-board.",
+      "desc_zh": "全家桶聚合包：一次安装带入第一方全家桶——插件商店、IM 通知、会话导出、多 agent 任务板。",
+      "author": "whyihaveyou",
+      "stars": 15,
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": true,
+      "isOfficialBeta": false,
+      "compatStatus": "ok",
+      "installCmd": "dsh plugin add @dsh-suite/all",
       "watchReason": ""
     }
   ],

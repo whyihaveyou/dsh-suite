@@ -116,7 +116,9 @@ def make_banner():
 
     url = "whyihaveyou.github.io/dsh-suite"
     f_url = mono(30 * S)
-    d.text((mx, 366 * S), url, font=f_url, fill=BRAND)
+    url_w = d.textlength(url, font=f_url)
+    # 网址移到右侧安全区垂直居中，避开左下头像圆（x<25%宽 且 y>60%高 为危险区）
+    d.text((W - 50 * S - url_w, 235 * S), url, font=f_url, fill=BRAND)
 
     d.line([mx, 132*S, mx + 280*S, 132*S], fill=(77, 107, 254, 120), width=3*S)
 

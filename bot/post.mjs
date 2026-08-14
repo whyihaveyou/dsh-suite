@@ -107,12 +107,25 @@ async function main() {
     return
   }
 
-  const main = await postTweet(en, null)
-  console.log(`[post] posted EN tweet id=${main.data.id}`)
-  const reply = await postTweet(zh, main.data.id)
-  console.log(`[post] posted ZH reply id=${reply.data.id}`)
-  await mkdir(OUT_DIR, { recursive: true })
-  await writeFile(DIGEST_MD, renderMarkdown(digest, `posted ${main.data.id}/${reply.data.id}`))
+  try {
+    const main = await postTweet(en, null)
+    console.log(`[post] posted EN tweet id=${main.data.id}`)
+    const reply = await postTweet(zh, main.data.id)
+    console.log(`[post] posted ZH reply id=${reply.data.id}`)
+    await mkdir(OUT_DIR, { recursive: true })
+    await writeFile(DIGEST_MD, renderMarkdown(digest, `posted ${main.data.id}/${reply.data.id}`))
+  } catch (e) {
+    // X API 402 (credits depleted) etc: degrade to dry-run so the workflow still
+    // commits the digest + snapshot instead of failing red.
+    const msg = String(e && e.message)
+    if (msg.includes('402') || msg.includes('credits')) {
+      await mkdir(OUT_DIR, { recursive: true })
+      await writeFile(DIGEST_MD, renderMarkdown(digest, 'dry-run (X credits exhausted)'))
+      console.log(`[post] DRY-RUN (X API credits exhausted) — digest persisted, nothing posted`)
+      return
+    }
+    throw e
+  }
 }
 
 function renderMarkdown(digest, tag) {

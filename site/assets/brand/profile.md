@@ -51,9 +51,9 @@ npm create dsh-plugin
 
 ### 4️⃣ 目录规模 + 第一方产出
 
-The catalog is live with 160+ curated plugins across tools / UI / session / orchestration / LLM / utility — each with a compat badge.
+The catalog is live with 530+ curated plugins (and a watchlist that flags the tag-squatters) — each entry re-checked by CI, refreshed hourly.
 
-And it's not just links: we maintain our own first-party plugins (notify, session-export, team-board).
+And it's not just links: we maintain our own first-party plugins (plugin-notify, plugin-session-export) plus the create-dsh-plugin scaffolder.
 
 ### 5️⃣ 社区征集
 

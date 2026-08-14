@@ -117,6 +117,9 @@ const I18N = {
     badgeFeatured: 'Featured', badgeBeta: 'Beta',
     footAbout: 'A bilingual curated directory, a create-dsh-plugin scaffolder, and first-party plugins for DeepSeek Harness.',
     footBuilt: 'Built from', footPlugins: 'plugins',
+    mascotCaption: 'Meet Suitie — your plugin-finding maid',
+    mascotAlt: 'Suitie, the whale-girl maid mascot holding a glowing AI core',
+    footContributing: 'Contributing',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -140,6 +143,9 @@ const I18N = {
     badgeFeatured: '精选', badgeBeta: '内测',
     footAbout: '中英双语精选目录 + create-dsh-plugin 脚手架 + 第一方插件，为 DeepSeek Harness 而生。',
     footBuilt: '由', footPlugins: '个插件',
+    mascotCaption: '吉祥物 Suitie——帮你找还能用插件的鲸娘女仆',
+    mascotAlt: '吉祥物 Suitie：捧着发光 AI 核心球的鲸娘女仆',
+    footContributing: '贡献指南',
   },
 };
 
@@ -392,7 +398,9 @@ function renderPage(t, data, baseUrl) {
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(t.title)}">
   <meta name="twitter:description" content="${esc(t.description)}">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2334d399'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='bold' text-anchor='middle' fill='%230b0f1a'%3Edsh%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
   ${langRedirect}
 </head>
@@ -407,17 +415,25 @@ function renderPage(t, data, baseUrl) {
 
   <main>
     <section class="hero">
-      <h1 class="slogan">${esc(t.slogan)}</h1>
-      <p class="subtitle">${esc(t.subtitle)}</p>
-      <div class="hero-badges">
-        <img class="hbadge-img" alt="GitHub stars" src="https://img.shields.io/github/stars/${REPO}?style=flat-square&color=facc15&label=stars" onerror="this.style.display='none'">
-        <span class="hbadge">${catalog.length} ${esc(t.statPlugins)}</span>
-        <span class="hbadge">${catCount} ${esc(t.statCategories)}</span>
-        <span class="hbadge">${featuredList.length} ${esc(t.statFeatured)}</span>
-        <a class="hbadge hbadge-accent" href="${REPO_URL}/actions" target="_blank" rel="noopener noreferrer">${esc(isZh(t) ? '每日兼容性 CI' : 'daily compat CI')} ↗</a>
-      </div>
-      <div class="hero-cta">
-        <code class="cta-cmd">dsh plugin add git+https://github.com/&lt;owner&gt;/&lt;repo&gt;</code>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="slogan">${esc(t.slogan)}</h1>
+          <p class="subtitle">${esc(t.subtitle)}</p>
+          <div class="hero-badges">
+            <img class="hbadge-img" alt="GitHub stars" src="https://img.shields.io/github/stars/${REPO}?style=flat-square&color=facc15&label=stars" onerror="this.style.display='none'">
+            <span class="hbadge">${catalog.length} ${esc(t.statPlugins)}</span>
+            <span class="hbadge">${catCount} ${esc(t.statCategories)}</span>
+            <span class="hbadge">${featuredList.length} ${esc(t.statFeatured)}</span>
+            <a class="hbadge hbadge-accent" href="${REPO_URL}/actions" target="_blank" rel="noopener noreferrer">${esc(isZh(t) ? '每日兼容性 CI' : 'daily compat CI')} ↗</a>
+          </div>
+          <div class="hero-cta">
+            <code class="cta-cmd">dsh plugin add git+https://github.com/&lt;owner&gt;/&lt;repo&gt;</code>
+          </div>
+        </div>
+        <figure class="mascot-card">
+          <img class="mascot-img" src="assets/brand/mascot.webp" width="600" height="600" loading="lazy" alt="${esc(t.mascotAlt)}">
+          <figcaption class="mascot-caption">${esc(t.mascotCaption)}</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -458,11 +474,15 @@ function renderPage(t, data, baseUrl) {
 
   <footer class="site-footer">
     <p class="foot-about">${esc(t.footAbout)}</p>
-    <p class="foot-links">
-      <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)}</a> ·
-      <a href="${REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a> ·
+    <nav class="foot-links">
+      <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)}</a>
+      <a href="https://www.npmjs.com/package/create-dsh-plugin" target="_blank" rel="noopener noreferrer">create-dsh-plugin</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-notify" target="_blank" rel="noopener noreferrer">plugin-notify</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-session-export" target="_blank" rel="noopener noreferrer">plugin-session-export</a>
+      <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${esc(t.footContributing)}</a>
+      <a href="${REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
       <a href="sitemap.xml">sitemap.xml</a>
-    </p>
+    </nav>
   </footer>
 
   <script type="application/json" id="catalog-data">${jsonBlob}</script>

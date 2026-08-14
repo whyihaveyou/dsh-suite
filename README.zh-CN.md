@@ -9,9 +9,11 @@
 
 **别再翻 `dsh-plugin` topic 了，这里都是还能跑的插件。**
 
-`dsh-suite` 是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）插件的**中英双语精选目录**——每天用 CI 对照最新 DSH 版本重测一遍兼容性——外加 `create-dsh-plugin` 脚手架和几个自研插件。
+`dsh-suite` 是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）插件的**活目录**——**每小时自动刷新、每日兼容实测**——外加 DSH 内置**插件商店**、`create-dsh-plugin` 脚手架和几个自研插件。
 
-![demo：一条命令生成并验证一个 DSH 插件](site/assets/demo.gif)
+[![目录网站](https://img.shields.io/badge/🌐_目录网站-whyihaveyou.github.io/dsh--suite-4d6bfe?style=for-the-badge)](https://whyihaveyou.github.io/dsh-suite/zh.html)
+
+[![dsh-suite 目录网站](https://whyihaveyou.github.io/dsh-suite/preview/2026-08-14/home-zh.png)](https://whyihaveyou.github.io/dsh-suite/zh.html)
 
 ---
 
@@ -19,21 +21,28 @@
 
 DSH 发布时没有官方插件 registry。现在找插件只能翻 GitHub 的 `dsh-plugin` topic（50+ 个零散小插件）和当天冒出来的几个静态 awesome-list——而 DSH 自己还在发**破坏性变更**（breaking changes）。
 
-所以我们做了三件事：
+所以我们做了四件事：
 
-1. **一个「活」目录**——每个条目挂 DSH 兼容性徽章，CI 每天对照最新 DSH 版本重测（三层验证，全程无需 API key）。
-2. **一个脚手架**——`npm create dsh-plugin` 一条命令生成可跑的 `dsh.bundle` + Cordis 骨架。官方没给脚手架，而「怎么迁移我的插件」是社区呼声最高的需求之一。
-3. **几个自研插件**——不是纯搬运，有第一方产出。
+1. **一个「活」目录**——880+ 精选插件，CI **每小时**刷新数据、**每天**把收录的包真实装进临时 profile 重测兼容性。
+2. **一个内置插件商店**——`@dsh-suite/plugin-manager` 在 DSH Web UI 的设置页里加一个 **Store** 标签：逛目录、搜索、看徽章、一键安装，全程不用离开 DSH。
+3. **一个脚手架**——`npm create dsh-plugin` 一条命令生成可跑的 `dsh.bundle` + Cordis 骨架。官方没给脚手架，而「怎么迁移我的插件」是社区呼声最高的需求之一。
+4. **几个自研插件**——不是纯搬运，有第一方产出。
 
 ## 快速开始
 
 ```bash
-# 1. 从目录安装一个插件
-dsh plugin --profile demo add <包名>
+# 1. 逛目录网站
+open https://whyihaveyou.github.io/dsh-suite/zh.html
 
-# 2. 造一个自己的插件
+# 2. 把插件商店装进你的 DSH Web UI
+npx @deepseek-ai/dsh plugin --profile web add @dsh-suite/plugin-manager
+#    → 重启 Web UI，然后 设置 → Plugins → Store
+
+# 3.（开发者）造一个自己的插件
 npm create dsh-plugin@latest my-plugin
 ```
+
+![DSH Web UI 里的插件商店 Store 标签页](site/assets/store-tab.png)
 
 ## 📚 插件目录
 

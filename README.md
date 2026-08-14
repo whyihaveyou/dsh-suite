@@ -9,31 +9,40 @@
 
 **Stop scrolling the `dsh-plugin` topic. Find plugins that still work.**
 
-`dsh-suite` is a bilingual, curated directory of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH) plugins — re-checked against the latest DSH release every day by CI — plus a `create-dsh-plugin` scaffolder and a small set of first-party plugins.
+`dsh-suite` is a bilingual, living directory of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH) plugins — **refreshed hourly, compat-tested daily** — plus an in-app **Plugin Store**, a `create-dsh-plugin` scaffolder, and a set of first-party plugins.
 
-![demo: scaffold and verify a DSH plugin in one command](site/assets/demo.gif)
+[![Website](https://img.shields.io/badge/🌐_directory_website-whyihaveyou.github.io/dsh--suite-4d6bfe?style=for-the-badge)](https://whyihaveyou.github.io/dsh-suite/)
+
+[![dsh-suite directory](https://whyihaveyou.github.io/dsh-suite/preview/2026-08-14/home-en.png)](https://whyihaveyou.github.io/dsh-suite/)
 
 ---
 
 ## Why dsh-suite
 
-DSH launched without an official plugin registry. Discovery today is the GitHub `dsh-plugin` topic (50+ one-off plugins) plus a few static awesome-lists that appeared overnight — and DSH itself is still shipping **compatibility-breaking changes**.
+DSH launched without an official plugin registry. Discovery today is the GitHub `dsh-plugin` topic (hundreds of one-off repos, most unverified) plus a few static awesome-lists — and DSH itself is still shipping **compatibility-breaking changes**.
 
-So we built three things:
+So we built four things:
 
-1. **A live directory** — every entry carries a DSH-compatibility badge, re-checked against the latest DSH release every 24h by CI (no API key required).
-2. **A scaffolder** — `npm create dsh-plugin` generates a working `dsh.bundle` + Cordis skeleton. The official repo ships none, and "how do I migrate my plugin" is a top community request.
-3. **First-party plugins** — a small set we actually maintain, not just links.
+1. **A live directory** — 880+ curated plugins, refreshed **hourly** by CI; compatibility badges re-tested **daily** (each entry actually installed into a throwaway profile).
+2. **An in-app Plugin Store** — `@dsh-suite/plugin-manager` adds a **Store** tab right inside the DSH Web UI: browse the catalog, search, see compat badges, one-click install — without leaving DSH.
+3. **A scaffolder** — `npm create dsh-plugin` generates a working `dsh.bundle` + Cordis skeleton. The official repo ships none, and "how do I migrate my plugin" is a top community request.
+4. **First-party plugins** — a small set we actually maintain, not just links.
 
 ## Quick Start
 
 ```bash
-# 1. Install a plugin from the directory
-dsh plugin --profile demo add <package-name>
+# 1. Browse the directory website
+open https://whyihaveyou.github.io/dsh-suite/
 
-# 2. Scaffold your own plugin
+# 2. Add the Plugin Store to your DSH Web UI
+npx @deepseek-ai/dsh plugin --profile web add @dsh-suite/plugin-manager
+#    → restart the Web UI, then Settings → Plugins → Store
+
+# 3. (For developers) Scaffold your own plugin
 npm create dsh-plugin@latest my-plugin
 ```
+
+![Plugin Store tab inside DSH Web UI](site/assets/store-tab.png)
 
 ## 📚 Plugin Catalog
 

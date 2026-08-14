@@ -515,3 +515,6 @@ html[data-theme="light"] .cta-cmd { background: var(--bg-soft); }
 .badge-risk-clean { background: rgba(52, 211, 153, .12); color: var(--green); cursor: help; }
 html[data-theme="light"] .badge-risk { color: #a87808; }
 .catalog-note { color: var(--faint); font-size: 12.5px; }
+
+/* 皮肤中心卡：试穿已上线 + 安装命令 */
+.fp-repo-link { font-weight: 600; }

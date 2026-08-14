@@ -231,7 +231,8 @@ const I18N = {
     firstParty: 'First-party tools',
     themesTitle: 'Skin Center',
     themesDesc: '151 day/night skin pairs — one-click preview.',
-    themesNote: 'Try-on panel coming soon',
+    themesNote: 'One-click try-on is live',
+    themesRepo: 'repo',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -296,7 +297,8 @@ const I18N = {
     firstParty: '第一方工具',
     themesTitle: '皮肤中心',
     themesDesc: '151 款昼夜成对皮肤，一键试穿。',
-    themesNote: '试穿面板即将上线',
+    themesNote: '一键试穿已上线',
+    themesRepo: '仓库',
   },
 };
 
@@ -560,6 +562,7 @@ function renderPage(t, data, baseUrl, snapshot) {
   const dNow = new Date();
   const todayStamp = `${dNow.getFullYear()}-${String(dNow.getMonth() + 1).padStart(2, '0')}-${String(dNow.getDate()).padStart(2, '0')}`;
   const storeCmd = 'dsh plugin --profile web add @dsh-suite/plugin-manager';
+const themesCmd = 'dsh plugin --profile web add @dsh-suite/themes';
   const storeDescText = t.storeDesc.replace('{n}', catalog.length);
 
   const thisUrl = baseUrl + (isZh(t) ? 'zh.html' : '');
@@ -637,14 +640,18 @@ function renderPage(t, data, baseUrl, snapshot) {
           </div>
           <img class="fp-img" src="assets/store-tab.png" alt="${esc(t.storeTitle)}" loading="lazy">
         </div>
-        <a class="fp-card fp-link" href="https://github.com/whyihaveyou/dsh-themes" target="_blank" rel="noopener noreferrer">
+        <div class="fp-card">
           <div class="fp-text">
             <h3 class="fp-title">🎨 ${esc(t.themesTitle)} <span class="fp-badge">dsh-themes</span></h3>
             <p class="fp-desc">${esc(t.themesDesc)}</p>
-            <p class="fp-note">${esc(t.themesNote)} ↗</p>
+            <p class="fp-note">🆕 ${esc(t.themesNote)} · <a class="fp-repo-link" href="https://github.com/whyihaveyou/dsh-themes" target="_blank" rel="noopener noreferrer">${esc(t.themesRepo)} ↗</a></p>
+            <div class="store-install">
+              <code class="install-cmd store-cmd">${esc(themesCmd)}</code>
+              <button class="copy-btn" type="button" data-cmd="${esc(themesCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
+            </div>
           </div>
           <img class="fp-img" src="assets/themes/themes-preview.png" alt="${esc(t.themesTitle)}" loading="lazy">
-        </a>
+        </div>
       </div>
     </section>
 `;

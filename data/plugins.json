@@ -1,11 +1,11 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T06:36:51.177Z",
+  "generated_at": "2026-08-14T07:48:33.184Z",
   "source": "hourly refresh-stars (GitHub GraphQL)",
   "totals": {
-   "plugins": 729,
-   "watchlist": 393
+   "plugins": 784,
+   "watchlist": 424
   },
   "category_mapping": {
    "tool": "tools",
@@ -179,7 +179,7 @@
     "zh": "Monaco 编辑器创建沙箱 JS 工具"
    },
    "author": "omdsh-dev",
-   "stars": 19,
+   "stars": 20,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -443,7 +443,7 @@
     "zh": "连数据库、写 SQL 的插件"
    },
    "author": "omdsh-dev",
-   "stars": 10,
+   "stars": 11,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -509,7 +509,7 @@
     "zh": "跨实例消息/事件交接插件"
    },
    "author": "Chinesezjc",
-   "stars": 20,
+   "stars": 21,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -561,7 +561,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-plugin-check",
@@ -674,7 +674,7 @@
     "zh": "零依赖工具包合集（time/encoding/json/csv/regex）"
    },
    "author": "omdsh-dev",
-   "stars": 13,
+   "stars": 14,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -773,7 +773,7 @@
     "zh": "Mnemon 三层记忆体深度集成"
    },
    "author": "omdsh-dev",
-   "stars": 3,
+   "stars": 5,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1235,7 +1235,7 @@
     "zh": "Zotero 文献采集入库插件（OpenAlex/arXiv/Crossref）"
    },
    "author": "Fisfzy",
-   "stars": 4,
+   "stars": 5,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1268,7 +1268,7 @@
     "zh": "DSH 运维工具箱：每日快照 A/B 双槽轮换、一键回滚"
    },
    "author": "fakechris",
-   "stars": 5,
+   "stars": 6,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1433,7 +1433,7 @@
     "zh": "dsh-scholar（文献相关）"
    },
    "author": "lzszq",
-   "stars": 7,
+   "stars": 8,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1631,7 +1631,7 @@
     "zh": "官方 turtle ui 仓库派生的插件模板"
    },
    "author": "omdsh-dev",
-   "stars": 4,
+   "stars": 5,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1829,7 +1829,7 @@
     "zh": "DSH Web UI 插件与皮肤合集：任务板、Git 面板等"
    },
    "author": "zhu1090093659",
-   "stars": 1110,
+   "stars": 1253,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1862,7 +1862,7 @@
     "zh": "侧边栏完整工作台：文件渲染/终端/Git/子代理"
    },
    "author": "omdsh-dev",
-   "stars": 463,
+   "stars": 516,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1881,7 +1881,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "ui-status-label",
@@ -1895,7 +1895,7 @@
     "zh": "自定义「鲸鱼娘」思考状态的显示"
    },
    "author": "alingalingling",
-   "stars": 24,
+   "stars": 26,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1928,7 +1928,7 @@
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊）"
    },
    "author": "Small-tailqwq",
-   "stars": 326,
+   "stars": 367,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1961,7 +1961,7 @@
     "zh": "「聚焦会话」精简会话视图"
    },
    "author": "dingyi222666",
-   "stars": 9,
+   "stars": 10,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1994,7 +1994,7 @@
     "zh": "DSH 侧边栏：文件浏览器、终端、Git 审查"
    },
    "author": "ccq1",
-   "stars": 13,
+   "stars": 15,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2060,7 +2060,7 @@
     "zh": "全手绘像素鲸鱼伙伴插件"
    },
    "author": "lhh010",
-   "stars": 22,
+   "stars": 23,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2093,7 +2093,7 @@
     "zh": "选中批注：选文字→批注→随消息发送"
    },
    "author": "omdsh-dev",
-   "stars": 25,
+   "stars": 26,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2192,7 +2192,7 @@
     "zh": "会话内联渲染交互式 UI 组件"
    },
    "author": "omdsh-dev",
-   "stars": 45,
+   "stars": 54,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2258,7 +2258,7 @@
     "zh": "对话节点导航条（右缘节点串跳转）"
    },
    "author": "vlln",
-   "stars": 9,
+   "stars": 10,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2324,7 +2324,7 @@
     "zh": "DSH 壁纸插件"
    },
    "author": "gameswu",
-   "stars": 5,
+   "stars": 6,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2343,7 +2343,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "tonghuashun-webui",
@@ -2390,7 +2390,7 @@
     "zh": "模仿 Excel 的 DSH 皮肤"
    },
    "author": "Small-tailqwq",
-   "stars": 3,
+   "stars": 4,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2522,7 +2522,7 @@
     "zh": "QQ2006 皮肤插件"
    },
    "author": "LaplaceYoung",
-   "stars": 5,
+   "stars": 6,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2588,7 +2588,7 @@
     "zh": "键盘优先的命令面板"
    },
    "author": "0xsline",
-   "stars": 1,
+   "stars": 2,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2720,7 +2720,7 @@
     "zh": "DSH 桌面通知提醒"
    },
    "author": "bill9109",
-   "stars": 4,
+   "stars": 5,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2739,7 +2739,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "ex-setting",
@@ -2786,7 +2786,7 @@
     "zh": "QQ 宠物形态的桌面宠物插件"
    },
    "author": "vlln",
-   "stars": 80,
+   "stars": 99,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2852,7 +2852,7 @@
     "zh": "对话回退：回滚会话与工作区状态"
    },
    "author": "Anionex",
-   "stars": 27,
+   "stars": 31,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2904,7 +2904,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-message-edit",
@@ -3050,7 +3050,7 @@
     "zh": "跨会话长期记忆 + 后台自我进化（纯插件）"
    },
    "author": "csyangwen",
-   "stars": 28,
+   "stars": 30,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3083,7 +3083,7 @@
     "zh": "折叠对话中无用消息（Think/Bash 等）"
    },
    "author": "renat3u",
-   "stars": 3,
+   "stars": 4,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3201,7 +3201,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-kb-sieve",
@@ -3449,7 +3449,7 @@
     "zh": "给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原"
    },
    "author": "Anionex",
-   "stars": 253,
+   "stars": 262,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3581,7 +3581,7 @@
     "zh": "带记忆、人格与自主性的个人 AI 智能体"
    },
    "author": "liliMozi",
-   "stars": 6024,
+   "stars": 6028,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3680,7 +3680,7 @@
     "zh": "把 Claude Code/Codex/Grok/Kimi 编成团队，Telegram/飞书指挥"
    },
    "author": "firstintent",
-   "stars": 151,
+   "stars": 152,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3845,7 +3845,7 @@
     "zh": "自动对话蒸馏：后台 subagent 反省 + 技能更新"
    },
    "author": "LoserFox",
-   "stars": 13,
+   "stars": 14,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3878,7 +3878,7 @@
     "zh": "AgentTeams 插件"
    },
    "author": "NanmiCoder",
-   "stars": 168,
+   "stars": 179,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3911,7 +3911,7 @@
     "zh": "让任务按计划在全新 Session 中运行定时任务"
    },
    "author": "titanwings",
-   "stars": 19,
+   "stars": 24,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3930,7 +3930,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-loop",
@@ -4043,7 +4043,7 @@
     "zh": "本地优先 DSH 插件工作台"
    },
    "author": "vibeinging",
-   "stars": 14,
+   "stars": 18,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4373,7 +4373,7 @@
     "zh": "DSH 插件目录，带每日兼容性跟踪"
    },
    "author": "AdamPlatin123",
-   "stars": 560,
+   "stars": 598,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4439,7 +4439,7 @@
     "zh": "DSH 生态精选：插件、工具与基建"
    },
    "author": "0xsline",
-   "stars": 257,
+   "stars": 273,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4472,7 +4472,7 @@
     "zh": "DSH 终端 UI（TUI）"
    },
    "author": "huiliyi37",
-   "stars": 99,
+   "stars": 102,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4538,7 +4538,7 @@
     "zh": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts."
    },
    "author": "omdsh-dev",
-   "stars": 75,
+   "stars": 86,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4571,7 +4571,7 @@
     "zh": "Open DeepSeek Harness workspace directories in VS Code directly from the web GUI."
    },
    "author": "omdsh-dev",
-   "stars": 36,
+   "stars": 37,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4604,7 +4604,7 @@
     "zh": "Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules."
    },
    "author": "omdsh-dev",
-   "stars": 28,
+   "stars": 29,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4637,7 +4637,7 @@
     "zh": "2005 年中文站点风格侧栏广告插件（恶搞）"
    },
    "author": "Nagi-ovo",
-   "stars": 238,
+   "stars": 255,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4670,7 +4670,7 @@
     "zh": "DSH 内测收官合影墙：GitHub OAuth 零权限登录 + 冻结白名单校验的拍立得合影站（含 DSH Skill 包装）"
    },
    "author": "SenmuuuuW",
-   "stars": 12,
+   "stars": 13,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4703,7 +4703,7 @@
     "zh": "OpenPencil design preview and editing plugin for DSH"
    },
    "author": "ZSeven-W",
-   "stars": 52,
+   "stars": 56,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4736,7 +4736,7 @@
     "zh": "可扩展的 macOS DSH 工作台（原生 PTY）"
    },
    "author": "hust-open-atom-club",
-   "stars": 116,
+   "stars": 135,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4769,7 +4769,7 @@
     "zh": "对话内生成式 UI：把交互式 HTML 卡片画进会话"
    },
    "author": "Nagi-ovo",
-   "stars": 57,
+   "stars": 62,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4802,7 +4802,7 @@
     "zh": "精选 DSH 插件/扩展/工具列表"
    },
    "author": "Alex-Yanggg",
-   "stars": 40,
+   "stars": 43,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4835,7 +4835,7 @@
     "zh": "面向 DSH 的插件生态（700+ 插件）"
    },
    "author": "LaplaceYoung",
-   "stars": 32,
+   "stars": 36,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4868,7 +4868,7 @@
     "zh": "在 DSH 里与 AI 下五子棋"
    },
    "author": "omdsh-dev",
-   "stars": 8,
+   "stars": 9,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4901,7 +4901,7 @@
     "zh": "DeepSeek Harness Web GUI 的网页预览与元素批注插件，让 AI 根据可视化反馈直接修改前端源码。"
    },
    "author": "CanglongCl",
-   "stars": 8,
+   "stars": 10,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4934,7 +4934,7 @@
     "zh": "为 AI 回复自动添加表情"
    },
    "author": "hellodigua",
-   "stars": 8,
+   "stars": 9,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5066,7 +5066,7 @@
     "zh": "双语 DSH 插件生态完整列表"
    },
    "author": "bruc3van",
-   "stars": 44,
+   "stars": 49,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5099,7 +5099,7 @@
     "zh": "基于 WebView2 的 DSH 启动器"
    },
    "author": "Ruler4396",
-   "stars": 47,
+   "stars": 49,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5132,7 +5132,7 @@
     "zh": "右侧小游戏面板（18 款离线小游戏）"
    },
    "author": "lhh010",
-   "stars": 10,
+   "stars": 11,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5498,7 +5498,7 @@
     "zh": "模型生成时弹出小游戏菜单"
    },
    "author": "HuanLinOTO",
-   "stars": 3,
+   "stars": 4,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5567,7 +5567,7 @@
     "zh": "DeepSeek Harness 首个视觉插件，纯文本模型看图。"
    },
    "author": "liustack",
-   "stars": 923,
+   "stars": 968,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -5600,7 +5600,7 @@
     "zh": "为纯文本模型看图设计的视觉工具箱与技能：多图理解、图片问答、UI 还原、GUI 自动化。"
    },
    "author": "Anionex",
-   "stars": 709,
+   "stars": 735,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -5666,7 +5666,7 @@
     "zh": "Chrome 侧边栏扩展，让 DSH 操控浏览器。"
    },
    "author": "Lum1104",
-   "stars": 58,
+   "stars": 64,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -5699,7 +5699,7 @@
     "zh": "从 Claude Code/Codex/Reasonix 导入历史消息到 DSH。"
    },
    "author": "Nwflower",
-   "stars": 10,
+   "stars": 13,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -6260,7 +6260,7 @@
     "zh": "无 LLM 的无损压缩引擎。"
    },
    "author": "KitDoesIt",
-   "stars": 4,
+   "stars": 5,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -6491,7 +6491,7 @@
     "zh": "Git 风格里程碑时间线插件。"
    },
    "author": "SnowCrescenter-tech",
-   "stars": 5,
+   "stars": 6,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -6821,7 +6821,7 @@
     "zh": "DSH 插件生态透明排行与推荐：每日自动抓取 dsh-plugin 话题 + 公开评分模型 + 排行/推荐插件与静态站"
    },
    "author": "zp-home",
-   "stars": 3,
+   "stars": 6,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -7170,7 +7170,7 @@
    "isOfficialBeta": false,
    "language": "Python",
    "sourceNote": "新增",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-report-html",
@@ -7712,7 +7712,7 @@
     "zh": "DeepSeek Harness 换肤系统：21 套内置皮肤 + 一张图生成整套配色的自定义皮肤。数据源驱动，保对比度推导，构建期校验可读性。"
    },
    "author": "HeiGeAi",
-   "stars": 5,
+   "stars": 9,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -8027,7 +8027,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "新增",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-enhance",
@@ -8239,7 +8239,7 @@
     "zh": "dsh-plugin-template — DSH 插件（工具）"
    },
    "author": "bugmaker2",
-   "stars": 6,
+   "stars": 8,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -8404,7 +8404,7 @@
     "zh": "DeepSeek Harness (DeepSeek 官方 agent 浏览器 UI) fnOS 应用 — 本地常驻服务, 官方统一网关接入"
    },
    "author": "techysy",
-   "stars": 2,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -9031,7 +9031,7 @@
     "zh": "DSH 有声桌宠：悬浮桌面的 DeepSeek 小鲸鱼，不打开 DSH 也能实时感知会话状态（需要确认/工作中/完成/空闲/离线），支持音效提醒与零代码定制素材"
    },
    "author": "FlytoMAYDAY80",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -9196,7 +9196,7 @@
     "zh": "task-passport — DSH 插件（工具）"
    },
    "author": "dongsheng123132",
-   "stars": 2,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -10021,7 +10021,7 @@
     "zh": "dsh-effort-tweak — DSH 插件（模型）"
    },
    "author": "Toukaiteio",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -10153,7 +10153,7 @@
     "zh": "dsh-memory — DSH 插件（会话）"
    },
    "author": "Jesse-njx",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -10964,7 +10964,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "新增",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-plugin-review",
@@ -11638,7 +11638,7 @@
     "zh": "dsh-usage-cost — DSH 插件（模型）"
    },
    "author": "Dino6021",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -11968,7 +11968,7 @@
     "zh": "dsh-balance — DSH 插件（会话）"
    },
    "author": "TwotwoPiggy",
-   "stars": 2,
+   "stars": 3,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -12251,7 +12251,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "新增",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-tavily-search",
@@ -12548,7 +12548,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "新增",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-openclaw-acp",
@@ -13024,7 +13024,7 @@
     "zh": "dsh-balance-monitor — DSH 插件（桥接）"
    },
    "author": "jelly-000",
-   "stars": 3,
+   "stars": 4,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -13915,7 +13915,7 @@
     "zh": "dsh-codex — DSH 插件（工具）"
    },
    "author": "Yan-Zero",
-   "stars": 1,
+   "stars": 3,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -14047,7 +14047,7 @@
     "zh": "dsh-builtin-toggles — DSH 插件（界面）"
    },
    "author": "Starfie1d1272",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -14165,7 +14165,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "新增",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-2origin",
@@ -14179,7 +14179,7 @@
     "zh": "dsh-2origin — DSH 插件（工具）"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -14344,7 +14344,7 @@
     "zh": "dsh-skin — DSH 插件（界面）"
    },
    "author": "KinGao294",
-   "stars": 1,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -15334,7 +15334,7 @@
     "zh": "dsh-token-stats — DSH 插件（模型）"
    },
    "author": "H1a3x",
-   "stars": 2,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -15367,7 +15367,7 @@
     "zh": "dsh-cad-review — DSH 插件（工具）"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -15400,7 +15400,7 @@
     "zh": "dsh-balance-meter — DSH 插件（会话）"
    },
    "author": "Ghost011118",
-   "stars": 7,
+   "stars": 9,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -15499,7 +15499,7 @@
     "zh": "dsh-web-attention-badge — DSH 插件（界面）"
    },
    "author": "Luaphes",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -16092,7 +16092,7 @@
     "zh": "dsh-cost — DSH 插件（模型）"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -16554,7 +16554,7 @@
     "zh": "dsh-robotic-harness — DSH 插件（工具）"
    },
    "author": "dingkaihu63",
-   "stars": 2,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -16785,7 +16785,7 @@
     "zh": "dsh-vision-sidecar — DSH 插件（模型）"
    },
    "author": "121103qwq",
-   "stars": 0,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -17049,7 +17049,7 @@
     "zh": "dsh-switch — DSH 插件（桥接）"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -17082,7 +17082,7 @@
     "zh": "DSH 便签插件：随手记点子/感想/TODO，Markdown 预览 + 快捷键 + 历史归档，存储路径可配置"
    },
    "author": "Meredith2328",
-   "stars": 1,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -17101,7 +17101,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "新增",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-gen3d",
@@ -17874,7 +17874,7 @@
     "zh": "DSKIN · DeepSeek Harness（DSH）卡通像素皮肤插件 / Cartoon pixel skin plugin for DSH Web GUI — 原始界面不动，像素宠物会散步、眨眼、跳跃 / living pixel pets that stroll, b…"
    },
    "author": "dancingmemory",
-   "stars": 6,
+   "stars": 11,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -17940,7 +17940,7 @@
     "zh": "Token usage heatmap, per-model breakdowns, and DeepSeek account balance for the DeepSeek Harness Web GUI (dsh web)."
    },
    "author": "Ychris12138",
-   "stars": 4,
+   "stars": 5,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -18006,7 +18006,7 @@
     "zh": "DeepSeek Harness plugin that connects to a PowerContext Server over HTTP for recall, memory, handoff, experience, and skills."
    },
    "author": "knqiufan",
-   "stars": 4,
+   "stars": 5,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -18666,7 +18666,7 @@
     "zh": "DSH Chat for VS Code — DeepSeek Harness chat windows inside VS Code (OpenCode-style independent sessions, model auto-routing)"
    },
    "author": "DoggyHU",
-   "stars": 2,
+   "stars": 3,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -19029,7 +19029,7 @@
     "zh": "A collection of UI themes for deepseek-harness."
    },
    "author": "orxz",
-   "stars": 2,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -19425,7 +19425,7 @@
     "zh": "??????????????????????? DeepSeek Harness ??"
    },
    "author": "lvyuchuiyi",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -21768,7 +21768,7 @@
     "zh": "离线二维码生成器：DeepSeek Harness 插件，纯本地、零网络、零 shell，给模型一个 qrcode 工具"
    },
    "author": "hellosky983",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -21801,7 +21801,7 @@
     "zh": "Skill Radar for DeepSeek Harness (dsh): scan the current session's visible skills, score relevance against the conversation, and recommend…"
    },
    "author": "hellosky983",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -21867,7 +21867,7 @@
     "zh": "DSH 插件看板 · DeepSeek Harness 插件生态可视化（shadcn/ui，每日自动构建部署）"
    },
    "author": "baiyun200",
-   "stars": 0,
+   "stars": 1,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -21966,7 +21966,7 @@
     "zh": "DeepSeek Harness 主题体验插件：OKLCH 主题提案 + 主题设计器（跨重启持久化）"
    },
    "author": "suzike",
-   "stars": 0,
+   "stars": 4,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -22018,7 +22018,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "auto",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-geo",
@@ -22098,7 +22098,7 @@
     "zh": "DSH Web GUI常用词箱子，方便项目常用词的存储和粘贴 | DSH Web GUI Common Words Box – for storing and pasting frequently used project terms.\""
    },
    "author": "arcmosin",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -22263,7 +22263,7 @@
     "zh": "给 DeepSeek Harness 装上「眼睛」和「画笔」——免费读图 + 免费生图 Skill。Eyes & brush for DeepSeek Harness: free image reading & generation. 👁️🎨"
    },
    "author": "akqwpeter-prog",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -22395,7 +22395,7 @@
     "zh": "RMB/USD token-billing plugin for DeepSeek Harness (dsh web): official-policy auto pricing with peak/off-peak hours, per-message ledger, acc…"
    },
    "author": "bpc-oss",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -22428,7 +22428,7 @@
     "zh": "Cross-surface action binding and replay parity evidence for DeepSeek Harness"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -22626,7 +22626,7 @@
     "zh": "PaddleOCR skills for DeepSeek Harness with native tools and GUI configuration"
    },
    "author": "Aidenwu0209",
-   "stars": 0,
+   "stars": 1,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -22989,7 +22989,7 @@
     "zh": "Paste images into DeepSeek Harness with a four-model vision race, OCR, and an automatic text bridge."
    },
    "author": "Sorwcyra",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -23715,7 +23715,7 @@
     "zh": "DeepSeek Harness plugin that reuses the local Codex CLI ChatGPT login and adds a native GPT Auth settings card"
    },
    "author": "suntianc",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -23880,7 +23880,7 @@
     "zh": "Verifiable narrative state, continuity and character-knowledge ledger for DeepSeek Harness"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -24098,6 +24098,1821 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "last_push": "2026-08-14"
+  },
+  {
+   "id": "museai",
+   "name": "MuseAI",
+   "npm": null,
+   "repo": "yejiming/MuseAI",
+   "url": "https://github.com/yejiming/MuseAI",
+   "category": "tools",
+   "description": {
+    "en": "创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用）",
+    "zh": "创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用）"
+   },
+   "author": "yejiming",
+   "stars": 524,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-user-experience",
+   "name": "dsh-user-experience",
+   "npm": null,
+   "repo": "DietCokewithSugar/dsh-user-experience",
+   "url": "https://github.com/DietCokewithSugar/dsh-user-experience",
+   "category": "tools",
+   "description": {
+    "en": "Persona-driven UX walkthrough plugin for DeepSeek Harness (DSH) - scans React + TypeScript source code for UX issues, pinpoints them, and s…",
+    "zh": "Persona-driven UX walkthrough plugin for DeepSeek Harness (DSH) - scans React + TypeScript source code for UX issues, pinpoints them, and s…"
+   },
+   "author": "DietCokewithSugar",
+   "stars": 5,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-plugin-cc",
+   "name": "dsh-plugin-cc",
+   "npm": null,
+   "repo": "cpj-dev/dsh-plugin-cc",
+   "url": "https://github.com/cpj-dev/dsh-plugin-cc",
+   "category": "session",
+   "description": {
+    "en": "Bridge Deepseek-harness into Claude Code for review, critique, delegation, and session import.",
+    "zh": "Bridge Deepseek-harness into Claude Code for review, critique, delegation, and session import."
+   },
+   "author": "cpj-dev",
+   "stars": 3,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-vision-provider",
+   "name": "dsh-vision-provider",
+   "npm": null,
+   "repo": "libinyam/dsh-vision-provider",
+   "url": "https://github.com/libinyam/dsh-vision-provider",
+   "category": "llm",
+   "description": {
+    "en": "Config-only DeepSeek Harness bundle for OpenAI-compatible vision models.",
+    "zh": "Config-only DeepSeek Harness bundle for OpenAI-compatible vision models."
+   },
+   "author": "libinyam",
+   "stars": 2,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-ccswitch-import-lite",
+   "name": "dsh-ccswitch-import-lite",
+   "npm": null,
+   "repo": "chenhaolove89/dsh-ccswitch-import-lite",
+   "url": "https://github.com/chenhaolove89/dsh-ccswitch-import-lite",
+   "category": "llm",
+   "description": {
+    "en": "DeepSeek Harness 插件（精简版）：从 CCSWITCH 批量导入模型供应商，不含视觉描述",
+    "zh": "DeepSeek Harness 插件（精简版）：从 CCSWITCH 批量导入模型供应商，不含视觉描述"
+   },
+   "author": "chenhaolove89",
+   "stars": 2,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-kun-like-pet",
+   "name": "dsh-kun-like-pet",
+   "npm": null,
+   "repo": "liyupi/dsh-kun-like-pet",
+   "url": "https://github.com/liyupi/dsh-kun-like-pet",
+   "category": "orchestration",
+   "description": {
+    "en": "Kun Like 桌宠 —— DeepSeek Harness 桌面宠物插件：右下角小坤宠随 Agent 工作状态切换 9 种动作，任务完成播放「你干嘛~哎哟」",
+    "zh": "Kun Like 桌宠 —— DeepSeek Harness 桌面宠物插件：右下角小坤宠随 Agent 工作状态切换 9 种动作，任务完成播放「你干嘛~哎哟」"
+   },
+   "author": "liyupi",
+   "stars": 2,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-meme-hub",
+   "name": "dsh-meme-hub",
+   "npm": null,
+   "repo": "the-beating-light-of-the-nail/dsh-meme-hub",
+   "url": "https://github.com/the-beating-light-of-the-nail/dsh-meme-hub",
+   "category": "ui",
+   "description": {
+    "en": "The meme side of DeepSeek Harness — 贪玩蓝鲸/QQ2006/whale girls/mini-games · A curated tour of the wildest dsh plugins",
+    "zh": "The meme side of DeepSeek Harness — 贪玩蓝鲸/QQ2006/whale girls/mini-games · A curated tour of the wildest dsh plugins"
+   },
+   "author": "the-beating-light-of-the-nail",
+   "stars": 2,
+   "license": "NOASSERTION",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "unknown",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-remote-acces",
+   "name": "dsh-remote-acces",
+   "npm": null,
+   "repo": "wuwuzhige-sudo/dsh-remote-acces",
+   "url": "https://github.com/wuwuzhige-sudo/dsh-remote-acces",
+   "category": "acp",
+   "description": {
+    "en": "One-command setup for password-protected remote access to the DeepSeek Harness (dsh) web UI — dsh privileged-methods patch, Caddy basic-aut…",
+    "zh": "One-command setup for password-protected remote access to the DeepSeek Harness (dsh) web UI — dsh privileged-methods patch, Caddy basic-aut…"
+   },
+   "author": "wuwuzhige-sudo",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Shell",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-plugin-automations",
+   "name": "dsh-plugin-automations",
+   "npm": null,
+   "repo": "Sev7een/dsh-plugin-automations",
+   "url": "https://github.com/Sev7een/dsh-plugin-automations",
+   "category": "tools",
+   "description": {
+    "en": "Scheduled tasks plugin for DeepSeek Harness Web Profile",
+    "zh": "Scheduled tasks plugin for DeepSeek Harness Web Profile"
+   },
+   "author": "Sev7een",
+   "stars": 1,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-web-search-tavily-nitrazepam01",
+   "name": "dsh-web-search-tavily",
+   "npm": null,
+   "repo": "nitrazepam01/dsh-web-search-tavily",
+   "url": "https://github.com/nitrazepam01/dsh-web-search-tavily",
+   "category": "tools",
+   "description": {
+    "en": "Tavily-backed web search provider bundle for DeepSeek Harness (dsh) with hot-switchable backend (Tavily / DeepSeek search)",
+    "zh": "Tavily-backed web search provider bundle for DeepSeek Harness (dsh) with hot-switchable backend (Tavily / DeepSeek search)"
+   },
+   "author": "nitrazepam01",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-plugin-langfuse",
+   "name": "dsh-plugin-langfuse",
+   "npm": null,
+   "repo": "linyp/dsh-plugin-langfuse",
+   "url": "https://github.com/linyp/dsh-plugin-langfuse",
+   "category": "session",
+   "description": {
+    "en": "Langfuse observability for DeepSeek Harness (dsh): exports agent sessions as OpenTelemetry trace trees (GenAI semconv) to Langfuse's OTLP e…",
+    "zh": "Langfuse observability for DeepSeek Harness (dsh): exports agent sessions as OpenTelemetry trace trees (GenAI semconv) to Langfuse's OTLP e…"
+   },
+   "author": "linyp",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-git-credentials",
+   "name": "dsh-git-credentials",
+   "npm": null,
+   "repo": "revive/dsh-git-credentials",
+   "url": "https://github.com/revive/dsh-git-credentials",
+   "category": "session",
+   "description": {
+    "en": "DeepSeek Harness plugin: GitLab and GitHub API tokens stay out of the model context — encrypted at rest (AES-256-GCM), tools on demand, web…",
+    "zh": "DeepSeek Harness plugin: GitLab and GitHub API tokens stay out of the model context — encrypted at rest (AES-256-GCM), tools on demand, web…"
+   },
+   "author": "revive",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-terminal-panel",
+   "name": "dsh-terminal-panel",
+   "npm": null,
+   "repo": "wuwuzhige-sudo/dsh-terminal-panel",
+   "url": "https://github.com/wuwuzhige-sudo/dsh-terminal-panel",
+   "category": "ui",
+   "description": {
+    "en": "A manual Terminal tab for the DeepSeek Harness (dsh) web UI — run commands on the host machine, persistent cwd, sudo password prompt, comma…",
+    "zh": "A manual Terminal tab for the DeepSeek Harness (dsh) web UI — run commands on the host machine, persistent cwd, sudo password prompt, comma…"
+   },
+   "author": "wuwuzhige-sudo",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-whale-pet",
+   "name": "dsh-whale-pet",
+   "npm": null,
+   "repo": "lglglglgy/dsh-whale-pet",
+   "url": "https://github.com/lglglglgy/dsh-whale-pet",
+   "category": "ui",
+   "description": {
+    "en": "dsh-whale-pet",
+    "zh": "dsh-whale-pet"
+   },
+   "author": "lglglglgy",
+   "stars": 1,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-llm-codebuddy",
+   "name": "dsh-llm-codebuddy",
+   "npm": null,
+   "repo": "Axiaohungry/dsh-llm-codebuddy",
+   "url": "https://github.com/Axiaohungry/dsh-llm-codebuddy",
+   "category": "llm",
+   "description": {
+    "en": "在deepseek harness中使用workbuddy api，因为公司只提供workbuddy积分",
+    "zh": "在deepseek harness中使用workbuddy api，因为公司只提供workbuddy积分"
+   },
+   "author": "Axiaohungry",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-container",
+   "name": "dsh-container",
+   "npm": null,
+   "repo": "NIyueeE/dsh-container",
+   "url": "https://github.com/NIyueeE/dsh-container",
+   "category": "llm",
+   "description": {
+    "en": "DeepSeek Harness (dsh) container image: universal dev-container base, dsh auto-update on boot, compose + Quadlet examples",
+    "zh": "DeepSeek Harness (dsh) container image: universal dev-container base, dsh auto-update on boot, compose + Quadlet examples"
+   },
+   "author": "NIyueeE",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Dockerfile",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "trio",
+   "name": "trio",
+   "npm": null,
+   "repo": "huey1in/trio",
+   "url": "https://github.com/huey1in/trio",
+   "category": "tools",
+   "description": {
+    "en": "DSH 全家桶:浏览器自动化 + MCP Server + GitHub 集成 | Browser automation + MCP server + GitHub for DeepSeek Harness — one install, three superpowers",
+    "zh": "DSH 全家桶:浏览器自动化 + MCP Server + GitHub 集成 | Browser automation + MCP server + GitHub for DeepSeek Harness — one install, three superpowers"
+   },
+   "author": "huey1in",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-capability-receipt",
+   "name": "dsh-capability-receipt",
+   "npm": null,
+   "repo": "dongsheng123132/dsh-capability-receipt",
+   "url": "https://github.com/dongsheng123132/dsh-capability-receipt",
+   "category": "skills",
+   "description": {
+    "en": "Content-addressed receipts for skills actually loaded by DeepSeek Harness",
+    "zh": "Content-addressed receipts for skills actually loaded by DeepSeek Harness"
+   },
+   "author": "dongsheng123132",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-usage-footer",
+   "name": "dsh-usage-footer",
+   "npm": null,
+   "repo": "1514100951/dsh-usage-footer",
+   "url": "https://github.com/1514100951/dsh-usage-footer",
+   "category": "session",
+   "description": {
+    "en": "DSH web 用量/费用悬浮按钮插件：账户余额、峰谷时段、今日/本会话消费估算与 token 统计（含设置开关）",
+    "zh": "DSH web 用量/费用悬浮按钮插件：账户余额、峰谷时段、今日/本会话消费估算与 token 统计（含设置开关）"
+   },
+   "author": "1514100951",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-cost-tracker",
+   "name": "dsh-cost-tracker",
+   "npm": null,
+   "repo": "yflmq001/dsh-cost-tracker",
+   "url": "https://github.com/yflmq001/dsh-cost-tracker",
+   "category": "llm",
+   "description": {
+    "en": "Token cost tracking for DeepSeek Harness",
+    "zh": "Token cost tracking for DeepSeek Harness"
+   },
+   "author": "yflmq001",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-policy-drift-proof",
+   "name": "dsh-policy-drift-proof",
+   "npm": null,
+   "repo": "dongsheng123132/dsh-policy-drift-proof",
+   "url": "https://github.com/dongsheng123132/dsh-policy-drift-proof",
+   "category": "tools",
+   "description": {
+    "en": "Content-addressed, value-redacted policy drift evidence for DeepSeek Harness",
+    "zh": "Content-addressed, value-redacted policy drift evidence for DeepSeek Harness"
+   },
+   "author": "dongsheng123132",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-usage-cost-fflow2023",
+   "name": "dsh-usage-cost",
+   "npm": null,
+   "repo": "fflow2023/dsh-usage-cost",
+   "url": "https://github.com/fflow2023/dsh-usage-cost",
+   "category": "session",
+   "description": {
+    "en": "Lightweight DeepSeek Harness plugin: per-session + global API cost stats (peak/off-peak pricing)",
+    "zh": "Lightweight DeepSeek Harness plugin: per-session + global API cost stats (peak/off-peak pricing)"
+   },
+   "author": "fflow2023",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-audit-bundle",
+   "name": "dsh-audit-bundle",
+   "npm": null,
+   "repo": "dongsheng123132/dsh-audit-bundle",
+   "url": "https://github.com/dongsheng123132/dsh-audit-bundle",
+   "category": "tools",
+   "description": {
+    "en": "Content-addressed audit indexes across independent DeepSeek Harness evidence producers",
+    "zh": "Content-addressed audit indexes across independent DeepSeek Harness evidence producers"
+   },
+   "author": "dongsheng123132",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-file-review",
+   "name": "dsh-file-review",
+   "npm": null,
+   "repo": "left0ver/dsh-file-review",
+   "url": "https://github.com/left0ver/dsh-file-review",
+   "category": "orchestration",
+   "description": {
+    "en": "a dsh plugin - review files that an agent just changed,you can see the diff",
+    "zh": "a dsh plugin - review files that an agent just changed,you can see the diff"
+   },
+   "author": "left0ver",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-recovery-proof",
+   "name": "dsh-recovery-proof",
+   "npm": null,
+   "repo": "dongsheng123132/dsh-recovery-proof",
+   "url": "https://github.com/dongsheng123132/dsh-recovery-proof",
+   "category": "tools",
+   "description": {
+    "en": "Read-only recovery drill evidence for DeepSeek Harness",
+    "zh": "Read-only recovery drill evidence for DeepSeek Harness"
+   },
+   "author": "dongsheng123132",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-13"
+  },
+  {
+   "id": "dsh-opencode-go-usage",
+   "name": "dsh-opencode-go-usage",
+   "npm": null,
+   "repo": "v587d/dsh-opencode-go-usage",
+   "url": "https://github.com/v587d/dsh-opencode-go-usage",
+   "category": "ui",
+   "description": {
+    "en": "A DeepSeek Harness (dsh) bundle that shows OpenCode Go subscription usage in the Web GUI's composer dock — the same seat as the built-in co…",
+    "zh": "A DeepSeek Harness (dsh) bundle that shows OpenCode Go subscription usage in the Web GUI's composer dock — the same seat as the built-in co…"
+   },
+   "author": "v587d",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "embedded-workbench",
+   "name": "embedded-workbench",
+   "npm": null,
+   "repo": "AmethystLuna/embedded-workbench",
+   "url": "https://github.com/AmethystLuna/embedded-workbench",
+   "category": "orchestration",
+   "description": {
+    "en": "Embedded C/C++ AI engineering plugin — firmware skills (FreeRTOS, Keil, HardFault, state machines) + 1% Rule / Plan Verification Gate disci…",
+    "zh": "Embedded C/C++ AI engineering plugin — firmware skills (FreeRTOS, Keil, HardFault, state machines) + 1% Rule / Plan Verification Gate disci…"
+   },
+   "author": "AmethystLuna",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-mediacrawler",
+   "name": "dsh-mediacrawler",
+   "npm": null,
+   "repo": "xwh-01/dsh-mediacrawler",
+   "url": "https://github.com/xwh-01/dsh-mediacrawler",
+   "category": "tools",
+   "description": {
+    "en": "DeepSeek Harness MCP adapter for bounded, isolated MediaCrawler collection.",
+    "zh": "DeepSeek Harness MCP adapter for bounded, isolated MediaCrawler collection."
+   },
+   "author": "xwh-01",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Python",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-git-graph",
+   "name": "dsh-git-graph",
+   "npm": null,
+   "repo": "1841220388zzzcccxxx-star/dsh-git-graph",
+   "url": "https://github.com/1841220388zzzcccxxx-star/dsh-git-graph",
+   "category": "ui",
+   "description": {
+    "en": "Embedded git repository graph visualizer for the DeepSeek Harness Web GUI | 嵌入式 Git 仓库图谱可视化插件（提交历史图 / 分支过滤 / 文件 diff / VSCode 式未提交改动）",
+    "zh": "Embedded git repository graph visualizer for the DeepSeek Harness Web GUI | 嵌入式 Git 仓库图谱可视化插件（提交历史图 / 分支过滤 / 文件 diff / VSCode 式未提交改动）"
+   },
+   "author": "1841220388zzzcccxxx-star",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "HTML",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-update-radar",
+   "name": "dsh-update-radar",
+   "npm": null,
+   "repo": "Equinox7379/dsh-update-radar",
+   "url": "https://github.com/Equinox7379/dsh-update-radar",
+   "category": "ui",
+   "description": {
+    "en": "Update radar for DSH: checks installed plugins against git upstreams.",
+    "zh": "Update radar for DSH: checks installed plugins against git upstreams."
+   },
+   "author": "Equinox7379",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-ui-topbar-compact",
+   "name": "dsh-ui-topbar-compact",
+   "npm": null,
+   "repo": "maque2333/dsh-ui-topbar-compact",
+   "url": "https://github.com/maque2333/dsh-ui-topbar-compact",
+   "category": "ui",
+   "description": {
+    "en": "缩窄DeepSeek Harness原生webUI顶栏",
+    "zh": "缩窄DeepSeek Harness原生webUI顶栏"
+   },
+   "author": "maque2333",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-daily-brief",
+   "name": "dsh-daily-brief",
+   "npm": null,
+   "repo": "Equinox7379/dsh-daily-brief",
+   "url": "https://github.com/Equinox7379/dsh-daily-brief",
+   "category": "session",
+   "description": {
+    "en": "Daily activity brief for DSH: per-session turns/messages/tool-call stats. Read-only.",
+    "zh": "Daily activity brief for DSH: per-session turns/messages/tool-call stats. Read-only."
+   },
+   "author": "Equinox7379",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-claude-theme",
+   "name": "dsh-claude-theme",
+   "npm": null,
+   "repo": "chajiuqqq/dsh-claude-theme",
+   "url": "https://github.com/chajiuqqq/dsh-claude-theme",
+   "category": "ui",
+   "description": {
+    "en": "dsh的claude风格界面",
+    "zh": "dsh的claude风格界面"
+   },
+   "author": "chajiuqqq",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-vision-plugin",
+   "name": "dsh-vision-plugin",
+   "npm": null,
+   "repo": "Xin-Zhang-IceMan/dsh-vision-plugin",
+   "url": "https://github.com/Xin-Zhang-IceMan/dsh-vision-plugin",
+   "category": "llm",
+   "description": {
+    "en": "DeepSeek Harness 视觉插件：让纯文本模型拥有视觉能力 / Vision plugin for DSH: vision_analyze tool + automatic image transcription for text-only models.",
+    "zh": "DeepSeek Harness 视觉插件：让纯文本模型拥有视觉能力 / Vision plugin for DSH: vision_analyze tool + automatic image transcription for text-only models."
+   },
+   "author": "Xin-Zhang-IceMan",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-netcafe",
+   "name": "dsh-netcafe",
+   "npm": null,
+   "repo": "mario03690/dsh-netcafe",
+   "url": "https://github.com/mario03690/dsh-netcafe",
+   "category": "session",
+   "description": {
+    "en": "DeepSeek Harness bundle: adds AI NetCafé's hosted outcome tools (statement extraction with reconciliation, SQL dialect transpile, mainland-…",
+    "zh": "DeepSeek Harness bundle: adds AI NetCafé's hosted outcome tools (statement extraction with reconciliation, SQL dialect transpile, mainland-…"
+   },
+   "author": "mario03690",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "unknown",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-codex-sync",
+   "name": "dsh-codex-sync",
+   "npm": null,
+   "repo": "DreamZhongJu/dsh-codex-sync",
+   "url": "https://github.com/DreamZhongJu/dsh-codex-sync",
+   "category": "session",
+   "description": {
+    "en": "Import DeepSeek-on-Codex chat history into DeepSeek Harness (dsh)",
+    "zh": "Import DeepSeek-on-Codex chat history into DeepSeek Harness (dsh)"
+   },
+   "author": "DreamZhongJu",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-workflow-worktree",
+   "name": "dsh-workflow-worktree",
+   "npm": null,
+   "repo": "lisycotana/dsh-workflow-worktree",
+   "url": "https://github.com/lisycotana/dsh-workflow-worktree",
+   "category": "orchestration",
+   "description": {
+    "en": "Git worktree isolation backend for DeepSeek Harness workflows: implements the registerIsolationAdapter() seam so isolation: 'worktree' work…",
+    "zh": "Git worktree isolation backend for DeepSeek Harness workflows: implements the registerIsolationAdapter() seam so isolation: 'worktree' work…"
+   },
+   "author": "lisycotana",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-plugin-finder",
+   "name": "dsh-plugin-finder",
+   "npm": null,
+   "repo": "meme-dog/dsh-plugin-finder",
+   "url": "https://github.com/meme-dog/dsh-plugin-finder",
+   "category": "orchestration",
+   "description": {
+    "en": "Find and audit DeepSeek Harness (DSH) plugins inside the agent — live `dsh-plugin` topic search + source audit with trial-to-production ins…",
+    "zh": "Find and audit DeepSeek Harness (DSH) plugins inside the agent — live `dsh-plugin` topic search + source audit with trial-to-production ins…"
+   },
+   "author": "meme-dog",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "code2skill",
+   "name": "Code2Skill",
+   "npm": null,
+   "repo": "leechen298/Code2Skill",
+   "url": "https://github.com/leechen298/Code2Skill",
+   "category": "orchestration",
+   "description": {
+    "en": "Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle.",
+    "zh": "Generate Function, MCP, Agent Skill, and offline test packages from existing code; installable as a DeepSeek Harness bundle."
+   },
+   "author": "leechen298",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Python",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-home-ui",
+   "name": "dsh-home-ui",
+   "npm": null,
+   "repo": "lehhair/dsh-home-ui",
+   "url": "https://github.com/lehhair/dsh-home-ui",
+   "category": "ui",
+   "description": {
+    "en": "PiUI-inspired home feed visual refinement plugin for DeepSeek Harness web client (pure extension, zero core changes)",
+    "zh": "PiUI-inspired home feed visual refinement plugin for DeepSeek Harness web client (pure extension, zero core changes)"
+   },
+   "author": "lehhair",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-notify-dshiq04",
+   "name": "dsh-notify",
+   "npm": null,
+   "repo": "dshiq04/dsh-notify",
+   "url": "https://github.com/dshiq04/dsh-notify",
+   "category": "utility",
+   "description": {
+    "en": "面向deepseek harness的消息通知插件",
+    "zh": "面向deepseek harness的消息通知插件"
+   },
+   "author": "dshiq04",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-llm-oauth",
+   "name": "dsh-llm-oauth",
+   "npm": null,
+   "repo": "ziyou979/dsh-llm-oauth",
+   "url": "https://github.com/ziyou979/dsh-llm-oauth",
+   "category": "acp",
+   "description": {
+    "en": "DeepSeek Harness plugin: OAuth / subscription-plan LLM providers (Grok, GitHub Copilot, OpenAI Codex, Anthropic, OpenRouter)",
+    "zh": "DeepSeek Harness plugin: OAuth / subscription-plan LLM providers (Grok, GitHub Copilot, OpenAI Codex, Anthropic, OpenRouter)"
+   },
+   "author": "ziyou979",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-ccswitch-import",
+   "name": "dsh-ccswitch-import",
+   "npm": null,
+   "repo": "chenhaolove89/dsh-ccswitch-import",
+   "url": "https://github.com/chenhaolove89/dsh-ccswitch-import",
+   "category": "llm",
+   "description": {
+    "en": "DeepSeek Harness 插件：从 CCSWITCH 批量导入模型供应商 + visual_describe 视觉描述工具",
+    "zh": "DeepSeek Harness 插件：从 CCSWITCH 批量导入模型供应商 + visual_describe 视觉描述工具"
+   },
+   "author": "chenhaolove89",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-fusion",
+   "name": "dsh-fusion",
+   "npm": null,
+   "repo": "omdsh-dev/dsh-fusion",
+   "url": "https://github.com/omdsh-dev/dsh-fusion",
+   "category": "session",
+   "description": {
+    "en": "将多个 DeepSeek Harness 对话融合为一个可继续的会话，支持 Agent 智能剪枝、话题分组、内容排序和界面操作",
+    "zh": "将多个 DeepSeek Harness 对话融合为一个可继续的会话，支持 Agent 智能剪枝、话题分组、内容排序和界面操作"
+   },
+   "author": "omdsh-dev",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-eva-theme-plugin",
+   "name": "dsh-eva-theme-plugin",
+   "npm": null,
+   "repo": "oceanxuikun/dsh-eva-theme-plugin",
+   "url": "https://github.com/oceanxuikun/dsh-eva-theme-plugin",
+   "category": "ui",
+   "description": {
+    "en": "Evangelion-inspired theme plugin for DSH WebUI, featuring Unit-00, Unit-01, and Unit-02 themes with immersive backgrounds and mecha-style U…",
+    "zh": "Evangelion-inspired theme plugin for DSH WebUI, featuring Unit-00, Unit-01, and Unit-02 themes with immersive backgrounds and mecha-style U…"
+   },
+   "author": "oceanxuikun",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-lan-uuid-fix",
+   "name": "dsh-lan-uuid-fix",
+   "npm": null,
+   "repo": "Zenjibad/dsh-lan-uuid-fix",
+   "url": "https://github.com/Zenjibad/dsh-lan-uuid-fix",
+   "category": "acp",
+   "description": {
+    "en": "dsh bundle: polyfill crypto.randomUUID on insecure origins so the DeepSeek Harness Web UI works over plain-HTTP LAN",
+    "zh": "dsh bundle: polyfill crypto.randomUUID on insecure origins so the DeepSeek Harness Web UI works over plain-HTTP LAN"
+   },
+   "author": "Zenjibad",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-credentials-system",
+   "name": "dsh-credentials-system",
+   "npm": null,
+   "repo": "khiqwq/dsh-credentials-system",
+   "url": "https://github.com/khiqwq/dsh-credentials-system",
+   "category": "tools",
+   "description": {
+    "en": "System-bound encrypted credential provider for DeepSeek Harness",
+    "zh": "System-bound encrypted credential provider for DeepSeek Harness"
+   },
+   "author": "khiqwq",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-plugins-wsxwj123",
+   "name": "dsh-plugins",
+   "npm": null,
+   "repo": "wsxwj123/dsh-plugins",
+   "url": "https://github.com/wsxwj123/dsh-plugins",
+   "category": "tools",
+   "description": {
+    "en": "Independent plugins for DeepSeek Harness, organized as isolated packages in one monorepo.",
+    "zh": "Independent plugins for DeepSeek Harness, organized as isolated packages in one monorepo."
+   },
+   "author": "wsxwj123",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-better-chat-history",
+   "name": "dsh-better-chat-history",
+   "npm": null,
+   "repo": "echo-xianyu/dsh-better-chat-history",
+   "url": "https://github.com/echo-xianyu/dsh-better-chat-history",
+   "category": "session",
+   "description": {
+    "en": "A plugin for DSH to optimize session loading speed and reduce disk read/write consumption.",
+    "zh": "A plugin for DSH to optimize session loading speed and reduce disk read/write consumption."
+   },
+   "author": "echo-xianyu",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-vision-tools",
+   "name": "dsh-vision-tools",
+   "npm": null,
+   "repo": "moon09300731/dsh-vision-tools",
+   "url": "https://github.com/moon09300731/dsh-vision-tools",
+   "category": "llm",
+   "description": {
+    "en": "DeepSeek Harness 视觉能力全家桶：vision_understand 工具 + 粘贴/拖拽/按钮三入口识图",
+    "zh": "DeepSeek Harness 视觉能力全家桶：vision_understand 工具 + 粘贴/拖拽/按钮三入口识图"
+   },
+   "author": "moon09300731",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-vision-android",
+   "name": "dsh-vision-android",
+   "npm": null,
+   "repo": "superclaude1/dsh-vision-android",
+   "url": "https://github.com/superclaude1/dsh-vision-android",
+   "category": "llm",
+   "description": {
+    "en": "DeepSeek Harness plugin: multimodal vision (OpenAI-compatible) + Android adb UI automation for real-tap mobile app testing",
+    "zh": "DeepSeek Harness plugin: multimodal vision (OpenAI-compatible) + Android adb UI automation for real-tap mobile app testing"
+   },
+   "author": "superclaude1",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-plugin-gouden-leeuw-theme",
+   "name": "dsh-plugin-gouden-leeuw-theme",
+   "npm": null,
+   "repo": "Andy294753951/dsh-plugin-gouden-leeuw-theme",
+   "url": "https://github.com/Andy294753951/dsh-plugin-gouden-leeuw-theme",
+   "category": "ui",
+   "description": {
+    "en": "Unofficial Gouden Leeuw moonlit sanctuary theme for the DeepSeek Harness web UI",
+    "zh": "Unofficial Gouden Leeuw moonlit sanctuary theme for the DeepSeek Harness web UI"
+   },
+   "author": "Andy294753951",
+   "stars": 0,
+   "license": "NOASSERTION",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "CSS",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-undo-plugin",
+   "name": "dsh-undo-plugin",
+   "npm": null,
+   "repo": "lire1131/dsh-undo-plugin",
+   "url": "https://github.com/lire1131/dsh-undo-plugin",
+   "category": "ui",
+   "description": {
+    "en": "DSH plugin: snapshot & rollback your plugin/skin/settings configs. Auto-save on change, undo/redo stack, snapshot manager panel, keyboard s…",
+    "zh": "DSH plugin: snapshot & rollback your plugin/skin/settings configs. Auto-save on change, undo/redo stack, snapshot manager panel, keyboard s…"
+   },
+   "author": "lire1131",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-subagent-status",
+   "name": "dsh-subagent-status",
+   "npm": null,
+   "repo": "zzy2210/dsh-subagent-status",
+   "url": "https://github.com/zzy2210/dsh-subagent-status",
+   "category": "session",
+   "description": {
+    "en": "DeepSeek Harness 常驻插件:在会话标题栏显示主代理与每个子代理实际使用的模型和思考档位 | Persistent DSH web plugin: shows the model & reasoning effort actually used by every…",
+    "zh": "DeepSeek Harness 常驻插件:在会话标题栏显示主代理与每个子代理实际使用的模型和思考档位 | Persistent DSH web plugin: shows the model & reasoning effort actually used by every…"
+   },
+   "author": "zzy2210",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "deepseek-harness-cli",
+   "name": "deepseek-harness-cli",
+   "npm": null,
+   "repo": "soolaugust/deepseek-harness-cli",
+   "url": "https://github.com/soolaugust/deepseek-harness-cli",
+   "category": "tools",
+   "description": {
+    "en": "DeepSeek Harness: Everything is a Plugin.",
+    "zh": "DeepSeek Harness: Everything is a Plugin."
+   },
+   "author": "soolaugust",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "last_push": "2026-08-14"
   }
  ],
  "watchlist": [
@@ -24113,7 +25928,7 @@
     "zh": "跨平台 AI 内容发现 Agent（B站/小红书/抖音等）"
    },
    "author": "whiteguo233",
-   "stars": 2176,
+   "stars": 2208,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -24147,7 +25962,7 @@
     "zh": "python 原生 AI 编码工作流 harness（多模型编排）"
    },
    "author": "zhnt",
-   "stars": 1122,
+   "stars": 1123,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -24215,7 +26030,7 @@
     "zh": "从 0 复刻 WorkBuddy 桌面 AI 助手（24 章教程）"
    },
    "author": "adongwanai",
-   "stars": 150,
+   "stars": 151,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -24249,7 +26064,7 @@
     "zh": "来自 pi 的编码 Agent（子代理/哈希行编辑/权限门）"
    },
    "author": "pulseaiclub",
-   "stars": 74,
+   "stars": 75,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -24317,7 +26132,7 @@
     "zh": "自动进化的 LLM agent harness（基准驱动）"
    },
    "author": "liuchen6667",
-   "stars": 27,
+   "stars": 28,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -24453,7 +26268,7 @@
     "zh": "天枢 TUI 占位仓库"
    },
    "author": "huiliyi37",
-   "stars": 17,
+   "stars": 19,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -24691,7 +26506,7 @@
     "zh": "（无描述）"
    },
    "author": "Nagi-ovo",
-   "stars": 59,
+   "stars": 61,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -25371,7 +27186,7 @@
     "zh": "（无描述）"
    },
    "author": "lehhair",
-   "stars": 2,
+   "stars": 3,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -25439,7 +27254,7 @@
     "zh": "（无描述）"
    },
    "author": "HuanLinOTO",
-   "stars": 2,
+   "stars": 3,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -25575,7 +27390,7 @@
     "zh": "（无描述）"
    },
    "author": "HuanLinOTO",
-   "stars": 4,
+   "stars": 6,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -26051,7 +27866,7 @@
     "zh": "把离别化为温暖的 Skill（数字生命）。"
    },
    "author": "titanwings",
-   "stars": 21618,
+   "stars": 21681,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -26085,7 +27900,7 @@
     "zh": "新一代 source-available AI 工作台。"
    },
    "author": "Devin-AXIS",
-   "stars": 3779,
+   "stars": 3798,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -26119,7 +27934,7 @@
     "zh": "DeepSeek 团队出品的 Swift 原生 macOS 应用。"
    },
    "author": "paean-ai",
-   "stars": 1040,
+   "stars": 1042,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -26153,7 +27968,7 @@
     "zh": "首个自进化开源 Agent OS。"
    },
    "author": "nutshellai-tech",
-   "stars": 938,
+   "stars": 939,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -26173,7 +27988,7 @@
    "language": "TypeScript",
    "sourceNote": "新增",
    "watchReason": "蹭tag",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "helloagents",
@@ -26187,7 +28002,7 @@
     "zh": "自主高级智能伙伴，持续工作直到完成。"
    },
    "author": "hellowind777",
-   "stars": 668,
+   "stars": 670,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -26255,7 +28070,7 @@
     "zh": "Claude Cowork 的开源替代（本地优先）。"
    },
    "author": "PM-Shawn",
-   "stars": 316,
+   "stars": 320,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -26289,7 +28104,7 @@
     "zh": "补位 DSH 官方 TUI 空缺的终端界面，Claude Code 风格全屏交互。"
    },
    "author": "ccch1mneyyy",
-   "stars": 574,
+   "stars": 617,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -26323,7 +28138,7 @@
     "zh": "自动化研究论文学习的 Claude Code 插件。"
    },
    "author": "alaliqing",
-   "stars": 288,
+   "stars": 289,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -26357,7 +28172,7 @@
     "zh": "面向 AI agent 的开源沙箱（不可信代码执行）。"
    },
    "author": "cofy-x",
-   "stars": 264,
+   "stars": 265,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -26411,7 +28226,7 @@
    "language": "Python",
    "sourceNote": "新增",
    "watchReason": "蹭tag",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "rea",
@@ -26425,7 +28240,7 @@
     "zh": "用 agent 逆向工程任何东西。"
    },
    "author": "morluto",
-   "stars": 287,
+   "stars": 294,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -26445,7 +28260,7 @@
    "language": "TypeScript",
    "sourceNote": "新增",
    "watchReason": "蹭tag",
-   "last_push": "2026-08-11"
+   "last_push": "2026-08-14"
   },
   {
    "id": "awesome-dsh-plugin-awesome-dsh-plugin",
@@ -26459,7 +28274,7 @@
     "zh": "DSH 插件精选列表。"
    },
    "author": "awesome-dsh-plugin",
-   "stars": 357,
+   "stars": 426,
    "license": "CC0-1.0",
    "tags": [],
    "dsh": {
@@ -26527,7 +28342,7 @@
     "zh": "一站式 DeepSeek Harness 社区发行版：TUI、桌面端与 Web UI 三形态统一。"
    },
    "author": "hust-open-atom-club",
-   "stars": 116,
+   "stars": 135,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -26561,7 +28376,7 @@
     "zh": "专为 agent 打造的多语言搜索工具。"
    },
    "author": "taxueseek",
-   "stars": 61,
+   "stars": 62,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -26663,7 +28478,7 @@
     "zh": "DeepSeek Harness 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例。"
    },
    "author": "Electricitysheep",
-   "stars": 101,
+   "stars": 119,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -26765,7 +28580,7 @@
     "zh": "让你的 agent 像你一样操控浏览器窗口。"
    },
    "author": "hanelalo",
-   "stars": 26,
+   "stars": 27,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -26833,7 +28648,7 @@
     "zh": "资源感知的 Codex 多 agent 编排。"
    },
    "author": "zenx0x",
-   "stars": 25,
+   "stars": 24,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -26901,7 +28716,7 @@
     "zh": "dsh-tianshu-tui 的构建产物仓库。"
    },
    "author": "huiliyi37",
-   "stars": 17,
+   "stars": 19,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -26935,7 +28750,7 @@
     "zh": "在 Multica 上运行 dsh runtime。"
    },
    "author": "forrestchang",
-   "stars": 24,
+   "stars": 27,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -26969,7 +28784,7 @@
     "zh": "精选 DSH 插件、skills、MCP 服务器与编排工具列表。"
    },
    "author": "Dominic789654",
-   "stars": 22,
+   "stars": 23,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -27003,7 +28818,7 @@
     "zh": "DeepSeek Harness 桌面端打包。"
    },
    "author": "wess09",
-   "stars": 15,
+   "stars": 16,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -27173,7 +28988,7 @@
     "zh": "视觉路由。"
    },
    "author": "ysr666",
-   "stars": 13,
+   "stars": 14,
    "license": "LGPL-3.0",
    "tags": [],
    "dsh": {
@@ -27261,7 +29076,7 @@
    "language": "TypeScript",
    "sourceNote": "新增",
    "watchReason": "工具链",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-tui-openguardrails",
@@ -27309,7 +29124,7 @@
     "zh": "DSH 插件市场：在 DeepSeek Harness 内浏览安装插件。"
    },
    "author": "bradeGithub",
-   "stars": 10,
+   "stars": 11,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -27445,7 +29260,7 @@
     "zh": "图像视觉能力。"
    },
    "author": "wangyang10",
-   "stars": 6,
+   "stars": 7,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -27479,7 +29294,7 @@
     "zh": "零基础看懂 DSH「万物皆可插件」的插件开发教程。"
    },
    "author": "pingfanfan",
-   "stars": 19,
+   "stars": 22,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -27921,7 +29736,7 @@
     "zh": "DeepSeek Harness Web 的 Electron 桌面壳。"
    },
    "author": "ChisaAlter",
-   "stars": 17,
+   "stars": 20,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -27989,7 +29804,7 @@
     "zh": "dsh-plugin-installer — DSH 插件（其他）"
    },
    "author": "Toukaiteio",
-   "stars": 4,
+   "stars": 5,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -28431,7 +30246,7 @@
     "zh": "project-blueprint — DSH 插件（编排）"
    },
    "author": "shuguang1994",
-   "stars": 7,
+   "stars": 10,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -28703,7 +30518,7 @@
     "zh": "awesome-deepseek-harness — DSH 插件（其他）"
    },
    "author": "libukai",
-   "stars": 17,
+   "stars": 19,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -28771,7 +30586,7 @@
     "zh": "deepseek-harness-desktop — DSH 插件（其他）"
    },
    "author": "chyra-moon",
-   "stars": 5,
+   "stars": 6,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -28941,7 +30756,7 @@
     "zh": "deepseek-harness-tui — DSH 插件（其他）"
    },
    "author": "openma-ai",
-   "stars": 6,
+   "stars": 7,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -29097,7 +30912,7 @@
    "language": "TypeScript",
    "sourceNote": "新增",
    "watchReason": "工具链",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-record-replay",
@@ -29247,7 +31062,7 @@
     "zh": "turtle-ui — DSH 插件（界面）"
    },
    "author": "turtle1999",
-   "stars": 4,
+   "stars": 5,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -29981,7 +31796,7 @@
    "language": "Python",
    "sourceNote": "新增",
    "watchReason": "蹭tag",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-tonghuashun",
@@ -30369,7 +32184,7 @@
     "zh": "dsh-godot-skill — DSH 插件（其他）"
    },
    "author": "akira399",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -31851,7 +33666,7 @@
    "language": "JavaScript",
    "sourceNote": "新增",
    "watchReason": "工具链",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-benchmark",
@@ -31865,7 +33680,7 @@
     "zh": "(无描述)"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -31899,7 +33714,7 @@
     "zh": "dsh-find-plugin — DSH 插件（其他）"
    },
    "author": "awesome-dsh-plugin",
-   "stars": 5,
+   "stars": 6,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32068,7 +33883,7 @@
     "zh": "(无描述)"
    },
    "author": "dongsheng123132",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32306,7 +34121,7 @@
     "zh": "(无描述)"
    },
    "author": "STARDUSTLC666",
-   "stars": 1,
+   "stars": 2,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -32646,7 +34461,7 @@
     "zh": "(无描述)"
    },
    "author": "gnulife",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32680,7 +34495,7 @@
     "zh": "dsh-plugin-marketplace — DSH 插件（其他）"
    },
    "author": "YELEBAI",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32782,7 +34597,7 @@
     "zh": "awesome-dsh-plugins — DSH 插件（其他）"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32918,7 +34733,7 @@
     "zh": "(无描述)"
    },
    "author": "dongsheng123132",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -33108,7 +34923,7 @@
    "language": "JavaScript",
    "sourceNote": "新增",
    "watchReason": "占位",
-   "last_push": "2026-08-13"
+   "last_push": "2026-08-14"
   },
   {
    "id": "dsh-guardian",
@@ -33258,7 +35073,7 @@
     "zh": "Oh-My-DSH — DSH 插件（其他）"
    },
    "author": "like-study1",
-   "stars": 9,
+   "stars": 11,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -33734,7 +35549,7 @@
     "zh": ":zap:The ultimate image uploading engine. Both CLI & API supports."
    },
    "author": "PicGo",
-   "stars": 963,
+   "stars": 964,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -33802,7 +35617,7 @@
     "zh": "LLM-supervised persistent memory for AI agents — graph-based recall, cross-session knowledge, single binary. Works with Claude Code, OpenCl…"
    },
    "author": "mnemon-dev",
-   "stars": 425,
+   "stars": 426,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -33972,7 +35787,7 @@
     "zh": "腾讯会议命令行工具（CLI），基于腾讯会议开放平台 OAuth2 授权，支持会议管理、录制管理、参会报告等功能。"
    },
    "author": "TencentCloud",
-   "stars": 42,
+   "stars": 130,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -34584,7 +36399,7 @@
     "zh": "(无描述)"
    },
    "author": "biociao",
-   "stars": 2,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -35604,7 +37419,7 @@
     "zh": "CloserAI - a local-first, model-agnostic, permission-transparent desktop AI workbench built on DeepSeek Harness."
    },
    "author": "sb1733831438-maker",
-   "stars": 1,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -35706,7 +37521,7 @@
     "zh": "Awesome DSH Plugins: a public GitHub directory for DeepSeek Harness plugins, DSH plugins, install commands, and ecosystem discovery."
    },
    "author": "white0dew",
-   "stars": 1,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -36216,7 +38031,7 @@
     "zh": "(无描述)"
    },
    "author": "ophielel",
-   "stars": 0,
+   "stars": 1,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -36386,7 +38201,7 @@
     "zh": "(无描述)"
    },
    "author": "acefun29",
-   "stars": 0,
+   "stars": 1,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -36556,7 +38371,7 @@
     "zh": "mount one row in the composition and every plugin card on the Web Settings plugin list page gets a bilingual (zh/en) description; it also p…"
    },
    "author": "MysaDC",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -37372,7 +39187,7 @@
     "zh": "(无描述)"
    },
    "author": "tc206107",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -37440,7 +39255,7 @@
     "zh": "Rust SDK for DeepSeek Harness: drive the harness JSON-RPC runtime as a subprocess"
    },
    "author": "Loner1024",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -37458,6 +39273,1060 @@
    "featured": false,
    "isOfficialBeta": false,
    "language": "Rust",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "open-design",
+   "name": "open-design",
+   "npm": null,
+   "repo": "nexu-io/open-design",
+   "url": "https://github.com/nexu-io/open-design",
+   "category": "llm",
+   "description": {
+    "en": "The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landin…",
+    "zh": "The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landin…"
+   },
+   "author": "nexu-io",
+   "stars": 85762,
+   "license": "Apache-2.0",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "zhuzhiliao",
+   "name": "zhuzhiliao",
+   "npm": null,
+   "repo": "imsai-sh/zhuzhiliao",
+   "url": "https://github.com/imsai-sh/zhuzhiliao",
+   "category": "tools",
+   "description": {
+    "en": "竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。",
+    "zh": "竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。"
+   },
+   "author": "imsai-sh",
+   "stars": 2708,
+   "license": "NOASSERTION",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "HTML",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-04"
+  },
+  {
+   "id": "coding-tools-mcp",
+   "name": "coding-tools-mcp",
+   "npm": null,
+   "repo": "xyTom/coding-tools-mcp",
+   "url": "https://github.com/xyTom/coding-tools-mcp",
+   "category": "orchestration",
+   "description": {
+    "en": "Give any AI agent the ability to code",
+    "zh": "Give any AI agent the ability to code"
+   },
+   "author": "xyTom",
+   "stars": 753,
+   "license": "Apache-2.0",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Python",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-13"
+  },
+  {
+   "id": "sealos-skills",
+   "name": "sealos-skills",
+   "npm": null,
+   "repo": "labring/sealos-skills",
+   "url": "https://github.com/labring/sealos-skills",
+   "category": "llm",
+   "description": {
+    "en": "AI agent skills for Sealos — deploy any project, provision databases, object storage & more with one command. Works with Claude Code, Gemin…",
+    "zh": "AI agent skills for Sealos — deploy any project, provision databases, object storage & more with one command. Works with Claude Code, Gemin…"
+   },
+   "author": "labring",
+   "stars": 69,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Python",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "aria",
+   "name": "Aria",
+   "npm": null,
+   "repo": "dqsjqian/Aria",
+   "url": "https://github.com/dqsjqian/Aria",
+   "category": "tools",
+   "description": {
+    "en": "Modern C++20 MVVM framework — cross-platform, layered, coroutine-first. Reactive DAG (Property/Computed/Effect), Task<T>, and pluggable ada…",
+    "zh": "Modern C++20 MVVM framework — cross-platform, layered, coroutine-first. Reactive DAG (Property/Computed/Effect), Task<T>, and pluggable ada…"
+   },
+   "author": "dqsjqian",
+   "stars": 14,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "C++",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-08"
+  },
+  {
+   "id": "agent-guild",
+   "name": "agent-guild",
+   "npm": null,
+   "repo": "dqsjqian/agent-guild",
+   "url": "https://github.com/dqsjqian/agent-guild",
+   "category": "session",
+   "description": {
+    "en": "A protocol that lets any sufficiently intelligent AI agent join your shared memory by simply reading one file.",
+    "zh": "A protocol that lets any sufficiently intelligent AI agent join your shared memory by simply reading one file."
+   },
+   "author": "dqsjqian",
+   "stars": 4,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Python",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "paste-to-workspace",
+   "name": "paste-to-workspace",
+   "npm": null,
+   "repo": "LQ-1123/paste-to-workspace",
+   "url": "https://github.com/LQ-1123/paste-to-workspace",
+   "category": "utility",
+   "description": {
+    "en": "DSH 插件：把粘贴/拖入聊天框的图片与任意文件保存为会话工作区文件。官方 bundle 插件，安装：dsh plugin --profile web add github:LQ-1123/paste-to-workspace",
+    "zh": "DSH 插件：把粘贴/拖入聊天框的图片与任意文件保存为会话工作区文件。官方 bundle 插件，安装：dsh plugin --profile web add github:LQ-1123/paste-to-workspace"
+   },
+   "author": "LQ-1123",
+   "stars": 2,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dshlauncher",
+   "name": "DSHLauncher",
+   "npm": null,
+   "repo": "xuanyvne/DSHLauncher",
+   "url": "https://github.com/xuanyvne/DSHLauncher",
+   "category": "utility",
+   "description": {
+    "en": "DSH全程自行编写的DSH启动器，对默认的3080端口进行操作。相对于从仓库pnpm dsh web，提升一定的启动速度",
+    "zh": "DSH全程自行编写的DSH启动器，对默认的3080端口进行操作。相对于从仓库pnpm dsh web，提升一定的启动速度"
+   },
+   "author": "xuanyvne",
+   "stars": 1,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "C#",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-plugin-dev-skill-truehooha",
+   "name": "dsh-plugin-dev-skill",
+   "npm": null,
+   "repo": "TrueHOOHA/dsh-plugin-dev-skill",
+   "url": "https://github.com/TrueHOOHA/dsh-plugin-dev-skill",
+   "category": "utility",
+   "description": {
+    "en": "AI Skill for developing DeepSeek Harness (dsh) plugins — Cordis-based agent framework. 辅助开发 dsh 插件的 AI 技能，覆盖 tool、service、LLM adapter、event…",
+    "zh": "AI Skill for developing DeepSeek Harness (dsh) plugins — Cordis-based agent framework. 辅助开发 dsh 插件的 AI 技能，覆盖 tool、service、LLM adapter、event…"
+   },
+   "author": "TrueHOOHA",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "unknown",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "deepseek-harness-desktop-pig1et7",
+   "name": "DeepSeek-Harness-Desktop",
+   "npm": null,
+   "repo": "pig1et7/DeepSeek-Harness-Desktop",
+   "url": "https://github.com/pig1et7/DeepSeek-Harness-Desktop",
+   "category": "tools",
+   "description": {
+    "en": "(no description)",
+    "zh": "(无描述)"
+   },
+   "author": "pig1et7",
+   "stars": 1,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "占位",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-bilibili",
+   "name": "dsh-bilibili",
+   "npm": null,
+   "repo": "CZX2244/dsh-bilibili",
+   "url": "https://github.com/CZX2244/dsh-bilibili",
+   "category": "tools",
+   "description": {
+    "en": "(no description)",
+    "zh": "(无描述)"
+   },
+   "author": "CZX2244",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "占位",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-plugin-browser-criscolthecoder",
+   "name": "dsh-plugin-browser",
+   "npm": null,
+   "repo": "CriscolTheCoder/dsh-plugin-browser",
+   "url": "https://github.com/CriscolTheCoder/dsh-plugin-browser",
+   "category": "tools",
+   "description": {
+    "en": "(no description)",
+    "zh": "(无描述)"
+   },
+   "author": "CriscolTheCoder",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "占位",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-cyber-sec",
+   "name": "dsh-cyber-sec",
+   "npm": null,
+   "repo": "cyzlmh/dsh-cyber-sec",
+   "url": "https://github.com/cyzlmh/dsh-cyber-sec",
+   "category": "utility",
+   "description": {
+    "en": "Authorized security-assessment profile for DeepSeek Harness: scoped network tools, container-backed shell, authorization guard, durable evi…",
+    "zh": "Authorized security-assessment profile for DeepSeek Harness: scoped network tools, container-backed shell, authorization guard, durable evi…"
+   },
+   "author": "cyzlmh",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "blocker-notify",
+   "name": "blocker-notify",
+   "npm": null,
+   "repo": "Frost-Reed/blocker-notify",
+   "url": "https://github.com/Frost-Reed/blocker-notify",
+   "category": "utility",
+   "description": {
+    "en": "dsh-blocker-notify — Real-time attention alerts for DeepSeek Harness: a global banner + flashing workspace entries when the agent is blocke…",
+    "zh": "dsh-blocker-notify — Real-time attention alerts for DeepSeek Harness: a global banner + flashing workspace entries when the agent is blocke…"
+   },
+   "author": "Frost-Reed",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-restart-web",
+   "name": "dsh-restart-web",
+   "npm": null,
+   "repo": "shaoyi1991/dsh-restart-web",
+   "url": "https://github.com/shaoyi1991/dsh-restart-web",
+   "category": "utility",
+   "description": {
+    "en": "Cross-platform DeepSeek Harness Web UI restart plugin",
+    "zh": "Cross-platform DeepSeek Harness Web UI restart plugin"
+   },
+   "author": "shaoyi1991",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-mem",
+   "name": "dsh-mem",
+   "npm": null,
+   "repo": "Jelee0145/dsh-mem",
+   "url": "https://github.com/Jelee0145/dsh-mem",
+   "category": "utility",
+   "description": {
+    "en": "Cross-session long-term memory for DeepSeek Harness (dsh): durable JSON-file memory store with memory_save / memory_recall / memory_forget…",
+    "zh": "Cross-session long-term memory for DeepSeek Harness (dsh): durable JSON-file memory store with memory_save / memory_recall / memory_forget…"
+   },
+   "author": "Jelee0145",
+   "stars": 1,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "research-skills",
+   "name": "research-skills",
+   "npm": null,
+   "repo": "mingger77/research-skills",
+   "url": "https://github.com/mingger77/research-skills",
+   "category": "orchestration",
+   "description": {
+    "en": "A methodology skill for AI Agent (Claude Code) to conduct reproducible research with Python.",
+    "zh": "A methodology skill for AI Agent (Claude Code) to conduct reproducible research with Python."
+   },
+   "author": "mingger77",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "unknown",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "terrain",
+   "name": "terrain",
+   "npm": null,
+   "repo": "sopaco/terrain",
+   "url": "https://github.com/sopaco/terrain",
+   "category": "ui",
+   "description": {
+    "en": "Engineering environment management platform built for the age of AI-assisted development",
+    "zh": "Engineering environment management platform built for the age of AI-assisted development"
+   },
+   "author": "sopaco",
+   "stars": 1,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Rust",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "wemeet-openapi",
+   "name": "wemeet-openapi",
+   "npm": null,
+   "repo": "xiangpc/wemeet-openapi",
+   "url": "https://github.com/xiangpc/wemeet-openapi",
+   "category": "tools",
+   "description": {
+    "en": "(no description)",
+    "zh": "(无描述)"
+   },
+   "author": "xiangpc",
+   "stars": 1,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Go",
+   "sourceNote": "auto",
+   "watchReason": "占位",
+   "last_push": "2024-03-31"
+  },
+  {
+   "id": "dsh-desktop-launcher-becomeless",
+   "name": "dsh-desktop-launcher",
+   "npm": null,
+   "repo": "becomeless/dsh-desktop-launcher",
+   "url": "https://github.com/becomeless/dsh-desktop-launcher",
+   "category": "utility",
+   "description": {
+    "en": "Windows desktop launcher for DeepSeek Harness: double-click to launch, zero console windows, auto-stop on close | 双击图标一键启动 DeepSeek Harness…",
+    "zh": "Windows desktop launcher for DeepSeek Harness: double-click to launch, zero console windows, auto-stop on close | 双击图标一键启动 DeepSeek Harness…"
+   },
+   "author": "becomeless",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "PowerShell",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-adhd-copilot",
+   "name": "dsh-adhd-copilot",
+   "npm": null,
+   "repo": "zimai233/dsh-adhd-copilot",
+   "url": "https://github.com/zimai233/dsh-adhd-copilot",
+   "category": "utility",
+   "description": {
+    "en": "ADHD behavioral coaching skill for DeepSeek Harness. Guides readers through task execution - breaks tasks into micro-steps, manages overwhe…",
+    "zh": "ADHD behavioral coaching skill for DeepSeek Harness. Guides readers through task execution - breaks tasks into micro-steps, manages overwhe…"
+   },
+   "author": "zimai233",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-desktop-howlma",
+   "name": "dsh-desktop",
+   "npm": null,
+   "repo": "howlma/dsh-desktop",
+   "url": "https://github.com/howlma/dsh-desktop",
+   "category": "tools",
+   "description": {
+    "en": "(no description)",
+    "zh": "(无描述)"
+   },
+   "author": "howlma",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "占位",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-lan-proxy",
+   "name": "dsh-lan-proxy",
+   "npm": null,
+   "repo": "bluecobaltum/dsh-lan-proxy",
+   "url": "https://github.com/bluecobaltum/dsh-lan-proxy",
+   "category": "tools",
+   "description": {
+    "en": "(no description)",
+    "zh": "(无描述)"
+   },
+   "author": "bluecobaltum",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "watchReason": "占位",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-user-message-navigation",
+   "name": "dsh-user-message-navigation",
+   "npm": null,
+   "repo": "walnut-a/dsh-user-message-navigation",
+   "url": "https://github.com/walnut-a/dsh-user-message-navigation",
+   "category": "utility",
+   "description": {
+    "en": "DSH User Message Minimap（用户消息导航轨）— 长对话中的用户指令快速导航插件",
+    "zh": "DSH User Message Minimap（用户消息导航轨）— 长对话中的用户指令快速导航插件"
+   },
+   "author": "walnut-a",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-desktop-plugin",
+   "name": "dsh-desktop-plugin",
+   "npm": null,
+   "repo": "beex-labs/dsh-desktop-plugin",
+   "url": "https://github.com/beex-labs/dsh-desktop-plugin",
+   "category": "utility",
+   "description": {
+    "en": "dsh-desktop-plugin",
+    "zh": "dsh-desktop-plugin"
+   },
+   "author": "beex-labs",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "C#",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "fasthtml-desktop",
+   "name": "fasthtml-desktop",
+   "npm": null,
+   "repo": "kuailexiaozixin/fasthtml-desktop",
+   "url": "https://github.com/kuailexiaozixin/fasthtml-desktop",
+   "category": "skills",
+   "description": {
+    "en": "FastHTML + pywebview 桌面应用全生命周期技能（本地 HTTP + WebView2 + PyInstaller）",
+    "zh": "FastHTML + pywebview 桌面应用全生命周期技能（本地 HTTP + WebView2 + PyInstaller）"
+   },
+   "author": "kuailexiaozixin",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Python",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-desktop-tools",
+   "name": "dsh-desktop-tools",
+   "npm": null,
+   "repo": "fan969690/dsh-desktop-tools",
+   "url": "https://github.com/fan969690/dsh-desktop-tools",
+   "category": "utility",
+   "description": {
+    "en": "DeepSeek Harness 桌面端 + 插件社区 + Agent 社区(270 个开源中文角色预设)",
+    "zh": "DeepSeek Harness 桌面端 + 插件社区 + Agent 社区(270 个开源中文角色预设)"
+   },
+   "author": "fan969690",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "C#",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dshwiki",
+   "name": "DSHwiki",
+   "npm": null,
+   "repo": "qomob/DSHwiki",
+   "url": "https://github.com/qomob/DSHwiki",
+   "category": "utility",
+   "description": {
+    "en": "Community Wiki and daily-aggregated plugin directory for DeepSeek Harness (dsh). Original Chinese tutorials from 0-to-1, plus an auto-updat…",
+    "zh": "Community Wiki and daily-aggregated plugin directory for DeepSeek Harness (dsh). Original Chinese tutorials from 0-to-1, plus an auto-updat…"
+   },
+   "author": "qomob",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-pet-zealot00",
+   "name": "dsh-pet",
+   "npm": null,
+   "repo": "zealot00/dsh-pet",
+   "url": "https://github.com/zealot00/dsh-pet",
+   "category": "utility",
+   "description": {
+    "en": "Desktop pet for DeepSeek Harness Web UI: sprite animation, agent state linkage, drag, alarm & pomodoro widgets, skin separation",
+    "zh": "Desktop pet for DeepSeek Harness Web UI: sprite animation, agent state linkage, drag, alarm & pomodoro widgets, skin separation"
+   },
+   "author": "zealot00",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "工具链",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-dcp",
+   "name": "dsh-dcp",
+   "npm": null,
+   "repo": "TT432/dsh-dcp",
+   "url": "https://github.com/TT432/dsh-dcp",
+   "category": "tools",
+   "description": {
+    "en": "(no description)",
+    "zh": "(无描述)"
+   },
+   "author": "TT432",
+   "stars": 0,
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto",
+   "watchReason": "占位",
+   "last_push": "2026-08-14"
+  },
+  {
+   "id": "dsh-desktop-reachga0",
+   "name": "dsh-desktop",
+   "npm": null,
+   "repo": "ReachGa0/dsh-desktop",
+   "url": "https://github.com/ReachGa0/dsh-desktop",
+   "category": "utility",
+   "description": {
+    "en": "Electron desktop shell for DeepSeek Harness (dsh web) — run the harness in a standalone window without a terminal or browser",
+    "zh": "Electron desktop shell for DeepSeek Harness (dsh web) — run the harness in a standalone window without a terminal or browser"
+   },
+   "author": "ReachGa0",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
    "last_push": "2026-08-14"

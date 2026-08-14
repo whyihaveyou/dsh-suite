@@ -120,6 +120,19 @@ const I18N = {
     mascotCaption: 'Meet Suitie — your plugin-finding maid',
     mascotAlt: 'Suitie, the whale-girl maid mascot holding a glowing AI core',
     footContributing: 'Contributing',
+    lbNav: 'Leaderboard',
+    lbTitle: 'dsh-suite — Star Leaderboard',
+    lbDescription: 'Star leaderboard for the DeepSeek Harness plugin ecosystem: top plugins, fastest risers, category distribution and ecosystem overview — computed from live catalog data.',
+    lbH1: 'Star Leaderboard',
+    lbSubtitle: 'Every number on this page is computed from data/plugins.json at build time.',
+    lbBack: '← Directory', lbDir: 'Directory',
+    lbTop: 'Top 50', lbTopHint: 'Curated plugins ranked by stars.',
+    lbRising: 'Rising', lbRisingHint: 'Biggest star gains vs the last snapshot.', lbTracked: 'tracking since',
+    lbNoRising: 'No rising data yet — tracking just started.',
+    lbCategory: 'Category distribution', lbCategoryHint: 'Curated plugins per category.',
+    lbEco: 'Ecosystem overview', lbEcoHint: 'The long tail, in numbers.',
+    ecoTotal: 'Total entries', ecoCurated: 'Curated', ecoWatch: 'Watchlist', ecoTotalStars: 'Total stars', ecoZero: '0-star ratio',
+    ecoLongTail: 'Star distribution (curated + watchlist)', ecoLowTail: 'of entries have ≤ 3 stars — the long tail',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -146,6 +159,19 @@ const I18N = {
     mascotCaption: '吉祥物 Suitie——帮你找还能用插件的鲸娘女仆',
     mascotAlt: '吉祥物 Suitie：捧着发光 AI 核心球的鲸娘女仆',
     footContributing: '贡献指南',
+    lbNav: 'Star 榜',
+    lbTitle: 'dsh-suite — Star 榜',
+    lbDescription: 'DeepSeek Harness 插件生态 Star 榜：总榜、飙升榜、分类分布、生态总览——全部数字构建期从目录数据现算。',
+    lbH1: 'Star 榜',
+    lbSubtitle: '本页所有数字构建期从 data/plugins.json 现算。',
+    lbBack: '← 目录', lbDir: '目录',
+    lbTop: '总榜 Top 50', lbTopHint: '按星数排名的精选插件。',
+    lbRising: '飙升榜', lbRisingHint: '相对上次快照涨幅最大的插件。', lbTracked: '数据自',
+    lbNoRising: '暂无涨幅数据——追踪刚开始。',
+    lbCategory: '分类分布', lbCategoryHint: '各类目精选插件数。',
+    lbEco: '生态总览', lbEcoHint: '长尾生态，用数字说话。',
+    ecoTotal: '总条目', ecoCurated: '主目录', ecoWatch: '观察区', ecoTotalStars: '总星数', ecoZero: '0 星占比',
+    ecoLongTail: '星数分布（主目录 + 观察区）', ecoLowTail: '的条目 ≤3 星——长尾灌水',
   },
 };
 
@@ -408,6 +434,7 @@ function renderPage(t, data, baseUrl) {
   <header class="site-header">
     <a class="brand" href="${isZh(t) ? 'zh.html' : 'index.html'}"><span class="brand-mark">dsh</span>&nbsp;suite</a>
     <nav class="nav">
+      <a class="nav-lb" href="${isZh(t) ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
       <a class="nav-lang" href="${t.otherHref}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
     </nav>
@@ -493,6 +520,215 @@ function renderPage(t, data, baseUrl) {
 }
 
 /* ------------------------------------------------------------------ */
+/* Star 榜页面（构建期现算，零依赖内联 SVG）                             */
+/* ------------------------------------------------------------------ */
+
+/** 读最近一次 star 快照（bot/state/last-snapshot.json），用于 Δ 涨幅 */
+function loadSnapshot() {
+  const p = resolve(REPO_ROOT, 'bot', 'state', 'last-snapshot.json');
+  if (!existsSync(p)) return null;
+  try {
+    const s = JSON.parse(readFileSync(p, 'utf8'));
+    return (s && s.stars_by_repo) ? s : null;
+  } catch { return null; }
+}
+
+/** 横向条形图（内联 SVG，无外部依赖） */
+function lbChartBars(items) {
+  const max = Math.max(1, ...items.map(i => i.value));
+  const rowH = 28, barW = 300, labelW = 96, valW = 52;
+  const H = items.length * rowH + 4;
+  const rows = items.map((it, i) => {
+    const w = Math.max(3, Math.round((it.value / max) * barW));
+    const y = i * rowH + 2;
+    return `  <g>\n    <text x="0" y="${y + 17}" font-size="13" fill="var(--muted)">${esc(it.label)}</text>\n    <rect x="${labelW}" y="${y}" width="${w}" height="18" rx="5" fill="${it.color || 'var(--brand)'}" opacity="0.92"></rect>\n    <text x="${labelW + w + 8}" y="${y + 15}" font-size="12" fill="var(--text)">${it.value}</text>\n  </g>`;
+  }).join('\n');
+  return `<svg class="lb-chart" viewBox="0 0 ${labelW + barW + valW} ${H}" role="img" aria-hidden="true">\n${rows}\n</svg>`;
+}
+
+/** 榜单行 */
+function lbRow(p, t, rank, { delta } = {}) {
+  const cat = CATEGORY_LABEL[p.category] || { en: p.category, zh: p.category };
+  const catLabel = isZh(t) ? cat.zh : cat.en;
+  const desc = isZh(t) ? p.desc_zh : p.desc_en;
+  const deltaBadge = (delta != null && delta > 0) ? `<span class="lb-delta">+${delta}</span>` : '';
+  const rankTop = rank <= 3 ? ' lb-rank-top' : '';
+  return `  <div class="lb-row">
+    <span class="lb-rank${rankTop}">${rank}</span>
+    <div class="lb-main">
+      <a class="lb-name" href="${esc(p.url || REPO_URL)}" target="_blank" rel="noopener noreferrer">${esc(p.name)}</a>
+      <span class="lb-desc">${esc(desc || '')}</span>
+    </div>
+    <span class="lb-cat">${esc(catLabel)}</span>
+    ${deltaBadge}
+    <span class="lb-stars">★ ${fmtStars(p.stars)}</span>
+  </div>`;
+}
+
+function renderStarsPage(t, data, baseUrl, snapshot) {
+  const { catalog, watchlist } = data;
+  const isZ = isZh(t);
+  const sortStars = (a, b) => b.stars - a.stars;
+
+  const curated = [...catalog].sort(sortStars);
+  const top50 = curated.slice(0, 50);
+  const all = [...catalog, ...watchlist];
+
+  // 飙升榜：与快照 diff
+  const snapStars = (snapshot && snapshot.stars_by_repo) || {};
+  const snapDate = (snapshot && (snapshot.tracked_since || snapshot.snapshot_date)) || '';
+  const rising = all
+    .filter(p => p.repo && typeof snapStars[p.repo] === 'number')
+    .map(p => ({ p, delta: p.stars - snapStars[p.repo] }))
+    .filter(x => x.delta > 0)
+    .sort((a, b) => b.delta - a.delta)
+    .slice(0, 20);
+
+  // 分类分布（仅主目录）
+  const catCounts = new Map();
+  for (const p of catalog) catCounts.set(p.category, (catCounts.get(p.category) || 0) + 1);
+  const catItems = CATEGORIES
+    .filter(c => catCounts.has(c.id))
+    .map(c => ({ label: isZ ? c.zh : c.en, value: catCounts.get(c.id) }))
+    .sort((a, b) => b.value - a.value);
+
+  // 生态总览
+  const totalStars = all.reduce((s, p) => s + (p.stars || 0), 0);
+  const total = all.length;
+  const zeroCount = all.filter(p => (p.stars || 0) === 0).length;
+  const zeroRatio = total ? (zeroCount / total * 100) : 0;
+  const lowCount = all.filter(p => (p.stars || 0) <= 3).length;
+  const lowRatio = total ? (lowCount / total * 100) : 0;
+  const buckets = [
+    { label: '0 ★', value: all.filter(p => (p.stars || 0) === 0).length, color: 'var(--faint)' },
+    { label: '1–3 ★', value: all.filter(p => (p.stars || 0) >= 1 && (p.stars || 0) <= 3).length, color: 'var(--muted)' },
+    { label: '4–9 ★', value: all.filter(p => (p.stars || 0) >= 4 && (p.stars || 0) <= 9).length, color: 'var(--brand-deep)' },
+    { label: '10–49 ★', value: all.filter(p => (p.stars || 0) >= 10 && (p.stars || 0) <= 49).length, color: 'var(--brand)' },
+    { label: '50–499 ★', value: all.filter(p => (p.stars || 0) >= 50 && (p.stars || 0) <= 499).length, color: 'var(--brand-bright)' },
+    { label: '500+ ★', value: all.filter(p => (p.stars || 0) >= 500).length, color: 'var(--green)' },
+  ];
+
+  const thisUrl = baseUrl + (isZ ? 'stars-zh.html' : 'stars.html');
+
+  const redirect = isZ ? '' : `
+  <script>
+    (function () {
+      try {
+        var q = new URL(location.href).searchParams.get('lang');
+        if (q === 'zh' || q === 'en') { try { localStorage.setItem('dshLang', q); } catch (e) {} if (q === 'zh' && location.pathname.indexOf('stars-zh.html') < 0) location.replace('stars-zh.html'); return; }
+        if (localStorage.getItem('dshLang')) return;
+        if ((navigator.language || '').toLowerCase().indexOf('zh') === 0) { try { localStorage.setItem('dshLang', 'zh'); } catch (e) {} location.replace('stars-zh.html'); }
+      } catch (e) {}
+    })();
+  </script>`;
+
+  const statCards = `
+    <div class="lb-stats">
+      <div class="lb-stat"><span class="lb-stat-num">${total}</span><span class="lb-stat-label">${esc(t.ecoTotal)}</span></div>
+      <div class="lb-stat"><span class="lb-stat-num">${catalog.length}</span><span class="lb-stat-label">${esc(t.ecoCurated)}</span></div>
+      <div class="lb-stat"><span class="lb-stat-num">${watchlist.length}</span><span class="lb-stat-label">${esc(t.ecoWatch)}</span></div>
+      <div class="lb-stat"><span class="lb-stat-num">${fmtStars(totalStars)}</span><span class="lb-stat-label">${esc(t.ecoTotalStars)}</span></div>
+      <div class="lb-stat lb-stat-accent"><span class="lb-stat-num">${zeroRatio.toFixed(1)}%</span><span class="lb-stat-label">${esc(t.ecoZero)}</span></div>
+    </div>`;
+
+  const topRows = top50.map((p, i) => lbRow(p, t, i + 1)).join('\n');
+  const risingRows = rising.length
+    ? rising.map((x, i) => lbRow(x.p, t, i + 1, { delta: x.delta })).join('\n')
+    : `<p class="section-hint">${esc(t.lbNoRising)}</p>`;
+
+  const risingHead = snapDate ? ` · ${esc(t.lbTracked)} <strong>${esc(snapDate)}</strong>` : '';
+
+  return `<!doctype html>
+<html lang="${t.lang}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(t.lbTitle)}</title>
+  <meta name="description" content="${esc(t.lbDescription)}">
+  <meta name="keywords" content="${esc(SEO_KEYWORDS)}">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="canonical" href="${esc(thisUrl)}">
+  <link rel="alternate" hreflang="en" href="${esc(baseUrl)}stars.html">
+  <link rel="alternate" hreflang="zh-CN" href="${esc(baseUrl)}stars-zh.html">
+  <link rel="alternate" hreflang="x-default" href="${esc(baseUrl)}stars.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="dsh-suite">
+  <meta property="og:title" content="${esc(t.lbTitle)}">
+  <meta property="og:description" content="${esc(t.lbDescription)}">
+  <meta property="og:url" content="${esc(thisUrl)}">
+  <meta property="og:image" content="${esc(baseUrl)}assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  ${redirect}
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="${isZ ? 'zh.html' : 'index.html'}"><span class="brand-mark">dsh</span>&nbsp;suite</a>
+    <nav class="nav">
+      <a class="nav-lb" href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbDir)}</a>
+      <a class="nav-lang" href="${isZ ? 'stars.html' : 'stars-zh.html'}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
+      <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
+    </nav>
+  </header>
+
+  <main class="lb-page">
+    <section class="lb-hero">
+      <p class="lb-back"><a href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbBack)}</a></p>
+      <h1 class="lb-title">★ ${esc(t.lbH1)}</h1>
+      <p class="lb-subtitle">${esc(t.lbSubtitle)}</p>
+    </section>
+
+    <section class="lb-section" id="overview">
+      <h2 class="section-title">${esc(t.lbEco)}</h2>
+      <p class="section-hint">${esc(t.lbEcoHint)}</p>
+      ${statCards}
+      <div class="lb-panel">
+        <h3 class="lb-panel-title">${esc(t.ecoLongTail)}</h3>
+        ${lbChartBars(buckets)}
+        <p class="lb-note"><strong>${lowRatio.toFixed(0)}%</strong> ${esc(t.ecoLowTail)}</p>
+      </div>
+    </section>
+
+    <section class="lb-section" id="category">
+      <h2 class="section-title">${esc(t.lbCategory)}</h2>
+      <p class="section-hint">${esc(t.lbCategoryHint)}</p>
+      <div class="lb-panel">${lbChartBars(catItems)}</div>
+    </section>
+
+    <section class="lb-section" id="rising">
+      <h2 class="section-title">${esc(t.lbRising)}</h2>
+      <p class="section-hint">${esc(t.lbRisingHint)}${risingHead}</p>
+      <div class="lb-rows">${risingRows}</div>
+    </section>
+
+    <section class="lb-section" id="top">
+      <h2 class="section-title">${esc(t.lbTop)}</h2>
+      <p class="section-hint">${esc(t.lbTopHint)}</p>
+      <div class="lb-rows">${topRows}</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="foot-about">${esc(t.footAbout)}</p>
+    <nav class="foot-links">
+      <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)}</a>
+      <a href="https://www.npmjs.com/package/create-dsh-plugin" target="_blank" rel="noopener noreferrer">create-dsh-plugin</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-notify" target="_blank" rel="noopener noreferrer">plugin-notify</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-session-export" target="_blank" rel="noopener noreferrer">plugin-session-export</a>
+      <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${esc(t.footContributing)}</a>
+      <a href="${REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+      <a href="sitemap.xml">sitemap.xml</a>
+    </nav>
+  </footer>
+</body>
+</html>
+`;
+}
+
+/* ------------------------------------------------------------------ */
 /* 主流程                                                              */
 /* ------------------------------------------------------------------ */
 
@@ -530,6 +766,11 @@ function main() {
   // 1) 英文 / 中文 HTML
   writeFileSync(join(__dirname, 'index.html'), renderPage(I18N.en, data, baseUrl));
   writeFileSync(join(__dirname, 'zh.html'), renderPage(I18N.zh, data, baseUrl));
+
+  // 1b) Star 榜页（EN + ZH）
+  const snapshot = loadSnapshot();
+  writeFileSync(join(__dirname, 'stars.html'), renderStarsPage(I18N.en, data, baseUrl, snapshot));
+  writeFileSync(join(__dirname, 'stars-zh.html'), renderStarsPage(I18N.zh, data, baseUrl, snapshot));
 
   // 2) 公开搜索索引（供 shields 端点 / 程序化消费）
   const catalogIndex = {
@@ -571,7 +812,10 @@ function main() {
   console.log('[build] curated:', catalog.length, '| watchlist:', watchlist.length, '| featured:', catalog.filter(p => p.featured).length);
   console.log('[build] 分类:', [...new Set(catalog.map(p => p.category))].join(', '));
   console.log('[build] 输出目录:', __dirname);
-  console.log('[build] 产物: index.html, zh.html, catalog.json, sitemap.xml, robots.txt, .nojekyll');
+  console.log('[build] 产物: index.html, zh.html, stars.html, stars-zh.html, catalog.json, sitemap.xml, robots.txt, .nojekyll');
+  const totalEntries = catalog.length + watchlist.length;
+  console.log(`[build] Star 榜校验: 总条目 ${totalEntries} = 主目录 ${catalog.length} + 观察区 ${watchlist.length} — ${totalEntries === catalog.length + watchlist.length ? 'OK' : 'MISMATCH'}`);
+  console.log(`[build] Star 榜校验: 总榜 Top ${Math.min(50, catalog.length)} / 飙升 Top ${(snapshot && snapshot.stars_by_repo) ? '20' : '0（无快照）'}`);
 }
 
 main();

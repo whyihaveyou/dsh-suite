@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dsh-suite — Star Leaderboard</title>
+  <meta name="description" content="Star leaderboard for the DeepSeek Harness plugin ecosystem: top plugins, fastest risers, category distribution and ecosystem overview — computed from live catalog data.">
+  <meta name="keywords" content="DeepSeek Harness plugins, dsh 插件, dsh-plugin, dsh, deepseek, awesome-list, plugins, cordis, scaffold, agent-framework, developer-tools">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="canonical" href="https://whyihaveyou.github.io/dsh-suite/stars.html">
+  <link rel="alternate" hreflang="en" href="https://whyihaveyou.github.io/dsh-suite/stars.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://whyihaveyou.github.io/dsh-suite/stars-zh.html">
+  <link rel="alternate" hreflang="x-default" href="https://whyihaveyou.github.io/dsh-suite/stars.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="dsh-suite">
+  <meta property="og:title" content="dsh-suite — Star Leaderboard">
+  <meta property="og:description" content="Star leaderboard for the DeepSeek Harness plugin ecosystem: top plugins, fastest risers, category distribution and ecosystem overview — computed from live catalog data.">
+  <meta property="og:url" content="https://whyihaveyou.github.io/dsh-suite/stars.html">
+  <meta property="og:image" content="https://whyihaveyou.github.io/dsh-suite/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  
+  <script>
+    (function () {
+      try {
+        var q = new URL(location.href).searchParams.get('lang');
+        if (q === 'zh' || q === 'en') { try { localStorage.setItem('dshLang', q); } catch (e) {} if (q === 'zh' && location.pathname.indexOf('stars-zh.html') < 0) location.replace('stars-zh.html'); return; }
+        if (localStorage.getItem('dshLang')) return;
+        if ((navigator.language || '').toLowerCase().indexOf('zh') === 0) { try { localStorage.setItem('dshLang', 'zh'); } catch (e) {} location.replace('stars-zh.html'); }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">dsh</span>&nbsp;suite</a>
+    <nav class="nav">
+      <a class="nav-lb" href="index.html">Directory</a>
+      <a class="nav-lang" href="stars-zh.html" onclick="try{localStorage.setItem('dshLang','zh')}catch(e){}">中文</a>
+      <a class="nav-gh" href="https://github.com/whyihaveyou/dsh-suite" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main class="lb-page">
+    <section class="lb-hero">
+      <p class="lb-back"><a href="index.html">← Directory</a></p>
+      <h1 class="lb-title">★ Star Leaderboard</h1>
+      <p class="lb-subtitle">Every number on this page is computed from data/plugins.json at build time.</p>
+    </section>
+
+    <section class="lb-section" id="overview">
+      <h2 class="section-title">Ecosystem overview</h2>
+      <p class="section-hint">The long tail, in numbers.</p>
+      
+    <div class="lb-stats">
+      <div class="lb-stat"><span class="lb-stat-num">1122</span><span class="lb-stat-label">Total entries</span></div>
+      <div class="lb-stat"><span class="lb-stat-num">729</span><span class="lb-stat-label">Curated</span></div>
+      <div class="lb-stat"><span class="lb-stat-num">393</span><span class="lb-stat-label">Watchlist</span></div>
+      <div class="lb-stat"><span class="lb-stat-num">57k</span><span class="lb-stat-label">Total stars</span></div>
+      <div class="lb-stat lb-stat-accent"><span class="lb-stat-num">21.4%</span><span class="lb-stat-label">0-star ratio</span></div>
+    </div>
+      <div class="lb-panel">
+        <h3 class="lb-panel-title">Star distribution (curated + watchlist)</h3>
+        <svg class="lb-chart" viewBox="0 0 448 172" role="img" aria-hidden="true">
+  <g>
+    <text x="0" y="19" font-size="13" fill="var(--muted)">0 ★</text>
+    <rect x="96" y="2" width="115" height="18" rx="5" fill="var(--faint)" opacity="0.92"></rect>
+    <text x="219" y="17" font-size="12" fill="var(--text)">240</text>
+  </g>
+  <g>
+    <text x="0" y="47" font-size="13" fill="var(--muted)">1–3 ★</text>
+    <rect x="96" y="30" width="300" height="18" rx="5" fill="var(--muted)" opacity="0.92"></rect>
+    <text x="404" y="45" font-size="12" fill="var(--text)">626</text>
+  </g>
+  <g>
+    <text x="0" y="75" font-size="13" fill="var(--muted)">4–9 ★</text>
+    <rect x="96" y="58" width="62" height="18" rx="5" fill="var(--brand-deep)" opacity="0.92"></rect>
+    <text x="166" y="73" font-size="12" fill="var(--text)">129</text>
+  </g>
+  <g>
+    <text x="0" y="103" font-size="13" fill="var(--muted)">10–49 ★</text>
+    <rect x="96" y="86" width="34" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="138" y="101" font-size="12" fill="var(--text)">71</text>
+  </g>
+  <g>
+    <text x="0" y="131" font-size="13" fill="var(--muted)">50–499 ★</text>
+    <rect x="96" y="114" width="18" height="18" rx="5" fill="var(--brand-bright)" opacity="0.92"></rect>
+    <text x="122" y="129" font-size="12" fill="var(--text)">38</text>
+  </g>
+  <g>
+    <text x="0" y="159" font-size="13" fill="var(--muted)">500+ ★</text>
+    <rect x="96" y="142" width="9" height="18" rx="5" fill="var(--green)" opacity="0.92"></rect>
+    <text x="113" y="157" font-size="12" fill="var(--text)">18</text>
+  </g>
+</svg>
+        <p class="lb-note"><strong>77%</strong> of entries have ≤ 3 stars — the long tail</p>
+      </div>
+    </section>
+
+    <section class="lb-section" id="category">
+      <h2 class="section-title">Category distribution</h2>
+      <p class="section-hint">Curated plugins per category.</p>
+      <div class="lb-panel"><svg class="lb-chart" viewBox="0 0 448 284" role="img" aria-hidden="true">
+  <g>
+    <text x="0" y="19" font-size="13" fill="var(--muted)">Tools</text>
+    <rect x="96" y="2" width="300" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="404" y="17" font-size="12" fill="var(--text)">224</text>
+  </g>
+  <g>
+    <text x="0" y="47" font-size="13" fill="var(--muted)">Session</text>
+    <rect x="96" y="30" width="165" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="269" y="45" font-size="12" fill="var(--text)">123</text>
+  </g>
+  <g>
+    <text x="0" y="75" font-size="13" fill="var(--muted)">Orchestration</text>
+    <rect x="96" y="58" width="129" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="233" y="73" font-size="12" fill="var(--text)">96</text>
+  </g>
+  <g>
+    <text x="0" y="103" font-size="13" fill="var(--muted)">UI</text>
+    <rect x="96" y="86" width="123" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="227" y="101" font-size="12" fill="var(--text)">92</text>
+  </g>
+  <g>
+    <text x="0" y="131" font-size="13" fill="var(--muted)">LLM</text>
+    <rect x="96" y="114" width="104" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="208" y="129" font-size="12" fill="var(--text)">78</text>
+  </g>
+  <g>
+    <text x="0" y="159" font-size="13" fill="var(--muted)">Utility</text>
+    <rect x="96" y="142" width="70" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="174" y="157" font-size="12" fill="var(--text)">52</text>
+  </g>
+  <g>
+    <text x="0" y="187" font-size="13" fill="var(--muted)">ACP</text>
+    <rect x="96" y="170" width="54" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="158" y="185" font-size="12" fill="var(--text)">40</text>
+  </g>
+  <g>
+    <text x="0" y="215" font-size="13" fill="var(--muted)">Skills</text>
+    <rect x="96" y="198" width="24" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="128" y="213" font-size="12" fill="var(--text)">18</text>
+  </g>
+  <g>
+    <text x="0" y="243" font-size="13" fill="var(--muted)">Sandbox</text>
+    <rect x="96" y="226" width="7" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="111" y="241" font-size="12" fill="var(--text)">5</text>
+  </g>
+  <g>
+    <text x="0" y="271" font-size="13" fill="var(--muted)">Preset</text>
+    <rect x="96" y="254" width="3" height="18" rx="5" fill="var(--brand)" opacity="0.92"></rect>
+    <text x="107" y="269" font-size="12" fill="var(--text)">1</text>
+  </g>
+</svg></div>
+    </section>
+
+    <section class="lb-section" id="rising">
+      <h2 class="section-title">Rising</h2>
+      <p class="section-hint">Biggest star gains vs the last snapshot. · tracking since <strong>2026-08-13</strong></p>
+      <div class="lb-rows">  <div class="lb-row">
+    <span class="lb-rank lb-rank-top">1</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/zhu1090093659/dsh-web-ui" target="_blank" rel="noopener noreferrer">dsh-web-ui</a>
+      <span class="lb-desc">DSH Web UI plugin &amp; skin collection: task board, git panel, etc.</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    <span class="lb-delta">+1022</span>
+    <span class="lb-stars">★ 1.1k</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank lb-rank-top">2</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/AdamPlatin123/awesome-dsh-plugins" target="_blank" rel="noopener noreferrer">awesome-dsh-plugins</a>
+      <span class="lb-desc">DSH plugin directory with daily compatibility tracking</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+509</span>
+    <span class="lb-stars">★ 560</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank lb-rank-top">3</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/whiteguo233/OpenBiliClaw" target="_blank" rel="noopener noreferrer">OpenBiliClaw</a>
+      <span class="lb-desc">Cross-platform AI content discovery agent (Bilibili/XHS/Douyin…)</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    <span class="lb-delta">+463</span>
+    <span class="lb-stars">★ 2.2k</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">4</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/DSH-better-sidebar" target="_blank" rel="noopener noreferrer">DSH-better-sidebar</a>
+      <span class="lb-desc">Sidebar workbench: file render/terminal/git/subagent</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    <span class="lb-delta">+444</span>
+    <span class="lb-stars">★ 463</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">5</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Small-tailqwq/dsh-deep-whale" target="_blank" rel="noopener noreferrer">dsh-deep-whale</a>
+      <span class="lb-desc">DSH Web whale-girl skin series</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    <span class="lb-delta">+314</span>
+    <span class="lb-stars">★ 326</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">6</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/0xsline/awesome-deepseek-harness" target="_blank" rel="noopener noreferrer">awesome-deepseek-harness</a>
+      <span class="lb-desc">DSH ecosystem curation: plugins, tools, infra</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+233</span>
+    <span class="lb-stars">★ 257</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">7</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Anionex/dsh-vision-toolkit" target="_blank" rel="noopener noreferrer">dsh-vision-toolkit</a>
+      <span class="lb-desc">Vision for text-only models: image QA, screenshot OCR, UI reconstruction</span>
+    </div>
+    <span class="lb-cat">LLM</span>
+    <span class="lb-delta">+225</span>
+    <span class="lb-stars">★ 253</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">8</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Nagi-ovo/dsh-ads" target="_blank" rel="noopener noreferrer">dsh-ads</a>
+      <span class="lb-desc">2005-style sidebar ads plugin (parody)</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+223</span>
+    <span class="lb-stars">★ 238</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">9</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/NanmiCoder/dsh-agent-teams" target="_blank" rel="noopener noreferrer">dsh-agent-teams</a>
+      <span class="lb-desc">AgentTeams plugin</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    <span class="lb-delta">+163</span>
+    <span class="lb-stars">★ 168</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">10</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/hust-open-atom-club/oh-dsh-desktop" target="_blank" rel="noopener noreferrer">oh-dsh-desktop</a>
+      <span class="lb-desc">Extensible macOS DSH workbench with native PTY</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+108</span>
+    <span class="lb-stars">★ 116</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">11</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/vlln/whale-girl" target="_blank" rel="noopener noreferrer">whale-girl</a>
+      <span class="lb-desc">QQ-pet-style desktop pet plugin</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    <span class="lb-delta">+80</span>
+    <span class="lb-stars">★ 80</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">12</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/huiliyi37/dsh-tianshu-tui" target="_blank" rel="noopener noreferrer">dsh-tianshu-tui</a>
+      <span class="lb-desc">DeepSeek Harness terminal UI</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+77</span>
+    <span class="lb-stars">★ 99</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">13</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/dsh-at-file" target="_blank" rel="noopener noreferrer">dsh-at-file</a>
+      <span class="lb-desc">Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts.</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+57</span>
+    <span class="lb-stars">★ 75</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">14</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Nagi-ovo/dsh-find-plugins" target="_blank" rel="noopener noreferrer">dsh-find-plugins</a>
+      <span class="lb-desc">(no description)</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+54</span>
+    <span class="lb-stars">★ 59</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">15</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Nagi-ovo/dsh-visualize" target="_blank" rel="noopener noreferrer">dsh-visualize</a>
+      <span class="lb-desc">In-chat generative UI: interactive HTML cards</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+51</span>
+    <span class="lb-stars">★ 57</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">16</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/liliMozi/openhanako" target="_blank" rel="noopener noreferrer">openhanako</a>
+      <span class="lb-desc">Personal AI agent with memory, personality and autonomy</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    <span class="lb-delta">+49</span>
+    <span class="lb-stars">★ 6k</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">17</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Ruler4396/dsh-launcher" target="_blank" rel="noopener noreferrer">dsh-launcher</a>
+      <span class="lb-desc">WebView2-based DSH launcher</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+46</span>
+    <span class="lb-stars">★ 47</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">18</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/dsh-genui" target="_blank" rel="noopener noreferrer">dsh-genui</a>
+      <span class="lb-desc">Inline interactive UI components in chat</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    <span class="lb-delta">+44</span>
+    <span class="lb-stars">★ 45</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">19</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/ZSeven-W/dsh-openpencil" target="_blank" rel="noopener noreferrer">dsh-openpencil</a>
+      <span class="lb-desc">OpenPencil design preview and editing plugin for DSH</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+44</span>
+    <span class="lb-stars">★ 52</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">20</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/bruc3van/awesome-dsh-plugin" target="_blank" rel="noopener noreferrer">awesome-dsh-plugin</a>
+      <span class="lb-desc">Bilingual complete list of the DSH plugin ecosystem</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    <span class="lb-delta">+43</span>
+    <span class="lb-stars">★ 44</span>
+  </div></div>
+    </section>
+
+    <section class="lb-section" id="top">
+      <h2 class="section-title">Top 50</h2>
+      <p class="section-hint">Curated plugins ranked by stars.</p>
+      <div class="lb-rows">  <div class="lb-row">
+    <span class="lb-rank lb-rank-top">1</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/liliMozi/openhanako" target="_blank" rel="noopener noreferrer">openhanako</a>
+      <span class="lb-desc">Personal AI agent with memory, personality and autonomy</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 6k</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank lb-rank-top">2</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/edison7009/EchoBird" target="_blank" rel="noopener noreferrer">EchoBird</a>
+      <span class="lb-desc">One-click install + model switch across 20+ coding agents</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 3k</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank lb-rank-top">3</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/zhu1090093659/dsh-web-ui" target="_blank" rel="noopener noreferrer">dsh-web-ui</a>
+      <span class="lb-desc">DSH Web UI plugin &amp; skin collection: task board, git panel, etc.</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    
+    <span class="lb-stars">★ 1.1k</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">4</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/liustack/modlens" target="_blank" rel="noopener noreferrer">modlens</a>
+      <span class="lb-desc">The first vision plugin for DeepSeek Harness — let text-only models see.</span>
+    </div>
+    <span class="lb-cat">LLM</span>
+    
+    <span class="lb-stars">★ 923</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">5</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Anionex/agent-vision-toolkit" target="_blank" rel="noopener noreferrer">agent-vision-toolkit</a>
+      <span class="lb-desc">Vision toolbox &amp; skills for text-only models: multi-image QA, UI reconstruction, GUI automation.</span>
+    </div>
+    <span class="lb-cat">LLM</span>
+    
+    <span class="lb-stars">★ 709</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">6</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/exoharness/exo" target="_blank" rel="noopener noreferrer">exo</a>
+      <span class="lb-desc">Fully recursive agent+harness that self-edits at runtime</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 644</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">7</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/AdamPlatin123/awesome-dsh-plugins" target="_blank" rel="noopener noreferrer">awesome-dsh-plugins</a>
+      <span class="lb-desc">DSH plugin directory with daily compatibility tracking</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 560</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">8</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/SII-Holos/synergy" target="_blank" rel="noopener noreferrer">synergy</a>
+      <span class="lb-desc">General-purpose agent for the Open Agentic Web</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 542</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">9</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/DSH-better-sidebar" target="_blank" rel="noopener noreferrer">DSH-better-sidebar</a>
+      <span class="lb-desc">Sidebar workbench: file render/terminal/git/subagent</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    
+    <span class="lb-stars">★ 463</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">10</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Small-tailqwq/dsh-deep-whale" target="_blank" rel="noopener noreferrer">dsh-deep-whale</a>
+      <span class="lb-desc">DSH Web whale-girl skin series</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    
+    <span class="lb-stars">★ 326</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">11</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/0xsline/awesome-deepseek-harness" target="_blank" rel="noopener noreferrer">awesome-deepseek-harness</a>
+      <span class="lb-desc">DSH ecosystem curation: plugins, tools, infra</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 257</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">12</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Anionex/dsh-vision-toolkit" target="_blank" rel="noopener noreferrer">dsh-vision-toolkit</a>
+      <span class="lb-desc">Vision for text-only models: image QA, screenshot OCR, UI reconstruction</span>
+    </div>
+    <span class="lb-cat">LLM</span>
+    
+    <span class="lb-stars">★ 253</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">13</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Nagi-ovo/dsh-ads" target="_blank" rel="noopener noreferrer">dsh-ads</a>
+      <span class="lb-desc">2005-style sidebar ads plugin (parody)</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 238</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">14</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/openma-ai/open-managed-agents" target="_blank" rel="noopener noreferrer">open-managed-agents</a>
+      <span class="lb-desc">Self-hosted Claude Managed Agents API platform (Cloudflare Workers)</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 235</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">15</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/NanmiCoder/dsh-agent-teams" target="_blank" rel="noopener noreferrer">dsh-agent-teams</a>
+      <span class="lb-desc">AgentTeams plugin</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 168</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">16</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/firstintent/ccteam" target="_blank" rel="noopener noreferrer">ccteam</a>
+      <span class="lb-desc">Orchestrates Claude Code/Codex/Grok/Kimi into one team</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 151</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">17</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/hust-open-atom-club/oh-dsh-desktop" target="_blank" rel="noopener noreferrer">oh-dsh-desktop</a>
+      <span class="lb-desc">Extensible macOS DSH workbench with native PTY</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 116</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">18</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/try-works/role-model" target="_blank" rel="noopener noreferrer">role-model</a>
+      <span class="lb-desc">Protocol to route each job to the right model</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 100</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">19</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/huiliyi37/dsh-tianshu-tui" target="_blank" rel="noopener noreferrer">dsh-tianshu-tui</a>
+      <span class="lb-desc">DeepSeek Harness terminal UI</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 99</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">20</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/vlln/whale-girl" target="_blank" rel="noopener noreferrer">whale-girl</a>
+      <span class="lb-desc">QQ-pet-style desktop pet plugin</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    
+    <span class="lb-stars">★ 80</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">21</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/liustack/modsearch" target="_blank" rel="noopener noreferrer">modsearch</a>
+      <span class="lb-desc">Web search plugin for DeepSeek Harness.</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 76</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">22</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/dsh-at-file" target="_blank" rel="noopener noreferrer">dsh-at-file</a>
+      <span class="lb-desc">Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts.</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 75</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">23</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Lum1104/dsh-browser" target="_blank" rel="noopener noreferrer">dsh-browser</a>
+      <span class="lb-desc">Chrome sidebar extension letting DSH drive the browser.</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 58</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">24</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Nagi-ovo/dsh-visualize" target="_blank" rel="noopener noreferrer">dsh-visualize</a>
+      <span class="lb-desc">In-chat generative UI: interactive HTML cards</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 57</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">25</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/ZSeven-W/dsh-openpencil" target="_blank" rel="noopener noreferrer">dsh-openpencil</a>
+      <span class="lb-desc">OpenPencil design preview and editing plugin for DSH</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 52</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">26</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/icetomoyo/dsh_workflow" target="_blank" rel="noopener noreferrer">dsh_workflow</a>
+      <span class="lb-desc">Bring Claude Code&#39;s UltraCode mode to DSH with governable multi-agent orchestration</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 49</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">27</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Octo-o-o-o/deepseek-harness-applicants" target="_blank" rel="noopener noreferrer">deepseek-harness-applicants</a>
+      <span class="lb-desc">DSH internal-test applicants list</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 48</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">28</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Ruler4396/dsh-launcher" target="_blank" rel="noopener noreferrer">dsh-launcher</a>
+      <span class="lb-desc">WebView2-based DSH launcher</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 47</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">29</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/aresbit/MateBot" target="_blank" rel="noopener noreferrer">MateBot</a>
+      <span class="lb-desc">A claudeclaw clone</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 46</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">30</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/dsh-genui" target="_blank" rel="noopener noreferrer">dsh-genui</a>
+      <span class="lb-desc">Inline interactive UI components in chat</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    
+    <span class="lb-stars">★ 45</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">31</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/bruc3van/awesome-dsh-plugin" target="_blank" rel="noopener noreferrer">awesome-dsh-plugin</a>
+      <span class="lb-desc">Bilingual complete list of the DSH plugin ecosystem</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 44</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">32</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/btspoony/mstar-harness" target="_blank" rel="noopener noreferrer">mstar-harness</a>
+      <span class="lb-desc">Skill-driven harness/loop engineering workflow plugin</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 41</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">33</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Alex-Yanggg/awesome-DSH-plugin" target="_blank" rel="noopener noreferrer">awesome-DSH-plugin</a>
+      <span class="lb-desc">Curated list of DSH plugins, extensions and tools</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 40</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">34</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/irmia2026/irmia_devkit_open" target="_blank" rel="noopener noreferrer">irmia_devkit_open</a>
+      <span class="lb-desc">Python devkit (no description)</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 39</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">35</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/dsh-open-in-vscode" target="_blank" rel="noopener noreferrer">dsh-open-in-vscode</a>
+      <span class="lb-desc">Open DeepSeek Harness workspace directories in VS Code directly from the web GUI.</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 36</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">36</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/LaplaceYoung/oh-my-dsh" target="_blank" rel="noopener noreferrer">oh-my-dsh</a>
+      <span class="lb-desc">DSH plugin ecosystem (700+ plugins)</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 32</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">37</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/csyangwen/dsh-memory-evolve" target="_blank" rel="noopener noreferrer">dsh-memory-evolve</a>
+      <span class="lb-desc">Cross-session long-term memory + background self-evolution</span>
+    </div>
+    <span class="lb-cat">Session</span>
+    
+    <span class="lb-stars">★ 28</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">38</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/dsh-notification" target="_blank" rel="noopener noreferrer">dsh-notification</a>
+      <span class="lb-desc">Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules.</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 28</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">39</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Anionex/dsh-turn-rewind" target="_blank" rel="noopener noreferrer">dsh-turn-rewind</a>
+      <span class="lb-desc">Rewind conversation and workspace state</span>
+    </div>
+    <span class="lb-cat">Session</span>
+    
+    <span class="lb-stars">★ 27</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">40</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/vlln/plugin-registry" target="_blank" rel="noopener noreferrer">plugin-registry</a>
+      <span class="lb-desc">DSH plugin registry infra: browser panel for official repository plugins</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 26</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">41</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/dsh-annotation" target="_blank" rel="noopener noreferrer">dsh-annotation</a>
+      <span class="lb-desc">Selection annotation: select→annotate→send</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    
+    <span class="lb-stars">★ 25</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">42</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/alingalingling/ui-status-label" target="_blank" rel="noopener noreferrer">ui-status-label</a>
+      <span class="lb-desc">Customize the whale-girl thinking-status label</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    
+    <span class="lb-stars">★ 24</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">43</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/834063245-creator/HoloGram" target="_blank" rel="noopener noreferrer">HoloGram</a>
+      <span class="lb-desc">3D code dependency graph generator (14 languages)</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 23</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">44</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/lhh010/dsh-ui-whale" target="_blank" rel="noopener noreferrer">dsh-ui-whale</a>
+      <span class="lb-desc">Hand-drawn pixel whale companion</span>
+    </div>
+    <span class="lb-cat">UI</span>
+    
+    <span class="lb-stars">★ 22</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">45</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Chinesezjc/dsh-interconnect" target="_blank" rel="noopener noreferrer">dsh-interconnect</a>
+      <span class="lb-desc">Cross-instance message/event handoff</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 20</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">46</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/GitHubxsy/agent-skills" target="_blank" rel="noopener noreferrer">agent-skills</a>
+      <span class="lb-desc">Reusable skills for AI coding agents</span>
+    </div>
+    <span class="lb-cat">Utility</span>
+    
+    <span class="lb-stars">★ 20</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">47</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/omdsh-dev/dsh-custom-tool" target="_blank" rel="noopener noreferrer">dsh-custom-tool</a>
+      <span class="lb-desc">Create sandboxed JS tools with Monaco editor</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 19</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">48</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/titanwings/dsh-automation" target="_blank" rel="noopener noreferrer">dsh-automation</a>
+      <span class="lb-desc">Run scheduled tasks in fresh sessions per plan</span>
+    </div>
+    <span class="lb-cat">Orchestration</span>
+    
+    <span class="lb-stars">★ 19</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">49</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/whiteguo233/dsh-openbiliclaw" target="_blank" rel="noopener noreferrer">dsh-openbiliclaw</a>
+      <span class="lb-desc">OpenBiliClaw content-agent bridge for DSH</span>
+    </div>
+    <span class="lb-cat">Tools</span>
+    
+    <span class="lb-stars">★ 17</span>
+  </div>
+  <div class="lb-row">
+    <span class="lb-rank">50</span>
+    <div class="lb-main">
+      <a class="lb-name" href="https://github.com/Moeblack/dsh-message-edit" target="_blank" rel="noopener noreferrer">dsh-message-edit</a>
+      <span class="lb-desc">Branch-based message editing, reroll, version timeline</span>
+    </div>
+    <span class="lb-cat">Session</span>
+    
+    <span class="lb-stars">★ 15</span>
+  </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="foot-about">A bilingual curated directory, a create-dsh-plugin scaffolder, and first-party plugins for DeepSeek Harness.</p>
+    <nav class="foot-links">
+      <a href="https://github.com/whyihaveyou/dsh-suite" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.npmjs.com/package/create-dsh-plugin" target="_blank" rel="noopener noreferrer">create-dsh-plugin</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-notify" target="_blank" rel="noopener noreferrer">plugin-notify</a>
+      <a href="https://www.npmjs.com/package/@dsh-suite/plugin-session-export" target="_blank" rel="noopener noreferrer">plugin-session-export</a>
+      <a href="https://github.com/whyihaveyou/dsh-suite/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing</a>
+      <a href="https://github.com/whyihaveyou/dsh-suite/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+      <a href="sitemap.xml">sitemap.xml</a>
+    </nav>
+  </footer>
+</body>
+</html>

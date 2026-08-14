@@ -1,0 +1,8 @@
+# plugin-manager bundle patch. Installed via:
+#   dsh plugin --profile web add <path-to-this-dir>
+# The node half (exports ".") provides the /plugin-manager/* HTTP routes
+# (install + installed list); the browser half (exports "./client", declared in
+# package.json dsh.client) injects the "Store" tab into Settings > Plugins.
+- insert:
+    - id: plugin-manager
+      name: 'plugin-manager'

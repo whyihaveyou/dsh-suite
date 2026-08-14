@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T07:48:33.357Z",
+  "generated_at": "2026-08-14T08:27:49.124Z",
   "repo": "whyihaveyou/dsh-suite",
   "totals": {
-    "curated": 784,
+    "curated": 785,
     "watchlist": 424,
-    "featured": 15
+    "featured": 16
   },
   "plugins": [
     {
@@ -14118,6 +14118,24 @@
       "isOfficialBeta": false,
       "compatStatus": "unknown",
       "installCmd": "dsh plugin add git+https://github.com/soolaugust/deepseek-harness-cli",
+      "watchReason": ""
+    },
+    {
+      "id": "plugin-manager",
+      "name": "plugin-manager",
+      "repo": "whyihaveyou/dsh-suite",
+      "url": "https://github.com/whyihaveyou/dsh-suite",
+      "category": "ui",
+      "desc_en": "In-app plugin store for DSH Web UI: browse the dsh-suite catalog, search/filter/sort, compat badges, one-click install — a Store tab in Settings → Plugins.",
+      "desc_zh": "DSH Web UI 内置插件商店：浏览 dsh-suite 目录、搜索/筛选/排序、兼容徽章、一键安装——设置页插件区的 Store 标签页。",
+      "author": "whyihaveyou",
+      "stars": 7,
+      "language": "JavaScript",
+      "license": "MIT",
+      "featured": true,
+      "isOfficialBeta": false,
+      "compatStatus": "ok",
+      "installCmd": "dsh plugin --profile web add @dsh-suite/plugin-manager",
       "watchReason": ""
     }
   ],

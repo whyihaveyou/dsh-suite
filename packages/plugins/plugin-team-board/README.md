@@ -1,5 +1,7 @@
 # @dsh-suite/plugin-team-board
 
+[![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
+
 > DSH 插件：多 agent / subagent 共享的持久任务看板。通过一个 Cordis **服务键 `ctx.teamBoard`** 物化
 > 共享状态（不是模块级全局变量），用 `defineTool` 暴露 `task_create` / `task_claim` / `task_update` /
 > `task_list` / `task_delete`，并用 sessions seam 做跨重载持久化。生态位空白：`ccteam` 是独立产品，

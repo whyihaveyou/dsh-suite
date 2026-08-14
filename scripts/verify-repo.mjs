@@ -123,7 +123,7 @@ function checkData() {
   const CATEGORIES = ['tools', 'skills', 'ui', 'session', 'llm', 'sandbox', 'orchestration', 'storage', 'acp', 'preset', 'utility']
   const COMPAT_STATUSES = ['unknown', 'ok', 'broken', 'unmaintained']
   const WATCH_REASONS = ['占位', '工具链', '蹭tag']
-  const EXPECTED_FEATURED = 15
+  const MIN_FEATURED = 15
 
   let data
   try {
@@ -169,12 +169,21 @@ function checkData() {
     }
   }
 
-  const featured = plugins.filter((p) => p.featured).length
-  if (featured !== EXPECTED_FEATURED) {
-    problems.push(
-      `featured count ${featured} != ${EXPECTED_FEATURED}. ` +
-      `If this change is intentional, update EXPECTED_FEATURED in scripts/verify-repo.mjs.`,
-    )
+  // Featured is curated by hand and grows over time — assert a floor plus a
+  // completeness contract instead of an exact count (a hardcoded number goes
+  // stale the moment someone features one more plugin).
+  const featuredEntries = plugins.filter((p) => p.featured)
+  const featured = featuredEntries.length
+  if (featured < MIN_FEATURED) {
+    problems.push(`featured count ${featured} < MIN_FEATURED=${MIN_FEATURED} — curation floor breached`)
+  }
+  for (const p of featuredEntries) {
+    if (typeof p.name !== 'string' || p.name === '') problems.push(`featured "${p.id}": missing \`name\``)
+    const desc = p.description || {}
+    if (typeof desc.en !== 'string' || desc.en === '') problems.push(`featured "${p.id}": missing description.en`)
+    if (typeof desc.zh !== 'string' || desc.zh === '') problems.push(`featured "${p.id}": missing description.zh`)
+    if (typeof p.stars !== 'number' || !(p.stars >= 0)) problems.push(`featured "${p.id}": stars must be a non-negative number`)
+    if (!p.url && !p.repo) problems.push(`featured "${p.id}": needs \`url\` or \`repo\``)
   }
 
   const ms = ts() - t0

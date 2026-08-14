@@ -1,0 +1,65 @@
+# .github/workflows/refresh.yml
+#
+# Hourly data refresh for the dsh-suite plugin directory.
+#
+# Division of labour vs. compat.yml:
+#   - THIS workflow (hourly): keeps stars / last_push fresh and ingests newly
+#     published dsh-plugin topic repos into data/plugins.json. Cheap
+#     (GraphQL batch + search API, no installs) — safe to run every hour.
+#   - compat.yml (daily, `0 0 * * *`): the expensive layer — full npm install
+#     verification (layer 1 today, layers 2/3 stubbed) — stays daily on purpose.
+#     When this hourly refresh mutates data, data/compat-report.json timestamp
+#     intentionally lags until the next daily compat run; that skew is fine
+#     because compat-report is a derived artifact, not the source of truth.
+#
+# Commit is [skip ci]-tagged so the hourly data churn does NOT trigger a Pages
+# rebuild 24x/day (the site HTML rebuilds daily via compat.yml's push, which has
+# no skip tag). data/plugins.json stays fresh hourly for API/shields/bot consumers.
+name: hourly-refresh
+
+on:
+  schedule:
+    # every hour at :17 UTC
+    - cron: '17 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hourly-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Discover new plugins (topic diff)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/discover-plugins.mjs
+
+      - name: Refresh stars and last_push (GraphQL batch)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/refresh-stars.mjs
+
+      - name: Commit changes (only if the data actually changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/plugins.json
+          if git diff --cached --quiet; then
+            echo "no data change — nothing to commit"
+          else
+            git commit -m "data: hourly refresh [skip ci]"
+            git push
+          fi

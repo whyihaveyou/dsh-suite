@@ -600,6 +600,12 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-commit-review](https://github.com/the-qian/dsh-commit-review) | 2 | ⚪ unknown | 一个 DSH 插件：为 Web GUI 增加 /commit 与 /review 两个斜杠命令 |
 | [dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin) | 2 | ⚪ unknown | DeepSeek Harness Web GUI 的 Catppuccin 主题插件：Latte / Frappé / Macchiato / Mocha 四种风味一键切换 |
 
+### 🐋 Skins
+
+| Plugin | ⭐ | Compat | Description |
+|---|---|---|---|
+| [themes (皮肤中心)](https://github.com/whyihaveyou/dsh-themes) | 1 | 🟢 ok | Skin Center: 151 day/night skin pairs in one package — grid previews, search, one-click try-on inside DSH Web UI. |
+
 ### 💬 Session
 
 | Plugin | ⭐ | Compat | Description |

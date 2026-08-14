@@ -30,7 +30,7 @@ const COUNT_PLACEHOLDER = '__PLUGIN_COUNT__';
 // Category vocabulary (order + labels), aligned with docs/categories.md.
 // ---------------------------------------------------------------------------
 const CATEGORY_ORDER = [
-  'tools', 'skills', 'ui', 'session', 'llm',
+  'tools', 'skills', 'ui', 'skin', 'session', 'llm',
   'sandbox', 'orchestration', 'storage', 'acp', 'preset', 'utility',
 ];
 
@@ -38,6 +38,7 @@ const CATEGORY_LABELS = {
   tools:         { en: 'Tools',         zh: '工具',   emoji: '🧰' },
   skills:        { en: 'Skills',        zh: '技能',   emoji: '🧩' },
   ui:            { en: 'UI',            zh: '界面',   emoji: '🎨' },
+  skin:          { en: 'Skins',         zh: '皮肤',   emoji: '🐋' },
   session:       { en: 'Session',       zh: '会话',   emoji: '💬' },
   llm:           { en: 'LLM',           zh: '模型',   emoji: '🧠' },
   sandbox:       { en: 'Sandbox',       zh: '沙箱',   emoji: '🛡️' },

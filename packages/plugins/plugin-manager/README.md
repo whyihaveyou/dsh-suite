@@ -4,7 +4,7 @@
 [💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=plugin-manager)
 
 
-> v0.5.0 — 已装插件更新检测（异步回填不阻塞首屏 + 6h 缓存）+ 双端一键升级流。
+> v0.6.0 — Store v2 Batch 1（详情抽屉 / 分类归一+只看兼容 / 中文别名搜索 / 卡片单语化 / 安装后引导 / 反馈口子）。UI 一致性与性能迭代（Batch 2）待批。
 
 > 嵌入 DSH Web UI 设置页的插件商店面板：目录浏览 / 搜索 / 一键安装 / 兼容徽章 / 已装列表。
 > A plugin-store panel embedded in DSH Web UI: catalog browse / search / one-click install / compat badges / installed list.
@@ -58,6 +58,15 @@ npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 
 ## 变更 / Changelog
 
+- **v0.6.0**：商店 v2 Batch 1（研究 research/store-v2-plan.md，用户逐条一拍一批）：
+  - **F-A 详情抽屉**：点任意卡片 → 右侧固定抽屉，og 大图 / 完整双语描述 / 👤作者 ★stars ⚖license 语言 分类 / 兼容徽章+lastVerified / 风险标注（⚠ 黄 chips / ✓ clean / 未扫描三态）；吸底条 [Install/Upgrade + 📋copy + GitHub↗ + 💬反馈 + Close]，遮罩点击/按钮可关。
+  - **F-B 分类归一 + 只看兼容**：分类下拉从 catalog 实际数据归一生成（硬编码 12 类→其余塞 other 的问题消失），新增「只看 🟢 兼容」pill（实测 221/1309）。
+  - **F-C 中文别名搜索**：33 条中文→英文别名映射（皮肤/主题/通知/看板/导出/翻译/润色/预设/日报…），中文查询先扩英文再全 token AND 匹配。
+  - **F-D 卡片单语化**：desc 按 UI locale 单语渲染；「⚪ 未验证」徽章弱化为小灰点（不再占卡片右上显眼位）。
+  - **F-I 安装后引导**：成功→「重启生效；场景/预设装好后去 Settings → Agent presets 应用」引导行；失败→手动复制命令按钮。
+  - **F-J 反馈口子**：第一方反馈 → dsh-suite 集中收编（预填模板），第三方 → 作者仓库 issue；入口＝卡片 💬 ghost 钮 + 抽屉按钮 + 商店顶栏「商店问题反馈」链接。
+  - 说明：F-E（lastPush 数据管线）数据域，按 lead 分工跳过由审稿者另派。
+  - 服务端加固：/updates 的 hasUpdate 改为 semver 严格大于（dev/link 高版本不再误报「update → 旧版」）。
 - **v0.5.0**：已装插件更新检测升级 + 一键更新。检测不再阻塞首屏（Store/Installed 列表先渲染，`/plugin-manager/updates` 独立异步回填角标）；宿主缓存 TTL 1h → **6h**（`PM_UPDATES=off` 仍可关）。Installed 视图每项「⬆ 有更新 → vX.Y.Z」角标 + 「⬆ 升级」按钮，确认框提示「已装旧版，确认后将覆盖升级 (old → new)」，执行 `/plugin-manager/update`（复用 `dsh plugin add` 安装路径重装最新版；无 pending 更新服务端返回 409 防误刷）→ ✔ 更新成功横幅。Store 视图已装旧版卡露出同款升级按钮 + 确认框提示。git/link/workspace 源包不适用（持续增长仓库，AI 自行 git pull）。
 
 - **v0.4.0**：新增「已装管理」视图（与 Store 顶部切换）——按来源分组（官方内建 @deepseek-ai/* / 第三方 npm / git 源 / 自研 @dsh-suite/* / 其他）+ 搜索过滤 + 各组计数徽标 + 版本/来源/状态；每项 Remove 按钮 + 确认框（显示名称/来源/「需重启完全卸载」提示），执行 `dsh plugin remove`（pnpm remove + bundle 协调）。

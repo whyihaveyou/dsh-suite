@@ -190,6 +190,15 @@ async function npmViewVersion(name) {
   return version
 }
 
+// v0.6: 轻量 semver 比较（严格大于才算有更新）——本地 dev/link 高版本
+// （如开发中 0.6.0 > 已发布 0.5.0）不应被误报「update → 旧版」
+function semverGt(a, b) {
+  const pa = String(a).split('.').map((x) => parseInt(x, 10) || 0)
+  const pb = String(b).split('.').map((x) => parseInt(x, 10) || 0)
+  for (let i = 0; i < 3; i++) { if (pa[i] !== pb[i]) return pa[i] > pb[i] }
+  return false
+}
+
 async function runPool(items, limit, fn) {
   const results = new Array(items.length)
   let i = 0
@@ -208,7 +217,7 @@ async function computeUpdates(profile) {
     try {
       const installed = installedVersion(profile, name)
       const latest = await npmViewVersion(name)
-      return { name, installed, latest, hasUpdate: !!(installed && latest && installed !== latest) }
+      return { name, installed, latest, hasUpdate: !!(installed && latest && semverGt(latest, installed)) }
     } catch { return { name, installed: null, latest: null, hasUpdate: false } }
   })
   return checked.filter((c) => c.hasUpdate)

@@ -133,6 +133,11 @@ const LEARN_RESOURCES = [
     name_en: 'deepseekdocs.com (Chinese docs site)', name_zh: 'deepseekdocs.com（中文文档站）',
     desc_en: 'An unofficial Chinese DSH usage docs site — install, capabilities and FAQ.',
     desc_zh: '非官方的中文 DSH 使用文档站——安装、能力与 FAQ。' },
+  { id: 'dshbase', type: 'chinese-docs', lang: '中文',
+    url: 'https://github.com/ylwl1997/dshbase',
+    name_en: 'dshbase (DSH plugin guides & ecosystem)', name_zh: 'dshbase（DSH 插件指南与生态）',
+    desc_en: 'A Chinese DSH guide & plugin-ecosystem hub — every entry hands-on tested.',
+    desc_zh: '逐个实测的中文 DSH 插件指南与生态索引。' },
 ];
 
 /* ------------------------------------------------------------------ */

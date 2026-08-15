@@ -338,13 +338,21 @@ function spawnCapture(cmd, args, { timeoutMs, env, cwd } = {}) {
 // Resolve the dsh CLI invocation. First call warms the npx cache and verifies
 // the tool actually boots; a failure here aborts the run instead of falsely
 // marking every entry "broken" (network/npx problems are not plugin problems).
+// Best-effort warm-up + availability probe for the dsh CLI. NOT fatal: a cold
+// runner has to `npx`-download @deepseek-ai/dsh (bundled Node+pnpm, tens of MB)
+// which can exceed a first-call window. We try once with a generous timeout,
+// retry once, and on failure return {ok:false,err} so the caller can skip the
+// install layer instead of aborting the whole daily run (which would leave the
+// team without a report AND could mass-mark every entry broken on a tooling,
+// not plugin, failure).
 async function probeDsh() {
-  const r = await spawnCapture('npx', ['-y', '@deepseek-ai/dsh', '--version'], { timeoutMs: 90000 });
-  const ver = (r.stdout + r.stderr).trim().split(/\r?\n/)[0] || '';
-  if (r.code !== 0 || !ver) {
-    throw new Error(`dsh CLI probe failed (code=${r.code} timedOut=${r.timedOut}): ${(r.stderr || '').slice(0, 200)}`);
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    const r = await spawnCapture('npx', ['-y', '@deepseek-ai/dsh', '--version'], { timeoutMs: 180000 });
+    const ver = (r.stdout + r.stderr).trim().split(/\r?\n/).find((l) => l && !/^(npm|dsh):|warn|DEP|deprecated/i.test(l)) || '';
+    if (r.code === 0 && ver) return { ok: true, ver, err: '' };
+    if (attempt === 1) console.warn(`  dsh CLI probe failed on attempt 1 (code=${r.code} timedOut=${r.timedOut}); retrying…`);
   }
-  return ver;
+  return { ok: false, ver: '', err: 'dsh CLI probe failed after 2 attempts' };
 }
 
 // Classify an install run's outcome.
@@ -563,27 +571,36 @@ async function main() {
 
   // Layers 2/3: real install + config assembly on the selected tier.
   let layer23 = [];
+  let skipReason = '';
   const want23 = args.layers === 'all' || args.layers === '2' || args.layers === '3';
   if (want23) {
     const { daily, weekly, git } = selectForLayer23(plugins, layer1, { scope: args.scope, shard: args.shard });
     const selected = [...daily, ...weekly, ...git];
     console.log(`\nLayer 2/3 selection (scope=${args.scope}): daily=${daily.length} weekly=${weekly.length} git=${git.length} -> ${selected.length} entries`);
     if (selected.length > 0) {
-      const dshBinVer = await probeDsh();
-      console.log(`  dsh CLI ready (${dshBinVer}) — installing with concurrency ${args.installConcurrency}, npm timeout ${args.addTimeout}s, git timeout ${args.gitTimeout}s`);
-      const tmpRoot = mkdtempSync(join(tmpdir(), 'dsh-compat-'));
-      const profile = 'compat';
-      const opts = {
-        dshHome: tmpRoot,
-        profile,
-        addTimeout: args.addTimeout,
-        gitTimeout: args.gitTimeout,
-        installConcurrency: args.installConcurrency,
-      };
-      try {
-        layer23 = await checkLayer23(selected, opts);
-      } finally {
-        if (!args.keepTmp) rmSync(tmpRoot, { recursive: true, force: true });
+      const probe = await probeDsh();
+      if (!probe.ok) {
+        // dsh unavailable (cold npx download / network / tooling) — do NOT mark
+        // entries broken off the back of that. Skip installs, still write the
+        // layer-1 report so the daily pipeline stays green and data current.
+        console.warn(`  SKIPPING layer 2/3: ${probe.err} (npx first-download or network). Leaving compat.statuses to layer 1 only.`);
+        skipReason = probe.err;
+      } else {
+        console.log(`  dsh CLI ready (${probe.ver}) — installing with concurrency ${args.installConcurrency}, npm timeout ${args.addTimeout}s, git timeout ${args.gitTimeout}s`);
+        const tmpRoot = mkdtempSync(join(tmpdir(), 'dsh-compat-'));
+        const profile = 'compat';
+        const opts = {
+          dshHome: tmpRoot,
+          profile,
+          addTimeout: args.addTimeout,
+          gitTimeout: args.gitTimeout,
+          installConcurrency: args.installConcurrency,
+        };
+        try {
+          layer23 = await checkLayer23(selected, opts);
+        } finally {
+          if (!args.keepTmp) rmSync(tmpRoot, { recursive: true, force: true });
+        }
       }
     } else {
       console.log('  (nothing selected — skipping install layer)');
@@ -664,6 +681,7 @@ async function main() {
     nodeVersion,
     layers_run: [1, ...(layer23.length ? [2, 3] : [])],
     layer23_scope: want23 ? args.scope : null,
+    layer23_skipped: skipReason || null,
     summary,
     summary_catalog: catalogSummary,
     summary_watchlist: watchSummary,

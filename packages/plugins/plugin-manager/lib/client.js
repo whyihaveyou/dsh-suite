@@ -44,6 +44,7 @@ window.__ModuleLoader__.load({
       guideAfterInstall: '→ 重启 DSH 生效；装的是场景/预设？重启后去 Settings → Agent presets 应用即可',
       failGuide: '可手动处理：复制命令到终端运行',
       feedback: '反馈', feedbackStore: '商店问题反馈', feedbackTitle: '对该插件提意见（打开 GitHub issue）',
+      shownXofN: '已显示 {x} / 共 {n} 条 · 下拉继续加载', totalN: '共 {n} 条（已显示全部）',
       viewStore: '商店', viewInstalled: '已装管理',
       srcOfficial: '官方内建', srcNpm: '第三方 npm', srcGit: 'git 源', srcSelf: '自研', srcOther: '其他',
       remove: '移除', uninstallTitle: '确认卸载', uninstallHint: '需重启后完全卸载', uninstalling: '卸载中…', uninstallDone: '已卸载，请重启生效', uninstallFailed: '卸载失败',
@@ -74,6 +75,7 @@ window.__ModuleLoader__.load({
       guideAfterInstall: '→ restart DSH to activate; installing a preset/scenario pack? Apply it under Settings → Agent presets after restart.',
       failGuide: 'manual fallback: copy the command and run it in your terminal',
       feedback: 'Feedback', feedbackStore: 'Store feedback', feedbackTitle: 'Give feedback on this plugin (opens GitHub issue)',
+      shownXofN: 'Showing {x} / {n} — scroll for more', totalN: '{n} total (all shown)',
       viewStore: 'Store', viewInstalled: 'Installed',
       srcOfficial: 'official', srcNpm: '3rd-party npm', srcGit: 'git source', srcSelf: 'self', srcOther: 'other',
       remove: 'Remove', uninstallTitle: 'Confirm uninstall', uninstallHint: 'A restart is needed for full uninstall', uninstalling: 'Removing…', uninstallDone: 'Uninstalled — restart to take effect', uninstallFailed: 'Uninstall failed',
@@ -287,6 +289,17 @@ window.__ModuleLoader__.load({
         else if (sort === 'compat') { const rank = { ok: 0, unknown: 1, broken: 2, unmaintained: 3 }; list = list.slice().sort((a, b) => (rank[a.compatStatus] ?? 1) - (rank[b.compatStatus] ?? 1)) }
         return list
       }, [catalog, search, category, sort, onlyOk])
+      // v0.7 F-G: 增量渲染 —— 首屏 60 条，哨兵进视口再追加，过滤变化时重置
+      const [visible, setVisible] = useState(60)
+      useEffect(() => { setVisible(60) }, [search, category, sort, onlyOk])
+      const sentinelRef = useRef(null)
+      useEffect(() => {
+        const el = sentinelRef.current
+        if (!el) return undefined
+        const io = new IntersectionObserver((es) => { if (es[0] && es[0].isIntersecting) setVisible((v) => v + 60) })
+        io.observe(el)
+        return () => io.disconnect()
+      }, [visible, filtered.length])
 
       async function doInstall(p) {
         const spec = pkgSpec(p.installCmd)
@@ -507,7 +520,7 @@ window.__ModuleLoader__.load({
         h('button', { style: C.btn, onClick: () => { setError(null); setLoading(true); setTimeout(() => location.reload(), 10) } }, t('retry')))
       if (catalog.length === 0) return h('div', null, toolbar, status, h('div', { style: C.desc }, t('emptyCatalog')))
 
-      const cards = filtered.map((p) => {
+      const cards = filtered.slice(0, visible).map((p) => { // v0.7 F-G: 只渲染前 visible 条
         const installedHere = isInstalled(p, names)
         const spec = pkgSpec(p.installCmd)
         const upM = spec ? updN(spec) : null
@@ -649,7 +662,17 @@ window.__ModuleLoader__.load({
               h('button', { style: { ...C.btnGhost, marginLeft: 'auto' }, onClick: () => setDetail(null) }, t('dtClose')))))
       }
 
-      return h('div', null, viewToggle, toolbar, status, h('div', { style: C.grid }, cards), empty, modal, manualModal, drawerEl)
+      return h('div', null, viewToggle, toolbar, status, h('div', { style: C.grid }, cards),
+      // v0.7 F-G: 增量渲染哨兵 + 结果计数
+      filtered.length > 0
+        ? h('div', {
+            style: { textAlign: 'center', padding: '12px', color: '#8b949e', fontSize: '12px' },
+            ref: (el) => { sentinelRef.current = el },
+          }, filtered.length > visible
+              ? t('shownXofN').replace('{x}', Math.min(visible, filtered.length)).replace('{n}', filtered.length)
+              : t('totalN').replace('{n}', filtered.length))
+        : null,
+      empty, modal, manualModal, drawerEl)
     }
 
     return {

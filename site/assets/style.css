@@ -200,7 +200,7 @@ section { margin-bottom: 48px; }
 .ribbon-featured { background: var(--brand-soft); color: var(--brand-bright); }
 .ribbon-beta { background: rgba(96, 165, 250, .15); color: var(--blue); }
 
-.card-desc { margin: 0; color: var(--muted); font-size: 13.5px; flex: 1; line-height: 1.5; }
+.card-desc { margin: 0; color: var(--muted); font-size: 13.5px; flex: 1; line-height: 1.5; overflow-wrap: break-word; word-break: break-word; max-width: 100%; }
 
 .card-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 12px; color: var(--faint); }
 .card-meta-spacer { flex: 1; }

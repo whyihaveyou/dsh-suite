@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T13:45:32.036Z",
+  "generated_at": "2026-08-15T19:36:29.929Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -153,6 +153,15 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
+    },
+    {
+      "repo": "lynkas/dsh-think-flow-flow",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-15T19:36:29.831Z",
+      "lastDetectedAt": "2026-08-15T19:36:29.831Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/lynkas/dsh-think-flow-flow"
     }
   ]
 }

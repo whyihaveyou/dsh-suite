@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T03:55:49.880Z",
+  "generated_at": "2026-08-15T06:59:44.229Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -117,6 +117,24 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
+    },
+    {
+      "repo": "Shmilyol/dsh-hiyori-skin",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-15T06:59:44.217Z",
+      "lastDetectedAt": "2026-08-15T06:59:44.217Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Shmilyol/dsh-hiyori-skin"
+    },
+    {
+      "repo": "Shmilyol/galgame-skin",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-15T06:59:44.217Z",
+      "lastDetectedAt": "2026-08-15T06:59:44.217Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Shmilyol/galgame-skin"
     }
   ]
 }

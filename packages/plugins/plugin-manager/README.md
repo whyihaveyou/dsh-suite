@@ -4,7 +4,7 @@
 [💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=plugin-manager)
 
 
-> v0.4.0 — 复制按钮反馈修复 + GitHub opengraph 卡片预览缩略图（lazy）。
+> v0.5.0 — 已装插件更新检测（异步回填不阻塞首屏 + 6h 缓存）+ 双端一键升级流。
 
 > 嵌入 DSH Web UI 设置页的插件商店面板：目录浏览 / 搜索 / 一键安装 / 兼容徽章 / 已装列表。
 > A plugin-store panel embedded in DSH Web UI: catalog browse / search / one-click install / compat badges / installed list.
@@ -58,15 +58,13 @@ npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 
 ## 变更 / Changelog
 
+- **v0.5.0**：已装插件更新检测升级 + 一键更新。检测不再阻塞首屏（Store/Installed 列表先渲染，`/plugin-manager/updates` 独立异步回填角标）；宿主缓存 TTL 1h → **6h**（`PM_UPDATES=off` 仍可关）。Installed 视图每项「⬆ 有更新 → vX.Y.Z」角标 + 「⬆ 升级」按钮，确认框提示「已装旧版，确认后将覆盖升级 (old → new)」，执行 `/plugin-manager/update`（复用 `dsh plugin add` 安装路径重装最新版；无 pending 更新服务端返回 409 防误刷）→ ✔ 更新成功横幅。Store 视图已装旧版卡露出同款升级按钮 + 确认框提示。git/link/workspace 源包不适用（持续增长仓库，AI 自行 git pull）。
+
 - **v0.4.0**：新增「已装管理」视图（与 Store 顶部切换）——按来源分组（官方内建 @deepseek-ai/* / 第三方 npm / git 源 / 自研 @dsh-suite/* / 其他）+ 搜索过滤 + 各组计数徽标 + 版本/来源/状态；每项 Remove 按钮 + 确认框（显示名称/来源/「需重启完全卸载」提示），执行 `dsh plugin remove`（pnpm remove + bundle 协调）。
 
 ## 变更 / Changelog
 
-- **v0.3.0**：首屏提速（宿主侧 `/plugin-manager/catalog` 裁剪目录路由，只含面板必需字段 + gzip/deflate，缓存 1h，浏览器优先走宿主路由、失败回退 Pages 完整版）；已装 npm 源插件更新检查（`npm view` 批量查询，并发 ≤4、缓存 1h，卡片加「⬆ 有更新」角标，git/link 源跳过）。
-
-## 变更 / Changelog
-
-- **v0.4.0**：新增「已装管理」视图（与 Store 顶部切换）——按来源分组（官方内建 @deepseek-ai/* / 第三方 npm / git 源 / 自研 @dsh-suite/* / 其他）+ 搜索过滤 + 各组计数徽标 + 版本/来源/状态；每项 Remove 按钮 + 确认框（显示名称/来源/「需重启完全卸载」提示），执行 `dsh plugin remove`（pnpm remove + bundle 协调）。
+- **v0.3.0**：首屏提速（宿主侧 `/plugin-manager/catalog` 裁剪目录路由，只含面板必需字段 + gzip/deflate，缓存 1h，浏览器优先走宿主路由、失败回退 Pages 完整版）；已装 npm 源插件更新检查（`npm view` 批量查询，并发 ≤4、缓存 1h，卡片加「⬆ 有更新」角标，git/link 源跳过 —— 注：0.5.0 起改为异步回填不阻塞首屏、缓存 6h、加入一键升级流）。
 
 ## 变更 / Changelog
 
@@ -84,4 +82,4 @@ npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 2. 安装非流式：spawn 完成后一次性回传完整日志（进度用「安装中…」spinner 表示）。
 3. 已装匹配是近似子串（catalog.name ↔ 已装包名），非精确 npm 包名对齐。
 4. 卡片描述同时展示 en+zh（未按 UI locale 切换单语）。
-5. 卸载/更新检查/启停未做（设计规格明确推到后续迭代）。
+5. 启停 toggle 未做（设计规格明确推到后续迭代；卸载 v0.4 / 更新检测+一键升级 v0.5 已交付）。

@@ -6,8 +6,15 @@
 //   850KB cold-CDN transfer — the browser pulls a ~1/2 (uncompressed) payload
 //   from localhost instead.
 // - /plugin-manager/updates  : for installed npm-source plugins, batch
-//   `npm view <pkg> version` (concurrency <= 4, cache 1h) and diff against the
+//   `npm view <pkg> version` (concurrency <= 4, cache 6h) and diff against the
 //   installed version. git/link/workspace sources are skipped.
+// - /plugin-manager/update   : one-click upgrade — re-runs the normal install
+//   path (dsh plugin add <name>) for a package a pending update exists for,
+//   then invalidates its update-cache entry so the badge flips to the new
+//   version. 409 when nothing is pending (avoids pointless pnpm churn).
+//
+// v0.5 note: the update badge TTL is 6h (npm registry round-trips are pricey
+// in CN; a whole-day stash is fine for a "just shipped" signal).
 
 import { spawn } from 'node:child_process'
 import { readFileSync } from 'node:fs'
@@ -18,11 +25,15 @@ import { gzipSync, deflateSync } from 'node:zlib'
 export const name = 'plugin-manager'
 export const inject = ['webServer', 'loader']
 
-const INSTALL_TIMEOUT_MS = 120_000
+// v0.5: bumped 120s → 300s — dependency downloads on slow networks (and
+// registry mirrors under load) can legitimately exceed two minutes; the
+// update path reuses runInstall, so a short timeout would report false
+// failures while pnpm was still making progress.
+const INSTALL_TIMEOUT_MS = 300_000
 const VERIFY_TIMEOUT_MS = 60_000
 const CATALOG_URL = 'https://whyihaveyou.github.io/dsh-suite/catalog.json'
 const CATALOG_TTL_MS = 60 * 60 * 1000
-const UPDATE_TTL_MS = 60 * 60 * 1000
+const UPDATE_TTL_MS = 6 * 60 * 60 * 1000
 const UPDATE_CONCURRENCY = 4
 
 function json(res, value, status = 200) {
@@ -95,6 +106,15 @@ async function runInstall(pkg, profile) {
   }
   const added = parseAdded(add.out)
   if (added.length === 0) {
+    // v0.5: pnpm prints no "+ pkg" section when the dependency spec already
+    // matches (e.g. "Already up to date" after a previously half-applied or
+    // repeated install) — exit 0 then means the goal state is already on
+    // disk. Treat that as success instead of a false failure; verify by
+    // reading the package's own package.json from the profile.
+    const present = installedVersion(profile, pkg)
+    if (present) {
+      return { ok: true, log: (add.log + `\nℹ already present on disk (${pkg}@${present}) — nothing to add`).trim(), exitCode: 0, needRestart: true, timedOut: false, installed: [pkg], mounted: true, profile }
+    }
     return { ok: false, log: (add.log + '\n⚠ exit 0 but pnpm reported no added dependency — install did not take effect').trim(), exitCode: 0, needRestart: false, timedOut: false, profile }
   }
   const dump = await spawnCmd('dsh', ['--profile', profile, '--dump-config'], VERIFY_TIMEOUT_MS)
@@ -258,6 +278,30 @@ export function apply(ctx) {
       },
     })
 
+    const disposeUpdate = ctx.webServer.register({
+      kind: 'exact',
+      path: '/plugin-manager/update',
+      handler: async (req, res) => {
+        const body = await readJsonBody(req)
+        const name = body && typeof body.name === 'string' && body.name.trim() ? body.name.trim() : null
+        if (!name) return json(res, { ok: false, error: 'missing name' }, 400)
+        const profile = typeof body.profile === 'string' && body.profile ? body.profile : currentProfile()
+        // Only allow upgrading a package a pending update actually exists for —
+        // otherwise we would churn pnpm for nothing (or worse, install an
+        // arbitrary package name the caller typed in).
+        try {
+          const pending = await computeUpdates(profile)
+          const hit = pending.find((u) => u.name === name)
+          if (!hit) return json(res, { ok: false, error: 'no pending update for ' + name }, 409)
+          const r = await runInstall(name, profile)
+          if (r.ok) updateCache.delete(name)
+          json(res, { ...r, name, from: hit.installed, to: hit.latest })
+        } catch (e) {
+          json(res, { ok: false, error: String(e && e.message ? e.message : e) }, 500)
+        }
+      },
+    })
+
     const disposeInstalled = ctx.webServer.register({
       kind: 'exact',
       path: '/plugin-manager/installed',
@@ -299,6 +343,6 @@ export function apply(ctx) {
     // warm the catalog cache in the background so the first Store open is fast
     fetchCatalog().catch(() => {})
 
-    return () => { disposeInstall(); disposeList(); disposeCatalog(); disposeUpdates(); disposeInstalled(); disposeUninstall() }
+    return () => { disposeInstall(); disposeList(); disposeCatalog(); disposeUpdates(); disposeInstalled(); disposeUninstall(); disposeUpdate() }
   }, 'plugin-manager: routes')
 }

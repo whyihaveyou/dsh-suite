@@ -31,6 +31,8 @@ window.__ModuleLoader__.load({
       source: '数据源', plugins: '精选', installedCount: '已装',
       unknownLicense: '未知 license（请自行确认）', broken: '已知不兼容',
       manualCopyTitle: '复制命令', manualCopyHint: '请手动复制以下命令：', update: '有更新', installedNotMounted: '已安装为依赖但未挂载到 bundle（可能缺 dsh.bundle 或为 monorepo 根包），请检查包结构',
+      upgrade: '升级', updating: '升级中…', updateDone: '已更新到新版本，请重启 DSH 生效', updateFailed: '更新失败', updateHint: '已装旧版，确认后将覆盖升级', confirmUpdate: '确认升级',
+      restartHint: '升级完成后需重启 DSH 才会加载新版本',
       viewStore: '商店', viewInstalled: '已装管理',
       srcOfficial: '官方内建', srcNpm: '第三方 npm', srcGit: 'git 源', srcSelf: '自研', srcOther: '其他',
       remove: '移除', uninstallTitle: '确认卸载', uninstallHint: '需重启后完全卸载', uninstalling: '卸载中…', uninstallDone: '已卸载，请重启生效', uninstallFailed: '卸载失败',
@@ -48,6 +50,8 @@ window.__ModuleLoader__.load({
       source: 'Source', plugins: 'curated', installedCount: 'installed',
       unknownLicense: 'unknown license (verify yourself)', broken: 'known incompatible',
       manualCopyTitle: 'Copy command', manualCopyHint: 'Copy the command below manually:', update: 'update', installedNotMounted: 'Installed as a dependency but NOT mounted (may lack dsh.bundle or be a monorepo root) — check the package',
+      upgrade: 'Upgrade', updating: 'Updating…', updateDone: 'Updated to the new version — restart DSH', updateFailed: 'Update failed', updateHint: 'older version installed; confirming will overwrite-upgrade', confirmUpdate: 'Confirm upgrade',
+      restartHint: 'Restart DSH after the upgrade to load the new version',
       viewStore: 'Store', viewInstalled: 'Installed',
       srcOfficial: 'official', srcNpm: '3rd-party npm', srcGit: 'git source', srcSelf: 'self', srcOther: 'other',
       remove: 'Remove', uninstallTitle: 'Confirm uninstall', uninstallHint: 'A restart is needed for full uninstall', uninstalling: 'Removing…', uninstallDone: 'Uninstalled — restart to take effect', uninstallFailed: 'Uninstall failed',
@@ -167,23 +171,35 @@ window.__ModuleLoader__.load({
       const [uninstalling, setUninstalling] = useState(null)
       const [uninstallConfirm, setUninstallConfirm] = useState(null)
       const [uninstallResult, setUninstallResult] = useState(null)
+      const [updating, setUpdating] = useState(null)
+      const [updateConfirm, setUpdateConfirm] = useState(null)
+      const [updateResult, setUpdateResult] = useState(null)
 
       useEffect(() => {
         let alive = true
         ;(async () => {
           try {
-            const [cat, list, ups] = await Promise.all([
+            const [cat, list] = await Promise.all([
               fetchCatalogPlugins(),
               fetchJson('/plugin-manager/list').then((r) => (r.ok ? r.value : [])).catch(() => []),
-              fetchJson('/plugin-manager/updates').then((r) => (r.ok ? r.value : [])).catch(() => []),
             ])
-            if (alive) { setCatalog(cat); setInstalled(list); setUpdates(ups); setLoading(false) }
+            if (alive) { setCatalog(cat); setInstalled(list); setLoading(false) }
           } catch (e) {
             if (alive) { setError(e.message); setLoading(false) }
           }
         })()
         return () => { alive = false }
       }, [])
+      // v0.5: 更新检查不阻塞首屏 —— npm registry 单次请求 7-9s，Store/Installed
+      // 列表先渲染，/plugin-manager/updates 独立异步回填「有更新」角标与升级按钮。
+      useEffect(() => { loadUpdates() }, [])
+
+      function loadUpdates() {
+        fetchJson('/plugin-manager/updates')
+          .then((r) => (r.ok ? r.value : []))
+          .then((v) => setUpdates(v))
+          .catch(() => {})
+      }
 
       const names = useMemo(() => installedNames(installed), [installed])
 
@@ -274,6 +290,29 @@ window.__ModuleLoader__.load({
           .then((v) => { setInstalledList(v); setInstLoading(false) })
           .catch(() => setInstLoading(false))
       }
+      // v0.5: 更新检测索引 —— npm 源已装包 → { installed, latest, hasUpdate }
+      const updatesByName = useMemo(() => {
+        const m = {}
+        for (const u of updates) m[u.name] = u
+        return m
+      }, [updates])
+      const updN = (name) => updatesByName[name] || null
+      async function doUpdate(name) {
+        if (!name) return
+        setUpdating(name)
+        setUpdateResult(null)
+        try {
+          const r = await fetch('/plugin-manager/update', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ name }) })
+          const data = await r.json()
+          setUpdateResult({ name, ...data })
+          loadUpdates()
+          loadInstalled()
+        } catch (e) {
+          setUpdateResult({ name, ok: false, log: String(e) })
+        } finally {
+          setUpdating(null)
+        }
+      }
       async function doUninstall(p) {
         setUninstalling(p.name)
         setUninstallResult(null)
@@ -309,7 +348,7 @@ window.__ModuleLoader__.load({
       const viewBtn = (active) => ({ background: active ? '#30363d' : 'transparent', color: active ? '#e6edf3' : '#8b949e', border: '1px solid #30363d', borderRadius: '6px', padding: '6px 14px', fontSize: '13px', cursor: 'pointer' })
       const viewToggle = h('div', { style: { display: 'flex', gap: '8px', marginBottom: '12px' } },
         h('button', { style: viewBtn(view === 'store'), onClick: () => setView('store') }, '🛍 ' + t('viewStore')),
-        h('button', { style: viewBtn(view === 'installed'), onClick: () => { setView('installed'); loadInstalled() } }, '📦 ' + t('viewInstalled')))
+        h('button', { style: viewBtn(view === 'installed'), onClick: () => { setView('installed'); loadInstalled(); loadUpdates() } }, '📦 ' + t('viewInstalled')))
 
       // ---- installed management view ----
       const instFiltered = installedList.filter((e) => !instSearch || (e.name || '').toLowerCase().includes(instSearch.toLowerCase()))
@@ -317,6 +356,7 @@ window.__ModuleLoader__.load({
       const installedView = h('div', null,
         h('input', { style: { ...C.input, marginBottom: '12px', width: '100%' }, placeholder: t('searchInstalled'), value: instSearch, onChange: (e) => setInstSearch(e.target.value) }),
         uninstallResult ? h('div', { style: uninstallResult.ok ? { color: '#3fb950', fontSize: '12px', fontWeight: '600', marginBottom: '10px' } : { color: '#f85149', fontSize: '11px', marginBottom: '10px', whiteSpace: 'pre-wrap' } }, uninstallResult.ok ? '✅ ' + t('uninstallDone') : '❌ ' + t('uninstallFailed') + ': ' + (uninstallResult.log || '')) : null,
+        updateResult ? h('div', { style: updateResult.ok ? { color: '#3fb950', fontSize: '12px', fontWeight: '600', marginBottom: '10px' } : { color: '#f85149', fontSize: '11px', marginBottom: '10px', whiteSpace: 'pre-wrap' } }, updateResult.ok ? '✅ ' + t('updateDone') : '❌ ' + t('updateFailed') + ': ' + (updateResult.log || updateResult.error || '')) : null,
         instLoading && installedList.length === 0 ? h('div', { style: C.desc }, t('loading')) : null,
         GROUPS.map((g) => {
           const items = instFiltered.filter((e) => e.source === g)
@@ -331,10 +371,17 @@ window.__ModuleLoader__.load({
                 h('div', { style: { ...C.meta, gap: '10px' } },
                   e.version ? h('span', null, 'v' + e.version) : null,
                   h('span', null, srcLabel(e.source)),
+                  (updN(e.name) && updN(e.name).hasUpdate) ? h('span', { style: { color: '#d29922', fontWeight: '600' } }, '⬆ ' + t('update') + ' → v' + updN(e.name).latest) : null,
                   h('span', { style: { color: e.enabled ? '#3fb950' : '#8b949e' } }, e.enabled ? t('enabled') : t('disabled')))),
-              uninstalling === e.name
-                ? h('span', { style: { fontSize: '11px', color: '#8b949e' } }, t('uninstalling'))
-                : h('button', { style: { color: '#f85149', border: '1px solid #f85149', borderRadius: '6px', background: 'transparent', padding: '5px 10px', fontSize: '12px', cursor: 'pointer' }, onClick: () => setUninstallConfirm(e) }, t('remove'))),
+              h('div', { style: { display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 } },
+                updating === e.name
+                  ? h('span', { style: { fontSize: '11px', color: '#8b949e' } }, t('updating'))
+                  : (updN(e.name) && updN(e.name).hasUpdate)
+                    ? h('button', { style: { color: '#d29922', border: '1px solid #d29922', borderRadius: '6px', background: 'transparent', padding: '5px 10px', fontSize: '12px', cursor: 'pointer' }, onClick: () => setUpdateConfirm(e) }, '⬆ ' + t('upgrade'))
+                    : null,
+                uninstalling === e.name
+                  ? h('span', { style: { fontSize: '11px', color: '#8b949e' } }, t('uninstalling'))
+                  : h('button', { style: { color: '#f85149', border: '1px solid #f85149', borderRadius: '6px', background: 'transparent', padding: '5px 10px', fontSize: '12px', cursor: 'pointer' }, onClick: () => setUninstallConfirm(e) }, t('remove')))),
             ))
         }),
         installedList.length > 0 && instFiltered.length === 0 ? h('div', { style: C.desc }, '🔍 ' + t('empty') + ' "' + instSearch + '"') : null,
@@ -357,7 +404,26 @@ window.__ModuleLoader__.load({
         )
       }
 
-      if (view === 'installed') return h('div', null, viewToggle, installedView, uninstallModal)
+      let updateModal = null
+      if (updateConfirm) {
+        const e = updateConfirm
+        const upR = updN(e.name)
+        updateModal = h('div', { style: C.modalBack, onClick: () => setUpdateConfirm(null) },
+          h('div', { style: C.modal, onClick: (ev) => ev.stopPropagation() },
+            h('div', { style: { fontSize: '15px', fontWeight: '600', color: '#e6edf3', marginBottom: '10px' } }, t('confirmUpdate')),
+            h('div', { style: { fontSize: '13px', color: '#e6edf3', wordBreak: 'break-all', marginBottom: '6px' } }, e.name),
+            h('div', { style: C.meta, marginBottom: '6px' },
+              h('span', null, srcLabel(e.source)),
+              e.version ? h('span', null, 'v' + e.version) : null),
+            upR ? h('div', { style: { color: '#3fb950', fontSize: '12px', marginBottom: '6px' } }, t('updateHint') + ' (v' + (upR.installed || e.version || '?') + ' → v' + upR.latest + ')') : null,
+            h('div', { style: { ...C.desc, fontSize: '12px', marginBottom: '14px' } }, t('restartHint')),
+            h('div', { style: { display: 'flex', gap: '8px', justifyContent: 'flex-end' } },
+              h('button', { style: C.btnGhost, onClick: () => setUpdateConfirm(null) }, t('cancel')),
+              h('button', { style: C.btn, onClick: () => { setUpdateConfirm(null); doUpdate(e.name) } }, t('confirm')))),
+        )
+      }
+
+      if (view === 'installed') return h('div', null, viewToggle, installedView, uninstallModal, updateModal)
 
       if (loading) return h('div', null, toolbar, status, h('div', { style: C.desc }, t('loading')))
       if (error) return h('div', null, toolbar, status,
@@ -368,13 +434,16 @@ window.__ModuleLoader__.load({
       const cards = filtered.map((p) => {
         const installedHere = isInstalled(p, names)
         const spec = pkgSpec(p.installCmd)
-        const hasUpdate = !!spec && updates.some((u) => u.name === spec)
+        const upM = spec ? updN(spec) : null
+        const hasUpdate = !!upM
         const bad = BADGE[p.compatStatus] || BADGE.unknown
         const res = results[p.name]
         const busy = installing === p.name
         const isBroken = p.compatStatus === 'broken'
         const installBtn = installedHere
-          ? h('button', { style: C.btnDisabled, key: 'i' }, '✅ ' + t('installed'))
+          ? (hasUpdate
+              ? h('button', { key: 'i', style: { ...C.btnGhost, color: '#d29922', borderColor: '#d29922' }, onClick: () => setConfirmPkg(p) }, '⬆ ' + t('upgrade'))
+              : h('button', { key: 'i', style: C.btnDisabled }, '✅ ' + t('installed')))
           : busy
             ? h('button', { style: C.btnDisabled, key: 'i' }, t('installing'))
             : h('button', { key: 'i', style: isBroken ? { ...C.btn, background: '#9e6a03' } : C.btn, onClick: () => setConfirmPkg(p) }, t('install'))
@@ -385,7 +454,7 @@ window.__ModuleLoader__.load({
             h('span', null, p.name),
             h('span', { style: C.badge(bad[1]) }, bad[0]),
             installedHere ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, '✅') : null,
-            hasUpdate ? h('span', { style: { fontSize: '11px', color: '#d29922', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update')) : null),
+            hasUpdate ? h('span', { style: { fontSize: '11px', color: '#d29922', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + (upM && upM.latest ? ' → v' + upM.latest : '')) : null),
           p.desc_en ? h('div', { style: C.desc }, p.desc_en) : null,
           p.desc_zh ? h('div', { style: C.descZh }, p.desc_zh) : null,
           h('div', { style: C.meta },
@@ -420,6 +489,7 @@ window.__ModuleLoader__.load({
             h('div', { style: C.meta, marginBottom: '6px' },
               h('span', null, (p.stars || 0) + '★'),
               p.license ? h('span', null, p.license) : h('span', { style: C.warn }, t('unknownLicense'))),
+            (spec && updN(spec)) ? h('div', { style: { color: '#3fb950', fontSize: '12px', marginBottom: '6px' } }, t('updateHint') + ' (v' + ((updN(spec).installed) || '?') + ' → v' + updN(spec).latest + ')') : null,
             h('div', { style: { ...C.desc, marginBottom: '14px', wordBreak: 'break-all' } }, spec),
             h('div', { style: { display: 'flex', gap: '8px', justifyContent: 'flex-end' } },
               h('button', { style: C.btnGhost, onClick: () => setConfirmPkg(null) }, t('cancel')),

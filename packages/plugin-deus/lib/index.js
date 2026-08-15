@@ -50,7 +50,8 @@ export function detectMode(rawText, source = 'text') {
   if (/^we[\s,']/.test(head)) return 'god'
   // "User wants/asks…" (article dropped) — soft-med variant observed when
   // injected context is present under a minimal first request (cell M.2.1).
-  if (source === 'reasoning' && /^user (wants|asks|is asking|said)\b/.test(head)) return 'med'
+  // v0.2: also "User is continuing…" (multi-turn med variant, drift study §9).
+  if (source === 'reasoning' && /^user (wants|asks|is asking|said|says|is continuing|is following up)\b/.test(head)) return 'med'
   // 中文推理起手 "我们需要/我们应该/我们来" — god-equivalent (reasoning only).
   if (source === 'reasoning' && /^我们(需要|应该|先来|来|先)/.test(head)) return 'god'
   const firstSentence = head.split(/[.!?\n]/)[0] || head
@@ -75,6 +76,126 @@ function wilson(k, n) {
   const center = (p + (z * z) / (2 * n)) / denom
   const half = (z * Math.sqrt((p * (1 - p)) / n + (z * z) / (4 * n * n))) / denom
   return { rate: p, low: Math.max(0, center - half), high: Math.min(1, center + half) }
+}
+
+// ── shipped agent presets (v0.2 锚定维持的静态层) ───────────────────────────
+const PLUGIN_VERSION = '0.2.0'
+// 实测依据（research/deus-mode-matrix.md §8/§9）：神版触发需要 Minimal persona
+// ∧ 小工具目录；且本 harness 没有竞品的 promoteOn 机制——preset 构成全程恒定，
+// 所以只要会话跑在锚定 preset 上，注入剥离/工具裁剪自动延续到每一轮。
+// 用户级 preset 目录 <dshHome>/.agent-presets/<id>/ 由官方 agent-presets 插件
+// 实时发现，安装后在 设置 > Agent presets 与会话 preset 选择器中立即可选。
+const PERSONA_YML = `- id: persona
+  name: '@deepseek-ai/dsh-persona'
+  config:
+    text: You are a helpful software engineer assistant.
+    complete: true
+    includeRuntimeContext: false
+`
+const SHELL_YML = `- id: persistent-shell
+  name: cordis:group
+  group: true
+  isolate:
+    terminals: true
+  config:
+    - id: pty
+      name: '@deepseek-ai/dsh-terminal'
+    - id: terminal-bash
+      name: '@deepseek-ai/dsh-terminal-bash'
+      config:
+        timeoutMs: 300000
+    - id: persistent-bash
+      name: '@deepseek-ai/dsh-tool-bash-persistent'
+      config:
+        timeoutMs: 300000
+        description: |-
+          Run commands in a bash shell
+          * When invoking this tool, the contents of the "command" parameter does NOT need to be XML-escaped.
+          * You don't have access to the internet via this tool.
+          * You do have access to a mirror of common linux and python packages via apt and pip.
+          * State is persistent across command calls and discussions with the user.
+          * To inspect a particular line range of a file, e.g. lines 10-25, try 'sed -n 10,25p /path/to/the/file'.
+          * Please avoid commands that may produce a very large amount of output.
+          * Please run long lived commands in the background, e.g. 'sleep 10 &' or start a server in the background.
+`
+const FS_YML = `- id: filesystem
+  name: cordis:group
+  group: true
+  isolate:
+    fs: true
+  config:
+    - id: fs-local
+      name: '@deepseek-ai/dsh-fs-local'
+      config:
+        cwd: !!js process.env.DSH_CWD ?? process.cwd()
+    - id: str-replace-editor
+      name: '@deepseek-ai/dsh-tool-str-replace-editor'
+      config:
+        maxOutputChars: 16000
+`
+// 宽档追加的常用工具（实测梯度 §8：~8 工具档仍有 ~65% 触发率，换可用性）
+const WIDE_TOOLS_YML = `- id: tool-fs
+  name: '@deepseek-ai/dsh-tool-fs'
+- id: tool-fs-search
+  name: '@deepseek-ai/dsh-tool-fs-search'
+  config:
+    sampleOverCapGlobResults: false
+- id: tool-todo
+  name: '@deepseek-ai/dsh-tool-todo'
+  config:
+    allowParallelInProgress: true
+`
+const AGENT_PRESETS = [
+  {
+    id: 'deus-anchored',
+    name: '神模扳机 · 窄锚（2 工具）',
+    description: 'Minimal persona + bash/str_replace_editor，剥注入；实测动手类神版起手 ~90%。@dsh-suite/plugin-deus 安装。',
+    order: 90,
+    cordis: `# deus-anchored: 2-tool minimal anchor preset (@dsh-suite/plugin-deus v0.2)\n${PERSONA_YML}\n${SHELL_YML}\n${FS_YML}`,
+  },
+  {
+    id: 'deus-anchored-wide',
+    name: '神模扳机 · 宽锚（~8 工具）',
+    description: 'Minimal persona + bash/编辑/读写/glob/grep/todo，剥注入；实测 ~65% 触发率换可用性。@dsh-suite/plugin-deus 安装。',
+    order: 91,
+    cordis: `# deus-anchored-wide: ~8-tool wide anchor preset (@dsh-suite/plugin-deus v0.2)\n${PERSONA_YML}\n${SHELL_YML}\n${FS_YML}\n${WIDE_TOOLS_YML}`,
+  },
+]
+
+function agentPresetsRoot() {
+  return join(dshHome(), '.agent-presets')
+}
+
+// Idempotent install: only write when missing or content changed; never touch
+// a preset dir the user has modified (marker mismatch → skip with warning).
+function installAgentPresets(logger) {
+  const installed = []
+  for (const p of AGENT_PRESETS) {
+    try {
+      const dir = join(agentPresetsRoot(), p.id)
+      const marker = join(dir, '.deus-managed')
+      const cordisPath = join(dir, 'agent.cordis.yml')
+      const presetPath = join(dir, 'preset.yml')
+      const presetYml = `name: ${p.name}\ndescription: ${p.description}\norder: ${p.order}\n`
+      if (existsSync(dir) && !existsSync(marker)) {
+        logger?.warn?.(`[plugin-deus] skip ${p.id}: dir exists without .deus-managed marker (user-modified?)`)
+        installed.push({ id: p.id, installed: false, reason: 'user-modified' })
+        continue
+      }
+      const current = existsSync(cordisPath) ? readFileSync(cordisPath, 'utf8') : null
+      if (current !== p.cordis) {
+        mkdirSync(dir, { recursive: true })
+        writeFileSync(cordisPath, p.cordis)
+        writeFileSync(presetPath, presetYml)
+        writeFileSync(marker, `@dsh-suite/plugin-deus@${PLUGIN_VERSION}\n`)
+      }
+      installed.push({ id: p.id, installed: true, name: p.name, dir })
+    } catch (e) {
+      logger?.warn?.(`[plugin-deus] install ${p.id} failed:`, e)
+      installed.push({ id: p.id, installed: false, reason: String(e) })
+    }
+  }
+  return installed
 }
 
 // ── storage paths ────────────────────────────────────────────────────────────
@@ -165,10 +286,10 @@ function statsFrom(entries) {
 }
 
 function toCsv(entries) {
-  const head = 'ts,sessionId,prompt_mode,prompt_text,detected,source,first_sentence,model'
+  const head = 'ts,sessionId,prompt_mode,prompt_text,detected,source,turn,first_sentence,model'
   const esc = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`
   const rows = entries.map((e) =>
-    [e.ts, e.sessionId, e.prompt_mode, e.prompt_text, e.detected, e.source, e.first_sentence, e.model].map(esc).join(','))
+    [e.ts, e.sessionId, e.prompt_mode, e.prompt_text, e.detected, e.source, e.turn, e.first_sentence, e.model].map(esc).join(','))
   return [head, ...rows].join('\n') + '\n'
 }
 
@@ -226,11 +347,57 @@ function textOf(content) {
 }
 
 export function apply(ctx) {
+  // v0.2: 安装锚定 agent presets 到用户 preset 根（幂等，官方 agent-presets 插件实时发现）
+  const installedPresets = installAgentPresets(ctx.logger)
+
   // Pending trigger marks: sessionId -> { mode, prompt_text, ts, auto }
   const pending = new Map()
   // Chunk accumulation while a trigger is pending: sessionId -> { turn, step, reasoning, text }
   // （实测校准：指纹在 reasoning-delta 流里，text-delta 兜底；见 detectMode 注释）
   const buffers = new Map()
+
+  // ── v0.2 锚定维持：逐轮监控 deus/minimal preset 会话的指纹漂移 ─────────────
+  // 实测依据（§9）：构成恒定不代表锚定恒定——V2 对照组全程极简也有 44-89% 的
+  // 逐轮摆动，且一旦漂移到中版（工具补齐或轮次噪声），竞品 promoteOn 场景 0/6
+  // 维持。所以我们逐轮判定、漂移即标记，客户端据此提示/自动重锚。
+  // anchored: sessionId -> { preset, turns: [{turn, fp}], lastFp, drifted, skipTurn, updatedAt }
+  const anchored = new Map()
+  // 逐轮缓冲: sessionId -> { turn, reasoning, text }
+  const watchBuf = new Map()
+  const ANCHOR_PRESET_RE = /^(deus-|minimal)/
+
+  function markAnchored(sessionId, preset, force = false) {
+    if (!sessionId || !preset || (!force && !ANCHOR_PRESET_RE.test(preset))) return
+    const cur = anchored.get(sessionId)
+    if (cur) { cur.preset = preset; cur.updatedAt = new Date().toISOString() }
+    else anchored.set(sessionId, { preset, turns: [], lastFp: null, drifted: false, skipTurn: -1, updatedAt: new Date().toISOString() })
+  }
+
+  function finalizeWatch(sessionId, turnNo, buf) {
+    const st = anchored.get(sessionId)
+    if (!st || !buf || turnNo === st.skipTurn) return
+    // 注入轮由 pending 流程判定并写日志；pending 未结案期间抑制 watch（避免同轮双记）
+    if (pending.has(sessionId)) return
+    const source = buf.reasoning.trim() !== '' ? 'reasoning' : 'text'
+    const text = source === 'reasoning' ? buf.reasoning : buf.text
+    if (text.trim() === '') return
+    if (st.turns.some((t) => t.turn === turnNo)) return // 已判定过这一轮
+    const fp = detectMode(text, source)
+    st.lastFp = fp
+    st.drifted = fp !== 'god'
+    st.turns.push({ turn: turnNo, fp, ts: new Date().toISOString() })
+    if (st.turns.length > 50) st.turns = st.turns.slice(-50)
+    st.updatedAt = new Date().toISOString()
+    appendLog({
+      ts: new Date().toISOString(),
+      sessionId,
+      prompt_mode: 'watch:' + st.preset,
+      detected: fp,
+      source,
+      first_sentence: firstSentenceOf(text),
+      turn: turnNo,
+    })
+  }
 
   function finalize(sessionId, fallbackText) {
     const mark = pending.get(sessionId)
@@ -239,17 +406,29 @@ export function apply(ctx) {
     const reasoning = (buf && buf.reasoning) || ''
     const text = (buf && buf.text) || fallbackText || ''
     if (reasoning.trim() === '' && text.trim() === '' && !fallbackText) return // keep waiting for real content
+    const judgedTurn = typeof mark.turn === 'number' ? mark.turn : (buf && typeof buf.turn === 'number' ? buf.turn : undefined)
     pending.delete(sessionId)
     buffers.delete(sessionId)
     // 指纹优先取推理流（实测校准：指纹在 reasoning-delta 里），可见文本兜底
     const source = reasoning.trim() !== '' ? 'reasoning' : 'text'
     const classifyOn = source === 'reasoning' ? reasoning : text
+    const fp = detectMode(classifyOn, source)
+    // v0.2: 注入轮的判定并入锚定状态（turns 去重即阻止 watch 同轮双记；
+    // 此前仅靠 skipTurn/pending 抑制，user/message 无可靠 turn 号时会漏）
+    const st = anchored.get(sessionId)
+    if (st && typeof judgedTurn === 'number' && !st.turns.some((t) => t.turn === judgedTurn)) {
+      st.lastFp = fp
+      st.drifted = fp !== 'god'
+      st.turns.push({ turn: judgedTurn, fp, ts: new Date().toISOString() })
+      if (st.turns.length > 50) st.turns = st.turns.slice(-50)
+      st.updatedAt = new Date().toISOString()
+    }
     appendLog({
       ts: new Date().toISOString(),
       sessionId,
       prompt_mode: mark.mode,
       prompt_text: mark.prompt_text,
-      detected: detectMode(classifyOn, source),
+      detected: fp,
       source,
       first_sentence: firstSentenceOf(classifyOn),
       model: mark.model || undefined,
@@ -259,6 +438,14 @@ export function apply(ctx) {
   ctx.on('session/event', (session, event) => {
     const sessionId = String(session.id)
 
+    // v0.2 锚定监控的会话归属判定：preset 选择事件 / 会话自带 preset / 注入命中
+    if (event.type === 'agent-preset/selected') {
+      markAnchored(sessionId, event.data && (event.data.agentPreset || event.data.preset || event.data.id))
+    }
+    if (session && typeof session.agentPreset === 'string' && ANCHOR_PRESET_RE.test(session.agentPreset)) {
+      markAnchored(sessionId, session.agentPreset)
+    }
+
     // A user message can BE the trigger: exact-match against the preset
     // library covers the conservative "copy + paste + enter" path (档 A)
     // without any explicit marking from the panel.
@@ -267,10 +454,50 @@ export function apply(ctx) {
       if (text !== '' && !pending.has(sessionId)) {
         const hit = loadPresets().find((p) => p.prompt !== null && p.prompt.trim() === text)
         if (hit) {
+          buffers.delete(sessionId) // 防止上轮残留 buffer 污染注入轮判定
           pending.set(sessionId, { mode: hit.id, prompt_text: hit.prompt, ts: Date.now(), auto: true })
+          // 注入命中的会话纳入锚定监控；注入轮由 pending 流程判定，watch 跳过该轮避免双记
+          markAnchored(sessionId, 'inject', true)
+          const st = anchored.get(sessionId)
+          if (st && typeof event.data?.turn === 'number') st.skipTurn = event.data.turn
         }
       }
       return
+    }
+
+    // v0.2: 锚定会话的逐轮判定（与 pending 流程并行；pending 只覆盖注入轮）
+    if (anchored.has(sessionId) && (event.type === 'assistant/chunk' || event.type === 'assistant/message')) {
+      if (event.type === 'assistant/chunk') {
+        const chunk = event.data && event.data.chunk
+        const isReasoning = chunk && chunk.type === 'reasoning-delta' && typeof chunk.text === 'string'
+        const isText = chunk && chunk.type === 'text-delta' && typeof chunk.text === 'string'
+        if (isReasoning || isText) {
+          const cur = watchBuf.get(sessionId) || { turn: event.data.turn, reasoning: '', text: '' }
+          if (cur.turn !== event.data.turn) {
+            finalizeWatch(sessionId, cur.turn, cur) // 新一轮开始 → 结算上一轮
+            cur.turn = event.data.turn; cur.reasoning = ''; cur.text = ''
+          }
+          // 每轮只采第一个 step 的起手（指纹在开头）
+          if (cur.reasoning.length < DETECT_WINDOW * 2 && cur.text.length < DETECT_WINDOW * 2) {
+            if (isReasoning) cur.reasoning += chunk.text
+            else cur.text += chunk.text
+          }
+          watchBuf.set(sessionId, cur)
+          const head = cur.reasoning !== '' ? cur.reasoning : cur.text
+          if ((head.length >= 8 && /[.!?\n。！？]/.test(head)) || head.length >= DETECT_WINDOW) finalizeWatch(sessionId, cur.turn, cur)
+        }
+      } else {
+        const parts = event.data && event.data.message && event.data.message.content
+        let reasoning = ''
+        if (Array.isArray(parts)) {
+          for (const p of parts) {
+            if (p && typeof p === 'object' && p.type === 'reasoning' && typeof p.text === 'string') reasoning += p.text
+          }
+        }
+        const cur = watchBuf.get(sessionId)
+        if (cur && reasoning !== '' && cur.reasoning === '') cur.reasoning = reasoning
+        if (cur) finalizeWatch(sessionId, cur.turn, cur)
+      }
     }
 
     if (!pending.has(sessionId)) return
@@ -281,8 +508,11 @@ export function apply(ctx) {
       const isText = chunk && chunk.type === 'text-delta' && typeof chunk.text === 'string'
       if (isReasoning || isText) {
         const key = sessionId
+        const entry = pending.get(sessionId)
+        if (entry && entry.turn === undefined) entry.turn = event.data.turn // 记录注入轮号，watch 据此去重
         const cur = buffers.get(key) || { turn: event.data.turn, step: event.data.step, reasoning: '', text: '' }
         if (cur.turn !== event.data.turn || cur.step !== event.data.step) {
+          finalize(sessionId) // 轮边界先结算旧轮（此前静默清空导致判定延迟到后续轮）
           cur.turn = event.data.turn; cur.step = event.data.step; cur.reasoning = ''; cur.text = ''
         }
         if (isReasoning) cur.reasoning += chunk.text
@@ -315,6 +545,8 @@ export function apply(ctx) {
     }
 
     if (event.type === 'turn/end') {
+      const wb = watchBuf.get(sessionId)
+      if (wb) finalizeWatch(sessionId, wb.turn, wb)
       finalize(sessionId, '')
     }
   })
@@ -359,12 +591,22 @@ export function apply(ctx) {
         readBody(req, (body) => {
           const sessionId = String(body.sessionId || '')
           const mode = String(body.mode || '')
+          // v0.2: mode=reanchor 是漂移重锚的显式标记（提示文本由 client 随 body 带上）
+          if (mode === 'reanchor' && sessionId) {
+            buffers.delete(sessionId)
+            pending.set(sessionId, { mode: 'reanchor', prompt_text: String(body.prompt || ''), ts: Date.now(), auto: false })
+            markAnchored(sessionId, 'inject', true)
+            json({ ok: true })(req, res)
+            return
+          }
           const preset = loadPresets().find((p) => p.id === mode)
           if (!sessionId || !preset) {
             json({ ok: false, error: 'missing sessionId or unknown mode' }, 400)(req, res)
             return
           }
+          buffers.delete(sessionId)
           pending.set(sessionId, { mode, prompt_text: preset.prompt, ts: Date.now(), auto: false })
+          markAnchored(sessionId, 'inject', true) // 注入会话纳入逐轮锚定监控
           json({ ok: true })(req, res)
         })
       } }),
@@ -386,7 +628,21 @@ export function apply(ctx) {
       ctx.webServer.register({ kind: 'exact', path: '/deus/version', handler: (req, res) => {
         let dsh = 'unknown'
         try { dsh = detectDshVersion() } catch (e) { ctx.logger.warn('[plugin-deus] version detect failed:', e) }
-        json({ plugin: '0.1.0', dsh, logPath: logFile() })(req, res)
+        json({ plugin: PLUGIN_VERSION, dsh, logPath: logFile() })(req, res)
+      } }),
+      // v0.2 锚定维持状态: 安装的 agent presets + 受监控会话的逐轮指纹/漂移状态
+      ctx.webServer.register({ kind: 'exact', path: '/deus/anchor', handler: (req, res) => {
+        const sessions = [...anchored.entries()].map(([sessionId, st]) => ({
+          sessionId,
+          preset: st.preset,
+          total: st.turns.length,
+          god: st.turns.filter((t) => t.fp === 'god').length,
+          lastFp: st.lastFp,
+          drifted: st.drifted,
+          turns: st.turns.slice(-10),
+          updatedAt: st.updatedAt,
+        }))
+        json({ agentPresets: installedPresets, sessions })(req, res)
       } }),
     ]
     return () => { for (const d of disposers) d() }

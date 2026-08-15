@@ -15,7 +15,7 @@ window.__ModuleLoader__.load({
   id: '@dsh-suite/plugin-deus',
   factory: (require) => {
     const React = require('react')
-    const { useState, useEffect } = React
+    const { useState, useEffect, useRef } = React
     const h = React.createElement
 
     const NS = 'deusMode'
@@ -28,7 +28,7 @@ window.__ModuleLoader__.load({
       edit: '编辑', save: '保存', cancel: '取消', del: '删除', add: '新增预设', resetPresets: '恢复内置',
       editPrompt: 'prompt 内容（留空 = 空输入模式）', editLabel: '名称', editId: 'id（唯一）',
       stats: '触发率统计', statsHint: '比例 + 95% Wilson 置信区间。只有实验组显著高于对照组（普通完整提示词）才算有差异——请自行保留对照采样。',
-      measured: '本团队实测（2026-08-15，deepseek-v4-pro，N=200 次 API 采样）：极简首请求构成（Minimal 系统提示 ∧ ≤2 工具 ∧ 剥离注入上下文，三者缺一不可）下，动手类任务神版（we 起手）约 90%；讲解/咨询类任务约 0%；完整 persona + 25 工具对照组 0/20。指纹主要在推理流（reasoning），可见正文多为中文直答。样本量小，请当作倾向信号。',
+      measured: '本团队实测（2026-08-15，deepseek-v4-pro，N=440 次 API 采样）：神版需要 Minimal 系统提示 + 小工具目录——触发率随工具数单调衰减（2 工具 ~90%、~8 工具 ~65%、25 工具 0%）；剥离注入上下文把触发率从 20% 推到 90%；讲解/咨询类任务约 0%。锚定维持：工具目录补齐后神版维持率 0/6（一次锚定不能全程有效，故需逐轮监控 + 漂移重锚）；构成恒定时也有 44-89% 摆动。样本量小，请当作倾向信号。',
       colMode: '模式', colN: '采样', colGod: '神版率', colMed: '中版率', colPure: '纯区率',
       exportCsv: '导出 CSV', resetLog: '清空日志', resetLogConfirm: '确定清空全部实验日志？此操作不可撤销。',
       recent: '最近记录', recentHint: '识别器判定是启发式倾向信号，first_sentence 原文供人工复核。',
@@ -37,6 +37,11 @@ window.__ModuleLoader__.load({
       dockHint: '神模扳机（实验工具·社区观察未证实）', dockSend: '注入并发送', dockFill: '注入',
       autoSend: '注入后自动发送',
       detected_pure: '纯区版', detected_med: '中版', detected_god: '神版', detected_unknown: '未判定',
+      anchor: '锚定维持', anchorHint: 'deus/minimal preset 会话的逐轮指纹监控。实测（§9）：工具目录补齐后神版维持率 0/6 全漂回中版，构成恒定时也有 44-89% 逐轮摆动——漂移时建议重锚。',
+      anchorPresetInstalled: '已安装 agent presets（设置 > Agent presets 可选）', anchorNone: '暂无受监控会话——在会话里选「神模扳机」preset 或注入一次即纳入监控。',
+      colSession: '会话', colPreset: 'preset', colTurns: '轮次', colGodRate: '神版率', colLastFp: '最新指纹', colAnchorState: '状态',
+      anchoredOn: '锚定维持中', drifted: '漂移→非神版', reanchor: '⚓ 重锚', autoReanchor: '漂移自动重锚',
+      reanchorSent: '已发送重锚提示', dockAnchored: '锚定维持中',
     }
     const en = {
       nav: 'Deus Trigger', sub: 'Minimal-prompt trigger bench · inject → classify → stats',
@@ -47,7 +52,7 @@ window.__ModuleLoader__.load({
       edit: 'Edit', save: 'Save', cancel: 'Cancel', del: 'Delete', add: 'Add preset', resetPresets: 'Restore built-ins',
       editPrompt: 'prompt text (empty = empty-input mode)', editLabel: 'label', editId: 'id (unique)',
       stats: 'Trigger-rate stats', statsHint: 'Proportion + 95% Wilson CI. Only a significant lead over a control group (ordinary full prompts) counts — keep your own control samples.',
-      measured: 'Measured by our team (2026-08-15, deepseek-v4-pro, N=200 API samples): under a minimal first request (minimal system prompt AND ≤2 tools AND stripped context injection — all three required), hands-on tasks hit the god opener ("we…") ~90% of the time; explanatory/Q&A tasks ~0%; the full persona + 25-tool control hit 0/20. The fingerprint lives mostly in the reasoning stream. Small samples — treat as a tendency signal.',
+      measured: 'Measured by our team (2026-08-15, deepseek-v4-pro, N=440 API samples): god mode needs a minimal system prompt + a SMALL tool catalog — trigger rate decays with tool count (2 tools ~90%, ~8 tools ~65%, 25 tools 0%); stripping injected context lifts it 20% → 90%; explanatory tasks ~0%. Persistence: once the tool catalog expands, god-mode retention is 0/6 — one-shot anchoring does NOT hold all session, hence per-turn watch + re-anchor; even with constant composition, retention wobbles 44-89%. Small samples — tendency signal only.',
       colMode: 'Mode', colN: 'N', colGod: 'god rate', colMed: 'med rate', colPure: 'pure rate',
       exportCsv: 'Export CSV', resetLog: 'Clear log', resetLogConfirm: 'Clear ALL experiment log entries? This cannot be undone.',
       recent: 'Recent entries', recentHint: 'The detector is a heuristic tendency signal; first_sentence is kept for human review.',
@@ -56,6 +61,11 @@ window.__ModuleLoader__.load({
       dockHint: 'Deus Trigger (experiment · community observation, unconfirmed)', dockSend: 'Inject & send', dockFill: 'Inject',
       autoSend: 'Auto-send after inject',
       detected_pure: 'pure', detected_med: 'med', detected_god: 'god', detected_unknown: 'unknown',
+      anchor: 'Anchor persistence', anchorHint: 'Per-turn opener watch for deus/minimal-preset sessions. Measured (§9): after the tool catalog expands, god-mode retention is 0/6 — all drift back; even with a constant composition, retention wobbles 44-89% turn to turn. Re-anchor on drift.',
+      anchorPresetInstalled: 'Installed agent presets (pick in Settings > Agent presets)', anchorNone: 'No watched sessions yet — pick a Deus Trigger preset in a session, or inject once.',
+      colSession: 'Session', colPreset: 'preset', colTurns: 'turns', colGodRate: 'god rate', colLastFp: 'latest', colAnchorState: 'state',
+      anchoredOn: 'anchored', drifted: 'drifted', reanchor: '⚓ Re-anchor', autoReanchor: 'Auto re-anchor on drift',
+      reanchorSent: 'Re-anchor nudge sent', dockAnchored: 'anchored',
     }
 
     const S = {
@@ -87,6 +97,7 @@ window.__ModuleLoader__.load({
       const [stats, setStats] = useState(null)
       const [entries, setEntries] = useState([])
       const [ver, setVer] = useState(null)
+      const [anchor, setAnchor] = useState(null)
       const [err, setErr] = useState('')
       const [copied, setCopied] = useState('')
       const [editing, setEditing] = useState(null) // {id, label_zh, prompt} draft
@@ -96,6 +107,7 @@ window.__ModuleLoader__.load({
         fetch('/deus/stats').then((r) => r.json()).then(setStats).catch(() => {})
         fetch('/deus/log').then((r) => r.json()).then((d) => setEntries(d.entries || [])).catch(() => {})
         fetch('/deus/version').then((r) => r.json()).then(setVer).catch(() => {})
+        fetch('/deus/anchor').then((r) => r.json()).then(setAnchor).catch(() => {})
       }
       useEffect(() => { refresh() }, [])
 
@@ -200,6 +212,33 @@ window.__ModuleLoader__.load({
           h('button', { style: { ...S.btn, color: '#f85149', borderColor: '#f85149' }, onClick: resetLog }, '🗑 ' + t('resetLog')),
         ),
 
+        h('div', { style: S.h2 }, t('anchor')),
+        h('div', { style: S.status }, t('anchorHint')),
+        anchor && anchor.agentPresets && h('div', { style: S.card },
+          h('div', { style: S.status }, t('anchorPresetInstalled')),
+          anchor.agentPresets.map((p) => h('div', { key: p.id, style: { display: 'flex', gap: '8px', alignItems: 'center', marginTop: '6px' } },
+            h('span', { style: { ...S.chip, color: p.installed ? '#3fb950' : '#f85149', borderColor: p.installed ? '#3fb950' : '#f85149' } }, p.installed ? '✓' : '✗'),
+            h('span', { style: S.name }, p.name || p.id),
+            p.reason ? h('span', { style: S.status }, '(' + p.reason + ')') : null,
+          )),
+        ),
+        anchor && anchor.sessions && anchor.sessions.length > 0
+          ? h('table', { style: S.table },
+              h('thead', null, h('tr', null,
+                h('th', { style: S.th }, t('colSession')), h('th', { style: S.th }, t('colPreset')),
+                h('th', { style: S.th }, t('colTurns')), h('th', { style: S.th }, t('colGodRate')),
+                h('th', { style: S.th }, t('colLastFp')), h('th', { style: S.th }, t('colAnchorState')))),
+              h('tbody', null, anchor.sessions.map((s) => h('tr', { key: s.sessionId },
+                h('td', { style: { ...S.td, ...S.mono } }, s.sessionId.slice(0, 8)),
+                h('td', { style: S.td }, s.preset),
+                h('td', { style: S.td }, s.total),
+                h('td', { style: { ...S.td, color: '#d2a8ff' } }, s.total ? Math.round(100 * s.god / s.total) + '%' : '—'),
+                h('td', { style: S.td }, s.lastFp ? t('detected_' + s.lastFp) : '—'),
+                h('td', { style: { ...S.td, color: s.drifted ? '#f85149' : '#3fb950' } }, s.drifted ? '⚠ ' + t('drifted') : '⚓ ' + t('anchoredOn')),
+              ))),
+            )
+          : h('div', { style: S.status }, t('anchorNone')),
+
         h('div', { style: S.h2 }, t('recent')),
         h('div', { style: S.status }, t('recentHint')),
         entries.length === 0 ? h('div', { style: S.status }, t('noData'))
@@ -227,10 +266,60 @@ window.__ModuleLoader__.load({
       useEffect(() => {
         fetch('/deus/presets').then((r) => r.json()).then((d) => setPresets(d.presets || [])).catch(() => {})
       }, [])
-      if (presets.length === 0) return null
 
-      const sessionId = props.session && props.session.sessionId
+      const sessionId = props.sessionId || (props.session && props.session.sessionId)
       const actions = props.inputActions
+
+      // v0.2 锚定维持：轮询宿主锚定状态，漂移时给重锚 chip / 自动重锚
+      const [anchor, setAnchor] = useState(null)
+      const [autoReanchor, setAutoReanchor] = useState(() => {
+        try { return window.localStorage.getItem('deus.autoReanchor') === '1' } catch { return false }
+      })
+      const [reanchorMsg, setReanchorMsg] = useState('')
+      const lastReanchorKey = useRef('')
+      const REANCHOR = 'We need to continue working on this together. Let us pick up where we left off. 我们继续协作，接着上一步往下做。'
+
+      useEffect(() => {
+        let dead = false
+        const poll = () => fetch('/deus/anchor').then((r) => r.json()).then((d) => { if (!dead) setAnchor(d) }).catch(() => {})
+        poll()
+        const timer = setInterval(poll, 4000)
+        return () => { dead = true; clearInterval(timer) }
+      }, [])
+
+      const st = anchor && Array.isArray(anchor.sessions)
+        ? anchor.sessions.find((s) => String(s.sessionId) === String(sessionId))
+        : null
+
+      async function fireReanchor() {
+        try {
+          await fetch('/deus/trigger', {
+            method: 'POST', headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ sessionId: String(sessionId || ''), mode: 'reanchor', prompt: REANCHOR }),
+          })
+        } catch { /* best-effort */ }
+        if (actions && typeof actions.setDraft === 'function') {
+          actions.setDraft(REANCHOR)
+          if (typeof actions.submit === 'function') actions.submit()
+          setReanchorMsg(t('reanchorSent'))
+          setTimeout(() => setReanchorMsg(''), 3000)
+        }
+      }
+
+      // 自动重锚：漂移且开启时自动发一次（按 sessionId+轮数去抖）
+      useEffect(() => {
+        if (!st || !st.drifted || !autoReanchor) return
+        const key = String(sessionId) + ':' + st.total
+        if (lastReanchorKey.current === key) return
+        lastReanchorKey.current = key
+        fireReanchor()
+      }, [st && st.drifted, st && st.total, autoReanchor])
+
+      function toggleAutoReanchor() {
+        const next = !autoReanchor
+        setAutoReanchor(next)
+        try { window.localStorage.setItem('deus.autoReanchor', next ? '1' : '0') } catch { /* ignore */ }
+      }
 
       async function fire(p) {
         try {
@@ -253,14 +342,24 @@ window.__ModuleLoader__.load({
         try { window.localStorage.setItem('deus.autoSend', next ? '1' : '0') } catch { /* ignore */ }
       }
 
+      if (presets.length === 0) return null // 所有 hooks 之上不可早退（React hooks 顺序）
+
       return h('div', { style: S.dock, title: t('dockHint') },
         h('span', { style: { fontSize: '11px', color: '#8b949e' } }, '⚗'),
         presets.map((p) => h('button', {
           key: p.id, style: S.dockChip, title: t('dockHint'),
           onClick: () => fire(p),
         }, (autoSend ? '🚀 ' : '⚡ ') + p.label_zh)),
+        st ? h('button', {
+          style: { ...S.dockChip, color: st.drifted ? '#f85149' : '#3fb950', borderColor: st.drifted ? '#f85149' : '#3fb950' },
+          title: st.drifted ? t('reanchor') : t('dockAnchored'),
+          onClick: st.drifted ? fireReanchor : undefined,
+        }, st.drifted ? '⚠ ' + t('reanchor') : `⚓ ${t('dockAnchored')} ${st.god}/${st.total}`) : null,
+        reanchorMsg ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, reanchorMsg) : null,
         h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, title: t('autoSend'), onClick: toggleAuto },
           (autoSend ? '☑ ' : '☐ ') + t('autoSend')),
+        st ? h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, title: t('autoReanchor'), onClick: toggleAutoReanchor },
+          (autoReanchor ? '☑ ' : '☐ ') + t('autoReanchor')) : null,
       )
     }
 

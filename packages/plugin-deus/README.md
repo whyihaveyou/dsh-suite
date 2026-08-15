@@ -18,10 +18,14 @@
    - **档 A（保守）**：Settings 面板一键复制 → 粘贴进输入框发送；宿主按 prompt 精确匹配自动配对判定。
    - **档 B（增强）**：对话输入框上方的芯片行，点击即写入草稿（可选自动发送），并向宿主打点配对。
 3. **起手识别器** — host 半侧监听 `session/event`，对首条回复做启发式判定：
-   `Let me…` → 纯区版 · `The user…`（含去冠词变体 `User wants…`）→ 中版 · `we` 起手（或首句 ≥3 个 we）→ 神版 · 其余 → 未判定。
+   `Let me…` → 纯区版 · `The user…`（含去冠词变体 `User wants/asks/says/is continuing…`）→ 中版 · `we` 起手（或首句 ≥3 个 we）→ 神版 · 其余 → 未判定。
    **实测校准**（`research/deus-mode-matrix.md`，120 次 API 采样）：指纹主要出现在**推理流**（`reasoning-delta`，如 "The user is asking…" / "We need answer…"），可见正文多为中文直答；识别器因此**优先判定推理流、可见文本兜底**，并额外识别推理流里的中文 `我们需要/我们应该…` 起手（神版等价）。与 120 例人工标注的神版判定一致率 99.2%。
 4. **实测日志 + 触发率统计** — 每次触发追加一条 JSONL（`~/.dsh/deus-mode/log.jsonl`，纯本地不上传）；
    面板给出每模式的 god/med/pure 比例 + **95% Wilson 置信区间**，可导出 CSV。
+5. **锚定维持（v0.2）** — 本团队漂移实测发现：一次锚定**不能**全程有效（工具目录补齐后神版维持率 0/6，构成恒定时也有 44-89% 逐轮摆动）。插件因此：
+   - 安装两个锚定 agent presets 到 `~/.dsh/.agent-presets/`（**窄锚** 2 工具 ~90% 触发 / **宽锚** ~8 工具 ~65% 换可用性），设置 > Agent presets 或会话 preset 选择器里直接选用，构成全程恒定；
+   - 对 deus/minimal preset 会话**逐轮判定指纹**，面板「锚定维持」区实时显示每轮指纹与漂移状态；
+   - 对话页 dock 出现 `⚓ 锚定维持中` 状态 chip；**漂移时变红**，点击发送重锚提示词（可开「漂移自动重锚」）；重锚轮日志以 `reanchor` 模式独立记录，便于对比重锚前后维持率。
 
 ## 安装 / Install
 
@@ -47,6 +51,12 @@ npx @deepseek-ai/dsh plugin --profile web add ./plugin-deus   # 在其父目录�
 - 日志只写本地 `$DSH_HOME/deus-mode/log.jsonl`，不上传、可一键清空、可导出 CSV。
 - 全部是用户正常交互（prompt 注入 + 回复观测），无越权、无绕过。
 - 若实验证明无差异：本插件的身份即**通用极简提示词 A/B 测试台**，"神模"只是第一个被测假设。
+
+## 实测依据 / Measured basis
+
+本团队 2026-08-15 实测（deepseek-v4-pro，N=440 次 API 采样，`research/deus-mode-matrix.md`）：
+神版触发率随工具数单调衰减（2 工具 ~90% → ~8 工具 ~65% → 25 工具 0%）；剥离注入上下文 20%→90%；
+讲解/咨询类任务 ~0%；锚定维持见上。全部为倾向信号，非官方证实。
 
 ## License
 

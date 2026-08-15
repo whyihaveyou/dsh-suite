@@ -120,6 +120,7 @@ function makeEntry(repo, meta) {
     description: { en: desc, zh: descZh }, // en = repo description verbatim; zh = 'untranslated' until a translator pass
     author: repo.split('/')[0],
     stars: meta.stars,
+    last_push: meta.last_push || '',
     license: meta.license || 'unknown',
     tags: [],
     dsh: { minVersion: '', peerCordis: '', node: '' },
@@ -175,6 +176,7 @@ async function main() {
     const desc = item.description;
     const meta = {
       stars: item.stargazers_count || 0,
+      last_push: item.pushed_at ? String(item.pushed_at).slice(0, 10) : '',
       description: desc,
       language: item.language,
       license: (item.license && item.license.spdx_id) || null,

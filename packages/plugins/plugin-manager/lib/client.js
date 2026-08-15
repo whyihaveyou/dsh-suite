@@ -21,7 +21,7 @@ window.__ModuleLoader__.load({
 
     const zh = {
       tab: '商店', search: '搜索插件…', category: '分类', sort: '排序',
-      all: '全部', byStars: '星标 ↓', byVerified: '最近验证', byCompat: '兼容优先',
+      all: '全部', byStars: '星标 ↓', byUpdated: '最近更新', byVerified: '最近验证', byCompat: '兼容优先',
       install: '安装', installing: '安装中…', copy: '复制命令', copied: '已复制',
       installed: '已装', confirmTitle: '确认安装', confirm: '确认', cancel: '取消',
       needRestart: '安装成功，请立即重启 DSH（重新运行 dsh web）使其生效', installFailed: '安装失败',
@@ -60,7 +60,7 @@ window.__ModuleLoader__.load({
     }
     const en = {
       tab: 'Store', search: 'Search plugins…', category: 'Category', sort: 'Sort',
-      all: 'All', byStars: 'Stars ↓', byVerified: 'Recently verified', byCompat: 'Compat first',
+      all: 'All', byStars: 'Stars ↓', byUpdated: 'Recently updated', byVerified: 'Recently verified', byCompat: 'Compat first',
       install: 'Install', installing: 'Installing…', copy: 'Copy cmd', copied: 'Copied',
       installed: 'Installed', confirmTitle: 'Confirm install', confirm: 'Confirm', cancel: 'Cancel',
       needRestart: 'Installed — restart DSH now (re-run dsh web) to take effect', installFailed: 'Install failed',
@@ -352,6 +352,7 @@ window.__ModuleLoader__.load({
           return tokens.every((w) => w && hay.includes(w))
         })
         if (sort === 'stars') list = list.slice().sort((a, b) => (b.stars || 0) - (a.stars || 0))
+        else if (sort === 'updated') list = list.slice().sort((a, b) => String(b.lastPush || '').localeCompare(String(a.lastPush || '')))
         else if (sort === 'verified') list = list.slice().sort((a, b) => String(b.compat?.lastVerified || b.lastVerified || '').localeCompare(String(a.compat?.lastVerified || a.lastVerified || '')))
         else if (sort === 'compat') { const rank = { ok: 0, unknown: 1, broken: 2, unmaintained: 3 }; list = list.slice().sort((a, b) => (rank[a.compatStatus] ?? 1) - (rank[b.compatStatus] ?? 1)) }
         return list
@@ -545,6 +546,7 @@ window.__ModuleLoader__.load({
         }, t('onlyOk')),
         h('select', { style: C.select, value: sort, onChange: (e) => setSort(e.target.value) },
           h('option', { value: 'stars' }, t('byStars')),
+          h('option', { value: 'updated' }, t('byUpdated')),
           h('option', { value: 'verified' }, t('byVerified')),
           h('option', { value: 'compat' }, t('byCompat'))),
       )

@@ -134,6 +134,7 @@ function trimPlugin(p) {
     category: p.category, compatStatus: p.compatStatus,
     installCmd: p.installCmd, repo: p.repo, license: p.license,
     featured: !!p.featured,
+    lastPush: p.lastPush || null,
   }
 }
 

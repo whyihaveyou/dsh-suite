@@ -229,12 +229,11 @@ window.__ModuleLoader__.load({
       return s
     }
 
+    // v0.8 ③: 已装精确对齐 —— 仅全名精确相等（loader 名字即完整 npm 名）。
+    // 旧实现近似子串互含把 152 对「同名异包」错标已装（如 dsh-remote ↔ @linxin666/dsh-remote-web-ui、dsh-web-ui ↔ dsh-web-ui-all）。
     function isInstalled(plugin, names) {
-      if (names.has(plugin.name)) return true
-      for (const n of names) {
-        if (n && (n.includes(plugin.name) || plugin.name.includes(n))) return true
-      }
-      return false
+      const target = String(plugin && plugin.name || '').trim()
+      return !!target && names.has(target)
     }
 
     function pkgSpec(installCmd) {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T09:42:03.421Z",
+  "generated_at": "2026-08-15T10:40:05.846Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -74,6 +74,15 @@
       "lastKnownUrl": "https://github.com/echo-escape/dsh-workbench"
     },
     {
+      "repo": "je00/dsh-codex-agent-bridge",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-15T09:42:03.402Z",
+      "lastDetectedAt": "2026-08-15T10:40:05.832Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/je00/dsh-codex-agent-bridge"
+    },
+    {
       "repo": "kanallas/api-cost-meter",
       "seen": 2,
       "firstDetectedAt": "2026-08-14T19:22:19.301Z",
@@ -135,15 +144,6 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
-    },
-    {
-      "repo": "je00/dsh-codex-agent-bridge",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-15T09:42:03.402Z",
-      "lastDetectedAt": "2026-08-15T09:42:03.403Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/je00/dsh-codex-agent-bridge"
     }
   ]
 }

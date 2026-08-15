@@ -657,8 +657,8 @@ function renderGrid(items, t, opts = {}) {
   return items.map(p => renderCard(p, t, opts)).join('\n');
 }
 
-/* 开箱即用 · 场景组合 —— 数据来自顶部 SCENARIOS，中英双语按当前页语言挑选 */
-function renderScenarios(t) {
+/* 开箱即用 · 场景组合（合并区）—— 数据来自顶部 SCENARIOS + 第一方工具子行（原独立 first-party 区并入，首页不再并存两块第一方区块），中英双语按当前页语言挑选 */
+function renderScenarios(t, data) {
   const zh = isZh(t);
   const pick = (m) => (zh ? (m.zh || m.en) : (m.en || m.zh));
   const cards = SCENARIOS.map((s) => {
@@ -680,11 +680,45 @@ function renderScenarios(t) {
       </div>
     </div>`;
   }).join('\n');
+
+  // 第一方工具子行（原独立区块内容并入；命令与文案与此前一致）
+  const storeCmd = 'dsh plugin --profile web add @dsh-suite/plugin-manager';
+  const themesCmd = 'dsh plugin --profile web add @dsh-suite/themes';
+  const storeDescText = t.storeDesc.replace('{n}', data.catalog.length);
+
   return `    <section class="scenarios" id="scenarios">
       <h2 class="section-title">${esc(t.scnTitle)}</h2>
       <p class="section-hint">${esc(t.scnHint)}</p>
       <div class="scn-grid">
 ${cards}
+      </div>
+      <div class="scn-fp">
+        <h3 class="scn-fp-title">${esc(t.firstParty)}</h3>
+        <div class="fp-grid">
+          <div class="fp-card">
+            <div class="fp-text">
+              <h3 class="fp-title">🛍 ${esc(t.storeTitle)}</h3>
+              <p class="fp-desc">${esc(storeDescText)}</p>
+              <div class="store-install">
+                <code class="install-cmd store-cmd">${esc(storeCmd)}</code>
+                <button class="copy-btn" type="button" data-cmd="${esc(storeCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
+              </div>
+            </div>
+            <img class="fp-img" src="assets/store-tab.png" alt="${esc(t.storeTitle)}" loading="lazy">
+          </div>
+          <div class="fp-card">
+            <div class="fp-text">
+              <h3 class="fp-title">🎨 ${esc(t.themesTitle)} <span class="fp-badge">dsh-themes</span></h3>
+              <p class="fp-desc">${esc(t.themesDesc)}</p>
+              <p class="fp-note">🆕 ${esc(t.themesNote)} · <a class="fp-repo-link" href="https://github.com/whyihaveyou/dsh-themes" target="_blank" rel="noopener noreferrer">${esc(t.themesRepo)} ↗</a></p>
+              <div class="store-install">
+                <code class="install-cmd store-cmd">${esc(themesCmd)}</code>
+                <button class="copy-btn" type="button" data-cmd="${esc(themesCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
+              </div>
+            </div>
+            <img class="fp-img" src="assets/themes/themes-preview.png" alt="${esc(t.themesTitle)}" loading="lazy">
+          </div>
+        </div>
       </div>
     </section>`;
 }
@@ -712,9 +746,6 @@ function renderPage(t, data, baseUrl, snapshot) {
   const dashDistSvg = lbChartBars(dashBuckets);
   const dNow = new Date();
   const todayStamp = `${dNow.getFullYear()}-${String(dNow.getMonth() + 1).padStart(2, '0')}-${String(dNow.getDate()).padStart(2, '0')}`;
-  const storeCmd = 'dsh plugin --profile web add @dsh-suite/plugin-manager';
-const themesCmd = 'dsh plugin --profile web add @dsh-suite/themes';
-  const storeDescText = t.storeDesc.replace('{n}', catalog.length);
 
   const thisUrl = baseUrl + (isZh(t) ? 'zh.html' : '');
   const altUrl = baseUrl + (isZh(t) ? '' : 'zh.html');
@@ -774,35 +805,6 @@ const themesCmd = 'dsh plugin --profile web add @dsh-suite/themes';
           <div class="dash-svg" id="dash-dist-svg">${dashDistSvg}</div>
           <p class="dash-cap">${esc(t.dashSource)} ${todayStamp}</p>
         </figure>
-      </div>
-    </section>
-
-    <section class="first-party" id="first-party">
-      <h2 class="section-title">${esc(t.firstParty)}</h2>
-      <div class="fp-grid">
-        <div class="fp-card">
-          <div class="fp-text">
-            <h3 class="fp-title">🛍 ${esc(t.storeTitle)}</h3>
-            <p class="fp-desc">${esc(storeDescText)}</p>
-            <div class="store-install">
-              <code class="install-cmd store-cmd">${esc(storeCmd)}</code>
-              <button class="copy-btn" type="button" data-cmd="${esc(storeCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
-            </div>
-          </div>
-          <img class="fp-img" src="assets/store-tab.png" alt="${esc(t.storeTitle)}" loading="lazy">
-        </div>
-        <div class="fp-card">
-          <div class="fp-text">
-            <h3 class="fp-title">🎨 ${esc(t.themesTitle)} <span class="fp-badge">dsh-themes</span></h3>
-            <p class="fp-desc">${esc(t.themesDesc)}</p>
-            <p class="fp-note">🆕 ${esc(t.themesNote)} · <a class="fp-repo-link" href="https://github.com/whyihaveyou/dsh-themes" target="_blank" rel="noopener noreferrer">${esc(t.themesRepo)} ↗</a></p>
-            <div class="store-install">
-              <code class="install-cmd store-cmd">${esc(themesCmd)}</code>
-              <button class="copy-btn" type="button" data-cmd="${esc(themesCmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
-            </div>
-          </div>
-          <img class="fp-img" src="assets/themes/themes-preview.png" alt="${esc(t.themesTitle)}" loading="lazy">
-        </div>
       </div>
     </section>
 `;
@@ -878,7 +880,7 @@ const themesCmd = 'dsh plugin --profile web add @dsh-suite/themes';
       </div>
     </section>
 
-${renderScenarios(t)}
+${renderScenarios(t, data)}
 
 ${dashSection}
     <section class="controls" aria-label="search and filters">

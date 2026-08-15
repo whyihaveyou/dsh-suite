@@ -525,9 +525,11 @@ html[data-theme="light"] .badge-risk { color: #a87808; }
 /* 皮肤中心卡：试穿已上线 + 安装命令 */
 .fp-repo-link { font-weight: 600; }
 
-/* ---------- 开箱即用 · 场景组合（首页 hero 下方 / 目录上方） ---------- */
+/* ---------- 开箱即用 · 场景组合（首页 hero 下方 / 目录上方；含第一方工具子行） ---------- */
 .scenarios { margin-bottom: 40px; }
 .scn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)); gap: 16px; }
+.scn-fp { margin-top: 28px; }
+.scn-fp-title { margin: 0 0 12px; font-size: 15px; font-weight: 800; color: var(--text); letter-spacing: .3px; }
 .scn-card {
   display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; min-width: 0;
   background: linear-gradient(135deg, rgba(77, 107, 254, .09), rgba(52, 211, 153, .04)), var(--surface);

@@ -706,6 +706,9 @@ const themesCmd = 'dsh plugin --profile web add @dsh-suite/themes';
   <meta property="og:description" content="${esc(t.description)}">
   <meta property="og:url" content="${esc(thisUrl)}">
   <meta property="og:image" content="${esc(baseUrl)}assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="dsh-suite — DeepSeek Harness 插件目录">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(t.title)}">
   <meta name="twitter:description" content="${esc(t.description)}">
@@ -1069,7 +1072,12 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
   <meta property="og:description" content="${esc(t.lbDescription)}">
   <meta property="og:url" content="${esc(thisUrl)}">
   <meta property="og:image" content="${esc(baseUrl)}assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="dsh-suite — 星标榜 / star leaderboard">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(t.lbTitle)}">
+  <meta name="twitter:description" content="${esc(t.lbDescription)}">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
@@ -1237,7 +1245,12 @@ function renderLearnPage(t, data, baseUrl) {
   <meta property="og:description" content="${esc(t.learnDescription)}">
   <meta property="og:url" content="${esc(thisUrl)}">
   <meta property="og:image" content="${esc(baseUrl)}assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="dsh-suite — 学习资源 / learning resources">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(t.learnTitle)}">
+  <meta name="twitter:description" content="${esc(t.learnDescription)}">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">

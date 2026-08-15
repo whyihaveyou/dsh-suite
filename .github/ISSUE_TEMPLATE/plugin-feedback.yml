@@ -1,0 +1,43 @@
+name: 问题反馈 / Plugin feedback
+about: 报告第一方插件的问题或建议 / Report a bug or suggest a feature for a first-party plugin
+title: '[反馈] '
+labels: [feedback]
+body:
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: 插件名 / Plugin
+      description: 哪个插件有问题 / Which plugin?
+      options:
+        - plugin-manager
+        - plugin-notify
+        - plugin-session-export
+        - plugin-team-board
+        - all
+        - preset-center
+        - skin-center
+        - create-dsh-plugin
+    validations:
+      required: true
+  - type: input
+    id: dsh-version
+    attributes:
+      label: DSH 版本 / DSH version
+      placeholder: '例如 0.1.0-rc.6'
+      description: 你的 DSH 版本 / Your DSH version
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述 / Problem description
+      description: 发生了什么？尽量提供复现步骤 / What happened? Steps to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为 / Expected behavior
+      description: 你期望它怎么做 / What should happen instead?
+    validations:
+      required: false

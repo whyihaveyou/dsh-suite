@@ -1,6 +1,8 @@
 # @dsh-suite/plugin-session-export
 
 [![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
+[💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=plugin-session-export)
+
 
 > DSH 插件：把 append-only 会话日志导出成**人读的 Markdown / HTML**，按 Trajectory 来源分组渲染
 > （系统提示 / 思维链 / 工具调用 / 子agent）。官方 `session-log-export` 只给 raw JSONL，本插件补齐

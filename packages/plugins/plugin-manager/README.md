@@ -1,6 +1,8 @@
 # @dsh-suite/plugin-manager — DSH 插件应用商店 / Plugin Store for DSH Web UI
 
 [![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
+[💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=plugin-manager)
+
 
 > v0.4.0 — 复制按钮反馈修复 + GitHub opengraph 卡片预览缩略图（lazy）。
 

@@ -1,5 +1,7 @@
 # @dsh-suite/preset-center — 中文开箱即用预设全家桶 / Chinese out-of-the-box preset pack
 
+[💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=preset-center)
+
 > DSH 的「应用模板」：装一个包，获得三套可直接对话干活的中文 agent 预设，零配置上手。
 
 ## 安装 / Install

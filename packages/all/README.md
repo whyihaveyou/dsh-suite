@@ -1,5 +1,7 @@
 # @dsh-suite/all — DSH All-in-One 全家桶
 
+[💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=all)
+
 一键安装 DeepSeek Harness 第一方最佳插件全家桶。
 
 ## 安装

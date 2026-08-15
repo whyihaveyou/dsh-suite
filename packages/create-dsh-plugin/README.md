@@ -1,5 +1,7 @@
 # create-dsh-plugin
 
+[💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=create-dsh-plugin)
+
 > Scaffold a [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) plugin in seconds.
 > 一键脚手架生成 DeepSeek Harness 插件。
 

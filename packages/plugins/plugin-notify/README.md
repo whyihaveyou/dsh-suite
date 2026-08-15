@@ -1,6 +1,8 @@
 # @dsh-suite/plugin-notify
 
 [![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
+[💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=plugin-notify)
+
 
 > DSH 插件：回合完成 / 出错 / 待审批时，把通知推到 IM webhook + 本机系统通知。
 > 社区现有 `dsh-notification` 只弹本机窗口；本插件做**远程 IM webhook**（飞书 / 企业微信 / 钉钉 / Slack / Discord / 自定义），是差异化能力。

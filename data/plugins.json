@@ -83,7 +83,7 @@
     {
       "id": "role-model",
       "name": "role-model",
-      "npm": "role-model",
+      "npm": "",
       "repo": "try-works/role-model",
       "url": "https://github.com/try-works/role-model",
       "category": "tools",
@@ -106,7 +106,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add role-model",
+      "install": "",
       "featured": false,
       "isOfficialBeta": true,
       "language": "TypeScript",
@@ -123,7 +123,7 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": null
+      "installNote": "not-a-plugin: 协议项目（把每个任务路由到合适模型），非 DSH 插件；npm 名被无关包占用"
     },
     {
       "id": "irmia-devkit-open",
@@ -2200,7 +2200,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/omdsh-dev/web-components",
       "featured": false,
       "isOfficialBeta": false,
       "language": "TypeScript",
@@ -2210,7 +2210,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "zotero-wave-rag",
@@ -2388,7 +2389,7 @@
     {
       "id": "dsh-deep-whale",
       "name": "dsh-deep-whale",
-      "npm": null,
+      "npm": "",
       "repo": "Small-tailqwq/dsh-deep-whale",
       "url": "https://github.com/Small-tailqwq/dsh-deep-whale",
       "category": "ui",
@@ -2428,7 +2429,7 @@
         "shellAccess": null,
         "noLicense": true
       },
-      "installNote": "not-a-plugin: 非 dsh plugin（awesome 列表 / 独立应用 / 文档站等）"
+      "installNote": "not-a-plugin: 鲸鱼娘主题皮肤系列（独立分发仓库，无 dsh.bundle/package.json），非可安装插件；按仓库说明使用"
     },
     {
       "id": "dsh-focus-chat",
@@ -3876,7 +3877,7 @@
         "shellAccess": true,
         "noLicense": false
       },
-      "installNote": "build-from-source: 仓库无 npm 发布包（private monorepo / 未发布），只能源码构建"
+      "installNote": "跨会话长期记忆+自我进化插件，但仓库无 dsh.bundle：按仓库说明源码安装，或等作者发布 npm bundle"
     },
     {
       "id": "dsh-web-archive",
@@ -4533,7 +4534,7 @@
     {
       "id": "exo",
       "name": "exo",
-      "npm": "exo",
+      "npm": "",
       "repo": "exoharness/exo",
       "url": "https://github.com/exoharness/exo",
       "category": "orchestration",
@@ -4556,7 +4557,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add exo",
+      "install": "",
       "featured": false,
       "isOfficialBeta": true,
       "language": "Rust",
@@ -4573,12 +4574,12 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": null
+      "installNote": "not-a-plugin: Agent 平台，非 DSH 插件；npm 名被无关包占用"
     },
     {
       "id": "synergy",
       "name": "synergy",
-      "npm": "synergy",
+      "npm": "",
       "repo": "SII-Holos/synergy",
       "url": "https://github.com/SII-Holos/synergy",
       "category": "orchestration",
@@ -4601,7 +4602,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add synergy",
+      "install": "",
       "featured": false,
       "isOfficialBeta": true,
       "language": "TypeScript",
@@ -4618,12 +4619,12 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": null
+      "installNote": "not-a-plugin: Agent 平台，非 DSH 插件；npm 名被无关包占用"
     },
     {
       "id": "ccteam",
       "name": "ccteam",
-      "npm": "ccteam",
+      "npm": "",
       "repo": "firstintent/ccteam",
       "url": "https://github.com/firstintent/ccteam",
       "category": "orchestration",
@@ -4646,7 +4647,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add ccteam",
+      "install": "",
       "featured": false,
       "isOfficialBeta": true,
       "language": "Rust",
@@ -4663,7 +4664,7 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": null
+      "installNote": "not-a-plugin: Claude Code 团队协作工具，非 DSH 插件"
     },
     {
       "id": "matebot",
@@ -4848,7 +4849,7 @@
     {
       "id": "distill",
       "name": "distill",
-      "npm": "distill",
+      "npm": "",
       "repo": "LoserFox/distill",
       "url": "https://github.com/LoserFox/distill",
       "category": "orchestration",
@@ -4871,7 +4872,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add distill",
+      "install": "git+https://github.com/LoserFox/distill",
       "featured": true,
       "isOfficialBeta": false,
       "language": "TypeScript",
@@ -4888,7 +4889,7 @@
         "shellAccess": false,
         "noLicense": true
       },
-      "installNote": null
+      "installNote": "git 源: 自动对话蒸馏插件（git 源）：npm 名被无关包（JSON cleaner）占用，用 git+ 安装"
     },
     {
       "id": "dsh-agent-teams",
@@ -5521,7 +5522,7 @@
     {
       "id": "awesome-dsh-plugins",
       "name": "awesome-dsh-plugins",
-      "npm": "awesome-dsh-plugins",
+      "npm": "",
       "repo": "AdamPlatin123/awesome-dsh-plugins",
       "url": "https://github.com/AdamPlatin123/awesome-dsh-plugins",
       "category": "utility",
@@ -5544,7 +5545,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add awesome-dsh-plugins",
+      "install": "",
       "featured": false,
       "isOfficialBeta": false,
       "language": "Shell",
@@ -5561,7 +5562,7 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": null
+      "installNote": "not-a-plugin: awesome 列表（目录页），非可安装插件"
     },
     {
       "id": "deepseek-harness-applicants",
@@ -5701,7 +5702,7 @@
     {
       "id": "agent-skills",
       "name": "agent-skills",
-      "npm": "agent-skills",
+      "npm": "",
       "repo": "GitHubxsy/agent-skills",
       "url": "https://github.com/GitHubxsy/agent-skills",
       "category": "utility",
@@ -5724,7 +5725,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add agent-skills",
+      "install": "",
       "featured": false,
       "isOfficialBeta": true,
       "language": "Python",
@@ -5741,7 +5742,7 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": null
+      "installNote": "not-a-plugin: 技能集合仓库，非可安装插件；npm 名被无关包占用"
     },
     {
       "id": "dsh-at-file",
@@ -5904,7 +5905,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add dsh-ads",
+      "install": "git+https://github.com/Nagi-ovo/dsh-ads",
       "featured": false,
       "isOfficialBeta": false,
       "language": "TypeScript",
@@ -5921,7 +5922,7 @@
         "shellAccess": false,
         "noLicense": true
       },
-      "installNote": null
+      "installNote": "★359：npm 同名包是占位概念包（无 dsh.bundle），实际用 git 源安装"
     },
     {
       "id": "dsh-group-photo",
@@ -6456,7 +6457,7 @@
     {
       "id": "awesome-dsh-plugin-bruc3van",
       "name": "awesome-dsh-plugin",
-      "npm": "awesome-dsh-plugin",
+      "npm": "",
       "repo": "bruc3van/awesome-dsh-plugin",
       "url": "https://github.com/bruc3van/awesome-dsh-plugin",
       "category": "utility",
@@ -6479,7 +6480,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add awesome-dsh-plugin",
+      "install": "",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -6496,7 +6497,7 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": null
+      "installNote": "not-a-plugin: awesome 列表（目录页），非可安装插件"
     },
     {
       "id": "dsh-launcher",
@@ -7176,7 +7177,7 @@
     {
       "id": "modsearch",
       "name": "modsearch",
-      "npm": "modsearch",
+      "npm": "",
       "repo": "liustack/modsearch",
       "url": "https://github.com/liustack/modsearch",
       "category": "tools",
@@ -7199,7 +7200,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "dsh plugin add modsearch",
+      "install": "git+https://github.com/liustack/modsearch",
       "featured": false,
       "isOfficialBeta": false,
       "language": "TypeScript",
@@ -7216,7 +7217,7 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": null
+      "installNote": "git 源: 网页搜索桥插件（git 源）：npm 名被无关包（npm CLI 搜索）占用，用 git+ 安装"
     },
     {
       "id": "dsh-browser",
@@ -7776,7 +7777,7 @@
         "lastVerified": "2026-08-15",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/GiantGKL/dsh-cost",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -7786,7 +7787,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-wechat-notify",
@@ -9357,7 +9359,7 @@
         "lastVerified": "2026-08-15",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/hisaniwo/dsh-ergonomics",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -9367,7 +9369,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "securstack-dsh-plugin",
@@ -10585,7 +10588,7 @@
         "lastVerified": "2026-08-15",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/rainforest888/dsh-plugins-raincode",
       "featured": false,
       "isOfficialBeta": false,
       "language": "TypeScript",
@@ -10595,7 +10598,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-composer-history",
@@ -10623,7 +10627,7 @@
         "lastVerified": "2026-08-15",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/PerryLink/dsh-composer-history",
       "featured": false,
       "isOfficialBeta": false,
       "language": "TypeScript",
@@ -10633,7 +10637,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-agent-arcade",
@@ -14061,7 +14066,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/schhaohao/dsh-file-explorer",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -14071,7 +14076,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-tool-reqpipe",
@@ -16789,7 +16795,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/Bandersnatch0x/amber-protocol",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -16799,7 +16805,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-resume-plugin",
@@ -16985,7 +16992,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/Very12345/sai",
       "featured": false,
       "isOfficialBeta": false,
       "language": "Kotlin",
@@ -16995,7 +17002,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-plugin-codex-import",
@@ -17441,7 +17449,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/KinGao294/dsh-skin",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -17457,7 +17465,8 @@
         "networkEgress": false,
         "shellAccess": false,
         "noLicense": false
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-revdiff",
@@ -19449,7 +19458,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/ohtokaah-sys/dsh-plugins",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -19458,7 +19467,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-cost-dongsheng123132",
@@ -27355,7 +27365,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/kazecreator/dsh-plugins",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -27365,7 +27375,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-tool-playwright",
@@ -27925,7 +27936,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/NinjaSln-labs/dsh-plugins",
       "featured": false,
       "isOfficialBeta": false,
       "language": "TypeScript",
@@ -27935,7 +27946,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-godot-tool",
@@ -32637,7 +32649,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/evanfang0054/dsh-tailscale-console",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -32647,7 +32659,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-sidebar-mode",
@@ -36484,7 +36497,7 @@
         "lastVerified": "",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/HenC49/dsh-mcp-manager",
       "featured": false,
       "isOfficialBeta": false,
       "language": "JavaScript",
@@ -36494,7 +36507,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-think-any-lang",
@@ -38735,7 +38749,7 @@
         "shellAccess": null,
         "noLicense": false
       },
-      "installNote": "build-from-source: 仓库无 npm 发布包（private monorepo / 未发布），只能源码构建"
+      "installNote": "agent 预设（preset）而非插件：把仓库 preset 目录拷贝到 <dshHome>/.agent-presets/，在 Settings → Agent presets 选择使用"
     },
     {
       "id": "touhou-hakurei",
@@ -42843,7 +42857,7 @@
         "lastVerified": "2026-08-15",
         "note": ""
       },
-      "install": "",
+      "install": "git+https://github.com/le-soleil-se-couche/dsh-token-cost",
       "featured": false,
       "isOfficialBeta": false,
       "language": "TypeScript",
@@ -42853,7 +42867,8 @@
         "level": 1,
         "l3Verified": false,
         "source": "risk-scan; L3 pending compat layer2/3"
-      }
+      },
+      "installNote": "git 源收录：无 npm 包（name 撞车无关包），用 git+ 安装"
     },
     {
       "id": "dsh-utility-tools",

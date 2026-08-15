@@ -1,0 +1,7 @@
+# @dsh-suite/preset-center bundle patch. Installed via:
+#   dsh plugin --profile web add @dsh-suite/preset-center
+# The node half (exports ".") serves /preset-center/* routes (list/apply/remove);
+# the browser half (exports "./client") injects the 场景包 section into Settings.
+- insert:
+    - id: preset-center
+      name: '@dsh-suite/preset-center'

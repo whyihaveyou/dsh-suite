@@ -1,6 +1,6 @@
 {
   "name": "@dsh-suite/preset-center",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "中文开箱即用预设全家桶：小红书笔记助手 / 中文文案润色 / 日报周报生成器，一键应用到官方 Agent presets / Out-of-the-box Chinese agent presets: Xiaohongshu notes, copy polishing, daily/weekly reports.",
   "type": "module",
   "main": "lib/index.js",

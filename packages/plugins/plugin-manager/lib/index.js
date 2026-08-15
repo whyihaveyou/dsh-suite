@@ -66,13 +66,23 @@ function dshHome() {
   return process.env.DSH_HOME || join(homedir(), '.dsh')
 }
 
-function spawnCmd(cmd, args, timeoutMs) {
+function spawnCmd(cmd, args, timeoutMs, onLine) {
   return new Promise((resolve) => {
     const child = spawn(cmd, args, { env: process.env, stdio: ['ignore', 'pipe', 'pipe'] })
     let out = ''
     let err = ''
-    child.stdout.on('data', (d) => { out += d })
-    child.stderr.on('data', (d) => { err += d })
+    // v0.8 ②: onLine 逐行增量回调 —— 真增量（data 事件行缓冲），无行回调时零开销
+    let rest = ''
+    const feed = (d) => {
+      if (!onLine) return
+      rest += d.toString('utf8')
+      const lines = rest.split('\n')
+      rest = lines.pop() || ''
+      for (const l of lines) if (l.trim()) onLine(l)
+    }
+    const flush = () => { if (onLine && rest.trim()) { onLine(rest); rest = '' } }
+    child.stdout.on('data', (d) => { out += d; feed(d) })
+    child.stderr.on('data', (d) => { err += d; feed(d) })
     const timer = setTimeout(() => {
       child.kill('SIGKILL')
       resolve({ ok: false, out, log: (out + err).trim() || cmd + ' timed out', exitCode: null, timedOut: true })
@@ -83,6 +93,7 @@ function spawnCmd(cmd, args, timeoutMs) {
     })
     child.on('close', (code) => {
       clearTimeout(timer)
+      flush()
       resolve({ ok: code === 0, out, log: (out + err).trim(), exitCode: code, timedOut: false })
     })
   })
@@ -99,8 +110,8 @@ function parseAdded(stdout) {
 
 // ---- install (with exit-0 + dependency-added + mounted verification) ----
 
-async function runInstall(pkg, profile) {
-  const add = await spawnCmd('dsh', ['plugin', '--profile', profile, 'add', pkg], INSTALL_TIMEOUT_MS)
+async function runInstall(pkg, profile, onLine) {
+  const add = await spawnCmd('dsh', ['plugin', '--profile', profile, 'add', pkg], INSTALL_TIMEOUT_MS, onLine)
   if (!add.ok) {
     return { ok: false, log: add.log || '(no output)', exitCode: add.exitCode, needRestart: false, timedOut: add.timedOut, profile }
   }
@@ -117,7 +128,7 @@ async function runInstall(pkg, profile) {
     }
     return { ok: false, log: (add.log + '\n⚠ exit 0 but pnpm reported no added dependency — install did not take effect').trim(), exitCode: 0, needRestart: false, timedOut: false, profile }
   }
-  const dump = await spawnCmd('dsh', ['--profile', profile, '--dump-config'], VERIFY_TIMEOUT_MS)
+  const dump = await spawnCmd('dsh', ['--profile', profile, '--dump-config'], VERIFY_TIMEOUT_MS, onLine)
   const mounted = added.some((name) => dump.out.includes(name))
   return { ok: true, log: add.log, exitCode: 0, needRestart: true, timedOut: false, installed: added, mounted, profile }
 }
@@ -239,6 +250,26 @@ export function apply(ctx) {
       },
     })
 
+    // v0.8 ②: 流式安装 —— 原生 res 分块 NDJSON（{t:start}/{t:log}/{t:done,result}）。
+    // 不放行缓存/压缩，x-accel-buffering 防代理缓冲。buffered /install 保持不变作回退。
+    const disposeInstallStream = ctx.webServer.register({
+      kind: 'exact',
+      path: '/plugin-manager/install-stream',
+      handler: async (req, res) => {
+        const body = await readJsonBody(req)
+        const pkg = body && typeof body.pkg === 'string' && body.pkg.trim() ? body.pkg.trim() : null
+        if (!pkg) return json(res, { ok: false, error: 'missing pkg' }, 400)
+        const profile = typeof body.profile === 'string' && body.profile ? body.profile : currentProfile()
+        try { req.socket.setNoDelay(true) } catch { /* noop */ }
+        res.writeHead(200, { 'content-type': 'application/x-ndjson; charset=utf-8', 'cache-control': 'no-cache, no-transform', 'x-accel-buffering': 'no' })
+        const send = (obj) => { try { res.write(JSON.stringify(obj) + '\n') } catch { /* client gone */ } }
+        send({ t: 'start', spec: pkg })
+        const r = await runInstall(pkg, profile, (line) => send({ t: 'log', line }))
+        send({ t: 'done', result: r })
+        res.end()
+      },
+    })
+
     const disposeList = ctx.webServer.register({
       kind: 'exact',
       path: '/plugin-manager/list',
@@ -354,6 +385,6 @@ export function apply(ctx) {
     // warm the catalog cache in the background so the first Store open is fast
     fetchCatalog().catch(() => {})
 
-    return () => { disposeInstall(); disposeList(); disposeCatalog(); disposeUpdates(); disposeInstalled(); disposeUninstall(); disposeUpdate() }
+    return () => { disposeInstall(); disposeInstallStream(); disposeList(); disposeCatalog(); disposeUpdates(); disposeInstalled(); disposeUninstall(); disposeUpdate() }
   }, 'plugin-manager: routes')
 }

@@ -292,6 +292,7 @@ window.__ModuleLoader__.load({
       const [detail, setDetail] = useState(null) // v0.6 F-A: 详情抽屉
       const [installed, setInstalled] = useState([])
       const [installing, setInstalling] = useState(null)
+      const [installLog, setInstallLog] = useState([]) // v0.8 ②: 安装实时日志行
       const [results, setResults] = useState({})
       const [confirmPkg, setConfirmPkg] = useState(null)
       const [copied, setCopied] = useState(null)
@@ -387,17 +388,56 @@ window.__ModuleLoader__.load({
         return () => io.disconnect()
       }, [visible, filtered.length])
 
+      // v0.8 ②: 流式安装 —— /install-stream NDJSON 首选项；读流异常静默回退 buffered /install，
+      // 不硬造假进度（回退时面板仅常驻「安装中」，无伪行）。
+      async function streamInstall(spec, onLine) {
+        const res = await fetch('/plugin-manager/install-stream', {
+          method: 'POST', headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ pkg: spec }),
+        })
+        const ctype = res.headers.get('content-type') || ''
+        if (!res.body || !ctype.includes('application/x-ndjson')) { const e = new Error('no-stream'); e.noStream = true; throw e }
+        const reader = res.body.getReader()
+        const dec = new TextDecoder()
+        let buf = ''
+        let result = null
+        for (;;) {
+          const rd = await reader.read()
+          if (rd.done) break
+          buf += dec.decode(rd.value, { stream: true })
+          const lines = buf.split('\n')
+          buf = lines.pop() || ''
+          for (const ln of lines) {
+            if (!ln.trim()) continue
+            try {
+              const ev = JSON.parse(ln)
+              if (ev.t === 'log' && onLine) onLine(ev.line)
+              else if (ev.t === 'done') result = ev.result
+            } catch { /* 忽略半行残片 */ }
+          }
+        }
+        if (!result) { const e = new Error('stream-ended-early'); throw e }
+        return result
+      }
+
       async function doInstall(p) {
         const spec = pkgSpec(p.installCmd)
         if (!spec) return
         setInstalling(p.name)
         setResults((r) => ({ ...r, [p.name]: null }))
         try {
-          const res = await fetch('/plugin-manager/install', {
-            method: 'POST', headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ pkg: spec }),
-          })
-          const data = await res.json()
+          setInstallLog([])
+          let data
+          try {
+            data = await streamInstall(spec, (line) => setInstallLog((l) => (l.length >= 80 ? l.slice(-79) : l).concat(line)))
+          } catch (_streamErr) {
+            setInstallLog([])
+            const res = await fetch('/plugin-manager/install', {
+              method: 'POST', headers: { 'content-type': 'application/json' },
+              body: JSON.stringify({ pkg: spec }),
+            })
+            data = await res.json()
+          }
           setResults((r) => ({ ...r, [p.name]: data }))
           if (data.ok) {
             const list = await fetchJson('/plugin-manager/list').then((r) => (r.ok ? r.value : [])).catch(() => [])
@@ -730,6 +770,14 @@ window.__ModuleLoader__.load({
         )
       })
 
+      // v0.8 ②: 实时安装日志悬浮面板（真流式行；buffered 回退时仅显示「…」）
+      const installPanel = installing
+        ? h('div', { style: { position: 'fixed', right: '16px', bottom: '16px', width: '380px', maxWidth: '70vw', background: '#0d1117', border: '1px solid #30363d', borderRadius: '10px', padding: '10px 12px', zIndex: '70', boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }, key: 'install-panel' },
+            h('div', { style: { fontSize: '12px', fontWeight: '700', color: '#e6edf3', marginBottom: '6px' } }, '⬇ ' + t('installing') + ' ' + installing),
+            h('div', { style: { fontFamily: 'ui-monospace, SFMono-Regular, monospace', fontSize: '10px', lineHeight: '1.45', color: '#8b949e', maxHeight: '120px', overflowY: 'auto', whiteSpace: 'pre-wrap', wordBreak: 'break-all' } },
+              installLog.length ? installLog.slice(-10).join('\n') : '…'))
+        : null
+
       const empty = filtered.length === 0
         ? h('div', { style: C.desc }, '🔍 ' + t('empty') + ' ' + (search ? '"' + search + '"' : '') + ' ',
             h('button', { style: C.btnGhost, onClick: () => { setSearch(''); setCategory('all') } }, t('clear')))
@@ -871,7 +919,7 @@ window.__ModuleLoader__.load({
             h('span', null, '🔎 ' + t('watchLine').replace('{x}', watchStats[0]).replace('{y}', watchStats[1])),
             h('a', { href: t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html', target: '_blank', rel: 'noreferrer', style: { color: '#79c0ff', textDecoration: 'none' } }, t('watchLink')))
         : null,
-      empty, modal, manualModal, drawerEl)
+      empty, modal, manualModal, drawerEl, installPanel)
     }
 
     return {

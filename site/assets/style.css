@@ -441,29 +441,21 @@ section { margin-bottom: 48px; }
 }
 
 
-/* ---------- 第一方工具双卡（商店 + 皮肤中心） ---------- */
-.first-party { margin-bottom: 40px; }
-.fp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-@media (max-width: 880px) { .fp-grid { grid-template-columns: 1fr; } }
-.fp-card {
-  display: flex; align-items: center; gap: 18px; padding: 16px 18px;
-  background: linear-gradient(135deg, rgba(77, 107, 254, .10), rgba(52, 211, 153, .05)), var(--surface);
-  border: 1px solid var(--border); border-radius: var(--radius);
-  transition: border-color .15s, transform .15s; color: var(--text);
-}
-.fp-link:hover { border-color: var(--brand); transform: translateY(-2px); text-decoration: none; }
-.fp-text { flex: 1; min-width: 0; }
-.fp-title { margin: 0 0 6px; font-size: 15px; font-weight: 800; }
+/* ---------- 第一方产品卡（融合进场景区 grid，同卡片层级） ---------- */
 .fp-badge { font-size: 10px; font-weight: 700; color: var(--brand-bright); background: var(--brand-soft); padding: 2px 7px; border-radius: var(--radius-badge); vertical-align: 2px; }
-.fp-desc { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; line-height: 1.55; }
-.fp-note { margin: 0; font-size: 12px; color: var(--faint); }
-.fp-img { width: 300px; max-width: 42%; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); }
-@media (max-width: 880px) {
-  .fp-card { flex-direction: column; align-items: stretch; min-width: 0; }
-  .fp-img { width: 100%; max-width: 100%; }
-  .store-install { min-width: 0; flex-wrap: nowrap; }
-  .store-install .install-cmd { flex: 1; }
+.fp-note { font-size: 12px; color: var(--faint); }
+.scn-card-prod .fp-img { display: block; width: 100%; max-width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); margin: 2px 0 10px; }
+
+/* ---------- 顶部公告条（dsh-workstation 开发中） ---------- */
+.ws-banner {
+  display: block; margin: 0 auto 0; max-width: var(--max-w, 1120px); padding: 9px 14px;
+  background: linear-gradient(90deg, rgba(77, 107, 254, .14), rgba(52, 211, 153, .10));
+  border: 1px solid var(--border); border-top: none; border-radius: 0 0 var(--radius) var(--radius);
+  color: var(--text); font-size: 13px; font-weight: 600; text-align: center; text-decoration: none;
+  transition: border-color .15s;
 }
+.ws-banner:hover { border-color: var(--brand); color: var(--brand-bright); text-decoration: none; }
+@media (max-width: 640px) { .ws-banner { font-size: 12px; padding: 8px 10px; } }
 
 
 /* ---------- 日间模式（light theme） ---------- */
@@ -511,15 +503,6 @@ html[data-theme="light"] .cta-cmd { background: var(--bg-soft); }
 .nav-theme:hover { border-color: var(--brand); background: var(--brand-soft); }
 
 
-/* ---------- 证据等级徽章 + 风险标志（证据而非背书） ---------- */
-.badge-ev { cursor: help; }
-.badge-ev.badge-ev1 { background: rgba(148, 163, 184, .16); color: var(--muted); }
-.badge-ev.badge-ev2 { background: rgba(52, 211, 153, .15); color: var(--green); }
-.badge-ev.badge-ev3 { background: rgba(167, 139, 250, .18); color: var(--violet); }
-.badge-risk { background: rgba(250, 204, 21, .18); color: #d9a406; cursor: help; }
-.badge-risk:not(:hover) { opacity: .95; }
-.badge-risk-clean { background: rgba(52, 211, 153, .12); color: var(--green); cursor: help; }
-html[data-theme="light"] .badge-risk { color: #a87808; }
 .catalog-note { color: var(--faint); font-size: 12.5px; }
 
 /* 皮肤中心卡：试穿已上线 + 安装命令 */

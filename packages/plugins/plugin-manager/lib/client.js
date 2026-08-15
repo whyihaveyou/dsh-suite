@@ -47,6 +47,11 @@ window.__ModuleLoader__.load({
       shownXofN: '已显示 {x} / 共 {n} 条 · 下拉继续加载', totalN: '共 {n} 条（已显示全部）',
       featTitle: '⭐ 精选推荐', featSub: '策展人挑选 · 按星标排序',
       viewStore: '商店', viewInstalled: '已装管理',
+      viewScenes: '场景组合',
+      sceneHint: '按场景挑组合，一键装齐基础款（逐包串行安装，结果逐个回报；预设应用请去 设置 → Agent presets）',
+      sceneItems: '包含插件', sceneInstallAll: '一键全装', sceneAllInstalled: '已全部安装',
+      sceneGuidePreset: '提示：装完后到 设置 → Agent presets 选择小红书笔记助手等预设。',
+      sceneNeedRestart: '安装成功后重启 DSH 生效。',
       srcOfficial: '官方内建', srcNpm: '第三方 npm', srcGit: 'git 源', srcSelf: '自研', srcOther: '其他',
       remove: '移除', uninstallTitle: '确认卸载', uninstallHint: '需重启后完全卸载', uninstalling: '卸载中…', uninstallDone: '已卸载，请重启生效', uninstallFailed: '卸载失败',
       searchInstalled: '搜索已装插件…', enabled: '已启用', disabled: '已禁用',
@@ -79,6 +84,11 @@ window.__ModuleLoader__.load({
       shownXofN: 'Showing {x} / {n} — scroll for more', totalN: '{n} total (all shown)',
       featTitle: '⭐ Featured', featSub: 'curator picks · sorted by stars',
       viewStore: 'Store', viewInstalled: 'Installed',
+      viewScenes: 'Scenes',
+      sceneHint: 'Pick a scenario and install the essentials in one go (serial per-package installs; results shown per package; apply presets in Settings → Agent presets)',
+      sceneItems: 'Includes', sceneInstallAll: 'Install all', sceneAllInstalled: 'All installed',
+      sceneGuidePreset: 'Tip: after install, pick the preset in Settings → Agent presets.',
+      sceneNeedRestart: 'Restart DSH after install to take effect.',
       srcOfficial: 'official', srcNpm: '3rd-party npm', srcGit: 'git source', srcSelf: 'self', srcOther: 'other',
       remove: 'Remove', uninstallTitle: 'Confirm uninstall', uninstallHint: 'A restart is needed for full uninstall', uninstalling: 'Removing…', uninstallDone: 'Uninstalled — restart to take effect', uninstallFailed: 'Uninstall failed',
       searchInstalled: 'Search installed plugins…', enabled: 'enabled', disabled: 'disabled',
@@ -106,6 +116,50 @@ window.__ModuleLoader__.load({
   }
   // v0.6 F-J: 反馈入口 —— 第一方 → dsh-suite 集中收编；第三方 → 插件作者仓库
   const FEEDBACK_CENTER = 'https://github.com/whyihaveyou/dsh-suite/issues/new'
+  // v0.7 F-H: 场景组合（与 site/build.mjs SCENARIOS 同步）—— 本期仅 UI + 逐包串行
+  // 调既有 /plugin-manager/install；应用预设留 设置 → Agent presets（host apply-preset 另行评审）
+  const SCENES = [
+    { id: 'xhs', emoji: '📕',
+      title: { zh: '小红书创作套装', en: 'Xiaohongshu Creator Kit' },
+      blurb: { zh: '预设 + 主题一键到位，苹果皮配好即开写。', en: 'Preset + theme in one go, ready to write.' },
+      items: [
+        { pkg: '@dsh-suite/preset-center', note: { zh: '场景预设（小红书笔记等）', en: 'scenario presets (xiaohongshu notes etc.)' } },
+        { pkg: '@dsh-suite/themes', note: { zh: '苹果皮主题包', en: 'theme pack' } },
+      ], presetGuide: true },
+    { id: 'dev', emoji: '🛠️',
+      title: { zh: '开发者效率套件', en: 'Developer Productivity' },
+      blurb: { zh: '管插件、导会话，两块硬骨头一次啃完。', en: 'Manage plugins & export sessions in one click.' },
+      items: [
+        { pkg: '@dsh-suite/plugin-manager', note: { zh: '插件管理中枢', en: 'plugin hub (this one!)' } },
+        { pkg: '@dsh-suite/plugin-session-export', note: { zh: '会话导出 Markdown/HTML', en: 'session export to Markdown/HTML' } },
+      ] },
+    { id: 'gamer', emoji: '🎮',
+      title: { zh: '玩家美化套装', en: 'Gamer Makeover' },
+      blurb: { zh: '换皮是刚需，一套主题全家桶。', en: 'A full theme wardrobe for your DSH.' },
+      items: [
+        { pkg: '@dsh-suite/themes', note: { zh: '主题市场（多套皮肤）', en: 'theme gallery' } },
+      ] },
+    { id: 'notify', emoji: '🔔',
+      title: { zh: '提醒不漏接', en: 'Never Miss a Beat' },
+      blurb: { zh: '跑长任务不再盯屏，出声提醒。', en: 'Audible nudges when long tasks finish.' },
+      items: [
+        { pkg: '@dsh-suite/plugin-notify', note: { zh: '任务完成系统声音提醒', en: 'system sound on task finish' } },
+      ] },
+    { id: 'writing', emoji: '✍️',
+      title: { zh: '写作润色工坊', en: 'Writing & Polish Studio' },
+      blurb: { zh: '主题护眼 + 写完随手导出。', en: 'Eye-candy theme + one-click export.' },
+      items: [
+        { pkg: '@dsh-suite/themes', note: { zh: '写作向主题（护眼配色）', en: 'writing-friendly themes' } },
+        { pkg: '@dsh-suite/plugin-session-export', note: { zh: '草稿一键导出 Markdown', en: 'export drafts to Markdown' } },
+      ] },
+    { id: 'daily', emoji: '📊',
+      title: { zh: '日报速记套装', en: 'Daily Report Starter' },
+      blurb: { zh: '会话存证，贴进日报周报不慌。', en: 'Archive sessions for painless weekly reports.' },
+      items: [
+        { pkg: '@dsh-suite/plugin-session-export', note: { zh: '会话存档，周报素材', en: 'session archive for reports' } },
+      ] },
+  ]
+
   function feedbackUrl(p) {
     const own = (p && p.repo) || ''
     const firstParty = own.startsWith('whyihaveyou/') || (own.includes('dsh-suite') && !own.includes('/plugins/'))
@@ -249,6 +303,8 @@ window.__ModuleLoader__.load({
       const [updating, setUpdating] = useState(null)
       const [updateConfirm, setUpdateConfirm] = useState(null)
       const [updateResult, setUpdateResult] = useState(null)
+      const [sceneBusy, setSceneBusy] = useState(null) // v0.7 F-H: 正在安装的场景 id
+      const [sceneResults, setSceneResults] = useState({}) // key: sceneId::pkg → 'ing'|'ok'|'fail: msg'
 
       useEffect(() => {
         let alive = true
@@ -335,6 +391,40 @@ window.__ModuleLoader__.load({
           setResults((r) => ({ ...r, [p.name]: { ok: false, log: String(e) } }))
         } finally {
           setInstalling(null)
+        }
+      }
+
+      // v0.7 F-H: 场景组合一键装 —— 逐包串行调既有 /plugin-manager/install，
+      // 单个失败不中断后续包；结果逐包落到 sceneResults。不新造 preset 通道。
+      async function installScene(sc) {
+        if (sceneBusy) return
+        setSceneBusy(sc.id)
+        setSceneResults((r) => ({ ...r }))
+        try {
+          for (const it of sc.items) {
+            const key = sc.id + '::' + it.pkg
+            if (isInstalled({ name: it.pkg }, names)) {
+              setSceneResults((r) => ({ ...r, [key]: 'ok-already' }))
+              continue
+            }
+            setSceneResults((r) => ({ ...r, [key]: 'ing' }))
+            try {
+              const res = await fetch('/plugin-manager/install', {
+                method: 'POST', headers: { 'content-type': 'application/json' },
+                body: JSON.stringify({ pkg: it.pkg }),
+              })
+              const data = await res.json()
+              const tail = ((data && (data.error || data.log)) || '').split('\n').slice(-2).join(' ').slice(0, 180)
+              setSceneResults((r) => ({ ...r, [key]: data && data.ok ? 'ok' : 'fail: ' + (tail || 'unknown') }))
+            } catch (e) {
+              setSceneResults((r) => ({ ...r, [key]: 'fail: ' + String(e && e.message || e).slice(0, 120) }))
+            }
+          }
+        } finally {
+          setSceneBusy(null)
+          const list = await fetchJson('/plugin-manager/list').then((r) => (r.ok ? r.value : [])).catch(() => null)
+          if (list) setInstalled(list)
+          loadInstalled()
         }
       }
 
@@ -451,7 +541,8 @@ window.__ModuleLoader__.load({
       const viewBtn = (active) => ({ background: active ? '#30363d' : 'transparent', color: active ? '#e6edf3' : '#8b949e', border: '1px solid #30363d', borderRadius: '6px', padding: '6px 14px', fontSize: '13px', cursor: 'pointer' })
       const viewToggle = h('div', { style: { display: 'flex', gap: '8px', marginBottom: '12px' } },
         h('button', { style: viewBtn(view === 'store'), onClick: () => setView('store') }, '🛍 ' + t('viewStore')),
-        h('button', { style: viewBtn(view === 'installed'), onClick: () => { setView('installed'); loadInstalled(); loadUpdates() } }, '📦 ' + t('viewInstalled')))
+        h('button', { style: viewBtn(view === 'installed'), onClick: () => { setView('installed'); loadInstalled(); loadUpdates() } }, '📦 ' + t('viewInstalled')),
+        h('button', { style: viewBtn(view === 'scenes'), onClick: () => setView('scenes') }, '🧩 ' + t('viewScenes')))
 
       // ---- installed management view ----
       const instFiltered = installedList.filter((e) => !instSearch || (e.name || '').toLowerCase().includes(instSearch.toLowerCase()))
@@ -524,6 +615,48 @@ window.__ModuleLoader__.load({
               h('button', { style: C.btnGhost, onClick: () => setUpdateConfirm(null) }, t('cancel')),
               h('button', { style: C.btn, onClick: () => { setUpdateConfirm(null); doUpdate(e.name) } }, t('confirm')))),
         )
+      }
+
+      // ---- v0.7 F-H: scenes combos view ----
+      if (view === 'scenes') {
+        return h('div', null,
+          viewToggle,
+          h('div', { style: { fontSize: '12px', color: '#8b949e', marginBottom: '12px', lineHeight: '1.5' } }, t('sceneHint')),
+          SCENES.map((sc) => {
+            const instCount = sc.items.filter((it) => isInstalled({ name: it.pkg }, names)).length
+            const allIn = instCount === sc.items.length
+            const resKeys = sc.items.map((it) => sc.id + '::' + it.pkg)
+            const anyRes = resKeys.some((k) => sceneResults[k])
+            const anyFail = resKeys.some((k) => (sceneResults[k] || '').startsWith('fail'))
+            return h('div', { key: sc.id, style: { ...C.card, marginBottom: '12px', minHeight: 0 } },
+              h('div', { style: { display: 'flex', alignItems: 'center', gap: '8px' } },
+                h('span', { style: { fontSize: '20px' } }, sc.emoji),
+                h('span', { style: { fontSize: '15px', fontWeight: '700', color: '#e6edf3' } }, t('lang') === 'zh' ? sc.title.zh : sc.title.en),
+                h('span', { style: { fontSize: '11px', color: '#8b949e', background: '#21262d', padding: '1px 8px', borderRadius: '10px' } },
+                  t('sceneItems') + ' ' + sc.items.length),
+                allIn ? h('span', { style: { marginLeft: 'auto', fontSize: '12px', color: '#3fb950', fontWeight: '600' } }, '✅ ' + t('sceneAllInstalled')) : null),
+              h('div', { style: C.desc }, t('lang') === 'zh' ? sc.blurb.zh : sc.blurb.en),
+              sc.items.map((it) => {
+                const k = sc.id + '::' + it.pkg
+                const st = sceneResults[k]
+                const inst = isInstalled({ name: it.pkg }, names)
+                let mark = inst ? h('span', { style: { color: '#3fb950' } }, '✅') : h('span', { style: { color: '#6e7681' } }, '·')
+                if (st === 'ing') mark = h('span', { style: { color: '#d29922' } }, '⏳ ' + t('installing'))
+                else if (st === 'ok-already') mark = h('span', { style: { color: '#3fb950' } }, '✅ ' + t('installed'))
+                else if (st === 'ok') mark = h('span', { style: { color: '#3fb950' } }, '✔ ok')
+                else if ((st || '').startsWith('fail')) mark = h('span', { style: { color: '#f85149' }, title: st }, '❌ ' + String(st).slice(0, 80))
+                return h('div', { key: k, style: { display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '6px 0', borderTop: '1px dashed #21262d' } },
+                  h('span', { style: { fontFamily: 'ui-monospace, SFMono-Regular, monospace', fontSize: '12px', color: '#79c0ff', flexShrink: 0 } }, it.pkg),
+                  h('span', { style: { fontSize: '11px', color: '#8b949e', flex: 1, lineHeight: '1.4' } }, t('lang') === 'zh' ? it.note.zh : it.note.en),
+                  h('span', { style: { fontSize: '11px', flexShrink: 0, maxWidth: '46%' } }, mark))
+              }),
+              h('div', { style: { display: 'flex', gap: '8px', alignItems: 'center', marginTop: 'auto' } },
+                allIn || sceneBusy === sc.id
+                  ? h('button', { style: C.btnDisabled }, sceneBusy === sc.id ? t('installing') : t('sceneAllInstalled'))
+                  : h('button', { style: C.btn, onClick: () => installScene(sc) }, '⬇ ' + t('sceneInstallAll')),
+                sc.presetGuide && (allIn || anyRes) ? h('span', { style: { fontSize: '11px', color: '#d29922', lineHeight: '1.4' } }, t('sceneGuidePreset')) : null),
+              anyRes && !anyFail && !allIn ? h('div', { style: { fontSize: '11px', color: '#8b949e' } }, t('sceneNeedRestart')) : null)
+          }))
       }
 
       if (view === 'installed') return h('div', null, viewToggle, installedView, uninstallModal, updateModal)

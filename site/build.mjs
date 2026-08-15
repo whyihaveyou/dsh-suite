@@ -135,9 +135,10 @@ const LEARN_RESOURCES = [
     desc_zh: '非官方的中文 DSH 使用文档站——安装、能力与 FAQ。' },
   { id: 'dshbase', type: 'chinese-docs', lang: '中文',
     url: 'https://github.com/ylwl1997/dshbase',
-    name_en: 'dshbase (DSH plugin guides & ecosystem)', name_zh: 'dshbase（DSH 插件指南与生态）',
-    desc_en: 'A Chinese DSH guide & plugin-ecosystem hub — every entry hands-on tested.',
-    desc_zh: '逐个实测的中文 DSH 插件指南与生态索引。' },
+    name_en: 'dshbase — hands-on tested DSH plugin guides in Chinese',
+    name_zh: 'dshbase — 逐个实测的中文 DSH 插件指南',
+    desc_en: 'Guides and a plugin-ecosystem directory for DeepSeek Harness, written in Chinese.',
+    desc_zh: 'DeepSeek Harness 指南与插件生态目录，全中文撰写。' },
 ];
 
 /* ------------------------------------------------------------------ */

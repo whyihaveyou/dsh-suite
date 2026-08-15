@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T13:00:18.542Z",
+  "generated_at": "2026-08-15T13:45:32.036Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -74,6 +74,15 @@
       "lastKnownUrl": "https://github.com/echo-escape/dsh-workbench"
     },
     {
+      "repo": "hccccc01333/dsh-report-html",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-15T13:00:18.536Z",
+      "lastDetectedAt": "2026-08-15T13:45:32.019Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/hccccc01333/dsh-report-html"
+    },
+    {
       "repo": "je00/dsh-codex-agent-bridge",
       "seen": 2,
       "firstDetectedAt": "2026-08-15T09:42:03.402Z",
@@ -144,15 +153,6 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
-    },
-    {
-      "repo": "hccccc01333/dsh-report-html",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-15T13:00:18.536Z",
-      "lastDetectedAt": "2026-08-15T13:00:18.536Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/hccccc01333/dsh-report-html"
     }
   ]
 }

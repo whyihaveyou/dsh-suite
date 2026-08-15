@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T06:59:44.229Z",
+  "generated_at": "2026-08-15T07:46:18.691Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -101,6 +101,24 @@
       "lastKnownUrl": "https://github.com/Roy-oss1/dsh-lark"
     },
     {
+      "repo": "Shmilyol/dsh-hiyori-skin",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-15T06:59:44.217Z",
+      "lastDetectedAt": "2026-08-15T07:46:18.577Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Shmilyol/dsh-hiyori-skin"
+    },
+    {
+      "repo": "Shmilyol/galgame-skin",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-15T06:59:44.217Z",
+      "lastDetectedAt": "2026-08-15T07:46:18.576Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Shmilyol/galgame-skin"
+    },
+    {
       "repo": "yeshimei/dsh-sound",
       "seen": 2,
       "firstDetectedAt": "2026-08-14T19:22:19.301Z",
@@ -117,24 +135,6 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
-    },
-    {
-      "repo": "Shmilyol/dsh-hiyori-skin",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-15T06:59:44.217Z",
-      "lastDetectedAt": "2026-08-15T06:59:44.217Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/Shmilyol/dsh-hiyori-skin"
-    },
-    {
-      "repo": "Shmilyol/galgame-skin",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-15T06:59:44.217Z",
-      "lastDetectedAt": "2026-08-15T06:59:44.217Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/Shmilyol/galgame-skin"
     }
   ]
 }

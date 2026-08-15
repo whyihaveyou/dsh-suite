@@ -45,6 +45,8 @@ window.__ModuleLoader__.load({
       failGuide: '可手动处理：复制命令到终端运行',
       feedback: '反馈', feedbackStore: '商店问题反馈', feedbackTitle: '对该插件提意见（打开 GitHub issue）',
       shownXofN: '已显示 {x} / 共 {n} 条 · 下拉继续加载', totalN: '共 {n} 条（已显示全部）',
+      contributeStore: '投稿我的插件', contributeTitle: '把你的插件/主题投稿到目录（打开 GitHub issue）',
+      watchLine: '兼容观测中 {x} 个 · 含风险点 {y} 个', watchLink: '每日兼容状态年报 ↗',
       featTitle: '⭐ 精选推荐', featSub: '策展人挑选 · 按星标排序',
       viewStore: '商店', viewInstalled: '已装管理',
       viewScenes: '场景组合',
@@ -82,6 +84,8 @@ window.__ModuleLoader__.load({
       failGuide: 'manual fallback: copy the command and run it in your terminal',
       feedback: 'Feedback', feedbackStore: 'Store feedback', feedbackTitle: 'Give feedback on this plugin (opens GitHub issue)',
       shownXofN: 'Showing {x} / {n} — scroll for more', totalN: '{n} total (all shown)',
+      contributeStore: 'Submit your plugin', contributeTitle: 'Submit your plugin/theme to the catalog (opens GitHub issue)',
+      watchLine: '{x} compat-unverified · {y} with risk flags', watchLink: 'daily compat report ↗',
       featTitle: '⭐ Featured', featSub: 'curator picks · sorted by stars',
       viewStore: 'Store', viewInstalled: 'Installed',
       viewScenes: 'Scenes',
@@ -359,6 +363,17 @@ window.__ModuleLoader__.load({
         .sort((a, b) => (b.stars || 0) - (a.stars || 0))
         .slice(0, 6), [catalog])
       const showFeatured = featuredList.length > 0 && !search.trim() && category === 'all' && !onlyOk
+      // v0.7 F-I/M: watchlist 聚合口径（catalog 无官方 metadata 阶段）——
+      // 观测中 = compatStatus unknown；风险点 = risk 任一标记为 true
+      const watchStats = useMemo(() => {
+        let unk = 0, rk = 0
+        for (const p of catalog) {
+          if (p.compatStatus === 'unknown') unk++
+          const r = p.risk
+          if (r && Object.values(r).some(Boolean)) rk++
+        }
+        return [unk, rk]
+      }, [catalog])
       // v0.7 F-G: 增量渲染 —— 首屏 60 条，哨兵进视口再追加，过滤变化时重置
       const [visible, setVisible] = useState(60)
       useEffect(() => { setVisible(60) }, [search, category, sort, onlyOk])
@@ -536,7 +551,8 @@ window.__ModuleLoader__.load({
 
       const status = h('div', { style: C.status },
         t('source') + ': catalog.json · ' + catalog.length + ' ' + t('plugins') + ' · ' + t('installedCount') + ': ' + installed.length, ' · ',
-        h('a', { href: feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' }), target: '_blank', rel: 'noreferrer', style: { color: '#8b949e' } }, '💬 ' + t('feedbackStore')))
+        h('a', { href: feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' }), target: '_blank', rel: 'noreferrer', style: { color: '#8b949e' } }, '💬 ' + t('feedbackStore')), ' · ',
+        h('a', { href: 'https://github.com/whyihaveyou/dsh-suite/issues/new?title=' + encodeURIComponent('投稿插件 / Plugin submission') + '&labels=plugin-submission', target: '_blank', rel: 'noreferrer', title: t('contributeTitle'), style: { color: '#8b949e' } }, '📮 ' + t('contributeStore')))
 
       const viewBtn = (active) => ({ background: active ? '#30363d' : 'transparent', color: active ? '#e6edf3' : '#8b949e', border: '1px solid #30363d', borderRadius: '6px', padding: '6px 14px', fontSize: '13px', cursor: 'pointer' })
       const viewToggle = h('div', { style: { display: 'flex', gap: '8px', marginBottom: '12px' } },
@@ -846,6 +862,12 @@ window.__ModuleLoader__.load({
           }, filtered.length > visible
               ? t('shownXofN').replace('{x}', Math.min(visible, filtered.length)).replace('{n}', filtered.length)
               : t('totalN').replace('{n}', filtered.length))
+        : null,
+      // v0.7 F-I/M: watchlist/风险榜聚合条目 → 站外年报
+      catalog.length > 0
+        ? h('div', { style: { textAlign: 'center', color: '#6e7681', fontSize: '11px', padding: '0 0 14px', display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' } },
+            h('span', null, '🔎 ' + t('watchLine').replace('{x}', watchStats[0]).replace('{y}', watchStats[1])),
+            h('a', { href: t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html', target: '_blank', rel: 'noreferrer', style: { color: '#79c0ff', textDecoration: 'none' } }, t('watchLink')))
         : null,
       empty, modal, manualModal, drawerEl)
     }

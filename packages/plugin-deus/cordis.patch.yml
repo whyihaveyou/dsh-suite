@@ -1,0 +1,9 @@
+# @dsh-suite/plugin-deus bundle patch. Installed via:
+#   dsh plugin --profile web add @dsh-suite/plugin-deus
+# The node half (exports ".") runs the opener detector on session/event, writes
+# the JSONL experiment log, and serves /deus/* routes (presets/log/stats/version);
+# the browser half (exports "./client") injects the 神模扳机 settings section
+# plus the composer dock row for one-click injection.
+- insert:
+    - id: deus-mode
+      name: '@dsh-suite/plugin-deus'

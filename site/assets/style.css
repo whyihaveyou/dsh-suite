@@ -171,14 +171,14 @@ section { margin-bottom: 48px; }
 .section-hint { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
 
 .grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   gap: 16px;
 }
 
 /* ---------- card ---------- */
 .card {
   display: flex; flex-direction: column; gap: 10px;
-  padding: 16px; border-radius: var(--radius);
+  padding: 16px; border-radius: var(--radius); min-width: 0;
   background: var(--surface); border: 1px solid var(--border-soft);
   transition: border-color .18s, transform .18s, box-shadow .18s;
 }
@@ -266,11 +266,12 @@ section { margin-bottom: 48px; }
 }
 @media (max-width: 640px) {
   .site-header { padding: 10px 16px; }
+  .nav { gap: 12px; font-size: 12.5px; flex-wrap: wrap; justify-content: flex-end; row-gap: 4px; }
   .hero { padding: 36px 16px 28px; }
   main { padding: 0 16px 48px; }
   .controls { padding: 8px 16px 20px; }
   .controls-row { flex-direction: column; }
-  .grid { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: minmax(0, 1fr); }
   .foot-links { gap: 6px 14px; }
 }
 
@@ -457,7 +458,12 @@ section { margin-bottom: 48px; }
 .fp-desc { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; line-height: 1.55; }
 .fp-note { margin: 0; font-size: 12px; color: var(--faint); }
 .fp-img { width: 300px; max-width: 42%; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); }
-@media (max-width: 880px) { .fp-img { width: 100%; max-width: 100%; } }
+@media (max-width: 880px) {
+  .fp-card { flex-direction: column; align-items: stretch; min-width: 0; }
+  .fp-img { width: 100%; max-width: 100%; }
+  .store-install { min-width: 0; flex-wrap: nowrap; }
+  .store-install .install-cmd { flex: 1; }
+}
 
 
 /* ---------- 日间模式（light theme） ---------- */

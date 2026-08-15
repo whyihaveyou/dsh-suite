@@ -109,7 +109,7 @@ const RAW_CATEGORY_MAP = {
 /* Learn 学习资源（中英双语，手工维护的精选列表） */
 const LEARN_RESOURCES = [
   { id: 'official-docs', type: 'official', lang: 'EN / 中文',
-    url: 'https://deepseek-harness.github.io/',
+    url: 'https://github.com/deepseek-harness',
     name_en: 'DeepSeek Harness official docs', name_zh: 'DeepSeek Harness 官方文档',
     desc_en: 'The official "orange paper" — install, config and plugin API reference.',
     desc_zh: '官方「橙皮书」——安装、配置与插件 API 的权威参考。' },

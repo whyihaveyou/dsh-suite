@@ -9,7 +9,7 @@
 
 **Stop scrolling the `dsh-plugin` topic. Find plugins that still work.**
 
-`dsh-suite` is a bilingual, living directory of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH) plugins — **refreshed hourly, compat-tested daily** — plus an in-app **Plugin Store**, a `create-dsh-plugin` scaffolder, and a set of first-party plugins.
+`dsh-suite` is a bilingual, living directory of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH) plugins — **refreshed hourly, compat-tested daily** — plus an in-app **Plugin Store**, a `create-dsh-plugin` scaffolder, a set of first-party plugins, and a **[workstation](https://github.com/whyihaveyou/dsh-workstation)** (🚧 in development).
 
 [![Website](https://img.shields.io/badge/🌐_directory_website-whyihaveyou.github.io/dsh--suite-4d6bfe?style=for-the-badge)](https://whyihaveyou.github.io/dsh-suite/)
 
@@ -27,6 +27,7 @@ So we built four things:
 2. **An in-app Plugin Store** — `@dsh-suite/plugin-manager` adds a **Store** tab right inside the DSH Web UI: browse the catalog, search, see compat badges, one-click install — without leaving DSH.
 3. **A scaffolder** — `npm create dsh-plugin` generates a working `dsh.bundle` + Cordis skeleton. The official repo ships none, and "how do I migrate my plugin" is a top community request.
 4. **First-party plugins** — a small set we actually maintain, not just links.
+5. **An all-in-one workstation** — [dsh-workstation](https://github.com/whyihaveyou/dsh-workstation), a turnkey DSH experience (🚧 in development).
 
 ## Quick Start
 

@@ -9,7 +9,7 @@
 
 **别再翻 `dsh-plugin` topic 了，这里都是还能跑的插件。**
 
-`dsh-suite` 是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）插件的**活目录**——**每小时自动刷新、每日兼容实测**——外加 DSH 内置**插件商店**、`create-dsh-plugin` 脚手架和几个自研插件。
+`dsh-suite` 是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）插件的**活目录**——**每小时自动刷新、每日兼容实测**——外加 DSH 内置**插件商店**、`create-dsh-plugin` 脚手架、几个自研插件，以及一个**[一体化工作台](https://github.com/whyihaveyou/dsh-workstation)**（🚧 开发中）。
 
 [![目录网站](https://img.shields.io/badge/🌐_目录网站-whyihaveyou.github.io/dsh--suite-4d6bfe?style=for-the-badge)](https://whyihaveyou.github.io/dsh-suite/zh.html)
 
@@ -27,6 +27,7 @@ DSH 发布时没有官方插件 registry。现在找插件只能翻 GitHub 的 `
 2. **一个内置插件商店**——`@dsh-suite/plugin-manager` 在 DSH Web UI 的设置页里加一个 **Store** 标签：逛目录、搜索、看徽章、一键安装，全程不用离开 DSH。
 3. **一个脚手架**——`npm create dsh-plugin` 一条命令生成可跑的 `dsh.bundle` + Cordis 骨架。官方没给脚手架，而「怎么迁移我的插件」是社区呼声最高的需求之一。
 4. **几个自研插件**——不是纯搬运，有第一方产出。
+5. **一个一体化工作台**——[dsh-workstation](https://github.com/whyihaveyou/dsh-workstation)，开箱即用版（🚧 开发中）。
 
 ## 快速开始
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T19:23:59.489Z",
+  "generated_at": "2026-08-15T03:06:46.238Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -108,6 +108,15 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
+    },
+    {
+      "repo": "bibibala/dsh-git-guard",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-15T03:06:46.225Z",
+      "lastDetectedAt": "2026-08-15T03:06:46.225Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/bibibala/dsh-git-guard"
     }
   ]
 }

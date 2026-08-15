@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T10:40:05.846Z",
+  "generated_at": "2026-08-15T13:00:18.542Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -144,6 +144,15 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
+    },
+    {
+      "repo": "hccccc01333/dsh-report-html",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-15T13:00:18.536Z",
+      "lastDetectedAt": "2026-08-15T13:00:18.536Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/hccccc01333/dsh-report-html"
     }
   ]
 }

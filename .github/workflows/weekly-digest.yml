@@ -1,0 +1,63 @@
+# .github/workflows/weekly-digest.yml
+# Weekly DSH ecosystem digest (scripts/weekly-digest.mjs).
+#
+# Every Monday 09:00 UTC generates digest/<ISO-week>.md (bilingual) from the
+# existing data files (plugins.json / compat-installed.json / compat-report.json
+# / deleted-repos.json / digest/.last-week.json) and commits it + advances the
+# .last-week.json baseline. The commit is [skip ci]-tagged so pushing it does NOT
+# trigger extra CI (and stays clear of the hourly-refresh bot, which only ever
+# touches data/plugins.json + site/).
+#
+# Deliberately one-shot per week: no Pages rebuild, no publish — the markdown
+# lands in the repo and can later be wired to Posts/Discussions/pages.
+name: weekly-digest
+
+on:
+  schedule:
+    # Monday 09:00 UTC = 17:00 Beijing — start of the week is a natural cadence
+    - cron: '0 9 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Generate weekly digest
+        run: node scripts/weekly-digest.mjs --write
+
+      - name: Commit digest + advance baseline ([skip ci])
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add digest/
+          if git diff --cached --quiet; then
+            echo "no digest change — nothing to commit"
+            exit 0
+          fi
+          git commit -m "digest: weekly W chart [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase -X theirs origin main && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "push rejected (attempt $attempt) — retrying"
+            sleep 5
+          done
+          echo "push failed after 5 attempts"
+          exit 1

@@ -43,6 +43,7 @@ window.__ModuleLoader__.load({
       ghLink: 'GitHub ↗', dtClose: '关闭', dtOpen: '点开看详情',
       guideAfterInstall: '→ 重启 DSH 生效；装的是场景/预设？重启后去 Settings → Agent presets 应用即可',
       failGuide: '可手动处理：复制命令到终端运行',
+      feedback: '反馈', feedbackStore: '商店问题反馈', feedbackTitle: '对该插件提意见（打开 GitHub issue）',
       viewStore: '商店', viewInstalled: '已装管理',
       srcOfficial: '官方内建', srcNpm: '第三方 npm', srcGit: 'git 源', srcSelf: '自研', srcOther: '其他',
       remove: '移除', uninstallTitle: '确认卸载', uninstallHint: '需重启后完全卸载', uninstalling: '卸载中…', uninstallDone: '已卸载，请重启生效', uninstallFailed: '卸载失败',
@@ -72,6 +73,7 @@ window.__ModuleLoader__.load({
       ghLink: 'GitHub ↗', dtClose: 'Close', dtOpen: 'open for details',
       guideAfterInstall: '→ restart DSH to activate; installing a preset/scenario pack? Apply it under Settings → Agent presets after restart.',
       failGuide: 'manual fallback: copy the command and run it in your terminal',
+      feedback: 'Feedback', feedbackStore: 'Store feedback', feedbackTitle: 'Give feedback on this plugin (opens GitHub issue)',
       viewStore: 'Store', viewInstalled: 'Installed',
       srcOfficial: 'official', srcNpm: '3rd-party npm', srcGit: 'git source', srcSelf: 'self', srcOther: 'other',
       remove: 'Remove', uninstallTitle: 'Confirm uninstall', uninstallHint: 'A restart is needed for full uninstall', uninstalling: 'Removing…', uninstallDone: 'Uninstalled — restart to take effect', uninstallFailed: 'Uninstall failed',
@@ -97,6 +99,19 @@ window.__ModuleLoader__.load({
     工作流: 'workflow', 实验: 'lab experiment', 安全: 'security',
     皮肤中心: 'theme', 商店: 'store manager', 更新: 'update upgrade',
     插件: 'plugin', 小红书: 'xiaohongshu', 日历: 'calendar', 护眼: 'dark theme',
+  }
+  // v0.6 F-J: 反馈入口 —— 第一方 → dsh-suite 集中收编；第三方 → 插件作者仓库
+  const FEEDBACK_CENTER = 'https://github.com/whyihaveyou/dsh-suite/issues/new'
+  function feedbackUrl(p) {
+    const own = (p && p.repo) || ''
+    const firstParty = own.startsWith('whyihaveyou/') || (own.includes('dsh-suite') && !own.includes('/plugins/'))
+    if (firstParty) {
+      const nm = (p && (p.name || '')) || ''
+      return FEEDBACK_CENTER + '?title=' + encodeURIComponent('用户反馈：' + nm)
+        + '&body=' + encodeURIComponent('请描述你遇到的问题或建议：\n- 插件/组件：' + nm + '\n- 环境（DSH 版本 / OS）：\n- 现象：\n- 期望：\n- 日志或截图（如果有）：\n')
+    }
+    if (own) return 'https://github.com/' + own + '/issues/new'
+    return FEEDBACK_CENTER + '?title=' + encodeURIComponent('用户反馈：' + ((p && p.name) || '（未署名插件）'))
   }
   function searchAliases(qRaw) {
     const extras = []
@@ -403,7 +418,8 @@ window.__ModuleLoader__.load({
       )
 
       const status = h('div', { style: C.status },
-        t('source') + ': catalog.json · ' + catalog.length + ' ' + t('plugins') + ' · ' + t('installedCount') + ': ' + installed.length)
+        t('source') + ': catalog.json · ' + catalog.length + ' ' + t('plugins') + ' · ' + t('installedCount') + ': ' + installed.length, ' · ',
+        h('a', { href: feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' }), target: '_blank', rel: 'noreferrer', style: { color: '#8b949e' } }, '💬 ' + t('feedbackStore')))
 
       const viewBtn = (active) => ({ background: active ? '#30363d' : 'transparent', color: active ? '#e6edf3' : '#8b949e', border: '1px solid #30363d', borderRadius: '6px', padding: '6px 14px', fontSize: '13px', cursor: 'pointer' })
       const viewToggle = h('div', { style: { display: 'flex', gap: '8px', marginBottom: '12px' } },
@@ -532,6 +548,7 @@ window.__ModuleLoader__.load({
           h('div', { style: { display: 'flex', gap: '8px', marginTop: 'auto' } },
             installBtn,
             h('button', { style: copied === p.name ? { ...C.btnGhost, color: '#3fb950', borderColor: '#238636' } : C.btnGhost, onClick: (e) => { e.stopPropagation(); copyCmd(p) } }, copied === p.name ? '✓ ' + t('copied') : '📋')),
+          h('a', { href: feedbackUrl(p), target: '_blank', rel: 'noreferrer', title: t('feedbackTitle'), onClick: (e) => e.stopPropagation(), style: { ...C.btnGhost, padding: '1px 6px', fontSize: '11px', textDecoration: 'none' } }, '💬'),
         )
       })
 
@@ -628,6 +645,7 @@ window.__ModuleLoader__.load({
                 : h('button', { style: C.btn, onClick: () => setConfirmPkg(d) }, dUpM ? '⬆ ' + t('upgrade') : t('install')),
               h('button', { style: C.btnGhost, onClick: () => copyText('dsh plugin add ' + dSpec, () => {}) }, '📋 ' + t('copy')),
               d.repo ? h('a', { href: 'https://github.com/' + d.repo, target: '_blank', rel: 'noreferrer', style: { ...C.btnGhost, textDecoration: 'none', display: 'inline-block' } }, t('ghLink')) : null,
+              h('a', { href: feedbackUrl(d), target: '_blank', rel: 'noreferrer', style: { ...C.btnGhost, textDecoration: 'none', display: 'inline-block' } }, '💬 ' + t('feedback')),
               h('button', { style: { ...C.btnGhost, marginLeft: 'auto' }, onClick: () => setDetail(null) }, t('dtClose')))))
       }
 

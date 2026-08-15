@@ -69,7 +69,27 @@ window.__ModuleLoader__.load({
       unknown: ['⚪ unknown', '#8b949e'], unmaintained: ['⚫ unmaintained', '#8b949e'],
     }
 
-    const CATEGORIES = ['all', 'tools', 'ui', 'session', 'llm', 'orchestration', 'utility', 'workflow', 'integration', 'skill', 'dev-tool', 'other']
+    // v0.6 F-C: 中文别名搜索 —— 中文查询词映射英文关键词，与英文字段一起 AND 匹配
+  const ZH_ALIAS = {
+    皮肤: 'theme skin', 主题: 'theme', 换肤: 'theme skin', 美观: 'beautiful theme ui',
+    视觉: 'vision image ui', 看图: 'image vision picture', 图片: 'image picture',
+    通知: 'notify notification', 提醒: 'notify reminder',
+    任务板: 'board kanban task', 看板: 'board kanban',
+    导出: 'export', 导入: 'import', 备份: 'backup export',
+    搜索: 'search', 搜索增强: 'search', 翻译: 'translate', 写作: 'writing write',
+    润色: 'polish writing', 预设: 'preset', 场景: 'preset scenario',
+    游戏: 'game', 调试: 'debug', 测试: 'test', 文档: 'doc documentation',
+    图表: 'chart graph', 日报: 'daily report', 周报: 'weekly report', 日志: 'log',
+    工作流: 'workflow', 实验: 'lab experiment', 安全: 'security',
+    皮肤中心: 'theme', 商店: 'store manager', 更新: 'update upgrade',
+    插件: 'plugin', 小红书: 'xiaohongshu', 日历: 'calendar', 护眼: 'dark theme',
+  }
+  function searchAliases(qRaw) {
+    const extras = []
+    for (const k of Object.keys(ZH_ALIAS)) if (qRaw.includes(k)) extras.push(ZH_ALIAS[k])
+    return extras.join(' ')
+  }
+  const CATEGORIES = ['all', 'tools', 'ui', 'session', 'llm', 'orchestration', 'utility', 'workflow', 'integration', 'skill', 'dev-tool', 'other']
 
     // ---------- small UI helpers (dark theme, inline styles) ----------
     const C = {
@@ -219,7 +239,9 @@ window.__ModuleLoader__.load({
           if (onlyOk && p.compatStatus !== 'ok') return false
           if (!q) return true
           const hay = [p.name, p.desc_en, p.desc_zh, p.author, p.repo, ...(p.tags || [])].join(' ').toLowerCase()
-          return hay.includes(q)
+          const alias = searchAliases(q)
+          const tokens = alias ? q.split(/\s+/).concat(alias.toLowerCase().split(/\s+/)) : [q]
+          return tokens.every((w) => w && hay.includes(w))
         })
         if (sort === 'stars') list = list.slice().sort((a, b) => (b.stars || 0) - (a.stars || 0))
         else if (sort === 'verified') list = list.slice().sort((a, b) => String(b.compat?.lastVerified || b.lastVerified || '').localeCompare(String(a.compat?.lastVerified || a.lastVerified || '')))

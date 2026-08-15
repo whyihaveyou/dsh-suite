@@ -521,13 +521,14 @@ html[data-theme="light"] .badge-risk { color: #a87808; }
 
 /* ---------- 开箱即用 · 场景组合（首页 hero 下方 / 目录上方） ---------- */
 .scenarios { margin-bottom: 40px; }
-.scn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+.scn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)); gap: 16px; }
 .scn-card {
-  display: flex; flex-direction: column; gap: 10px; padding: 16px 18px;
+  display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; min-width: 0;
   background: linear-gradient(135deg, rgba(77, 107, 254, .09), rgba(52, 211, 153, .04)), var(--surface);
   border: 1px solid var(--brand-border); border-radius: var(--radius);
   transition: border-color .15s, transform .15s, box-shadow .15s;
 }
+.scn-card > * { min-width: 0; }
 .scn-card:hover { border-color: var(--brand); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
 .scn-head { display: flex; align-items: center; gap: 9px; }
 .scn-emoji { font-size: 21px; line-height: 1; }
@@ -544,6 +545,6 @@ html[data-theme="light"] .badge-risk { color: #a87808; }
 .scn-cmd { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 html[data-theme="light"] .scn-card { background: linear-gradient(135deg, rgba(77, 107, 254, .06), rgba(52, 211, 153, .03)), #fff; }
 @media (max-width: 640px) {
-  .scn-grid { grid-template-columns: 1fr; }
+  .scn-grid { grid-template-columns: minmax(0, 1fr); }
   .scn-cmd { font-size: 12px; }
 }

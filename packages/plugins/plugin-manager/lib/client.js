@@ -33,6 +33,9 @@ window.__ModuleLoader__.load({
       manualCopyTitle: '复制命令', manualCopyHint: '请手动复制以下命令：', update: '有更新', installedNotMounted: '已安装为依赖但未挂载到 bundle（可能缺 dsh.bundle 或为 monorepo 根包），请检查包结构',
       upgrade: '升级', updating: '升级中…', updateDone: '已更新到新版本，请重启 DSH 生效', updateFailed: '更新失败', updateHint: '已装旧版，确认后将覆盖升级', confirmUpdate: '确认升级',
       restartHint: '升级完成后需重启 DSH 才会加载新版本',
+      lang: 'zh',
+      unknownBadgeTitle: '未做兼容验证 — 点开详情查看',
+      onlyOk: '只看 🟢 兼容',
       viewStore: '商店', viewInstalled: '已装管理',
       srcOfficial: '官方内建', srcNpm: '第三方 npm', srcGit: 'git 源', srcSelf: '自研', srcOther: '其他',
       remove: '移除', uninstallTitle: '确认卸载', uninstallHint: '需重启后完全卸载', uninstalling: '卸载中…', uninstallDone: '已卸载，请重启生效', uninstallFailed: '卸载失败',
@@ -52,6 +55,9 @@ window.__ModuleLoader__.load({
       manualCopyTitle: 'Copy command', manualCopyHint: 'Copy the command below manually:', update: 'update', installedNotMounted: 'Installed as a dependency but NOT mounted (may lack dsh.bundle or be a monorepo root) — check the package',
       upgrade: 'Upgrade', updating: 'Updating…', updateDone: 'Updated to the new version — restart DSH', updateFailed: 'Update failed', updateHint: 'older version installed; confirming will overwrite-upgrade', confirmUpdate: 'Confirm upgrade',
       restartHint: 'Restart DSH after the upgrade to load the new version',
+      lang: 'en',
+      unknownBadgeTitle: 'Not compat-verified — open details',
+      onlyOk: '🟢 ok only',
       viewStore: 'Store', viewInstalled: 'Installed',
       srcOfficial: 'official', srcNpm: '3rd-party npm', srcGit: 'git source', srcSelf: 'self', srcOther: 'other',
       remove: 'Remove', uninstallTitle: 'Confirm uninstall', uninstallHint: 'A restart is needed for full uninstall', uninstalling: 'Removing…', uninstallDone: 'Uninstalled — restart to take effect', uninstallFailed: 'Uninstall failed',
@@ -157,6 +163,7 @@ window.__ModuleLoader__.load({
       const [search, setSearch] = useState('')
       const [category, setCategory] = useState('all')
       const [sort, setSort] = useState('stars')
+      const [onlyOk, setOnlyOk] = useState(false) // v0.6 F-B
       const [installed, setInstalled] = useState([])
       const [installing, setInstalling] = useState(null)
       const [results, setResults] = useState({})
@@ -202,11 +209,14 @@ window.__ModuleLoader__.load({
       }
 
       const names = useMemo(() => installedNames(installed), [installed])
+      // v0.6 F-B: 分类从目录实际数据归一生成（硬编码 12 类会把大量条目归进 other）
+      const cats = useMemo(() => ['all'].concat(Array.from(new Set(catalog.map((pl) => pl.category).filter(Boolean))).sort()), [catalog])
 
       const filtered = useMemo(() => {
         const q = search.trim().toLowerCase()
         let list = catalog.filter((p) => {
           if (category !== 'all' && p.category !== category) return false
+          if (onlyOk && p.compatStatus !== 'ok') return false
           if (!q) return true
           const hay = [p.name, p.desc_en, p.desc_zh, p.author, p.repo, ...(p.tags || [])].join(' ').toLowerCase()
           return hay.includes(q)
@@ -215,7 +225,7 @@ window.__ModuleLoader__.load({
         else if (sort === 'verified') list = list.slice().sort((a, b) => String(b.compat?.lastVerified || b.lastVerified || '').localeCompare(String(a.compat?.lastVerified || a.lastVerified || '')))
         else if (sort === 'compat') { const rank = { ok: 0, unknown: 1, broken: 2, unmaintained: 3 }; list = list.slice().sort((a, b) => (rank[a.compatStatus] ?? 1) - (rank[b.compatStatus] ?? 1)) }
         return list
-      }, [catalog, search, category, sort])
+      }, [catalog, search, category, sort, onlyOk])
 
       async function doInstall(p) {
         const spec = pkgSpec(p.installCmd)
@@ -335,7 +345,11 @@ window.__ModuleLoader__.load({
       const toolbar = h('div', { style: C.toolbar },
         h('input', { style: C.input, placeholder: t('search'), value: search, onChange: (e) => setSearch(e.target.value) }),
         h('select', { style: C.select, value: category, onChange: (e) => setCategory(e.target.value) },
-          CATEGORIES.map((c) => h('option', { key: c, value: c }, c === 'all' ? t('category') + ': ' + t('all') : c))),
+          cats.map((c) => h('option', { key: c, value: c }, c === 'all' ? t('category') + ': ' + t('all') : c))),
+        h('button', {
+          style: onlyOk ? { ...C.btnGhost, color: '#3fb950', borderColor: '#238636' } : C.btnGhost,
+          onClick: () => setOnlyOk(!onlyOk),
+        }, t('onlyOk')),
         h('select', { style: C.select, value: sort, onChange: (e) => setSort(e.target.value) },
           h('option', { value: 'stars' }, t('byStars')),
           h('option', { value: 'verified' }, t('byVerified')),
@@ -452,11 +466,13 @@ window.__ModuleLoader__.load({
           p.repo ? h(LazyImage, { src: 'https://opengraph.githubassets.com/1/' + p.repo, alt: p.repo }) : null,
           h('div', { style: C.name },
             h('span', null, p.name),
-            h('span', { style: C.badge(bad[1]) }, bad[0]),
+            p.compatStatus === 'unknown'
+              ? h('span', { title: t('unknownBadgeTitle'), style: { width: '7px', height: '7px', borderRadius: '50%', background: '#484f58', display: 'inline-block', marginLeft: '2px', flexShrink: '0' } })
+              : h('span', { style: C.badge(bad[1]) }, bad[0]),
             installedHere ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, '✅') : null,
             hasUpdate ? h('span', { style: { fontSize: '11px', color: '#d29922', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + (upM && upM.latest ? ' → v' + upM.latest : '')) : null),
-          p.desc_en ? h('div', { style: C.desc }, p.desc_en) : null,
-          p.desc_zh ? h('div', { style: C.descZh }, p.desc_zh) : null,
+          // v0.6 F-D: desc 单语化 —— UI locale 取主语言、回退另一语言，卡片不再双行堆叠
+          h('div', { style: C.desc }, (t('lang') === 'zh' ? (p.desc_zh || p.desc_en) : (p.desc_en || p.desc_zh)) || ''),
           h('div', { style: C.meta },
             h('span', null, p.author || '?'),
             h('span', null, (p.stars || 0) + '★'),

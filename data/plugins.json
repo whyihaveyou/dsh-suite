@@ -45440,7 +45440,7 @@
    "category": "session",
    "description": {
     "en": "Shrink MCP context in DeepSeek Harness: 1,000 remote tools behind 2 exact-schema interfaces, with a measured V4 Flash cost pilot.",
-    "zh": "压缩 MCP 上下文：1000 个远端工具收进 2 个精确 schema 接口，省 token 省上下文。"
+    "zh": "缩减 DeepSeek Harness 的 MCP 上下文：将 1,000 个远程工具收进 2 个精确 Schema 接口，并附 V4 Flash 小规模成本实测。"
    },
    "author": "labmimors",
    "stars": 4,

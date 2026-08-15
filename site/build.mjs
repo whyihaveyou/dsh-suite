@@ -153,6 +153,12 @@ const LEARN_RESOURCES = [
     name_zh: 'dshbase — 逐个实测的中文 DSH 插件指南',
     desc_en: 'Guides and a plugin-ecosystem directory for DeepSeek Harness, written in Chinese.',
     desc_zh: 'DeepSeek Harness 指南与插件生态目录，全中文撰写。' },
+  { id: 'orange-book', type: 'chinese-docs', lang: '中文',
+    url: 'https://github.com/alchaincyf/deepseek-harness-orange-book',
+    name_en: 'DSH Orange Book: From Boot to Teardown (Huashu, Orange Book series)',
+    name_zh: 'DeepSeek Harness 橙皮书《从开机到拆开》（花叔 · 橙皮书系列）',
+    desc_en: 'Community hands-on book: full system prompt, 129-line launch checklist, 3 raw session logs — the view official docs don\'t offer. Free PDF/EPUB/HTML.',
+    desc_zh: '社区出品的一手上手实测书：完整系统提示词、129 行启动清单、三份原始会话日志——官方文档没有的视角。PDF/EPUB/HTML 免费。' },
 ];
 
 /* 开箱即用 · 场景组合（首页 hero 下方 / 目录上方；小红书引流落地位）

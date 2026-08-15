@@ -518,3 +518,32 @@ html[data-theme="light"] .badge-risk { color: #a87808; }
 
 /* 皮肤中心卡：试穿已上线 + 安装命令 */
 .fp-repo-link { font-weight: 600; }
+
+/* ---------- 开箱即用 · 场景组合（首页 hero 下方 / 目录上方） ---------- */
+.scenarios { margin-bottom: 40px; }
+.scn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+.scn-card {
+  display: flex; flex-direction: column; gap: 10px; padding: 16px 18px;
+  background: linear-gradient(135deg, rgba(77, 107, 254, .09), rgba(52, 211, 153, .04)), var(--surface);
+  border: 1px solid var(--brand-border); border-radius: var(--radius);
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+.scn-card:hover { border-color: var(--brand); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.scn-head { display: flex; align-items: center; gap: 9px; }
+.scn-emoji { font-size: 21px; line-height: 1; }
+.scn-name { margin: 0; font-size: 15.5px; font-weight: 800; flex: 1; min-width: 0; }
+.scn-badge { font-size: 10.5px; font-weight: 700; white-space: nowrap; color: var(--yellow);
+  background: rgba(250, 204, 21, .16); padding: 3px 8px; border-radius: var(--radius-badge); }
+.scn-badge-new { color: var(--green); background: rgba(52, 211, 153, .15); }
+.scn-blurb { margin: 0; color: var(--muted); font-size: 13.5px; line-height: 1.55; }
+.scn-items { margin: 0; padding-left: 18px; color: var(--faint); font-size: 12.5px; line-height: 1.8; flex: 1; }
+.scn-items code { font-size: 11.5px; }
+.scn-soon { font-size: 10px; font-weight: 700; white-space: nowrap; color: var(--yellow);
+  background: rgba(250, 204, 21, .16); padding: 1px 6px; border-radius: var(--radius-badge); }
+.scn-foot { display: flex; align-items: center; gap: 8px; margin-top: auto; }
+.scn-cmd { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+html[data-theme="light"] .scn-card { background: linear-gradient(135deg, rgba(77, 107, 254, .06), rgba(52, 211, 153, .03)), #fff; }
+@media (max-width: 640px) {
+  .scn-grid { grid-template-columns: 1fr; }
+  .scn-cmd { font-size: 12px; }
+}

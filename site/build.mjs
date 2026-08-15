@@ -156,6 +156,88 @@ const LEARN_RESOURCES = [
     desc_zh: 'DeepSeek Harness 指南与插件生态目录，全中文撰写。' },
 ];
 
+/* 开箱即用 · 场景组合（首页 hero 下方 / 目录上方；小红书引流落地位）
+   items[].soon = 未发布包：卡面标注「即将上线」，安装命令只指向已发布包
+   （2026-08-15 更新：@dsh-suite/preset-center 0.1.1 已发布 npm，小红书卡改为直装，见 git log） */
+const SCENARIOS = [
+  {
+    emoji: '📕',
+    name: { en: 'Xiaohongshu Ops', zh: '小红书运营' },
+    blurb: {
+      en: 'Chinese creator presets + post-ready skins: draft to post in one flow.',
+      zh: '中文预设全家桶 × 出片皮肤，小红书文案从写到发一条龙。',
+    },
+    items: [
+      { pkg: '@dsh-suite/preset-center', note: { en: 'XHS notes / polish / daily-report presets', zh: '小红书笔记 / 文案润色 / 日报预设' } },
+      { pkg: '@dsh-suite/themes', note: { en: 'skins: beach-sunset · sakura-daisy', zh: '出片皮肤：beach-sunset / sakura-daisy' } },
+    ],
+    cmd: 'dsh plugin --profile web add @dsh-suite/preset-center && dsh plugin --profile web add @dsh-suite/themes',
+    badge: 'new',
+  },
+  {
+    emoji: '🎮',
+    name: { en: 'Gamer Skins', zh: '游戏玩家装扮' },
+    blurb: {
+      en: 'Zenless Zone Zero, Genshin, Mario… turn the chat page into your main\'s battlefield.',
+      zh: '绝区零、原神、马里奥、捉宠大师——聊天页秒变你推的战场。',
+    },
+    items: [
+      { pkg: '@dsh-suite/themes', note: { en: 'skins: zzzero · 原神 · Mario', zh: '游戏皮肤：zzzero / 原神 / Mario / 捉宠大师' } },
+    ],
+    cmd: 'dsh plugin --profile web add @dsh-suite/themes',
+  },
+  {
+    emoji: '✍️',
+    name: { en: 'Writing Studio', zh: '写作润色工坊' },
+    blurb: {
+      en: 'Immersive writing skins + session export — polish long drafts without losing work.',
+      zh: '沉浸写作皮肤 + 会话导出留档，长文打磨不丢稿。',
+    },
+    items: [
+      { pkg: '@dsh-suite/themes', note: { en: 'skins: sepia-oasis · typewriter', zh: '写作皮肤：sepia-oasis / typewriter' } },
+      { pkg: '@dsh-suite/plugin-session-export', note: { en: 'draft export & archive', zh: '草稿导出留档' } },
+    ],
+    cmd: 'dsh plugin --profile web add @dsh-suite/themes && dsh plugin --profile web add @dsh-suite/plugin-session-export',
+  },
+  {
+    emoji: '📊',
+    name: { en: 'Daily Brief', zh: '效率日报' },
+    blurb: {
+      en: 'Export today\'s sessions in one click — instant material for daily reports.',
+      zh: '一键导出今日会话，日报周报素材手到擒来。',
+    },
+    items: [
+      { pkg: '@dsh-suite/plugin-session-export', note: { en: 'sessions → Markdown / JSON', zh: '会话导出为 Markdown / JSON' } },
+    ],
+    cmd: 'dsh plugin --profile web add @dsh-suite/plugin-session-export',
+  },
+  {
+    emoji: '🧰',
+    name: { en: 'Dev Cockpit', zh: '开发者操控台' },
+    blurb: {
+      en: 'F3 one-click installs in the plugin store, plus session export for sharing repros.',
+      zh: '商店 F3 一键装插件，会话导出即分享，开发闭环一把梭。',
+    },
+    items: [
+      { pkg: '@dsh-suite/plugin-manager', note: { en: 'F3 plugin marketplace', zh: 'F3 插件商店' } },
+      { pkg: '@dsh-suite/plugin-session-export', note: { en: 'session export', zh: '会话导出' } },
+    ],
+    cmd: 'dsh plugin --profile web add @dsh-suite/plugin-manager && dsh plugin --profile web add @dsh-suite/plugin-session-export',
+  },
+  {
+    emoji: '🔔',
+    name: { en: 'Never Miss a Reply', zh: '通知提醒站' },
+    blurb: {
+      en: 'Desktop ping the moment the agent finishes — stop staring at the spinner.',
+      zh: 'Agent 回完立刻响铃弹窗，不用再盯屏傻等。',
+    },
+    items: [
+      { pkg: '@dsh-suite/plugin-notify', note: { en: 'macOS banner + sound', zh: 'macOS 横幅 + 提示音' } },
+    ],
+    cmd: 'dsh plugin --profile web add @dsh-suite/plugin-notify',
+  },
+];
+
 /* ------------------------------------------------------------------ */
 /* 文案（中英双语，对齐 research/launch-kit.md §1 §3）                  */
 /* ------------------------------------------------------------------ */
@@ -254,6 +336,10 @@ const I18N = {
     themesDesc: '151 day/night skin pairs — one-click preview.',
     themesNote: 'One-click try-on is live',
     themesRepo: 'repo',
+    scnTitle: '🚀 Ready to Use · Scenario Combos',
+    scnHint: 'Skip the 328-plugin scroll — six hand-picked combos for real jobs. One command to install.',
+    comingSoon: 'Coming soon',
+    justLaunched: 'Just launched',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -320,6 +406,10 @@ const I18N = {
     themesDesc: '151 款昼夜成对皮肤，一键试穿。',
     themesNote: '一键试穿已上线',
     themesRepo: '仓库',
+    scnTitle: '🚀 开箱即用 · 场景组合',
+    scnHint: '别从 328 款插件里硬挑——按场景挑组合，一条命令装好基础款。',
+    comingSoon: '即将上线',
+    justLaunched: '刚上线',
   },
 };
 
@@ -567,6 +657,38 @@ function renderGrid(items, t, opts = {}) {
   return items.map(p => renderCard(p, t, opts)).join('\n');
 }
 
+/* 开箱即用 · 场景组合 —— 数据来自顶部 SCENARIOS，中英双语按当前页语言挑选 */
+function renderScenarios(t) {
+  const zh = isZh(t);
+  const pick = (m) => (zh ? (m.zh || m.en) : (m.en || m.zh));
+  const cards = SCENARIOS.map((s) => {
+    const badge = s.badge === 'soon'
+      ? `<span class="scn-badge">${esc(t.comingSoon)}</span>`
+      : s.badge === 'new'
+        ? `<span class="scn-badge scn-badge-new">${esc(t.justLaunched)}</span>`
+        : '';
+    const items = s.items.map((it) => `<li><code>${esc(it.pkg)}</code>${it.soon ? ` <span class="scn-soon">${esc(t.comingSoon)}</span>` : ''} · ${esc(pick(it.note))}</li>`).join('\n      ');
+    return `    <div class="scn-card">
+      <div class="scn-head"><span class="scn-emoji">${s.emoji}</span><h3 class="scn-name">${esc(pick(s.name))}</h3>${badge}</div>
+      <p class="scn-blurb">${esc(pick(s.blurb))}</p>
+      <ul class="scn-items">
+      ${items}
+      </ul>
+      <div class="scn-foot">
+        <code class="install-cmd scn-cmd">${esc(s.cmd)}</code>
+        <button class="copy-btn" type="button" data-cmd="${esc(s.cmd)}" aria-label="${esc(t.cardCopy)}">${esc(t.cardCopy)}</button>
+      </div>
+    </div>`;
+  }).join('\n');
+  return `    <section class="scenarios" id="scenarios">
+      <h2 class="section-title">${esc(t.scnTitle)}</h2>
+      <p class="section-hint">${esc(t.scnHint)}</p>
+      <div class="scn-grid">
+${cards}
+      </div>
+    </section>`;
+}
+
 function renderPage(t, data, baseUrl, snapshot) {
   const { catalog, watchlist } = data;
   const cats = [...new Set(catalog.map(p => p.category))];
@@ -755,6 +877,8 @@ const themesCmd = 'dsh plugin --profile web add @dsh-suite/themes';
         </figure>
       </div>
     </section>
+
+${renderScenarios(t)}
 
 ${dashSection}
     <section class="controls" aria-label="search and filters">

@@ -104,7 +104,12 @@ function slug(fullName) {
 function makeEntry(repo, meta) {
   const name = repo.split('/')[1];
   const desc = clean(meta.description) || '(no description)';
-  const descZh = clean(meta.description) || '(无描述)';
+  // zh is DELIBERATELY not copied from the English description: pasting the repo
+  // description into both fields is what created the zh==en placeholder pollution
+  // (587 committed entries). Auto-ingested entries are untranslated by definition;
+  // the explicit 'untranslated' marker keeps the translation backlog countable and
+  // satisfies the schema's "zh required" rule without faking a translation.
+  const descZh = 'untranslated';
   const entry = {
     id: slug(repo),
     name,
@@ -112,7 +117,7 @@ function makeEntry(repo, meta) {
     repo,
     url: `https://github.com/${repo}`,
     category: meta.category,
-    description: { en: desc, zh: descZh }, // verbatim; bilingual translation is a downstream task
+    description: { en: desc, zh: descZh }, // en = repo description verbatim; zh = 'untranslated' until a translator pass
     author: repo.split('/')[0],
     stars: meta.stars,
     license: meta.license || 'unknown',

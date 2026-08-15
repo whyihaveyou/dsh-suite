@@ -4,7 +4,9 @@
 [💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=plugin-manager)
 
 
-> v0.6.0 — Store v2 Batch 1（详情抽屉 / 分类归一+只看兼容 / 中文别名搜索 / 卡片单语化 / 安装后引导 / 反馈口子）。UI 一致性与性能迭代（Batch 2）待批。
+> v0.7.0 — Store v2 Batch 2（增量渲染哨兵 / Featured 策展区 / 场景组合一键装 / watchlist 与投稿入口）。
+
+> v0.6.0 — Store v2 Batch 1（详情抽屉 / 分类归一+只看兼容 / 中文别名搜索 / 卡片单语化 / 安装后引导 / 反馈口子）。
 
 > 嵌入 DSH Web UI 设置页的插件商店面板：目录浏览 / 搜索 / 一键安装 / 兼容徽章 / 已装列表。
 > A plugin-store panel embedded in DSH Web UI: catalog browse / search / one-click install / compat badges / installed list.
@@ -58,6 +60,12 @@ npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 
 ## 变更 / Changelog
 
+- **v0.7.0**：商店 v2 Batch 2（UI 一致性与性能批）：
+  - **F-G 增量渲染**：1270+ 卡首屏只渲 60，IntersectionObserver 哨兵触底递增 60/次；筛选/搜索/排序变化时重置窗口；底部实时计数「已显示 x / 共 n」。
+  - **F-F featured 策展区**：catalog `featured=true` 条目按星标取 top6，商店顶部横排大卡（og 大图 + 一句话 + 安装按钮），仅默认浏览态显示（搜索/筛选时自动隐藏）；host `trimPlugin` 直通 `featured` 字段。
+  - **F-H 场景组合一键装**：🧩 第三 tab，6 套组合（与 site/build.mjs SCENARIOS 同步）；一键全装 = 逐包串行 POST 既有 `/plugin-manager/install`，单包失败不中断，行内 ⏳/✔/❌ 逐包回报；装完自动刷新已装列表。引导型：含 preset-center 的组合提示去 设置 → Agent presets 应用预设——**不新造 preset 应用通道**（host apply-preset 另行评审）。
+  - **F-I/M watchlist 与投稿**：状态栏 📮 投稿我的插件（issues 预填 + `plugin-submission` 标签）；商店底部 🔎 观测聚合条目（compat-unknown 计数 · risk 计数 → 每日兼容年报 stars.html / stars-zh.html；catalog 无官方 watchlist metadata，采用现状口径）。
+  - 维护：🔔 套装真实安装回归（plugin-notify@0.1.0 落盘 package.json + node_modules 双确认）；测试环境用后逐项恢复（package.json / pnpm-lock.yaml / repo symlink 核验）。
 - **v0.6.0**：商店 v2 Batch 1（研究 research/store-v2-plan.md，用户逐条一拍一批）：
   - **F-A 详情抽屉**：点任意卡片 → 右侧固定抽屉，og 大图 / 完整双语描述 / 👤作者 ★stars ⚖license 语言 分类 / 兼容徽章+lastVerified / 风险标注（⚠ 黄 chips / ✓ clean / 未扫描三态）；吸底条 [Install/Upgrade + 📋copy + GitHub↗ + 💬反馈 + Close]，遮罩点击/按钮可关。
   - **F-B 分类归一 + 只看兼容**：分类下拉从 catalog 实际数据归一生成（硬编码 12 类→其余塞 other 的问题消失），新增「只看 🟢 兼容」pill（实测 221/1309）。

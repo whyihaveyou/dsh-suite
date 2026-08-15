@@ -4,6 +4,8 @@
 [💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=plugin-manager)
 
 
+> v0.8.0 — Store v2 Batch 3（最近更新排序 / 安装流式日志 / 已装精确匹配）。
+
 > v0.7.0 — Store v2 Batch 2（增量渲染哨兵 / Featured 策展区 / 场景组合一键装 / watchlist 与投稿入口）。
 
 > v0.6.0 — Store v2 Batch 1（详情抽屉 / 分类归一+只看兼容 / 中文别名搜索 / 卡片单语化 / 安装后引导 / 反馈口子）。
@@ -60,6 +62,11 @@ npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 
 ## 变更 / Changelog
 
+- **v0.8.0**：商店 v2 Batch 3：
+  - **①「最近更新」排序**：排序下拉新增 Recently updated/最近更新，按 catalog `lastPush`(YYYY-MM-DD) 降序，缺字段落尾；host `trimPlugin` 补直通 `lastPush`。
+  - **② 安装流式日志**：新增 POST `/plugin-manager/install-stream`（原生 res 分块 NDJSON：`{t:start|log|done}`；`spawnCmd` 可选逐行回调，`runInstall` 透传）；`doInstall` 流式优先，读流异常静默回退 buffered `/install`（不硬造假进度）；右下角悬浮小终端实时滚动真实安装日志。buffered `/install` 接口保持不变。
+  - **③ 已装精确对齐**：`isInstalled` 由近似子串互含改为 **trim 后全名精确相等**，修掉 152 对同名异包假阳性（如 `dsh-remote`↔`@linxin666/dsh-remote-web-ui` 被错标已装）——loader 名字即完整 npm 名，无需模糊匹配。
+  - 维护：递增 NDJSON + UI 实时面板 + 真装 dsh-math-team 落盘三重证据链；识别并修复 pnpm add 对开发 symlink 的替换副作用。
 - **v0.7.0**：商店 v2 Batch 2（UI 一致性与性能批）：
   - **F-G 增量渲染**：1270+ 卡首屏只渲 60，IntersectionObserver 哨兵触底递增 60/次；筛选/搜索/排序变化时重置窗口；底部实时计数「已显示 x / 共 n」。
   - **F-F featured 策展区**：catalog `featured=true` 条目按星标取 top6，商店顶部横排大卡（og 大图 + 一句话 + 安装按钮），仅默认浏览态显示（搜索/筛选时自动隐藏）；host `trimPlugin` 直通 `featured` 字段。

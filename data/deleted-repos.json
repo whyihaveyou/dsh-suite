@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T07:46:18.691Z",
+  "generated_at": "2026-08-15T09:42:03.421Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -135,6 +135,15 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
+    },
+    {
+      "repo": "je00/dsh-codex-agent-bridge",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-15T09:42:03.402Z",
+      "lastDetectedAt": "2026-08-15T09:42:03.403Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/je00/dsh-codex-agent-bridge"
     }
   ]
 }

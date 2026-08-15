@@ -41,6 +41,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const DATA_PATH = join(ROOT, 'data', 'plugins.json');
 const REPORT_PATH = join(ROOT, 'data', 'compat-report.json');
+const INSTALLED_PATH = join(ROOT, 'data', 'compat-installed.json');
 
 // ---------------------------------------------------------------------------
 // CLI
@@ -673,6 +674,33 @@ async function main() {
     layer3_summary: l23Summary(layer23, 'layer3'),
   };
   writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2) + '\n', 'utf8');
+
+  // data/compat-installed.json — every entry whose config actually assembled
+  // in a throwaway profile this run (Layer 3 ok). site/build.mjs reads this to
+  // upgrade each entry's evidence badge from L2 to L3 ("install-verified").
+  // Kept separate from plugins.json's `evidence` field so it can't be clobbered
+  // by risk-scan.mjs rewriting that field. Only written when layer 2/3 ran
+  // (layer1-only runs leave the previous set intact).
+  if (layer23.length && args.write) {
+    // Gate behind --write: compat-installed.json is a committed artifact that
+    // should only be maintained by the authoritative CI run (and explicit
+    // `--write` invocations), never clobbered by a partial debug run.
+    const installed = layer23.filter((r) => r.layer3 && r.layer3.verdict === 'ok');
+    const installedIds = [...new Set(installed.map((r) => r.id))].sort();
+    const verifiedAt = nowIso().slice(0, 10);
+    const installedDoc = {
+      generated_at: nowIso(),
+      dshVersion,
+      count: installedIds.length,
+      ids: installedIds,
+      entries: Object.fromEntries(installed.map((r) => [
+        r.id,
+        { id: r.id, name: r.name, spec: r.spec, src: r.src || 'npm', verified_at: verifiedAt, layer: 3 },
+      ])),
+    };
+    writeFileSync(INSTALLED_PATH, JSON.stringify(installedDoc, null, 2) + '\n', 'utf8');
+    console.log(`\ncompat-installed: ${installedIds.length} entries L3-verified -> data/compat-installed.json`);
+  }
 
   // Human-readable output.
   console.log('');

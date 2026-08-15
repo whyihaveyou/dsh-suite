@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T01:51:05.398Z",
+  "generated_at": "2026-08-15T02:46:39.959Z",
   "repo": "whyihaveyou/dsh-suite",
   "totals": {
     "curated": 1232,
@@ -1451,9 +1451,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @linxin666/dsh-web-ui-all@0.1.10",
       "watchReason": ""
@@ -1480,9 +1480,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add dsh-better-sidebar",
       "watchReason": ""
@@ -2300,9 +2300,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @anionex/dsh-turn-rewind",
       "watchReason": ""
@@ -2748,9 +2748,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 2,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @dsh-suite/plugin-session-export",
       "watchReason": ""
@@ -2777,9 +2777,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @anionex/dsh-vision-toolkit",
       "watchReason": ""
@@ -3149,9 +3149,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @nanmicoder/dsh-agent-teams",
       "watchReason": ""
@@ -3313,9 +3313,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/btspoony/dsh-advisor",
       "watchReason": ""
@@ -3641,9 +3641,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @huiliyi37/dsh-tianshu-tui",
       "watchReason": ""
@@ -3844,9 +3844,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @zseven-w/dsh-openpencil",
       "watchReason": ""
@@ -4187,9 +4187,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add dsh-launcher",
       "watchReason": ""
@@ -4529,9 +4529,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 2,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @dsh-suite/plugin-notify",
       "watchReason": ""
@@ -4558,9 +4558,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @liustack/modlens",
       "watchReason": ""
@@ -4645,9 +4645,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add dsh-browser",
       "watchReason": ""
@@ -5632,9 +5632,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/erduotong/dsh-plugin-graph",
       "watchReason": ""
@@ -5824,9 +5824,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/hccccc01333/dsh-report-html",
       "watchReason": ""
@@ -6271,9 +6271,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/keleus/deepseek-pet",
       "watchReason": ""
@@ -6295,9 +6295,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/LingLambda/dsh-undo",
       "watchReason": ""
@@ -6415,9 +6415,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/YYTbit/dsh-plugin-pi-bridge",
       "watchReason": ""
@@ -6593,9 +6593,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/codeAnqiang-ma/dsh-superpowers",
       "watchReason": ""
@@ -7016,9 +7016,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/ben7am1n/dsh-browser",
       "watchReason": ""
@@ -7213,9 +7213,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/FlytoMAYDAY80/dsh-pet",
       "watchReason": ""
@@ -7722,9 +7722,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/PangYiMing/dsh-mobile-control",
       "watchReason": ""
@@ -8058,9 +8058,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/RealAlexandreAI/dsh-cloudflare-browser-run",
       "watchReason": ""
@@ -9643,9 +9643,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/Yuuz12/dsh-vision-helper",
       "watchReason": ""
@@ -11093,9 +11093,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/030611/dsh-telemetry-redactor",
       "watchReason": ""
@@ -11218,9 +11218,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/causebefore/dsh-pomodoro",
       "watchReason": ""
@@ -11458,9 +11458,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/jorinyang/dsh-doctor",
       "watchReason": ""
@@ -12522,9 +12522,9 @@
       "name": "dsh-verification-receipt",
       "repo": "030611/dsh-verification-receipt",
       "url": "https://github.com/030611/dsh-verification-receipt",
-      "category": "tools",
+      "category": "session",
       "desc_en": "Privacy-minimal heuristic per-turn verification summaries for DeepSeek Harness",
-      "desc_zh": "dsh-verification-receipt — DSH 插件（工具）",
+      "desc_zh": "将每轮工具结果计数与启发式验证信号写入本地 JSONL，不保存提示词/参数/正文（隐私最小化）",
       "author": "030611",
       "stars": 4,
       "language": "TypeScript",
@@ -13163,9 +13163,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/LuZhouheng/dsh-gen3d",
       "watchReason": ""
@@ -13619,9 +13619,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/JimmyJin2006/dsh-skill-manager",
       "watchReason": ""
@@ -14289,9 +14289,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add dsh-vision",
       "watchReason": ""
@@ -14390,9 +14390,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/sunshine-lang/dsh-weather",
       "watchReason": ""
@@ -15960,9 +15960,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/MAXeaglet/dsh-plugin-manager",
       "watchReason": ""
@@ -16436,9 +16436,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/wink-run/dsh-plugin-store",
       "watchReason": ""
@@ -16772,9 +16772,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/slhssb/dsh-advisor",
       "watchReason": ""
@@ -17454,9 +17454,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/Ox0400/dsh-vault",
       "watchReason": ""
@@ -19198,9 +19198,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/Xin-Zhang-IceMan/dsh-vision-plugin",
       "watchReason": ""
@@ -19222,9 +19222,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/mario03690/dsh-netcafe",
       "watchReason": ""
@@ -19582,9 +19582,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/moon09300731/dsh-vision-tools",
       "watchReason": ""
@@ -19731,9 +19731,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 2,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin --profile web add @dsh-suite/plugin-manager",
       "watchReason": ""
@@ -20802,9 +20802,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 2,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @dsh-suite/plugin-team-board",
       "watchReason": ""
@@ -21307,9 +21307,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/jkrandom-sudo/dsh-ci-doctor",
       "watchReason": ""
@@ -21547,9 +21547,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/Vulcan626/dsh-pet",
       "watchReason": ""
@@ -21571,9 +21571,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/YLifeOnlyOnce/dsh-smarthome",
       "watchReason": ""
@@ -23522,9 +23522,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/PC2005-cloud/dsh-pet",
       "watchReason": ""
@@ -26110,9 +26110,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/Max-Samson/dsh-usage-chart",
       "watchReason": ""
@@ -26374,9 +26374,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/DGPisces/dsh-openai-oauth",
       "watchReason": ""
@@ -27094,9 +27094,9 @@
       "compatStatus": "unknown",
       "risk": null,
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/NoNameLeGo/dsh-catppuccin",
       "watchReason": ""
@@ -27771,9 +27771,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 2,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @dsh-suite/all",
       "watchReason": ""
@@ -27794,7 +27794,11 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": null,
+      "evidence": {
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
+      },
       "installCmd": "dsh plugin --profile web add @dsh-suite/themes",
       "watchReason": ""
     },

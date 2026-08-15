@@ -46,6 +46,21 @@ const DATA_CANDIDATES = [
   { path: resolve(RESEARCH_ROOT, 'plugins-catalog.json'), kind: 'raw' },
 ];
 
+// data/compat-installed.json — ids whose plugin config truly assembled (Layer 3).
+// Only meaningful for the in-repo normalized source; where an entry id matches,
+// build upgrades its evidence badge to L3 ("install-verified"). Missing/empty
+// file simply leaves badges at their static level. This keeps L3 decoupled from
+// plugins.json's `evidence` (which risk-scan.mjs overwrites on a manual run).
+const INSTALLED_PATH = resolve(REPO_ROOT, 'data', 'compat-installed.json');
+function loadInstalledIds() {
+  try {
+    const doc = JSON.parse(readFileSync(INSTALLED_PATH, 'utf8'));
+    if (Array.isArray(doc.ids)) return new Set(doc.ids);
+    if (doc.entries) return new Set(Object.keys(doc.entries));
+    return new Set();
+  } catch { return new Set(); }
+}
+
 /* ------------------------------------------------------------------ */
 /* 分类 / 兼容 / 待审核原因 枚举（对齐 dsh-suite-architecture.md §4）    */
 /* ------------------------------------------------------------------ */
@@ -409,8 +424,16 @@ function loadData(dataPath) {
 
   if (json && Array.isArray(json.plugins)) {
     // 规整版 schema
-    const curated = json.plugins.filter(e => !isFrameworkRepo(e)).map(normalizeCurated);
-    const watch = (json.watchlist || []).filter(e => !isFrameworkRepo(e)).map(normalizeCurated);
+    let curated = json.plugins.filter(e => !isFrameworkRepo(e)).map(normalizeCurated);
+    let watch = (json.watchlist || []).filter(e => !isFrameworkRepo(e)).map(normalizeCurated);
+    // Layer-3 evidence: entries already verified by compat layer 2/3 (real
+    // install + config assembly) get their evidence badge bumped to L3.
+    const installed = loadInstalledIds();
+    const withL3 = (p) => installed.has(p.id)
+      ? { ...p, evidence: { level: 3, l3Verified: true, source: 'compat layer3 (installed & assembled)' } }
+      : p;
+    curated = curated.map(withL3);
+    watch = watch.map(withL3);
     const merged = dedupeIds([...curated, ...watch]);
     return {
       catalog: merged.slice(0, curated.length),

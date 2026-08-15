@@ -5752,7 +5752,7 @@
       "category": "utility",
       "description": {
         "en": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts.",
-        "zh": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts."
+        "zh": "Codex 风格的 @ 文件引用：在输入框打 @ 就能搜索工作区文件并把内容直接带进对话。"
       },
       "author": "omdsh-dev",
       "stars": 150,
@@ -5797,7 +5797,7 @@
       "category": "utility",
       "description": {
         "en": "Open DeepSeek Harness workspace directories in VS Code directly from the web GUI.",
-        "zh": "Open DeepSeek Harness workspace directories in VS Code directly from the web GUI."
+        "zh": "一键用 VS Code 打开 DSH 的工作区目录，不用自己复制路径。"
       },
       "author": "omdsh-dev",
       "stars": 40,
@@ -5842,7 +5842,7 @@
       "category": "utility",
       "description": {
         "en": "Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules.",
-        "zh": "Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules."
+        "zh": "DSH 桌面通知：任务回合结束弹系统通知，可按结果类型和关键词自定义哪些才提醒。"
       },
       "author": "omdsh-dev",
       "stars": 42,
@@ -5977,7 +5977,7 @@
       "category": "utility",
       "description": {
         "en": "OpenPencil design preview and editing plugin for DSH",
-        "zh": "OpenPencil design preview and editing plugin for DSH"
+        "zh": "把 DSH 接进 OpenPencil 设计工具：Agent 可以在设计稿上做预览和编辑，边聊边改设计。"
       },
       "author": "ZSeven-W",
       "stars": 67,
@@ -19656,10 +19656,10 @@
       "npm": null,
       "repo": "030611/dsh-verification-receipt",
       "url": "https://github.com/030611/dsh-verification-receipt",
-      "category": "tools",
+      "category": "session",
       "description": {
         "en": "Privacy-minimal heuristic per-turn verification summaries for DeepSeek Harness",
-        "zh": "dsh-verification-receipt — DSH 插件（工具）"
+        "zh": "将每轮工具结果计数与启发式验证信号写入本地 JSONL，不保存提示词/参数/正文（隐私最小化）"
       },
       "author": "030611",
       "stars": 4,
@@ -21496,7 +21496,7 @@
       "category": "tools",
       "description": {
         "en": "OAuth 2.1 Streamable HTTP MCP client plugin for DeepSeek Harness.",
-        "zh": "OAuth 2.1 Streamable HTTP MCP client plugin for DeepSeek Harness."
+        "zh": "OAuth 2.1 MCP 客户端：给 DSH 接支持 Streamable HTTP 的 MCP 服务器。"
       },
       "author": "springbrand-lab",
       "stars": 6,
@@ -21629,7 +21629,7 @@
       "category": "acp",
       "description": {
         "en": "Token usage heatmap, per-model breakdowns, and DeepSeek account balance for the DeepSeek Harness Web GUI (dsh web).",
-        "zh": "Token usage heatmap, per-model breakdowns, and DeepSeek account balance for the DeepSeek Harness Web GUI (dsh web)."
+        "zh": "Token 用量热力图 + 分模型明细 + DeepSeek 账户余额，全部在一个 Web 面板里看。"
       },
       "author": "Ychris12138",
       "stars": 20,
@@ -21674,7 +21674,7 @@
       "category": "llm",
       "description": {
         "en": "QQ Bot text and image channel plugin for DeepSeek Harness",
-        "zh": "QQ Bot text and image channel plugin for DeepSeek Harness"
+        "zh": "QQ 机器人文字+图片双通道：QQ 直接当 DSH 的聊天入口。"
       },
       "author": "sliverp",
       "stars": 5,
@@ -21718,7 +21718,7 @@
       "category": "session",
       "description": {
         "en": "DeepSeek Harness plugin that connects to a PowerContext Server over HTTP for recall, memory, handoff, experience, and skills.",
-        "zh": "DeepSeek Harness plugin that connects to a PowerContext Server over HTTP for recall, memory, handoff, experience, and skills."
+        "zh": "接 PowerContext 服务器：通过 HTTP 提供回忆、记忆、交接、经验和技能。"
       },
       "author": "knqiufan",
       "stars": 8,
@@ -21762,7 +21762,7 @@
       "category": "acp",
       "description": {
         "en": "ACP server implementation for DeepSeek harness",
-        "zh": "ACP server implementation for DeepSeek harness"
+        "zh": "ACP 服务器实现：让外部工具通过 Agent Client Protocol 驱动 DSH。"
       },
       "author": "openma-ai",
       "stars": 7,
@@ -21894,7 +21894,7 @@
       "category": "sandbox",
       "description": {
         "en": "A deepseek harness plugin for tensorlake sandbox",
-        "zh": "A deepseek harness plugin for tensorlake sandbox"
+        "zh": "把 DSH 的文件、子进程、bash、终端和 LSP 操作搬进 Tensorlake 短期微虚拟机，隔离跑代码。"
       },
       "author": "tensorlakeai",
       "stars": 5,
@@ -21932,7 +21932,7 @@
       "category": "llm",
       "description": {
         "en": "WeCom AI Bot text and image bridge for DeepSeek Harness",
-        "zh": "WeCom AI Bot text and image bridge for DeepSeek Harness"
+        "zh": "企业微信机器人桥接：文本+图片双通道，企业微信直接当 DSH 聊天入口。"
       },
       "author": "sliverp",
       "stars": 4,
@@ -22008,7 +22008,7 @@
       "category": "acp",
       "description": {
         "en": "Provider quota/balance corner panel for the dsh web surface (DeepSeek Harness plugin): server-side credential proxies plus a config-driven…",
-        "zh": "Provider quota/balance corner panel for the dsh web surface (DeepSeek Harness plugin): server-side credential proxies plus a config-driven…"
+        "zh": "Provider 配额/余额角落面板：服务端凭证代理 + 配置驱动的显示。"
       },
       "author": "brittanistrehlowll-oss",
       "stars": 4,
@@ -22046,7 +22046,7 @@
       "category": "orchestration",
       "description": {
         "en": "Agent2Agent mesh for the Harness",
-        "zh": "Agent2Agent mesh for the Harness"
+        "zh": "Agent 对 Agent 网格：让多个 DSH agent 之间直接互相通信协作。"
       },
       "author": "dpskh",
       "stars": 4,
@@ -22122,7 +22122,7 @@
       "category": "session",
       "description": {
         "en": "Balance, session cost, token usage, and invoice summaries for DeepSeek Harness Web.",
-        "zh": "Balance, session cost, token usage, and invoice summaries for DeepSeek Harness Web."
+        "zh": "余额、会话成本、token 用量与发票汇总，都在 Web 端看。"
       },
       "author": "pangzi499",
       "stars": 3,
@@ -22287,7 +22287,7 @@
       "category": "session",
       "description": {
         "en": "DeepSeek Harness (DSH) plugins. First: dsh-usage-report — per-session token usage & estimated cost (/usage + usage_report), priced from the…",
-        "zh": "DeepSeek Harness (DSH) plugins. First: dsh-usage-report — per-session token usage & estimated cost (/usage + usage_report), priced from the…"
+        "zh": "会话级 token 用量与费用估算：/usage 命令 + usage_report 工具，按官方定价计算。"
       },
       "author": "Yihong89",
       "stars": 3,
@@ -22363,7 +22363,7 @@
       "category": "tools",
       "description": {
         "en": "Community GitHub Action for DeepSeek Harness — AI Code Review · CI Diagnosis · Auto Fix · Issue → PR",
-        "zh": "Community GitHub Action for DeepSeek Harness — AI Code Review · CI Diagnosis · Auto Fix · Issue → PR"
+        "zh": "GitHub Action 集成：AI 代码评审、CI 诊断、自动修复、Issue 转 PR 全流程自动化。"
       },
       "author": "Lixiaoyiao",
       "stars": 7,
@@ -22407,7 +22407,7 @@
       "category": "llm",
       "description": {
         "en": "Near-native image understanding for DeepSeek Harness",
-        "zh": "Near-native image understanding for DeepSeek Harness"
+        "zh": "给纯文本模型接近原生的识图能力：图片消息自动走视觉模型转成文字描述再进上下文。"
       },
       "author": "oil-oil",
       "stars": 28,
@@ -22452,7 +22452,7 @@
       "category": "ui",
       "description": {
         "en": "Persistent auth plugin for DeepSeek Harness WebUI: enforce login at the HTTP/transport layer (resources, /api, WebSocket) — unbypassable vi…",
-        "zh": "Persistent auth plugin for DeepSeek Harness WebUI: enforce login at the HTTP/transport layer (resources, /api, WebSocket) — unbypassable vi…"
+        "zh": "WebUI 登录认证：HTTP/传输层强制登录，资源、插件 bundle、/api、WebSocket 四层防护，服务端会话 + HttpOnly Cookie。"
       },
       "author": "Yuuz12",
       "stars": 5,
@@ -22490,7 +22490,7 @@
       "category": "session",
       "description": {
         "en": "DeepSeek Harness billing plugin: account balance + per-model remaining-task estimator with a session-header badge",
-        "zh": "DeepSeek Harness billing plugin: account balance + per-model remaining-task estimator with a session-header badge"
+        "zh": "计费插件：会话头部直接显示账户余额和「按当前模型大概还能跑多少任务」。"
       },
       "author": "WilliamLIiii",
       "stars": 9,
@@ -22534,7 +22534,7 @@
       "category": "session",
       "description": {
         "en": "DSH Chat for VS Code — DeepSeek Harness chat windows inside VS Code (OpenCode-style independent sessions, model auto-routing)",
-        "zh": "DSH Chat for VS Code — DeepSeek Harness chat windows inside VS Code (OpenCode-style independent sessions, model auto-routing)"
+        "zh": "VS Code 里的 DSH 聊天：面板背后是完整 agent——读写文件、跑命令、搜网页、并行派子任务。"
       },
       "author": "DoggyHU",
       "stars": 3,
@@ -22572,7 +22572,7 @@
       "category": "acp",
       "description": {
         "en": "Weather tool for DeepSeek Harness: current conditions and multi-day forecasts via Open-Meteo (free, no API key)",
-        "zh": "Weather tool for DeepSeek Harness: current conditions and multi-day forecasts via Open-Meteo (free, no API key)"
+        "zh": "天气工具：Open-Meteo 免费接口，实时天气 + 多日预报，无需 API key。"
       },
       "author": "sunshine-lang",
       "stars": 4,
@@ -22610,7 +22610,7 @@
       "category": "acp",
       "description": {
         "en": "PDF toolbox for DeepSeek Harness: extract text, metadata, and page ranges via pdfjs-dist (local, no API key)",
-        "zh": "PDF toolbox for DeepSeek Harness: extract text, metadata, and page ranges via pdfjs-dist (local, no API key)"
+        "zh": "PDF 工具箱：本地用 pdfjs-dist 提取文本、元数据和指定页，不联网不用 key。"
       },
       "author": "sunshine-lang",
       "stars": 4,
@@ -22762,7 +22762,7 @@
       "category": "tools",
       "description": {
         "en": "Windows (win32) terminal inspection for DSH persistent/PTY shells",
-        "zh": "Windows (win32) terminal inspection for DSH persistent/PTY shells"
+        "zh": "Windows 终端检查：查看 DSH 持久/PTY shell 的运行状态。"
       },
       "author": "clearkurt",
       "stars": 3,
@@ -22800,7 +22800,7 @@
       "category": "acp",
       "description": {
         "en": "Ready-to-publish DeepSeek Harness plugin skeleton: bundle format, tool DSL, config, tests, and a scaffold script",
-        "zh": "Ready-to-publish DeepSeek Harness plugin skeleton: bundle format, tool DSL, config, tests, and a scaffold script"
+        "zh": "开箱即发的插件骨架：bundle 格式、工具 DSL、配置、测试和脚手架脚本齐全。"
       },
       "author": "sunshine-lang",
       "stars": 3,
@@ -22914,7 +22914,7 @@
       "category": "session",
       "description": {
         "en": "Recall and re-run the current session's command history with ↑/↓ keys in the DSH Web composer.",
-        "zh": "Recall and re-run the current session's command history with ↑/↓ keys in the DSH Web composer."
+        "zh": "命令历史：在 DSH Web 输入框用 ↑/↓ 召回并重跑当前会话的历史命令。"
       },
       "author": "xuender",
       "stars": 3,
@@ -22952,7 +22952,7 @@
       "category": "ui",
       "description": {
         "en": "A collection of UI themes for deepseek-harness.",
-        "zh": "A collection of UI themes for deepseek-harness."
+        "zh": "deepseek-harness 主题合集：一套皮肤打包装。"
       },
       "author": "orxz",
       "stars": 4,
@@ -23066,7 +23066,7 @@
       "category": "llm",
       "description": {
         "en": "AI approval answerer for DeepSeek Harness (DSH) using the unified LLM route with fail-closed policy checks.",
-        "zh": "AI approval answerer for DeepSeek Harness (DSH) using the unified LLM route with fail-closed policy checks."
+        "zh": "AI 审批应答：用统一 LLM 路由替人回答审批请求，带 fail-closed 策略检查。"
       },
       "author": "ang-XWBWZ",
       "stars": 3,
@@ -23142,7 +23142,7 @@
       "category": "orchestration",
       "description": {
         "en": "Agentic Control Plane for DeepSeek Harness — policy-check every tool call before it runs",
-        "zh": "Agentic Control Plane for DeepSeek Harness — policy-check every tool call before it runs"
+        "zh": "Agentic Control Plane：每次工具调用执行前先过策略检查。"
       },
       "author": "agentic-control-plane",
       "stars": 3,
@@ -23332,7 +23332,7 @@
       "category": "ui",
       "description": {
         "en": "Steam Workshop-style in-app plugin browser for DeepSeek Harness (DSH) Web UI - zero-server: search, trending windows, Chinese search & bili…",
-        "zh": "Steam Workshop-style in-app plugin browser for DeepSeek Harness (DSH) Web UI - zero-server: search, trending windows, Chinese search & bili…"
+        "zh": "Steam 工坊式的插件浏览页：应用内搜索、看趋势、中文搜索，零服务端依赖直接逛 GitHub 插件。"
       },
       "author": "yyyyukari",
       "stars": 17,
@@ -23415,7 +23415,7 @@
       "category": "ui",
       "description": {
         "en": "??????????????????????? DeepSeek Harness ??",
-        "zh": "??????????????????????? DeepSeek Harness ??"
+        "zh": "趣味功能合集：夸夸、运势、战报、番茄钟、摸鱼提醒、沉浸氛围、成就赛季、桌宠语音、Live2D、Boss 隐身和代码花园一包集齐。"
       },
       "author": "lvyuchuiyi",
       "stars": 5,
@@ -23567,7 +23567,7 @@
       "category": "llm",
       "description": {
         "en": "Upload images and files to your image host from DeepSeek Harness, powered by PicGo",
-        "zh": "Upload images and files to your image host from DeepSeek Harness, powered by PicGo"
+        "zh": "图片/文件直传图床：基于 PicGo，在 DSH 里直接上传到自己的图床。"
       },
       "author": "PicGo",
       "stars": 4,
@@ -23681,7 +23681,7 @@
       "category": "llm",
       "description": {
         "en": "Appearance customization plugin for DeepSeek Harness: theme color palette, background image, opacity/blur, glass effect",
-        "zh": "Appearance customization plugin for DeepSeek Harness: theme color palette, background image, opacity/blur, glass effect"
+        "zh": "外观自定义：主题色板、壁纸背景、透明度/模糊、毛玻璃效果，实时预览自动保存。"
       },
       "author": "TQSY114514",
       "stars": 3,
@@ -23947,7 +23947,7 @@
       "category": "ui",
       "description": {
         "en": "Codex-style select-to-quote for DeepSeek Harness Web: quote any chat text into the composer as a native reference chip.",
-        "zh": "Codex-style select-to-quote for DeepSeek Harness Web: quote any chat text into the composer as a native reference chip."
+        "zh": "选中即引用：聊天里选中文字一键「引用到输入框」，针对这段话继续提问，省去复制粘贴。"
       },
       "author": "nekogpt",
       "stars": 4,
@@ -24061,7 +24061,7 @@
       "category": "session",
       "description": {
         "en": "Real-time token consumption HUD plugin for DeepSeek Harness. Live token usage monitor, context pressure, cost estimation, history curves, p…",
-        "zh": "Real-time token consumption HUD plugin for DeepSeek Harness. Live token usage monitor, context pressure, cost estimation, history curves, p…"
+        "zh": "Token 角落仪表盘：实时看会话的 token 压力、分模型成本、日/月用量和趋势曲线。"
       },
       "author": "juhe291",
       "stars": 6,
@@ -24099,7 +24099,7 @@
       "category": "tools",
       "description": {
         "en": "dsh-plugin-knowledge-graph for Deepseek Harness",
-        "zh": "dsh-plugin-knowledge-graph for Deepseek Harness"
+        "zh": "代码知识图谱：read_graph 工具基于代码库知识图谱回答结构性问题。"
       },
       "author": "Luke-Yong",
       "stars": 3,
@@ -24365,7 +24365,7 @@
       "category": "tools",
       "description": {
         "en": "DeepSeek Harness plugin: one-click ✨ composer draft polishing — flash rewrite, auto fill-back into the input box",
-        "zh": "DeepSeek Harness plugin: one-click ✨ composer draft polishing — flash rewrite, auto fill-back into the input box"
+        "zh": "输入框草稿一键润色：把随手打的草稿重写得更顺，自动回填回输入框。"
       },
       "author": "tianji-qingtian",
       "stars": 12,
@@ -24448,7 +24448,7 @@
       "category": "session",
       "description": {
         "en": "DeepSeek Harness plugin: token usage & conversation stats as a native settings page - today / 7d / 30d totals, GitHub-style 90-day contribu…",
-        "zh": "DeepSeek Harness plugin: token usage & conversation stats as a native settings page - today / 7d / 30d totals, GitHub-style 90-day contribu…"
+        "zh": "Token 用量设置页：今日/7 天/30 天统计 + GitHub 风格 90 天贡献图。"
       },
       "author": "zhangzheng25",
       "stars": 4,
@@ -24676,7 +24676,7 @@
       "category": "session",
       "description": {
         "en": "DSH host plugin - smart outbound HTTP(S) routing: named proxies (http/https/socks4/4a/5/5h), per-host/provider/plugin rules, direct-first f…",
-        "zh": "DSH host plugin - smart outbound HTTP(S) routing: named proxies (http/https/socks4/4a/5/5h), per-host/provider/plugin rules, direct-first f…"
+        "zh": "出站网络路由：按目标主机和上下文在直连/HTTP(S)/SOCKS4/5 代理间选路，支持分主机/provider/插件规则。"
       },
       "author": "khiqwq",
       "stars": 3,
@@ -24714,7 +24714,7 @@
       "category": "session",
       "description": {
         "en": "Interactive long-session background agents for DeepSeek Harness: start a durable continuable child agent, watch its progress in the Web UI…",
-        "zh": "Interactive long-session background agents for DeepSeek Harness: start a durable continuable child agent, watch its progress in the Web UI…"
+        "zh": "后台长任务 agent：启动可续跑的子 agent，Web 界面实时看进度。"
       },
       "author": "PerryLink",
       "stars": 3,
@@ -24752,7 +24752,7 @@
       "category": "tools",
       "description": {
         "en": "dsh-excel-chat — talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation (cells, formulas, styles,…",
-        "zh": "dsh-excel-chat — talk to Excel in DeepSeek Harness: create, edit, repair, and verify spreadsheets by conversation (cells, formulas, styles,…"
+        "zh": "跟 Excel 对话：用自然语言创建、编辑、修复、校验表格（单元格、公式、样式）。"
       },
       "author": "hccccc01333",
       "stars": 3,
@@ -24828,7 +24828,7 @@
       "category": "orchestration",
       "description": {
         "en": "Symphony-compatible Linear issue orchestrator and native operations dashboard for DeepSeek Harness.",
-        "zh": "Symphony-compatible Linear issue orchestrator and native operations dashboard for DeepSeek Harness."
+        "zh": "Linear 问题编排器 + 运维看板：Symphony 兼容，直接在 DSH 里管 issue。"
       },
       "author": "Uddoo",
       "stars": 3,
@@ -25018,7 +25018,7 @@
       "category": "orchestration",
       "description": {
         "en": "Minimal Windows agent preset + Git Bash tool for DeepSeek Harness: gitbash & pwsh & str_replace_editor, drop-in replacement for the officia…",
-        "zh": "Minimal Windows agent preset + Git Bash tool for DeepSeek Harness: gitbash & pwsh & str_replace_editor, drop-in replacement for the officia…"
+        "zh": "Windows 极简 Agent 预设 + Git Bash 工具：官方极简模式的 Windows 平替。"
       },
       "author": "zeroa234",
       "stars": 3,
@@ -25208,7 +25208,7 @@
       "category": "tools",
       "description": {
         "en": "DeepSeek Harness provider for GPT models using managed ChatGPT OAuth through Codex app-server",
-        "zh": "DeepSeek Harness provider for GPT models using managed ChatGPT OAuth through Codex app-server"
+        "zh": "GPT 模型接入：通过 Codex app-server 的 ChatGPT OAuth 把 GPT 模型当 provider 用。"
       },
       "author": "DGPisces",
       "stars": 5,
@@ -25474,7 +25474,7 @@
       "category": "skills",
       "description": {
         "en": "Superpowers skills for DeepSeek Harness: TDD, debugging, planning, and collaboration skills adapted from obra/superpowers",
-        "zh": "Superpowers skills for DeepSeek Harness: TDD, debugging, planning, and collaboration skills adapted from obra/superpowers"
+        "zh": "Superpowers 技能包移植版：TDD、调试、规划、协作等经典工作流技能，装进 DSH 直接用。"
       },
       "author": "LayneChai",
       "stars": 25,
@@ -25519,7 +25519,7 @@
       "category": "orchestration",
       "description": {
         "en": "DeepSeek Harness subagent delegation enhancement",
-        "zh": "DeepSeek Harness subagent delegation enhancement"
+        "zh": "子代理派发增强：给 DSH 的子代理委派工具加料。"
       },
       "author": "lynx-gt",
       "stars": 3,
@@ -25557,7 +25557,7 @@
       "category": "skills",
       "description": {
         "en": "DSH Web UI plugin: Skills settings section with hot enable/disable, delete and add",
-        "zh": "DSH Web UI plugin: Skills settings section with hot enable/disable, delete and add"
+        "zh": "技能管理面板：在设置页直接启用/停用、删除、添加 Skills，不用改配置文件。"
       },
       "author": "Fishquito7",
       "stars": 30,
@@ -25602,7 +25602,7 @@
       "category": "session",
       "description": {
         "en": "Model router & cost optimizer for DeepSeek Harness: heuristic tier routing, failure fallback, and live per-session token/cache/cost stats",
-        "zh": "Model router & cost optimizer for DeepSeek Harness: heuristic tier routing, failure fallback, and live per-session token/cache/cost stats"
+        "zh": "模型路由与成本优化：简单问题 flash 直答、故障自动降级，会话级 token/缓存/成本实时可见。"
       },
       "author": "tianji-qingtian",
       "stars": 12,
@@ -25806,7 +25806,7 @@
       "category": "tools",
       "description": {
         "en": "deepseek harness plugin store",
-        "zh": "deepseek harness plugin store"
+        "zh": "DSH 社区插件目录主页。"
       },
       "author": "wink-run",
       "stars": 3,
@@ -25958,7 +25958,7 @@
       "category": "tools",
       "description": {
         "en": "Harness Pet — an unofficial community pet for DeepSeek Harness. Not affiliated with, endorsed by, or maintained by DeepSeek.",
-        "zh": "Harness Pet — an unofficial community pet for DeepSeek Harness. Not affiliated with, endorsed by, or maintained by DeepSeek."
+        "zh": "社区小宠物：一只住在 DeepSeek Harness 里的小鲸鱼。"
       },
       "author": "cakeni",
       "stars": 3,
@@ -26186,7 +26186,7 @@
       "category": "session",
       "description": {
         "en": "Skill Radar for DeepSeek Harness (dsh): scan the current session's visible skills, score relevance against the conversation, and recommend…",
-        "zh": "Skill Radar for DeepSeek Harness (dsh): scan the current session's visible skills, score relevance against the conversation, and recommend…"
+        "zh": "技能雷达：扫描当前会话可见的技能，按与近期对话的相关性打分并推荐。"
       },
       "author": "hellosky983",
       "stars": 3,
@@ -26762,7 +26762,7 @@
       "category": "acp",
       "description": {
         "en": "Remote-access assistant for DeepSeek Harness: /remote command and settings page printing the exact SSH tunnel / reverse-tunnel / reverse-pr…",
-        "zh": "Remote-access assistant for DeepSeek Harness: /remote command and settings page printing the exact SSH tunnel / reverse-tunnel / reverse-pr…"
+        "zh": "远程接入助手：/remote 命令 + 设置页直接打印 SSH 隧道/反向隧道命令，远程工作区一键连。"
       },
       "author": "flymysql",
       "stars": 10,
@@ -26882,7 +26882,7 @@
       "category": "acp",
       "description": {
         "en": "RMB/USD token-billing plugin for DeepSeek Harness (dsh web): official-policy auto pricing with peak/off-peak hours, per-message ledger, acc…",
-        "zh": "RMB/USD token-billing plugin for DeepSeek Harness (dsh web): official-policy auto pricing with peak/off-peak hours, per-message ledger, acc…"
+        "zh": "人民币/美元 token 计费：按官方政策自动计价，支持峰谷时段、逐消息台账和账户概览。"
       },
       "author": "bpc-oss",
       "stars": 5,
@@ -26920,7 +26920,7 @@
       "category": "tools",
       "description": {
         "en": "Cross-surface action binding and replay parity evidence for DeepSeek Harness",
-        "zh": "Cross-surface action binding and replay parity evidence for DeepSeek Harness"
+        "zh": "跨界面动作绑定与回放一致性证据：验证不同界面下同一操作行为一致。"
       },
       "author": "dongsheng123132",
       "stars": 3,
@@ -27794,7 +27794,7 @@
       "category": "acp",
       "description": {
         "en": "Token usage & cost monitor for DeepSeek Harness — floating widget with multi-dimensional stats, time-series charts, auto-detected billing p…",
-        "zh": "Token usage & cost monitor for DeepSeek Harness — floating widget with multi-dimensional stats, time-series charts, auto-detected billing p…"
+        "zh": "悬浮费用监控：多维统计、时序图、自动识别计费方案，实时盯着 token 和花费。"
       },
       "author": "nonewind",
       "stars": 4,
@@ -28478,7 +28478,7 @@
       "category": "llm",
       "description": {
         "en": "DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-friendly, huma…",
-        "zh": "DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-friendly, huma…"
+        "zh": "纯文本模型看图：图片消息自动桥接视觉模型转文字描述，原图保留在人类转录里，零新增凭据。"
       },
       "author": "237229953-create",
       "stars": 3,
@@ -28592,7 +28592,7 @@
       "category": "ui",
       "description": {
         "en": "Verifiable narrative state, continuity and character-knowledge ledger for DeepSeek Harness",
-        "zh": "Verifiable narrative state, continuity and character-knowledge ledger for DeepSeek Harness"
+        "zh": "叙事台账：可验证的叙事状态、连续性和角色知识账本。"
       },
       "author": "dongsheng123132",
       "stars": 3,
@@ -28903,7 +28903,7 @@
       "category": "tools",
       "description": {
         "en": "Persona-driven UX walkthrough plugin for DeepSeek Harness (DSH) - scans React + TypeScript source code for UX issues, pinpoints them, and s…",
-        "zh": "Persona-driven UX walkthrough plugin for DeepSeek Harness (DSH) - scans React + TypeScript source code for UX issues, pinpoints them, and s…"
+        "zh": "UX 体检插件：扫描 React + TypeScript 源码里的交互问题，定位到具体位置并给出修复建议。"
       },
       "author": "DietCokewithSugar",
       "stars": 18,
@@ -28948,7 +28948,7 @@
       "category": "session",
       "description": {
         "en": "Bridge Deepseek-harness into Claude Code for review, critique, delegation, and session import.",
-        "zh": "Bridge Deepseek-harness into Claude Code for review, critique, delegation, and session import."
+        "zh": "把 DSH 桥进 Claude Code：让 Claude Code 做代码评审、提意见、派任务，还能导入会话。"
       },
       "author": "cpj-dev",
       "stars": 10,
@@ -28993,7 +28993,7 @@
       "category": "llm",
       "description": {
         "en": "Config-only DeepSeek Harness bundle for OpenAI-compatible vision models.",
-        "zh": "Config-only DeepSeek Harness bundle for OpenAI-compatible vision models."
+        "zh": "纯配置包：给 DSH 接入任意 OpenAI 兼容的视觉模型。"
       },
       "author": "libinyam",
       "stars": 4,
@@ -29273,7 +29273,7 @@
       "category": "session",
       "description": {
         "en": "Langfuse observability for DeepSeek Harness (dsh): exports agent sessions as OpenTelemetry trace trees (GenAI semconv) to Langfuse's OTLP e…",
-        "zh": "Langfuse observability for DeepSeek Harness (dsh): exports agent sessions as OpenTelemetry trace trees (GenAI semconv) to Langfuse's OTLP e…"
+        "zh": "Langfuse 可观测性：把 agent 会话导出为 OpenTelemetry 链路树送到 Langfuse。"
       },
       "author": "linyp",
       "stars": 3,
@@ -29349,7 +29349,7 @@
       "category": "ui",
       "description": {
         "en": "A manual Terminal tab for the DeepSeek Harness (dsh) web UI — run commands on the host machine, persistent cwd, sudo password prompt, comma…",
-        "zh": "A manual Terminal tab for the DeepSeek Harness (dsh) web UI — run commands on the host machine, persistent cwd, sudo password prompt, comma…"
+        "zh": "手动终端标签页：在 Web 界面直接跑宿主命令，持久 cwd、sudo 密码提示、命令行补全。"
       },
       "author": "wuwuzhige-sudo",
       "stars": 3,
@@ -29387,7 +29387,7 @@
       "category": "ui",
       "description": {
         "en": "dsh-whale-pet",
-        "zh": "dsh-whale-pet"
+        "zh": "蓝色小鲸鱼桌宠：会游来游去、会晕、会喷水，还会盯着你的鼠标看。"
       },
       "author": "lglglglgy",
       "stars": 3,
@@ -29545,7 +29545,7 @@
       "category": "skills",
       "description": {
         "en": "Content-addressed receipts for skills actually loaded by DeepSeek Harness",
-        "zh": "Content-addressed receipts for skills actually loaded by DeepSeek Harness"
+        "zh": "技能加载收据：内容寻址记录 DSH 实际加载了哪些技能。"
       },
       "author": "dongsheng123132",
       "stars": 3,
@@ -29659,7 +29659,7 @@
       "category": "tools",
       "description": {
         "en": "Content-addressed, value-redacted policy drift evidence for DeepSeek Harness",
-        "zh": "Content-addressed, value-redacted policy drift evidence for DeepSeek Harness"
+        "zh": "策略漂移证据：内容寻址、脱敏保存策略变化记录。"
       },
       "author": "dongsheng123132",
       "stars": 3,
@@ -29735,7 +29735,7 @@
       "category": "tools",
       "description": {
         "en": "Content-addressed audit indexes across independent DeepSeek Harness evidence producers",
-        "zh": "Content-addressed audit indexes across independent DeepSeek Harness evidence producers"
+        "zh": "跨独立证据源的审计索引：内容寻址汇总各证据源。"
       },
       "author": "dongsheng123132",
       "stars": 3,
@@ -29773,7 +29773,7 @@
       "category": "orchestration",
       "description": {
         "en": "a dsh plugin - review files that an agent just changed,you can see the diff",
-        "zh": "a dsh plugin - review files that an agent just changed,you can see the diff"
+        "zh": "改完就能审：agent 刚动过的文件直接看 diff，不用离开 DSH Web。"
       },
       "author": "left0ver",
       "stars": 9,
@@ -29817,7 +29817,7 @@
       "category": "tools",
       "description": {
         "en": "Read-only recovery drill evidence for DeepSeek Harness",
-        "zh": "Read-only recovery drill evidence for DeepSeek Harness"
+        "zh": "只读恢复演练证据：记录恢复演练过程供审计。"
       },
       "author": "dongsheng123132",
       "stars": 3,
@@ -30469,7 +30469,7 @@
       "category": "acp",
       "description": {
         "en": "DeepSeek Harness plugin: OAuth / subscription-plan LLM providers (Grok, GitHub Copilot, OpenAI Codex, Anthropic, OpenRouter)",
-        "zh": "DeepSeek Harness plugin: OAuth / subscription-plan LLM providers (Grok, GitHub Copilot, OpenAI Codex, Anthropic, OpenRouter)"
+        "zh": "OAuth/订阅制 LLM provider 全家桶：Grok、GitHub Copilot、OpenAI Codex、Anthropic、OpenRouter。"
       },
       "author": "ziyou979",
       "stars": 3,
@@ -30887,7 +30887,7 @@
       "category": "ui",
       "description": {
         "en": "DSH plugin: snapshot & rollback your plugin/skin/settings configs. Auto-save on change, undo/redo stack, snapshot manager panel, keyboard s…",
-        "zh": "DSH plugin: snapshot & rollback your plugin/skin/settings configs. Auto-save on change, undo/redo stack, snapshot manager panel, keyboard s…"
+        "zh": "配置后悔药：插件/皮肤/设置改动自动快照，可撤销、可回滚，带快照管理面板和快捷键。"
       },
       "author": "lire1131",
       "stars": 7,
@@ -31049,7 +31049,7 @@
       "category": "orchestration",
       "description": {
         "en": "VibeSkills is a general-purpose Skill that automatically routes local Skills and intelligently orchestrates harness workflows.",
-        "zh": "VibeSkills is a general-purpose Skill that automatically routes local Skills and intelligently orchestrates harness workflows."
+        "zh": "通用技能调度器：自动挑选最合适的本地 Skill 并编排整个 Harness 工作流，不用手动指定用哪个技能。"
       },
       "author": "foryourhealth111-pixel",
       "stars": 2780,
@@ -31404,7 +31404,7 @@
       "category": "tools",
       "description": {
         "en": "dsh-passwords: DeepSeek Harness login gateway - first-run setup, at-rest encryption, brute-force lockout, audit log, HTTPS",
-        "zh": "dsh-passwords: DeepSeek Harness login gateway - first-run setup, at-rest encryption, brute-force lockout, audit log, HTTPS"
+        "zh": "登录密码门：首次配置、静态加密、暴力破解锁定、审计日志、HTTPS——让 DSH 可安全远程访问、支持多用户。"
       },
       "author": "slywalker2006",
       "stars": 3,
@@ -31442,7 +31442,7 @@
       "category": "ui",
       "description": {
         "en": "Voice-to-text input plugin for the DeepSeek Harness Web UI",
-        "zh": "Voice-to-text input plugin for the DeepSeek Harness Web UI"
+        "zh": "语音输入：在 DSH Web 里用语音转文字发消息。"
       },
       "author": "forrestahha",
       "stars": 3,
@@ -31518,7 +31518,7 @@
       "category": "acp",
       "description": {
         "en": "Natural-language plugin search for DeepSeek Harness — ask what you need, get matching dsh.so plugins with install commands.",
-        "zh": "Natural-language plugin search for DeepSeek Harness — ask what you need, get matching dsh.so plugins with install commands."
+        "zh": "自然语言找插件：说需求，给你匹配 dsh.so 仓库的插件和安装命令。"
       },
       "author": "ihuajiu",
       "stars": 3,
@@ -31556,7 +31556,7 @@
       "category": "tools",
       "description": {
         "en": "ARPM-derived local hybrid RAG plugin for DeepSeek Harness",
-        "zh": "ARPM-derived local hybrid RAG plugin for DeepSeek Harness"
+        "zh": "本地混合 RAG：ARPM 派生，检索增强全在本机完成。"
       },
       "author": "Spirtxiaoqi7",
       "stars": 3,
@@ -31708,7 +31708,7 @@
       "category": "tools",
       "description": {
         "en": "Always-on vulnerability and breaking-change impact monitoring for DeepSeek Harness plugins.",
-        "zh": "Always-on vulnerability and breaking-change impact monitoring for DeepSeek Harness plugins."
+        "zh": "上游雷达：持续监控 DSH 插件的漏洞与破坏性变更影响。"
       },
       "author": "MicroMilo",
       "stars": 3,
@@ -31822,7 +31822,7 @@
       "category": "session",
       "description": {
         "en": "agentmemory for DeepSeek Harness (dsh): full memory_* tools, capture hooks, and context injection over the local REST server",
-        "zh": "agentmemory for DeepSeek Harness (dsh): full memory_* tools, capture hooks, and context injection over the local REST server"
+        "zh": "agentmemory 集成：完整 memory_* 工具、自动捕获钩子、本地 REST 服务的上下文注入。"
       },
       "author": "elementor-i",
       "stars": 3,
@@ -31860,7 +31860,7 @@
       "category": "llm",
       "description": {
         "en": "Model-based permission approval (approve-for-me) for DeepSeek Harness: an approval/request answerer backed by a separate reviewer model",
-        "zh": "Model-based permission approval (approve-for-me) for DeepSeek Harness: an approval/request answerer backed by a separate reviewer model"
+        "zh": "模型审批（approve-for-me）：用独立审查模型代替人工回答审批请求。"
       },
       "author": "Letter2025",
       "stars": 3,
@@ -32126,7 +32126,7 @@
       "category": "session",
       "description": {
         "en": "Multi-tenant SaaS extension for DeepSeek Harness (DSH): tenant identity, session isolation, authorization, tenant-aware MCP, and audit.",
-        "zh": "Multi-tenant SaaS extension for DeepSeek Harness (DSH): tenant identity, session isolation, authorization, tenant-aware MCP, and audit."
+        "zh": "多租户 SaaS 扩展：租户身份、会话隔离、授权、租户感知 MCP 和审计。"
       },
       "author": "GuoMonth",
       "stars": 3,
@@ -32202,7 +32202,7 @@
       "category": "llm",
       "description": {
         "en": "Calculate the real-time cost of DeepSeek API calls made by DeepSeek Harness.",
-        "zh": "Calculate the real-time cost of DeepSeek API calls made by DeepSeek Harness."
+        "zh": "实时算账：DSH 每调一次 DeepSeek API 的花费即时计算给你看。"
       },
       "author": "bobcat848",
       "stars": 4,
@@ -32240,7 +32240,7 @@
       "category": "llm",
       "description": {
         "en": "Energy & carbon metering for DeepSeek Harness: per-turn/per-request energy, cache carbon savings, electricity cost.",
-        "zh": "Energy & carbon metering for DeepSeek Harness: per-turn/per-request energy, cache carbon savings, electricity cost."
+        "zh": "能耗与碳排放计量：看每次对话/请求的能耗、缓存减碳量和电费。"
       },
       "author": "dclichang2022",
       "stars": 4,
@@ -32743,7 +32743,7 @@
       "category": "session",
       "description": {
         "en": "A DeepSeek Harness plugin for Context insight panel — a Context tab in the web UI showing what the model's context window is made of and ho…",
-        "zh": "A DeepSeek Harness plugin for Context insight panel — a Context tab in the web UI showing what the model's context window is made of and ho…"
+        "zh": "上下文洞察面板：Web 界面加一个 Context 标签页，直观看到模型上下文窗口里装了什么、怎么变化的。"
       },
       "author": "bowenliang123",
       "stars": 33,
@@ -32788,7 +32788,7 @@
       "category": "tools",
       "description": {
         "en": "SearXNG search and Crawl4AI fetch providers for DeepSeek Harness",
-        "zh": "SearXNG search and Crawl4AI fetch providers for DeepSeek Harness"
+        "zh": "自建搜索接入：用 SearXNG 搜索 + Crawl4AI 抓取网页，替换 DSH 默认的联网方案。"
       },
       "author": "cyijun",
       "stars": 10,
@@ -32876,7 +32876,7 @@
       "category": "tools",
       "description": {
         "en": "DeepSeek Harness for VS Code",
-        "zh": "DeepSeek Harness for VS Code"
+        "zh": "DSH 的 VS Code 扩展：在编辑器里直接使用 DeepSeek Harness。"
       },
       "author": "weinibuliu",
       "stars": 6,
@@ -33078,7 +33078,7 @@
       "category": "orchestration",
       "description": {
         "en": "DeepSeek Harness is a plugin-based system for building AI agents. Everything, from tools and models to the web UI, can be added or replaced…",
-        "zh": "DeepSeek Harness is a plugin-based system for building AI agents. Everything, from tools and models to the web UI, can be added or replaced…"
+        "zh": "最小插件教学示例：完整展示 Bundle 分发、Profile 装配、工具注册与真实调用的链路。"
       },
       "author": "0lidaxiang",
       "stars": 4,
@@ -33154,7 +33154,7 @@
       "category": "llm",
       "description": {
         "en": "DeepSeek Harness plugin: describe_image — give a text-only model vision through an OpenAI-compatible VLM endpoint",
-        "zh": "DeepSeek Harness plugin: describe_image — give a text-only model vision through an OpenAI-compatible VLM endpoint"
+        "zh": "describe_image 工具：通过 OpenAI 兼容 VLM 端点给纯文本模型补上识图能力。"
       },
       "author": "whitelonng",
       "stars": 4,
@@ -33230,7 +33230,7 @@
       "category": "session",
       "description": {
         "en": "DeepSeek Harness peer-consult plugin: talk to a fork of another session without mutating the original",
-        "zh": "DeepSeek Harness peer-consult plugin: talk to a fork of another session without mutating the original"
+        "zh": "同行咨询：和另一个会话的分叉对话，不污染原会话。"
       },
       "author": "biuboomc",
       "stars": 3,
@@ -33306,7 +33306,7 @@
       "category": "ui",
       "description": {
         "en": "Steam Workshop style plugin store for DeepSeek Harness Web UI: browse 850+ community plugins, one-click install with GitHub mirror accelera…",
-        "zh": "Steam Workshop style plugin store for DeepSeek Harness Web UI: browse 850+ community plugins, one-click install with GitHub mirror accelera…"
+        "zh": "Steam 工坊式插件商店：浏览 850+ 社区插件、一键安装，GitHub 镜像加速 + 安全校验。"
       },
       "author": "loguhan",
       "stars": 3,
@@ -33344,7 +33344,7 @@
       "category": "session",
       "description": {
         "en": "DeepSeek Harness (DSH) web-GUI plugin: archived-session panel with unarchive & delete",
-        "zh": "DeepSeek Harness (DSH) web-GUI plugin: archived-session panel with unarchive & delete"
+        "zh": "已归档会话面板：列出归档会话，支持取消归档、单个/批量永久删除。"
       },
       "author": "huahai0202",
       "stars": 3,
@@ -33496,7 +33496,7 @@
       "category": "tools",
       "description": {
         "en": "CI failure, diagnosed before you open the logs — DeepSeek Harness plugin that watches GitHub Actions for new failures and turns raw logs in…",
-        "zh": "CI failure, diagnosed before you open the logs — DeepSeek Harness plugin that watches GitHub Actions for new failures and turns raw logs in…"
+        "zh": "CI 故障诊断：盯着 GitHub Actions 新失败，把原始日志翻译成可操作的诊断。"
       },
       "author": "jkrandom-sudo",
       "stars": 3,
@@ -33686,7 +33686,7 @@
       "category": "orchestration",
       "description": {
         "en": "Android Mobile GUI Agent plugin for DeepSeek Harness with ADB control, iterative verification, approvals, and a Web mobile view",
-        "zh": "Android Mobile GUI Agent plugin for DeepSeek Harness with ADB control, iterative verification, approvals, and a Web mobile view"
+        "zh": "安卓 GUI Agent：ADB 控制手机、迭代验证、审批机制 + Web 端手机视图。"
       },
       "author": "kunjinkao-os",
       "stars": 4,
@@ -33724,7 +33724,7 @@
       "category": "session",
       "description": {
         "en": "DSH Session Manager: manage conversations, archive/restore, delete safely, open record folders.",
-        "zh": "DSH Session Manager: manage conversations, archive/restore, delete safely, open record folders."
+        "zh": "会话管理器：集中管理本机所有对话——归档、恢复、安全删除、打开记录目录。"
       },
       "author": "Zephyr-vibe",
       "stars": 7,
@@ -33838,7 +33838,7 @@
       "category": "session",
       "description": {
         "en": "DSH plugin: estimated DeepSeek API cost per session in the web GUI stats strip",
-        "zh": "DSH plugin: estimated DeepSeek API cost per session in the web GUI stats strip"
+        "zh": "会话费用估算：Web 底部统计条显示当前会话的 DeepSeek API 花费。"
       },
       "author": "ChengChe106",
       "stars": 3,
@@ -33876,7 +33876,7 @@
       "category": "tools",
       "description": {
         "en": "A community DeepSeek Pet client plugin for DeepSeek Harness",
-        "zh": "A community DeepSeek Pet client plugin for DeepSeek Harness"
+        "zh": "社区版 DeepSeek 桌宠客户端插件。"
       },
       "author": "Vulcan626",
       "stars": 3,
@@ -33952,7 +33952,7 @@
       "category": "utility",
       "description": {
         "en": "DeepSeek Harness task-completion reminder plugin",
-        "zh": "DeepSeek Harness task-completion reminder plugin"
+        "zh": "任务完成提醒：完成、待审核、失败都会弹提醒，不用一直盯着界面。"
       },
       "author": "ltao0829",
       "stars": 4,
@@ -34104,7 +34104,7 @@
       "category": "orchestration",
       "description": {
         "en": "Installable DeepSeek Harness bundle that teaches agents to develop and audit DSH plugins.",
-        "zh": "Installable DeepSeek Harness bundle that teaches agents to develop and audit DSH plugins."
+        "zh": "教 agent 开发 DSH 插件的可安装包：含开发与审计插件的技能，可装进 profile 直接当 agent 技能用。"
       },
       "author": "w2112515",
       "stars": 7,
@@ -34262,7 +34262,7 @@
       "category": "session",
       "description": {
         "en": "Export DeepSeek Harness sessions to Markdown for review, blogging and audit. dsh plugin.",
-        "zh": "Export DeepSeek Harness sessions to Markdown for review, blogging and audit. dsh plugin."
+        "zh": "会话导出复盘：把 agent 会话自动导出为 Markdown，供复盘、写博客、审计。"
       },
       "author": "yangyongzhen",
       "stars": 3,
@@ -34528,7 +34528,7 @@
       "category": "session",
       "description": {
         "en": "Export DeepSeek Harness (DSH) sessions to portable Markdown and JSON — dsh plugin",
-        "zh": "Export DeepSeek Harness (DSH) sessions to portable Markdown and JSON — dsh plugin"
+        "zh": "会话导出：把 DSH 会话导出为可移植的 Markdown 和 JSON。"
       },
       "author": "bwndlct",
       "stars": 3,
@@ -34756,7 +34756,7 @@
       "category": "utility",
       "description": {
         "en": "DeepSeek Harness Telegram mobile remote: bind live Web sessions (Codex-style). Install: dsh plugin add github:hi-wenw/dsh-telegram-channel",
-        "zh": "DeepSeek Harness Telegram mobile remote: bind live Web sessions (Codex-style). Install: dsh plugin add github:hi-wenw/dsh-telegram-channel"
+        "zh": "Telegram 移动端远程：在手机上绑定并操作 DSH 的实时 Web 会话（Codex 风格）。"
       },
       "author": "hi-wenw",
       "stars": 5,
@@ -34794,7 +34794,7 @@
       "category": "session",
       "description": {
         "en": "Snapshot-first Playwright browser automation for DeepSeek Harness: accessibility-tree interaction with stable refs, per-session browser con…",
-        "zh": "Snapshot-first Playwright browser automation for DeepSeek Harness: accessibility-tree interaction with stable refs, per-session browser con…"
+        "zh": "Playwright 浏览器自动化：无障碍树交互、稳定 ref、按会话隔离浏览器。"
       },
       "author": "ChenyuHeee",
       "stars": 3,
@@ -34946,7 +34946,7 @@
       "category": "tools",
       "description": {
         "en": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)",
-        "zh": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)"
+        "zh": "AnySearch 联网搜索接入：给 DSH 配上 AnySearch 的搜索 provider 和进阶搜索工具。"
       },
       "author": "anysearch-team",
       "stars": 19,
@@ -34991,7 +34991,7 @@
       "category": "ui",
       "description": {
         "en": "File explorer plugin for DeepSeek Harness: file tree, preview, markdown, syntax highlighting, in-panel editing, VS Code integration - DeepS…",
-        "zh": "File explorer plugin for DeepSeek Harness: file tree, preview, markdown, syntax highlighting, in-panel editing, VS Code integration - DeepS…"
+        "zh": "文件浏览器：右侧可拖拽的文件树，支持 Markdown 渲染、语法高亮、面板内编辑和 VS Code 集成。"
       },
       "author": "joejojoking-cloud",
       "stars": 12,
@@ -35036,7 +35036,7 @@
       "category": "tools",
       "description": {
         "en": "Toy Control Protocol for DSH",
-        "zh": "Toy Control Protocol for DSH"
+        "zh": "玩具控制协议（TCP）：用 DSH 控制可编程玩具，给 agent 加一点实体交互的玩法。"
       },
       "author": "c3ll256",
       "stars": 33,
@@ -35119,7 +35119,7 @@
       "category": "session",
       "description": {
         "en": "DeepSeek Harness plugin for shareable session deep links",
-        "zh": "DeepSeek Harness plugin for shareable session deep links"
+        "zh": "会话深链分享：生成可分享的链接直达某个 DSH 会话。"
       },
       "author": "R3alloc",
       "stars": 6,
@@ -35163,7 +35163,7 @@
       "category": "session",
       "description": {
         "en": "Per-host personalization for DSH: custom instructions, local long-term memory, and reply-tone presets.",
-        "zh": "Per-host personalization for DSH: custom instructions, local long-term memory, and reply-tone presets."
+        "zh": "按主机个性化：全局自定义指令、本地长期记忆、回复语气预设，每个会话都生效。"
       },
       "author": "Zephyr-vibe",
       "stars": 4,
@@ -35201,7 +35201,7 @@
       "category": "utility",
       "description": {
         "en": "High-reliability Feishu/Lark bridge for DeepSeek Harness — QR one-click auth, multi-mode agents, card-based commands, zero-loss outbox, med…",
-        "zh": "High-reliability Feishu/Lark bridge for DeepSeek Harness — QR one-click auth, multi-mode agents, card-based commands, zero-loss outbox, med…"
+        "zh": "高可靠飞书桥接：扫码一键授权、多模式 agent、卡片式命令、零丢失发件箱。"
       },
       "author": "amlyczz",
       "stars": 5,
@@ -35239,7 +35239,7 @@
       "category": "ui",
       "description": {
         "en": "Customize the visible DSH Web thinking status with lifecycle-safe CSS.",
-        "zh": "Customize the visible DSH Web thinking status with lifecycle-safe CSS."
+        "zh": "用生命周期安全的 CSS 自定义 DSH Web 的思考状态显示。"
       },
       "author": "Dbi-Eshuh",
       "stars": 4,
@@ -35391,7 +35391,7 @@
       "category": "sandbox",
       "description": {
         "en": "Conservative auto-approval preset for DeepSeek Harness sandbox escalations",
-        "zh": "Conservative auto-approval preset for DeepSeek Harness sandbox escalations"
+        "zh": "保守自动批准档：介于工作区写与完全放开之间的权限档，危险/不确定操作仍转人工。"
       },
       "author": "Jiao-XXX",
       "stars": 3,
@@ -35429,7 +35429,7 @@
       "category": "session",
       "description": {
         "en": "DSH plugin: provider/model usage stats dashboard with response speed, call log, token totals, cache rate, cost estimates, CSV export",
-        "zh": "DSH plugin: provider/model usage stats dashboard with response speed, call log, token totals, cache rate, cost estimates, CSV export"
+        "zh": "Provider/模型用量看板：响应速度、调用日志、token 总量、缓存率、成本估算，支持 CSV 导出。"
       },
       "author": "1HelloMan1",
       "stars": 4,
@@ -35467,7 +35467,7 @@
       "category": "utility",
       "description": {
         "en": "Feishu (Lark) channel bridge for DeepSeek Harness (dsh) — message a Feishu bot, it runs a dsh agent turn, the reply comes back. Community p…",
-        "zh": "Feishu (Lark) channel bridge for DeepSeek Harness (dsh) — message a Feishu bot, it runs a dsh agent turn, the reply comes back. Community p…"
+        "zh": "飞书桥接：给飞书机器人发消息就跑一轮 DSH agent，回复原路返回。"
       },
       "author": "wz-heng",
       "stars": 4,
@@ -35625,7 +35625,7 @@
       "category": "session",
       "description": {
         "en": "Session execution analytics and audit reports for DeepSeek Harness — see how your agent actually worked",
-        "zh": "Session execution analytics and audit reports for DeepSeek Harness — see how your agent actually worked"
+        "zh": "会话执行分析：看看 agent 这次到底怎么干的活，附审计报告。"
       },
       "author": "bwndlct",
       "stars": 3,
@@ -35663,7 +35663,7 @@
       "category": "tools",
       "description": {
         "en": "deepseek harness plugins",
-        "zh": "deepseek harness plugins"
+        "zh": "deepseek harness 插件工作区：一包放多个 DSH 插件（树外维护）。"
       },
       "author": "Ceelog",
       "stars": 4,
@@ -35815,7 +35815,7 @@
       "category": "llm",
       "description": {
         "en": "Native vision, gpt-image-2 and Seedance plugins for DeepSeek Harness via Xiapan Cloud",
-        "zh": "Native vision, gpt-image-2 and Seedance plugins for DeepSeek Harness via Xiapan Cloud"
+        "zh": "霞攀云媒体能力：原生视觉、gpt-image-2、Seedance 视频生成接进 DSH。"
       },
       "author": "dongsheng123132",
       "stars": 3,
@@ -35967,7 +35967,7 @@
       "category": "tools",
       "description": {
         "en": "Automated unit-test generation for DeepSeek Harness: /testgen command + generate_tests tool that scaffold, run, and fix unit tests until th…",
-        "zh": "Automated unit-test generation for DeepSeek Harness: /testgen command + generate_tests tool that scaffold, run, and fix unit tests until th…"
+        "zh": "自动生成单元测试：/testgen 命令 + generate_tests 工具，生成、运行、修复直到全绿。"
       },
       "author": "bujue600-arch",
       "stars": 4,
@@ -36157,7 +36157,7 @@
       "category": "llm",
       "description": {
         "en": "Token usage accounting for DeepSeek Harness, reconciled against New API and Sub2API relay-site billing",
-        "zh": "Token usage accounting for DeepSeek Harness, reconciled against New API and Sub2API relay-site billing"
+        "zh": "Token 记账：对账 New API 与 Sub2API 中转站账单。"
       },
       "author": "zh667",
       "stars": 3,
@@ -36271,7 +36271,7 @@
       "category": "tools",
       "description": {
         "en": "Tool search & slimming for DeepSeek Harness: Hermes-style progressive disclosure — search, describe, and call long-tail tools on demand",
-        "zh": "Tool search & slimming for DeepSeek Harness: Hermes-style progressive disclosure — search, describe, and call long-tail tools on demand"
+        "zh": "工具搜索与瘦身：Hermes 式渐进披露——按需搜索、描述、调用长尾工具。"
       },
       "author": "Letter2025",
       "stars": 3,
@@ -36859,7 +36859,7 @@
       "category": "acp",
       "description": {
         "en": "DeepSeek Harness balance plugin for the Settings page",
-        "zh": "DeepSeek Harness balance plugin for the Settings page"
+        "zh": "余额插件：设置页直接看 DeepSeek 账户余额。"
       },
       "author": "crazywoola",
       "stars": 11,
@@ -36903,7 +36903,7 @@
       "category": "tools",
       "description": {
         "en": "Connect Overleaf projects to DeepSeek Harness (DSH) through OverleafMCP and MCP tools.",
-        "zh": "Connect Overleaf projects to DeepSeek Harness (DSH) through OverleafMCP and MCP tools."
+        "zh": "Overleaf 写作接入：通过 OverleafMCP 让 DSH 直接读写你的 LaTeX 项目和文档。"
       },
       "author": "fly233338",
       "stars": 7,
@@ -37175,7 +37175,7 @@
       "category": "llm",
       "description": {
         "en": "Unofficial DeepSeek Harness LLM provider plugin for Command Code: live model catalog, reasoning-effort support, Models-page card. Ported fr…",
-        "zh": "Unofficial DeepSeek Harness LLM provider plugin for Command Code: live model catalog, reasoning-effort support, Models-page card. Ported fr…"
+        "zh": "Command Code 的 LLM provider（非官方）：实时模型目录、推理强度支持，Models 页有卡片。"
       },
       "author": "Mars-Sea",
       "stars": 6,
@@ -37517,7 +37517,7 @@
       "category": "session",
       "description": {
         "en": "DeepSeek Harness plugin for complete Blender 3D modeling, reconstruction, rendering, validation, and export workflows",
-        "zh": "DeepSeek Harness plugin for complete Blender 3D modeling, reconstruction, rendering, validation, and export workflows"
+        "zh": "Blender 3D 全流程：建模、重建、渲染、校验、导出一站式，聊天里指挥 Blender 干活。"
       },
       "author": "CheshireJCat",
       "stars": 6,
@@ -37675,7 +37675,7 @@
       "category": "tools",
       "description": {
         "en": "Google Antigravity (agy) OAuth auth + model access plugin for DeepSeek Harness: multi-account pool, 429 rotation, device fingerprinting, CL…",
-        "zh": "Google Antigravity (agy) OAuth auth + model access plugin for DeepSeek Harness: multi-account pool, 429 rotation, device fingerprinting, CL…"
+        "zh": "Google Antigravity (agy) 接入：OAuth 授权 + 多账号池 + 429 自动轮换 + 设备指纹。"
       },
       "author": "chaos-03x",
       "stars": 5,
@@ -38359,7 +38359,7 @@
       "category": "session",
       "description": {
         "en": "Task planning with experience muscle-memory for DeepSeek Harness: condition-reflex recall + LLM capability matching + auto-persisted lessons",
-        "zh": "Task planning with experience muscle-memory for DeepSeek Harness: condition-reflex recall + LLM capability matching + auto-persisted lessons"
+        "zh": "带经验记忆的任务规划：条件反射式召回 + LLM 能力匹配 + 自动沉淀教训。"
       },
       "author": "ztl34245881-commits",
       "stars": 4,
@@ -38701,7 +38701,7 @@
       "category": "tools",
       "description": {
         "en": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
-        "zh": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)"
+        "zh": "两段式 Agent 预设：先用精简配置快速启动，再切换到完整 Standard 工具集，兼顾启动速度与全功能。"
       },
       "author": "xiaobright",
       "stars": 950,
@@ -38822,7 +38822,7 @@
       "category": "tools",
       "description": {
         "en": "Browser capability for DeepSeek Harness: headed Edge/Playwright provider, SSRF-safe navigation, a11y-ref clicking, permission gate with aut…",
-        "zh": "Browser capability for DeepSeek Harness: headed Edge/Playwright provider, SSRF-safe navigation, a11y-ref clicking, permission gate with aut…"
+        "zh": "浏览器能力：有头 Edge/Playwright 驱动、SSRF 安全导航、无障碍树点击、权限门。"
       },
       "author": "xylt369",
       "stars": 4,
@@ -38981,7 +38981,7 @@
       "category": "skills",
       "description": {
         "en": "Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineering, authorized pentesting and security re…",
-        "zh": "Complete reverse-skill (85 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineering, authorized pentesting and security re…"
+        "zh": "逆向技能全家桶（85 个 SKILL.md）：逆向工程、授权渗透和安全研究的工作流，打包成插件。"
       },
       "author": "dhicoc",
       "stars": 8,
@@ -39475,7 +39475,7 @@
       "category": "ui",
       "description": {
         "en": "Soothing pastel theme for DeepSeek Harness",
-        "zh": "Soothing pastel theme for DeepSeek Harness"
+        "zh": "Catppuccin 柔和粉彩主题：给 DSH Web 换上一套治愈系配色。"
       },
       "author": "zhijun-dai",
       "stars": 4,
@@ -39931,7 +39931,7 @@
       "category": "tools",
       "description": {
         "en": "Codex-style Side Chat for DeepSeek Harness — select text, ask follow-up questions in a focused side conversation, and keep the main chat un…",
-        "zh": "Codex-style Side Chat for DeepSeek Harness — select text, ask follow-up questions in a focused side conversation, and keep the main chat un…"
+        "zh": "Codex 风格侧边聊天：选中文本后在独立侧栏追问，不打断主对话。"
       },
       "author": "AHGGG",
       "stars": 6,
@@ -40654,7 +40654,7 @@
       "category": "skills",
       "description": {
         "en": "YouMind OpenAPI tools and skill bundle for DeepSeek Harness",
-        "zh": "YouMind OpenAPI tools and skill bundle for DeepSeek Harness"
+        "zh": "YouMind OpenAPI 工具 + 技能包：把 YouMind 的开放接口接进 DSH。"
       },
       "author": "seamas0825-lab",
       "stars": 4,
@@ -41034,7 +41034,7 @@
       "category": "session",
       "description": {
         "en": "Import pi / opencode / codex / claude-code sessions, chat history, and agents into DeepSeek Harness — one-click Sync button, slash commands…",
-        "zh": "Import pi / opencode / codex / claude-code sessions, chat history, and agents into DeepSeek Harness — one-click Sync button, slash commands…"
+        "zh": "一键导入 pi / opencode / codex / claude-code 的会话、历史与 agent 进 DSH。"
       },
       "author": "Chang-Tong",
       "stars": 6,
@@ -41078,7 +41078,7 @@
       "category": "acp",
       "description": {
         "en": "A DeepSeek Harness Web plugin for real-time Token usage, cost estimates, per-round charts, and DeepSeek API balance.",
-        "zh": "A DeepSeek Harness Web plugin for real-time Token usage, cost estimates, per-round charts, and DeepSeek API balance."
+        "zh": "DeepSeek 用量/成本/余额仪表盘：实时 token、费用估算、每轮图表、API 余额。"
       },
       "author": "Max-Samson",
       "stars": 4,
@@ -41116,7 +41116,7 @@
       "category": "ui",
       "description": {
         "en": "VS Code-style three-column Explorer + Monaco editor plugin for the DeepSeek Harness web GUI",
-        "zh": "VS Code-style three-column Explorer + Monaco editor plugin for the DeepSeek Harness web GUI"
+        "zh": "VS Code 风格三栏文件浏览 + Monaco 编辑器，网页版 DSH 直接变身 IDE。"
       },
       "author": "Dpf555",
       "stars": 6,
@@ -41458,7 +41458,7 @@
       "category": "llm",
       "description": {
         "en": "Persistent token usage records and dashboard for DeepSeek Harness",
-        "zh": "Persistent token usage records and dashboard for DeepSeek Harness"
+        "zh": "Token 可观测性：持久统计模型用量，手动选择已接入模型生成用量与会话轨迹分析。"
       },
       "author": "LeemanCheung",
       "stars": 5,
@@ -41496,7 +41496,7 @@
       "category": "tools",
       "description": {
         "en": "DeepSeek Harness provider for GPT models using managed ChatGPT OAuth through Codex app-server",
-        "zh": "DeepSeek Harness provider for GPT models using managed ChatGPT OAuth through Codex app-server"
+        "zh": "GPT 模型接入：通过 Codex app-server 的 ChatGPT OAuth 把 GPT 模型当 provider 用。"
       },
       "author": "DGPisces",
       "stars": 5,
@@ -42256,7 +42256,7 @@
       "category": "tools",
       "description": {
         "en": "View MCP server status (/mcp) and manage MCP servers per profile from the settings page.",
-        "zh": "View MCP server status (/mcp) and manage MCP servers per profile from the settings page."
+        "zh": "MCP 管理：设置页查看 /mcp 状态，按 profile 管理 MCP 服务器。"
       },
       "author": "kairoz9",
       "stars": 4,
@@ -42408,7 +42408,7 @@
       "category": "tools",
       "description": {
         "en": "Tabbit Broser plugins for Deepseek Harness",
-        "zh": "Tabbit Broser plugins for Deepseek Harness"
+        "zh": "让 DSH 通过插件控制 Tabbit 浏览器：安装后 agent 可以驱动 Tabbit 做浏览器操作。"
       },
       "author": "Tabbit-Browser",
       "stars": 14,
@@ -42598,7 +42598,7 @@
       "category": "orchestration",
       "description": {
         "en": "DSH (DeepSeek Harness) plugin that launches and drives a running Godot 4.x game through its in-game TCP interaction server — replaces the g…",
-        "zh": "DSH (DeepSeek Harness) plugin that launches and drives a running Godot 4.x game through its in-game TCP interaction server — replaces the g…"
+        "zh": "Godot 4.x 游戏桥：启动并通过游戏内 TCP 服务器驱动运行中的游戏，替代手动操作。"
       },
       "author": "Smalldy",
       "stars": 4,
@@ -42712,7 +42712,7 @@
       "category": "session",
       "description": {
         "en": "Bookmark assistant replies in DeepSeek Harness: per-message bookmarks with notes/tags, a cross-session center, and one-click Markdown expor…",
-        "zh": "Bookmark assistant replies in DeepSeek Harness: per-message bookmarks with notes/tags, a cross-session center, and one-click Markdown expor…"
+        "zh": "消息收藏夹：逐条收藏助手回复（带笔记/标签）、跨会话中心、一键导出 Markdown。"
       },
       "author": "penguin-oo",
       "stars": 4,
@@ -43092,7 +43092,7 @@
       "category": "tools",
       "description": {
         "en": "Native Docling document intelligence for DeepSeek Harness.",
-        "zh": "Native Docling document intelligence for DeepSeek Harness."
+        "zh": "本地文档智能：离线 OCR 解析 PDF、Office、图片和扫描件，全程不出本机。"
       },
       "author": "Sqhao-O",
       "stars": 4,
@@ -43819,7 +43819,7 @@
       "category": "ui",
       "description": {
         "en": "A loader-independent rescue console for DeepSeek Harness when a broken plugin prevents the Web UI from starting.",
-        "zh": "A loader-independent rescue console for DeepSeek Harness when a broken plugin prevents the Web UI from starting."
+        "zh": "启动救援控制台：插件坏了导致 Web UI 起不来时，用不依赖 loader 的控制台救场。"
       },
       "author": "SaiSenBox",
       "stars": 4,
@@ -43918,7 +43918,7 @@
       "category": "session",
       "description": {
         "en": "Noema long-term memory plugin for DSH: durable, inspectable agent memory with recall tools and a settings page.",
-        "zh": "Noema long-term memory plugin for DSH: durable, inspectable agent memory with recall tools and a settings page."
+        "zh": "Noema 长期记忆：持久、可检查的 agent 记忆，带召回工具和设置页。"
       },
       "author": "ZSeven-W",
       "stars": 4,
@@ -43984,7 +43984,7 @@
       "category": "tools",
       "description": {
         "en": "Web-chat style message actions for DeepSeek Harness: edit your prompt, regenerate answers, and flip versions with a deepseek.com-style <i/N…",
-        "zh": "Web-chat style message actions for DeepSeek Harness: edit your prompt, regenerate answers, and flip versions with a deepseek.com-style <i/N…"
+        "zh": "网页版聊天体验：编辑提问、重新生成、消息上直接翻版本，像在 deepseek.com 上聊天。"
       },
       "author": "cindyguyuehu123",
       "stars": 4,
@@ -44017,7 +44017,7 @@
       "category": "tools",
       "description": {
         "en": "US stock market data tools for DeepSeek Harness, powered by yahoo-finance2",
-        "zh": "US stock market data tools for DeepSeek Harness, powered by yahoo-finance2"
+        "zh": "美股数据工具：基于 yahoo-finance2 提供行情数据，让 agent 能查美股。"
       },
       "author": "Realyujie",
       "stars": 5,
@@ -44281,7 +44281,7 @@
       "category": "session",
       "description": {
         "en": "DSH lorebook-driven fiction writer plugin: import Tavern/SillyTavern character cards & world books, save local Markdown settings, generate…",
-        "zh": "DSH lorebook-driven fiction writer plugin: import Tavern/SillyTavern character cards & world books, save local Markdown settings, generate…"
+        "zh": "跑团/小说创作：导入酒馆角色卡与世界书为本地 Markdown，按设定驱动创作。"
       },
       "author": "609476965",
       "stars": 4,
@@ -44347,7 +44347,7 @@
       "category": "tools",
       "description": {
         "en": "1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav) as a DeepSeek Harness (DSH) plugin",
-        "zh": "1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav) as a DeepSeek Harness (DSH) plugin"
+        "zh": "DeepSeek 官方网页右侧聊天导航栏（ScrollNav）的 1:1 移植。"
       },
       "author": "jjxjjjjiik-bot",
       "stars": 4,
@@ -44380,7 +44380,7 @@
       "category": "skills",
       "description": {
         "en": "Design aesthetics skill pack for DeepSeek Harness (DSH) - keeps vibe-coded websites away from the AI look. 6 styles: dark-saas, apple-minim…",
-        "zh": "Design aesthetics skill pack for DeepSeek Harness (DSH) - keeps vibe-coded websites away from the AI look. 6 styles: dark-saas, apple-minim…"
+        "zh": "设计审美技能包：6 套风格（暗色 SaaS、苹果极简等），让 vibe-coding 出来的网站告别 AI 味。"
       },
       "author": "zhaiyateng",
       "stars": 6,
@@ -44710,7 +44710,7 @@
       "category": "tools",
       "description": {
         "en": "deepseek-harness for vscode .This is a community project, and we welcome your valuable feedback!",
-        "zh": "deepseek-harness for vscode .This is a community project, and we welcome your valuable feedback!"
+        "zh": "deepseek-harness 的 VS Code 社区扩展。"
       },
       "author": "skymecode",
       "stars": 4,
@@ -45354,7 +45354,7 @@
       "category": "tools",
       "description": {
         "en": "Safe automatic permissions for DeepSeek Harness.",
-        "zh": "Safe automatic permissions for DeepSeek Harness."
+        "zh": "安全的自动授权：在「每次都要点批准」和「无脑全放开」之间加一档，按规则自动放行常规操作。"
       },
       "author": "NanmiCoder",
       "stars": 25,
@@ -45420,7 +45420,7 @@
       "category": "session",
       "description": {
         "en": "Shrink MCP context in DeepSeek Harness: 1,000 remote tools behind 2 exact-schema interfaces, with a measured V4 Flash cost pilot.",
-        "zh": "Shrink MCP context in DeepSeek Harness: 1,000 remote tools behind 2 exact-schema interfaces, with a measured V4 Flash cost pilot."
+        "zh": "压缩 MCP 上下文：1000 个远端工具收进 2 个精确 schema 接口，省 token 省上下文。"
       },
       "author": "labmimors",
       "stars": 4,
@@ -46245,7 +46245,7 @@
       "category": "acp",
       "description": {
         "en": "DeepSeek Harness Web UI widget for viewing DeepSeek API balance from the host side.",
-        "zh": "DeepSeek Harness Web UI widget for viewing DeepSeek API balance from the host side."
+        "zh": "宿主侧余额小组件：Web 界面直接查看 DeepSeek API 余额。"
       },
       "author": "ArcanePivot",
       "stars": 5,
@@ -46509,7 +46509,7 @@
       "category": "tools",
       "description": {
         "en": "Native Docling document intelligence for DeepSeek Harness.",
-        "zh": "Native Docling document intelligence for DeepSeek Harness."
+        "zh": "本地文档智能：离线 OCR 解析 PDF、Office、图片和扫描件，全程不出本机。"
       },
       "author": "Sqhao-O",
       "stars": 4,
@@ -46542,7 +46542,7 @@
       "category": "tools",
       "description": {
         "en": "DSH for Hanako",
-        "zh": "DSH for Hanako"
+        "zh": "把 DSH 接进 Hana：作为进程外 subagent 使用，任务走 dsh web host 执行。"
       },
       "author": "Nyasers",
       "stars": 4,

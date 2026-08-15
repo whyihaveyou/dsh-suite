@@ -133,6 +133,7 @@ function trimPlugin(p) {
     author: p.author, stars: p.stars,
     category: p.category, compatStatus: p.compatStatus,
     installCmd: p.installCmd, repo: p.repo, license: p.license,
+    featured: !!p.featured,
   }
 }
 

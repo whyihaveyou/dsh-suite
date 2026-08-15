@@ -45,6 +45,7 @@ window.__ModuleLoader__.load({
       failGuide: '可手动处理：复制命令到终端运行',
       feedback: '反馈', feedbackStore: '商店问题反馈', feedbackTitle: '对该插件提意见（打开 GitHub issue）',
       shownXofN: '已显示 {x} / 共 {n} 条 · 下拉继续加载', totalN: '共 {n} 条（已显示全部）',
+      featTitle: '⭐ 精选推荐', featSub: '策展人挑选 · 按星标排序',
       viewStore: '商店', viewInstalled: '已装管理',
       srcOfficial: '官方内建', srcNpm: '第三方 npm', srcGit: 'git 源', srcSelf: '自研', srcOther: '其他',
       remove: '移除', uninstallTitle: '确认卸载', uninstallHint: '需重启后完全卸载', uninstalling: '卸载中…', uninstallDone: '已卸载，请重启生效', uninstallFailed: '卸载失败',
@@ -76,6 +77,7 @@ window.__ModuleLoader__.load({
       failGuide: 'manual fallback: copy the command and run it in your terminal',
       feedback: 'Feedback', feedbackStore: 'Store feedback', feedbackTitle: 'Give feedback on this plugin (opens GitHub issue)',
       shownXofN: 'Showing {x} / {n} — scroll for more', totalN: '{n} total (all shown)',
+      featTitle: '⭐ Featured', featSub: 'curator picks · sorted by stars',
       viewStore: 'Store', viewInstalled: 'Installed',
       srcOfficial: 'official', srcNpm: '3rd-party npm', srcGit: 'git source', srcSelf: 'self', srcOther: 'other',
       remove: 'Remove', uninstallTitle: 'Confirm uninstall', uninstallHint: 'A restart is needed for full uninstall', uninstalling: 'Removing…', uninstallDone: 'Uninstalled — restart to take effect', uninstallFailed: 'Uninstall failed',
@@ -125,6 +127,11 @@ window.__ModuleLoader__.load({
     // ---------- small UI helpers (dark theme, inline styles) ----------
     const C = {
       card: { background: '#161b22', border: '1px solid #30363d', borderRadius: '8px', padding: '14px', display: 'flex', flexDirection: 'column', gap: '8px', minHeight: '150px' },
+      featWrap: { display: 'flex', gap: '12px', overflowX: 'auto', padding: '2px 2px 8px', marginBottom: '4px' },
+      featCard: { flex: '0 0 264px', background: '#161b22', border: '1px solid #1f6feb', borderRadius: '10px', overflow: 'hidden', cursor: 'pointer', display: 'flex', flexDirection: 'column' },
+      featImgBox: { width: '100%', height: '118px', background: '#0d1117' },
+      featBody: { padding: '10px 12px', display: 'flex', flexDirection: 'column', gap: '6px' },
+      featDesc: { fontSize: '12px', color: '#8b949e', lineHeight: '1.4', display: '-webkit-box', WebkitLineClamp: '2', WebkitBoxOrient: 'vertical', overflow: 'hidden' },
       name: { fontSize: '15px', fontWeight: '600', color: '#e6edf3', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' },
       desc: { fontSize: '12px', color: '#8b949e', lineHeight: '1.4' },
       descZh: { fontSize: '12px', color: '#6e7681', lineHeight: '1.4' },
@@ -289,6 +296,13 @@ window.__ModuleLoader__.load({
         else if (sort === 'compat') { const rank = { ok: 0, unknown: 1, broken: 2, unmaintained: 3 }; list = list.slice().sort((a, b) => (rank[a.compatStatus] ?? 1) - (rank[b.compatStatus] ?? 1)) }
         return list
       }, [catalog, search, category, sort, onlyOk])
+      // v0.7 F-F: featured 策展区 —— catalog featured 条目按星标取 top6，商店顶部横排大卡
+      const featuredList = useMemo(() => catalog
+        .filter((p) => p.featured)
+        .slice()
+        .sort((a, b) => (b.stars || 0) - (a.stars || 0))
+        .slice(0, 6), [catalog])
+      const showFeatured = featuredList.length > 0 && !search.trim() && category === 'all' && !onlyOk
       // v0.7 F-G: 增量渲染 —— 首屏 60 条，哨兵进视口再追加，过滤变化时重置
       const [visible, setVisible] = useState(60)
       useEffect(() => { setVisible(60) }, [search, category, sort, onlyOk])
@@ -662,7 +676,35 @@ window.__ModuleLoader__.load({
               h('button', { style: { ...C.btnGhost, marginLeft: 'auto' }, onClick: () => setDetail(null) }, t('dtClose')))))
       }
 
-      return h('div', null, viewToggle, toolbar, status, h('div', { style: C.grid }, cards),
+      // v0.7 F-F: featured 横排大卡 —— og 图 + 一句话 + 安装按钮，点卡开详情抽屉
+      let featuredEl = null
+      if (showFeatured) {
+        featuredEl = h('div', { style: { marginBottom: '14px' } },
+          h('div', { style: { display: 'flex', alignItems: 'baseline', gap: '10px', margin: '2px 0 8px' } },
+            h('span', { style: { fontSize: '14px', fontWeight: '700', color: '#e6edf3' } }, t('featTitle')),
+            h('span', { style: { fontSize: '11px', color: '#6e7681' } }, t('featSub'))),
+          h('div', { style: C.featWrap }, featuredList.map((p) => {
+            const fInstalled = isInstalled(p, names)
+            const fBusy = installing === p.name
+            const fDesc = (t('lang') === 'zh' ? (p.desc_zh || p.desc_en) : (p.desc_en || p.desc_zh)) || ''
+            return h('div', { key: 'feat-' + (p.id || p.name), style: C.featCard, onClick: () => setDetail(p), title: t('dtOpen') },
+              p.repo ? h('div', { style: C.featImgBox }, h('img', { src: 'https://opengraph.githubassets.com/1/' + p.repo, alt: p.repo, loading: 'lazy', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } })) : null,
+              h('div', { style: C.featBody },
+                h('div', { style: { fontSize: '13px', fontWeight: '600', color: '#e6edf3', wordBreak: 'break-all' } }, p.name),
+                h('div', { style: C.featDesc }, fDesc),
+                h('div', { style: { fontSize: '11px', color: '#8b949e', display: 'flex', gap: '8px' } },
+                  h('span', null, (p.stars || 0) + '★'),
+                  h('span', null, p.author || '?')),
+                h('div', { style: { display: 'flex', gap: '8px', marginTop: 'auto' } },
+                  fInstalled
+                    ? h('button', { style: C.btnDisabled }, '✅ ' + t('installed'))
+                    : fBusy
+                      ? h('button', { style: C.btnDisabled }, t('installing'))
+                      : h('button', { style: C.btn, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, t('install')))))
+          })))
+      }
+
+      return h('div', null, viewToggle, toolbar, status, featuredEl, h('div', { style: C.grid }, cards),
       // v0.7 F-G: 增量渲染哨兵 + 结果计数
       filtered.length > 0
         ? h('div', {

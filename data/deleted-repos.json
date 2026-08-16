@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T20:39:58.306Z",
+  "generated_at": "2026-08-16T07:01:30.499Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -162,6 +162,24 @@
       "lastStars": 0,
       "lastPush": "",
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
+    },
+    {
+      "repo": "walavave/dsh-git",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-16T07:01:30.493Z",
+      "lastDetectedAt": "2026-08-16T07:01:30.493Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/walavave/dsh-git"
+    },
+    {
+      "repo": "zhulin025/LaoA-dshGF",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-16T07:01:30.493Z",
+      "lastDetectedAt": "2026-08-16T07:01:30.493Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     }
   ]
 }

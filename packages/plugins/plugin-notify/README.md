@@ -21,6 +21,8 @@
   - `approval/asked`（来自 `@deepseek-ai/dsh-user-approval`）→ **approval_requested**（待审批）
 - 配置驱动，6 种通道：飞书、企业微信、钉钉、Slack、Discord、自定义（POST JSON）。
 - 本机通知：macOS 走 `osascript display notification`，非 macOS 自动跳过。
+- **免打扰时段 (v0.2)**：配置 `dnd.start`/`dnd.end`（HH:MM，支持跨天如 `23:00-08:00`）。时段内事件照常监听记录（console 标注「免打扰…事件照记不通知」），但不弹本机通知、不发任何 webhook。
+- **内容可配置 (v0.2)**：`includeSession` / `includeDuration` 开关通知文本里的「会话」「耗时」行，默认均开启。
 - 发射是**不可逆副作用**：POST 失败只 `console.warn`，绝不重试、绝不阻塞 agent 循环。
 
 - Listens on DSH's durable `session/event` firehose and notifies on three event kinds:
@@ -29,6 +31,8 @@
   - `approval/asked` (from `@deepseek-ai/dsh-user-approval`) → **approval_requested**
 - Config-driven, 6 channels: Feishu, WeCom, DingTalk, Slack, Discord, custom JSON.
 - Local notification via `osascript` on macOS; skipped elsewhere.
+- Do-not-disturb window (v0.2): `dnd.start`/`dnd.end` (HH:MM, cross-midnight like `23:00-08:00` works). Inside the window events are still observed/logged ("免打扰…事件照记不通知") but no local popup and no webhook is sent.
+- Configurable content (v0.2): `includeSession` / `includeDuration` toggle the 会话/耗时 lines (both default on).
 - Emission is irreversible: failed POSTs only `console.warn`, never retried, never block the loop.
 
 ---

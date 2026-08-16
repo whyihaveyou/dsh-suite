@@ -37,6 +37,13 @@ export interface Config {
   events?: string[]
   local?: boolean
   timeoutMs?: number
+  /** Do-not-disturb window (HH:MM, empty = off). During the window the
+   *  event is still observed/logged but no notification is emitted. */
+  dnd?: { start?: string; end?: string }
+  /** Include the 会话 line in the notification text. */
+  includeSession?: boolean
+  /** Include the 耗时 line in the notification text. */
+  includeDuration?: boolean
 }
 
 export const Config = Schema.object({
@@ -52,6 +59,12 @@ export const Config = Schema.object({
     .description('触发通知的事件：task_done（回合完成）/ error（出错） / approval_requested（待审批）'),
   local: Schema.boolean().default(true).description('是否同时发本机系统通知（macOS osascript）'),
   timeoutMs: Schema.number().default(5000).description('单次 webhook 请求超时（毫秒）'),
+  dnd: Schema.object({
+    start: Schema.string().default('').description('免打扰开始（HH:MM，留空关闭）'),
+    end: Schema.string().default('').description('免打扰结束（HH:MM，跨天也支持，如 23:00-08:00）'),
+  }).description('免打扰时段：期间不弹本机通知也不发 webhook，事件照常记录'),
+  includeSession: Schema.boolean().default(true).description('通知内容是否带「会话」行'),
+  includeDuration: Schema.boolean().default(true).description('通知内容是否带「耗时」行'),
 })
 
 type NotifyKind = 'task_done' | 'error' | 'approval_requested'
@@ -76,6 +89,18 @@ export function apply(ctx: Context, config: Config = {}) {
   const local = cfg.local ?? true
   const timeoutMs = cfg.timeoutMs ?? 5000
   const webhooks = cfg.webhooks ?? {}
+  const dnd = cfg.dnd
+  const includeSession = cfg.includeSession ?? true
+  const includeDuration = cfg.includeDuration ?? true
+
+  /** DND gate: event is logged (recorded) but no notification is emitted. */
+  const dispatch = (n: Notification): void => {
+    if (inDnd(dnd)) {
+      console.log(`[plugin-notify] ${n.kind} · ${n.title} · 会话 ${n.sessionId} · 免打扰时段（${dnd?.start}-${dnd?.end}），事件照记不通知`)
+      return
+    }
+    send(n, webhooks, timeoutMs, local, includeSession, includeDuration)
+  }
 
   ctx.on('session/event', (session: Session, event: SessionEvent) => {
     if (event.type === 'turn/start') {
@@ -89,26 +114,26 @@ export function apply(ctx: Context, config: Config = {}) {
       if (!events.has(kind)) return
       const started = turnStarts.get(String(session.id))
       turnStarts.delete(String(session.id))
-      send({
+      dispatch({
         kind,
         title: sessionTitle(session),
         sessionId: String(session.id),
         summary: summarizeTurn(session, event.data.turn),
         reason: reasonLabel(reason),
         durationMs: started === undefined ? undefined : Date.now() - started,
-      }, webhooks, timeoutMs, local)
+      })
       return
     }
 
     if (event.type === 'approval/asked') {
       if (!events.has('approval_requested')) return
       const data = event.data
-      send({
+      dispatch({
         kind: 'approval_requested',
         title: sessionTitle(session),
         sessionId: String(session.id),
         summary: `等待审批：工具 ${data.toolName}${data.reason ? `（${data.reason}）` : ''}`,
-      }, webhooks, timeoutMs, local)
+      })
     }
   })
 }
@@ -119,8 +144,15 @@ function normalizeEvents(configured: string[] | undefined): NotifyKind[] {
   return known.filter(kind => configured.includes(kind))
 }
 
-function send(n: Notification, webhooks: NonNullable<Config['webhooks']>, timeoutMs: number, local: boolean): void {
-  const text = renderText(n)
+function send(
+  n: Notification,
+  webhooks: NonNullable<Config['webhooks']>,
+  timeoutMs: number,
+  local: boolean,
+  includeSession: boolean,
+  includeDuration: boolean,
+): void {
+  const text = renderText(n, includeSession, includeDuration)
   const signal = AbortSignal.timeout(timeoutMs)
   const channels = Object.entries(webhooks)
     .filter(([, url]) => typeof url === 'string' && url.length > 0)
@@ -161,14 +193,35 @@ function send(n: Notification, webhooks: NonNullable<Config['webhooks']>, timeou
   if (local) notifyLocal(n.kind === 'task_done' ? '✅ 任务完成' : n.kind === 'error' ? '⚠️ 运行出错' : '⏸️ 等待审批', text)
 }
 
-function renderText(n: Notification): string {
+function renderText(n: Notification, includeSession: boolean, includeDuration: boolean): string {
   const kindLabel = n.kind === 'task_done' ? '任务完成' : n.kind === 'error' ? '运行出错' : '等待审批'
   const lines = [`【${kindLabel}】${n.title}`]
   if (n.summary) lines.push(`摘要：${n.summary}`)
   if (n.reason) lines.push(`原因：${n.reason}`)
-  if (n.durationMs !== undefined) lines.push(`耗时：${formatDuration(n.durationMs)}`)
-  lines.push(`会话：${n.sessionId}`)
+  if (includeDuration && n.durationMs !== undefined) lines.push(`耗时：${formatDuration(n.durationMs)}`)
+  if (includeSession) lines.push(`会话：${n.sessionId}`)
   return lines.join('\n')
+}
+
+/** HH:MM -> minutes since midnight, or null when malformed. */
+function parseHM(v: string | undefined): number | null {
+  if (!v) return null
+  const m = /^(\d{1,2}):(\d{2})$/.exec(v.trim())
+  if (!m) return null
+  const h = Number(m[1])
+  const mi = Number(m[2])
+  if (h > 23 || mi > 59) return null
+  return h * 60 + mi
+}
+
+/** In the do-not-disturb window? Cross-midnight ranges (23:00-08:00) are
+ *  supported; equal start/end or malformed values mean "never". */
+function inDnd(dnd: { start?: string; end?: string } | undefined, now = new Date()): boolean {
+  const s = parseHM(dnd?.start)
+  const e = parseHM(dnd?.end)
+  if (s === null || e === null || s === e) return false
+  const cur = now.getHours() * 60 + now.getMinutes()
+  return s < e ? cur >= s && cur < e : cur >= s || cur < e
 }
 
 function formatDuration(ms: number): string {

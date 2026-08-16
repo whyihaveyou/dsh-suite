@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-16T18:48:32.109Z",
+ "ts": "2026-08-16T19:35:28.554Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -64,6 +64,7 @@
   "awesome-dsh-plugins-oslook",
   "awesome-dsh-plugins-white0dew",
   "awesome-gpt-image-2",
+  "ax-feishu-bridge",
   "axern",
   "baton",
   "better-deepseek-harkness",

@@ -34,6 +34,39 @@ const DELETED = join(DATA, 'deleted-repos.json');
 const HISTORY = join(DATA, 'stats-history.json');
 const BASELINE = join(DATA, 'stats-baseline.json');
 
+// 9 个第一方 npm 包（@dsh-suite scope + create-dsh-plugin）。周下载量窗口滞后约
+// 6 天（last-week = 最近一个完整周），如实记录，趋势依然有效；无历史可回填。
+const NPM_PACKAGES = [
+  'create-dsh-plugin',
+  '@dsh-suite/all',
+  '@dsh-suite/plugin-deus',
+  '@dsh-suite/preset-center',
+  '@dsh-suite/plugin-manager',
+  '@dsh-suite/plugin-notify',
+  '@dsh-suite/plugin-session-export',
+  '@dsh-suite/plugin-team-board',
+  '@dsh-suite/themes',
+];
+
+/** 查各包 last-week 下载量（scoped 包名 URL 编码 %40scope%2Fname）；失败置 0 */
+async function fetchNpmDownloads() {
+  const out = {};
+  await Promise.all(NPM_PACKAGES.map(async (pkg) => {
+    const enc = pkg.replace('@', '%40').replace('/', '%2F');
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), 15000);
+    try {
+      const res = await fetch(`https://api.npmjs.org/downloads/point/last-week/${enc}`, { signal: ctl.signal });
+      if (res.ok) {
+        const j = await res.json();
+        out[pkg] = typeof j.downloads === 'number' ? j.downloads : 0;
+      } else out[pkg] = 0;
+    } catch { out[pkg] = 0; }
+    clearTimeout(t);
+  }));
+  return out;
+}
+
 const json = (p, fb) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return fb; } };
 const readLines = (p) => { try { return readFileSync(p, 'utf8').trim().split('\n').filter(Boolean); } catch { return []; } };
 
@@ -65,8 +98,8 @@ function computePoint(pluginsJson, { installedIds, deletedCount, ts, newEntriesT
   return p;
 }
 
-/** 当前实况点 */
-function currentPoint() {
+/** 当前实况点（async：含 npm 下载量查询） */
+async function currentPoint() {
   const data = json(PLUGINS, { plugins: [], watchlist: [] });
   const installed = json(INSTALLED, { ids: [] });
   const installedIds = Array.isArray(installed.ids) ? installed.ids.length : (installed.count || 0);
@@ -79,11 +112,13 @@ function currentPoint() {
     const prev = new Set(baseline.ids);
     newToday = [...curIds].filter((id) => !prev.has(id)).length;
   }
-  return computePoint(data, {
+  const point = computePoint(data, {
     installedIds, deletedCount,
     ts: new Date().toISOString(),
     newEntriesToday: newToday,
   });
+  point.npmDownloads = await fetchNpmDownloads();
+  return point;
 }
 
 /** 回填：git 里每个有 data/plugins.json 提交的日期，取当日最后一个 commit 计算指标 */
@@ -126,7 +161,7 @@ function backfillPoints() {
   return points;
 }
 
-function main() {
+async function main() {
   const backfill = process.argv.includes('--backfill');
   const existing = readLines(HISTORY).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
   const lines = [];
@@ -135,7 +170,7 @@ function main() {
     gitPoints.forEach((p) => lines.push(p));
   }
   // 追加当前实况点（同小时幂等：已有同 ts 前缀则不重复）
-  const cur = currentPoint();
+  const cur = await currentPoint();
   const hourKey = cur.ts.slice(0, 13);
   // backfill 模式忽略旧文件（全量重建），dedup 只看本批点
   const pool = backfill ? lines : [...lines, ...existing];

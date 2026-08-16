@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-16T09:43:40.548Z",
+  "generated_at": "2026-08-16T09:56:12.467Z",
   "repo": "whyihaveyou/dsh-suite",
   "totals": {
     "curated": 1405,
@@ -50962,30 +50962,28 @@
       "deletedRepos": 20
     },
     {
-      "ts": "2026-08-16T08:48:18.015Z",
-      "totalEntries": 2150,
-      "watchlistCount": 751,
+      "ts": "2026-08-16T09:54:30.840Z",
+      "totalEntries": 2128,
+      "watchlistCount": 745,
       "featuredCount": 21,
-      "totalStars": 337963,
+      "totalStars": 336073,
       "l3Count": 79,
       "compatOk": 221,
       "compatBroken": 0,
-      "compatUnknown": 1929,
-      "newEntriesToday": 15,
-      "deletedRepos": 20
-    },
-    {
-      "ts": "2026-08-16T09:43:40.115Z",
-      "totalEntries": 2157,
-      "watchlistCount": 752,
-      "featuredCount": 21,
-      "totalStars": 338856,
-      "l3Count": 79,
-      "compatOk": 221,
-      "compatBroken": 0,
-      "compatUnknown": 1936,
-      "newEntriesToday": 7,
-      "deletedRepos": 20
+      "compatUnknown": 1907,
+      "newEntriesToday": 1,
+      "deletedRepos": 20,
+      "npmDownloads": {
+        "@dsh-suite/plugin-notify": 116,
+        "create-dsh-plugin": 309,
+        "@dsh-suite/plugin-team-board": 49,
+        "@dsh-suite/preset-center": 245,
+        "@dsh-suite/themes": 182,
+        "@dsh-suite/all": 28,
+        "@dsh-suite/plugin-manager": 729,
+        "@dsh-suite/plugin-session-export": 97,
+        "@dsh-suite/plugin-deus": 312
+      }
     }
   ]
 }

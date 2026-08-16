@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T07:01:30.499Z",
+  "generated_at": "2026-08-16T07:47:30.357Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -146,6 +146,15 @@
       "lastKnownUrl": "https://github.com/Shmilyol/galgame-skin"
     },
     {
+      "repo": "walavave/dsh-git",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-16T07:01:30.493Z",
+      "lastDetectedAt": "2026-08-16T07:47:30.214Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/walavave/dsh-git"
+    },
+    {
       "repo": "yeshimei/dsh-sound",
       "seen": 2,
       "firstDetectedAt": "2026-08-14T19:22:19.301Z",
@@ -164,19 +173,10 @@
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
     },
     {
-      "repo": "walavave/dsh-git",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-16T07:01:30.493Z",
-      "lastDetectedAt": "2026-08-16T07:01:30.493Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/walavave/dsh-git"
-    },
-    {
       "repo": "zhulin025/LaoA-dshGF",
-      "seen": 1,
+      "seen": 2,
       "firstDetectedAt": "2026-08-16T07:01:30.493Z",
-      "lastDetectedAt": "2026-08-16T07:01:30.493Z",
+      "lastDetectedAt": "2026-08-16T07:47:30.213Z",
       "lastStars": 2,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"

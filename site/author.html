@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author Center — dsh-suite</title>
+  <meta name="description" content="Look up any plugin author: listed entries, stars, compat status, install commands.">
+  <meta property="og:type" content="website"><meta property="og:title" content="Author Center — dsh-suite">
+  <meta property="og:description" content="Look up any plugin author: listed entries, stars, compat status, install commands."><meta property="og:image" content="https://whyihaveyou.github.io/dsh-suite//assets/og-default.png">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Author Center — dsh-suite"><meta name="twitter:image" content="https://whyihaveyou.github.io/dsh-suite//assets/og-default.png">
+  <link rel="alternate" hreflang="zh-CN" href="https://whyihaveyou.github.io/dsh-suite//author-zh.html"><link rel="alternate" hreflang="x-default" href="https://whyihaveyou.github.io/dsh-suite//author.html">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="canonical" href="https://whyihaveyou.github.io/dsh-suite//author.html">
+  <script>
+  (function () {
+    var current = null;
+    try { current = localStorage.getItem('dshTheme'); } catch (e) {}
+    if (current !== 'light' && current !== 'dark') {
+      current = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+    }
+    function apply(t) {
+      current = t;
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('dshTheme', t); } catch (e) {}
+      var btns = document.querySelectorAll('[data-theme-toggle]');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].textContent = t === 'dark' ? '🌙' : '☀️';
+        btns[i].setAttribute('aria-label', t === 'dark' ? '切换到浅色模式' : '切换到深色模式');
+      }
+    }
+    apply(current);
+    document.addEventListener('DOMContentLoaded', function () { apply(current); });
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-theme-toggle]');
+      if (!b) return;
+      apply(current === 'dark' ? 'light' : 'dark');
+    });
+  })();
+</script>
+    <script>
+    if (new URLSearchParams(location.search).get('lang') === 'zh' || (localStorage.getItem('dsh-suite-lang') === 'zh' && !new URLSearchParams(location.search).get('lang'))) {
+      var qs = new URLSearchParams(location.search); qs.set('lang', 'zh');
+      location.replace('author-zh.html?' + qs.toString());
+    }
+  </script>
+  <script>
+    var p = new URLSearchParams(location.search).get('lang');
+    if (p === 'zh' || p === 'en') localStorage.setItem('dsh-suite-lang', p);
+  </script>
+</head>
+<body data-ac-page="author">
+  <header class="site-header">
+    <nav>
+      <a class="nav-title" href="index.html"> <span class="nav-title-note"></span></a>
+      <a class="nav-lb" href="stars.html">Leaderboard</a>
+      <a class="nav-lb" href="learn.html">Learn</a>
+      <span class="spacer"></span>
+      <button class="theme-toggle" id="theme-toggle" aria-label="" title="">🌓</button>
+      <a class="lang-toggle" id="lang-toggle" href="author-zh.html">中文</a>
+    </nav>
+  </header>
+  <main class="lb-main">
+    <div class="lb-hero">
+    <h1 class="lb-title">🤝 Author Data Card</h1>
+    <p class="lb-subtitle">Enter a GitHub owner or owner/repo (a full dsh plugin add command also works).</p>
+  </div>
+  <section class="ac-panel ac-form-row">
+    <input id="ac-q" class="ac-input" list="ac-suggest" placeholder="e.g. spineSo · whyihaveyou/currant-gaze · @dsh-suite/plugin-deus" autocomplete="off" spellcheck="false">
+    <datalist id="ac-suggest"></datalist>
+    <button id="ac-go" class="ac-btn" type="button">Check</button>
+    <button id="ac-refresh" class="ac-btn ac-btn-sub" type="button" title="catalog.json">refresh</button>
+  </section>
+  <section id="ac-out"></section>
+  <section id="ac-pr" class="ac-panel ac-pr" hidden>
+    <h3>…or open a PR yourself</h3>
+    <textarea id="ac-patch" class="ac-patch" readonly rows="10" spellcheck="false"></textarea>
+    <div class="ac-row">
+      <button id="ac-copy-patch" class="ac-btn" type="button">copy</button>
+      <a class="ac-link" href="https://github.com/whyihaveyou/dsh-suite/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Open CONTRIBUTING.md</a>
+    </div>
+  </section>
+  <section class="ac-cross"><a href="badge.html">→ Badge generator</a></section>
+  </main>
+  <footer class="site-footer">
+    <p></p>
+    <p></p>
+    <p> · </p>
+    <nav class="foot-links">
+      <a href="https://github.com/whyihaveyou/dsh-suite" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://github.com/whyihaveyou/dsh-suite/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing</a>
+      <a href="https://github.com/whyihaveyou/dsh-suite/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+      <a href="sitemap.xml">sitemap.xml</a>
+    </nav>
+  </footer>
+  <script>window.__AC_I18N__ = {"badgeTitle":"Badge Generator — dsh-suite","badgeDesc":"compat · stars · install shields for your dsh plugin README","badgeH1":"Badge Generator","badgeSub":"Pick a listed plugin, choose a shield style, copy the snippet — shields.io renders it live in your README.","badgePickLabel":"Plugin","badgePickPh":"search name / owner/repo…","badgeStyle":"Style","badgeNoPick":"Choose a plugin above to generate its badges.","badgeK_compat":"compat","badgeK_stars":"stars","badgeK_install":"install","badgeK_author":"author count","badgeK_listed":"dsh-suite listed","badgeAuthorTip":"embed for any GitHub owner (no listing needed)","colUrl":"URL","colMd":"Markdown","colHtml":"HTML","btnCopy":"copy","btnCopied":"copied!","badgeToAuthor":"→ Author data card for @{owner}","authorTitle":"Author Center — dsh-suite","authorDesc":"Look up any plugin author: listed entries, stars, compat status, install commands.","authorH1":"Author Data Card","authorSub":"Enter a GitHub owner or owner/repo (a full dsh plugin add command also works).","authorInputPh":"e.g. spineSo · whyihaveyou/currant-gaze · @dsh-suite/plugin-deus","authorBtn":"Check","authorChecking":"checking…","authorRefresh":"refresh","authorRefreshed":"refreshed","authorSummary":"{n} listed entr{ies} by @{owner} · ★ {stars} total","authorSummaryWatch":"(+{w} watchlist, unverified)","authorNotFoundTitle":"“{q}” is not listed yet","authorNotFoundDesc":"No catalog entry matches. Submit it to the catalog — curators verify compat levels before featuring. Install commands always work regardless of listing.","authorSubmitCta":"Submit to catalog (issue)","authorPrTitle":"…or open a PR yourself","authorPrPatch":"catalog JSON patch — paste into catalog/awesome-dsh-plugin.json, then follow CONTRIBUTING.md","authorPrCta":"Open CONTRIBUTING.md","authorOpenBadge":"→ Generate badges","authorToBadge":"→ Badge generator","fldStars":"stars","fldLang":"language","fldLicense":"license","fldCompat":"compat","fldInstall":"install","fldFeatured":"★ featured","fldWatchlist":"watchlist — no compat verification yet","compatOk":"compat OK","compatBroken":"compat broken","compatUnknown":"untested","riskNote":"⚠ community risk flag — check the catalog page before installing","acLoading":"loading catalog.json…","acLoadFail":"failed to load catalog.json — reload to retry.","acNeedInput":"enter an owner or owner/repo first"};</script>
+  <script src="assets/author-center.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>徽章生成器 — dsh-suite</title>
+  <meta name="description" content="给你的 dsh 插件 README 生成兼容·星数·安装 shields 徽章">
+  <meta property="og:type" content="website"><meta property="og:title" content="徽章生成器 — dsh-suite">
+  <meta property="og:description" content="给你的 dsh 插件 README 生成兼容·星数·安装 shields 徽章"><meta property="og:image" content="https://whyihaveyou.github.io/dsh-suite//assets/og-default.png">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="徽章生成器 — dsh-suite"><meta name="twitter:image" content="https://whyihaveyou.github.io/dsh-suite//assets/og-default.png">
+  <link rel="alternate" hreflang="en" href="https://whyihaveyou.github.io/dsh-suite//badge.html"><link rel="alternate" hreflang="x-default" href="https://whyihaveyou.github.io/dsh-suite//badge.html">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="canonical" href="https://whyihaveyou.github.io/dsh-suite//badge-zh.html">
+  <script>
+  (function () {
+    var current = null;
+    try { current = localStorage.getItem('dshTheme'); } catch (e) {}
+    if (current !== 'light' && current !== 'dark') {
+      current = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+    }
+    function apply(t) {
+      current = t;
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('dshTheme', t); } catch (e) {}
+      var btns = document.querySelectorAll('[data-theme-toggle]');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].textContent = t === 'dark' ? '🌙' : '☀️';
+        btns[i].setAttribute('aria-label', t === 'dark' ? '切换到浅色模式' : '切换到深色模式');
+      }
+    }
+    apply(current);
+    document.addEventListener('DOMContentLoaded', function () { apply(current); });
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-theme-toggle]');
+      if (!b) return;
+      apply(current === 'dark' ? 'light' : 'dark');
+    });
+  })();
+</script>
+  
+  <script>
+    var p = new URLSearchParams(location.search).get('lang');
+    if (p === 'zh' || p === 'en') localStorage.setItem('dsh-suite-lang', p);
+  </script>
+</head>
+<body data-ac-page="badge">
+  <header class="site-header">
+    <nav>
+      <a class="nav-title" href="zh.html"> <span class="nav-title-note"></span></a>
+      <a class="nav-lb" href="stars-zh.html">Star 榜</a>
+      <a class="nav-lb" href="learn-zh.html">学习</a>
+      <span class="spacer"></span>
+      <button class="theme-toggle" id="theme-toggle" aria-label="" title="">🌓</button>
+      <a class="lang-toggle" id="lang-toggle" href="badge.html">EN</a>
+    </nav>
+  </header>
+  <main class="lb-main">
+    <div class="lb-hero">
+    <h1 class="lb-title">🛡 徽章生成器</h1>
+    <p class="lb-subtitle">选一个已收录插件 + 选样式 → 复制徽章代码——shields.io 直链渲染,可直接放进 README。</p>
+  </div>
+  <section class="ac-panel">
+    <div class="ac-row">
+      <label class="ac-label" for="ac-pick">插件</label>
+      <input id="ac-pick" class="ac-input" list="ac-picklist" placeholder="搜索插件名 / owner/repo…" autocomplete="off" spellcheck="false">
+      <datalist id="ac-picklist"></datalist>
+    </div>
+    <div class="ac-row ac-style-row" id="ac-styles">
+      <span class="ac-label">样式</span>
+      <label class="ac-radio"><input type="radio" name="ac-style" value="flat"> flat</label>
+      <label class="ac-radio"><input type="radio" name="ac-style" value="flat-square" checked> flat-square</label>
+      <label class="ac-radio"><input type="radio" name="ac-style" value="for-the-badge"> for-the-badge</label>
+    </div>
+  </section>
+  <section id="ac-result" class="ac-panel"><p class="ac-hint">先在上方选择一个插件。</p></section>
+  <section class="ac-cross"><a href="author-zh.html">→ 作者数据卡</a></section>
+  </main>
+  <footer class="site-footer">
+    <p></p>
+    <p></p>
+    <p> · </p>
+    <nav class="foot-links">
+      <a href="https://github.com/whyihaveyou/dsh-suite" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://github.com/whyihaveyou/dsh-suite/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">贡献指南</a>
+      <a href="https://github.com/whyihaveyou/dsh-suite/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+      <a href="sitemap.xml">sitemap.xml</a>
+    </nav>
+  </footer>
+  <script>window.__AC_I18N__ = {"badgeTitle":"徽章生成器 — dsh-suite","badgeDesc":"给你的 dsh 插件 README 生成兼容·星数·安装 shields 徽章","badgeH1":"徽章生成器","badgeSub":"选一个已收录插件 + 选样式 → 复制徽章代码——shields.io 直链渲染,可直接放进 README。","badgePickLabel":"插件","badgePickPh":"搜索插件名 / owner/repo…","badgeStyle":"样式","badgeNoPick":"先在上方选择一个插件。","badgeK_compat":"compat","badgeK_stars":"stars","badgeK_install":"install","badgeK_author":"作者收录数","badgeK_listed":"dsh-suite 收录","badgeAuthorTip":"任意 GitHub 作者都能用(不要求收录)","colUrl":"URL","colMd":"Markdown","colHtml":"HTML","btnCopy":"复制","btnCopied":"已复制!","badgeToAuthor":"→ @{owner} 的作者数据卡","authorTitle":"作者中心 — dsh-suite","authorDesc":"输入作者名,一站展示其名下插件的星数、兼容实测状态与安装命令","authorH1":"作者数据卡","authorSub":"输入 GitHub 作者名或 owner/repo(整段 dsh plugin add 命令也能识别)。","authorInputPh":"如 spineSo · whyihaveyou/currant-gaze · @dsh-suite/plugin-deus","authorBtn":"查","authorChecking":"查询中…","authorRefresh":"刷新","authorRefreshed":"已刷新","authorSummary":"@{owner} 名下收录 {n} 条 · 总 ★ {stars}","authorSummaryWatch":"(另有 {w} 条观测中,未验证)","authorNotFoundTitle":"“{q}” 还没被收录","authorNotFoundDesc":"目录里没有匹配的条目。欢迎投稿收录——收录前维护者会做兼容分级验证。安装命令与是否收录无关,随时可用。","authorSubmitCta":"投稿收录(开 issue)","authorPrTitle":"……或者直接提 PR","authorPrPatch":"目录 JSON 补丁——粘进 catalog/awesome-dsh-plugin.json,流程见 CONTRIBUTING.md","authorPrCta":"打开 CONTRIBUTING.md","authorOpenBadge":"→ 生成徽章","authorToBadge":"→ 徽章生成器","fldStars":"星数","fldLang":"语言","fldLicense":"协议","fldCompat":"兼容","fldInstall":"安装","fldFeatured":"★ 精选","fldWatchlist":"观测中——尚未做兼容验证","compatOk":"兼容实测通过","compatBroken":"兼容实测失败","compatUnknown":"未实测","riskNote":"⚠ 社区风险扫描有标记——安装前请先看目录页详情","acLoading":"正在加载 catalog.json…","acLoadFail":"catalog.json 加载失败——请刷新重试。","acNeedInput":"先输入作者名或 owner/repo"};</script>
+  <script src="assets/author-center.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

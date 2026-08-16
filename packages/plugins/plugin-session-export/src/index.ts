@@ -34,6 +34,10 @@ export function apply(ctx: Context) {
         type: 'boolean',
         description: 'Export every live session (batch) instead of a single one.',
       },
+      includeToolDetails: {
+        type: 'boolean',
+        description: "Include tool-call arguments and results in the export. When false, only the tool name is kept (cleaner share). Default true.",
+      },
     },
     output: {
       schema: {
@@ -52,6 +56,7 @@ export function apply(ctx: Context) {
     },
     async execute(args, exec) {
       const format = (args.format ?? 'markdown') as 'markdown' | 'html'
+      const includeToolDetails = args.includeToolDetails !== false
       const store = ctx.sessions
 
       let sessions: Session[]
@@ -73,7 +78,7 @@ export function apply(ctx: Context) {
 
       const files: string[] = []
       for (const session of sessions) {
-        const content = renderSession(session, format)
+        const content = renderSession(session, format, { includeToolDetails })
         const file = outputPath(args.path, session, format, args.all === true)
         await mkdir(dirname(file), { recursive: true })
         await writeFile(file, content, 'utf8')
@@ -115,10 +120,16 @@ interface Meta {
   usage: { input: number; output: number; reasoning: number }
 }
 
-export function renderSession(session: Session, format: 'markdown' | 'html'): string {
+export interface RenderOptions {
+  /** Include tool-call arguments/results. Default true. */
+  includeToolDetails?: boolean
+}
+
+export function renderSession(session: Session, format: 'markdown' | 'html', opts?: RenderOptions): string {
   const meta = buildMeta(session)
   const sections = buildSections(session)
-  return format === 'html' ? renderHtml(meta, sections) : renderMarkdown(meta, sections)
+  const includeToolDetails = opts?.includeToolDetails !== false
+  return format === 'html' ? renderHtml(meta, sections, includeToolDetails) : renderMarkdown(meta, sections, includeToolDetails)
 }
 
 function buildMeta(session: Session): Meta {
@@ -235,7 +246,7 @@ function isSubagentTool(name: string): boolean {
 // Markdown / HTML emitters
 // ---------------------------------------------------------------------------
 
-function renderMarkdown(meta: Meta, sections: Section[]): string {
+function renderMarkdown(meta: Meta, sections: Section[], includeToolDetails: boolean): string {
   const lines: string[] = []
   lines.push(`# ${meta.title}`, '')
   lines.push(...metaLines(meta), '')
@@ -264,6 +275,10 @@ function renderMarkdown(meta: Meta, sections: Section[]): string {
       }
     } else if (section.kind === 'tool') {
       const label = section.isSubagent ? '🤝 子agent 委派' : '🔧 工具调用'
+      if (!includeToolDetails) {
+        lines.push(`- ${label}：${section.name}${section.isError ? '（失败）' : ''}`, '')
+        continue
+      }
       lines.push('<details>', `<summary>${label}：${section.name}</summary>`, '')
       if (section.args) {
         lines.push('**参数**', '', fence('json', section.args), '')
@@ -279,7 +294,7 @@ function renderMarkdown(meta: Meta, sections: Section[]): string {
   return `${lines.join('\n')}\n`
 }
 
-function renderHtml(meta: Meta, sections: Section[]): string {
+function renderHtml(meta: Meta, sections: Section[], includeToolDetails: boolean): string {
   const body: string[] = []
   body.push(`<h1>${escapeHtml(meta.title)}</h1>`)
   body.push('<div class="meta">')
@@ -310,6 +325,10 @@ function renderHtml(meta: Meta, sections: Section[]): string {
       body.push('</div>')
     } else if (section.kind === 'tool') {
       const label = section.isSubagent ? '🤝 子agent 委派' : '🔧 工具调用'
+      if (!includeToolDetails) {
+        body.push(`<div class="tool-mini">${label}：${escapeHtml(section.name)}${section.isError ? '（失败）' : ''}</div>`)
+        continue
+      }
       body.push(
         '<details class="tool">',
         `<summary>${label}：${escapeHtml(section.name)}</summary>`,
@@ -327,19 +346,21 @@ function renderHtml(meta: Meta, sections: Section[]): string {
 }
 
 const CSS = [
-  'body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1f2328; }',
+  'body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; line-height: 1.65; color: #1f2328; }',
   'h1 { border-bottom: 2px solid #e1e4e8; padding-bottom: .4rem; }',
-  '.meta { color: #57606a; font-size: .9rem; margin-bottom: 1.5rem; }',
-  '.msg { border: 1px solid #e1e4e8; border-radius: 8px; padding: .8rem 1rem; margin: .8rem 0; }',
+  '.meta { color: #57606a; font-size: .9rem; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: .2rem 1.2rem; }',
+  '.msg { border: 1px solid #e1e4e8; border-radius: 10px; padding: .8rem 1rem; margin: .8rem 0; box-shadow: 0 1px 2px rgba(31,35,40,.04); }',
   '.msg.user { background: #f6f8fa; }',
-  '.msg.assistant { background: #ffffff; }',
+  '.msg.assistant { background: #ffffff; border-left: 3px solid #4d6bfe; }',
   '.who { font-weight: 600; margin-bottom: .4rem; }',
-  'pre.system, pre.code { background: #f6f8fa; border-radius: 6px; padding: .8rem; overflow-x: auto; white-space: pre-wrap; }',
+  'pre.system, pre.code { background: #f6f8fa; border-radius: 6px; padding: .8rem; overflow-x: auto; white-space: pre-wrap; font-family: "SF Mono", ui-monospace, Menlo, monospace; font-size: .85rem; }',
   'details { border: 1px solid #d0d7de; border-radius: 8px; padding: .5rem .8rem; margin: .6rem 0; }',
   'details summary { cursor: pointer; font-weight: 600; }',
+  '.tool-mini { color: #57606a; font-size: .9rem; margin: .4rem 0; }',
   '.lbl { font-weight: 600; margin: .6rem 0 .2rem; }',
   '.todo ul { margin: .3rem 0; }',
-  'h3 { margin-top: 1.6rem; }',
+  'h3 { margin-top: 1.8rem; border-top: 1px dashed #d0d7de; padding-top: .8rem; color: #57606a; }',
+  '@media print { body { margin: 0; max-width: none; } details { border: none; padding: 0; } details summary { display: none; } pre { white-space: pre-wrap; } }',
 ].join('\n')
 
 function metaLines(meta: Meta): string[] {

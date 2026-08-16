@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-16T19:35:28.554Z",
+ "ts": "2026-08-16T20:39:08.825Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1839,6 +1839,7 @@
   "dsh-webui-glass-theme",
   "dsh-webui-market-plugin",
   "dsh-webui-pets",
+  "dsh-wechat",
   "dsh-wechat-bridge",
   "dsh-wechat-maid",
   "dsh-wechat-notify",
@@ -1993,6 +1994,7 @@
   "jina-dsh-plugin",
   "jumpserver-dsh",
   "k8e",
+  "kimi-tide",
   "kimix",
   "knowledge-from-literature-and-bilibili",
   "knowlp-rag",

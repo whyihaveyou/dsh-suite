@@ -43,8 +43,8 @@ const checks = [
 let fail = 0
 for (const [name, ok] of checks) { console.log(`${ok ? 'PASS' : 'FAIL'}  ${name}`); if (!ok) fail += 1 }
 
-// 写两种格式文件供打开验证/截图
-const out = '/Users/qzp/Deepseek插件探索/research/export-screenshots'
+// 写两种格式文件供打开验证/截图(输出目录走环境变量,避免把本机绝对路径写进仓库;CI leak-scan 会拦)
+const out = process.env.RENDER_SMOKE_OUT || `/tmp/export-screenshots-${process.env.USER || 'run'}`
 mkdirSync(out, { recursive: true })
 writeFileSync(join(out, 'export-full.html'), htmlFull)
 writeFileSync(join(out, 'export-mini.html'), htmlMini)

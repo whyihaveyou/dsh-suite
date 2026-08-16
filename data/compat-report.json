@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T06:07:56Z",
+  "generated_at": "2026-08-16T01:02:04Z",
   "dshVersion": "0.1.0-rc.6",
   "cordisVersion": "4.0.1",
   "nodeVersion": "24.19.0",
@@ -11,27 +11,27 @@
   "layer23_scope": "auto",
   "layer23_skipped": null,
   "summary": {
-    "total": 1925,
-    "ok": 265,
+    "total": 2079,
+    "ok": 312,
     "broken": 0,
-    "unknown": 413,
-    "unavailable": 1247,
+    "unknown": 464,
+    "unavailable": 1303,
     "skipped": 0
   },
   "summary_catalog": {
-    "total": 1270,
-    "ok": 199,
+    "total": 1355,
+    "ok": 238,
     "broken": 0,
-    "unknown": 233,
-    "unavailable": 838,
+    "unknown": 268,
+    "unavailable": 849,
     "skipped": 0
   },
   "summary_watchlist": {
-    "total": 655,
-    "ok": 66,
+    "total": 724,
+    "ok": 74,
     "broken": 0,
-    "unknown": 180,
-    "unavailable": 409,
+    "unknown": 196,
+    "unavailable": 454,
     "skipped": 0
   },
   "results": [
@@ -156,7 +156,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.0.3",
+      "pkgVersion": "0.0.6",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -168,7 +168,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.4.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=24"
@@ -198,8 +198,12 @@
       "name": "dsh-plugin-check",
       "npmName": "dsh-plugin-check",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-security-audit",
@@ -538,7 +542,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.12.1",
+      "pkgVersion": "0.12.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -808,7 +812,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.3.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -1091,7 +1095,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"^4.0.1-rc.1\" dsh=\"undefined\")",
-      "pkgVersion": "0.1.2",
+      "pkgVersion": "0.1.5",
       "peerCordis": "^4.0.1-rc.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24"
@@ -1143,7 +1147,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.1.4",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -1179,7 +1183,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.1.7",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -1577,7 +1581,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "3.16.6",
+      "pkgVersion": "3.16.7",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.19"
@@ -1640,7 +1644,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.0",
+      "pkgVersion": "0.11.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -1674,8 +1678,12 @@
       "name": "dsh-agent-messaging",
       "npmName": "dsh-agent-messaging",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.11.0",
+      "peerCordis": "^4.0.0",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24"
     },
     {
       "id": "dsh-tool-turbo",
@@ -1861,8 +1869,12 @@
       "name": "dsh-recall",
       "npmName": "dsh-recall",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22"
     },
     {
       "id": "dsh-onlyne",
@@ -2175,8 +2187,12 @@
       "name": "dsh-openai-codex-auth",
       "npmName": "dsh-openai-codex-auth",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.3.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22.19.0"
     },
     {
       "id": "dsh-model-config-sync",
@@ -2243,8 +2259,12 @@
       "name": "dsh-session-timeline",
       "npmName": "dsh-session-timeline",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.0.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-index",
@@ -2395,7 +2415,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.7",
+      "pkgVersion": "0.2.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -2453,8 +2473,12 @@
       "name": "dsh-codex-bridge",
       "npmName": "dsh-codex-bridge",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.5",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "jumpserver-dsh",
@@ -2579,7 +2603,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.2",
+      "pkgVersion": "0.1.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -2667,7 +2691,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -2770,7 +2794,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"^4.0.1-rc.1\" dsh=\"undefined\")",
-      "pkgVersion": "0.1.0-alpha.2",
+      "pkgVersion": "0.1.0",
       "peerCordis": "^4.0.1-rc.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -2814,7 +2838,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -2984,7 +3008,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.4",
+      "pkgVersion": "0.4.0",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -3040,7 +3064,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.9",
+      "pkgVersion": "0.5.3",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.18"
@@ -3084,7 +3108,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.9.0",
+      "pkgVersion": "0.10.0",
       "peerCordis": ">=4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -3421,8 +3445,12 @@
       "name": "dsh-balance-display",
       "npmName": "dsh-balance-display",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.19"
     },
     {
       "id": "dsh-balance",
@@ -3431,7 +3459,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.9",
+      "pkgVersion": "0.2.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -3475,7 +3503,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.2.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.3.0"
@@ -3710,16 +3738,24 @@
       "name": "dsh-auto-review",
       "npmName": "dsh-auto-review",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.4.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-balance-monitor",
       "name": "dsh-balance-monitor",
       "npmName": "dsh-balance-monitor",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "1.0.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "deepseek-harness-for-vs-code",
@@ -3794,7 +3830,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.7",
+      "pkgVersion": "0.2.8",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.18"
@@ -3840,8 +3876,12 @@
       "name": "dsh-portable-tavern",
       "npmName": "dsh-portable-tavern",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "deepseek-harness-lan",
@@ -3917,7 +3957,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"undefined\" dsh=\">=0.1.0-rc.6\")",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.1.1",
       "peerCordis": null,
       "peerDsh": ">=0.1.0-rc.6",
       "nodeRange": ">=22.5"
@@ -3977,7 +4017,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"^4.0.1-rc.1\" dsh=\"undefined\")",
-      "pkgVersion": "0.2.2",
+      "pkgVersion": "0.2.3",
       "peerCordis": "^4.0.1-rc.1",
       "peerDsh": null,
       "nodeRange": null
@@ -4020,7 +4060,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -4042,8 +4082,12 @@
       "name": "dsh-continual-evolve",
       "npmName": "dsh-continual-evolve",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-plugin-llm-codex",
@@ -4068,7 +4112,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.1.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -4234,7 +4278,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.4.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=24"
@@ -4262,7 +4306,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.4.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=24"
@@ -4416,8 +4460,12 @@
       "name": "dsh-lsp-actions",
       "npmName": "dsh-lsp-actions",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-web-attention-badge",
@@ -4518,8 +4566,12 @@
       "name": "dsh-chrome",
       "npmName": "dsh-chrome",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
     },
     {
       "id": "deepseek-harness-rs",
@@ -5094,7 +5146,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.14",
+      "pkgVersion": "0.1.15",
       "peerCordis": ">=4.0.1 <5",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -5133,7 +5185,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.1.4",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -5179,8 +5231,12 @@
       "name": "dsh-quota-panel",
       "npmName": "dsh-quota-panel",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.8.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-a2a",
@@ -5201,7 +5257,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.5",
+      "pkgVersion": "0.11.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -5459,7 +5515,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.2",
+      "pkgVersion": "0.2.6",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -5576,8 +5632,12 @@
       "name": "dsh-ui-appearance",
       "npmName": "dsh-ui-appearance",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": ">=18"
     },
     {
       "id": "dsh-turn-approval",
@@ -5673,9 +5733,9 @@
       "npmName": "dsh-token-panel",
       "section": "catalog",
       "verdict": "unknown",
-      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.4.0",
-      "peerCordis": null,
+      "note": "unparseable peer range (cordis=\"^4.0.0-rc.7\" dsh=\"undefined\")",
+      "pkgVersion": "0.4.7",
+      "peerCordis": "^4.0.0-rc.7",
       "peerDsh": null,
       "nodeRange": ">=18"
     },
@@ -5830,7 +5890,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.30.0",
+      "pkgVersion": "0.33.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -5842,7 +5902,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.1.7",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -5854,7 +5914,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.0",
+      "pkgVersion": "0.7.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -5893,7 +5953,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.0",
+      "pkgVersion": "0.6.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -6134,8 +6194,12 @@
       "name": "dsh-egress-guard",
       "npmName": "dsh-egress-guard",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": ">=4.0.0 <5",
+      "peerDsh": null,
+      "nodeRange": ">=22"
     },
     {
       "id": "dsh-bottom-stats",
@@ -6192,7 +6256,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.0",
+      "pkgVersion": "0.7.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -6212,7 +6276,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.1.4",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -6308,7 +6372,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.4",
+      "pkgVersion": "0.5.5",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -6468,7 +6532,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.2.0",
+      "pkgVersion": "1.4.0",
       "peerCordis": ">=4.0.0",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -6556,7 +6620,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.0",
+      "pkgVersion": "0.4.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -6715,7 +6779,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.2.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -6865,8 +6929,11 @@
       "name": "dsh-kun-like-pet",
       "npmName": "dsh-kun-like-pet",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-meme-hub",
@@ -6911,7 +6978,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.1",
+      "pkgVersion": "0.2.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -7317,7 +7384,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.4.0",
+      "pkgVersion": "0.8.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -7351,8 +7418,11 @@
       "name": "dsh-computer-use",
       "npmName": "dsh-computer-use",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-llmwiki",
@@ -7400,7 +7470,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.6",
+      "pkgVersion": "0.1.9",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -7410,8 +7480,12 @@
       "name": "dsh-passwords",
       "npmName": "dsh-passwords",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "2.4.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.5"
     },
     {
       "id": "dsh-voice-input",
@@ -7486,16 +7560,24 @@
       "name": "upstream-radar",
       "npmName": "upstream-radar",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.32.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22"
     },
     {
       "id": "dsh-messager",
       "name": "dsh-messager",
       "npmName": "dsh-messager",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.5",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=20"
     },
     {
       "id": "dsh-plugin-anydoc",
@@ -7988,7 +8070,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.2",
+      "pkgVersion": "0.1.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -8010,8 +8092,12 @@
       "name": "dsh-task-notify",
       "npmName": "dsh-task-notify",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-llm-kiro",
@@ -8226,7 +8312,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"undefined\" dsh=\">=0.1.0-rc.6\")",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.1.1",
       "peerCordis": null,
       "peerDsh": ">=0.1.0-rc.6",
       "nodeRange": ">=22.5"
@@ -8309,7 +8395,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.1",
+      "pkgVersion": "0.3.0",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=24.0.0"
@@ -8383,8 +8469,12 @@
       "name": "dsh-web-search-exa",
       "npmName": "dsh-web-search-exa",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.2",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-client-pricing",
@@ -8702,7 +8792,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.9",
+      "pkgVersion": "0.2.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -8734,7 +8824,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.2",
+      "pkgVersion": "0.1.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -8746,7 +8836,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.0-rc.8",
+      "pkgVersion": "0.3.0-rc.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -8888,7 +8978,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.14",
+      "pkgVersion": "0.1.15",
       "peerCordis": ">=4.0.1 <5",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -8916,7 +9006,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.1",
+      "pkgVersion": "0.1.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20.0.0"
@@ -9042,8 +9132,12 @@
       "name": "dsh-task-notify",
       "npmName": "dsh-task-notify",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-wanghong-handwritten-ppt",
@@ -9257,16 +9351,24 @@
       "name": "dsh-gauge",
       "npmName": "dsh-gauge",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-office",
       "name": "dsh-office",
       "npmName": "dsh-office",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.0",
+      "peerDsh": null,
+      "nodeRange": ">=18"
     },
     {
       "id": "dsh-ide",
@@ -9402,7 +9504,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.14",
+      "pkgVersion": "0.1.15",
       "peerCordis": ">=4.0.1 <5",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -9537,7 +9639,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.0",
+      "pkgVersion": "0.11.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -9749,7 +9851,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "1.0.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -9761,7 +9863,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.4",
+      "pkgVersion": "0.4.0",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -9809,7 +9911,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"undefined\" dsh=\">=0.1.0-rc.6\")",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.1.1",
       "peerCordis": null,
       "peerDsh": ">=0.1.0-rc.6",
       "nodeRange": ">=22.5"
@@ -9886,9 +9988,10 @@
       "name": "dsh-satori",
       "npmName": "dsh-satori",
       "section": "catalog",
-      "verdict": "unknown",
-      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "peerCordis": null,
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "1.2.4",
+      "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
     },
@@ -9994,7 +10097,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -10030,7 +10133,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.9",
+      "pkgVersion": "0.2.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -10078,7 +10181,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.9",
+      "pkgVersion": "0.2.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -10104,8 +10207,11 @@
       "name": "dsh-computer-use",
       "npmName": "dsh-computer-use",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-commit-review",
@@ -10344,7 +10450,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "2.3.6",
+      "pkgVersion": "2.3.7",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -10426,6 +10532,30 @@
       "nodeRange": "^22.19 || >=24"
     },
     {
+      "id": "preset-center",
+      "name": "preset-center (场景预设)",
+      "npmName": "@dsh-suite/preset-center",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19 || >=24"
+    },
+    {
+      "id": "plugin-deus",
+      "name": "plugin-deus (神模扳机)",
+      "npmName": "@dsh-suite/plugin-deus",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19 || >=24"
+    },
+    {
       "id": "dsh-sidebar-qa",
       "name": "dsh-sidebar-qa",
       "npmName": "dsh-sidebar-qa",
@@ -10440,7 +10570,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.1.1",
+      "pkgVersion": "1.1.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -10600,7 +10730,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.4.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=24"
@@ -10652,7 +10782,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.0.4",
+      "pkgVersion": "1.2.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -10748,7 +10878,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.9",
+      "pkgVersion": "0.2.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -10760,7 +10890,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.1.4",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -10804,7 +10934,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.2",
+      "pkgVersion": "0.1.3",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -10866,8 +10996,12 @@
       "name": "dsh-mcp-lens",
       "npmName": "dsh-mcp-lens",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0-rc.9",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-subagent-admission",
@@ -10882,8 +11016,11 @@
       "name": "dsh-lan-gate",
       "npmName": "dsh-lan-gate",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-audio-alert",
@@ -11026,16 +11163,24 @@
       "name": "dsh-balance-monitor",
       "npmName": "dsh-balance-monitor",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "1.0.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-deepseek-vision",
       "name": "dsh-deepseek-vision",
       "npmName": "dsh-deepseek-vision",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.3",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "pptfast",
@@ -11096,7 +11241,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.3.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -11120,7 +11265,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.1",
+      "pkgVersion": "0.1.4",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -11419,8 +11564,12 @@
       "name": "dsh-whale-arcade",
       "npmName": "dsh-whale-arcade",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "hesi-dsh-plugins",
@@ -11614,7 +11763,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.3.1",
+      "pkgVersion": "1.4.2",
       "peerCordis": ">=4",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -11698,7 +11847,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.7",
+      "pkgVersion": "0.2.9",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -11756,8 +11905,12 @@
       "name": "dsh-update-checker",
       "npmName": "dsh-update-checker",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.3.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-change-center",
@@ -11840,6 +11993,818 @@
       "nodeRange": ">=16.0.0"
     },
     {
+      "id": "dsh-recall-plugin-limbo947",
+      "name": "dsh-recall-plugin",
+      "npmName": "dsh-recall-plugin",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "1.2.2",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-liang-skin",
+      "name": "dsh-liang-skin",
+      "npmName": "dsh-liang-skin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-live2d-pets",
+      "name": "dsh-live2d-pets",
+      "npmName": "dsh-live2d-pets",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-skin-switcher",
+      "name": "dsh-skin-switcher",
+      "npmName": "dsh-skin-switcher",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "oh-my-dsh-liumengxuan04",
+      "name": "oh-my-dsh",
+      "npmName": "oh-my-dsh",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-prompt-polish",
+      "name": "dsh-prompt-polish",
+      "npmName": "dsh-prompt-polish",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-font",
+      "name": "dsh-font",
+      "npmName": "dsh-font",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dshbox",
+      "name": "DSHBox",
+      "npmName": "dshbox",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-wallpaper-chinarxq",
+      "name": "dsh-wallpaper",
+      "npmName": "dsh-wallpaper",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-memory-manager",
+      "name": "dsh-memory-manager",
+      "npmName": "dsh-memory-manager",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "laoa-dshgf",
+      "name": "LaoA-dshGF",
+      "npmName": "laoa-dshgf",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-maid-whale-webui",
+      "name": "dsh-maid-whale-webUI",
+      "npmName": "dsh-maid-whale-webui",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-chat-tools",
+      "name": "dsh-chat-tools",
+      "npmName": "dsh-chat-tools",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-auxiliary",
+      "name": "dsh-auxiliary",
+      "npmName": "dsh-auxiliary",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.3.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-model-failover",
+      "name": "dsh-model-failover",
+      "npmName": "dsh-model-failover",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.2",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-minimal-turbo",
+      "name": "dsh-minimal-turbo",
+      "npmName": "dsh-minimal-turbo",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-terminal-mervyn-teo",
+      "name": "dsh-plugin-terminal",
+      "npmName": "dsh-plugin-terminal",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-free-search",
+      "name": "dsh-free-search",
+      "npmName": "dsh-free-search",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-better-edit",
+      "name": "dsh-better-edit",
+      "npmName": "dsh-better-edit",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.9",
+      "peerCordis": "^4.0.0",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-attachment-formats",
+      "name": "dsh-attachment-formats",
+      "npmName": "dsh-attachment-formats",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-authinone",
+      "name": "dsh-AuthInOne",
+      "npmName": "dsh-authinone",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-vision-reimu-create",
+      "name": "dsh-vision",
+      "npmName": "dsh-vision",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19 || >=24"
+    },
+    {
+      "id": "deepseek-harness-lark",
+      "name": "DeepSeek-harness-lark",
+      "npmName": "deepseek-harness-lark",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-prompt-manager",
+      "name": "dsh-prompt-manager",
+      "npmName": "dsh-prompt-manager",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "1.4.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "qaq",
+      "name": "QAQ",
+      "npmName": "qaq",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-awiki",
+      "name": "dsh-awiki",
+      "npmName": "dsh-awiki",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-client-masquerade",
+      "name": "dsh-client-masquerade",
+      "npmName": "dsh-client-masquerade",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-manager-liqichen",
+      "name": "dsh-plugin-manager",
+      "npmName": "dsh-plugin-manager",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-memory-system",
+      "name": "dsh-memory-system",
+      "npmName": "dsh-memory-system",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "snapgrep",
+      "name": "snapgrep",
+      "npmName": "snapgrep",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.19.0"
+    },
+    {
+      "id": "dsh-reasoning-effort-hdbzq",
+      "name": "dsh-reasoning-effort-hdbzq",
+      "npmName": "dsh-reasoning-effort-hdbzq",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tool-writing",
+      "name": "dsh-tool-writing",
+      "npmName": "dsh-tool-writing",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.5.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22.5.0"
+    },
+    {
+      "id": "dsh-opencodego-usage",
+      "name": "dsh-opencodego-usage",
+      "npmName": "dsh-opencodego-usage",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-dream-skin",
+      "name": "dsh-dream-skin",
+      "npmName": "dsh-dream-skin",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.5",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-plan-graph",
+      "name": "DSH-Plan-Graph",
+      "npmName": "dsh-plan-graph",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "pi-deepseek-anchor",
+      "name": "pi-deepseek-anchor",
+      "npmName": "pi-deepseek-anchor",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.0.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-file-mention",
+      "name": "dsh-file-mention",
+      "npmName": "dsh-file-mention",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "oh-my-dsh-agi-fans",
+      "name": "oh-my-dsh",
+      "npmName": "oh-my-dsh",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "deepseek-harness-zh-pro",
+      "name": "deepseek-harness-zh_pro",
+      "npmName": "deepseek-harness-zh_pro",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.5.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-theme-cyberpunk2077",
+      "name": "dsh-theme-cyberpunk2077",
+      "npmName": "dsh-theme-cyberpunk2077",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-approve-for-me",
+      "name": "dsh-approve-for-me",
+      "npmName": "dsh-approve-for-me",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0-beta.3",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "oh-my-dsh-jonah-wu23",
+      "name": "oh-my-dsh",
+      "npmName": "oh-my-dsh",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-update-checker-airmetro",
+      "name": "dsh-update-checker",
+      "npmName": "dsh-update-checker",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.3.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-surfing-plugin",
+      "name": "dsh-surfing-plugin",
+      "npmName": "dsh-surfing-plugin",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-changeproof",
+      "name": "DSH-changeproof",
+      "npmName": "dsh-changeproof",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-save-money",
+      "name": "dsh-save-money",
+      "npmName": "dsh-save-money",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "clawock",
+      "name": "clawock",
+      "npmName": "clawock",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-liquid-glass",
+      "name": "dsh-liquid-glass",
+      "npmName": "dsh-liquid-glass",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "mcp-sentinel",
+      "name": "mcp-sentinel",
+      "npmName": "mcp-sentinel",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18.0.0"
+    },
+    {
+      "id": "whale-notify",
+      "name": "whale-notify",
+      "npmName": "whale-notify",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.4.7",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">= 6.0.0"
+    },
+    {
+      "id": "ds-spec-loop",
+      "name": "ds-spec-loop",
+      "npmName": "ds-spec-loop",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-agent-team-gui",
+      "name": "dsh-agent-team-gui",
+      "npmName": "dsh-agent-team-gui",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "oh-my-dsh-amplifthq",
+      "name": "oh-my-dsh",
+      "npmName": "oh-my-dsh",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-smooth-stream-laplace-bit",
+      "name": "dsh-smooth-stream",
+      "npmName": "dsh-smooth-stream",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-sysmon",
+      "name": "dsh-sysmon",
+      "npmName": "dsh-sysmon",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-for-vs-code-vithrive",
+      "name": "Deepseek-Harness-for-VS-Code",
+      "npmName": "deepseek-harness-for-vs-code",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-file-upload",
+      "name": "dsh-file-upload",
+      "npmName": "dsh-file-upload",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.3.0",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": ">=22.6.0"
+    },
+    {
+      "id": "dsh-pluginmanager",
+      "name": "dsh-pluginmanager",
+      "npmName": "dsh-pluginmanager",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-imggenerate",
+      "name": "dsh-imggenerate",
+      "npmName": "dsh-imggenerate",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-global-rules",
+      "name": "dsh-global-rules",
+      "npmName": "dsh-global-rules",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-oh-my-theme",
+      "name": "dsh-oh-my-theme",
+      "npmName": "dsh-oh-my-theme",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.5.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-llm-vision-bridge",
+      "name": "dsh-llm-vision-bridge",
+      "npmName": "dsh-llm-vision-bridge",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.2",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-minimal-anchored",
+      "name": "dsh-minimal-anchored",
+      "npmName": "dsh-minimal-anchored",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-search-boost",
+      "name": "dsh-search-boost",
+      "npmName": "dsh-search-boost",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-archived-sessions-muwinds",
+      "name": "dsh-archived-sessions",
+      "npmName": "dsh-archived-sessions",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-win32",
+      "name": "dsh-win32",
+      "npmName": "dsh-win32",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.6.0",
+      "peerCordis": ">=4.0.0 <5",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-plugin-store-0xkcyzz",
+      "name": "dsh-plugin-store",
+      "npmName": "dsh-plugin-store",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-llm-newapi",
+      "name": "dsh-llm-newapi",
+      "npmName": "dsh-llm-newapi",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.8.2",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "reef",
+      "name": "reef",
+      "npmName": "reef",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "deepseek-harness-genui",
+      "name": "deepseek-harness-genui",
+      "npmName": "deepseek-harness-genui",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-zotero",
+      "name": "dsh-zotero",
+      "npmName": "dsh-zotero",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-skills-manager-michengai",
+      "name": "dsh-skills-manager",
+      "npmName": "dsh-skills-manager",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-backup",
+      "name": "dsh-backup",
+      "npmName": "dsh-backup",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ankh-guard",
+      "name": "dsh-ankh-guard",
+      "npmName": "dsh-ankh-guard",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-studio",
+      "name": "deepseek-harness-studio",
+      "npmName": "deepseek-harness-studio",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-roleplay-preset",
+      "name": "dsh-roleplay-preset",
+      "npmName": "dsh-roleplay-preset",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-plugin-multimodal",
+      "name": "dsh-plugin-multimodal",
+      "npmName": "dsh-plugin-multimodal",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-remote-tunnel",
+      "name": "dsh-remote-tunnel",
+      "npmName": "dsh-remote-tunnel",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.19"
+    },
+    {
+      "id": "voyager",
+      "name": "voyager",
+      "npmName": "voyager",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-deepseek-quota-cn-scuo-oo",
+      "name": "dsh-deepseek-quota",
+      "npmName": "dsh-deepseek-quota",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-router-flash",
+      "name": "dsh-router-flash",
+      "npmName": "dsh-router-flash",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-unread-dot",
+      "name": "dsh-unread-dot",
+      "npmName": "dsh-unread-dot",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mcp",
+      "name": "dsh-mcp",
+      "npmName": "dsh-mcp",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
       "id": "openbiliclaw",
       "name": "OpenBiliClaw",
       "npmName": "openbiliclaw",
@@ -11862,7 +12827,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "3.2.1",
+      "pkgVersion": "3.3.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=24"
@@ -12164,8 +13129,12 @@
       "name": "dsh-mobile",
       "npmName": "dsh-mobile",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0-alpha.6",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-plugin-aigc-canvas",
@@ -12656,7 +13625,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.1.1",
+      "pkgVersion": "1.2.2",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -12771,7 +13740,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.8",
+      "pkgVersion": "0.3.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -13151,7 +14120,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.8",
+      "pkgVersion": "0.3.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -13194,7 +14163,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.6.0",
+      "pkgVersion": "0.6.2",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -13618,7 +14587,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.4.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -13646,7 +14615,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.2",
+      "pkgVersion": "0.2.4",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.18"
@@ -13664,8 +14633,12 @@
       "name": "dsh-archive-manager",
       "npmName": "dsh-archive-manager",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "1.0.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=22"
     },
     {
       "id": "chat2skill",
@@ -13773,7 +14746,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.4.0",
+      "pkgVersion": "1.5.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=24 <25"
@@ -14006,7 +14979,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.0",
+      "pkgVersion": "0.4.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -14184,7 +15157,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.3",
+      "pkgVersion": "0.4.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -14196,7 +15169,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.2",
+      "pkgVersion": "0.2.4",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.18"
@@ -14261,7 +15234,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.1",
+      "pkgVersion": "0.3.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -14317,7 +15290,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.2",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -14401,7 +15374,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.15",
+      "pkgVersion": "0.1.17",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -14682,7 +15655,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.8",
+      "pkgVersion": "0.3.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -14721,7 +15694,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.1.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -15089,7 +16062,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.3.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -15309,8 +16282,12 @@
       "name": "dsh-update-checker",
       "npmName": "dsh-update-checker",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.3.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-docker-sidebar",
@@ -15359,7 +16336,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.0.0",
+      "pkgVersion": "1.0.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -15379,7 +16356,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.1.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -15764,7 +16741,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"^4.0.1-rc.1\" dsh=\"undefined\")",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "1.5.2",
       "peerCordis": "^4.0.1-rc.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -15800,7 +16777,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.2",
+      "pkgVersion": "0.1.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -15963,8 +16940,12 @@
       "name": "software-project-governance",
       "npmName": "software-project-governance",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.0.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
     },
     {
       "id": "dsh-plugin-market-chnjames",
@@ -15982,10 +16963,10 @@
       "name": "dsh-visual-plugin",
       "npmName": "dsh-visual-plugin",
       "section": "watchlist",
-      "verdict": "unknown",
-      "note": "unparseable peer range (cordis=\"^0.1.0-rc.5\" dsh=\"undefined\")",
-      "pkgVersion": "0.2.2",
-      "peerCordis": "^0.1.0-rc.5",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.3",
+      "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
     },
@@ -16160,7 +17141,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.4.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -16248,8 +17229,12 @@
       "name": "dsh-claude-tui",
       "npmName": "dsh-claude-tui",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "deepseek-harness-box",
@@ -16436,7 +17421,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.1",
+      "pkgVersion": "0.1.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -16750,7 +17735,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.1",
+      "pkgVersion": "0.1.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -16878,7 +17863,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.2",
+      "pkgVersion": "0.2.4",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.18"
@@ -16890,7 +17875,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.0.0",
+      "pkgVersion": "1.0.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -16937,7 +17922,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.2.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -17007,7 +17992,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.4",
+      "pkgVersion": "0.3.3",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -17025,8 +18010,11 @@
       "name": "dsh-client-ui-theme-xp",
       "npmName": "dsh-client-ui-theme-xp",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-virtual-workspace",
@@ -17130,7 +18118,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.4",
+      "pkgVersion": "0.4.0",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -17170,7 +18158,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"^4.0.1-rc.1\" dsh=\"undefined\")",
-      "pkgVersion": "0.2.3",
+      "pkgVersion": "0.2.4",
       "peerCordis": "^4.0.1-rc.1",
       "peerDsh": null,
       "nodeRange": null
@@ -17427,7 +18415,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.0",
+      "pkgVersion": "0.6.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -17538,7 +18526,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.3.2",
       "peerCordis": ">=4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -17564,8 +18552,12 @@
       "name": "dsh-asc",
       "npmName": "dsh-asc",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19 || >=24"
     },
     {
       "id": "dsh-extension-hub",
@@ -17574,7 +18566,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.6",
+      "pkgVersion": "0.2.7",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -17671,8 +18663,11 @@
       "name": "dsh-computer-use",
       "npmName": "dsh-computer-use",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-llm-inspector",
@@ -17687,8 +18682,12 @@
       "name": "dsh-observability",
       "npmName": "dsh-observability",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.0",
+      "peerCordis": "4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-watch",
@@ -17773,7 +18772,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"undefined\" dsh=\"0.1.0-rc.6\")",
-      "pkgVersion": "0.1.1",
+      "pkgVersion": "0.1.2",
       "peerCordis": null,
       "peerDsh": "0.1.0-rc.6",
       "nodeRange": "^22.22.3 || >=24.11.1"
@@ -17943,7 +18942,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.4.1",
+      "pkgVersion": "0.5.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.5"
@@ -17991,6 +18990,614 @@
       "section": "watchlist",
       "verdict": "unavailable",
       "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "graph-memory",
+      "name": "graph-memory",
+      "npmName": "graph-memory",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.5.8",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "de-anthropocentric-research-engine",
+      "name": "de-anthropocentric-research-engine",
+      "npmName": "de-anthropocentric-research-engine",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-desktop-app",
+      "name": "deepseek-harness-desktop-app",
+      "npmName": "deepseek-harness-desktop-app",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "ai-inner-os",
+      "name": "AI-Inner-Os",
+      "npmName": "ai-inner-os",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "sumsec-skills",
+      "name": "SumSec-Skills",
+      "npmName": "sumsec-skills",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-desktop-links2008",
+      "name": "DeepSeek-Harness-Desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dshcockpit",
+      "name": "DshCockpit",
+      "npmName": "dshcockpit",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-web-docker",
+      "name": "deepseek-harness-web-docker",
+      "npmName": "deepseek-harness-web-docker",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "skill",
+      "name": "skill",
+      "npmName": "skill",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.0.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "deepseekharnessdesktop-vault",
+      "name": "deepseekharnessdesktop-vault",
+      "npmName": "deepseekharnessdesktop-vault",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "locallens",
+      "name": "locallens",
+      "npmName": "locallens",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-filelens",
+      "name": "dsh-filelens",
+      "npmName": "dsh-filelens",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "superdesign-skill",
+      "name": "superdesign-skill",
+      "npmName": "superdesign-skill",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "treg",
+      "name": "treg",
+      "npmName": "treg",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "minara-skills",
+      "name": "minara-skills",
+      "npmName": "minara-skills",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-deepseek-harness-plugins-zhiyuan-fan",
+      "name": "Awesome-DeepSeek-Harness-Plugins",
+      "npmName": "awesome-deepseek-harness-plugins",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "gemini-eyes",
+      "name": "Gemini-Eyes",
+      "npmName": "gemini-eyes",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dshdesktopshell",
+      "name": "DshDesktopShell",
+      "npmName": "dshdesktopshell",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-workbench",
+      "name": "deepseek-harness-workbench",
+      "npmName": "deepseek-harness-workbench",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-update-notifier",
+      "name": "dsh-update-notifier",
+      "npmName": "dsh-update-notifier",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-whale-pet-aceice01",
+      "name": "dsh-whale-pet",
+      "npmName": "dsh-whale-pet",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-website",
+      "name": "deepseek-harness-website",
+      "npmName": "deepseek-harness-website",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-from-scratch",
+      "name": "dsh-from-scratch",
+      "npmName": "dsh-from-scratch",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-whitepaper",
+      "name": "deepseek-harness-whitepaper",
+      "npmName": "deepseek-harness-whitepaper",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-melody-launcher",
+      "name": "dsh-melody-launcher",
+      "npmName": "dsh-melody-launcher",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "graycode-for-dsh-graycodeteam",
+      "name": "graycode-for-dsh",
+      "npmName": "graycode-for-dsh",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-opencode-go-box",
+      "name": "dsh-opencode-go-box",
+      "npmName": "dsh-opencode-go-box",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-windows-ocr",
+      "name": "dsh-windows-ocr",
+      "npmName": "dsh-windows-ocr",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-launcher-marcog-h",
+      "name": "DSH-Launcher",
+      "npmName": "dsh-launcher",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.3.5",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18.0.0"
+    },
+    {
+      "id": "misakanet",
+      "name": "MisakaNet",
+      "npmName": "misakanet",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-whale-pet-rongzi5",
+      "name": "dsh-whale-pet",
+      "npmName": "dsh-whale-pet",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-window",
+      "name": "dsh-window",
+      "npmName": "dsh-window",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "agentcat",
+      "name": "AgentCat",
+      "npmName": "agentcat",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "2.0.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-android-app",
+      "name": "dsh-android-app",
+      "npmName": "dsh-android-app",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "aflare",
+      "name": "aflare",
+      "npmName": "aflare",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-skills",
+      "name": "dsh-skills",
+      "npmName": "dsh-skills",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "deepseek-harness-desktop-chokwinlee",
+      "name": "deepseek-harness-desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "openpencil",
+      "name": "openpencil",
+      "npmName": "openpencil",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "tydora",
+      "name": "Tydora",
+      "npmName": "tydora",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-mini-tui",
+      "name": "dsh-mini-tui",
+      "npmName": "dsh-mini-tui",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24"
+    },
+    {
+      "id": "rocketx",
+      "name": "RocketX",
+      "npmName": "rocketx",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "wanjiqi-meme",
+      "name": "wanjiqi-meme",
+      "npmName": "wanjiqi-meme",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-observation-journal",
+      "name": "dsh-observation-journal",
+      "npmName": "dsh-observation-journal",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "solo-memory",
+      "name": "solo-memory",
+      "npmName": "solo-memory",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-gpt-image-2",
+      "name": "awesome-gpt-image-2",
+      "npmName": "awesome-gpt-image-2",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "wesight",
+      "name": "wesight",
+      "npmName": "wesight",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tui-plugin-ohmypi",
+      "name": "dsh-tui-plugin-OhMyPi",
+      "npmName": "dsh-tui-plugin-ohmypi",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-design",
+      "name": "deepseek-design",
+      "npmName": "deepseek-design",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-auto-collapse",
+      "name": "dsh-auto-collapse",
+      "npmName": "dsh-auto-collapse",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseek-harness-desktop-ningbainb",
+      "name": "deepseek-harness-desktop",
+      "npmName": "deepseek-harness-desktop",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-subagent-monitor",
+      "name": "dsh-subagent-monitor",
+      "npmName": "dsh-subagent-monitor",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-notify-on-complete",
+      "name": "dsh-notify-on-complete",
+      "npmName": "dsh-notify-on-complete",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-sitemap",
+      "name": "dsh-sitemap",
+      "npmName": "dsh-sitemap",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "yao",
+      "name": "yao",
+      "npmName": "yao",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "ouroboros",
+      "name": "ouroboros",
+      "npmName": "ouroboros",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "ai-novel-writer",
+      "name": "AI-Novel-Writer",
+      "npmName": "ai-novel-writer",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-reviewer-bot",
+      "name": "dsh-reviewer-bot",
+      "npmName": "dsh-reviewer-bot",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-deepseek-flow",
+      "name": "dsh-deepseek-flow",
+      "npmName": "dsh-deepseek-flow",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-oc",
+      "name": "dsh-oc",
+      "npmName": "dsh-oc",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-im-gateway-zhuiyueya",
+      "name": "dsh-im-gateway",
+      "npmName": "dsh-im-gateway",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-cot-summerization",
+      "name": "dsh-cot-summerization",
+      "npmName": "dsh-cot-summerization",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-tui-tomowang",
+      "name": "dsh-tui",
+      "npmName": "dsh-tui",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.2.19",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "tuning-engines-cli",
+      "name": "tuning-engines-cli",
+      "npmName": "tuning-engines-cli",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-pet-remielle",
+      "name": "dsh-pet-remielle",
+      "npmName": "dsh-pet-remielle",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-codex-port",
+      "name": "dsh-codex-port",
+      "npmName": "dsh-codex-port",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.1.0",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "gongwen-skill",
+      "name": "gongwen-skill",
+      "npmName": "gongwen-skill",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "easydsh",
+      "name": "EasyDSH",
+      "npmName": "easydsh",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "agentrq",
+      "name": "agentrq",
+      "npmName": "agentrq",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "humanizer-ru",
+      "name": "humanizer-ru",
+      "npmName": "humanizer-ru",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
     }
   ],
   "layer2": [
@@ -18001,7 +19608,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 8556
+      "elapsedMs": 8568
     },
     {
       "id": "role-model",
@@ -18010,7 +19617,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 7534
+      "elapsedMs": 6432
     },
     {
       "id": "dsh-web-ui",
@@ -18019,7 +19626,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 3694
+      "elapsedMs": 4836
     },
     {
       "id": "dsh-better-sidebar",
@@ -18028,7 +19635,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 5005
+      "elapsedMs": 6179
     },
     {
       "id": "dsh-turn-rewind",
@@ -18037,7 +19644,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 3067
+      "elapsedMs": 2722
     },
     {
       "id": "dsh-share",
@@ -18046,7 +19653,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2422
+      "elapsedMs": 2560
     },
     {
       "id": "plugin-session-export",
@@ -18055,7 +19662,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2515
+      "elapsedMs": 2409
     },
     {
       "id": "dsh-vision-toolkit",
@@ -18064,7 +19671,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2475
+      "elapsedMs": 2250
     },
     {
       "id": "exo",
@@ -18073,7 +19680,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2075
+      "elapsedMs": 1576
     },
     {
       "id": "synergy",
@@ -18082,7 +19689,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2184
+      "elapsedMs": 1861
     },
     {
       "id": "ccteam",
@@ -18091,7 +19698,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 4213
+      "elapsedMs": 2899
     },
     {
       "id": "distill",
@@ -18100,7 +19707,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2213
+      "elapsedMs": 1696
     },
     {
       "id": "dsh-agent-teams",
@@ -18109,7 +19716,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2602
+      "elapsedMs": 2227
     },
     {
       "id": "awesome-dsh-plugins",
@@ -18118,7 +19725,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2067
+      "elapsedMs": 1957
     },
     {
       "id": "dsh-tianshu-tui",
@@ -18127,7 +19734,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2704
+      "elapsedMs": 2499
     },
     {
       "id": "dsh-ads",
@@ -18136,7 +19743,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2332
+      "elapsedMs": 1548
     },
     {
       "id": "dsh-openpencil",
@@ -18145,7 +19752,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2694
+      "elapsedMs": 2757
     },
     {
       "id": "awesome-dsh-plugin",
@@ -18154,7 +19761,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2000
+      "elapsedMs": 1475
     },
     {
       "id": "awesome-dsh-plugin-bruc3van",
@@ -18163,7 +19770,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 1834
+      "elapsedMs": 1579
     },
     {
       "id": "dsh-launcher",
@@ -18172,7 +19779,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1964
+      "elapsedMs": 1642
     },
     {
       "id": "create-dsh-plugin",
@@ -18181,7 +19788,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2827
+      "elapsedMs": 1540
     },
     {
       "id": "plugin-notify",
@@ -18190,7 +19797,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2562
+      "elapsedMs": 1834
     },
     {
       "id": "modlens",
@@ -18199,7 +19806,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2217
+      "elapsedMs": 2197
     },
     {
       "id": "modsearch",
@@ -18208,7 +19815,7 @@
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 3701
+      "elapsedMs": 3116
     },
     {
       "id": "dsh-browser",
@@ -18217,7 +19824,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 3179
+      "elapsedMs": 2254
     },
     {
       "id": "plugin-manager",
@@ -18226,7 +19833,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2699
+      "elapsedMs": 2039
     },
     {
       "id": "plugin-team-board",
@@ -18235,7 +19842,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2587
+      "elapsedMs": 2035
     },
     {
       "id": "all",
@@ -18244,7 +19851,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2388
+      "elapsedMs": 2461
     },
     {
       "id": "themes",
@@ -18253,466 +19860,826 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2360
+      "elapsedMs": 2308
     },
     {
-      "id": "dsh-doctor",
-      "name": "dsh-doctor",
-      "spec": "dsh-doctor",
+      "id": "preset-center",
+      "name": "preset-center (场景预设)",
+      "spec": "@dsh-suite/preset-center",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2293
+      "elapsedMs": 1812
     },
     {
-      "id": "dsh-interconnect",
-      "name": "dsh-interconnect",
-      "spec": "dsh-interconnect",
+      "id": "plugin-deus",
+      "name": "plugin-deus (神模扳机)",
+      "spec": "@dsh-suite/plugin-deus",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2124
+      "elapsedMs": 2483
     },
     {
-      "id": "dsh-scholar",
-      "name": "dsh-scholar",
-      "spec": "dsh-scholar",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2534
-    },
-    {
-      "id": "dsh-side-panel",
-      "name": "dsh-side-panel",
-      "spec": "dsh-side-panel",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2338
-    },
-    {
-      "id": "dsh-vision",
-      "name": "dsh-vision",
-      "spec": "dsh-vision",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2142
-    },
-    {
-      "id": "dsh-onlyne",
-      "name": "dsh-onlyne",
-      "spec": "dsh-onlyne",
+      "id": "voyager",
+      "name": "voyager",
+      "spec": "voyager",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2449
+      "elapsedMs": 2472
     },
     {
-      "id": "dsh-safe-delete",
-      "name": "dsh-safe-delete",
-      "spec": "dsh-safe-delete",
+      "id": "hologram",
+      "name": "HoloGram",
+      "spec": "hologram",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2063
+      "elapsedMs": 1540
     },
     {
-      "id": "dsh-plugin-deepeye",
-      "name": "dsh-plugin-deepeye",
-      "spec": "dsh-plugin-deepeye",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 3263
-    },
-    {
-      "id": "dsh-git-plugin",
-      "name": "dsh-git-plugin",
-      "spec": "dsh-git-plugin",
+      "id": "fabric",
+      "name": "fabric",
+      "spec": "fabric",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2501
+      "elapsedMs": 3023
     },
     {
-      "id": "dsh-web-search-tavily",
-      "name": "dsh-web-search-tavily",
-      "spec": "dsh-web-search-tavily",
+      "id": "dsh-data-agent",
+      "name": "dsh-data-agent",
+      "spec": "@yejiming/dsh-data-agent",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2049
+      "elapsedMs": 2621
     },
     {
-      "id": "dsh-memento",
-      "name": "dsh-memento",
-      "spec": "dsh-memento",
+      "id": "dsh-plugin-check",
+      "name": "dsh-plugin-check",
+      "spec": "dsh-plugin-check",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2081
+      "elapsedMs": 2182
     },
     {
-      "id": "dsh-skill-manager",
-      "name": "dsh-skill-manager",
-      "spec": "dsh-skill-manager",
+      "id": "dsh-computer-use",
+      "name": "dsh-computer-use",
+      "spec": "@anionex/dsh-computer-use",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2190
+      "elapsedMs": 2481
     },
     {
-      "id": "dsh-memento-perrylink",
-      "name": "dsh-memento",
-      "spec": "dsh-memento",
+      "id": "dsh-llm-fallbacks",
+      "name": "dsh-llm-fallbacks",
+      "spec": "dsh-llm-fallbacks",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2076
+      "elapsedMs": 1479
     },
     {
-      "id": "qiushi-dsh-evidence-audit",
-      "name": "qiushi-dsh-evidence-audit",
-      "spec": "qiushi-dsh-evidence-audit",
+      "id": "oh-my-dsh-wangshunnn",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2384
+      "elapsedMs": 13036
     },
     {
-      "id": "dsh-plugin-context-compressor",
-      "name": "dsh-plugin-context-compressor",
-      "spec": "dsh-plugin-context-compressor",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2276
-    },
-    {
-      "id": "dsh-browser-control",
-      "name": "dsh-browser-control",
-      "spec": "dsh-browser-control",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2185
-    },
-    {
-      "id": "dsh-plugin-session-import",
-      "name": "dsh-plugin-session-import",
-      "spec": "dsh-plugin-session-import",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2136
-    },
-    {
-      "id": "dsh-latex-tools",
-      "name": "dsh-latex-tools",
-      "spec": "dsh-latex-tools",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2620
-    },
-    {
-      "id": "dsh-push",
-      "name": "dsh-push",
-      "spec": "dsh-push",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2128
-    },
-    {
-      "id": "dash",
-      "name": "dash",
-      "spec": "dash",
+      "id": "plugin-registry",
+      "name": "plugin-registry",
+      "spec": "plugin-registry",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 7446
+      "elapsedMs": 1728
     },
     {
-      "id": "dsh-memory-amengclass",
+      "id": "dsh-chat-import",
+      "name": "dsh-chat-import",
+      "spec": "dsh-chat-import",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1520
+    },
+    {
+      "id": "dsh-compaction-instant",
+      "name": "dsh-compaction-instant",
+      "spec": "dsh-compaction-instant",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1986
+    },
+    {
+      "id": "dsh-recommend",
+      "name": "dsh-recommend",
+      "spec": "dsh-recommend",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1527
+    },
+    {
+      "id": "dsh-opencode-usage",
+      "name": "dsh-opencode-usage",
+      "spec": "dsh-opencode-usage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2171
+    },
+    {
+      "id": "dsh-soul-md",
+      "name": "dsh-soul-md",
+      "spec": "dsh-soul-md",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2865
+    },
+    {
+      "id": "dsh-github",
+      "name": "dsh-github",
+      "spec": "dsh-github",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2867
+    },
+    {
+      "id": "dsh-nocturne-memory",
+      "name": "dsh-nocturne-memory",
+      "spec": "dsh-nocturne-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3772
+    },
+    {
+      "id": "dsh-port-guard",
+      "name": "dsh-port-guard",
+      "spec": "dsh-port-guard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3028
+    },
+    {
+      "id": "dsh-deepseek-balance",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2242
+    },
+    {
+      "id": "dsh-tavily-search",
+      "name": "dsh-tavily-search",
+      "spec": "dsh-tavily-search",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2103
+    },
+    {
+      "id": "dsh-auto-review",
+      "name": "dsh-auto-review",
+      "spec": "dsh-auto-review",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3883
+    },
+    {
+      "id": "dsh-context-lens",
+      "name": "dsh-context-lens",
+      "spec": "dsh-context-lens",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2116
+    },
+    {
+      "id": "dsh-terminal",
+      "name": "dsh-terminal",
+      "spec": "dsh-terminal",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3168
+    },
+    {
+      "id": "dsh-codex-connect",
+      "name": "dsh-codex-connect",
+      "spec": "dsh-codex-connect",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2414
+    },
+    {
+      "id": "dsh-plugins-karuisawa-mrs",
+      "name": "dsh-plugins",
+      "spec": "dsh-plugins",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2377
+    },
+    {
+      "id": "dsh-session-import",
+      "name": "dsh-session-import",
+      "spec": "dsh-session-import",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2391
+    },
+    {
+      "id": "opencode-usage",
+      "name": "opencode-usage",
+      "spec": "opencode-usage",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 5154
+    },
+    {
+      "id": "dsh-ui-appearance",
+      "name": "dsh-ui-appearance",
+      "spec": "dsh-ui-appearance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1645
+    },
+    {
+      "id": "dsh-ui-quote-selection",
+      "name": "dsh-ui-quote-selection",
+      "spec": "dsh-ui-quote-selection",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1644
+    },
+    {
+      "id": "dsh-background",
+      "name": "dsh-background",
+      "spec": "dsh-background",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2327
+    },
+    {
+      "id": "dsh-llm-fallbacks-omdsh-dev",
+      "name": "dsh-llm-fallbacks",
+      "spec": "dsh-llm-fallbacks",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2146
+    },
+    {
+      "id": "dsh-dashboard",
+      "name": "dsh-dashboard",
+      "spec": "dsh-dashboard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2356
+    },
+    {
+      "id": "dsh-doublecheck",
+      "name": "dsh-doublecheck",
+      "spec": "dsh-doublecheck",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2031
+    },
+    {
+      "id": "dsh-self-evolution",
+      "name": "dsh-self-evolution",
+      "spec": "dsh-self-evolution",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1750
+    },
+    {
+      "id": "dsh-plugin-quote-reply",
+      "name": "dsh-plugin-quote-reply",
+      "spec": "dsh-plugin-quote-reply",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1699
+    },
+    {
+      "id": "dsh-deepseek-balance-dshiq04",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1560
+    },
+    {
+      "id": "dsh-llm-codebuddy",
+      "name": "dsh-llm-codebuddy",
+      "spec": "dsh-llm-codebuddy",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3731
+    },
+    {
+      "id": "dsh-llmwiki",
+      "name": "dsh-llmwiki",
+      "spec": "dsh-llmwiki",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1908
+    },
+    {
+      "id": "dsh-gui-customization",
+      "name": "dsh-gui-customization",
+      "spec": "dsh-gui-customization",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1834
+    },
+    {
+      "id": "dsh-memory-u-illll",
       "name": "dsh-memory",
       "spec": "dsh-memory",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2652
+      "elapsedMs": 1894
     },
     {
-      "id": "dsh-mcp-manager-1a125",
-      "name": "dsh-mcp-manager",
-      "spec": "dsh-mcp-manager",
+      "id": "dsh-approval-llm",
+      "name": "dsh-approval-llm",
+      "spec": "dsh-approval-llm",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1852
+    },
+    {
+      "id": "dsh-read-history",
+      "name": "dsh-read-history",
+      "spec": "dsh-read-history",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2301
+      "elapsedMs": 1820
     },
     {
-      "id": "dsh-advisor-omdsh-dev",
-      "name": "dsh-advisor",
-      "spec": "dsh-advisor",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2396
-    },
-    {
-      "id": "pi2dsh",
-      "name": "pi2dsh",
-      "spec": "pi2dsh",
+      "id": "dsh-client-pricing",
+      "name": "dsh-client-pricing",
+      "spec": "dsh-client-pricing",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 5138
+      "elapsedMs": 1555
     },
     {
-      "id": "dsh-lark-omdsh-dev",
-      "name": "dsh-lark",
-      "spec": "dsh-lark",
+      "id": "dsh-gpu",
+      "name": "dsh-gpu",
+      "spec": "dsh-gpu",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1836
+    },
+    {
+      "id": "tokenledger",
+      "name": "TokenLedger",
+      "spec": "tokenledger",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 3900
+      "elapsedMs": 2045
     },
     {
-      "id": "dsh-plugins-sunshine-lang",
-      "name": "dsh-plugins",
-      "spec": "dsh-plugins",
-      "src": "npm",
-      "verdict": "nobundle",
-      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2777
-    },
-    {
-      "id": "dsh-excel-chat",
-      "name": "dsh-excel-chat",
-      "spec": "dsh-excel-chat",
+      "id": "dsh-session-tree",
+      "name": "dsh-session-tree",
+      "spec": "dsh-session-tree",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 4006
+      "elapsedMs": 1731
     },
     {
-      "id": "dsh-rewind",
-      "name": "dsh-rewind",
-      "spec": "dsh-rewind",
+      "id": "dsh-plugin-audiolib",
+      "name": "dsh-plugin-audiolib",
+      "spec": "dsh-plugin-audiolib",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2280
+      "elapsedMs": 1923
     },
     {
-      "id": "dsh-side-chat",
-      "name": "dsh-side-chat",
-      "spec": "dsh-side-chat",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2301
-    },
-    {
-      "id": "superpowers-dsh",
-      "name": "superpowers-dsh",
-      "spec": "superpowers-dsh",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2693
-    },
-    {
-      "id": "dsh-voice-zhuiyueya",
-      "name": "dsh-voice",
-      "spec": "dsh-voice",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2427
-    },
-    {
-      "id": "dsh-codex-auth",
-      "name": "dsh-codex-auth",
-      "spec": "dsh-codex-auth",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2355
-    },
-    {
-      "id": "trio",
-      "name": "trio",
-      "spec": "trio",
-      "src": "npm",
-      "verdict": "nobundle",
-      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2311
-    },
-    {
-      "id": "dsh-plugins-wsxwj123",
-      "name": "dsh-plugins",
-      "spec": "dsh-plugins",
-      "src": "npm",
-      "verdict": "nobundle",
-      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2132
-    },
-    {
-      "id": "dsh-plugin-greet",
-      "name": "dsh-plugin-greet",
-      "spec": "dsh-plugin-greet",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2096
-    },
-    {
-      "id": "dsh-notify-yangyongzhen",
-      "name": "dsh-notify",
-      "spec": "dsh-notify",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2473
-    },
-    {
-      "id": "dsh-billing-thetianzz",
-      "name": "dsh-billing",
-      "spec": "dsh-billing",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1944
-    },
-    {
-      "id": "anysearch-dsh",
-      "name": "anysearch-dsh",
-      "spec": "@anysearch/anysearch-dsh",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2837
-    },
-    {
-      "id": "dsh-file-explorer-joejojoking-cloud",
+      "id": "dsh-file-explorer-wendi-lok",
       "name": "dsh-file-explorer",
       "spec": "dsh-file-explorer",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2038
+      "elapsedMs": 1679
     },
     {
-      "id": "dsh-auto-approve",
-      "name": "dsh-auto-approve",
-      "spec": "dsh-auto-approve",
+      "id": "dsh-moyan",
+      "name": "dsh-moyan",
+      "spec": "dsh-moyan",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2113
+      "elapsedMs": 1521
     },
     {
-      "id": "dsh-plugins-ceelog",
-      "name": "dsh-plugins",
-      "spec": "dsh-plugins",
+      "id": "dsh-theme-pack",
+      "name": "dsh-theme-pack",
+      "spec": "dsh-theme-pack",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1736
+    },
+    {
+      "id": "dsh-import-agents",
+      "name": "dsh-import-agents",
+      "spec": "dsh-import-agents",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 1934
+    },
+    {
+      "id": "dsh-workbench-dpf555",
+      "name": "dsh-workbench",
+      "spec": "dsh-workbench",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3030
+    },
+    {
+      "id": "git-worktree",
+      "name": "git-worktree",
+      "spec": "git-worktree",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
       "elapsedMs": 2040
     },
     {
-      "id": "dsh-outline",
-      "name": "dsh-outline",
-      "spec": "dsh-outline",
+      "id": "dsh-balance-linshule",
+      "name": "dsh-balance",
+      "spec": "dsh-balance",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2092
+      "elapsedMs": 2400
     },
     {
-      "id": "dsh-plugins-linqunxun",
-      "name": "dsh-plugins",
-      "spec": "dsh-plugins",
-      "src": "npm",
-      "verdict": "nobundle",
-      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2228
-    },
-    {
-      "id": "dsh-vision-linenxi-ctrl",
-      "name": "dsh-vision",
-      "spec": "dsh-vision",
+      "id": "dsh-utility-tools",
+      "name": "dsh-utility-tools",
+      "spec": "dsh-utility-tools",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2303
-    },
-    {
-      "id": "dsh-pixluna",
-      "name": "dsh-pixluna",
-      "spec": "dsh-pixluna",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2604
-    },
-    {
-      "id": "dsh-commandcode-provider",
-      "name": "dsh-commandcode-provider",
-      "spec": "dsh-commandcode-provider",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 2246
-    },
-    {
-      "id": "dsh-file-explorer-zalpha263",
-      "name": "dsh-file-explorer",
-      "spec": "dsh-file-explorer",
-      "src": "npm",
-      "verdict": "nobundle",
-      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
       "elapsedMs": 1898
     },
     {
-      "id": "promptwall",
-      "name": "promptwall",
-      "spec": "promptwall",
+      "id": "dsh-billing-nianpangzhi233",
+      "name": "dsh-billing",
+      "spec": "dsh-billing",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1734
+    },
+    {
+      "id": "dsh-s1",
+      "name": "dsh-s1",
+      "spec": "dsh-s1",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2315
+    },
+    {
+      "id": "dsh-yolo-mode",
+      "name": "dsh-yolo-mode",
+      "spec": "dsh-yolo-mode",
       "src": "npm",
       "verdict": "nobundle",
       "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
-      "elapsedMs": 2043
+      "elapsedMs": 1553
     },
     {
-      "id": "dsh-browser-duyefeng",
-      "name": "dsh-browser",
-      "spec": "dsh-browser",
+      "id": "pptfast",
+      "name": "pptfast",
+      "spec": "pptfast",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 3728
+    },
+    {
+      "id": "dsh-opencode-usage-vinyumao",
+      "name": "dsh-opencode-usage",
+      "spec": "dsh-opencode-usage",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2402
+      "elapsedMs": 1459
     },
     {
-      "id": "dsh-sight",
-      "name": "dsh-sight",
-      "spec": "dsh-sight",
+      "id": "dsh-recall-plugin-limbo947",
+      "name": "dsh-recall-plugin",
+      "spec": "dsh-recall-plugin",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2188
+      "elapsedMs": 2600
     },
     {
-      "id": "dsh-balance-float",
-      "name": "dsh-balance-float",
-      "spec": "dsh-balance-float",
+      "id": "dsh-live2d-pets",
+      "name": "dsh-live2d-pets",
+      "spec": "dsh-live2d-pets",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1715
+      "elapsedMs": 2783
+    },
+    {
+      "id": "dsh-better-edit",
+      "name": "dsh-better-edit",
+      "spec": "dsh-better-edit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2200
+    },
+    {
+      "id": "deepseek-harness-zh-pro",
+      "name": "deepseek-harness-zh_pro",
+      "spec": "deepseek-harness-zh_pro",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2177
+    },
+    {
+      "id": "dsh-plugin-store-0xkcyzz",
+      "name": "dsh-plugin-store",
+      "spec": "dsh-plugin-store",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2056
+    },
+    {
+      "id": "dsh-custom-tool",
+      "name": "dsh-custom-tool",
+      "spec": "git+https://github.com/omdsh-dev/dsh-custom-tool",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 6205
+    },
+    {
+      "id": "dsh-acp-for-bitfun",
+      "name": "dsh-acp-for-bitfun",
+      "spec": "git+https://github.com/bobleer/dsh-acp-for-bitfun",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3611
+    },
+    {
+      "id": "ui-status-label",
+      "name": "ui-status-label",
+      "spec": "git+https://github.com/alingalingling/ui-status-label",
+      "src": "git",
+      "verdict": "fail",
+      "note": "failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts",
+      "elapsedMs": 1795
+    },
+    {
+      "id": "dsh-deep-whale",
+      "name": "dsh-deep-whale",
+      "spec": "git+https://github.com/Small-tailqwq/dsh-deep-whale",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2503
+    },
+    {
+      "id": "dsh-annotation",
+      "name": "dsh-annotation",
+      "spec": "git+https://github.com/omdsh-dev/dsh-annotation",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2564
+    },
+    {
+      "id": "dsh-genui",
+      "name": "dsh-genui",
+      "spec": "git+https://github.com/omdsh-dev/dsh-genui",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3433
+    },
+    {
+      "id": "whale-girl",
+      "name": "whale-girl",
+      "spec": "git+https://github.com/vlln/whale-girl",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3035
+    },
+    {
+      "id": "dsh-memory-evolve",
+      "name": "dsh-memory-evolve",
+      "spec": "git+https://github.com/csyangwen/dsh-memory-evolve",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 3106
+    },
+    {
+      "id": "openhanako",
+      "name": "openhanako",
+      "spec": "git+https://github.com/liliMozi/openhanako",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 17294
+    },
+    {
+      "id": "mstar-harness",
+      "name": "mstar-harness",
+      "spec": "git+https://github.com/btspoony/mstar-harness",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 3671
+    },
+    {
+      "id": "dsh-workflow",
+      "name": "dsh_workflow",
+      "spec": "git+https://github.com/icetomoyo/dsh_workflow",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2936
+    },
+    {
+      "id": "dsh-work",
+      "name": "dsh-work",
+      "spec": "git+https://github.com/vibeinging/dsh-work",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 4932
+    },
+    {
+      "id": "echobird",
+      "name": "EchoBird",
+      "spec": "git+https://github.com/edison7009/EchoBird",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 5737
+    },
+    {
+      "id": "deepseek-harness-applicants",
+      "name": "deepseek-harness-applicants",
+      "spec": "git+https://github.com/Octo-o-o-o/deepseek-harness-applicants",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 4526
+    },
+    {
+      "id": "awesome-deepseek-harness",
+      "name": "awesome-deepseek-harness",
+      "spec": "git+https://github.com/0xsline/awesome-deepseek-harness",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2573
+    },
+    {
+      "id": "dsh-at-file",
+      "name": "dsh-at-file",
+      "spec": "git+https://github.com/omdsh-dev/dsh-at-file",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3368
+    },
+    {
+      "id": "oh-dsh-desktop",
+      "name": "oh-dsh-desktop",
+      "spec": "git+https://github.com/hust-open-atom-club/oh-dsh-desktop",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 5129
+    },
+    {
+      "id": "dsh-visualize",
+      "name": "dsh-visualize",
+      "spec": "git+https://github.com/Nagi-ovo/dsh-visualize",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2607
+    },
+    {
+      "id": "agent-vision-toolkit",
+      "name": "agent-vision-toolkit",
+      "spec": "git+https://github.com/Anionex/agent-vision-toolkit",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 4046
+    },
+    {
+      "id": "museai",
+      "name": "MuseAI",
+      "spec": "git+https://github.com/yejiming/MuseAI",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 8414
+    },
+    {
+      "id": "vibe-skills",
+      "name": "Vibe-Skills",
+      "spec": "git+https://github.com/foryourhealth111-pixel/Vibe-Skills",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 8092
+    },
+    {
+      "id": "dsh-anchored-standard",
+      "name": "dsh-anchored-standard",
+      "spec": "git+https://github.com/xiaobright/dsh-anchored-standard",
+      "src": "git",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2502
+    },
+    {
+      "id": "dsh-noema",
+      "name": "dsh-noema",
+      "spec": "git+https://github.com/ZSeven-W/dsh-noema",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4885
+    },
+    {
+      "id": "dsh-auto-mode",
+      "name": "dsh-auto-mode",
+      "spec": "git+https://github.com/NanmiCoder/dsh-auto-mode",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4376
+    },
+    {
+      "id": "dsh-gitbash-preset",
+      "name": "dsh-gitbash-preset",
+      "spec": "git+https://github.com/liceses/dsh-gitbash-preset",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2385
     }
   ],
   "layer3": [
@@ -18739,7 +20706,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2107
+      "elapsedMs": 1624
     },
     {
       "id": "dsh-better-sidebar",
@@ -18748,7 +20715,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2018
+      "elapsedMs": 1046
     },
     {
       "id": "dsh-turn-rewind",
@@ -18757,7 +20724,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1079
+      "elapsedMs": 731
     },
     {
       "id": "dsh-share",
@@ -18766,7 +20733,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1196
+      "elapsedMs": 740
     },
     {
       "id": "plugin-session-export",
@@ -18775,7 +20742,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1538
+      "elapsedMs": 1139
     },
     {
       "id": "dsh-vision-toolkit",
@@ -18784,7 +20751,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1217
+      "elapsedMs": 861
     },
     {
       "id": "exo",
@@ -18825,7 +20792,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1247
+      "elapsedMs": 695
     },
     {
       "id": "awesome-dsh-plugins",
@@ -18842,7 +20809,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1169
+      "elapsedMs": 921
     },
     {
       "id": "dsh-ads",
@@ -18859,7 +20826,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1116
+      "elapsedMs": 1563
     },
     {
       "id": "awesome-dsh-plugin",
@@ -18884,7 +20851,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1244
+      "elapsedMs": 815
     },
     {
       "id": "create-dsh-plugin",
@@ -18901,7 +20868,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1261
+      "elapsedMs": 881
     },
     {
       "id": "modlens",
@@ -18910,7 +20877,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1375
+      "elapsedMs": 1034
     },
     {
       "id": "modsearch",
@@ -18927,7 +20894,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1043
+      "elapsedMs": 861
     },
     {
       "id": "plugin-manager",
@@ -18936,7 +20903,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1877
+      "elapsedMs": 824
     },
     {
       "id": "plugin-team-board",
@@ -18945,7 +20912,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1077
+      "elapsedMs": 790
     },
     {
       "id": "all",
@@ -18954,7 +20921,7 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1289
+      "elapsedMs": 904
     },
     {
       "id": "themes",
@@ -18963,466 +20930,813 @@
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1353
+      "elapsedMs": 937
     },
     {
-      "id": "dsh-doctor",
-      "name": "dsh-doctor",
-      "spec": "dsh-doctor",
+      "id": "preset-center",
+      "name": "preset-center (场景预设)",
+      "spec": "@dsh-suite/preset-center",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1152
+      "elapsedMs": 878
     },
     {
-      "id": "dsh-interconnect",
-      "name": "dsh-interconnect",
-      "spec": "dsh-interconnect",
+      "id": "plugin-deus",
+      "name": "plugin-deus (神模扳机)",
+      "spec": "@dsh-suite/plugin-deus",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1356
+      "elapsedMs": 988
     },
     {
-      "id": "dsh-scholar",
-      "name": "dsh-scholar",
-      "spec": "dsh-scholar",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1172
-    },
-    {
-      "id": "dsh-side-panel",
-      "name": "dsh-side-panel",
-      "spec": "dsh-side-panel",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1331
-    },
-    {
-      "id": "dsh-vision",
-      "name": "dsh-vision",
-      "spec": "dsh-vision",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1283
-    },
-    {
-      "id": "dsh-onlyne",
-      "name": "dsh-onlyne",
-      "spec": "dsh-onlyne",
+      "id": "voyager",
+      "name": "voyager",
+      "spec": "voyager",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-safe-delete",
-      "name": "dsh-safe-delete",
-      "spec": "dsh-safe-delete",
+      "id": "hologram",
+      "name": "HoloGram",
+      "spec": "hologram",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-plugin-deepeye",
-      "name": "dsh-plugin-deepeye",
-      "spec": "dsh-plugin-deepeye",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1284
-    },
-    {
-      "id": "dsh-git-plugin",
-      "name": "dsh-git-plugin",
-      "spec": "dsh-git-plugin",
+      "id": "fabric",
+      "name": "fabric",
+      "spec": "fabric",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-web-search-tavily",
-      "name": "dsh-web-search-tavily",
-      "spec": "dsh-web-search-tavily",
+      "id": "dsh-data-agent",
+      "name": "dsh-data-agent",
+      "spec": "@yejiming/dsh-data-agent",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1161
+      "elapsedMs": 834
     },
     {
-      "id": "dsh-memento",
-      "name": "dsh-memento",
-      "spec": "dsh-memento",
+      "id": "dsh-plugin-check",
+      "name": "dsh-plugin-check",
+      "spec": "dsh-plugin-check",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1586
+      "elapsedMs": 779
     },
     {
-      "id": "dsh-skill-manager",
-      "name": "dsh-skill-manager",
-      "spec": "dsh-skill-manager",
+      "id": "dsh-computer-use",
+      "name": "dsh-computer-use",
+      "spec": "@anionex/dsh-computer-use",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1457
+      "elapsedMs": 1194
     },
     {
-      "id": "dsh-memento-perrylink",
-      "name": "dsh-memento",
-      "spec": "dsh-memento",
+      "id": "dsh-llm-fallbacks",
+      "name": "dsh-llm-fallbacks",
+      "spec": "dsh-llm-fallbacks",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1287
+      "elapsedMs": 883
     },
     {
-      "id": "qiushi-dsh-evidence-audit",
-      "name": "qiushi-dsh-evidence-audit",
-      "spec": "qiushi-dsh-evidence-audit",
+      "id": "oh-my-dsh-wangshunnn",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1263
+      "elapsedMs": 1023
     },
     {
-      "id": "dsh-plugin-context-compressor",
-      "name": "dsh-plugin-context-compressor",
-      "spec": "dsh-plugin-context-compressor",
+      "id": "plugin-registry",
+      "name": "plugin-registry",
+      "spec": "plugin-registry",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-chat-import",
+      "name": "dsh-chat-import",
+      "spec": "dsh-chat-import",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1383
+      "elapsedMs": 815
     },
     {
-      "id": "dsh-browser-control",
-      "name": "dsh-browser-control",
-      "spec": "dsh-browser-control",
+      "id": "dsh-compaction-instant",
+      "name": "dsh-compaction-instant",
+      "spec": "dsh-compaction-instant",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1211
+      "elapsedMs": 881
     },
     {
-      "id": "dsh-plugin-session-import",
-      "name": "dsh-plugin-session-import",
-      "spec": "dsh-plugin-session-import",
+      "id": "dsh-recommend",
+      "name": "dsh-recommend",
+      "spec": "dsh-recommend",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1415
+      "elapsedMs": 906
     },
     {
-      "id": "dsh-latex-tools",
-      "name": "dsh-latex-tools",
-      "spec": "dsh-latex-tools",
+      "id": "dsh-opencode-usage",
+      "name": "dsh-opencode-usage",
+      "spec": "dsh-opencode-usage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 872
+    },
+    {
+      "id": "dsh-soul-md",
+      "name": "dsh-soul-md",
+      "spec": "dsh-soul-md",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-github",
+      "name": "dsh-github",
+      "spec": "dsh-github",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2420
+    },
+    {
+      "id": "dsh-nocturne-memory",
+      "name": "dsh-nocturne-memory",
+      "spec": "dsh-nocturne-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1536
+    },
+    {
+      "id": "dsh-port-guard",
+      "name": "dsh-port-guard",
+      "spec": "dsh-port-guard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1833
+    },
+    {
+      "id": "dsh-deepseek-balance",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1080
+    },
+    {
+      "id": "dsh-tavily-search",
+      "name": "dsh-tavily-search",
+      "spec": "dsh-tavily-search",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 819
+    },
+    {
+      "id": "dsh-auto-review",
+      "name": "dsh-auto-review",
+      "spec": "dsh-auto-review",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1259
+    },
+    {
+      "id": "dsh-context-lens",
+      "name": "dsh-context-lens",
+      "spec": "dsh-context-lens",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 856
+    },
+    {
+      "id": "dsh-terminal",
+      "name": "dsh-terminal",
+      "spec": "dsh-terminal",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 822
+    },
+    {
+      "id": "dsh-codex-connect",
+      "name": "dsh-codex-connect",
+      "spec": "dsh-codex-connect",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1016
+    },
+    {
+      "id": "dsh-plugins-karuisawa-mrs",
+      "name": "dsh-plugins",
+      "spec": "dsh-plugins",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-session-import",
+      "name": "dsh-session-import",
+      "spec": "dsh-session-import",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 923
+    },
+    {
+      "id": "opencode-usage",
+      "name": "opencode-usage",
+      "spec": "opencode-usage",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-ui-appearance",
+      "name": "dsh-ui-appearance",
+      "spec": "dsh-ui-appearance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 872
+    },
+    {
+      "id": "dsh-ui-quote-selection",
+      "name": "dsh-ui-quote-selection",
+      "spec": "dsh-ui-quote-selection",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1246
+    },
+    {
+      "id": "dsh-background",
+      "name": "dsh-background",
+      "spec": "dsh-background",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 785
+    },
+    {
+      "id": "dsh-llm-fallbacks-omdsh-dev",
+      "name": "dsh-llm-fallbacks",
+      "spec": "dsh-llm-fallbacks",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1114
+    },
+    {
+      "id": "dsh-dashboard",
+      "name": "dsh-dashboard",
+      "spec": "dsh-dashboard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 878
+    },
+    {
+      "id": "dsh-doublecheck",
+      "name": "dsh-doublecheck",
+      "spec": "dsh-doublecheck",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 821
+    },
+    {
+      "id": "dsh-self-evolution",
+      "name": "dsh-self-evolution",
+      "spec": "dsh-self-evolution",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 856
+    },
+    {
+      "id": "dsh-plugin-quote-reply",
+      "name": "dsh-plugin-quote-reply",
+      "spec": "dsh-plugin-quote-reply",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 879
+    },
+    {
+      "id": "dsh-deepseek-balance-dshiq04",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 814
+    },
+    {
+      "id": "dsh-llm-codebuddy",
+      "name": "dsh-llm-codebuddy",
+      "spec": "dsh-llm-codebuddy",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 885
+    },
+    {
+      "id": "dsh-llmwiki",
+      "name": "dsh-llmwiki",
+      "spec": "dsh-llmwiki",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1101
+    },
+    {
+      "id": "dsh-gui-customization",
+      "name": "dsh-gui-customization",
+      "spec": "dsh-gui-customization",
       "src": "npm",
       "verdict": "ok",
       "note": "",
       "elapsedMs": 1205
     },
     {
-      "id": "dsh-push",
-      "name": "dsh-push",
-      "spec": "dsh-push",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1151
-    },
-    {
-      "id": "dash",
-      "name": "dash",
-      "spec": "dash",
-      "src": "npm",
-      "note": "",
-      "elapsedMs": 0
-    },
-    {
-      "id": "dsh-memory-amengclass",
+      "id": "dsh-memory-u-illll",
       "name": "dsh-memory",
       "spec": "dsh-memory",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1753
+      "elapsedMs": 1078
     },
     {
-      "id": "dsh-mcp-manager-1a125",
-      "name": "dsh-mcp-manager",
-      "spec": "dsh-mcp-manager",
+      "id": "dsh-approval-llm",
+      "name": "dsh-approval-llm",
+      "spec": "dsh-approval-llm",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 731
+    },
+    {
+      "id": "dsh-read-history",
+      "name": "dsh-read-history",
+      "spec": "dsh-read-history",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-advisor-omdsh-dev",
-      "name": "dsh-advisor",
-      "spec": "dsh-advisor",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1958
-    },
-    {
-      "id": "pi2dsh",
-      "name": "pi2dsh",
-      "spec": "pi2dsh",
+      "id": "dsh-client-pricing",
+      "name": "dsh-client-pricing",
+      "spec": "dsh-client-pricing",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-lark-omdsh-dev",
-      "name": "dsh-lark",
-      "spec": "dsh-lark",
+      "id": "dsh-gpu",
+      "name": "dsh-gpu",
+      "spec": "dsh-gpu",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 813
+    },
+    {
+      "id": "tokenledger",
+      "name": "TokenLedger",
+      "spec": "tokenledger",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-plugins-sunshine-lang",
-      "name": "dsh-plugins",
-      "spec": "dsh-plugins",
+      "id": "dsh-session-tree",
+      "name": "dsh-session-tree",
+      "spec": "dsh-session-tree",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1488
+    },
+    {
+      "id": "dsh-plugin-audiolib",
+      "name": "dsh-plugin-audiolib",
+      "spec": "dsh-plugin-audiolib",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 794
+    },
+    {
+      "id": "dsh-file-explorer-wendi-lok",
+      "name": "dsh-file-explorer",
+      "spec": "dsh-file-explorer",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-excel-chat",
-      "name": "dsh-excel-chat",
-      "spec": "dsh-excel-chat",
+      "id": "dsh-moyan",
+      "name": "dsh-moyan",
+      "spec": "dsh-moyan",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2014
+      "elapsedMs": 922
     },
     {
-      "id": "dsh-rewind",
-      "name": "dsh-rewind",
-      "spec": "dsh-rewind",
+      "id": "dsh-theme-pack",
+      "name": "dsh-theme-pack",
+      "spec": "dsh-theme-pack",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1125
+      "elapsedMs": 919
     },
     {
-      "id": "dsh-side-chat",
-      "name": "dsh-side-chat",
-      "spec": "dsh-side-chat",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1254
-    },
-    {
-      "id": "superpowers-dsh",
-      "name": "superpowers-dsh",
-      "spec": "superpowers-dsh",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1281
-    },
-    {
-      "id": "dsh-voice-zhuiyueya",
-      "name": "dsh-voice",
-      "spec": "dsh-voice",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1197
-    },
-    {
-      "id": "dsh-codex-auth",
-      "name": "dsh-codex-auth",
-      "spec": "dsh-codex-auth",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1290
-    },
-    {
-      "id": "trio",
-      "name": "trio",
-      "spec": "trio",
+      "id": "dsh-import-agents",
+      "name": "dsh-import-agents",
+      "spec": "dsh-import-agents",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-plugins-wsxwj123",
-      "name": "dsh-plugins",
-      "spec": "dsh-plugins",
+      "id": "dsh-workbench-dpf555",
+      "name": "dsh-workbench",
+      "spec": "dsh-workbench",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 890
+    },
+    {
+      "id": "git-worktree",
+      "name": "git-worktree",
+      "spec": "git-worktree",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-plugin-greet",
-      "name": "dsh-plugin-greet",
-      "spec": "dsh-plugin-greet",
+      "id": "dsh-balance-linshule",
+      "name": "dsh-balance",
+      "spec": "dsh-balance",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1154
+      "elapsedMs": 821
     },
     {
-      "id": "dsh-notify-yangyongzhen",
-      "name": "dsh-notify",
-      "spec": "dsh-notify",
+      "id": "dsh-utility-tools",
+      "name": "dsh-utility-tools",
+      "spec": "dsh-utility-tools",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1140
+      "elapsedMs": 966
     },
     {
-      "id": "dsh-billing-thetianzz",
+      "id": "dsh-billing-nianpangzhi233",
       "name": "dsh-billing",
       "spec": "dsh-billing",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1506
+      "elapsedMs": 743
     },
     {
-      "id": "anysearch-dsh",
-      "name": "anysearch-dsh",
-      "spec": "@anysearch/anysearch-dsh",
+      "id": "dsh-s1",
+      "name": "dsh-s1",
+      "spec": "dsh-s1",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 2026
+      "elapsedMs": 801
     },
     {
-      "id": "dsh-file-explorer-joejojoking-cloud",
-      "name": "dsh-file-explorer",
-      "spec": "dsh-file-explorer",
+      "id": "dsh-yolo-mode",
+      "name": "dsh-yolo-mode",
+      "spec": "dsh-yolo-mode",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-auto-approve",
-      "name": "dsh-auto-approve",
-      "spec": "dsh-auto-approve",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1419
-    },
-    {
-      "id": "dsh-plugins-ceelog",
-      "name": "dsh-plugins",
-      "spec": "dsh-plugins",
+      "id": "pptfast",
+      "name": "pptfast",
+      "spec": "pptfast",
       "src": "npm",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-outline",
-      "name": "dsh-outline",
-      "spec": "dsh-outline",
+      "id": "dsh-opencode-usage-vinyumao",
+      "name": "dsh-opencode-usage",
+      "spec": "dsh-opencode-usage",
       "src": "npm",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 1414
+      "elapsedMs": 1751
     },
     {
-      "id": "dsh-plugins-linqunxun",
-      "name": "dsh-plugins",
-      "spec": "dsh-plugins",
+      "id": "dsh-recall-plugin-limbo947",
+      "name": "dsh-recall-plugin",
+      "spec": "dsh-recall-plugin",
       "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1017
+    },
+    {
+      "id": "dsh-live2d-pets",
+      "name": "dsh-live2d-pets",
+      "spec": "dsh-live2d-pets",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 794
+    },
+    {
+      "id": "dsh-better-edit",
+      "name": "dsh-better-edit",
+      "spec": "dsh-better-edit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1204
+    },
+    {
+      "id": "deepseek-harness-zh-pro",
+      "name": "deepseek-harness-zh_pro",
+      "spec": "deepseek-harness-zh_pro",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 865
+    },
+    {
+      "id": "dsh-plugin-store-0xkcyzz",
+      "name": "dsh-plugin-store",
+      "spec": "dsh-plugin-store",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 907
+    },
+    {
+      "id": "dsh-custom-tool",
+      "name": "dsh-custom-tool",
+      "spec": "git+https://github.com/omdsh-dev/dsh-custom-tool",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 772
+    },
+    {
+      "id": "dsh-acp-for-bitfun",
+      "name": "dsh-acp-for-bitfun",
+      "spec": "git+https://github.com/bobleer/dsh-acp-for-bitfun",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 794
+    },
+    {
+      "id": "ui-status-label",
+      "name": "ui-status-label",
+      "spec": "git+https://github.com/alingalingling/ui-status-label",
+      "src": "git",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-vision-linenxi-ctrl",
-      "name": "dsh-vision",
-      "spec": "dsh-vision",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1233
-    },
-    {
-      "id": "dsh-pixluna",
-      "name": "dsh-pixluna",
-      "spec": "dsh-pixluna",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1458
-    },
-    {
-      "id": "dsh-commandcode-provider",
-      "name": "dsh-commandcode-provider",
-      "spec": "dsh-commandcode-provider",
-      "src": "npm",
-      "verdict": "ok",
-      "note": "",
-      "elapsedMs": 1448
-    },
-    {
-      "id": "dsh-file-explorer-zalpha263",
-      "name": "dsh-file-explorer",
-      "spec": "dsh-file-explorer",
-      "src": "npm",
+      "id": "dsh-deep-whale",
+      "name": "dsh-deep-whale",
+      "spec": "git+https://github.com/Small-tailqwq/dsh-deep-whale",
+      "src": "git",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "promptwall",
-      "name": "promptwall",
-      "spec": "promptwall",
-      "src": "npm",
+      "id": "dsh-annotation",
+      "name": "dsh-annotation",
+      "spec": "git+https://github.com/omdsh-dev/dsh-annotation",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 582
+    },
+    {
+      "id": "dsh-genui",
+      "name": "dsh-genui",
+      "spec": "git+https://github.com/omdsh-dev/dsh-genui",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 669
+    },
+    {
+      "id": "whale-girl",
+      "name": "whale-girl",
+      "spec": "git+https://github.com/vlln/whale-girl",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 750
+    },
+    {
+      "id": "dsh-memory-evolve",
+      "name": "dsh-memory-evolve",
+      "spec": "git+https://github.com/csyangwen/dsh-memory-evolve",
+      "src": "git",
       "note": "",
       "elapsedMs": 0
     },
     {
-      "id": "dsh-browser-duyefeng",
-      "name": "dsh-browser",
-      "spec": "dsh-browser",
-      "src": "npm",
-      "verdict": "ok",
+      "id": "openhanako",
+      "name": "openhanako",
+      "spec": "git+https://github.com/liliMozi/openhanako",
+      "src": "git",
       "note": "",
-      "elapsedMs": 897
+      "elapsedMs": 0
     },
     {
-      "id": "dsh-sight",
-      "name": "dsh-sight",
-      "spec": "dsh-sight",
-      "src": "npm",
-      "verdict": "ok",
+      "id": "mstar-harness",
+      "name": "mstar-harness",
+      "spec": "git+https://github.com/btspoony/mstar-harness",
+      "src": "git",
       "note": "",
-      "elapsedMs": 1018
+      "elapsedMs": 0
     },
     {
-      "id": "dsh-balance-float",
-      "name": "dsh-balance-float",
-      "spec": "dsh-balance-float",
-      "src": "npm",
+      "id": "dsh-workflow",
+      "name": "dsh_workflow",
+      "spec": "git+https://github.com/icetomoyo/dsh_workflow",
+      "src": "git",
       "verdict": "ok",
       "note": "",
-      "elapsedMs": 979
+      "elapsedMs": 698
+    },
+    {
+      "id": "dsh-work",
+      "name": "dsh-work",
+      "spec": "git+https://github.com/vibeinging/dsh-work",
+      "src": "git",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "echobird",
+      "name": "EchoBird",
+      "spec": "git+https://github.com/edison7009/EchoBird",
+      "src": "git",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "deepseek-harness-applicants",
+      "name": "deepseek-harness-applicants",
+      "spec": "git+https://github.com/Octo-o-o-o/deepseek-harness-applicants",
+      "src": "git",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "awesome-deepseek-harness",
+      "name": "awesome-deepseek-harness",
+      "spec": "git+https://github.com/0xsline/awesome-deepseek-harness",
+      "src": "git",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-at-file",
+      "name": "dsh-at-file",
+      "spec": "git+https://github.com/omdsh-dev/dsh-at-file",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1007
+    },
+    {
+      "id": "oh-dsh-desktop",
+      "name": "oh-dsh-desktop",
+      "spec": "git+https://github.com/hust-open-atom-club/oh-dsh-desktop",
+      "src": "git",
+      "verdict": "broken",
+      "note": "dump-config exit=1 but plugin not found in composed tree",
+      "elapsedMs": 1352
+    },
+    {
+      "id": "dsh-visualize",
+      "name": "dsh-visualize",
+      "spec": "git+https://github.com/Nagi-ovo/dsh-visualize",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1121
+    },
+    {
+      "id": "agent-vision-toolkit",
+      "name": "agent-vision-toolkit",
+      "spec": "git+https://github.com/Anionex/agent-vision-toolkit",
+      "src": "git",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "museai",
+      "name": "MuseAI",
+      "spec": "git+https://github.com/yejiming/MuseAI",
+      "src": "git",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "vibe-skills",
+      "name": "Vibe-Skills",
+      "spec": "git+https://github.com/foryourhealth111-pixel/Vibe-Skills",
+      "src": "git",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-anchored-standard",
+      "name": "dsh-anchored-standard",
+      "spec": "git+https://github.com/xiaobright/dsh-anchored-standard",
+      "src": "git",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-noema",
+      "name": "dsh-noema",
+      "spec": "git+https://github.com/ZSeven-W/dsh-noema",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 774
+    },
+    {
+      "id": "dsh-auto-mode",
+      "name": "dsh-auto-mode",
+      "spec": "git+https://github.com/NanmiCoder/dsh-auto-mode",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 573
+    },
+    {
+      "id": "dsh-gitbash-preset",
+      "name": "dsh-gitbash-preset",
+      "spec": "git+https://github.com/liceses/dsh-gitbash-preset",
+      "src": "git",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 554
     }
   ],
   "layer2_summary": {
-    "total": 80,
-    "ok": 53,
+    "total": 120,
+    "ok": 80,
     "broken": 0,
-    "skipped": 27,
+    "skipped": 39,
     "notfound": 0,
-    "fail": 0
+    "fail": 1
   },
   "layer3_summary": {
-    "total": 80,
-    "ok": 53,
-    "broken": 0,
-    "skipped": 27,
+    "total": 120,
+    "ok": 79,
+    "broken": 1,
+    "skipped": 40,
     "notfound": 0,
     "fail": 0
   }

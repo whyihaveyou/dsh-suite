@@ -1,61 +1,87 @@
 {
-  "generated_at": "2026-08-15T06:07:56Z",
+  "generated_at": "2026-08-16T01:02:04Z",
   "dshVersion": "0.1.0-rc.6",
-  "count": 53,
+  "count": 79,
   "ids": [
     "all",
-    "anysearch-dsh",
-    "dsh-advisor-omdsh-dev",
+    "deepseek-harness-zh-pro",
+    "dsh-acp-for-bitfun",
     "dsh-agent-teams",
-    "dsh-auto-approve",
-    "dsh-balance-float",
+    "dsh-annotation",
+    "dsh-approval-llm",
+    "dsh-at-file",
+    "dsh-auto-mode",
+    "dsh-auto-review",
+    "dsh-background",
+    "dsh-balance-linshule",
+    "dsh-better-edit",
     "dsh-better-sidebar",
-    "dsh-billing-thetianzz",
+    "dsh-billing-nianpangzhi233",
     "dsh-browser",
-    "dsh-browser-control",
-    "dsh-browser-duyefeng",
-    "dsh-codex-auth",
-    "dsh-commandcode-provider",
-    "dsh-doctor",
-    "dsh-excel-chat",
-    "dsh-interconnect",
-    "dsh-latex-tools",
+    "dsh-chat-import",
+    "dsh-codex-connect",
+    "dsh-compaction-instant",
+    "dsh-computer-use",
+    "dsh-context-lens",
+    "dsh-custom-tool",
+    "dsh-dashboard",
+    "dsh-data-agent",
+    "dsh-deepseek-balance",
+    "dsh-deepseek-balance-dshiq04",
+    "dsh-doublecheck",
+    "dsh-genui",
+    "dsh-gitbash-preset",
+    "dsh-github",
+    "dsh-gpu",
+    "dsh-gui-customization",
     "dsh-launcher",
-    "dsh-memento",
-    "dsh-memento-perrylink",
-    "dsh-memory-amengclass",
-    "dsh-notify-yangyongzhen",
+    "dsh-live2d-pets",
+    "dsh-llm-codebuddy",
+    "dsh-llm-fallbacks",
+    "dsh-llm-fallbacks-omdsh-dev",
+    "dsh-llmwiki",
+    "dsh-memory-u-illll",
+    "dsh-moyan",
+    "dsh-nocturne-memory",
+    "dsh-noema",
+    "dsh-opencode-usage",
+    "dsh-opencode-usage-vinyumao",
     "dsh-openpencil",
-    "dsh-outline",
-    "dsh-pixluna",
-    "dsh-plugin-context-compressor",
-    "dsh-plugin-deepeye",
-    "dsh-plugin-greet",
-    "dsh-plugin-session-import",
-    "dsh-push",
-    "dsh-rewind",
-    "dsh-scholar",
+    "dsh-plugin-audiolib",
+    "dsh-plugin-check",
+    "dsh-plugin-quote-reply",
+    "dsh-plugin-store-0xkcyzz",
+    "dsh-port-guard",
+    "dsh-recall-plugin-limbo947",
+    "dsh-recommend",
+    "dsh-s1",
+    "dsh-self-evolution",
+    "dsh-session-import",
+    "dsh-session-tree",
     "dsh-share",
-    "dsh-side-chat",
-    "dsh-side-panel",
-    "dsh-sight",
-    "dsh-skill-manager",
+    "dsh-tavily-search",
+    "dsh-terminal",
+    "dsh-theme-pack",
     "dsh-tianshu-tui",
     "dsh-turn-rewind",
-    "dsh-vision",
-    "dsh-vision-linenxi-ctrl",
+    "dsh-ui-appearance",
+    "dsh-ui-quote-selection",
+    "dsh-utility-tools",
     "dsh-vision-toolkit",
-    "dsh-voice-zhuiyueya",
-    "dsh-web-search-tavily",
+    "dsh-visualize",
     "dsh-web-ui",
+    "dsh-workbench-dpf555",
+    "dsh-workflow",
     "modlens",
+    "oh-my-dsh-wangshunnn",
+    "plugin-deus",
     "plugin-manager",
     "plugin-notify",
     "plugin-session-export",
     "plugin-team-board",
-    "qiushi-dsh-evidence-audit",
-    "superpowers-dsh",
-    "themes"
+    "preset-center",
+    "themes",
+    "whale-girl"
   ],
   "entries": {
     "dsh-web-ui": {
@@ -63,7 +89,7 @@
       "name": "dsh-web-ui",
       "spec": "@linxin666/dsh-web-ui-all",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-better-sidebar": {
@@ -71,7 +97,7 @@
       "name": "DSH-better-sidebar",
       "spec": "dsh-better-sidebar",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-turn-rewind": {
@@ -79,7 +105,7 @@
       "name": "dsh-turn-rewind",
       "spec": "@anionex/dsh-turn-rewind",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-share": {
@@ -87,7 +113,7 @@
       "name": "dsh-share",
       "spec": "dsh-share",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "plugin-session-export": {
@@ -95,7 +121,7 @@
       "name": "plugin-session-export",
       "spec": "@dsh-suite/plugin-session-export",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-vision-toolkit": {
@@ -103,7 +129,7 @@
       "name": "dsh-vision-toolkit",
       "spec": "@anionex/dsh-vision-toolkit",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-agent-teams": {
@@ -111,7 +137,7 @@
       "name": "dsh-agent-teams",
       "spec": "@nanmicoder/dsh-agent-teams",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-tianshu-tui": {
@@ -119,7 +145,7 @@
       "name": "dsh-tianshu-tui",
       "spec": "@huiliyi37/dsh-tianshu-tui",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-openpencil": {
@@ -127,7 +153,7 @@
       "name": "dsh-openpencil",
       "spec": "@zseven-w/dsh-openpencil",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-launcher": {
@@ -135,7 +161,7 @@
       "name": "dsh-launcher",
       "spec": "dsh-launcher",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "plugin-notify": {
@@ -143,7 +169,7 @@
       "name": "plugin-notify",
       "spec": "@dsh-suite/plugin-notify",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "modlens": {
@@ -151,7 +177,7 @@
       "name": "modlens",
       "spec": "@liustack/modlens",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "dsh-browser": {
@@ -159,7 +185,7 @@
       "name": "dsh-browser",
       "spec": "dsh-browser",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "plugin-manager": {
@@ -167,7 +193,7 @@
       "name": "plugin-manager",
       "spec": "@dsh-suite/plugin-manager",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "plugin-team-board": {
@@ -175,7 +201,7 @@
       "name": "plugin-team-board",
       "spec": "@dsh-suite/plugin-team-board",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "all": {
@@ -183,7 +209,7 @@
       "name": "all (全家桶)",
       "spec": "@dsh-suite/all",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
     "themes": {
@@ -191,295 +217,503 @@
       "name": "themes (皮肤中心)",
       "spec": "@dsh-suite/themes",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-doctor": {
-      "id": "dsh-doctor",
-      "name": "dsh-doctor",
-      "spec": "dsh-doctor",
+    "preset-center": {
+      "id": "preset-center",
+      "name": "preset-center (场景预设)",
+      "spec": "@dsh-suite/preset-center",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-interconnect": {
-      "id": "dsh-interconnect",
-      "name": "dsh-interconnect",
-      "spec": "dsh-interconnect",
+    "plugin-deus": {
+      "id": "plugin-deus",
+      "name": "plugin-deus (神模扳机)",
+      "spec": "@dsh-suite/plugin-deus",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-scholar": {
-      "id": "dsh-scholar",
-      "name": "dsh-scholar",
-      "spec": "dsh-scholar",
+    "dsh-data-agent": {
+      "id": "dsh-data-agent",
+      "name": "dsh-data-agent",
+      "spec": "@yejiming/dsh-data-agent",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-side-panel": {
-      "id": "dsh-side-panel",
-      "name": "dsh-side-panel",
-      "spec": "dsh-side-panel",
+    "dsh-plugin-check": {
+      "id": "dsh-plugin-check",
+      "name": "dsh-plugin-check",
+      "spec": "dsh-plugin-check",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-vision": {
-      "id": "dsh-vision",
-      "name": "dsh-vision",
-      "spec": "dsh-vision",
+    "dsh-computer-use": {
+      "id": "dsh-computer-use",
+      "name": "dsh-computer-use",
+      "spec": "@anionex/dsh-computer-use",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-plugin-deepeye": {
-      "id": "dsh-plugin-deepeye",
-      "name": "dsh-plugin-deepeye",
-      "spec": "dsh-plugin-deepeye",
+    "dsh-llm-fallbacks": {
+      "id": "dsh-llm-fallbacks",
+      "name": "dsh-llm-fallbacks",
+      "spec": "dsh-llm-fallbacks",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-web-search-tavily": {
-      "id": "dsh-web-search-tavily",
-      "name": "dsh-web-search-tavily",
-      "spec": "dsh-web-search-tavily",
+    "oh-my-dsh-wangshunnn": {
+      "id": "oh-my-dsh-wangshunnn",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-memento": {
-      "id": "dsh-memento",
-      "name": "dsh-memento",
-      "spec": "dsh-memento",
+    "dsh-chat-import": {
+      "id": "dsh-chat-import",
+      "name": "dsh-chat-import",
+      "spec": "dsh-chat-import",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-skill-manager": {
-      "id": "dsh-skill-manager",
-      "name": "dsh-skill-manager",
-      "spec": "dsh-skill-manager",
+    "dsh-compaction-instant": {
+      "id": "dsh-compaction-instant",
+      "name": "dsh-compaction-instant",
+      "spec": "dsh-compaction-instant",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-memento-perrylink": {
-      "id": "dsh-memento-perrylink",
-      "name": "dsh-memento",
-      "spec": "dsh-memento",
+    "dsh-recommend": {
+      "id": "dsh-recommend",
+      "name": "dsh-recommend",
+      "spec": "dsh-recommend",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "qiushi-dsh-evidence-audit": {
-      "id": "qiushi-dsh-evidence-audit",
-      "name": "qiushi-dsh-evidence-audit",
-      "spec": "qiushi-dsh-evidence-audit",
+    "dsh-opencode-usage": {
+      "id": "dsh-opencode-usage",
+      "name": "dsh-opencode-usage",
+      "spec": "dsh-opencode-usage",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-plugin-context-compressor": {
-      "id": "dsh-plugin-context-compressor",
-      "name": "dsh-plugin-context-compressor",
-      "spec": "dsh-plugin-context-compressor",
+    "dsh-github": {
+      "id": "dsh-github",
+      "name": "dsh-github",
+      "spec": "dsh-github",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-browser-control": {
-      "id": "dsh-browser-control",
-      "name": "dsh-browser-control",
-      "spec": "dsh-browser-control",
+    "dsh-nocturne-memory": {
+      "id": "dsh-nocturne-memory",
+      "name": "dsh-nocturne-memory",
+      "spec": "dsh-nocturne-memory",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-plugin-session-import": {
-      "id": "dsh-plugin-session-import",
-      "name": "dsh-plugin-session-import",
-      "spec": "dsh-plugin-session-import",
+    "dsh-port-guard": {
+      "id": "dsh-port-guard",
+      "name": "dsh-port-guard",
+      "spec": "dsh-port-guard",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-latex-tools": {
-      "id": "dsh-latex-tools",
-      "name": "dsh-latex-tools",
-      "spec": "dsh-latex-tools",
+    "dsh-deepseek-balance": {
+      "id": "dsh-deepseek-balance",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-push": {
-      "id": "dsh-push",
-      "name": "dsh-push",
-      "spec": "dsh-push",
+    "dsh-tavily-search": {
+      "id": "dsh-tavily-search",
+      "name": "dsh-tavily-search",
+      "spec": "dsh-tavily-search",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-memory-amengclass": {
-      "id": "dsh-memory-amengclass",
+    "dsh-auto-review": {
+      "id": "dsh-auto-review",
+      "name": "dsh-auto-review",
+      "spec": "dsh-auto-review",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-context-lens": {
+      "id": "dsh-context-lens",
+      "name": "dsh-context-lens",
+      "spec": "dsh-context-lens",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-terminal": {
+      "id": "dsh-terminal",
+      "name": "dsh-terminal",
+      "spec": "dsh-terminal",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-codex-connect": {
+      "id": "dsh-codex-connect",
+      "name": "dsh-codex-connect",
+      "spec": "dsh-codex-connect",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-session-import": {
+      "id": "dsh-session-import",
+      "name": "dsh-session-import",
+      "spec": "dsh-session-import",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-ui-appearance": {
+      "id": "dsh-ui-appearance",
+      "name": "dsh-ui-appearance",
+      "spec": "dsh-ui-appearance",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-ui-quote-selection": {
+      "id": "dsh-ui-quote-selection",
+      "name": "dsh-ui-quote-selection",
+      "spec": "dsh-ui-quote-selection",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-background": {
+      "id": "dsh-background",
+      "name": "dsh-background",
+      "spec": "dsh-background",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-llm-fallbacks-omdsh-dev": {
+      "id": "dsh-llm-fallbacks-omdsh-dev",
+      "name": "dsh-llm-fallbacks",
+      "spec": "dsh-llm-fallbacks",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-dashboard": {
+      "id": "dsh-dashboard",
+      "name": "dsh-dashboard",
+      "spec": "dsh-dashboard",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-doublecheck": {
+      "id": "dsh-doublecheck",
+      "name": "dsh-doublecheck",
+      "spec": "dsh-doublecheck",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-self-evolution": {
+      "id": "dsh-self-evolution",
+      "name": "dsh-self-evolution",
+      "spec": "dsh-self-evolution",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-plugin-quote-reply": {
+      "id": "dsh-plugin-quote-reply",
+      "name": "dsh-plugin-quote-reply",
+      "spec": "dsh-plugin-quote-reply",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-deepseek-balance-dshiq04": {
+      "id": "dsh-deepseek-balance-dshiq04",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-llm-codebuddy": {
+      "id": "dsh-llm-codebuddy",
+      "name": "dsh-llm-codebuddy",
+      "spec": "dsh-llm-codebuddy",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-llmwiki": {
+      "id": "dsh-llmwiki",
+      "name": "dsh-llmwiki",
+      "spec": "dsh-llmwiki",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-gui-customization": {
+      "id": "dsh-gui-customization",
+      "name": "dsh-gui-customization",
+      "spec": "dsh-gui-customization",
+      "src": "npm",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-memory-u-illll": {
+      "id": "dsh-memory-u-illll",
       "name": "dsh-memory",
       "spec": "dsh-memory",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-advisor-omdsh-dev": {
-      "id": "dsh-advisor-omdsh-dev",
-      "name": "dsh-advisor",
-      "spec": "dsh-advisor",
+    "dsh-approval-llm": {
+      "id": "dsh-approval-llm",
+      "name": "dsh-approval-llm",
+      "spec": "dsh-approval-llm",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-excel-chat": {
-      "id": "dsh-excel-chat",
-      "name": "dsh-excel-chat",
-      "spec": "dsh-excel-chat",
+    "dsh-gpu": {
+      "id": "dsh-gpu",
+      "name": "dsh-gpu",
+      "spec": "dsh-gpu",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-rewind": {
-      "id": "dsh-rewind",
-      "name": "dsh-rewind",
-      "spec": "dsh-rewind",
+    "dsh-session-tree": {
+      "id": "dsh-session-tree",
+      "name": "dsh-session-tree",
+      "spec": "dsh-session-tree",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-side-chat": {
-      "id": "dsh-side-chat",
-      "name": "dsh-side-chat",
-      "spec": "dsh-side-chat",
+    "dsh-plugin-audiolib": {
+      "id": "dsh-plugin-audiolib",
+      "name": "dsh-plugin-audiolib",
+      "spec": "dsh-plugin-audiolib",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "superpowers-dsh": {
-      "id": "superpowers-dsh",
-      "name": "superpowers-dsh",
-      "spec": "superpowers-dsh",
+    "dsh-moyan": {
+      "id": "dsh-moyan",
+      "name": "dsh-moyan",
+      "spec": "dsh-moyan",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-voice-zhuiyueya": {
-      "id": "dsh-voice-zhuiyueya",
-      "name": "dsh-voice",
-      "spec": "dsh-voice",
+    "dsh-theme-pack": {
+      "id": "dsh-theme-pack",
+      "name": "dsh-theme-pack",
+      "spec": "dsh-theme-pack",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-codex-auth": {
-      "id": "dsh-codex-auth",
-      "name": "dsh-codex-auth",
-      "spec": "dsh-codex-auth",
+    "dsh-workbench-dpf555": {
+      "id": "dsh-workbench-dpf555",
+      "name": "dsh-workbench",
+      "spec": "dsh-workbench",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-plugin-greet": {
-      "id": "dsh-plugin-greet",
-      "name": "dsh-plugin-greet",
-      "spec": "dsh-plugin-greet",
+    "dsh-balance-linshule": {
+      "id": "dsh-balance-linshule",
+      "name": "dsh-balance",
+      "spec": "dsh-balance",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-notify-yangyongzhen": {
-      "id": "dsh-notify-yangyongzhen",
-      "name": "dsh-notify",
-      "spec": "dsh-notify",
+    "dsh-utility-tools": {
+      "id": "dsh-utility-tools",
+      "name": "dsh-utility-tools",
+      "spec": "dsh-utility-tools",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-billing-thetianzz": {
-      "id": "dsh-billing-thetianzz",
+    "dsh-billing-nianpangzhi233": {
+      "id": "dsh-billing-nianpangzhi233",
       "name": "dsh-billing",
       "spec": "dsh-billing",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "anysearch-dsh": {
-      "id": "anysearch-dsh",
-      "name": "anysearch-dsh",
-      "spec": "@anysearch/anysearch-dsh",
+    "dsh-s1": {
+      "id": "dsh-s1",
+      "name": "dsh-s1",
+      "spec": "dsh-s1",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-auto-approve": {
-      "id": "dsh-auto-approve",
-      "name": "dsh-auto-approve",
-      "spec": "dsh-auto-approve",
+    "dsh-opencode-usage-vinyumao": {
+      "id": "dsh-opencode-usage-vinyumao",
+      "name": "dsh-opencode-usage",
+      "spec": "dsh-opencode-usage",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-outline": {
-      "id": "dsh-outline",
-      "name": "dsh-outline",
-      "spec": "dsh-outline",
+    "dsh-recall-plugin-limbo947": {
+      "id": "dsh-recall-plugin-limbo947",
+      "name": "dsh-recall-plugin",
+      "spec": "dsh-recall-plugin",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-vision-linenxi-ctrl": {
-      "id": "dsh-vision-linenxi-ctrl",
-      "name": "dsh-vision",
-      "spec": "dsh-vision",
+    "dsh-live2d-pets": {
+      "id": "dsh-live2d-pets",
+      "name": "dsh-live2d-pets",
+      "spec": "dsh-live2d-pets",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-pixluna": {
-      "id": "dsh-pixluna",
-      "name": "dsh-pixluna",
-      "spec": "dsh-pixluna",
+    "dsh-better-edit": {
+      "id": "dsh-better-edit",
+      "name": "dsh-better-edit",
+      "spec": "dsh-better-edit",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-commandcode-provider": {
-      "id": "dsh-commandcode-provider",
-      "name": "dsh-commandcode-provider",
-      "spec": "dsh-commandcode-provider",
+    "deepseek-harness-zh-pro": {
+      "id": "deepseek-harness-zh-pro",
+      "name": "deepseek-harness-zh_pro",
+      "spec": "deepseek-harness-zh_pro",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-browser-duyefeng": {
-      "id": "dsh-browser-duyefeng",
-      "name": "dsh-browser",
-      "spec": "dsh-browser",
+    "dsh-plugin-store-0xkcyzz": {
+      "id": "dsh-plugin-store-0xkcyzz",
+      "name": "dsh-plugin-store",
+      "spec": "dsh-plugin-store",
       "src": "npm",
-      "verified_at": "2026-08-15",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-sight": {
-      "id": "dsh-sight",
-      "name": "dsh-sight",
-      "spec": "dsh-sight",
-      "src": "npm",
-      "verified_at": "2026-08-15",
+    "dsh-custom-tool": {
+      "id": "dsh-custom-tool",
+      "name": "dsh-custom-tool",
+      "spec": "git+https://github.com/omdsh-dev/dsh-custom-tool",
+      "src": "git",
+      "verified_at": "2026-08-16",
       "layer": 3
     },
-    "dsh-balance-float": {
-      "id": "dsh-balance-float",
-      "name": "dsh-balance-float",
-      "spec": "dsh-balance-float",
-      "src": "npm",
-      "verified_at": "2026-08-15",
+    "dsh-acp-for-bitfun": {
+      "id": "dsh-acp-for-bitfun",
+      "name": "dsh-acp-for-bitfun",
+      "spec": "git+https://github.com/bobleer/dsh-acp-for-bitfun",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-annotation": {
+      "id": "dsh-annotation",
+      "name": "dsh-annotation",
+      "spec": "git+https://github.com/omdsh-dev/dsh-annotation",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-genui": {
+      "id": "dsh-genui",
+      "name": "dsh-genui",
+      "spec": "git+https://github.com/omdsh-dev/dsh-genui",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "whale-girl": {
+      "id": "whale-girl",
+      "name": "whale-girl",
+      "spec": "git+https://github.com/vlln/whale-girl",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-workflow": {
+      "id": "dsh-workflow",
+      "name": "dsh_workflow",
+      "spec": "git+https://github.com/icetomoyo/dsh_workflow",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-at-file": {
+      "id": "dsh-at-file",
+      "name": "dsh-at-file",
+      "spec": "git+https://github.com/omdsh-dev/dsh-at-file",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-visualize": {
+      "id": "dsh-visualize",
+      "name": "dsh-visualize",
+      "spec": "git+https://github.com/Nagi-ovo/dsh-visualize",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-noema": {
+      "id": "dsh-noema",
+      "name": "dsh-noema",
+      "spec": "git+https://github.com/ZSeven-W/dsh-noema",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-auto-mode": {
+      "id": "dsh-auto-mode",
+      "name": "dsh-auto-mode",
+      "spec": "git+https://github.com/NanmiCoder/dsh-auto-mode",
+      "src": "git",
+      "verified_at": "2026-08-16",
+      "layer": 3
+    },
+    "dsh-gitbash-preset": {
+      "id": "dsh-gitbash-preset",
+      "name": "dsh-gitbash-preset",
+      "spec": "git+https://github.com/liceses/dsh-gitbash-preset",
+      "src": "git",
+      "verified_at": "2026-08-16",
       "layer": 3
     }
   }

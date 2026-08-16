@@ -404,6 +404,21 @@ section { margin-bottom: 48px; }
 .ds-num { font-size: 22px; font-weight: 800; color: var(--brand-bright); font-variant-numeric: tabular-nums; line-height: 1.2; }
 .ds-num-new { color: var(--green); }
 .ds-label { font-size: 12px; color: var(--muted); }
+/* 趋势线 sparkline（构建期纯 SVG，零运行时依赖；3 粒度变体切换仅改 hidden） */
+.dash-range { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; flex-wrap: wrap; }
+.dash-range-label { font-size: 11px; font-weight: 600; letter-spacing: .4px; text-transform: uppercase; color: var(--faint); }
+.range-btn {
+  border: 1px solid var(--border-soft); background: transparent; color: var(--muted);
+  border-radius: 999px; padding: 2px 10px; font-family: inherit; font-size: 11px; font-weight: 600;
+  line-height: 1.5; cursor: pointer; transition: color .2s, border-color .2s, background .2s;
+}
+.range-btn:hover { color: var(--brand-bright); border-color: var(--brand-bright); }
+.range-btn.active { color: #fff; background: var(--brand); border-color: var(--brand); }
+[data-range][hidden] { display: none !important; }
+.ds-spark { display: block; margin-top: 8px; line-height: 0; color: var(--brand-bright); }
+.dash-stats .dash-stat:nth-child(3) .ds-spark,
+.dash-stats .dash-stat:nth-child(4) .ds-spark { color: var(--green); }
+.ds-empty { font-size: 10px; font-style: normal; letter-spacing: .4px; color: var(--faint); line-height: 26px; }
 .dash-charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 @media (max-width: 760px) { .dash-charts { grid-template-columns: 1fr; } }
 .dash-chart { margin: 0; background: var(--surface); border: 1px solid var(--border-soft); border-radius: var(--radius); padding: 14px 16px; }

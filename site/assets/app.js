@@ -204,5 +204,18 @@
     };
     img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(xml);
   });
+
+  /* 仪表盘趋势粒度切换（24h/7d/30d）——构建期已渲染全部变体，点击仅切换 [data-range] 可见性 */
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.range-btn');
+    if (!btn) return;
+    var range = btn.getAttribute('data-range-btn');
+    if (!range) return;
+    var scope = btn.closest('.eco-dash') || document;
+    scope.querySelectorAll('.range-btn').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    scope.querySelectorAll('[data-range]').forEach(function (el) {
+      el.hidden = el.getAttribute('data-range') !== range;
+    });
+  });
 })();
 

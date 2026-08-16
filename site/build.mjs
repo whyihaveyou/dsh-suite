@@ -329,6 +329,7 @@ const I18N = {
     dashTitle: 'Ecosystem at a glance',
     dashSource: 'Source: GitHub dsh-plugin topic + catalog snapshot · updated',
     dashCatalog: 'catalog entries', dashStars: 'total stars', dashNew: 'new in 48h', dashOk: 'compat OK rate',
+    dashRange: 'Trend range', dashRangeHourly: 'hourly', dashRangeDaily: 'daily', dashNoTrend: 'collecting…',
     dashGrowth: 'Ecosystem growth', dashDist: 'Star distribution',
     png: 'PNG',
     storeTitle: 'Plugin Store',
@@ -397,6 +398,7 @@ const I18N = {
     dashTitle: '生态仪表盘',
     dashSource: '数据源：GitHub dsh-plugin topic + 目录快照 · 更新于',
     dashCatalog: '目录条目', dashStars: '总星数', dashNew: '今日新增', dashOk: '兼容 ok 率',
+    dashRange: '趋势粒度', dashRangeHourly: '小时', dashRangeDaily: '天', dashNoTrend: '采集中…',
     dashGrowth: '生态增长', dashDist: '星数分布',
     png: 'PNG',
     storeTitle: '插件商店',
@@ -707,6 +709,19 @@ function renderPage(t, data, baseUrl, snapshot) {
   const eco = computeEcoTotals(data, snapshot);
   const dashBuckets = computeBuckets([...catalog, ...watchlist]);
   const dashGp = computeGrowthPoints(loadGrowthHistory(), eco.total, isZh(t) ? '现在' : 'now');
+  // 趋势线数据源：stats-history.json 时间序列（每指标卡 24h/7d/30d 三档变体，构建期静态渲染）
+  const histPts = loadStatsHistory();
+  const spark = {
+    catalog: sparklineSet(histPts, 'totalEntries', t.dashNoTrend || '…'),
+    stars: sparklineSet(histPts, 'totalStars', t.dashNoTrend || '…'),
+    news: sparklineSet(histPts, 'newEntriesToday', t.dashNoTrend || '…'),
+    ok: sparklineSet(histPts, 'compatOk', t.dashNoTrend || '…'),
+  };
+  const rangeSwitch = histPts.length
+    ? `<div class="dash-range" role="group" aria-label="${esc(t.dashRange)}"><span class="dash-range-label">${esc(t.dashRange)}</span>`
+      + RANGES.map((r) => `<button type="button" class="range-btn${r === DEFAULT_RANGE ? ' active' : ''}" data-range-btn="${r}" title="${r === '24h' ? esc(t.dashRangeHourly) : esc(t.dashRangeDaily)}">${r}</button>`).join('')
+      + `</div>`
+    : '';
   const dashGrowthSvg = dashGp ? lbLineChart([{ name: t.growthTopic, values: dashGp.topicVals }, { name: t.growthCatalog, values: dashGp.catalogVals }], dashGp.labels) : '';
   const dashDistSvg = lbChartBars(dashBuckets);
   const dNow = new Date();
@@ -747,11 +762,12 @@ function renderPage(t, data, baseUrl, snapshot) {
   const dashSection = `
     <section class="eco-dash" id="dashboard" aria-label="${esc(t.dashTitle)}">
       <h2 class="section-title">${esc(t.dashTitle)}</h2>
+      ${rangeSwitch}
       <div class="dash-stats">
-        <div class="dash-stat"><span class="ds-num">${eco.catalogCount}</span><span class="ds-label">${esc(t.dashCatalog)}</span></div>
-        <div class="dash-stat"><span class="ds-num">★ ${fmtStars(eco.totalStars)}</span><span class="ds-label">${esc(t.dashStars)}</span></div>
-        <div class="dash-stat"><span class="ds-num ds-num-new">+${eco.newCount}</span><span class="ds-label">${esc(t.dashNew)}</span></div>
-        <div class="dash-stat"><span class="ds-num">${eco.okCount}</span><span class="ds-label">${esc(t.dashVerified)}</span></div>
+        <div class="dash-stat"><span class="ds-num">${eco.catalogCount}</span><span class="ds-label">${esc(t.dashCatalog)}</span>${spark.catalog}</div>
+        <div class="dash-stat"><span class="ds-num">★ ${fmtStars(eco.totalStars)}</span><span class="ds-label">${esc(t.dashStars)}</span>${spark.stars}</div>
+        <div class="dash-stat"><span class="ds-num ds-num-new">+${eco.newCount}</span><span class="ds-label">${esc(t.dashNew)}</span>${spark.news}</div>
+        <div class="dash-stat"><span class="ds-num">${eco.okCount}</span><span class="ds-label">${esc(t.dashVerified)}</span>${spark.ok}</div>
       </div>
       <div class="dash-charts">
         <figure class="dash-chart">
@@ -932,6 +948,65 @@ function loadGrowthHistory() {
   const p = resolve(REPO_ROOT, 'bot', 'state', 'growth-history.json');
   if (!existsSync(p)) return null;
   try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; }
+}
+
+/** 趋势粒度档（sparkline 变体与切换按钮共用） */
+const RANGES = ['24h', '7d', '30d'];
+const DEFAULT_RANGE = '30d';
+
+/** 读生态指标时间序列（data/stats-history.json，JSONL；字段 ts/totalEntries/totalStars/featuredCount/compatOk/newEntriesToday 等） */
+function loadStatsHistory() {
+  const p = resolve(REPO_ROOT, 'data', 'stats-history.json');
+  if (!existsSync(p)) return [];
+  try {
+    return readFileSync(p, 'utf8').split(/\r?\n/)
+      .map((l) => l.trim()).filter((l) => l.startsWith('{'))
+      .map((l) => { try { return JSON.parse(l); } catch { return null; } })
+      .filter((pt) => pt && typeof pt.ts === 'string')
+      .sort((a, b) => a.ts.localeCompare(b.ts));
+  } catch { return []; }
+}
+
+/**
+ * 抽取某字段在时间窗内的序列：'24h'→最近 24 个 UTC 小时桶（桶内取最新点），'7d'→7 个 UTC 日桶，'30d'→30 个。
+ * 不足桶按存在数据原样返回（不伪造填充）——历史刚起步时图表如实显示短序列。
+ */
+function bucketSeries(points, field, range) {
+  const byBucket = new Map();
+  for (const p of points) {
+    const v = Number(p[field]);
+    if (!Number.isFinite(v)) continue;
+    const key = range === '24h' ? p.ts.slice(0, 13) : p.ts.slice(0, 10);
+    byBucket.set(key, v);
+  }
+  const n = range === '24h' ? 24 : range === '7d' ? 7 : 30;
+  return [...byBucket.keys()].sort().slice(-n).map((k) => byBucket.get(k));
+}
+
+/** 纯 SVG 迷你趋势线（零依赖）：折线 + 末端圆点；空序列返回 ''（卡片退化为纯数字） */
+function sparklineSvg(values) {
+  if (!values || !values.length) return '';
+  const W = 96, H = 26, pad = 2.5;
+  const max = Math.max(...values), min = Math.min(...values);
+  const span = (max - min) || 1;
+  const n = values.length;
+  const px = (i) => pad + (n === 1 ? (W - 2 * pad) / 2 : i * (W - 2 * pad) / (n - 1));
+  const py = (v) => pad + (1 - (v - min) / span) * (H - 2 * pad);
+  const pts = values.map((v, i) => `${px(i).toFixed(1)},${py(v).toFixed(1)}`).join(' ');
+  const lx = px(n - 1).toFixed(1), ly = py(values[n - 1]).toFixed(1);
+  return `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true">`
+    + `<polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity=".85"/>`
+    + `<circle cx="${lx}" cy="${ly}" r="2.2" fill="currentColor"/></svg>`;
+}
+
+/** 一张卡片的 3 粒度 sparkline 容器（构建期渲染全部变体，切换仅改 hidden）；序列全空时返回 '' */
+function sparklineSet(points, field, emptyText) {
+  if (!bucketSeries(points, field, DEFAULT_RANGE).length) return '';
+  const variants = RANGES.map((r) => {
+    const svg = sparklineSvg(bucketSeries(points, field, r));
+    return `<span class="ds-range" data-range="${r}"${r === DEFAULT_RANGE ? '' : ' hidden'}>${svg || `<em class="ds-empty">${esc(emptyText)}</em>`}</span>`;
+  }).join('');
+  return `<span class="ds-spark">${variants}</span>`;
 }
 
 /** 星数分布桶（0/1–3/4–10/11–50/51–100/100+）——stars 页与首页仪表盘共用 */

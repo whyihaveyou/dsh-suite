@@ -63,6 +63,9 @@ jobs:
       - name: Regenerate README tables
         run: node scripts/gen-readme.mjs
 
+      - name: Fetch og cache images (Top 100, idempotent)
+        run: node scripts/fetch-og-cache.mjs --limit 100
+
       - name: Rebuild site artifacts
         run: node site/build.mjs
 

@@ -1524,12 +1524,22 @@ function main() {
       .filter(Boolean);
   } catch { /* stats-history absent -> empty array */ }
 
+  // ogLocal: Top-N GitHub opengraph 图已本地缓存（scripts/fetch-og-cache.mjs 采集）时，
+  // 指向站点内 assets/og-cache/<id>.jpg（绝对 URL，消费方如 plugin-manager 商店可直接用）。
+  const OGCACHE_DIR = join(__dirname, 'assets', 'og-cache');
+  const withOg = catalog.map((p) => {
+    if (p.repo && existsSync(join(OGCACHE_DIR, p.id + '.jpg'))) {
+      return { ...p, ogLocal: baseUrl + 'assets/og-cache/' + p.id + '.jpg' };
+    }
+    return p;
+  });
+
   const catalogIndex = {
     schema_version: '1.0',
     generated_at: new Date().toISOString(),
     repo: REPO,
     totals: { curated: catalog.length, watchlist: watchlist.length, featured: catalog.filter(p => p.featured).length },
-    plugins: catalog,
+    plugins: withOg,
     watchlist,
     statsHistory,
   };

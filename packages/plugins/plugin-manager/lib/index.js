@@ -146,6 +146,7 @@ function trimPlugin(p) {
     installCmd: p.installCmd, repo: p.repo, license: p.license,
     featured: !!p.featured,
     lastPush: p.lastPush || null,
+    ogLocal: p.ogLocal || null,
   }
 }
 

@@ -795,7 +795,7 @@ window.__ModuleLoader__.load({
             : h('button', { key: 'i', style: isBroken ? { ...C.btn, background: '#9e6a03' } : C.btn, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, t('install'))
 
         return h('div', { key: p.id || p.name, style: C.card, onClick: () => setDetail(p), title: t('dtOpen') },
-          p.repo ? h(LazyImage, { src: 'https://opengraph.githubassets.com/1/' + p.repo, alt: p.repo }) : null,
+          p.repo ? h(LazyImage, { src: p.ogLocal || ('https://opengraph.githubassets.com/1/' + p.repo), alt: p.repo }) : null,
           h('div', { style: C.name },
             h('span', null, p.name),
             p.compatStatus === 'unknown'
@@ -881,7 +881,7 @@ window.__ModuleLoader__.load({
           : []
         drawerEl = h('div', { style: C.drawerOverlay, onClick: () => setDetail(null) },
           h('div', { style: C.drawer, onClick: (e) => e.stopPropagation() },
-            d.repo ? h(LazyImage, { src: 'https://opengraph.githubassets.com/1/' + d.repo, alt: d.repo }) : null,
+            d.repo ? h(LazyImage, { src: d.ogLocal || ('https://opengraph.githubassets.com/1/' + d.repo), alt: d.repo }) : null,
             h('div', { style: C.drawerTitle },
               h('span', null, d.name),
               d.compatStatus === 'unknown'
@@ -939,7 +939,7 @@ window.__ModuleLoader__.load({
             const fBusy = installing === p.name
             const fDesc = (t('lang') === 'zh' ? (p.desc_zh || p.desc_en) : (p.desc_en || p.desc_zh)) || ''
             return h('div', { key: 'feat-' + (p.id || p.name), style: C.featCard, onClick: () => setDetail(p), title: t('dtOpen') },
-              p.repo ? h('div', { style: C.featImgBox }, h('img', { src: 'https://opengraph.githubassets.com/1/' + p.repo, alt: p.repo, loading: 'lazy', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } })) : null,
+              p.repo ? h('div', { style: C.featImgBox }, h('img', { src: p.ogLocal || ('https://opengraph.githubassets.com/1/' + p.repo), alt: p.repo, loading: 'lazy', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } })) : null,
               h('div', { style: C.featBody },
                 h('div', { style: { fontSize: '13px', fontWeight: '600', color: '#e6edf3', wordBreak: 'break-all' } }, p.name),
                 h('div', { style: C.featDesc }, fDesc),

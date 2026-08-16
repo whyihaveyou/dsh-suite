@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-16T13:46:50.987Z",
+  "generated_at": "2026-08-16T14:00:04.494Z",
   "repo": "whyihaveyou/dsh-suite",
   "totals": {
     "curated": 1433,
@@ -36,7 +36,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add open-managed-agents",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/open-managed-agents.jpg"
     },
     {
       "id": "role-model",
@@ -66,7 +67,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/try-works/role-model",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/role-model.jpg"
     },
     {
       "id": "irmia-devkit-open",
@@ -96,7 +98,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/irmia2026/irmia_devkit_open",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/irmia-devkit-open.jpg"
     },
     {
       "id": "hologram",
@@ -126,7 +129,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/834063245-creator/HoloGram",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/hologram.jpg"
     },
     {
       "id": "dsh-custom-tool",
@@ -156,7 +160,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-custom-tool.jpg"
     },
     {
       "id": "dsh-acp-for-bitfun",
@@ -386,7 +391,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @yejiming/dsh-data-agent",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-data-agent.jpg"
     },
     {
       "id": "dsh-doctor",
@@ -441,7 +447,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-interconnect",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-interconnect.jpg"
     },
     {
       "id": "dsh-openbiliclaw",
@@ -471,7 +478,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-openbiliclaw.jpg"
     },
     {
       "id": "dsh-plugin-check",
@@ -501,7 +509,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-plugin-check.jpg"
     },
     {
       "id": "dsh-security-audit",
@@ -666,7 +675,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-mnemon",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-mnemon.jpg"
     },
     {
       "id": "dsh-paseo",
@@ -1146,7 +1156,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/HuanLinOTO/dsh-plugin-mineru",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-plugin-mineru.jpg"
     },
     {
       "id": "dsh-prompt-studio",
@@ -1511,7 +1522,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @linxin666/dsh-web-ui-all@0.1.10",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-web-ui.jpg"
     },
     {
       "id": "dsh-better-sidebar",
@@ -1541,7 +1553,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add dsh-better-sidebar",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-better-sidebar.jpg"
     },
     {
       "id": "ui-status-label",
@@ -1571,7 +1584,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/ui-status-label.jpg"
     },
     {
       "id": "dsh-deep-whale",
@@ -1601,7 +1615,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Small-tailqwq/dsh-deep-whale",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-deep-whale.jpg"
     },
     {
       "id": "dsh-focus-chat",
@@ -1721,7 +1736,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-ui-whale.jpg"
     },
     {
       "id": "dsh-annotation",
@@ -1751,7 +1767,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-annotation.jpg"
     },
     {
       "id": "dsh-chat-width",
@@ -1831,7 +1848,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-genui.jpg"
     },
     {
       "id": "dsh-input-history",
@@ -1886,7 +1904,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-navbar.jpg"
     },
     {
       "id": "dsh-paste-input",
@@ -2331,7 +2350,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/whale-girl.jpg"
     },
     {
       "id": "pi-discuss-mode",
@@ -2391,7 +2411,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @anionex/dsh-turn-rewind",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-turn-rewind.jpg"
     },
     {
       "id": "dsh-share",
@@ -2451,7 +2472,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-message-edit",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-message-edit.jpg"
     },
     {
       "id": "dsh-context-doctor",
@@ -2571,7 +2593,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-memory-evolve.jpg"
     },
     {
       "id": "dsh-web-archive",
@@ -2886,7 +2909,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @anionex/dsh-vision-toolkit",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-vision-toolkit.jpg"
     },
     {
       "id": "deepseek-omnimodal",
@@ -2971,7 +2995,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-vision",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-vision.jpg"
     },
     {
       "id": "openhanako",
@@ -3001,7 +3026,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/liliMozi/openhanako",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/openhanako.jpg"
     },
     {
       "id": "exo",
@@ -3031,7 +3057,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/exoharness/exo",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/exo.jpg"
     },
     {
       "id": "synergy",
@@ -3061,7 +3088,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/SII-Holos/synergy",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/synergy.jpg"
     },
     {
       "id": "ccteam",
@@ -3091,7 +3119,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/firstintent/ccteam",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/ccteam.jpg"
     },
     {
       "id": "matebot",
@@ -3121,7 +3150,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/aresbit/MateBot",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/matebot.jpg"
     },
     {
       "id": "mstar-harness",
@@ -3151,7 +3181,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/mstar-harness.jpg"
     },
     {
       "id": "dsh-workflow",
@@ -3181,7 +3212,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-workflow.jpg"
     },
     {
       "id": "agents-go",
@@ -3271,7 +3303,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @nanmicoder/dsh-agent-teams",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-agent-teams.jpg"
     },
     {
       "id": "dsh-automation",
@@ -3301,7 +3334,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-automation.jpg"
     },
     {
       "id": "dsh-loop",
@@ -3411,7 +3445,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/vibeinging/dsh-work",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-work.jpg"
     },
     {
       "id": "dsh-advisor",
@@ -3661,7 +3696,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/echobird.jpg"
     },
     {
       "id": "awesome-dsh-plugins",
@@ -3691,7 +3727,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/AdamPlatin123/awesome-dsh-plugins",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/awesome-dsh-plugins.jpg"
     },
     {
       "id": "deepseek-harness-applicants",
@@ -3721,7 +3758,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/deepseek-harness-applicants.jpg"
     },
     {
       "id": "awesome-deepseek-harness",
@@ -3751,7 +3789,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/0xsline/awesome-deepseek-harness",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/awesome-deepseek-harness.jpg"
     },
     {
       "id": "dsh-tianshu-tui",
@@ -3781,7 +3820,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @huiliyi37/dsh-tianshu-tui",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-tianshu-tui.jpg"
     },
     {
       "id": "agent-skills",
@@ -3841,7 +3881,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-at-file.jpg"
     },
     {
       "id": "dsh-open-in-vscode",
@@ -3871,7 +3912,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-open-in-vscode.jpg"
     },
     {
       "id": "dsh-notification",
@@ -3901,7 +3943,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-notification.jpg"
     },
     {
       "id": "dsh-ads",
@@ -3931,7 +3974,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "git+https://github.com/Nagi-ovo/dsh-ads",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-ads.jpg"
     },
     {
       "id": "dsh-group-photo",
@@ -3991,7 +4035,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @zseven-w/dsh-openpencil",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-openpencil.jpg"
     },
     {
       "id": "oh-dsh-desktop",
@@ -4021,7 +4066,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/oh-dsh-desktop.jpg"
     },
     {
       "id": "dsh-visualize",
@@ -4051,7 +4097,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-visualize.jpg"
     },
     {
       "id": "awesome-dsh-plugin",
@@ -4081,7 +4128,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Alex-Yanggg/awesome-DSH-plugin",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/awesome-dsh-plugin.jpg"
     },
     {
       "id": "oh-my-dsh",
@@ -4111,7 +4159,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add oh-my-dsh",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/oh-my-dsh.jpg"
     },
     {
       "id": "dsh-gomoku",
@@ -4316,7 +4365,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/bruc3van/awesome-dsh-plugin",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/awesome-dsh-plugin-bruc3van.jpg"
     },
     {
       "id": "dsh-launcher",
@@ -4346,7 +4396,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add dsh-launcher",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-launcher.jpg"
     },
     {
       "id": "dsh-minigames",
@@ -4491,7 +4542,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add plugin-registry",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/plugin-registry.jpg"
     },
     {
       "id": "create-dsh-plugin",
@@ -4731,7 +4783,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add @liustack/modlens",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/modlens.jpg"
     },
     {
       "id": "agent-vision-toolkit",
@@ -4761,7 +4814,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Anionex/agent-vision-toolkit",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/agent-vision-toolkit.jpg"
     },
     {
       "id": "modsearch",
@@ -4791,7 +4845,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "git+https://github.com/liustack/modsearch",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/modsearch.jpg"
     },
     {
       "id": "dsh-browser",
@@ -4821,7 +4876,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add dsh-browser",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-browser.jpg"
     },
     {
       "id": "dsh-chat-import",
@@ -4851,7 +4907,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add dsh-chat-import",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-chat-import.jpg"
     },
     {
       "id": "dsh-openapi",
@@ -5426,7 +5483,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-xiaoyao-skins.jpg"
     },
     {
       "id": "dsh-her-eyes",
@@ -6456,7 +6514,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/HeiGeAi/deepseek-harness-skin",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/deepseek-harness-skin.jpg"
     },
     {
       "id": "dsh-github-connector",
@@ -6511,7 +6570,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/keleus/deepseek-pet",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/deepseek-pet.jpg"
     },
     {
       "id": "dsh-undo",
@@ -6876,7 +6936,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-plugin-template.jpg"
     },
     {
       "id": "dsh-search-mcp",
@@ -9891,7 +9952,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Han-1413141/dsh-cost-meter",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-cost-meter.jpg"
     },
     {
       "id": "dsh-lens-lite",
@@ -12301,7 +12363,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/JustGenius-s/DSH-Decktop",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-decktop.jpg"
     },
     {
       "id": "dsh-token-stats",
@@ -14276,7 +14339,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dskin.jpg"
     },
     {
       "id": "dsh-playwright-browser",
@@ -14336,7 +14400,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-usage-stats",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-usage-stats.jpg"
     },
     {
       "id": "deepseek-harness-qqbot",
@@ -14721,7 +14786,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-lark",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-lark-omdsh-dev.jpg"
     },
     {
       "id": "dsh-session-import",
@@ -14856,7 +14922,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-vision",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-vision-oil-oil.jpg"
     },
     {
       "id": "dsh-webui-auth",
@@ -15466,7 +15533,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-plugin-workshop.jpg"
     },
     {
       "id": "dcode",
@@ -16876,7 +16944,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add superpowers-dsh",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/superpowers-dsh.jpg"
     },
     {
       "id": "dsh-subagent-cwd",
@@ -16931,7 +17000,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-skill-viewer.jpg"
     },
     {
       "id": "dsh-model-router",
@@ -16961,7 +17031,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-model-router.jpg"
     },
     {
       "id": "deepseek-plugin-store",
@@ -19106,7 +19177,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/museai.jpg"
     },
     {
       "id": "dsh-user-experience",
@@ -19166,7 +19238,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-plugin-cc.jpg"
     },
     {
       "id": "dsh-vision-provider",
@@ -19246,7 +19319,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-kun-like-pet.jpg"
     },
     {
       "id": "dsh-meme-hub",
@@ -19276,7 +19350,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/the-beating-light-of-the-nail/dsh-meme-hub",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-meme-hub.jpg"
     },
     {
       "id": "dsh-remote-acces",
@@ -20441,7 +20516,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/lire1131/dsh-undo-plugin",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-undo-plugin.jpg"
     },
     {
       "id": "dsh-subagent-status",
@@ -20551,7 +20627,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/foryourhealth111-pixel/Vibe-Skills",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/vibe-skills.jpg"
     },
     {
       "id": "dsh-drag-and-drop-omdsh-dev",
@@ -21666,7 +21743,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-context",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-context.jpg"
     },
     {
       "id": "surfing-plugin",
@@ -23121,7 +23199,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @anysearch/anysearch-dsh",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/anysearch-dsh.jpg"
     },
     {
       "id": "dsh-file-explorer-joejojoking-cloud",
@@ -23181,7 +23260,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-toy.jpg"
     },
     {
       "id": "dsh-codex-pet",
@@ -23966,7 +24046,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Awu12277/dsh-stock-watch",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-stock-watch.jpg"
     },
     {
       "id": "dsh-tool-search-letter2025",
@@ -24466,7 +24547,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/PC2005-cloud/dsh-pet",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-pet-pc2005-cloud.jpg"
     },
     {
       "id": "dsh-humanizer",
@@ -24591,7 +24673,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Mars-Sea/dsh-commandcode-provider",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-commandcode-provider.jpg"
     },
     {
       "id": "dsh-quote-annotate",
@@ -25601,7 +25684,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-anchored-standard.jpg"
     },
     {
       "id": "touhou-hakurei",
@@ -25706,7 +25790,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @tencent-connect/dsh-qqbot",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-qqbot.jpg"
     },
     {
       "id": "deepseek-harness-external-migration",
@@ -28036,7 +28121,8 @@
         "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Tabbit-Browser/dsh-plugin",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-plugin-tabbit-browser.jpg"
     },
     {
       "id": "dsh-computer-use-zrui-c",
@@ -29079,7 +29165,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/ZSeven-W/dsh-noema",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-noema.jpg"
     },
     {
       "id": "dsh-zotero-wiki",
@@ -29995,7 +30082,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/NanmiCoder/dsh-auto-mode",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-auto-mode.jpg"
     },
     {
       "id": "dsh-document-review",
@@ -30818,7 +30906,8 @@
         "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "dsh plugin add git+https://github.com/liceses/dsh-gitbash-preset",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-gitbash-preset.jpg"
     },
     {
       "id": "dsh-memoryhub",
@@ -31893,7 +31982,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/HanaAyane/dsh-reasoning-effort",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-reasoning-effort.jpg"
     },
     {
       "id": "dsh-snapshot",
@@ -31956,7 +32046,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Yts1919/dsh-vision-complete",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-vision-complete.jpg"
     },
     {
       "id": "dsh-subscription-auth",
@@ -32275,7 +32366,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/kingOfSoySauce/dsh-liang-skin",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-liang-skin.jpg"
     },
     {
       "id": "dsh-live2d-pets",
@@ -32573,7 +32665,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/ChangedenCZD/dsh-minimal-turbo",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-minimal-turbo.jpg"
     },
     {
       "id": "dsh-plugin-terminal-mervyn-teo",
@@ -32955,7 +33048,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/RevolutionLA/dsh-dream-skin",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-dream-skin.jpg"
     },
     {
       "id": "dsh-plan-graph",
@@ -33833,7 +33927,8 @@
         "source": "投稿审核; L3 pending"
       },
       "installCmd": "dsh plugin add @struktoai/mirage-dsh",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/mirage-dsh.jpg"
     },
     {
       "id": "dsh-smooth-stream-laplacebit",
@@ -33884,7 +33979,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Nagi-ovo/voyager",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/voyager.jpg"
     },
     {
       "id": "caliper",
@@ -33905,7 +34001,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/edonadei/caliper",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/caliper.jpg"
     },
     {
       "id": "deepseek-harness-studio",
@@ -33926,7 +34023,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/fufankeji/deepseek-harness-studio",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/deepseek-harness-studio.jpg"
     },
     {
       "id": "dsh-notifier",
@@ -33947,7 +34045,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/THEWOLFWALKER/dsh-notifier",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-notifier.jpg"
     },
     {
       "id": "dockyard-dsh",
@@ -34388,7 +34487,8 @@
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/omdsh-dev/dsh_workflow",
-      "watchReason": ""
+      "watchReason": "",
+      "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-workflow-omdsh-dev.jpg"
     },
     {
       "id": "dsh-pocket",

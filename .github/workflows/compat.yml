@@ -45,9 +45,10 @@ jobs:
         # --layers all activates layer 2 (dsh plugin add into a throwaway
         # profile) and layer 3 (--dump-config assembly). --scope auto selects
         # the frequency tiers: featured/high-star npm entries daily, the rest
-        # of the npm entries in weekly id-hash shards (one per UTC weekday),
-        # and git-source repos on Sundays. Install concurrency is capped at 4
-        # inside the script; per-install timeouts: npm 120s, git 600s.
+        # of the npm entries in 5 id-hash shards (one per UTC weekday % 5 —
+        # full coverage every 5 days), and git-source repos twice a week
+        # (Sunday + Wednesday). Install concurrency is capped at 4 inside the
+        # script; per-install timeouts: npm 120s, git 600s.
         run: node scripts/compat-check.mjs --write --layers all --scope auto
 
       - name: Regenerate README tables (compat badges changed)

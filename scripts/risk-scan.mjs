@@ -26,7 +26,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
 const CACHE = join(DATA, '.risk-cache');
 mkdirSync(CACHE, { recursive: true });
-const TOP_N = Number(process.env.RISK_N || 200);
+const TOP_N = Number(process.env.RISK_N || 300);
 const SLEEP_MS = 350;
 
 const RE_INSTALL = /["'](preinstall|install|postinstall)["']\s*:/;

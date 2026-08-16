@@ -22,8 +22,9 @@
  *
  * Layer 2/3 selection tiers (--scope):
  *   auto   (default, for CI): daily tier (featured + stars>=50 npm entries)
- *          + weekly npm shard (remaining npm entries, 7 shards by id hash,
- *          one per UTC weekday) + weekly git tier on Sunday (featured/top-star
+ *          + weekly npm shard (remaining npm entries, 5 shards by id hash,
+ *          one shard per UTC weekday % 5 — full coverage every 5 days)
+ *          + git tier twice a week: Sunday + Wednesday (featured/top-star
  *          git-source entries).
  *   daily  : daily tier only.
  *   weekly : daily tier + today's npm shard (no git).
@@ -74,7 +75,7 @@ function parseArgs(argv) {
 
 function printHelp() {
   console.log(`Usage: node scripts/compat-check.mjs [--layers 1|2|3|all] [--write]
-  [--scope auto|daily|weekly|git|all] [--shard 0-6]
+  [--scope auto|daily|weekly|git|all] [--shard 0-4]
   [--concurrency N] [--install-concurrency 1-4]
   [--add-timeout SEC] [--git-timeout SEC] [--keep-tmp]
   [--data <path>]   override data/plugins.json (debug/tests)
@@ -464,14 +465,16 @@ async function checkLayer23(entries, opts) {
 
 // Deterministic shard for weekly rotation: id hash -> 0..6 (one shard per weekday).
 function shardOf(id) {
+  // 5 shards (7-day -> 5-day rotation): each npm entry is fully tested at least
+  // once per 5 days. Weekday maps via weekday % 5 (Sun..Sat -> 0..4,0,1).
   const h = createHash('sha256').update(String(id)).digest('hex');
-  return parseInt(h.slice(0, 8), 16) % 7;
+  return parseInt(h.slice(0, 8), 16) % 5;
 }
 
 // Select entries for layer 2/3 according to the frequency tiers.
 //   daily tier  : featured or stars>=50, npm-distributed -> every run
 //   weekly tier : remaining npm-distributed entries, shard = UTC weekday
-//   git tier    : featured or stars>=50, git-source only -> Sundays (weekly)
+//   git tier    : featured or stars>=50, git-source only -> Sundays + Wednesdays
 // An entry is "npm-distributed" when layer 1 actually resolved a package from
 // the registry (verdict ok/unknown/broken); "unavailable"/"skipped" means the
 // name does not resolve to an npm package (GitHub-only, or a false positive
@@ -503,7 +506,9 @@ function selectForLayer23(all, layer1, { scope, shard }) {
     }
   }
   // npm weekly shard applies in auto / weekly (not in 'all' = full sweep).
-  const shardSel = shard !== null && shard !== undefined ? shard : new Date().getUTCDay();
+  // 5 shards: weekday % 5 (Sun=0, Mon=1, Tue=2, Wed=3, Thu=4, Fri=0, Sat=1).
+  const weekday = new Date().getUTCDay();
+  const shardSel = shard !== null && shard !== undefined ? shard : weekday % 5;
   if (scope === 'auto' || scope === 'weekly') {
     // keep only today's shard among non-daily entries
     const kept = weekly.filter((e) => shardOf(e.id) === shardSel);
@@ -511,8 +516,9 @@ function selectForLayer23(all, layer1, { scope, shard }) {
     weekly.push(...kept);
   }
 
-  // git tier: featured or high-star repos, run weekly (auto: Sundays only)
-  const wantGit = scope === 'all' || scope === 'git' || (scope === 'auto' && shardSel === 0);
+  // git tier: featured or high-star repos, twice a week (auto: Sun + Wed).
+  // Uses the RAW weekday (not shardSel) so Fri % 5 = 0 cannot trigger it.
+  const wantGit = scope === 'all' || scope === 'git' || (scope === 'auto' && (weekday === 0 || weekday === 3));
   if (wantGit) {
     for (const p of gitCandidates) {
       if (highValue(p)) {

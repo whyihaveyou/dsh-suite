@@ -42,6 +42,9 @@ window.__ModuleLoader__.load({
       colSession: '会话', colPreset: 'preset', colTurns: '轮次', colGodRate: '神版率', colLastFp: '最新指纹', colAnchorState: '状态',
       anchoredOn: '锚定维持中', drifted: '漂移→非神版', reanchor: '⚓ 重锚', autoReanchor: '漂移自动重锚',
       reanchorSent: '已发送重锚提示', dockAnchored: '锚定维持中',
+      unanchored: '◌ 非神版会话', unanchoredTitle: '当前会话不是锚定 preset——实测 25 工具会话注入触发率≈0%。点击查看怎么切换',
+      guideText: '实测结论：standard（25 工具）会话里文本注入几乎无法触发神版（0%）。想用神版：新建会话时在 Agent preset 选择器选「神模扳机 · 窄锚 / 宽锚」（实测触发率 ~90% / ~65%）。',
+      copyMd: '复制 Markdown 摘要', mdCopied: '已复制 ✓ 去发帖吧', trend: '近期神版率趋势',
     }
     const en = {
       nav: 'Deus Trigger', sub: 'Minimal-prompt trigger bench · inject → classify → stats',
@@ -66,6 +69,9 @@ window.__ModuleLoader__.load({
       colSession: 'Session', colPreset: 'preset', colTurns: 'turns', colGodRate: 'god rate', colLastFp: 'latest', colAnchorState: 'state',
       anchoredOn: 'anchored', drifted: 'drifted', reanchor: '⚓ Re-anchor', autoReanchor: 'Auto re-anchor on drift',
       reanchorSent: 'Re-anchor nudge sent', dockAnchored: 'anchored',
+      unanchored: '◌ Not a deus session', unanchoredTitle: 'This session is not on an anchored preset — injection measured ≈0% effective on 25-tool sessions. Click for how to switch',
+      guideText: 'Measured: text injection barely triggers god-mode in standard (25-tool) sessions (0%). To get it: start a new session and pick "Deus Trigger · narrow / wide anchor" in the Agent preset picker (~90% / ~65% measured trigger rate).',
+      copyMd: 'Copy Markdown summary', mdCopied: 'Copied ✓ go post it', trend: 'Recent god-rate trend',
     }
 
     const S = {
@@ -193,6 +199,8 @@ window.__ModuleLoader__.load({
         h('div', { style: S.h2 }, t('stats')),
         h('div', { style: S.status }, t('statsHint')),
         h('div', { style: { ...S.status, color: '#7d8590' } }, t('measured')),
+        h(Sparkline, { entries }),
+        entries.length >= 4 ? h('div', { style: { ...S.status, fontSize: '10px' } }, t('trend')) : null,
         stats && stats.modes.length > 0
           ? h('table', { style: S.table },
               h('thead', null, h('tr', null,
@@ -209,6 +217,15 @@ window.__ModuleLoader__.load({
           : h('div', { style: S.status }, t('noData')),
         h('div', { style: S.row },
           h('a', { href: '/deus/log.csv', download: 'deus-log.csv', style: { ...S.btn, textDecoration: 'none', display: 'inline-block' } }, '⬇ ' + t('exportCsv')),
+          stats ? h('button', {
+            style: copied === '__md' ? S.btnActive : S.btn,
+            onClick: async () => {
+              try {
+                await navigator.clipboard.writeText(buildMarkdownSummary(stats))
+                setCopied('__md'); setTimeout(() => setCopied(''), 2500)
+              } catch {}
+            },
+          }, '📋 ' + (copied === '__md' ? t('mdCopied') : t('copyMd'))) : null,
           h('button', { style: { ...S.btn, color: '#f85149', borderColor: '#f85149' }, onClick: resetLog }, '🗑 ' + t('resetLog')),
         ),
 
@@ -276,16 +293,25 @@ window.__ModuleLoader__.load({
         try { return window.localStorage.getItem('deus.autoReanchor') === '1' } catch { return false }
       })
       const [reanchorMsg, setReanchorMsg] = useState('')
+      // v0.3 未锚定引导：当前会话的 agent preset（宿主读会话日志头行）
+      const [sessPreset, setSessPreset] = useState(null)
+      const [showGuide, setShowGuide] = useState(false)
       const lastReanchorKey = useRef('')
       const REANCHOR = 'We need to continue working on this together. Let us pick up where we left off. 我们继续协作，接着上一步往下做。'
 
       useEffect(() => {
         let dead = false
-        const poll = () => fetch('/deus/anchor').then((r) => r.json()).then((d) => { if (!dead) setAnchor(d) }).catch(() => {})
+        const poll = () => {
+          fetch('/deus/anchor').then((r) => r.json()).then((d) => { if (!dead) setAnchor(d) }).catch(() => {})
+          if (sessionId) {
+            fetch('/deus/session-preset?sessionId=' + encodeURIComponent(sessionId))
+              .then((r) => r.json()).then((d) => { if (!dead) setSessPreset(d.preset || null) }).catch(() => {})
+          }
+        }
         poll()
         const timer = setInterval(poll, 4000)
         return () => { dead = true; clearInterval(timer) }
-      }, [])
+      }, [sessionId])
 
       const st = anchor && Array.isArray(anchor.sessions)
         ? anchor.sessions.find((s) => String(s.sessionId) === String(sessionId))
@@ -344,6 +370,10 @@ window.__ModuleLoader__.load({
 
       if (presets.length === 0) return null // 所有 hooks 之上不可早退（React hooks 顺序）
 
+      // v0.3 未锚定引导：非锚定会话 + preset 已知且非 deus/minimal 系 → 灰 chip
+      const UNANCHORED_PRESET_RE = /^(deus-|minimal)/
+      const unanchored = !st && sessPreset && !UNANCHORED_PRESET_RE.test(sessPreset)
+
       return h('div', { style: S.dock, title: t('dockHint') },
         h('span', { style: { fontSize: '11px', color: '#8b949e' } }, '⚗'),
         presets.map((p) => h('button', {
@@ -355,12 +385,68 @@ window.__ModuleLoader__.load({
           title: st.drifted ? t('reanchor') : t('dockAnchored'),
           onClick: st.drifted ? fireReanchor : undefined,
         }, st.drifted ? '⚠ ' + t('reanchor') : `⚓ ${t('dockAnchored')} ${st.god}/${st.total}`) : null,
+        unanchored ? h('button', {
+          style: { ...S.dockChip, color: '#8b949e', borderColor: '#8b949e', borderStyle: 'dotted' },
+          title: t('unanchoredTitle'),
+          onClick: () => setShowGuide((v) => !v),
+        }, t('unanchored')) : null,
+        unanchored && showGuide ? h('div', {
+          style: {
+            fontSize: '11px', color: '#8b949e', lineHeight: 1.6, maxWidth: '520px',
+            borderLeft: '2px solid #8b949e', paddingLeft: '8px', margin: '2px 0',
+          },
+        }, t('guideText')) : null,
         reanchorMsg ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, reanchorMsg) : null,
         h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, title: t('autoSend'), onClick: toggleAuto },
           (autoSend ? '☑ ' : '☐ ') + t('autoSend')),
         st ? h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, title: t('autoReanchor'), onClick: toggleAutoReanchor },
           (autoReanchor ? '☑ ' : '☐ ') + t('autoReanchor')) : null,
       )
+    }
+
+    // v0.3: 触发率迷你趋势（最近 40 条日志分 10 桶的 god 率折线）
+    function Sparkline({ entries }) {
+      const seq = entries.slice(0, 40).reverse() // /deus/log 最新在前 → 转时间序
+      if (seq.length < 4) return null
+      const B = 10
+      const pts = []
+      for (let i = 0; i < B; i++) {
+        const chunk = seq.slice(Math.floor(i * seq.length / B), Math.floor((i + 1) * seq.length / B))
+        if (chunk.length === 0) continue
+        const god = chunk.filter((e) => e.detected === 'god').length / chunk.length
+        pts.push([i, god])
+      }
+      if (pts.length < 2) return null
+      const W = 260, H = 48, P = 5
+      const xy = pts.map(([i, v]) => [P + (W - 2 * P) * i / (B - 1), H - P - (H - 2 * P) * v])
+      const dAttr = xy.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ')
+      return h('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}`, style: { display: 'block', margin: '4px 0 2px' } },
+        h('path', { d: `M${P},${H - P} L${W - P},${H - P}`, stroke: '#30363d', strokeWidth: 1, fill: 'none' }),
+        h('path', { d: `M${P},${P} L${W - P},${P}`, stroke: '#30363d', strokeWidth: 1, strokeDasharray: '3 3', fill: 'none' }),
+        h('path', { d: dAttr, stroke: '#d2a8ff', strokeWidth: 2, fill: 'none' }),
+        xy.map((p, i) => h('circle', { key: i, cx: p[0], cy: p[1], r: 2.5, fill: '#d2a8ff' })),
+      )
+    }
+
+    // v0.3: 一键复制 Markdown 摘要（传播物料：表格 + 诚实声明 + 包链接）
+    function buildMarkdownSummary(stats) {
+      const pct1 = (x) => (x * 100).toFixed(1) + '%'
+      const lines = [
+        '## 神版触发率实测摘要 / God-mode trigger summary', '',
+        '| 模式 mode | 样本 n | 神版率 god | 95% CI | 中版 med | 纯区 pure |',
+        '|---|---|---|---|---|---|',
+      ]
+      for (const m of stats.modes || []) {
+        if (!m || !m.n) continue
+        lines.push(`| ${m.mode} | ${m.n} | ${pct1(m.godCI.rate)} | ${pct1(m.godCI.low)}–${pct1(m.godCI.high)} | ${m.med} | ${m.pure} |`)
+      }
+      if (stats.total && stats.total.n) {
+        lines.push(`| **ALL** | **${stats.total.n}** | **${pct1(stats.total.godCI.rate)}** | **${pct1(stats.total.godCI.low)}–${pct1(stats.total.godCI.high)}** | ${stats.total.med} | ${stats.total.pure} |`)
+      }
+      lines.push('',
+        `> ${stats.total ? stats.total.n : 0} 条本地日志，由 @dsh-suite/plugin-deus 记录。「神版/中版/纯区」为社区观察（X @NFT_Chen），未经 DeepSeek 官方证实；判定 = 推理流起手句式启发式，存在误判率。`,
+        '> https://www.npmjs.com/package/@dsh-suite/plugin-deus')
+      return lines.join('\n')
     }
 
     return {

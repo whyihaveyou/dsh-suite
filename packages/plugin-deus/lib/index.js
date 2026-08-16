@@ -10,11 +10,11 @@
 //   2. JSONL experiment log at $DSH_HOME/deus-mode/log.jsonl
 //   3. Trigger preset library (5 built-in modes, user-editable via presets.json)
 //   4. /deus/* routes for the browser half (presets, log, stats+Wilson CI, version)
-import { existsSync, mkdirSync, readFileSync, writeFileSync, appendFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync, appendFileSync, readdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { join } from 'node:path'
 import { homedir } from 'node:os'
-import { gzipSync } from 'node:zlib'
+import { gzipSync, zstdDecompressSync } from 'node:zlib'
 
 export const name = 'deus-mode'
 export const inject = ['webServer', 'sessions']
@@ -79,7 +79,7 @@ function wilson(k, n) {
 }
 
 // ── shipped agent presets (v0.2 锚定维持的静态层) ───────────────────────────
-const PLUGIN_VERSION = '0.2.0'
+const PLUGIN_VERSION = '0.3.0'
 // 实测依据（research/deus-mode-matrix.md §8/§9）：神版触发需要 Minimal persona
 // ∧ 小工具目录；且本 harness 没有竞品的 promoteOn 机制——preset 构成全程恒定，
 // 所以只要会话跑在锚定 preset 上，注入剥离/工具裁剪自动延续到每一轮。
@@ -214,6 +214,40 @@ function presetsFile() {
 
 function ensureDir() {
   mkdirSync(dataDir(), { recursive: true })
+}
+
+// ── v0.3: session preset 探测（未锚定引导的数据源）─────────────────────────
+// session/event 流里 user/message 不带 agentPreset；权威来源是磁盘会话日志的
+// SessionHeader（jsonl.zstd 第一帧第一行，session-persistence-jsonl 格式）。
+// 读文件 → 找第二个 zstd 帧魔数切出第一帧 → 解压取 header.agentPreset。
+// 60s 缓存（blank 会话可在首轮前 recompose preset，不能永久缓存）。
+const ZSTD_MAGIC = Buffer.from([0x28, 0xb5, 0x2f, 0xfd])
+const presetCache = new Map() // sessionId -> { preset, ts }
+function readSessionPreset(sessionId) {
+  const hit = presetCache.get(sessionId)
+  if (hit && Date.now() - hit.ts < 60_000) return hit.preset
+  let preset = null
+  try {
+    const root = join(dshHome(), 'sessions')
+    if (existsSync(root)) {
+      for (const ws of readdirSync(root)) {
+        const f = join(root, ws, sessionId, 'session.jsonl.zstd')
+        if (!existsSync(f)) continue
+        const buf = readFileSync(f)
+        const second = buf.indexOf(ZSTD_MAGIC, 4)
+        const firstFrame = second > 4 ? buf.subarray(0, second) : buf
+        try {
+          const line0 = zstdDecompressSync(firstFrame).toString('utf8').split('\n')[0]
+          const header = JSON.parse(line0)
+          if (header && header.type === 'session' && typeof header.agentPreset === 'string') preset = header.agentPreset
+        } catch { /* 帧截断/格式异常 → preset 保持 null */ }
+        break
+      }
+    }
+  } catch { /* 磁盘问题 → null */ }
+  presetCache.set(sessionId, { preset, ts: Date.now() })
+  if (presetCache.size > 300) presetCache.delete(presetCache.keys().next().value)
+  return preset
 }
 
 // ── preset library: built-ins until the user edits, then presets.json wins ──
@@ -624,6 +658,13 @@ export function apply(ctx) {
       } }),
       ctx.webServer.register({ kind: 'exact', path: '/deus/stats', handler: (req, res) => {
         json(statsFrom(readLog(10000)))(req, res)
+      } }),
+      // v0.3: 当前会话的 agent preset（dock 未锚定引导用；来源=会话日志头行）
+      ctx.webServer.register({ kind: 'exact', path: '/deus/session-preset', handler: (req, res) => {
+        const u = new URL(String(req.url || ''), 'http://localhost')
+        const sessionId = String(u.searchParams.get('sessionId') || '')
+        if (!sessionId) { json({ ok: false, error: 'missing sessionId' }, 400)(req, res); return }
+        json({ sessionId, preset: readSessionPreset(sessionId) })(req, res)
       } }),
       ctx.webServer.register({ kind: 'exact', path: '/deus/version', handler: (req, res) => {
         let dsh = 'unknown'

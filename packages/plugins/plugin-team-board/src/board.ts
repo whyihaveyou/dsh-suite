@@ -21,12 +21,14 @@ export interface CreateInput {
   deps?: string[]
 }
 
-export interface UpdatePatch {
-  subject?: string
-  status?: TaskStatus
-  owner?: string
-  deps?: string[]
-}
+// Keys present explicitly with undefined would carry undefined through the
+// `{ ...task, ...patch }` spread; sanitize strips them (issue #11).
+export type UpdatePatch = Partial<{
+  subject: string
+  status: TaskStatus
+  owner: string
+  deps: string[]
+}>
 
 export interface ListFilter {
   status?: TaskStatus
@@ -65,7 +67,8 @@ export class BoardStore {
 
   update(id: string, patch: UpdatePatch): Task {
     const task = this.require(id)
-    return this.put({ ...task, ...patch })
+    const clean = sanitize(patch)
+    return this.put({ ...task, ...clean })
   }
 
   list(filter?: ListFilter): Task[] {
@@ -83,8 +86,10 @@ export class BoardStore {
     return this.tasks.delete(id)
   }
 
+  // Every task is sanitized here so a board/snapshot ring authored before the
+  // writer fix (undefined owner/status) is normalized back to JSON-serializable.
   snapshot(): Task[] {
-    return this.list()
+    return this.list().map(sanitizeTask)
   }
 
   private put(task: Task): Task {
@@ -107,4 +112,21 @@ export class BoardStore {
     } while (this.tasks.has(id))
     return id
   }
+}
+
+// --- undefined-key sanitization (issue #11: don't let undefined poison the snapshot) ---
+
+/** Drop keys present as undefined, keep real values — never spread a poisoned patch. */
+function sanitize<T extends object>(patch: T): T {
+  const out = {} as Record<string, unknown>
+  for (const k in patch) {
+    const v = (patch as Record<string, unknown>)[k]
+    if (v !== undefined) out[k] = v
+  }
+  return out as T
+}
+
+/** Strip undefined from every field; safe to re-apply on restore (idempotent). */
+function sanitizeTask(task: Task): Task {
+  return sanitize({ ...task }) as Task
 }

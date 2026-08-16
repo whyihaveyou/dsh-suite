@@ -37,6 +37,27 @@ const restored = new BoardStore(board.snapshot())
 assert(restored.list().length === 2, 'snapshot round-trip preserves count')
 assert(restored.get(b.id)?.status === 'doing', 'snapshot round-trip preserves state')
 
+// Regression (issue #11): partial updates must never leave undefined keys in the
+// snapshot; a poisoned historical record must be sanitized on restore.
+const partialBoard = new BoardStore()
+const pt = partialBoard.create({ subject: '部分字段更新', owner: 'a-1' })
+partialBoard.update(pt.id, { status: 'done' })
+const allTasks = partialBoard.snapshot()
+assert(JSON.parse(JSON.stringify(allTasks)).every((t) => typeof t.subject === 'string' && t.owner !== undefined), 'partial update -> snapshot JSON-serializable, no undefined')
+assert(JSON.stringify(partialBoard.get(pt.id)).includes('defined') === false, 'no undefined literal in task JSON')
+const withPoison = {
+  ...pt,
+  status: undefined,
+  subject: undefined,
+  owner: undefined,
+}
+const seeded = new BoardStore([withPoison])
+const healed = seeded.snapshot().find((t) => t.id === pt.id)
+const healedJson = JSON.stringify(seeded.snapshot())
+assert(healedJson.indexOf('undefined') === -1, 'poisoned record sanitized on restore')
+assert(healedJson.indexOf(JSON.stringify(withPoison.id)) !== -1, 'sanitized snapshot keeps id')
+assert(!('status' in healed) || healed.status !== undefined, 'undefined status removed from snapshot')
+
 let fail = 0
 for (const [name, ok] of checks) {
   console.log(`${ok ? 'PASS' : 'FAIL'}  ${name}`)

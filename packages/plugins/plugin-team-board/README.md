@@ -62,6 +62,14 @@ dsh plugin --profile <name> add @dsh-suite/plugin-team-board
 
 No config. Programmatic consumers call `ctx.teamBoard.createTask / claimTask / updateTask / listTasks`.
 
+## 改动 / Changelog
+
+- **0.1.1**（issue #11）——修复部分字段更新污染快照：task_update 只传 id+status 时未显式传字段
+  会带入 undefined 键，跟着 spread 进任务并写进 board/snapshot，使 append-only JSONL 无法序列化、
+  看板「坏掉」。修法：`update()` 只合并 `undefined` 被过滤的字段；`snapshot()` 对所有任务做
+  strip-undefined 规范化（历史污染记录重载自愈）。回归于 scripts/board-smoke.mjs（断言缩到
+  「快照可序列化 + 无 undefined」，不依赖狭义的存储内键集）。
+
 ## 验证 / Verification
 
 - ✅ 纯 ESM 编译（`pnpm build`）

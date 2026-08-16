@@ -1,6 +1,6 @@
 {
   "name": "@dsh-suite/plugin-team-board",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSH plugin: a shared task board for multi-agent / subagent collaboration — create, claim, transition, and query tasks via a Cordis service key.",
   "license": "MIT",
   "type": "module",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-16T22:38:31.098Z",
+ "ts": "2026-08-16T23:35:40.139Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -120,6 +120,7 @@
   "deepact",
   "deepagent",
   "deepagents-mini-harness",
+  "deepddw",
   "deepjit",
   "deepseek-account",
   "deepseek-auto-evolving-harness",
@@ -590,6 +591,7 @@
   "dsh-deepseek-usage",
   "dsh-deepseek-vision",
   "dsh-deepseek-vision-router",
+  "dsh-deepseek-vision-siegfly",
   "dsh-deeptop",
   "dsh-deeptutor",
   "dsh-default-workspace-plugin",
@@ -755,6 +757,7 @@
   "dsh-github",
   "dsh-github-connector",
   "dsh-github-integration",
+  "dsh-github-intelligence",
   "dsh-github-login",
   "dsh-github-pivotstackintelligence",
   "dsh-global-rules",

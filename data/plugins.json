@@ -51413,6 +51413,107 @@
       "isOfficialBeta": false,
       "language": "TypeScript",
       "sourceNote": "auto"
+    },
+    {
+      "id": "mirage-dsh",
+      "name": "mirage-dsh",
+      "npm": "@struktoai/mirage-dsh",
+      "repo": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "category": "sandbox",
+      "description": {
+        "en": "Swap DSH's fs/shell providers for a mirage virtual workspace: file tools and shell commands act on mounted resources (RAM, disk, S3, Redis, Postgres, Slack, Gmail, Notion) instead of the host disk.",
+        "zh": "把 DSH 的 fs/shell 提供者换成 mirage 虚拟工作区：文件工具与 shell 命令作用于挂载的资源（RAM/磁盘/S3/Redis/Postgres/Slack/Gmail/Notion）而非宿主磁盘。"
+      },
+      "author": "strukto-ai",
+      "stars": 3447,
+      "license": "Apache-2.0",
+      "tags": [
+        "sandbox",
+        "fs",
+        "shell",
+        "virtual-workspace",
+        "dsh-plugin"
+      ],
+      "dsh": {
+        "minVersion": "0.1.0-rc.6",
+        "peerCordis": "^4.0.1",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": "exact pin dsh-fs@0.0.1-rc.1 / dsh-shell@0.0.1-rc.5，与 0.1.0-rc.6 线可能冲突；layer-1 判定"
+      },
+      "install": "dsh plugin add @struktoai/mirage-dsh",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "last_push": "2026-08-15",
+      "sourceNote": "投稿收录（issue #9）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核; L3 pending"
+      },
+      "risk": {
+        "installScript": false,
+        "networkEgress": true,
+        "noLicense": false,
+        "shellAccess": true
+      }
+    },
+    {
+      "id": "dsh-smooth-stream-laplacebit",
+      "name": "dsh-smooth-stream",
+      "npm": null,
+      "repo": "Laplace-bit/dsh-smooth-stream",
+      "url": "https://github.com/Laplace-bit/dsh-smooth-stream",
+      "category": "ui",
+      "description": {
+        "en": "Smooth streaming reveal for the DSH Web UI: typewriter following token arrival, live Markdown rendering, slide-in line breaks, no flicker, respects prefers-reduced-motion.",
+        "zh": "DSH Web 界面丝滑流式渲染：打字机跟随 token 到达、Markdown 边流边渲染、换行滑入、不闪烁，尊重 prefers-reduced-motion。"
+      },
+      "author": "Laplace-bit",
+      "stars": 6,
+      "license": "MIT",
+      "tags": [
+        "ui",
+        "streaming",
+        "typewriter",
+        "markdown",
+        "dsh-plugin"
+      ],
+      "dsh": {
+        "minVersion": "0.1.0-rc.6",
+        "peerCordis": "4.0.1",
+        "node": "^22.19.0 || >=24.0.0"
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": "未发布 npm，走 git 源安装；兼容 CI 首层待 npm 发布"
+      },
+      "install": "dsh plugin add github:Laplace-bit/dsh-smooth-stream",
+      "installNote": "package.json 未发布 npm，走 git 源安装",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "last_push": "2026-08-15",
+      "sourceNote": "投稿收录（issue #10）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核; L3 pending"
+      },
+      "risk": {
+        "installScript": false,
+        "networkEgress": false,
+        "noLicense": false,
+        "shellAccess": false
+      }
     }
   ],
   "watchlist": [

@@ -175,6 +175,59 @@ window.__ModuleLoader__.load({
     if (own) return 'https://github.com/' + own + '/issues/new'
     return FEEDBACK_CENTER + '?title=' + encodeURIComponent('用户反馈：' + ((p && p.name) || '（未署名插件）'))
   }
+
+      // v0.8.1 P0: WKWebView/Electron 壳兼容 —— 壳（HarnessShell@aion2dsh）未实现
+      // WKUIDelegate.createWebViewWith / decidePolicyFor，target=_blank 点击被静默丢弃。
+      // 外链打开：行为检测而非 UA/对象嗅探——裸 WKWebView（WhalePod 壳，无 WKUIDelegate）
+      // 实测 window.open() 恒返回 null（no-gesture 与 click-gesture 均 null，见 0.8.1 排查记录），
+      // 真实浏览器点击手势下返回 Window 对象；返回 falsy 即判定被吞，降级「复制 + toast」。
+      // （曾经的 window.webkit 嗅探无效：未注册 message handler 的 WKWebView 里 window.webkit 为 undefined。）
+      function legacyCopy(txt) {
+        try {
+          const ta = document.createElement('textarea')
+          ta.value = txt; ta.style.cssText = 'position:fixed;opacity:0;'
+          document.body.appendChild(ta); ta.select()
+          document.execCommand('copy'); ta.remove()
+        } catch { /* no-op */ }
+      }
+      function copyExternalText(txt) {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(txt).catch(() => legacyCopy(txt))
+          } else legacyCopy(txt)
+        } catch { legacyCopy(txt) }
+      }
+      function showExtToast(url) {
+        try {
+          const old = document.querySelector('[data-open-ext-toast]')
+          if (old) old.remove()
+          const el = document.createElement('div')
+          el.setAttribute('data-open-ext-toast', '1')
+          el.style.cssText = 'position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:99999;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:10px 14px;max-width:min(520px,80vw);box-shadow:0 8px 24px rgba(0,0,0,0.5);display:flex;gap:10px;align-items:flex-start;'
+          const sp = document.createElement('span')
+          sp.style.cssText = 'font-size:12px;color:#e6edf3;line-height:1.5;word-break:break-all;'
+          // 模块作用域拿不到 ctx.locale；shell/浏览器语言直接用 navigator.language 判定
+          const isZh = ((typeof navigator !== 'undefined' && navigator.language) || '').toLowerCase().indexOf('zh') === 0
+          sp.textContent = (isZh ? '🔗 链接已复制——到浏览器粘贴打开：' : '🔗 Link copied — paste it in your browser: ') + url
+          const x = document.createElement('button')
+          x.textContent = '×'
+          x.style.cssText = 'background:none;border:none;color:#8b949e;font-size:14px;cursor:pointer;flex-shrink:0;padding:0;'
+          x.onclick = () => el.remove()
+          el.appendChild(sp); el.appendChild(x)
+          // 挂 <html> 而非 <body>：dsh web 宿主挂在 body 上，重渲染会把 body 下外来节点清掉
+          // (实测 WKWebView 中 toast append 后 ~1s 内被宿主重渲染抹除)。
+          ;(document.documentElement || document.body).appendChild(el)
+          setTimeout(() => { try { el.remove() } catch (_) {} }, 6000)
+        } catch { /* no-op */ }
+      }
+      function openExternal(url) {
+        if (!url) return
+        let w = null
+        try { w = window.open(url, '_blank', 'noopener') } catch { w = null }
+        if (w) return // 真浏览器（点击手势）返回 Window —— 已接管新标签
+        try { copyExternalText(url) } catch { /* WKWebView 剪贴板可能抛错，提示必须照出 */ }
+        showExtToast(url) // 壳内被吞（window.open 返回 null）→ 复制 + 提示
+      }
   function searchAliases(qRaw) {
     const extras = []
     for (const k of Object.keys(ZH_ALIAS)) if (qRaw.includes(k)) extras.push(ZH_ALIAS[k])
@@ -592,8 +645,8 @@ window.__ModuleLoader__.load({
 
       const status = h('div', { style: C.status },
         t('source') + ': catalog.json · ' + catalog.length + ' ' + t('plugins') + ' · ' + t('installedCount') + ': ' + installed.length, ' · ',
-        h('a', { href: feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' }), target: '_blank', rel: 'noreferrer', style: { color: '#8b949e' } }, '💬 ' + t('feedbackStore')), ' · ',
-        h('a', { href: 'https://github.com/whyihaveyou/dsh-suite/issues/new?title=' + encodeURIComponent('投稿插件 / Plugin submission') + '&labels=plugin-submission', target: '_blank', rel: 'noreferrer', title: t('contributeTitle'), style: { color: '#8b949e' } }, '📮 ' + t('contributeStore')))
+        h('a', { href: feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' }), target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' })) }, style: { color: '#8b949e' } }, '💬 ' + t('feedbackStore')), ' · ',
+        h('a', { href: 'https://github.com/whyihaveyou/dsh-suite/issues/new?title=' + encodeURIComponent('投稿插件 / Plugin submission') + '&labels=plugin-submission', target: '_blank', rel: 'noreferrer', title: t('contributeTitle'), onClick: (e) => { e.preventDefault(); openExternal('https://github.com/whyihaveyou/dsh-suite/issues/new?title=' + encodeURIComponent('投稿插件 / Plugin submission') + '&labels=plugin-submission') }, style: { color: '#8b949e' } }, '📮 ' + t('contributeStore')))
 
       const viewBtn = (active) => ({ background: active ? '#30363d' : 'transparent', color: active ? '#e6edf3' : '#8b949e', border: '1px solid #30363d', borderRadius: '6px', padding: '6px 14px', fontSize: '13px', cursor: 'pointer' })
       const viewToggle = h('div', { style: { display: 'flex', gap: '8px', marginBottom: '12px' } },
@@ -765,7 +818,7 @@ window.__ModuleLoader__.load({
           h('div', { style: { display: 'flex', gap: '8px', marginTop: 'auto' } },
             installBtn,
             h('button', { style: copied === p.name ? { ...C.btnGhost, color: '#3fb950', borderColor: '#238636' } : C.btnGhost, onClick: (e) => { e.stopPropagation(); copyCmd(p) } }, copied === p.name ? '✓ ' + t('copied') : '📋')),
-          h('a', { href: feedbackUrl(p), target: '_blank', rel: 'noreferrer', title: t('feedbackTitle'), onClick: (e) => e.stopPropagation(), style: { ...C.btnGhost, padding: '1px 6px', fontSize: '11px', textDecoration: 'none' } }, '💬'),
+          h('a', { href: feedbackUrl(p), target: '_blank', rel: 'noreferrer', title: t('feedbackTitle'), onClick: (e) => { e.stopPropagation(); e.preventDefault(); openExternal(feedbackUrl(p)) }, style: { ...C.btnGhost, padding: '1px 6px', fontSize: '11px', textDecoration: 'none' } }, '💬'),
         )
       })
 
@@ -869,8 +922,8 @@ window.__ModuleLoader__.load({
                 ? h('button', { style: C.btnDisabled }, '✅ ' + t('installed'))
                 : h('button', { style: C.btn, onClick: () => setConfirmPkg(d) }, dUpM ? '⬆ ' + t('upgrade') : t('install')),
               h('button', { style: C.btnGhost, onClick: () => copyText('dsh plugin add ' + dSpec, () => {}) }, '📋 ' + t('copy')),
-              d.repo ? h('a', { href: 'https://github.com/' + d.repo, target: '_blank', rel: 'noreferrer', style: { ...C.btnGhost, textDecoration: 'none', display: 'inline-block' } }, t('ghLink')) : null,
-              h('a', { href: feedbackUrl(d), target: '_blank', rel: 'noreferrer', style: { ...C.btnGhost, textDecoration: 'none', display: 'inline-block' } }, '💬 ' + t('feedback')),
+              d.repo ? h('a', { href: 'https://github.com/' + d.repo, target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal('https://github.com/' + d.repo) }, style: { ...C.btnGhost, textDecoration: 'none', display: 'inline-block' } }, t('ghLink')) : null,
+              h('a', { href: feedbackUrl(d), target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(feedbackUrl(d)) }, style: { ...C.btnGhost, textDecoration: 'none', display: 'inline-block' } }, '💬 ' + t('feedback')),
               h('button', { style: { ...C.btnGhost, marginLeft: 'auto' }, onClick: () => setDetail(null) }, t('dtClose')))))
       }
 
@@ -916,7 +969,7 @@ window.__ModuleLoader__.load({
       catalog.length > 0
         ? h('div', { style: { textAlign: 'center', color: '#6e7681', fontSize: '11px', padding: '0 0 14px', display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' } },
             h('span', null, '🔎 ' + t('watchLine').replace('{x}', watchStats[0]).replace('{y}', watchStats[1])),
-            h('a', { href: t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html', target: '_blank', rel: 'noreferrer', style: { color: '#79c0ff', textDecoration: 'none' } }, t('watchLink')))
+            h('a', { href: t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html', target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html') }, style: { color: '#79c0ff', textDecoration: 'none' } }, t('watchLink')))
         : null,
       empty, modal, manualModal, drawerEl, installPanel)
     }

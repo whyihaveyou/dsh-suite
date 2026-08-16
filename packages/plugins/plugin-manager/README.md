@@ -4,6 +4,8 @@
 [💬 问题反馈](https://github.com/whyihaveyou/dsh-suite/issues/new?template=plugin-feedback.yml&labels=feedback&plugin=plugin-manager)
 
 
+> v0.8.1 — WKWebView/电子壳外链修复：window.open 返回值检测，壳内被吞时降级「复制链接 + toast」。
+
 > v0.8.0 — Store v2 Batch 3（最近更新排序 / 安装流式日志 / 已装精确匹配）。
 
 > v0.7.0 — Store v2 Batch 2（增量渲染哨兵 / Featured 策展区 / 场景组合一键装 / watchlist 与投稿入口）。

@@ -315,6 +315,7 @@ const I18N = {
     ecoTotal: 'Total entries', ecoCurated: 'Curated', ecoWatch: 'Watchlist', ecoTotalStars: 'Total stars', ecoZero: '0-star ratio',
     ecoLongTail: 'Star distribution (curated + watchlist)', ecoLowTail: 'of entries have ≤ 3 stars — the long tail',
     learnNav: 'Learn',
+    authorNav: 'Author Center',
     learnTitle: 'dsh-suite — Learn',
     learnDescription: 'Learning resources for the DeepSeek Harness plugin ecosystem: official docs, our plugin dev guide, the Cordis paper, migration guide, and open links to peer lists.',
     learnH1: 'Learn',
@@ -384,6 +385,7 @@ const I18N = {
     ecoTotal: '总条目', ecoCurated: '主目录', ecoWatch: '观察区', ecoTotalStars: '总星数', ecoZero: '0 星占比',
     ecoLongTail: '星数分布（主目录 + 观察区）', ecoLowTail: '的条目 ≤3 星——长尾灌水',
     learnNav: '学习',
+    authorNav: '作者中心',
     learnTitle: 'dsh-suite — 学习资源',
     learnDescription: 'DeepSeek Harness 插件生态学习资源：官方文档、我们的插件开发指南、Cordis 论文、迁移指南、以及开放互链的竞品列表。',
     learnH1: '学习资源',
@@ -831,6 +833,7 @@ function renderPage(t, data, baseUrl, snapshot) {
       <a class="nav-lb" href="${isZh(t) ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
       <a class="nav-lb" href="https://whyihaveyou.github.io/dsh-themes/" target="_blank" rel="noopener noreferrer">${isZh(t) ? '皮肤画廊' : 'Themes'}</a>
       <a class="nav-lb" href="${isZh(t) ? 'learn-zh.html' : 'learn.html'}">${esc(t.learnNav)}</a>
+      <a class="nav-lb" href="${isZh(t) ? 'author-zh.html' : 'author.html'}">${esc(t.authorNav)}</a>
       <button class="nav-theme" type="button" data-theme-toggle aria-label="切换主题">🌙</button>
       <a class="nav-lang" href="${t.otherHref}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
@@ -1259,6 +1262,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
     <nav class="nav">
       <a class="nav-lb" href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbDir)}</a>
       <a class="nav-lb" href="${isZ ? 'learn-zh.html' : 'learn.html'}">${esc(t.learnNav)}</a>
+      <a class="nav-lb" href="${isZ ? 'author-zh.html' : 'author.html'}">${esc(t.authorNav)}</a>
       <button class="nav-theme" type="button" data-theme-toggle aria-label="切换主题">🌙</button>
       <a class="nav-lang" href="${isZ ? 'stars.html' : 'stars-zh.html'}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
@@ -1432,6 +1436,7 @@ function renderLearnPage(t, data, baseUrl) {
     <nav class="nav">
       <a class="nav-lb" href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.lbDir)}</a>
       <a class="nav-lb" href="${isZ ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
+      <a class="nav-lb" href="${isZ ? 'author-zh.html' : 'author.html'}">${esc(t.authorNav)}</a>
       <button class="nav-theme" type="button" data-theme-toggle aria-label="切换主题">🌙</button>
       <a class="nav-lang" href="${isZ ? 'learn.html' : 'learn-zh.html'}" onclick="try{localStorage.setItem('dshLang','${t.otherLang}')}catch(e){}">${esc(t.otherLabel)}</a>
       <a class="nav-gh" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${esc(t.github)} ↗</a>
@@ -1467,6 +1472,204 @@ function renderLearnPage(t, data, baseUrl) {
 </html>
 `;
 }
+
+/* ------------------------------------------------------------------ */
+/* 作者中心：徽章生成器(badge) + 作者数据卡(author)                     */
+/* —— 纯客户端现读 catalog.json,无运行时依赖;JS 字符串经 __AC_I18N__ 注入 */
+/* ------------------------------------------------------------------ */
+
+const AC_I18N = {
+  en: {
+    badgeTitle: 'Badge Generator — dsh-suite',
+    badgeDesc: 'compat · stars · install shields for your dsh plugin README',
+    badgeH1: 'Badge Generator',
+    badgeSub: 'Pick a listed plugin, choose a shield style, copy the snippet — shields.io renders it live in your README.',
+    badgePickLabel: 'Plugin',
+    badgePickPh: 'search name / owner/repo…',
+    badgeStyle: 'Style',
+    badgeNoPick: 'Choose a plugin above to generate its badges.',
+    badgeK_compat: 'compat', badgeK_stars: 'stars', badgeK_install: 'install',
+    badgeK_author: 'author count', badgeK_listed: 'dsh-suite listed',
+    badgeAuthorTip: 'embed for any GitHub owner (no listing needed)',
+    colUrl: 'URL', colMd: 'Markdown', colHtml: 'HTML',
+    btnCopy: 'copy', btnCopied: 'copied!',
+    badgeToAuthor: '→ Author data card for @{owner}',
+    authorTitle: 'Author Center — dsh-suite',
+    authorDesc: 'Look up any plugin author: listed entries, stars, compat status, install commands.',
+    authorH1: 'Author Data Card',
+    authorSub: 'Enter a GitHub owner or owner/repo (a full dsh plugin add command also works).',
+    authorInputPh: 'e.g. spineSo · whyihaveyou/currant-gaze · @dsh-suite/plugin-deus',
+    authorBtn: 'Check', authorChecking: 'checking…', authorRefresh: 'refresh', authorRefreshed: 'refreshed',
+    authorSummary: '{n} listed entr{ies} by @{owner} · ★ {stars} total',
+    authorSummaryWatch: '(+{w} watchlist, unverified)',
+    authorNotFoundTitle: '“{q}” is not listed yet',
+    authorNotFoundDesc: 'No catalog entry matches. Submit it to the catalog — curators verify compat levels before featuring. Install commands always work regardless of listing.',
+    authorSubmitCta: 'Submit to catalog (issue)',
+    authorPrTitle: '…or open a PR yourself',
+    authorPrPatch: 'catalog JSON patch — paste into catalog/awesome-dsh-plugin.json, then follow CONTRIBUTING.md',
+    authorPrCta: 'Open CONTRIBUTING.md',
+    authorOpenBadge: '→ Generate badges',
+    authorToBadge: '→ Badge generator',
+    fldStars: 'stars', fldLang: 'language', fldLicense: 'license', fldCompat: 'compat', fldInstall: 'install',
+    fldFeatured: '★ featured', fldWatchlist: 'watchlist — no compat verification yet',
+    compatOk: 'compat OK', compatBroken: 'compat broken', compatUnknown: 'untested',
+    riskNote: '⚠ community risk flag — check the catalog page before installing',
+    acLoading: 'loading catalog.json…', acLoadFail: 'failed to load catalog.json — reload to retry.',
+    acNeedInput: 'enter an owner or owner/repo first',
+  },
+  zh: {
+    badgeTitle: '徽章生成器 — dsh-suite',
+    badgeDesc: '给你的 dsh 插件 README 生成兼容·星数·安装 shields 徽章',
+    badgeH1: '徽章生成器',
+    badgeSub: '选一个已收录插件 + 选样式 → 复制徽章代码——shields.io 直链渲染,可直接放进 README。',
+    badgePickLabel: '插件',
+    badgePickPh: '搜索插件名 / owner/repo…',
+    badgeStyle: '样式',
+    badgeNoPick: '先在上方选择一个插件。',
+    badgeK_compat: 'compat', badgeK_stars: 'stars', badgeK_install: 'install',
+    badgeK_author: '作者收录数', badgeK_listed: 'dsh-suite 收录',
+    badgeAuthorTip: '任意 GitHub 作者都能用(不要求收录)',
+    colUrl: 'URL', colMd: 'Markdown', colHtml: 'HTML',
+    btnCopy: '复制', btnCopied: '已复制!',
+    badgeToAuthor: '→ @{owner} 的作者数据卡',
+    authorTitle: '作者中心 — dsh-suite',
+    authorDesc: '输入作者名,一站展示其名下插件的星数、兼容实测状态与安装命令',
+    authorH1: '作者数据卡',
+    authorSub: '输入 GitHub 作者名或 owner/repo(整段 dsh plugin add 命令也能识别)。',
+    authorInputPh: '如 spineSo · whyihaveyou/currant-gaze · @dsh-suite/plugin-deus',
+    authorBtn: '查', authorChecking: '查询中…', authorRefresh: '刷新', authorRefreshed: '已刷新',
+    authorSummary: '@{owner} 名下收录 {n} 条 · 总 ★ {stars}',
+    authorSummaryWatch: '(另有 {w} 条观测中,未验证)',
+    authorNotFoundTitle: '“{q}” 还没被收录',
+    authorNotFoundDesc: '目录里没有匹配的条目。欢迎投稿收录——收录前维护者会做兼容分级验证。安装命令与是否收录无关,随时可用。',
+    authorSubmitCta: '投稿收录(开 issue)',
+    authorPrTitle: '……或者直接提 PR',
+    authorPrPatch: '目录 JSON 补丁——粘进 catalog/awesome-dsh-plugin.json,流程见 CONTRIBUTING.md',
+    authorPrCta: '打开 CONTRIBUTING.md',
+    authorOpenBadge: '→ 生成徽章',
+    authorToBadge: '→ 徽章生成器',
+    fldStars: '星数', fldLang: '语言', fldLicense: '协议', fldCompat: '兼容', fldInstall: '安装',
+    fldFeatured: '★ 精选', fldWatchlist: '观测中——尚未做兼容验证',
+    compatOk: '兼容实测通过', compatBroken: '兼容实测失败', compatUnknown: '未实测',
+    riskNote: '⚠ 社区风险扫描有标记——安装前请先看目录页详情',
+    acLoading: '正在加载 catalog.json…', acLoadFail: 'catalog.json 加载失败——请刷新重试。',
+    acNeedInput: '先输入作者名或 owner/repo',
+  },
+};
+
+/** 作者中心两页共用骨架(head/nav/footer 复用站点惯例,主体由客户端 JS 驱动) */
+function renderAcPage(t, baseUrl, page) {
+  const isZ = isZh(t);
+  const ac = isZ ? AC_I18N.zh : AC_I18N.en;
+  const isBadge = page === 'badge';
+  const title = isBadge ? ac.badgeTitle : ac.authorTitle;
+  const desc = isBadge ? ac.badgeDesc : ac.authorDesc;
+  const self = (isBadge ? 'badge' : 'author') + (isZ ? '-zh' : '') + '.html';
+  const alt = (isBadge ? 'badge' : 'author') + (isZ ? '' : '-zh') + '.html';
+  const cross = (isBadge ? 'author' : 'badge') + (isZ ? '-zh' : '') + '.html';
+  const ogImage = `${baseUrl}/assets/og-default.png`;
+  const i18nJson = JSON.stringify(ac).replace(/<\//g, '<\\/');
+  const hero = isBadge
+    ? `<div class="lb-hero">
+    <h1 class="lb-title">🛡 ${esc(ac.badgeH1)}</h1>
+    <p class="lb-subtitle">${esc(ac.badgeSub)}</p>
+  </div>
+  <section class="ac-panel">
+    <div class="ac-row">
+      <label class="ac-label" for="ac-pick">${esc(ac.badgePickLabel)}</label>
+      <input id="ac-pick" class="ac-input" list="ac-picklist" placeholder="${esc(ac.badgePickPh)}" autocomplete="off" spellcheck="false">
+      <datalist id="ac-picklist"></datalist>
+    </div>
+    <div class="ac-row ac-style-row" id="ac-styles">
+      <span class="ac-label">${esc(ac.badgeStyle)}</span>
+      <label class="ac-radio"><input type="radio" name="ac-style" value="flat"> flat</label>
+      <label class="ac-radio"><input type="radio" name="ac-style" value="flat-square" checked> flat-square</label>
+      <label class="ac-radio"><input type="radio" name="ac-style" value="for-the-badge"> for-the-badge</label>
+    </div>
+  </section>
+  <section id="ac-result" class="ac-panel"><p class="ac-hint">${esc(ac.badgeNoPick)}</p></section>
+  <section class="ac-cross"><a href="${cross}">${isZ ? '→ 作者数据卡' : '→ Author data card'}</a></section>`
+    : `<div class="lb-hero">
+    <h1 class="lb-title">🤝 ${esc(ac.authorH1)}</h1>
+    <p class="lb-subtitle">${esc(ac.authorSub)}</p>
+  </div>
+  <section class="ac-panel ac-form-row">
+    <input id="ac-q" class="ac-input" list="ac-suggest" placeholder="${esc(ac.authorInputPh)}" autocomplete="off" spellcheck="false">
+    <datalist id="ac-suggest"></datalist>
+    <button id="ac-go" class="ac-btn" type="button">${esc(ac.authorBtn)}</button>
+    <button id="ac-refresh" class="ac-btn ac-btn-sub" type="button" title="catalog.json">${esc(ac.authorRefresh)}</button>
+  </section>
+  <section id="ac-out"></section>
+  <section id="ac-pr" class="ac-panel ac-pr" hidden>
+    <h3>${esc(ac.authorPrTitle)}</h3>
+    <textarea id="ac-patch" class="ac-patch" readonly rows="10" spellcheck="false"></textarea>
+    <div class="ac-row">
+      <button id="ac-copy-patch" class="ac-btn" type="button">${esc(ac.btnCopy)}</button>
+      <a class="ac-link" href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${esc(ac.authorPrCta)}</a>
+    </div>
+  </section>
+  <section class="ac-cross"><a href="${cross}">${esc(ac.authorToBadge)}</a></section>`;
+  return `<!DOCTYPE html>
+<html lang="${isZ ? 'zh-CN' : 'en'}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${esc(title)}</title>
+  <meta name="description" content="${esc(desc)}">
+  <meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(desc)}"><meta property="og:image" content="${ogImage}">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:image" content="${ogImage}">
+  <link rel="alternate" hreflang="${isZ ? 'en' : 'zh-CN'}" href="${baseUrl}/${alt}"><link rel="alternate" hreflang="x-default" href="${baseUrl}/${isBadge ? 'badge' : 'author'}.html">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="canonical" href="${baseUrl}/${self}">
+  ${THEME_SCRIPT}
+  ${isZ ? '' : `  <script>
+    if (new URLSearchParams(location.search).get('lang') === 'zh' || (localStorage.getItem('dsh-suite-lang') === 'zh' && !new URLSearchParams(location.search).get('lang'))) {
+      var qs = new URLSearchParams(location.search); qs.set('lang', 'zh');
+      location.replace('${alt}?' + qs.toString());
+    }
+  </script>`}
+  <script>
+    var p = new URLSearchParams(location.search).get('lang');
+    if (p === 'zh' || p === 'en') localStorage.setItem('dsh-suite-lang', p);
+  </script>
+</head>
+<body data-ac-page="${page}">
+  <header class="site-header">
+    <nav>
+      <a class="nav-title" href="${isZ ? 'zh.html' : 'index.html'}">${esc(t.siteName)} <span class="nav-title-note">${esc(t.siteTitleNote)}</span></a>
+      <a class="nav-lb" href="${isZ ? 'stars-zh.html' : 'stars.html'}">${esc(t.lbNav)}</a>
+      <a class="nav-lb" href="${isZ ? 'learn-zh.html' : 'learn.html'}">${esc(t.learnNav)}</a>
+      <span class="spacer"></span>
+      <button class="theme-toggle" id="theme-toggle" aria-label="${esc(t.themeToggleAria)}" title="${esc(t.themeToggleAria)}">🌓</button>
+      <a class="lang-toggle" id="lang-toggle" href="${alt}">${isZ ? 'EN' : '中文'}</a>
+    </nav>
+  </header>
+  <main class="lb-main">
+    ${hero}
+  </main>
+  <footer class="site-footer">
+    <p>${esc(t.footDisclaimer)}</p>
+    <p>${esc(t.footData)}</p>
+    <p>${esc(t.footSafe)} · ${esc(t.footContribute)}</p>
+    <nav class="foot-links">
+      <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${esc(t.footContributing)}</a>
+      <a href="${REPO_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+      <a href="sitemap.xml">sitemap.xml</a>
+    </nav>
+  </footer>
+  <script>window.__AC_I18N__ = ${i18nJson};</script>
+  <script src="assets/author-center.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
+`;
+}
+
+function renderBadgePage(t, _data, baseUrl) { return renderAcPage(t, baseUrl, 'badge'); }
+function renderAuthorPage(t, _data, baseUrl) { return renderAcPage(t, baseUrl, 'author'); }
 
 /* ------------------------------------------------------------------ */
 /* 主流程                                                              */
@@ -1513,6 +1716,10 @@ function main() {
   writeFileSync(join(__dirname, 'stars-zh.html'), renderStarsPage(I18N.zh, data, baseUrl, snapshot));
   writeFileSync(join(__dirname, 'learn.html'), renderLearnPage(I18N.en, data, baseUrl));
   writeFileSync(join(__dirname, 'learn-zh.html'), renderLearnPage(I18N.zh, data, baseUrl));
+  writeFileSync(join(__dirname, 'badge.html'), renderBadgePage(I18N.en, data, baseUrl));
+  writeFileSync(join(__dirname, 'badge-zh.html'), renderBadgePage(I18N.zh, data, baseUrl));
+  writeFileSync(join(__dirname, 'author.html'), renderAuthorPage(I18N.en, data, baseUrl));
+  writeFileSync(join(__dirname, 'author-zh.html'), renderAuthorPage(I18N.zh, data, baseUrl));
 
   // 2) 公开搜索索引（供 shields 端点 / 程序化消费）
   // 生态指标时间序列（data/stats-history.json，JSONL）——站点增长曲线的数据源

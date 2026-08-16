@@ -1440,6 +1440,15 @@ function main() {
   writeFileSync(join(__dirname, 'learn-zh.html'), renderLearnPage(I18N.zh, data, baseUrl));
 
   // 2) 公开搜索索引（供 shields 端点 / 程序化消费）
+  // 生态指标时间序列（data/stats-history.json，JSONL）——站点增长曲线的数据源
+  let statsHistory = [];
+  try {
+    statsHistory = readFileSync(join(REPO_ROOT, 'data', 'stats-history.json'), 'utf8')
+      .trim().split('\n').filter(Boolean)
+      .map((l) => { try { return JSON.parse(l); } catch { return null; } })
+      .filter(Boolean);
+  } catch { /* stats-history absent -> empty array */ }
+
   const catalogIndex = {
     schema_version: '1.0',
     generated_at: new Date().toISOString(),
@@ -1447,6 +1456,7 @@ function main() {
     totals: { curated: catalog.length, watchlist: watchlist.length, featured: catalog.filter(p => p.featured).length },
     plugins: catalog,
     watchlist,
+    statsHistory,
   };
   writeFileSync(join(__dirname, 'catalog.json'), JSON.stringify(catalogIndex, null, 2));
 

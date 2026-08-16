@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-16T15:37:09.225Z",
+ "ts": "2026-08-16T16:44:25.077Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -280,6 +280,7 @@
   "dsh-agent-compact-mimichunterz",
   "dsh-agent-eval",
   "dsh-agent-hub",
+  "dsh-agent-memory",
   "dsh-agent-message",
   "dsh-agent-messaging",
   "dsh-agent-relay",
@@ -342,6 +343,7 @@
   "dsh-authinone",
   "dsh-auto",
   "dsh-auto-approval",
+  "dsh-auto-approval-plugin",
   "dsh-auto-approval-styxnether",
   "dsh-auto-approve",
   "dsh-auto-chess",
@@ -1141,6 +1143,7 @@
   "dsh-plugin-claude-bridge",
   "dsh-plugin-clawrouters",
   "dsh-plugin-code-review",
+  "dsh-plugin-codex",
   "dsh-plugin-codex-bridge",
   "dsh-plugin-codex-import",
   "dsh-plugin-colorscheme",
@@ -1740,6 +1743,7 @@
   "dsh-utility-tools",
   "dsh-ux",
   "dsh-vault",
+  "dsh-vault-feiyang-dev",
   "dsh-verification-receipt",
   "dsh-video-downloader",
   "dsh-view-modes",

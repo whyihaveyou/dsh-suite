@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-16T20:39:08.825Z",
+ "ts": "2026-08-16T21:35:39.910Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -533,6 +533,7 @@
   "dsh-conv-search",
   "dsh-conversation-cost",
   "dsh-conversation-indicator",
+  "dsh-conversation-outline",
   "dsh-conversation-rewind",
   "dsh-conversation-share",
   "dsh-cookie-bridge",
@@ -666,6 +667,7 @@
   "dsh-egress-guard",
   "dsh-email",
   "dsh-emoji",
+  "dsh-engram-relay",
   "dsh-enhance",
   "dsh-entity-dd",
   "dsh-envoy",
@@ -1578,6 +1580,7 @@
   "dsh-task-progress-notifier",
   "dsh-task-relay",
   "dsh-task-status",
+  "dsh-taskboard",
   "dsh-tavern",
   "dsh-tavern-player-minepig",
   "dsh-tavily-search",

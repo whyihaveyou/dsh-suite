@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-17T08:05:16.917Z",
+ "ts": "2026-08-17T09:03:00.261Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -36,6 +36,7 @@
   "anchorlaw",
   "angelina-dsh-plugin",
   "anime-find",
+  "anolisa",
   "anysearch-dsh",
   "api-cost-meter",
   "archify",
@@ -887,6 +888,7 @@
   "dsh-lark",
   "dsh-lark-bot",
   "dsh-lark-bridge",
+  "dsh-lark-bridge-jmoksz",
   "dsh-lark-link",
   "dsh-lark-meeting-notifier",
   "dsh-lark-omdsh-dev",
@@ -1186,6 +1188,7 @@
   "dsh-plugin-claude-bridge",
   "dsh-plugin-clawrouters",
   "dsh-plugin-code-review",
+  "dsh-plugin-codegraph",
   "dsh-plugin-codex",
   "dsh-plugin-codex-bridge",
   "dsh-plugin-codex-import",
@@ -2039,6 +2042,7 @@
   "image-vision",
   "inferglow",
   "infographic",
+  "infra-skills",
   "intent-flow",
   "intent-gate",
   "interaction-doc",

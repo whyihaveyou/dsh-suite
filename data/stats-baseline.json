@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-17T13:55:14.841Z",
+ "ts": "2026-08-17T14:46:35.192Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -208,6 +208,7 @@
   "deepseek-harness-skin",
   "deepseek-harness-studio",
   "deepseek-harness-themes",
+  "deepseek-harness-token-free",
   "deepseek-harness-tui",
   "deepseek-harness-tui-boxeryao",
   "deepseek-harness-tui-openma-ai",
@@ -308,6 +309,7 @@
   "dsh-agentsoul",
   "dsh-agnes-paseo",
   "dsh-agy",
+  "dsh-ai4scholar",
   "dsh-ajw",
   "dsh-all-search",
   "dsh-all-warmup",
@@ -1041,6 +1043,7 @@
   "dsh-mobile-gate",
   "dsh-mobile-gui-agent",
   "dsh-mobile-nav",
+  "dsh-mobile-saya-ch",
   "dsh-model-config-sync",
   "dsh-model-failover",
   "dsh-model-meta-autofill",
@@ -1586,6 +1589,7 @@
   "dsh-skin-blue-whale",
   "dsh-skin-claude-code",
   "dsh-skin-manager",
+  "dsh-skin-market",
   "dsh-skin-switcher",
   "dsh-skin-universe",
   "dsh-skin-yugitan",

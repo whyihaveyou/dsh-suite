@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-17T17:47:30.970Z",
+ "ts": "2026-08-17T18:59:49.423Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1573,6 +1573,7 @@
   "dsh-skill-manager-tuogusa",
   "dsh-skill-manager-ytxue",
   "dsh-skill-manager-zbcs-studiocr-cn",
+  "dsh-skill-mcp-panel",
   "dsh-skill-pack-security",
   "dsh-skill-panel",
   "dsh-skill-picker",
@@ -2189,6 +2190,7 @@
   "open-record-replay",
   "openbiliclaw",
   "opencode-usage",
+  "opencues",
   "openflowframes",
   "openguardrails",
   "openhanako",

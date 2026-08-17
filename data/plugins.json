@@ -18503,30 +18503,30 @@
   {
    "id": "dsh-codex-connect",
    "name": "dsh-codex-connect",
-   "npm": null,
+   "npm": "dsh-codex-connect",
    "repo": "franksong2702/dsh-codex-connect",
    "url": "https://github.com/franksong2702/dsh-codex-connect",
    "category": "tools",
    "description": {
     "en": "ChatGPT OAuth and Codex models for DeepSeek Harness.",
-    "zh": "dsh-codex-connect — DSH 插件（工具）"
+    "zh": "通过 ChatGPT OAuth 在 DeepSeek Harness 中使用 OpenAI Codex 模型。"
    },
    "author": "franksong2702",
    "stars": 18,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
-    "minVersion": "",
-    "peerCordis": "",
-    "node": ""
+    "minVersion": "0.1.0-rc.6",
+    "peerCordis": "^4.0.1-rc.1",
+    "node": "^22.19.0 || >=24.0.0"
    },
    "compat": {
-    "status": "unknown",
-    "dshVersion": "",
-    "lastVerified": "",
+    "status": "ok",
+    "dshVersion": "0.1.0-rc.6",
+    "lastVerified": "2026-08-17",
     "note": ""
    },
-   "install": "",
+   "install": "dsh plugin --profile web add dsh-codex-connect@alpha",
    "featured": false,
    "isOfficialBeta": false,
    "language": "TypeScript",

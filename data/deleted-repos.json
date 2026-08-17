@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T07:17:55.375Z",
+  "generated_at": "2026-08-17T13:55:14.759Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -198,6 +198,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "yun520-1/deepseek-heartflow",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-17T13:55:14.753Z",
+      "lastDetectedAt": "2026-08-17T13:55:14.754Z",
+      "lastStars": 5,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/yun520-1/deepseek-heartflow"
     }
   ]
 }

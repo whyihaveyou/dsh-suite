@@ -15,6 +15,13 @@
 
 [![dsh-suite directory](https://whyihaveyou.github.io/dsh-suite/preview/2026-08-14/home-en.png)](https://whyihaveyou.github.io/dsh-suite/)
 
+**🧭 Ecosystem / 生态**
+
+- 🌐 [Directory](https://whyihaveyou.github.io/dsh-suite/) — browse every plugin online
+- 📖 [DSH Chinese docs · dsh-docs.com](https://dsh-docs.com) — Chinese tutorials & docs, no VPN needed
+- 📕 [DSH plugin dev guide](https://github.com/whyihaveyou/dsh-plugin-tutorial) — the bilingual book
+- 🎨 [Skin gallery](https://whyihaveyou.github.io/dsh-themes/) — 151 skins with day/night previews
+
 ---
 
 ## Why dsh-suite
@@ -1626,13 +1633,19 @@ Machine-readable daily results live in [`data/compat-report.json`](data/compat-r
 
 ## 🧩 First-party Plugins
 
-| Plugin | Description |
-|---|---|
-| `@dsh-suite/plugin-notify` | Turn-completion notifications to IM webhooks (Feishu / Slack / Discord / custom) + local toast |
-| `@dsh-suite/plugin-session-export` | Human-readable Markdown / HTML session export (official only exports raw JSONL) |
-| `@dsh-suite/plugin-team-board` | Lightweight multi-agent task board (roadmap) |
+> Version badges pull `latest` from npm live (never stale); the catalog tables refresh hourly via bot.
 
-## 🛠 create-dsh-plugin
+| Plugin | Version | Description |
+|---|---|---|
+| `@dsh-suite/plugin-manager` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-manager) | In-app plugin store for DSH Web UI: catalog, search, badges, one-click install |
+| `@dsh-suite/plugin-deus` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-deus) | Minimal-behavior trigger (experiment lab) |
+| `@dsh-suite/themes` | ![npm](https://img.shields.io/npm/v/@dsh-suite/themes) | Skin Center: 151 day/night skins in one pack |
+| `@dsh-suite/preset-center` | ![npm](https://img.shields.io/npm/v/@dsh-suite/preset-center) | Chinese out-of-the-box preset pack |
+| `@dsh-suite/plugin-session-export` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-session-export) | Human-readable Markdown / HTML session export |
+| `@dsh-suite/plugin-notify` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-notify) | IM webhook notifications + local toast |
+| `@dsh-suite/plugin-team-board` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-team-board) | Shared multi-agent task board |
+
+## 🛠 create-dsh-plugin ![npm](https://img.shields.io/npm/v/create-dsh-plugin)
 
 ```bash
 npm create dsh-plugin@latest

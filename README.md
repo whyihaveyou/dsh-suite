@@ -15,6 +15,13 @@
 
 [![dsh-suite 目录网站](https://whyihaveyou.github.io/dsh-suite/preview/2026-08-14/home-zh.png)](https://whyihaveyou.github.io/dsh-suite/zh.html)
 
+**🧭 生态 / Ecosystem**
+
+- 🌐 [目录网站](https://whyihaveyou.github.io/dsh-suite/zh.html) — 在线逛全部插件
+- 📖 [DSH 中文文档 · dsh-docs.com](https://dsh-docs.com) — 中文教程与文档，开箱即用无需翻墙
+- 📕 [DSH 插件开发指南](https://github.com/whyihaveyou/dsh-plugin-tutorial) — 中英双语成书
+- 🎨 [皮肤画廊](https://whyihaveyou.github.io/dsh-themes/) — 151 款皮肤昼夜双预览
+
 ---
 
 ## 为什么做 dsh-suite
@@ -1624,15 +1631,21 @@ npm create dsh-plugin@latest my-plugin
 
 机器可读的每日结果见 [`data/compat-report.json`](data/compat-report.json)，工作流见 [`.github/workflows/compat.yml`](.github/workflows/compat.yml)。
 
-## 🧩 自研插件
+## 🧩 自研插件（第一方）
 
-| 插件 | 说明 |
-|---|---|
-| `@dsh-suite/plugin-notify` | 回合完成/出错时发 IM webhook 通知（飞书 / Slack / Discord / 自定义）+ 本机弹窗 |
-| `@dsh-suite/plugin-session-export` | 把人读的 Markdown / HTML 会话导出（官方只导 raw JSONL） |
-| `@dsh-suite/plugin-team-board` | 轻量多 agent 任务板（路线图中） |
+> 版本号由 npm 徽章实时拉取 `latest`，永不过时；目录表格则由 hourly bot 每小时刷新。
 
-## 🛠 create-dsh-plugin
+| 插件 | 版本 | 说明 |
+|---|---|---|
+| `@dsh-suite/plugin-manager` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-manager) | DSH Web UI 内置插件商店：逛目录、搜索、徽章、一键安装 |
+| `@dsh-suite/plugin-deus` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-deus) | 神模扳机：一键触发实测验证过的 Minimal 行为 |
+| `@dsh-suite/themes` | ![npm](https://img.shields.io/npm/v/@dsh-suite/themes) | 皮肤中心：151 款昼夜成对皮肤一包打尽 |
+| `@dsh-suite/preset-center` | ![npm](https://img.shields.io/npm/v/@dsh-suite/preset-center) | 中文开箱即用预设全家桶 |
+| `@dsh-suite/plugin-session-export` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-session-export) | 人读 Markdown / HTML 会话导出 |
+| `@dsh-suite/plugin-notify` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-notify) | IM webhook 通知 + 本机弹窗 |
+| `@dsh-suite/plugin-team-board` | ![npm](https://img.shields.io/npm/v/@dsh-suite/plugin-team-board) | 多 agent 会话共享任务看板 |
+
+## 🛠 create-dsh-plugin ![npm](https://img.shields.io/npm/v/create-dsh-plugin)
 
 ```bash
 npm create dsh-plugin@latest

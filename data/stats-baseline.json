@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-17T09:59:32.275Z",
+ "ts": "2026-08-17T10:49:58.486Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -607,6 +607,7 @@
   "dsh-deepseek-quota",
   "dsh-deepseek-quota-cn-scuo-oo",
   "dsh-deepseek-usage",
+  "dsh-deepseek-usage-mmzm0808",
   "dsh-deepseek-vision",
   "dsh-deepseek-vision-router",
   "dsh-deepseek-vision-siegfly",
@@ -615,6 +616,7 @@
   "dsh-default-workspace-plugin",
   "dsh-delegate",
   "dsh-delete-session",
+  "dsh-deliberation-presets",
   "dsh-design-skills",
   "dsh-desk-pet",
   "dsh-desktop",
@@ -1439,6 +1441,7 @@
   "dsh-remote-sandbox",
   "dsh-remote-ssh",
   "dsh-remote-tunnel",
+  "dsh-remote-xgone",
   "dsh-remotion",
   "dsh-report-html",
   "dsh-repro",
@@ -2122,6 +2125,7 @@
   "multi-screen-wireframe",
   "multimodal-bridge",
   "museai",
+  "my-better-dsh",
   "ncm-player",
   "news-agent",
   "nightwhale",

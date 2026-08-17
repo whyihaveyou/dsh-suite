@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-17T04:59:38.228Z",
+ "ts": "2026-08-17T05:52:20.392Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1727,6 +1727,7 @@
   "dsh-ui-background",
   "dsh-ui-desktop-pet",
   "dsh-ui-enhance",
+  "dsh-ui-font",
   "dsh-ui-preset-enhance",
   "dsh-ui-progress",
   "dsh-ui-progress-omdsh-dev",
@@ -1878,6 +1879,7 @@
   "dsh-whale-arcade",
   "dsh-whale-balance",
   "dsh-whale-font",
+  "dsh-whale-musume",
   "dsh-whale-pet",
   "dsh-whale-pet-aceice01",
   "dsh-whale-pet-er1c0v0",
@@ -1973,6 +1975,7 @@
   "gal-view",
   "galgame-skin",
   "gemini-eyes",
+  "geml",
   "geo-content-optimizer",
   "ghostycode",
   "git-skills",
@@ -2023,6 +2026,7 @@
   "jacobian",
   "jarvis-index",
   "jina-dsh-plugin",
+  "jnpz",
   "jumpserver-dsh",
   "k8e",
   "kimi-tide",

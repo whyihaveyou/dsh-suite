@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T16:47:43.435Z",
+  "generated_at": "2026-08-17T17:47:30.901Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -128,6 +128,15 @@
       "lastKnownUrl": "https://github.com/ohtokaah-sys/dsh-plugins"
     },
     {
+      "repo": "rabbitknight/dsh-tui",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-17T16:47:43.274Z",
+      "lastDetectedAt": "2026-08-17T17:47:30.896Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/rabbitknight/dsh-tui"
+    },
+    {
       "repo": "Roy-oss1/dsh-lark",
       "seen": 2,
       "firstDetectedAt": "2026-08-14T19:22:19.301Z",
@@ -207,15 +216,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "rabbitknight/dsh-tui",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-17T16:47:43.274Z",
-      "lastDetectedAt": "2026-08-17T16:47:43.274Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/rabbitknight/dsh-tui"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-17T15:42:29.809Z",
+ "ts": "2026-08-17T16:47:43.518Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -703,6 +703,7 @@
   "dsh-egress-guard",
   "dsh-email",
   "dsh-emoji",
+  "dsh-endfield-ui",
   "dsh-engram-relay",
   "dsh-enhance",
   "dsh-entity-dd",
@@ -2033,6 +2034,7 @@
   "ff-toolkit",
   "flameox",
   "flashcoder",
+  "flowboard",
   "flowix",
   "forkprobe",
   "free-vision-skill",

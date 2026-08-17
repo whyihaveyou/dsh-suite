@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-17T18:59:49.423Z",
+ "ts": "2026-08-17T19:43:39.492Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2134,6 +2134,7 @@
   "mcp-for-stata",
   "mcp-sentinel",
   "mcp-server",
+  "mellos-mapping",
   "memmy-agent",
   "memtrace-public",
   "meoo-cli",
@@ -2292,6 +2293,7 @@
   "solo-memory",
   "specfusion",
   "spike-faye-lei-dsh-skills",
+  "succinix",
   "sumsec-skills",
   "superdesign-skill",
   "superpowers-dsh",

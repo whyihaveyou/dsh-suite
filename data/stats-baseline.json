@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-18T11:42:44.306Z",
+ "ts": "2026-08-18T13:09:21.709Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -259,6 +259,7 @@
   "deepseekharnessdesktop",
   "deepseekharnessdesktop-vault",
   "deepseekharnessremotegateway",
+  "deepspider",
   "deeptide",
   "delivery-review-dsh-plugin",
   "design-playbook",
@@ -915,6 +916,7 @@
   "dsh-keepalive",
   "dsh-kimi-bridge",
   "dsh-kimi-webbridge",
+  "dsh-kimino-theme",
   "dsh-knowledge-graph",
   "dsh-kun-like-pet",
   "dsh-lan",
@@ -1933,6 +1935,7 @@
   "dsh-wallpaper",
   "dsh-wallpaper-chinarxq",
   "dsh-wallpaper-engine",
+  "dsh-wallpaper-rotator",
   "dsh-wanghong-handwritten-ppt",
   "dsh-wash-calendar",
   "dsh-watch",
@@ -2193,6 +2196,7 @@
   "meoo-cli",
   "metera",
   "minara-skills",
+  "mindmemos",
   "mindspace-dsh-local-rag",
   "mindspace-dsh-session-memory",
   "minecraft-dev",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T17:47:30.901Z",
+  "generated_at": "2026-08-18T13:09:21.624Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -216,6 +216,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "stushansusu/dsh-miku-skin",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-18T13:09:21.533Z",
+      "lastDetectedAt": "2026-08-18T13:09:21.533Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/stushansusu/dsh-miku-skin"
     }
   ]
 }

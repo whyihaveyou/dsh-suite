@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-18T03:59:41.863Z",
+ "ts": "2026-08-18T04:53:58.761Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1679,6 +1679,7 @@
   "dsh-task-status",
   "dsh-taskboard",
   "dsh-tavern",
+  "dsh-tavern-flizzywine",
   "dsh-tavern-player-minepig",
   "dsh-tavily",
   "dsh-tavily-search",
@@ -2183,6 +2184,7 @@
   "noletme",
   "northstar-exam",
   "notes",
+  "novel-writer",
   "nowledge-mem-deepseek-harness",
   "octie-dsh-plugin",
   "odai",

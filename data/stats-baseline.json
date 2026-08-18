@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-18T20:42:07.070Z",
+ "ts": "2026-08-18T21:39:46.727Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -104,6 +104,7 @@
   "clawock",
   "cleverer-dsh",
   "cli",
+  "cloudbase-ai-toolkit",
   "co-engram",
   "cobsidian",
   "code2skill",
@@ -2322,6 +2323,7 @@
   "querit-plugins",
   "qwen-mm-plugins",
   "raphael-loop",
+  "rapid-mlx-dsh-provider",
   "re-framework",
   "rea",
   "reactive-resume",

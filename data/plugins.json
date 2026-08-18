@@ -1,11 +1,11 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-18T10:48:15.661Z",
+  "generated_at": "2026-08-18T11:42:44.212Z",
   "source": "hourly refresh-stars (GitHub GraphQL)",
   "totals": {
-   "plugins": 1577,
-   "watchlist": 846
+   "plugins": 1580,
+   "watchlist": 848
   },
   "category_mapping": {
    "tool": "tools",
@@ -989,7 +989,7 @@
     "zh": "Mnemon 三层记忆体深度集成"
    },
    "author": "omdsh-dev",
-   "stars": 93,
+   "stars": 94,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1710,7 +1710,7 @@
     "zh": "MineRU 文档解析工具"
    },
    "author": "HuanLinOTO",
-   "stars": 35,
+   "stars": 36,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2263,7 +2263,7 @@
     "zh": "DSH Web UI 插件与皮肤合集：任务板、Git 面板等"
    },
    "author": "zhu1090093659",
-   "stars": 4434,
+   "stars": 4448,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2308,7 +2308,7 @@
     "zh": "侧边栏完整工作台：文件渲染/终端/Git/子代理"
    },
    "author": "omdsh-dev",
-   "stars": 2103,
+   "stars": 2111,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2398,7 +2398,7 @@
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊）"
    },
    "author": "Small-tailqwq",
-   "stars": 1319,
+   "stars": 1320,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2743,7 +2743,7 @@
     "zh": "会话内联渲染交互式 UI 组件"
    },
    "author": "omdsh-dev",
-   "stars": 215,
+   "stars": 217,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2826,7 +2826,7 @@
     "zh": "对话节点导航条（右缘节点串跳转）"
    },
    "author": "vlln",
-   "stars": 38,
+   "stars": 39,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3407,7 +3407,7 @@
     "zh": "DSH 桌面通知提醒"
    },
    "author": "bill9109",
-   "stars": 18,
+   "stars": 17,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3508,7 +3508,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "",
-   "last_push": "2026-08-17",
+   "last_push": "2026-08-18",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -3846,7 +3846,7 @@
     "zh": "跨会话长期记忆 + 后台自我进化（纯插件）"
    },
    "author": "csyangwen",
-   "stars": 169,
+   "stars": 170,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4325,7 +4325,7 @@
     "zh": "给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原"
    },
    "author": "Anionex",
-   "stars": 682,
+   "stars": 686,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4498,7 +4498,7 @@
     "zh": "带记忆、人格与自主性的个人 AI 智能体"
    },
    "author": "liliMozi",
-   "stars": 6108,
+   "stars": 6107,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4543,7 +4543,7 @@
     "zh": "可递归自编辑自身的 agent+harness 架构"
    },
    "author": "exoharness",
-   "stars": 773,
+   "stars": 774,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4903,7 +4903,7 @@
     "zh": "AgentTeams 插件"
    },
    "author": "NanmiCoder",
-   "stars": 531,
+   "stars": 530,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5486,7 +5486,7 @@
     "zh": "一键安装+切换 Claude Code/Codex/Kimi/Qwen 等 20+ 编码智能体"
    },
    "author": "edison7009",
-   "stars": 3070,
+   "stars": 3071,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5531,7 +5531,7 @@
     "zh": "DSH 插件目录，带每日兼容性跟踪"
    },
    "author": "AdamPlatin123",
-   "stars": 1188,
+   "stars": 1190,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5621,7 +5621,7 @@
     "zh": "DSH 生态精选：插件、工具与基建"
    },
    "author": "0xsline",
-   "stars": 717,
+   "stars": 719,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5891,7 +5891,7 @@
     "zh": "2005 年中文站点风格侧栏广告插件（恶搞）"
    },
    "author": "Nagi-ovo",
-   "stars": 494,
+   "stars": 495,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5981,7 +5981,7 @@
     "zh": "把 DSH 接进 OpenPencil 设计工具：Agent 可以在设计稿上做预览和编辑，边聊边改设计。"
    },
    "author": "ZSeven-W",
-   "stars": 118,
+   "stars": 119,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -6071,7 +6071,7 @@
     "zh": "对话内生成式 UI：把交互式 HTML 卡片画进会话"
    },
    "author": "Nagi-ovo",
-   "stars": 173,
+   "stars": 174,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -6206,7 +6206,7 @@
     "zh": "在 DSH 里与 AI 下五子棋"
    },
    "author": "omdsh-dev",
-   "stars": 13,
+   "stars": 14,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -6466,7 +6466,7 @@
     "zh": "双语 DSH 插件生态完整列表"
    },
    "author": "bruc3van",
-   "stars": 219,
+   "stars": 220,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -6511,7 +6511,7 @@
     "zh": "基于 WebView2 的 DSH 启动器"
    },
    "author": "Ruler4396",
-   "stars": 143,
+   "stars": 144,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -6858,7 +6858,7 @@
     "zh": "跨平台 Electron 桌面壳（托盘常驻）"
    },
    "author": "Void0312Aurora",
-   "stars": 4,
+   "stars": 5,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -7096,7 +7096,7 @@
     "zh": "DeepSeek Harness 首个视觉插件，纯文本模型看图。"
    },
    "author": "liustack",
-   "stars": 3009,
+   "stars": 3015,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -7141,7 +7141,7 @@
     "zh": "为纯文本模型看图设计的视觉工具箱与技能：多图理解、图片问答、UI 还原、GUI 自动化。"
    },
    "author": "Anionex",
-   "stars": 1026,
+   "stars": 1029,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -7186,7 +7186,7 @@
     "zh": "DeepSeek Harness 的联网搜索插件。"
    },
    "author": "liustack",
-   "stars": 141,
+   "stars": 142,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -7231,7 +7231,7 @@
     "zh": "Chrome 侧边栏扩展，让 DSH 操控浏览器。"
    },
    "author": "Lum1104",
-   "stars": 282,
+   "stars": 284,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -7928,7 +7928,7 @@
     "zh": "创意分支画布插件：树状工作区生成、对比。"
    },
    "author": "yanglongyun",
-   "stars": 9,
+   "stars": 10,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -11260,7 +11260,7 @@
     "zh": "DSH 有声桌宠：悬浮桌面的 DeepSeek 小鲸鱼，不打开 DSH 也能实时感知会话状态（需要确认/工作中/完成/空闲/离线），支持音效提醒与零代码定制素材"
    },
    "author": "FlytoMAYDAY80",
-   "stars": 12,
+   "stars": 13,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -13254,7 +13254,7 @@
     "zh": "dsh-clawrouter — DSH 插件（编排）"
    },
    "author": "BlockRunAI",
-   "stars": 13,
+   "stars": 14,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -15863,7 +15863,7 @@
     "zh": "dsh-auto-review — DSH 插件（会话）"
    },
    "author": "PerryLink",
-   "stars": 33,
+   "stars": 34,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -18575,7 +18575,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "新增",
-   "last_push": "2026-08-17",
+   "last_push": "2026-08-18",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -20033,7 +20033,7 @@
    "isOfficialBeta": false,
    "language": "Python",
    "sourceNote": "新增",
-   "last_push": "2026-08-14",
+   "last_push": "2026-08-18",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -20648,7 +20648,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "新增",
-   "last_push": "2026-08-16",
+   "last_push": "2026-08-18",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -21775,7 +21775,7 @@
     "zh": "ACP 服务器实现：让外部工具通过 Agent Client Protocol 驱动 DSH。"
    },
    "author": "openma-ai",
-   "stars": 9,
+   "stars": 10,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -22420,7 +22420,7 @@
     "zh": "给纯文本模型接近原生的识图能力：图片消息自动走视觉模型转成文字描述再进上下文。"
    },
    "author": "oil-oil",
-   "stars": 67,
+   "stars": 68,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -25571,7 +25571,7 @@
     "zh": "技能管理面板：在设置页直接启用/停用、删除、添加 Skills，不用改配置文件。"
    },
    "author": "Fishquito7",
-   "stars": 62,
+   "stars": 63,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -26776,7 +26776,7 @@
     "zh": "远程接入助手：/remote 命令 + 设置页直接打印 SSH 隧道/反向隧道命令，远程工作区一键连。"
    },
    "author": "flymysql",
-   "stars": 22,
+   "stars": 23,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -30906,7 +30906,7 @@
     "zh": "配置后悔药：插件/皮肤/设置改动自动快照，可撤销、可回滚，带快照管理面板和快捷键。"
    },
    "author": "lire1131",
-   "stars": 75,
+   "stars": 76,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32259,7 +32259,7 @@
     "zh": "能耗与碳排放计量：看每次对话/请求的能耗、缓存减碳量和电费。"
    },
    "author": "dclichang2022",
-   "stars": 18,
+   "stars": 19,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32763,7 +32763,7 @@
     "zh": "上下文洞察面板：Web 界面加一个 Context 标签页，直观看到模型上下文窗口里装了什么、怎么变化的。"
    },
    "author": "bowenliang123",
-   "stars": 273,
+   "stars": 304,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32896,7 +32896,7 @@
     "zh": "DSH 的 VS Code 扩展：在编辑器里直接使用 DeepSeek Harness。"
    },
    "author": "weinibuliu",
-   "stars": 19,
+   "stars": 20,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -34966,7 +34966,7 @@
     "zh": "AnySearch 联网搜索接入：给 DSH 配上 AnySearch 的搜索 provider 和进阶搜索工具。"
    },
    "author": "anysearch-team",
-   "stars": 93,
+   "stars": 94,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -35430,7 +35430,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto",
-   "last_push": "2026-08-16",
+   "last_push": "2026-08-18",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -36177,7 +36177,7 @@
     "zh": "Token 记账：对账 New API 与 Sub2API 中转站账单。"
    },
    "author": "zh667",
-   "stars": 96,
+   "stars": 97,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -36253,7 +36253,7 @@
     "zh": "A股自选股实时行情盯盘插件 - DeepSeek Harness Web 右上角可折叠弹窗"
    },
    "author": "Awu12277",
-   "stars": 47,
+   "stars": 48,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -37000,7 +37000,7 @@
     "zh": "DeepSeek Harness 桌面宠物插件 + 完整素材生成链：AI 提示词 → 绿幕视频 → 透明动画 → 可安装插件，从零到宠物全流程可复现"
    },
    "author": "PC2005-cloud",
-   "stars": 126,
+   "stars": 128,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -38190,7 +38190,7 @@
     "zh": "把 ChatGPT(Codex)、Claude、Grok(X Premium) 的订阅当 DSH 的模型 provider 用。"
    },
    "author": "V1ki",
-   "stars": 69,
+   "stars": 73,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -38722,7 +38722,7 @@
     "zh": "两段式 Agent 预设：先用精简配置快速启动，再切换到完整 Standard 工具集，兼顾启动速度与全功能。"
    },
    "author": "xiaobright",
-   "stars": 3516,
+   "stars": 3519,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -39002,7 +39002,7 @@
     "zh": "逆向技能全家桶（85 个 SKILL.md）：逆向工程、授权渗透和安全研究的工作流，打包成插件。"
    },
    "author": "dhicoc",
-   "stars": 31,
+   "stars": 32,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -40428,7 +40428,7 @@
    "isOfficialBeta": false,
    "language": "Python",
    "sourceNote": "auto",
-   "last_push": "2026-08-16",
+   "last_push": "2026-08-18",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -41821,7 +41821,7 @@
     "zh": "dsh-conv-export（对话导出）— export the current DeepSeek Harness conversation as Markdown, PDF, or a long PNG image"
    },
    "author": "beijingwahw",
-   "stars": 2,
+   "stars": 3,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -43885,7 +43885,7 @@
     "zh": "一个基于DSH-better-sidebar的侧边栏提问tab，实现类codex的侧边提问或claude code的/btw功能"
    },
    "author": "ChenRuoT",
-   "stars": 19,
+   "stars": 20,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -45007,7 +45007,7 @@
     "zh": "DeepSeek Harness（dsh）动态 Cordis 插件：模型高可用回退 + 子智能体编排（HA failover + orchestrate subagents）"
    },
    "author": "Saktawdi",
-   "stars": 6,
+   "stars": 7,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -45453,7 +45453,7 @@
     "zh": "安全的自动授权：在「每次都要点批准」和「无脑全放开」之间加一档，按规则自动放行常规操作。"
    },
    "author": "NanmiCoder",
-   "stars": 91,
+   "stars": 93,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -46476,7 +46476,7 @@
     "zh": "deepSeek 余额监控与用量统计（DSH 动态 Cordis 插件）：余额监控 · 官方充值入口 · 用量统计 · 三方插件管理"
    },
    "author": "Francis-Xavier-code",
-   "stars": 43,
+   "stars": 44,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -48376,7 +48376,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto",
-   "last_push": "2026-08-17"
+   "last_push": "2026-08-18"
   },
   {
    "id": "dsh-solo-thinking",
@@ -51593,7 +51593,7 @@
     "zh": "untranslated"
    },
    "author": "fufankeji",
-   "stars": 271,
+   "stars": 273,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -51659,7 +51659,7 @@
     "zh": "untranslated"
    },
    "author": "AITabby",
-   "stars": 66,
+   "stars": 65,
    "last_push": "2026-08-17",
    "license": "unknown",
    "tags": [],
@@ -52088,7 +52088,7 @@
     "zh": "untranslated"
    },
    "author": "howmp",
-   "stars": 42,
+   "stars": 43,
    "last_push": "2026-08-16",
    "license": "unknown",
    "tags": [],
@@ -52352,7 +52352,7 @@
     "zh": "untranslated"
    },
    "author": "shaobeichen",
-   "stars": 121,
+   "stars": 127,
    "last_push": "2026-08-17",
    "license": "GPL-2.0",
    "tags": [],
@@ -53392,7 +53392,7 @@
     "zh": "untranslated"
    },
    "author": "1624318455",
-   "stars": 5,
+   "stars": 7,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -55405,7 +55405,7 @@
     "zh": "untranslated"
    },
    "author": "detongz",
-   "stars": 7,
+   "stars": 8,
    "last_push": "2026-08-17",
    "license": "MIT",
    "tags": [],
@@ -56032,7 +56032,7 @@
     "zh": "untranslated"
    },
    "author": "Sutera-Diffusus",
-   "stars": 14,
+   "stars": 15,
    "last_push": "2026-08-17",
    "license": "MIT",
    "tags": [],
@@ -56230,7 +56230,7 @@
     "zh": "untranslated"
    },
    "author": "jing-hy",
-   "stars": 16,
+   "stars": 19,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -56560,7 +56560,7 @@
     "zh": "untranslated"
    },
    "author": "Ewnscat-ya",
-   "stars": 15,
+   "stars": 16,
    "last_push": "2026-08-18",
    "license": "NOASSERTION",
    "tags": [],
@@ -56593,7 +56593,7 @@
     "zh": "untranslated"
    },
    "author": "wssfk12138",
-   "stars": 29,
+   "stars": 31,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -56659,7 +56659,7 @@
     "zh": "untranslated"
    },
    "author": "Saktawdi",
-   "stars": 6,
+   "stars": 7,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -57616,7 +57616,7 @@
     "zh": "untranslated"
    },
    "author": "saya-ch",
-   "stars": 22,
+   "stars": 23,
    "last_push": "2026-08-18",
    "license": "Apache-2.0",
    "tags": [],
@@ -57649,7 +57649,7 @@
     "zh": "untranslated"
    },
    "author": "literaf",
-   "stars": 7,
+   "stars": 8,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -57847,7 +57847,7 @@
     "zh": "untranslated"
    },
    "author": "Fishquito7",
-   "stars": 62,
+   "stars": 63,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -57946,7 +57946,7 @@
     "zh": "untranslated"
    },
    "author": "elysia395",
-   "stars": 58,
+   "stars": 59,
    "last_push": "2026-08-18",
    "license": "unknown",
    "tags": [],
@@ -58573,7 +58573,7 @@
     "zh": "untranslated"
    },
    "author": "MeteorNOX",
-   "stars": 12,
+   "stars": 13,
    "last_push": "2026-08-18",
    "license": "unknown",
    "tags": [],
@@ -59088,6 +59088,105 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "auto"
+  },
+  {
+   "id": "dshscan",
+   "name": "dshscan",
+   "npm": null,
+   "repo": "shaoshi20/dshscan",
+   "url": "https://github.com/shaoshi20/dshscan",
+   "category": "skills",
+   "description": {
+    "en": "DShScan - DSH plugin security scanner inspired by NVIDIA SkillSpector",
+    "zh": "untranslated"
+   },
+   "author": "shaoshi20",
+   "stars": 5,
+   "last_push": "2026-08-18",
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto"
+  },
+  {
+   "id": "querit-plugins",
+   "name": "querit-plugins",
+   "npm": null,
+   "repo": "querit-ai/querit-plugins",
+   "url": "https://github.com/querit-ai/querit-plugins",
+   "category": "orchestration",
+   "description": {
+    "en": "Official Querit search plugins for AI agent harnesses: pi-querit (Pi extension), dsh-querit (DeepSeek Harness web seam), opencode-querit (O…",
+    "zh": "untranslated"
+   },
+   "author": "querit-ai",
+   "stars": 5,
+   "last_push": "2026-08-18",
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "auto"
+  },
+  {
+   "id": "dsh-skin-wei-806206088",
+   "name": "dsh-skin",
+   "npm": null,
+   "repo": "wei-806206088/dsh-skin",
+   "url": "https://github.com/wei-806206088/dsh-skin",
+   "category": "llm",
+   "description": {
+    "en": "内置极简主题、主色、文字色、区域文字色、图片 / GIF / 视频换肤、每个背景独立不透明度、可保存的命名预设。所有设置自动持久化，重启后自加载",
+    "zh": "untranslated"
+   },
+   "author": "wei-806206088",
+   "stars": 4,
+   "last_push": "2026-08-16",
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto"
   }
  ],
  "watchlist": [
@@ -59103,7 +59202,7 @@
     "zh": "跨平台 AI 内容发现 Agent（B站/小红书/抖音等）"
    },
    "author": "whiteguo233",
-   "stars": 2874,
+   "stars": 2878,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -59137,7 +59236,7 @@
     "zh": "python 原生 AI 编码工作流 harness（多模型编排）"
    },
    "author": "zhnt",
-   "stars": 1166,
+   "stars": 1167,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -59599,7 +59698,7 @@
    "language": "Go",
    "sourceNote": "工具链",
    "watchReason": "工具链",
-   "last_push": "2026-08-08"
+   "last_push": "2026-08-18"
   },
   {
    "id": "ghostycode",
@@ -59817,7 +59916,7 @@
     "zh": "DeepSeek-V4-Flash + DSpark speculative 部署配方"
    },
    "author": "jacklarmer",
-   "stars": 3,
+   "stars": 4,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -60565,7 +60664,7 @@
     "zh": "（无描述）"
    },
    "author": "HuanLinOTO",
-   "stars": 19,
+   "stars": 20,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -60769,7 +60868,7 @@
     "zh": "（无描述）"
    },
    "author": "yjh051108",
-   "stars": 106,
+   "stars": 107,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -60837,7 +60936,7 @@
     "zh": "DSH 学习与分享社区"
    },
    "author": "hikariming",
-   "stars": 152,
+   "stars": 153,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -61041,7 +61140,7 @@
     "zh": "把离别化为温暖的 Skill（数字生命）。"
    },
    "author": "titanwings",
-   "stars": 23301,
+   "stars": 23308,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -61075,7 +61174,7 @@
     "zh": "新一代 source-available AI 工作台。"
    },
    "author": "Devin-AXIS",
-   "stars": 4141,
+   "stars": 4146,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -61245,7 +61344,7 @@
     "zh": "Claude Cowork 的开源替代（本地优先）。"
    },
    "author": "PM-Shawn",
-   "stars": 333,
+   "stars": 334,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -61279,7 +61378,7 @@
     "zh": "补位 DSH 官方 TUI 空缺的终端界面，Claude Code 风格全屏交互。"
    },
    "author": "ccch1mneyyy",
-   "stars": 1927,
+   "stars": 1930,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -61449,7 +61548,7 @@
     "zh": "DSH 插件精选列表。"
    },
    "author": "awesome-dsh-plugin",
-   "stars": 8257,
+   "stars": 8317,
    "license": "CC0-1.0",
    "tags": [],
    "dsh": {
@@ -61653,7 +61752,7 @@
     "zh": "DeepSeek Harness 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例。"
    },
    "author": "Electricitysheep",
-   "stars": 481,
+   "stars": 483,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -62163,7 +62262,7 @@
     "zh": "视觉路由。"
    },
    "author": "ysr666",
-   "stars": 714,
+   "stars": 719,
    "license": "LGPL-3.0",
    "tags": [],
    "dsh": {
@@ -62707,7 +62806,7 @@
     "zh": "DeepSeek Harness 社区 Docker 与 Kubernetes 打包。"
    },
    "author": "runzhliu",
-   "stars": 21,
+   "stars": 22,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -62911,7 +63010,7 @@
     "zh": "DeepSeek Harness Web 的 Electron 桌面壳。"
    },
    "author": "ChisaAlter",
-   "stars": 117,
+   "stars": 118,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -69084,7 +69183,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-08-17"
+   "last_push": "2026-08-18"
   },
   {
    "id": "news-agent",
@@ -69676,7 +69775,7 @@
     "zh": "The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场"
    },
    "author": "dsh-market",
-   "stars": 956,
+   "stars": 967,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -69744,7 +69843,7 @@
     "zh": "(无描述)"
    },
    "author": "czm15053",
-   "stars": 6,
+   "stars": 7,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -70322,7 +70421,7 @@
     "zh": "An independent, open-source desktop wrapper for DeepSeek Harness. It starts the bundled @deepseek-ai/dsh Web UI locally and loads it in a h…"
    },
    "author": "liguobao",
-   "stars": 17,
+   "stars": 18,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -72464,7 +72563,7 @@
     "zh": "The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landin…"
    },
    "author": "nexu-io",
-   "stars": 88679,
+   "stars": 88697,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -72532,7 +72631,7 @@
     "zh": "Give any AI agent the ability to code"
    },
    "author": "xyTom",
-   "stars": 819,
+   "stars": 820,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -73518,7 +73617,7 @@
     "zh": "A unified agent memory workspace for human and agent"
    },
    "author": "Ariestar",
-   "stars": 139,
+   "stars": 140,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -73552,7 +73651,7 @@
     "zh": "One macOS app for Claude Code, Codex, and every agent runtime you use — scheduled runs, global hotkey launcher, per-run git worktrees, one…"
    },
    "author": "drewnekota",
-   "stars": 117,
+   "stars": 118,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -74232,7 +74331,7 @@
     "zh": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion a…"
    },
    "author": "tt-a1i",
-   "stars": 14094,
+   "stars": 14105,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -74300,7 +74399,7 @@
     "zh": "基于官方 DeepSeek Harness 打造的 Electron 桌面端，深度适配 macOS 和 Windows，提供最佳的，开箱即用的体验。"
    },
    "author": "anywhere-labs",
-   "stars": 13021,
+   "stars": 13088,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -74334,7 +74433,7 @@
     "zh": "Notes for you, Memory for your agents."
    },
    "author": "text2future",
-   "stars": 316,
+   "stars": 317,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -76170,7 +76269,7 @@
     "zh": "(无描述)"
    },
    "author": "Phant0Meow",
-   "stars": 7,
+   "stars": 9,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -76190,7 +76289,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "占位",
-   "last_push": "2026-08-17"
+   "last_push": "2026-08-18"
   },
   {
    "id": "dsh-imagecraft",
@@ -77088,7 +77187,7 @@
     "zh": "Desktop-native BigFish companion for DeepSeek Harness — real Agent status, always on top on Windows."
    },
    "author": "QCYTSN",
-   "stars": 133,
+   "stars": 135,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -77530,7 +77629,7 @@
     "zh": "DSH RSS/Atom subscription tools: rss_list / rss_add / rss_remove / rss_fetch / rss_check"
    },
    "author": "STARDUSTLC666",
-   "stars": 3,
+   "stars": 4,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -78006,7 +78105,7 @@
     "zh": "Curated community plugin directory and live marketplace for DeepSeek Harness."
    },
    "author": "imsai-sh",
-   "stars": 73,
+   "stars": 76,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -78244,7 +78343,7 @@
     "zh": "WSL workspace support for DeepSeek Harness——无缝的 WSL 工作区使用体验，无需在 WSL 之中再安装一个dsh，安装该插件后在 GUI 里直接添加 WSL 工作区即可。WSL workspace support for DeepSe…"
    },
    "author": "6Mikao9",
-   "stars": 8,
+   "stars": 9,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -78468,7 +78567,7 @@
    "language": "JavaScript",
    "sourceNote": "auto",
    "watchReason": "蹭tag",
-   "last_push": "2026-08-17"
+   "last_push": "2026-08-18"
   },
   {
    "id": "skills-upstash",
@@ -78788,7 +78887,7 @@
     "zh": "(无描述)"
    },
    "author": "WYH66666666",
-   "stars": 278,
+   "stars": 279,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -78978,7 +79077,7 @@
    "language": "JavaScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-08-17"
+   "last_push": "2026-08-18"
   },
   {
    "id": "dsh-attachments",
@@ -81236,7 +81335,7 @@
     "zh": "Lively Working-line extension for pi CLI"
    },
    "author": "ccch1mneyyy",
-   "stars": 652,
+   "stars": 653,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -81630,7 +81729,7 @@
    "language": "Shell",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-08-17"
+   "last_push": "2026-08-18"
   },
   {
    "id": "skill",
@@ -81814,7 +81913,7 @@
     "zh": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn"
    },
    "author": "superdesigndev",
-   "stars": 460,
+   "stars": 461,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -82324,7 +82423,7 @@
     "zh": "离线一键部署DeepSeek Harness🐋桌面启动器&第三方插件管理"
    },
    "author": "MarcoG-h",
-   "stars": 84,
+   "stars": 86,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -82596,7 +82695,7 @@
     "zh": "Compact DeepSeek Harness desktop host. macOS downloads under 90 MB with Tauri; Windows uses Electron."
    },
    "author": "chokwinlee",
-   "stars": 13,
+   "stars": 15,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -82630,7 +82729,7 @@
     "zh": "untranslated"
    },
    "author": "ZSeven-W",
-   "stars": 5292,
+   "stars": 5295,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -82664,7 +82763,7 @@
     "zh": "untranslated"
    },
    "author": "zuorn",
-   "stars": 32,
+   "stars": 33,
    "last_push": "2026-08-17",
    "license": "Apache-2.0",
    "tags": [],
@@ -82868,7 +82967,7 @@
     "zh": "untranslated"
    },
    "author": "freestylefly",
-   "stars": 11231,
+   "stars": 11237,
    "last_push": "2026-07-22",
    "license": "MIT",
    "tags": [],
@@ -82970,7 +83069,7 @@
     "zh": "untranslated"
    },
    "author": "Devin-AXIS",
-   "stars": 113,
+   "stars": 115,
    "last_push": "2026-08-18",
    "license": "NOASSERTION",
    "tags": [],
@@ -83004,7 +83103,7 @@
     "zh": "untranslated"
    },
    "author": "a179-sanae",
-   "stars": 24,
+   "stars": 25,
    "last_push": "2026-08-17",
    "license": "MIT",
    "tags": [],
@@ -83038,7 +83137,7 @@
     "zh": "untranslated"
    },
    "author": "ningbainb",
-   "stars": 107,
+   "stars": 108,
    "last_push": "2026-08-18",
    "license": "BSD-3-Clause",
    "tags": [],
@@ -83174,7 +83273,7 @@
     "zh": "untranslated"
    },
    "author": "YaoApp",
-   "stars": 7677,
+   "stars": 7681,
    "last_push": "2026-08-18",
    "license": "NOASSERTION",
    "tags": [],
@@ -83582,7 +83681,7 @@
     "zh": "untranslated"
    },
    "author": "amruthpillai",
-   "stars": 40941,
+   "stars": 40945,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -83616,7 +83715,7 @@
     "zh": "untranslated"
    },
    "author": "GCWing",
-   "stars": 1784,
+   "stars": 1785,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -84160,7 +84259,7 @@
     "zh": "untranslated"
    },
    "author": "volcengine",
-   "stars": 28998,
+   "stars": 29012,
    "last_push": "2026-08-18",
    "license": "AGPL-3.0",
    "tags": [],
@@ -84194,7 +84293,7 @@
     "zh": "untranslated"
    },
    "author": "xiincs",
-   "stars": 41,
+   "stars": 42,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -84296,7 +84395,7 @@
     "zh": "untranslated"
    },
    "author": "vostride",
-   "stars": 908,
+   "stars": 910,
    "last_push": "2026-08-03",
    "license": "NOASSERTION",
    "tags": [],
@@ -84738,7 +84837,7 @@
     "zh": "untranslated"
    },
    "author": "Tiger3807861189",
-   "stars": 1650,
+   "stars": 1706,
    "last_push": "2026-08-17",
    "license": "Apache-2.0",
    "tags": [],
@@ -84874,7 +84973,7 @@
     "zh": "untranslated"
    },
    "author": "hairyf",
-   "stars": 512,
+   "stars": 513,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -84942,7 +85041,7 @@
     "zh": "untranslated"
    },
    "author": "Tiger3807861189",
-   "stars": 835,
+   "stars": 849,
    "last_push": "2026-08-17",
    "license": "unknown",
    "tags": [],
@@ -85180,7 +85279,7 @@
     "zh": "untranslated"
    },
    "author": "e2mcc",
-   "stars": 5,
+   "stars": 6,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -85248,7 +85347,7 @@
     "zh": "untranslated"
    },
    "author": "lencx",
-   "stars": 165,
+   "stars": 168,
    "last_push": "2026-08-18",
    "license": "Apache-2.0",
    "tags": [],
@@ -85588,7 +85687,7 @@
     "zh": "untranslated"
    },
    "author": "shengsheng90",
-   "stars": 35,
+   "stars": 36,
    "last_push": "2026-08-18",
    "license": "Apache-2.0",
    "tags": [],
@@ -85758,7 +85857,7 @@
     "zh": "untranslated"
    },
    "author": "walkinglabs",
-   "stars": 11955,
+   "stars": 11956,
    "last_push": "2026-08-06",
    "license": "MIT",
    "tags": [],
@@ -86540,7 +86639,7 @@
     "zh": "untranslated"
    },
    "author": "esengine",
-   "stars": 34746,
+   "stars": 34747,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -86676,7 +86775,7 @@
     "zh": "untranslated"
    },
    "author": "EverMind-AI",
-   "stars": 12111,
+   "stars": 12113,
    "last_push": "2026-08-17",
    "license": "Apache-2.0",
    "tags": [],
@@ -86710,7 +86809,7 @@
     "zh": "untranslated"
    },
    "author": "chuspeeism",
-   "stars": 2312,
+   "stars": 2316,
    "last_push": "2026-08-18",
    "license": "Apache-2.0",
    "tags": [],
@@ -87016,7 +87115,7 @@
     "zh": "untranslated"
    },
    "author": "op7418",
-   "stars": 93,
+   "stars": 107,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -87186,8 +87285,8 @@
     "zh": "untranslated"
    },
    "author": "Phant0Meow",
-   "stars": 7,
-   "last_push": "2026-08-17",
+   "stars": 9,
+   "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -87254,7 +87353,7 @@
     "zh": "untranslated"
    },
    "author": "SheltonLiu-N",
-   "stars": 5,
+   "stars": 6,
    "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
@@ -87323,7 +87422,7 @@
    },
    "author": "SkillNerds",
    "stars": 114,
-   "last_push": "2026-08-17",
+   "last_push": "2026-08-18",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -87853,6 +87952,74 @@
    "language": "Rust",
    "sourceNote": "auto",
    "watchReason": "工具链"
+  },
+  {
+   "id": "stock-analysis-plugin",
+   "name": "stock-analysis-plugin",
+   "npm": null,
+   "repo": "Weaxs/stock-analysis-plugin",
+   "url": "https://github.com/Weaxs/stock-analysis-plugin",
+   "category": "orchestration",
+   "description": {
+    "en": "Stock analysis extension for Pi Agent — lightweight market data tools + strategy skills",
+    "zh": "untranslated"
+   },
+   "author": "Weaxs",
+   "stars": 11,
+   "last_push": "2026-08-18",
+   "license": "unknown",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Python",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag"
+  },
+  {
+   "id": "claude-vision-mcp",
+   "name": "claude-vision-mcp",
+   "npm": null,
+   "repo": "EDMOK/claude-vision-mcp",
+   "url": "https://github.com/EDMOK/claude-vision-mcp",
+   "category": "llm",
+   "description": {
+    "en": "MCP server empowering text-only LLMs with image analysis via any OpenAI-compatible vision API",
+    "zh": "untranslated"
+   },
+   "author": "EDMOK",
+   "stars": 5,
+   "last_push": "2026-06-08",
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "unknown",
+   "sourceNote": "auto",
+   "watchReason": "蹭tag"
   }
  ]
 }

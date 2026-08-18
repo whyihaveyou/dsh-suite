@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-18T16:49:55.652Z",
+ "ts": "2026-08-18T17:44:42.547Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1409,6 +1409,7 @@
   "dsh-plugins-0sour",
   "dsh-plugins-ceelog",
   "dsh-plugins-cnzgray",
+  "dsh-plugins-ephemeral-ai-lab",
   "dsh-plugins-finder",
   "dsh-plugins-horizon215",
   "dsh-plugins-hub",
@@ -2263,6 +2264,7 @@
   "open-design",
   "open-managed-agents",
   "open-record-replay",
+  "open-sea-skin",
   "openbiliclaw",
   "opencode-usage",
   "opencues",

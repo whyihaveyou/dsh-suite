@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-17T23:38:02.981Z",
+ "ts": "2026-08-18T01:52:04.792Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -933,6 +933,7 @@
   "dsh-liquid-glass",
   "dsh-live-stats",
   "dsh-live2d-companion",
+  "dsh-live2d-mygo",
   "dsh-live2d-pets",
   "dsh-livis-connector",
   "dsh-llm-codebuddy",
@@ -1340,6 +1341,7 @@
   "dsh-plugin-terminal",
   "dsh-plugin-terminal-mervyn-teo",
   "dsh-plugin-text-translation",
+  "dsh-plugin-toggle",
   "dsh-plugin-tokenmeter",
   "dsh-plugin-tts",
   "dsh-plugin-uisfx",
@@ -1926,6 +1928,7 @@
   "dsh-web-search-tavily-szmy-haruhi",
   "dsh-web-text-drop",
   "dsh-web-theme-packs",
+  "dsh-web-tools",
   "dsh-web-ui",
   "dsh-web-ui-notify",
   "dsh-webbridge",
@@ -2219,6 +2222,7 @@
   "pi2dsh",
   "picgo-core",
   "picturereader",
+  "pilot-harness",
   "plaindeck",
   "plugin-deus",
   "plugin-manager",

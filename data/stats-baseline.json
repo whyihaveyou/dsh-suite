@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-18T15:48:08.453Z",
+ "ts": "2026-08-18T16:49:55.652Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1329,6 +1329,7 @@
   "dsh-plugin-marketplace-w2112515",
   "dsh-plugin-marketplace-yelebai",
   "dsh-plugin-mcp-manager",
+  "dsh-plugin-merge-tool-calls",
   "dsh-plugin-mermaid",
   "dsh-plugin-meta-memory",
   "dsh-plugin-miliastra-toolbox",
@@ -1409,6 +1410,7 @@
   "dsh-plugins-ceelog",
   "dsh-plugins-cnzgray",
   "dsh-plugins-finder",
+  "dsh-plugins-horizon215",
   "dsh-plugins-hub",
   "dsh-plugins-hyls9527",
   "dsh-plugins-karuisawa-mrs",

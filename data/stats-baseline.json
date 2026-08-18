@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-18T13:58:28.496Z",
+ "ts": "2026-08-18T14:54:08.557Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -339,6 +339,7 @@
   "dsh-any-background",
   "dsh-apex-standard",
   "dsh-api-balance",
+  "dsh-api-balance-02muller25",
   "dsh-api-balance-9epuuuu",
   "dsh-api-usage-bar",
   "dsh-apple-mode",
@@ -1471,6 +1472,7 @@
   "dsh-quant",
   "dsh-quant-workspace",
   "dsh-queue-plus",
+  "dsh-quota-meter",
   "dsh-quota-panel",
   "dsh-quote-annotate",
   "dsh-quote-reply",
@@ -1554,6 +1556,7 @@
   "dsh-security-scan",
   "dsh-see-image",
   "dsh-seismicx",
+  "dsh-selection-ask",
   "dsh-self-checking-profile",
   "dsh-self-control-guard",
   "dsh-self-evolution",

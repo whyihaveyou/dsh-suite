@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T03:12:50.377Z",
+ "ts": "2026-08-19T04:00:13.064Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1460,6 +1460,7 @@
   "dsh-prompt-enhancer",
   "dsh-prompt-inject",
   "dsh-prompt-manager",
+  "dsh-prompt-optimize",
   "dsh-prompt-persona",
   "dsh-prompt-polish",
   "dsh-prompt-presets",
@@ -1726,6 +1727,7 @@
   "dsh-task-relay",
   "dsh-task-status",
   "dsh-taskboard",
+  "dsh-taskboard-cloader",
   "dsh-tavern",
   "dsh-tavern-flizzywine",
   "dsh-tavern-player-minepig",
@@ -2218,6 +2220,7 @@
   "mcp-server",
   "mellos-mapping",
   "memmy-agent",
+  "memos",
   "memtrace-public",
   "meoo-cli",
   "metera",

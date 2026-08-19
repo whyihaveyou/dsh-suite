@@ -1,7 +1,7 @@
 {
   "name": "@dsh-suite/plugin-deus",
-  "version": "0.3.0",
-  "description": "神模扳机 Deus Trigger — 极简提示词触发实验台：预设库 + 一键注入 + 起手识别器 + 触发率统计（Wilson CI）。社区观察未获官方证实，本插件不承诺解锁任何隐藏能力。",
+  "version": "0.4.0",
+  "description": "神模扳机 Deus Trigger — 提示词 A/B 实验台：任意提示词变体各跑 N 次真实会话注入，指纹分布对比（Wilson CI + 两比例 z 检验）；预设库 + 一键注入 + 起手识别器 + 触发率统计。社区观察未获官方证实，本插件不承诺解锁任何隐藏能力。",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

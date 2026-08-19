@@ -78,8 +78,27 @@ function wilson(k, n) {
   return { rate: p, low: Math.max(0, center - half), high: Math.min(1, center + half) }
 }
 
+// ── 两比例 z 检验（v0.4 实验台 A/B 对比用）─────────────────────────────────
+// 标准正态 CDF（Abramowitz–Stegun 7.1.26 近似，|ε| < 7.5e-8）
+function normalCdf(x) {
+  const t = 1 / (1 + 0.2316419 * Math.abs(x))
+  const d = 0.3989423 * Math.exp((-x * x) / 2)
+  const p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))))
+  return x > 0 ? 1 - p : p
+}
+
+/** 两比例 z 检验（双侧）。任一样本为空 → null。 */
+function twoPropZ(kA, nA, kB, nB) {
+  if (!nA || !nB) return null
+  const pooled = (kA + kB) / (nA + nB)
+  const se = Math.sqrt(pooled * (1 - pooled) * (1 / nA + 1 / nB))
+  if (!se) return { z: 0, p: 1 }
+  const z = (kA / nA - kB / nB) / se
+  return { z, p: 2 * (1 - normalCdf(Math.abs(z))) }
+}
+
 // ── shipped agent presets (v0.2 锚定维持的静态层) ───────────────────────────
-const PLUGIN_VERSION = '0.3.0'
+const PLUGIN_VERSION = '0.4.0'
 // 实测依据（research/deus-mode-matrix.md §8/§9）：神版触发需要 Minimal persona
 // ∧ 小工具目录；且本 harness 没有竞品的 promoteOn 机制——preset 构成全程恒定，
 // 所以只要会话跑在锚定 preset 上，注入剥离/工具裁剪自动延续到每一轮。
@@ -300,6 +319,8 @@ function statsFrom(entries) {
   const byMode = new Map()
   for (const e of entries) {
     const mode = e.prompt_mode || 'unknown'
+    if (mode === 'bench') continue // v0.4: 实验台样本有独立的 A/B 报告，不混入神模统计
+
     if (!byMode.has(mode)) byMode.set(mode, { mode, n: 0, pure: 0, med: 0, god: 0, unknown: 0 })
     const row = byMode.get(mode)
     row.n += 1
@@ -320,11 +341,83 @@ function statsFrom(entries) {
 }
 
 function toCsv(entries) {
-  const head = 'ts,sessionId,prompt_mode,prompt_text,detected,source,turn,first_sentence,model'
+  const head = 'ts,sessionId,prompt_mode,prompt_text,detected,source,turn,first_sentence,model,bench_run,bench_variant'
   const esc = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`
   const rows = entries.map((e) =>
-    [e.ts, e.sessionId, e.prompt_mode, e.prompt_text, e.detected, e.source, e.turn, e.first_sentence, e.model].map(esc).join(','))
+    [e.ts, e.sessionId, e.prompt_mode, e.prompt_text, e.detected, e.source, e.turn, e.first_sentence, e.model, e.bench_run, e.bench_variant].map(esc).join(','))
   return [head, ...rows].join('\n') + '\n'
+}
+
+// ── v0.4 实验台：A/B 报告（指纹分布对比 + Wilson CI + 两比例 z 检验）────────
+// 设计文档「纯噪音退路」转正：面板输入任意提示词变体 A/B，各跑 N 次真实会话
+// 注入，这里把 log 里 prompt_mode='bench' 的样本按 bench_run/bench_variant
+// 分组，输出每类的 Wilson 95% CI 与 A−B 差异检验。神模只是第一个被测假设。
+const BENCH_CLASSES = ['god', 'med', 'pure', 'unknown']
+
+export function benchReportFrom(entries, runId) {
+  const bench = entries.filter((e) => e.prompt_mode === 'bench' && e.bench_run)
+  const runMap = new Map()
+  for (const e of bench) {
+    let r = runMap.get(e.bench_run)
+    if (!r) {
+      r = { runId: e.bench_run, n: 0, firstTs: e.ts, lastTs: e.ts, variants: new Set() }
+      runMap.set(e.bench_run, r)
+    }
+    r.n += 1
+    if (e.ts < r.firstTs) r.firstTs = e.ts
+    if (e.ts > r.lastTs) r.lastTs = e.ts
+    if (e.bench_variant) r.variants.add(e.bench_variant)
+  }
+  const runs = [...runMap.values()]
+    .map((r) => ({ runId: r.runId, n: r.n, firstTs: r.firstTs, lastTs: r.lastTs, variants: [...r.variants].sort() }))
+    .sort((a, b) => (a.lastTs < b.lastTs ? 1 : -1))
+  const picked = runId ? runs.find((r) => r.runId === runId) : runs[0]
+  if (!picked) return { report: null, runs }
+  const rows = bench.filter((e) => e.bench_run === picked.runId)
+  const byVariant = {}
+  for (const e of rows) {
+    const v = String(e.bench_variant || '?')
+    const g = (byVariant[v] ||= { variant: v, n: 0, counts: { god: 0, med: 0, pure: 0, unknown: 0 }, prompt: null })
+    g.n += 1
+    if (g.counts[e.detected] !== undefined) g.counts[e.detected] += 1
+    else g.counts.unknown += 1
+    if (!g.prompt && e.prompt_text) g.prompt = e.prompt_text
+  }
+  for (const g of Object.values(byVariant)) {
+    g.classes = {}
+    for (const c of BENCH_CLASSES) {
+      g.classes[c] = { n: g.counts[c], ...wilson(g.counts[c], g.n) }
+    }
+  }
+  const order = Object.keys(byVariant).sort()
+  const comparison = []
+  if (order.length >= 2) {
+    const A = byVariant[order[0]]
+    const B = byVariant[order[1]]
+    for (const c of BENCH_CLASSES) {
+      const t = twoPropZ(A.counts[c], A.n, B.counts[c], B.n)
+      comparison.push({
+        cls: c,
+        a: A.classes[c],
+        b: B.classes[c],
+        delta: A.n && B.n ? A.counts[c] / A.n - B.counts[c] / B.n : null,
+        z: t ? t.z : null,
+        p: t ? t.p : null,
+      })
+    }
+  }
+  return {
+    report: {
+      runId: picked.runId,
+      n: rows.length,
+      variants: byVariant,
+      order,
+      comparison,
+      startedAt: picked.firstTs,
+      finishedAt: picked.lastTs,
+    },
+    runs,
+  }
 }
 
 // ── version auto-detect (differentiator: no manual checking) ────────────────
@@ -386,6 +479,10 @@ export function apply(ctx) {
 
   // Pending trigger marks: sessionId -> { mode, prompt_text, ts, auto }
   const pending = new Map()
+  // v0.4 实验台：待配对的 bench 样本队列 [{ runId, variant, prompt, ts }]
+  // （文本精确匹配配对，见 /deus/bench/mark 路由注释）
+  const benchQueue = []
+  const BENCH_QUEUE_TTL = 10 * 60 * 1000
   // Chunk accumulation while a trigger is pending: sessionId -> { turn, step, reasoning, text }
   // （实测校准：指纹在 reasoning-delta 流里，text-delta 兜底；见 detectMode 注释）
   const buffers = new Map()
@@ -466,6 +563,9 @@ export function apply(ctx) {
       source,
       first_sentence: firstSentenceOf(classifyOn),
       model: mark.model || undefined,
+      // v0.4 实验台：A/B 样本归属（仅 bench 标记的注入轮带这两个字段）
+      bench_run: mark.benchRun || undefined,
+      bench_variant: mark.benchVariant || undefined,
     })
   }
 
@@ -486,6 +586,15 @@ export function apply(ctx) {
     if (event.type === 'user/message') {
       const text = textOf(event.data && event.data.content).trim()
       if (text !== '' && !pending.has(sessionId)) {
+        // v0.4 实验台：bench 队列优先于 preset exact-match（显式实验意图优先）
+        const now = Date.now()
+        const bi = benchQueue.findIndex((q) => q.prompt === text && now - q.ts < BENCH_QUEUE_TTL)
+        if (bi >= 0) {
+          const q = benchQueue.splice(bi, 1)[0]
+          buffers.delete(sessionId)
+          pending.set(sessionId, { mode: 'bench', prompt_text: q.prompt, benchRun: q.runId, benchVariant: q.variant, ts: now, auto: false })
+          return
+        }
         const hit = loadPresets().find((p) => p.prompt !== null && p.prompt.trim() === text)
         if (hit) {
           buffers.delete(sessionId) // 防止上轮残留 buffer 污染注入轮判定
@@ -665,6 +774,42 @@ export function apply(ctx) {
         const sessionId = String(u.searchParams.get('sessionId') || '')
         if (!sessionId) { json({ ok: false, error: 'missing sessionId' }, 400)(req, res); return }
         json({ sessionId, preset: readSessionPreset(sessionId) })(req, res)
+      } }),
+      // v0.4 实验台：A/B 变体注入标记。与 /deus/trigger 的 sessionId 预标记不同，
+      // 这里走「提示词文本队列」配对（与档 A 的 exact-match 同思路）：客户端每次
+      // 试验前把 (runId, variant, prompt) 入队，user/message 到达时按文本精确
+      // 匹配出队并标记该会话注入轮。这样 bench 不依赖「新会话 id 何时出现」
+      // 的时序——新建空白会话在首条消息前可能没有稳定 id。
+      ctx.webServer.register({ kind: 'exact', path: '/deus/bench/mark', handler: (req, res) => {
+        readBody(req, (body) => {
+          const runId = String(body.runId || '').slice(0, 64)
+          const variant = String(body.variant || '').slice(0, 16)
+          const prompt = String(body.prompt || '').slice(0, 4000)
+          if (!runId || !variant || !prompt) {
+            json({ ok: false, error: 'missing runId / variant / prompt' }, 400)(req, res)
+            return
+          }
+          benchQueue.push({ runId, variant, prompt, ts: Date.now() })
+          if (benchQueue.length > 200) benchQueue.splice(0, benchQueue.length - 200)
+          json({ ok: true, queued: benchQueue.length })(req, res)
+        })
+      } }),
+      // 中止/清理：丢弃某个 run（或全部）未消耗的队列项
+      ctx.webServer.register({ kind: 'exact', path: '/deus/bench/clear', handler: (req, res) => {
+        readBody(req, (body) => {
+          const runId = String(body.runId || '')
+          const before = benchQueue.length
+          for (let i = benchQueue.length - 1; i >= 0; i--) {
+            if (!runId || benchQueue[i].runId === runId) benchQueue.splice(i, 1)
+          }
+          json({ ok: true, dropped: before - benchQueue.length })(req, res)
+        })
+      } }),
+      // v0.4 实验台：A/B 报告（?runId= 指定，缺省取最近一次 run；附全部 run 列表）
+      ctx.webServer.register({ kind: 'exact', path: '/deus/bench/report', handler: (req, res) => {
+        const u = new URL(String(req.url || ''), 'http://localhost')
+        const runId = String(u.searchParams.get('runId') || '')
+        json({ ok: true, ...benchReportFrom(readLog(10000), runId || undefined) })(req, res)
       } }),
       ctx.webServer.register({ kind: 'exact', path: '/deus/version', handler: (req, res) => {
         let dsh = 'unknown'

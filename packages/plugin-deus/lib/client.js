@@ -45,6 +45,20 @@ window.__ModuleLoader__.load({
       unanchored: '◌ 非神版会话', unanchoredTitle: '当前会话不是锚定 preset——实测 25 工具会话注入触发率≈0%。点击查看怎么切换',
       guideText: '实测结论：standard（25 工具）会话里文本注入几乎无法触发神版（0%）。想用神版：新建会话时在 Agent preset 选择器选「神模扳机 · 窄锚 / 宽锚」（实测触发率 ~90% / ~65%）。',
       copyMd: '复制 Markdown 摘要', mdCopied: '已复制 ✓ 去发帖吧', trend: '近期神版率趋势',
+      bench: '实验台',
+      benchHint: '提示词 A/B 实验台：任意两个提示词变体各跑 N 次真实会话注入（每次自动开新会话隔离上下文），对比起手式指纹分布。Wilson 95% CI + 两比例 z 检验；小样本只作倾向信号。神模只是第一个被测假设。',
+      benchA: '变体 A 提示词', benchB: '变体 B 提示词', benchTimes: '每变体次数 N',
+      benchRun: '▶ 开始实验', benchAbort: '⏹ 中止', benchRunning: '实验进行中',
+      benchProgress: '进度', benchWaiting: '等待回复…', benchDone: '实验完成',
+      benchIsolationWarn: '⚠ 未找到「新建会话」按钮，本轮在同会话内连跑，上下文未隔离',
+      benchTimeout: '等待回复超时（240s），实验中止',
+      benchEmpty: '请先填写变体 A 与变体 B 的提示词',
+      benchReportTitle: '指纹分布对比', benchRunId: '实验编号', benchStarted: '开始', benchFinished: '结束',
+      colFp: '指纹', colDelta: 'Δ(A−B)', colZ: 'z', colP: 'p', colSig: '显著',
+      benchNone: '还没有实验记录。在对话页输入框上方的 ⚗ 芯片行打开「实验台」跑一轮。',
+      benchPickRun: '选择实验', benchRefresh: '刷新',
+      benchDefA: '用三句话向聪明的初中生解释「熵」。',
+      benchDefB: '你是一位世界顶尖科普作家，回答前先在脑内推演三遍。用三句话向聪明的初中生解释「熵」。',
     }
     const en = {
       nav: 'Deus Trigger', sub: 'Minimal-prompt trigger bench · inject → classify → stats',
@@ -72,6 +86,20 @@ window.__ModuleLoader__.load({
       unanchored: '◌ Not a deus session', unanchoredTitle: 'This session is not on an anchored preset — injection measured ≈0% effective on 25-tool sessions. Click for how to switch',
       guideText: 'Measured: text injection barely triggers god-mode in standard (25-tool) sessions (0%). To get it: start a new session and pick "Deus Trigger · narrow / wide anchor" in the Agent preset picker (~90% / ~65% measured trigger rate).',
       copyMd: 'Copy Markdown summary', mdCopied: 'Copied ✓ go post it', trend: 'Recent god-rate trend',
+      bench: 'A/B Bench',
+      benchHint: 'Prompt A/B bench: run any two prompt variants N times each via real session injection (a fresh session per trial isolates context), then compare opener-fingerprint distributions. Wilson 95% CI + two-proportion z-test; small samples are directional only. God-mode is just the first hypothesis under test.',
+      benchA: 'Variant A prompt', benchB: 'Variant B prompt', benchTimes: 'Trials per variant N',
+      benchRun: '▶ Run experiment', benchAbort: '⏹ Abort', benchRunning: 'Running',
+      benchProgress: 'Progress', benchWaiting: 'waiting for reply…', benchDone: 'Experiment done',
+      benchIsolationWarn: '⚠ "New session" button not found; trials ran in the same session without context isolation',
+      benchTimeout: 'Timed out waiting for reply (240s); aborted',
+      benchEmpty: 'Fill in both variant A and variant B prompts first',
+      benchReportTitle: 'Fingerprint distribution comparison', benchRunId: 'Run', benchStarted: 'Started', benchFinished: 'Finished',
+      colFp: 'fingerprint', colDelta: 'Δ(A−B)', colZ: 'z', colP: 'p', colSig: 'sig',
+      benchNone: 'No experiments yet. Open the "A/B Bench" from the ⚗ chip row above the composer on a conversation page.',
+      benchPickRun: 'Pick run', benchRefresh: 'Refresh',
+      benchDefA: 'Explain "entropy" to a bright middle-schooler in three sentences.',
+      benchDefB: 'You are a world-class science writer; rehearse the answer three times in your head before speaking. Explain "entropy" to a bright middle-schooler in three sentences.',
     }
 
     const S = {
@@ -90,6 +118,11 @@ window.__ModuleLoader__.load({
       td: { padding: '6px 8px', borderBottom: '1px solid #21262d' },
       input: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '6px', color: '#e6edf3', padding: '6px 8px', fontSize: '12px', width: '100%', boxSizing: 'border-box' },
       mono: { fontFamily: 'monospace', fontSize: '12px', color: '#c9d1d9' },
+      benchWrap: { width: '100%', background: '#0d1117', border: '1px solid #30363d', borderRadius: '10px', padding: '10px 12px', marginBottom: '6px' },
+      benchTa: { width: '100%', minHeight: '52px', background: '#161b22', border: '1px solid #30363d', borderRadius: '8px', color: '#c9d1d9', fontSize: '12px', padding: '6px 8px', boxSizing: 'border-box', resize: 'vertical' },
+      benchLabel: { fontSize: '11px', color: '#8b949e', margin: '6px 0 3px' },
+      benchTable: { width: '100%', borderCollapse: 'collapse', fontSize: '11px', marginTop: '6px' },
+      benchCell: { border: '1px solid #21262d', padding: '3px 6px', textAlign: 'right', whiteSpace: 'nowrap' },
       dock: { display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap', padding: '4px 0' },
       dockChip: { background: '#161b22', border: '1px solid #30363d', borderRadius: '16px', color: '#8b949e', padding: '3px 12px', fontSize: '12px', cursor: 'pointer' },
     }
@@ -97,6 +130,56 @@ window.__ModuleLoader__.load({
     const pct = (ci) => `${(ci.rate * 100).toFixed(0)}% [${(ci.low * 100).toFixed(0)}–${(ci.high * 100).toFixed(0)}]`
 
     // ── tier A: settings section panel ──────────────────────────────────────
+    // ── v0.4 实验台：报告拉取与 A/B 对比表（Dock 控制台与设置面板共用）─────
+    function fetchBenchReport(runId) {
+      const url = runId ? '/deus/bench/report?runId=' + encodeURIComponent(runId) : '/deus/bench/report'
+      return fetch(url).then((r) => r.json())
+    }
+
+    const BENCH_CLS_COLORS = { god: '#d2a8ff', med: '#3fb950', pure: '#79c0ff', unknown: '#8b949e' }
+
+    function benchCellFmt(g, n) {
+      if (!g || !n) return '—'
+      return g.n + '/' + n + ' · ' + Math.round(100 * g.rate) + '% [' + Math.round(100 * g.low) + '–' + Math.round(100 * g.high) + ']'
+    }
+
+    function BenchTable(props) {
+      const report = props.report
+      const t = props.t
+      if (!report) return null
+      const A = report.order[0]
+      const B = report.order[1] || 'B'
+      const vA = report.variants[A]
+      const vB = report.variants[B]
+      const sig = (p) => (p == null ? '' : p < 0.01 ? '✱✱' : p < 0.05 ? '✱' : '')
+      return h('div', { 'data-deus': 'bench-report', style: { marginTop: '8px' } },
+        h('div', { style: S.status },
+          t('benchRunId') + ': ' + report.runId + ' · n=' + report.n +
+          ' · ' + t('benchStarted') + ' ' + String(report.startedAt).slice(11, 19) +
+          ' · ' + t('benchFinished') + ' ' + String(report.finishedAt).slice(11, 19)),
+        h('table', { style: S.benchTable },
+          h('thead', null, h('tr', null,
+            h('th', { style: { ...S.benchCell, textAlign: 'left' } }, t('colFp')),
+            h('th', { style: S.benchCell }, 'A (n=' + (vA ? vA.n : 0) + ')'),
+            h('th', { style: S.benchCell }, 'B (n=' + (vB ? vB.n : 0) + ')'),
+            h('th', { style: S.benchCell }, t('colDelta')),
+            h('th', { style: S.benchCell }, t('colZ')),
+            h('th', { style: S.benchCell }, t('colP')),
+            h('th', { style: S.benchCell }, t('colSig')))),
+          h('tbody', null, (report.comparison || []).map((row) => h('tr', { key: row.cls },
+            h('td', { style: { ...S.benchCell, textAlign: 'left', color: BENCH_CLS_COLORS[row.cls] || '#8b949e' } }, t('detected_' + row.cls)),
+            h('td', { style: S.benchCell }, benchCellFmt(row.a, vA && vA.n)),
+            h('td', { style: S.benchCell }, benchCellFmt(row.b, vB && vB.n)),
+            h('td', { style: S.benchCell }, row.delta == null ? '—' : (row.delta >= 0 ? '+' : '') + Math.round(row.delta * 100) + 'pp'),
+            h('td', { style: S.benchCell }, row.z == null ? '—' : Number(row.z).toFixed(2)),
+            h('td', { style: S.benchCell }, row.p == null ? '—' : row.p < 0.001 ? '<0.001' : Number(row.p).toFixed(3)),
+            h('td', { style: { ...S.benchCell, color: '#d29922' } }, sig(row.p)),
+          )))),
+        vA && vA.prompt ? h('div', { style: { ...S.status, marginTop: '6px' } }, 'A: ' + JSON.stringify(vA.prompt)) : null,
+        vB && vB.prompt ? h('div', { style: S.status }, 'B: ' + JSON.stringify(vB.prompt)) : null,
+      )
+    }
+
     function Panel(props) {
       const t = props.t
       const [presets, setPresets] = useState([])
@@ -107,6 +190,12 @@ window.__ModuleLoader__.load({
       const [err, setErr] = useState('')
       const [copied, setCopied] = useState('')
       const [editing, setEditing] = useState(null) // {id, label_zh, prompt} draft
+      const [benchData, setBenchData] = useState(null) // { ok, report, runs }
+      const [benchRunId, setBenchRunId] = useState('')
+
+      function refreshBench(runId) {
+        fetchBenchReport(runId || undefined).then((d) => setBenchData(d)).catch(() => {})
+      }
 
       function refresh() {
         fetch('/deus/presets').then((r) => r.json()).then((d) => setPresets(d.presets || [])).catch(() => setErr(t('loadFail')))
@@ -114,6 +203,7 @@ window.__ModuleLoader__.load({
         fetch('/deus/log').then((r) => r.json()).then((d) => setEntries(d.entries || [])).catch(() => {})
         fetch('/deus/version').then((r) => r.json()).then(setVer).catch(() => {})
         fetch('/deus/anchor').then((r) => r.json()).then(setAnchor).catch(() => {})
+        refreshBench(benchRunId)
       }
       useEffect(() => { refresh() }, [])
 
@@ -256,6 +346,23 @@ window.__ModuleLoader__.load({
             )
           : h('div', { style: S.status }, t('anchorNone')),
 
+        h('div', { style: S.h2 }, '🧪 ' + t('bench')),
+        h('div', { style: S.status }, t('benchHint')),
+        h('div', { style: S.row },
+          h('button', { style: S.btn, 'data-deus': 'bench-refresh', onClick: () => refreshBench(benchRunId) }, '🔄 ' + t('benchRefresh')),
+          benchData && benchData.runs && benchData.runs.length > 0 ? h('select', {
+            style: { ...S.input, width: 'auto' }, 'data-deus': 'bench-runs',
+            value: benchRunId,
+            onChange: (e) => { setBenchRunId(e.target.value); refreshBench(e.target.value) },
+          },
+            h('option', { value: '' }, t('benchPickRun')),
+            benchData.runs.map((r) => h('option', { key: r.runId, value: r.runId }, r.runId + ' · n=' + r.n)),
+          ) : null,
+        ),
+        benchData && benchData.report
+          ? h(BenchTable, { report: benchData.report, t })
+          : h('div', { style: S.status, 'data-deus': 'bench-empty' }, t('benchNone')),
+
         h('div', { style: S.h2 }, t('recent')),
         h('div', { style: S.status }, t('recentHint')),
         entries.length === 0 ? h('div', { style: S.status }, t('noData'))
@@ -297,6 +404,129 @@ window.__ModuleLoader__.load({
       const [sessPreset, setSessPreset] = useState(null)
       const [showGuide, setShowGuide] = useState(false)
       const lastReanchorKey = useRef('')
+
+      // ── v0.4 实验台（A/B bench）──────────────────────────────────────────
+      const [benchOpen, setBenchOpen] = useState(false)
+      const [benchA, setBenchA] = useState(() => {
+        try { return window.localStorage.getItem('deus.benchA') || t('benchDefA') } catch { return t('benchDefA') }
+      })
+      const [benchB, setBenchB] = useState(() => {
+        try { return window.localStorage.getItem('deus.benchB') || t('benchDefB') } catch { return t('benchDefB') }
+      })
+      const [benchN, setBenchN] = useState(3)
+      const [benchRunning, setBenchRunning] = useState(false)
+      const [benchProg, setBenchProg] = useState(null) // { a, b, n, label, waiting }
+      const [benchReport, setBenchReport] = useState(null)
+      const [benchNote, setBenchNote] = useState('')
+      const benchAbort = useRef(false)
+      const benchRunIdRef = useRef('')
+      const sidRef = useRef(sessionId)
+      const actionsRef = useRef(actions)
+      useEffect(() => { sidRef.current = sessionId; actionsRef.current = actions })
+
+      function sleep(ms) { return new Promise((r) => setTimeout(r, ms)) }
+
+      // 每次试验开一个新会话以隔离上下文：点侧栏「新建会话」按钮，
+      // 然后等 dock 的 sessionId prop 变化（运行时重渲染本会带回新 id）。
+      async function benchNewSession(prevSid) {
+        const sels = [
+          'button[aria-label="新建会话"]', 'button[aria-label="New session"]',
+          '[role="button"][aria-label="新建会话"]', '[role="button"][aria-label="New session"]',
+        ]
+        let btn = null
+        for (const sel of sels) { btn = document.querySelector(sel); if (btn) break }
+        if (!btn) {
+          btn = Array.from(document.querySelectorAll('button, [role="button"]'))
+            .find((b) => /新建会话|New session/i.test((b.getAttribute('aria-label') || '') + ' ' + (b.title || '')))
+        }
+        if (!btn) return false
+        btn.click()
+        const t0 = Date.now()
+        while (Date.now() - t0 < 10000) {
+          await sleep(300)
+          if (String(sidRef.current || '') !== String(prevSid || '')) return true
+        }
+        return false
+      }
+
+      async function abortBench() {
+        benchAbort.current = true
+        try {
+          await fetch('/deus/bench/clear', {
+            method: 'POST', headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ runId: benchRunIdRef.current }),
+          })
+        } catch { /* best-effort */ }
+      }
+
+      async function runBench() {
+        const aText = benchA.trim()
+        const bText = benchB.trim()
+        if (!aText || !bText) { setBenchNote(t('benchEmpty')); return }
+        setBenchRunning(true); setBenchNote(''); setBenchReport(null)
+        benchAbort.current = false
+        const runId = 'bench-' + Date.now().toString(36)
+        benchRunIdRef.current = runId
+        const n = Math.max(1, Math.min(20, Math.floor(Number(benchN) || 1)))
+        const trials = []
+        for (let i = 0; i < n; i++) { trials.push(['A', aText, i + 1]); trials.push(['B', bText, i + 1]) }
+        let doneA = 0
+        let doneB = 0
+        const total = trials.length
+        try { window.__deusBench = { running: true, runId, done: 0, total } } catch { /* ignore */ }
+        try {
+          for (const [variant, text, idx] of trials) {
+            if (benchAbort.current) break
+            setBenchProg({ a: doneA, b: doneB, n, label: variant + '#' + idx, waiting: false })
+            // 1) 新会话隔离（失败则降级为同会话连跑并亮警告）
+            const prevSid = sidRef.current
+            const switched = await benchNewSession(prevSid)
+            if (!switched) { setBenchNote(t('benchIsolationWarn')); await sleep(400) }
+            if (benchAbort.current) break
+            // 2) 等 composer actions 就绪
+            const w0 = Date.now()
+            while (!(actionsRef.current && typeof actionsRef.current.setDraft === 'function')) {
+              if (Date.now() - w0 > 8000) break
+              await sleep(250)
+            }
+            // 3) 宿主标记（文本队列配对）→ 注入并发送
+            try {
+              await fetch('/deus/bench/mark', {
+                method: 'POST', headers: { 'content-type': 'application/json' },
+                body: JSON.stringify({ runId, variant, prompt: text }),
+              })
+            } catch { /* marking best-effort */ }
+            const acts = actionsRef.current
+            if (!acts || typeof acts.setDraft !== 'function' || typeof acts.submit !== 'function') {
+              setBenchNote(t('benchTimeout')); break
+            }
+            acts.setDraft(text)
+            await sleep(200)
+            acts.submit()
+            // 4) 轮询报告计数，等宿主把这轮的指纹判定写进日志
+            setBenchProg({ a: doneA, b: doneB, n, label: variant + '#' + idx, waiting: true })
+            const doneSoFar = doneA + doneB
+            const t0 = Date.now()
+            let arrived = false
+            while (Date.now() - t0 < 240000) {
+              if (benchAbort.current) break
+              await sleep(2000)
+              const rep = await fetchBenchReport(runId).catch(() => null)
+              if (rep && rep.report && rep.report.n >= doneSoFar + 1) { arrived = true; break }
+            }
+            if (!arrived && !benchAbort.current) { setBenchNote(t('benchTimeout')); break }
+            if (variant === 'A') doneA++; else doneB++
+            try { window.__deusBench = { running: true, runId, done: doneA + doneB, total } } catch { /* ignore */ }
+            await sleep(600)
+          }
+        } finally {
+          setBenchRunning(false)
+          setBenchProg(null)
+          try { window.__deusBench = { running: false, runId, done: doneA + doneB, total } } catch { /* ignore */ }
+        }
+        const fin = await fetchBenchReport(runId).catch(() => null)
+        if (fin && fin.report) setBenchReport(fin.report)
+      }
       const REANCHOR = 'We need to continue working on this together. Let us pick up where we left off. 我们继续协作，接着上一步往下做。'
 
       useEffect(() => {
@@ -374,7 +604,37 @@ window.__ModuleLoader__.load({
       const UNANCHORED_PRESET_RE = /^(deus-|minimal)/
       const unanchored = !st && sessPreset && !UNANCHORED_PRESET_RE.test(sessPreset)
 
-      return h('div', { style: S.dock, title: t('dockHint') },
+      const benchPanel = benchOpen ? h('div', { style: S.benchWrap, 'data-deus': 'bench-panel' },
+        h('div', { style: { fontSize: '12px', fontWeight: 600, color: '#e6edf3' } }, '🧪 ' + t('bench')),
+        h('div', { style: S.status }, t('benchHint')),
+        h('div', { style: S.benchLabel }, t('benchA')),
+        h('textarea', {
+          style: S.benchTa, 'data-deus': 'bench-a', value: benchA, disabled: benchRunning,
+          onChange: (e) => { setBenchA(e.target.value); try { window.localStorage.setItem('deus.benchA', e.target.value) } catch { /* ignore */ } },
+        }),
+        h('div', { style: S.benchLabel }, t('benchB')),
+        h('textarea', {
+          style: S.benchTa, 'data-deus': 'bench-b', value: benchB, disabled: benchRunning,
+          onChange: (e) => { setBenchB(e.target.value); try { window.localStorage.setItem('deus.benchB', e.target.value) } catch { /* ignore */ } },
+        }),
+        h('div', { style: { ...S.row, marginTop: '8px', alignItems: 'center' } },
+          h('span', { style: { ...S.benchLabel, margin: 0 } }, t('benchTimes')),
+          h('input', {
+            type: 'number', min: 1, max: 20, 'data-deus': 'bench-n', value: benchN, disabled: benchRunning,
+            style: { background: '#161b22', border: '1px solid #30363d', borderRadius: '8px', color: '#c9d1d9', fontSize: '12px', padding: '4px 6px', width: '60px' },
+            onChange: (e) => setBenchN(e.target.value),
+          }),
+          benchRunning
+            ? h('button', { style: { ...S.btn, color: '#f85149', borderColor: '#f85149' }, 'data-deus': 'bench-abort', onClick: abortBench }, t('benchAbort'))
+            : h('button', { style: S.btnActive, 'data-deus': 'bench-run', onClick: runBench }, t('benchRun')),
+        ),
+        benchProg ? h('div', { style: S.status, 'data-deus': 'bench-progress' },
+          t('benchRunning') + ' · ' + t('benchProgress') + ': A ' + benchProg.a + '/' + benchProg.n + ' · B ' + benchProg.b + '/' + benchProg.n + ' · ' + benchProg.label + (benchProg.waiting ? ' ' + t('benchWaiting') : '')) : null,
+        benchNote ? h('div', { style: { ...S.status, color: '#d29922' }, 'data-deus': 'bench-note' }, benchNote) : null,
+        benchReport ? h(BenchTable, { report: benchReport, t }) : null,
+      ) : null
+
+      const dockRow = h('div', { style: S.dock, title: t('dockHint') },
         h('span', { style: { fontSize: '11px', color: '#8b949e' } }, '⚗'),
         presets.map((p) => h('button', {
           key: p.id, style: S.dockChip, title: t('dockHint'),
@@ -401,7 +661,13 @@ window.__ModuleLoader__.load({
           (autoSend ? '☑ ' : '☐ ') + t('autoSend')),
         st ? h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, title: t('autoReanchor'), onClick: toggleAutoReanchor },
           (autoReanchor ? '☑ ' : '☐ ') + t('autoReanchor')) : null,
+        h('button', {
+          style: { ...S.dockChip, borderStyle: 'dashed', color: benchOpen ? '#d2a8ff' : '#8b949e', borderColor: benchOpen ? '#d2a8ff' : '#30363d' },
+          title: t('bench'), 'data-deus': 'bench-chip',
+          onClick: () => setBenchOpen((v) => !v),
+        }, '🧪 ' + t('bench')),
       )
+      return h('div', { style: { width: '100%' } }, benchPanel, dockRow)
     }
 
     // v0.3: 触发率迷你趋势（最近 40 条日志分 10 桶的 god 率折线）
@@ -453,6 +719,7 @@ window.__ModuleLoader__.load({
       inject: ['slots', 'locale'],
       apply(ctx) {
         try {
+          try { window.__deusClient = '0.4.0' } catch { /* non-browser */ }
           ctx.effect(() => ctx.locale.register(NS, { zh, en }), 'deus-mode: dicts')
           const t = ctx.locale.bind(NS)
           ctx.slots.inject('settings.section', () => ctx.slots.register({

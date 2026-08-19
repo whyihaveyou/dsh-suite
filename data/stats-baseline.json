@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T04:53:44.057Z",
+ "ts": "2026-08-19T05:47:58.526Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -925,6 +925,7 @@
   "dsh-kimi-webbridge",
   "dsh-kimino-theme",
   "dsh-kingdom",
+  "dsh-kline",
   "dsh-knowledge-graph",
   "dsh-kun-like-pet",
   "dsh-lan",
@@ -1914,6 +1915,7 @@
   "dsh-verification-receipt",
   "dsh-video-downloader",
   "dsh-view-modes",
+  "dsh-virtual-product-team",
   "dsh-virtual-workspace",
   "dsh-vision",
   "dsh-vision-237229953-create",
@@ -2333,6 +2335,7 @@
   "puddingagent",
   "pwiki",
   "qaq",
+  "qdd",
   "qiushi-dsh-evidence-audit",
   "quantum-practices",
   "querit-plugins",

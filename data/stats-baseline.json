@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T11:42:11.870Z",
+ "ts": "2026-08-19T13:10:44.436Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -215,6 +215,7 @@
   "deepseek-harness-plugin-mcp",
   "deepseek-harness-provider",
   "deepseek-harness-qqbot",
+  "deepseek-harness-quota-monitor",
   "deepseek-harness-remote",
   "deepseek-harness-rs",
   "deepseek-harness-sdk-rs",
@@ -1126,6 +1127,7 @@
   "dsh-navigation-bar",
   "dsh-nebulagraph-v5",
   "dsh-negative-ledger",
+  "dsh-nested-followups",
   "dsh-net-proxy",
   "dsh-netcafe",
   "dsh-netdoctor",
@@ -2164,6 +2166,7 @@
   "graycode-for-dsh-graycodeteam",
   "ha-orchestrator",
   "hana-dsh-bridge",
+  "hanai-investment-dsh",
   "hard-flash",
   "harmony-next-skills",
   "harness-ai-kit",

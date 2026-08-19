@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-18T23:37:32.506Z",
+ "ts": "2026-08-19T01:54:59.022Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -107,6 +107,7 @@
   "cloudbase-ai-toolkit",
   "co-engram",
   "cobsidian",
+  "cocode",
   "code2skill",
   "codex-plugin-dsh",
   "codex-switch",
@@ -1016,6 +1017,7 @@
   "dsh-mcp-settings",
   "dsh-md-notes",
   "dsh-md-preview",
+  "dsh-md-quiz",
   "dsh-mdbox",
   "dsh-media-preview",
   "dsh-media-skills",
@@ -1666,6 +1668,7 @@
   "dsh-sound",
   "dsh-sound-effects-plugin",
   "dsh-soundscape",
+  "dsh-speak",
   "dsh-spec-loop",
   "dsh-specflow",
   "dsh-spend",
@@ -2032,6 +2035,7 @@
   "dsh-window",
   "dsh-windows-ocr",
   "dsh-windows-readiness-proof",
+  "dsh-with-pencil",
   "dsh-withskillhub",
   "dsh-wordbox",
   "dsh-work",

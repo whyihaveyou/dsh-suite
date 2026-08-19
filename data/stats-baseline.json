@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T13:10:44.436Z",
+ "ts": "2026-08-19T13:59:16.246Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -721,6 +721,7 @@
   "dsh-drop-file-to-path",
   "dsh-drop-to-path",
   "dsh-dynamic-island",
+  "dsh-ears",
   "dsh-easyssh",
   "dsh-eco-router",
   "dsh-effort-config",

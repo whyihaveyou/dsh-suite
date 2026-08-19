@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T08:56:40.627Z",
+ "ts": "2026-08-19T09:51:16.589Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1513,6 +1513,7 @@
   "dsh-recommend",
   "dsh-record-replay",
   "dsh-recovery-proof",
+  "dsh-redteam-model",
   "dsh-refined",
   "dsh-release-proof",
   "dsh-reloader",
@@ -1556,6 +1557,7 @@
   "dsh-safe-delete",
   "dsh-same-mode-sandbox-noop",
   "dsh-sandbox-escalation-fix",
+  "dsh-sandbox-escalation-fix-justmonika2022",
   "dsh-satori",
   "dsh-save-money",
   "dsh-schedule",
@@ -1835,6 +1837,7 @@
   "dsh-toy",
   "dsh-tps",
   "dsh-trace",
+  "dsh-trace-compare",
   "dsh-track",
   "dsh-trading",
   "dsh-trail",
@@ -2131,6 +2134,7 @@
   "flashcoder",
   "flowboard",
   "flowix",
+  "forgeax-dsh-game-plugin",
   "forkprobe",
   "free-vision-skill",
   "freestyle-dsh-theme",

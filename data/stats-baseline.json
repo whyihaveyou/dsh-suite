@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T07:07:02.881Z",
+ "ts": "2026-08-19T07:55:27.073Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -530,6 +530,7 @@
   "dsh-code-impact",
   "dsh-code-intel",
   "dsh-code-lens",
+  "dsh-code-review",
   "dsh-codebuddy",
   "dsh-codex",
   "dsh-codex-agent-bridge",
@@ -1772,6 +1773,7 @@
   "dsh-tianshu-build",
   "dsh-tianshu-tui",
   "dsh-tianshu-tui-placeholder",
+  "dsh-tier-router",
   "dsh-tiered-approval",
   "dsh-timeline",
   "dsh-tmcra-memory",
@@ -1880,6 +1882,7 @@
   "dsh-ultra-ui",
   "dsh-undo",
   "dsh-undo-plugin",
+  "dsh-undo-savepoint",
   "dsh-univer-office",
   "dsh-unlimited-ocr-skill",
   "dsh-unread-dot",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T09:51:16.589Z",
+ "ts": "2026-08-19T10:47:56.409Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -722,6 +722,7 @@
   "dsh-easyssh",
   "dsh-eco-router",
   "dsh-effort-config",
+  "dsh-effort-slider",
   "dsh-effort-tweak",
   "dsh-ego-browser",
   "dsh-egress-guard",
@@ -2083,6 +2084,7 @@
   "dsh-wsl-workspace",
   "dsh-xai",
   "dsh-xiaohei",
+  "dsh-xiaotangyuan-game",
   "dsh-xiaoyao-skins",
   "dsh-xiapan-media",
   "dsh-yolo-mode",
@@ -2301,6 +2303,7 @@
   "open-sea-skin",
   "openbiliclaw",
   "opencode-usage",
+  "opencontext",
   "opencues",
   "openflowframes",
   "openguardrails",

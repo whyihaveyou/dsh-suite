@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T07:55:27.073Z",
+ "ts": "2026-08-19T08:56:40.627Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -199,6 +199,7 @@
   "deepseek-harness-lark",
   "deepseek-harness-linux",
   "deepseek-harness-lite",
+  "deepseek-harness-mac",
   "deepseek-harness-memory",
   "deepseek-harness-mobile",
   "deepseek-harness-model-config",
@@ -724,6 +725,7 @@
   "dsh-effort-tweak",
   "dsh-ego-browser",
   "dsh-egress-guard",
+  "dsh-eli-mode",
   "dsh-email",
   "dsh-emoji",
   "dsh-encrypt",
@@ -1931,6 +1933,7 @@
   "dsh-vision-android",
   "dsh-vision-bridge",
   "dsh-vision-bridge-lium970320",
+  "dsh-vision-bridge-sfyyy",
   "dsh-vision-bridge-ximengxiaolan",
   "dsh-vision-complete",
   "dsh-vision-helper",
@@ -2230,6 +2233,7 @@
   "mcp-sentinel",
   "mcp-server",
   "mellos-mapping",
+  "mem9",
   "memmy-agent",
   "memos",
   "memtrace-public",

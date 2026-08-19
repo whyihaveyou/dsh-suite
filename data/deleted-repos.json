@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T07:55:26.981Z",
+  "generated_at": "2026-08-19T08:56:40.534Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -146,6 +146,15 @@
       "lastKnownUrl": "https://github.com/Roy-oss1/dsh-lark"
     },
     {
+      "repo": "shenyan-008/dsh-visual-aid",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-19T07:55:26.965Z",
+      "lastDetectedAt": "2026-08-19T08:56:40.516Z",
+      "lastStars": 6,
+      "lastPush": "2026-08-19",
+      "lastKnownUrl": "https://github.com/shenyan-008/dsh-visual-aid"
+    },
+    {
       "repo": "Shmilyol/dsh-hiyori-skin",
       "seen": 2,
       "firstDetectedAt": "2026-08-15T06:59:44.217Z",
@@ -227,13 +236,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "shenyan-008/dsh-visual-aid",
+      "repo": "MoonGlassKitty/dsh-tailscale-sync",
       "seen": 1,
-      "firstDetectedAt": "2026-08-19T07:55:26.965Z",
-      "lastDetectedAt": "2026-08-19T07:55:26.966Z",
-      "lastStars": 6,
-      "lastPush": "2026-08-19",
-      "lastKnownUrl": "https://github.com/shenyan-008/dsh-visual-aid"
+      "firstDetectedAt": "2026-08-19T08:56:40.516Z",
+      "lastDetectedAt": "2026-08-19T08:56:40.516Z",
+      "lastStars": 4,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/MoonGlassKitty/dsh-tailscale-sync"
     }
   ]
 }

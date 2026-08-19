@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T17:42:23.824Z",
+ "ts": "2026-08-19T18:55:11.188Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -306,6 +306,7 @@
   "dsh-advisor-glangzh",
   "dsh-advisor-omdsh-dev",
   "dsh-advisor-slhssb",
+  "dsh-aemeath",
   "dsh-aemeath-pet",
   "dsh-agent-arcade",
   "dsh-agent-board",
@@ -1168,6 +1169,7 @@
   "dsh-of-your-own",
   "dsh-office",
   "dsh-oh-my-theme",
+  "dsh-oil-creator",
   "dsh-omi-voice",
   "dsh-one-click-launcher",
   "dsh-onebot",
@@ -2423,6 +2425,7 @@
   "solo-memory",
   "specfusion",
   "spike-faye-lei-dsh-skills",
+  "sprites-deepseek-plugin",
   "star-deepseek-harness-desktop",
   "stock-analysis-plugin",
   "succinix",

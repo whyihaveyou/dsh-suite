@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T19:00:55.834Z",
+ "ts": "2026-08-20T19:49:27.223Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1113,6 +1113,7 @@
   "dsh-mobile-hanui",
   "dsh-mobile-nav",
   "dsh-mobile-saya-ch",
+  "dsh-mobile-simonmedy",
   "dsh-model-config-sync",
   "dsh-model-failover",
   "dsh-model-meta-autofill",
@@ -2229,6 +2230,7 @@
   "hesi-dsh-plugins",
   "hn-cli",
   "hol-guard",
+  "holdem",
   "hologram",
   "html-doc-center",
   "humanizer-ru",

@@ -49013,8 +49013,8 @@
    "url": "https://github.com/kingOfSoySauce/dsh-liang-skin",
    "category": "ui",
    "description": {
-    "en": "DeepSeek Harness 滑动变阻器皮肤",
-    "zh": "DeepSeek Harness 滑动变阻器皮肤"
+    "en": "Liang-Stan adaptive reasoning slider skin (Jiankang Liang meme) for DeepSeek Harness",
+    "zh": "滑动变祖器皮肤：滑块控制『梁圣等级』（自适应推理强度），梗图风 DSH 皮肤"
    },
    "author": "kingOfSoySauce",
    "stars": 117,
@@ -49029,7 +49029,7 @@
     "status": "broken",
     "dshVersion": "0.1.0-rc.7",
     "lastVerified": "2026-08-19",
-    "note": "dump-config exit=0 but plugin not found in composed tree"
+    "note": "dump-config exit=0 but plugin not found in composed tree (client-inject skin may need web restart)"
    },
    "install": "",
    "featured": false,
@@ -61365,6 +61365,106 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto"
+  },
+  {
+   "id": "dsh-skin-alphacoders",
+   "name": "dsh-skin-alphacoders",
+   "npm": null,
+   "repo": "sakka6868/dsh-skin",
+   "url": "https://github.com/sakka6868/dsh-skin",
+   "category": "ui",
+   "description": {
+    "en": "Alphacoders wallpapers as the DeepSeek Harness Web GUI background — gallery, search, local upload, per-theme wallpapers, favorites, auto-change, history",
+    "zh": "用 Alphacoders 热门壁纸当 DSH Web 背景：图库、搜索、本地上传、按主题换壁纸、收藏与自动更换"
+   },
+   "author": "sakka6868",
+   "stars": 2,
+   "license": "MIT",
+   "language": "TypeScript",
+   "install": "",
+   "installNote": "build-from-source: web client 皮肤（git 源）；仓库名 sakka6868/dsh-skin 与包名 dsh-skin-alphacoders 不一致，按包名收录",
+   "sourceNote": "manual",
+   "last_push": "2026-08-15"
+  },
+  {
+   "id": "dsh-trapstreet",
+   "name": "dsh-trapstreet",
+   "npm": "@trapstreet/dsh-trapstreet",
+   "repo": "trapstreet/dsh-trapstreet",
+   "url": "https://github.com/trapstreet/dsh-trapstreet",
+   "category": "tools",
+   "description": {
+    "en": "Shows which of your plugins actually loaded (reads the loader tree in-process) and scores your running config on a public evaluation board, alongside a no-plugin control.",
+    "zh": "告诉你装的插件里哪些真的在跑：进程内直读 loader 树，并把当前配置拿去公开评测板跑分（带无插件对照）"
+   },
+   "author": "trapstreet",
+   "stars": 1,
+   "license": "MIT",
+   "language": "JavaScript",
+   "install": "dsh plugin add @trapstreet/dsh-trapstreet",
+   "installNote": "",
+   "sourceNote": "manual",
+   "last_push": "2026-08-18"
+  },
+  {
+   "id": "dsh-minecraft",
+   "name": "dsh-minecraft",
+   "npm": "dsh-minecraft",
+   "repo": "Ruqii/dsh-minecraft",
+   "url": "https://github.com/Ruqii/dsh-minecraft",
+   "category": "utility",
+   "description": {
+    "en": "Play real Minecraft from DSH — the agent observes, walks, mines, crafts and fights through a live Mineflayer bot, watchable in the browser.",
+    "zh": "从 DSH 里玩真实 Minecraft：agent 驱动 Mineflayer bot 观察、行走、挖掘、合成、战斗，浏览器可实时观战"
+   },
+   "author": "Ruqii",
+   "stars": 0,
+   "license": "MIT",
+   "language": "JavaScript",
+   "install": "dsh plugin add dsh-minecraft",
+   "installNote": "",
+   "sourceNote": "manual",
+   "last_push": "2026-08-19"
+  },
+  {
+   "id": "dsh-input-traffic",
+   "name": "dsh-input-traffic",
+   "npm": null,
+   "repo": "drscrewdriver/dsh-input-traffic",
+   "url": "https://github.com/drscrewdriver/dsh-input-traffic",
+   "category": "ui",
+   "description": {
+    "en": "Busy-time input queue for the DSH Web GUI: three-tier (now/next/later) planning, drag-to-reorder, interject/interrupt, batch clear, session freeze.",
+    "zh": "DSH Web GUI 忙时输入队列：三档交通管制（现在/稍后/排队），拖拽重排、插话打断、批量清空、会话冻结"
+   },
+   "author": "drscrewdriver",
+   "stars": 2,
+   "license": "MIT",
+   "language": "TypeScript",
+   "install": "",
+   "installNote": "",
+   "sourceNote": "manual",
+   "last_push": "2026-08-20"
+  },
+  {
+   "id": "dsh-thinking-levels",
+   "name": "dsh-thinking-levels",
+   "npm": null,
+   "repo": "drscrewdriver/dsh-thinking-levels",
+   "url": "https://github.com/drscrewdriver/dsh-thinking-levels",
+   "category": "llm",
+   "description": {
+    "en": "Per-round thinking-level (reasoning_effort) control for DSH: Auto schedules low/high/max from tool-call history, or fix a manual wire level (off/low/high/max).",
+    "zh": "DSH 逐轮思考档位控制：Auto 依工具调用历史自动调度 low/high/max，或手动固定 off/low/high/max"
+   },
+   "author": "drscrewdriver",
+   "stars": 1,
+   "license": "",
+   "language": "TypeScript",
+   "install": "",
+   "installNote": "",
+   "sourceNote": "manual",
+   "last_push": "2026-08-20"
   }
  ],
  "watchlist": [

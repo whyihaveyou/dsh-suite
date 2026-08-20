@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T07:57:57.568Z",
+ "ts": "2026-08-20T08:58:25.755Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -450,6 +450,7 @@
   "dsh-bottom-bar",
   "dsh-bottom-info-bar",
   "dsh-bottom-stats",
+  "dsh-bridge",
   "dsh-browser",
   "dsh-browser-anweat",
   "dsh-browser-ben7am1n",
@@ -1548,6 +1549,7 @@
   "dsh-remote-sandbox",
   "dsh-remote-ssh",
   "dsh-remote-tunnel",
+  "dsh-remote-web-gateway",
   "dsh-remote-xgone",
   "dsh-remotion",
   "dsh-replay",
@@ -2098,6 +2100,7 @@
   "dsh-workbench",
   "dsh-workbench-dpf555",
   "dsh-workbench-lee259",
+  "dsh-workbuddy-connect",
   "dsh-workflow",
   "dsh-workflow-omdsh-dev",
   "dsh-workflow-worktree",
@@ -2176,6 +2179,7 @@
   "function-testing",
   "gal-view",
   "galgame-skin",
+  "garmin-connect-plugin-for-dsh",
   "gemini-eyes",
   "geml",
   "geo-content-optimizer",

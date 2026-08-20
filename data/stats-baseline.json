@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T22:47:02.314Z",
+ "ts": "2026-08-20T23:42:19.206Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -562,6 +562,7 @@
   "dsh-codex-tools",
   "dsh-codex-ui",
   "dsh-coding-companion",
+  "dsh-coding-subscription-oauth",
   "dsh-command-opt",
   "dsh-commandcode-go-provider",
   "dsh-commandcode-provider",

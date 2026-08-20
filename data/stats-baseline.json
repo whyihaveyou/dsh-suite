@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T14:56:33.018Z",
+ "ts": "2026-08-20T15:51:03.750Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -94,6 +94,7 @@
   "ccteam",
   "cetus",
   "chat2skill",
+  "chatgpt-gemini-timeline",
   "chimera",
   "chiral-pulse",
   "chrome-mcp-bridge-2026-skill",
@@ -2052,6 +2053,7 @@
   "dsh-web-search-tavily-cnchenkai",
   "dsh-web-search-tavily-nitrazepam01",
   "dsh-web-search-tavily-szmy-haruhi",
+  "dsh-web-startup-auth",
   "dsh-web-text-drop",
   "dsh-web-theme-packs",
   "dsh-web-tools",

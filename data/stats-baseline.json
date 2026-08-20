@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T09:52:04.621Z",
+ "ts": "2026-08-20T10:49:09.410Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -847,6 +847,7 @@
   "dsh-godot-skill",
   "dsh-godot-tool",
   "dsh-gomoku",
+  "dsh-gov-portal",
   "dsh-governance",
   "dsh-gpu",
   "dsh-grafana",
@@ -2370,6 +2371,7 @@
   "pi-deepseek-anchor",
   "pi-discuss-mode",
   "pi-mm-vision",
+  "pi-trace-extension",
   "pi2dsh",
   "picgo-core",
   "picturereader",

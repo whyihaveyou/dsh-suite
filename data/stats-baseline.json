@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T01:53:22.114Z",
+ "ts": "2026-08-20T03:11:48.182Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1594,6 +1594,7 @@
   "dsh-self-evolution",
   "dsh-self-improved",
   "dsh-sentinel",
+  "dsh-serial-console",
   "dsh-server-deployment",
   "dsh-session-analyst",
   "dsh-session-audit",
@@ -2359,6 +2360,7 @@
   "plugin-template",
   "polaris",
   "powercontext-dsh",
+  "ppt-design-skill",
   "pptfast",
   "preset-center",
   "primordial-soup",

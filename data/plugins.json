@@ -60379,13 +60379,13 @@
   {
    "id": "dsh-trace-compare",
    "name": "dsh-trace-compare",
-   "npm": null,
+   "npm": "dsh-trace-compare",
    "repo": "lamost423/dsh-trace-compare",
    "url": "https://github.com/lamost423/dsh-trace-compare",
    "category": "session",
    "description": {
     "en": "Trace Compare & Live Maze for DeepSeek Harness: visualize agent exploration (main path, detours, backtracks) from session logs or live sess…",
-    "zh": "untranslated"
+    "zh": "执行轨迹可视化：主干、失败支路、折返点与子代理支路画在同一根墙钟时间轴上；支持上传 1–2 个 session log 同轴对比，或在会话页签实时看迷宫生长。"
    },
    "author": "lamost423",
    "stars": 35,
@@ -60403,7 +60403,7 @@
     "lastVerified": "",
     "note": ""
    },
-   "install": "",
+   "install": "dsh plugin --profile web add dsh-trace-compare",
    "featured": false,
    "isOfficialBeta": false,
    "language": "HTML",

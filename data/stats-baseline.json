@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T17:49:51.397Z",
+ "ts": "2026-08-20T19:00:55.834Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -137,6 +137,7 @@
   "de-anthropocentric-research-engine",
   "deep-option",
   "deep-pi",
+  "deep-read-summarize",
   "deepact",
   "deepagent",
   "deepagents-mini-harness",
@@ -1662,6 +1663,7 @@
   "dsh-sight",
   "dsh-simplify",
   "dsh-sitemap",
+  "dsh-skill-7d-code-reviewer",
   "dsh-skill-evolve",
   "dsh-skill-hub",
   "dsh-skill-loader",
@@ -1737,6 +1739,7 @@
   "dsh-story",
   "dsh-stream-rules",
   "dsh-studio",
+  "dsh-studio-euanguo",
   "dsh-subagent-admission",
   "dsh-subagent-cwd",
   "dsh-subagent-max",

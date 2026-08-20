@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T05:48:10.259Z",
+ "ts": "2026-08-20T07:07:53.775Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -879,6 +879,7 @@
   "dsh-history",
   "dsh-hiyori-skin",
   "dsh-home-ui",
+  "dsh-honcho-sync",
   "dsh-host-web-compat",
   "dsh-hotkeys",
   "dsh-hotplug-engine",
@@ -1323,6 +1324,7 @@
   "dsh-plugin-healthcheck",
   "dsh-plugin-hello",
   "dsh-plugin-hub",
+  "dsh-plugin-hub-dshplugin",
   "dsh-plugin-hub-yunhuantian",
   "dsh-plugin-image-wallpaper",
   "dsh-plugin-installer",
@@ -1407,6 +1409,7 @@
   "dsh-plugin-switch",
   "dsh-plugin-sysmon",
   "dsh-plugin-tabbit-browser",
+  "dsh-plugin-tavily",
   "dsh-plugin-template",
   "dsh-plugin-template-sunshine-lang",
   "dsh-plugin-terminal",
@@ -2401,6 +2404,7 @@
   "research-skills",
   "review-workflow",
   "riffkit-dsh-plugin",
+  "risk-rule-design",
   "rocketx",
   "role-model",
   "rotifer-playground",

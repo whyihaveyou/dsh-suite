@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T11:44:46.408Z",
+ "ts": "2026-08-20T13:12:35.203Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -488,6 +488,7 @@
   "dsh-chat-tools",
   "dsh-chat-width",
   "dsh-chatgpt-bridge",
+  "dsh-chatgpt-subscription",
   "dsh-chatnode-wechat",
   "dsh-checkpoint",
   "dsh-checkpoint-rewind",
@@ -1815,6 +1816,7 @@
   "dsh-tier-router",
   "dsh-tiered-approval",
   "dsh-timeline",
+  "dsh-timeline-houyanchao",
   "dsh-tmcra-memory",
   "dsh-todo-freshness-guard",
   "dsh-token-activity",

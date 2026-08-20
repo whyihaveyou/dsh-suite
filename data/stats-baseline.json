@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T03:11:48.182Z",
+ "ts": "2026-08-20T04:00:14.642Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -127,6 +127,7 @@
   "cordis-rs",
   "cosyncing",
   "create-dsh-plugin",
+  "custom-first-control-prompt",
   "dafy-whale-theme",
   "dash",
   "dash-realchenwenqiao",
@@ -1774,6 +1775,7 @@
   "dsh-test-workbench",
   "dsh-testgen",
   "dsh-theme-cyberpunk2077",
+  "dsh-theme-endfield",
   "dsh-theme-firefly",
   "dsh-theme-neko",
   "dsh-theme-pack",
@@ -2378,6 +2380,7 @@
   "quantum-practices",
   "querit-plugins",
   "qwen-mm-plugins",
+  "ramify-dsh",
   "raphael-loop",
   "rapid-mlx-dsh-provider",
   "re-framework",

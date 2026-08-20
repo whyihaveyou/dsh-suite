@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-20T04:55:00.785Z",
+ "ts": "2026-08-20T05:48:10.259Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1335,6 +1335,7 @@
   "dsh-plugin-knowledge-graph",
   "dsh-plugin-langfuse",
   "dsh-plugin-llm-codex",
+  "dsh-plugin-llm-verifier",
   "dsh-plugin-longgraph",
   "dsh-plugin-loongsuite",
   "dsh-plugin-manager",
@@ -1417,6 +1418,7 @@
   "dsh-plugin-uisfx",
   "dsh-plugin-usage-dashboard",
   "dsh-plugin-usage-report",
+  "dsh-plugin-uw",
   "dsh-plugin-verified-search",
   "dsh-plugin-verify",
   "dsh-plugin-vetting",

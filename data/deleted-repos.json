@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T04:00:14.547Z",
+  "generated_at": "2026-08-20T04:55:00.694Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -54,6 +54,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/D-Robotics/dsh-plugin-rdk"
+    },
+    {
+      "repo": "Da-Mie/dsh-beacons",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-20T04:00:14.410Z",
+      "lastDetectedAt": "2026-08-20T04:55:00.676Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Da-Mie/dsh-beacons"
     },
     {
       "repo": "DreamZhongJu/dsh-codex-sync",
@@ -243,15 +252,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Da-Mie/dsh-beacons",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-20T04:00:14.410Z",
-      "lastDetectedAt": "2026-08-20T04:00:14.410Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/Da-Mie/dsh-beacons"
     }
   ]
 }

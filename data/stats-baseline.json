@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-19T23:38:10.249Z",
+ "ts": "2026-08-20T01:53:22.114Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -554,6 +554,7 @@
   "dsh-codex-subscription-yequ172672",
   "dsh-codex-sync",
   "dsh-codex-tools",
+  "dsh-codex-ui",
   "dsh-coding-companion",
   "dsh-command-opt",
   "dsh-commandcode-go-provider",
@@ -1735,6 +1736,7 @@
   "dsh-system-control",
   "dsh-system-proxy",
   "dsh-tailscale-console",
+  "dsh-tailscale-gateway",
   "dsh-tailscale-sync",
   "dsh-task-checklist",
   "dsh-task-console",
@@ -1934,6 +1936,7 @@
   "dsh-user-plugins-manager",
   "dsh-utility-tools",
   "dsh-ux",
+  "dsh-ux-ayuanwong",
   "dsh-vault",
   "dsh-vault-feiyang-dev",
   "dsh-ventus-whale",
@@ -2406,6 +2409,7 @@
   "securstack-dsh-plugin",
   "seektty",
   "seewxapkg",
+  "ser2mcp",
   "session-archive-manager",
   "session-persistence-rdb",
   "session-seed-plugin",

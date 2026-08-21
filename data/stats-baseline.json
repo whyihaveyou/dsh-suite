@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T04:55:58.441Z",
+ "ts": "2026-08-21T05:49:58.841Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1243,6 +1243,7 @@
   "dsh-permgate",
   "dsh-permission-rules",
   "dsh-persona-memory",
+  "dsh-personal-center",
   "dsh-personalize",
   "dsh-pet",
   "dsh-pet-corner",
@@ -1624,6 +1625,7 @@
   "dsh-sentinel",
   "dsh-serial-console",
   "dsh-server-deployment",
+  "dsh-server-login",
   "dsh-session-analyst",
   "dsh-session-audit",
   "dsh-session-cleaner",
@@ -2542,6 +2544,7 @@
   "wanjiqi-meme",
   "web-components",
   "webdsh",
+  "weknora",
   "wemeet-openapi",
   "weshop-dsh-plugin",
   "wesight",

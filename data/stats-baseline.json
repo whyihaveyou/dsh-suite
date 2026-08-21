@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T03:18:02.051Z",
+ "ts": "2026-08-21T04:06:06.948Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -580,6 +580,7 @@
   "dsh-computer-use-geohotstan",
   "dsh-computer-use-xiaoheizi1212",
   "dsh-computer-use-zrui-c",
+  "dsh-config-manager",
   "dsh-container",
   "dsh-context",
   "dsh-context-doctor",
@@ -1763,6 +1764,7 @@
   "dsh-survey",
   "dsh-survival",
   "dsh-switch",
+  "dsh-synapse",
   "dsh-sysmon",
   "dsh-system-control",
   "dsh-system-proxy",
@@ -2357,6 +2359,7 @@
   "oh-my-dsh-liumengxuan04",
   "oh-my-dsh-nowint",
   "oh-my-dsh-wangshunnn",
+  "oh-story-dsh",
   "omdp",
   "omdsh",
   "omdsh-runtime",
@@ -2472,6 +2475,7 @@
   "silk-background",
   "sivtr",
   "skill",
+  "skillcorpus",
   "skills",
   "skills-link",
   "skills-upstash",

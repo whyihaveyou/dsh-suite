@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T18:57:37.257Z",
+ "ts": "2026-08-21T19:39:19.252Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1315,6 +1315,7 @@
   "dsh-plugin-codex",
   "dsh-plugin-codex-bridge",
   "dsh-plugin-codex-import",
+  "dsh-plugin-collection",
   "dsh-plugin-colorscheme",
   "dsh-plugin-consult",
   "dsh-plugin-context-compressor",

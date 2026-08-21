@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T07:58:50.165Z",
+ "ts": "2026-08-21T09:00:08.821Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -359,6 +359,7 @@
   "dsh-approval-llm",
   "dsh-approve-for-me",
   "dsh-archive-manager",
+  "dsh-archive-manager-michengai",
   "dsh-archive-viewer",
   "dsh-archive-viewer-csiroqa",
   "dsh-archive-viewer-keepermttl",
@@ -2083,6 +2084,7 @@
   "dsh-webfetch",
   "dsh-webhook-bridge",
   "dsh-webproxy-router-plugin",
+  "dsh-webui",
   "dsh-webui-auth",
   "dsh-webui-glass-theme",
   "dsh-webui-market-plugin",

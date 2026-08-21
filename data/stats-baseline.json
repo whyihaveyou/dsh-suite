@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T10:49:07.006Z",
+ "ts": "2026-08-21T11:44:02.244Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -928,6 +928,7 @@
   "dsh-image2-draw",
   "dsh-imagecraft",
   "dsh-imagegen",
+  "dsh-imessage",
   "dsh-imggenerate",
   "dsh-import-agents",
   "dsh-index",
@@ -1589,6 +1590,7 @@
   "dsh-revive",
   "dsh-rewind",
   "dsh-rewind-2501136589",
+  "dsh-rewind-sirilee",
   "dsh-robotic-harness",
   "dsh-role-router",
   "dsh-roleplay-preset",
@@ -1776,6 +1778,7 @@
   "dsh-sysmon",
   "dsh-system-control",
   "dsh-system-proxy",
+  "dsh-tabbit",
   "dsh-tailscale-console",
   "dsh-tailscale-gateway",
   "dsh-tailscale-sync",

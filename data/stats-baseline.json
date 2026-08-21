@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T05:49:58.841Z",
+ "ts": "2026-08-21T07:09:12.431Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1156,6 +1156,7 @@
   "dsh-net-proxy",
   "dsh-netcafe",
   "dsh-netdoctor",
+  "dsh-network-settings",
   "dsh-niulai-pet",
   "dsh-nocturne-memory",
   "dsh-node-nav",
@@ -1390,6 +1391,7 @@
   "dsh-plugin-notify-huguangyu666",
   "dsh-plugin-open-editor",
   "dsh-plugin-opencode-bridge",
+  "dsh-plugin-pack-web",
   "dsh-plugin-peak-pricing",
   "dsh-plugin-pet",
   "dsh-plugin-pet-rs",
@@ -2233,6 +2235,7 @@
   "harness-pet",
   "harness-ui-enhancer",
   "harness-whale",
+  "hedgehog",
   "hello-dsh",
   "helloagents",
   "helm-d",

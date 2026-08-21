@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T13:13:23.288Z",
+ "ts": "2026-08-21T14:00:28.908Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1124,6 +1124,7 @@
   "dsh-mobile-nav",
   "dsh-mobile-saya-ch",
   "dsh-mobile-simonmedy",
+  "dsh-mobile-thanksgiver233",
   "dsh-model-config-sync",
   "dsh-model-failover",
   "dsh-model-meta-autofill",
@@ -1224,6 +1225,7 @@
   "dsh-opencode-palette",
   "dsh-opencode-usage",
   "dsh-opencode-usage-vinyumao",
+  "dsh-opencode-zen",
   "dsh-opencodego-usage",
   "dsh-openmaic",
   "dsh-openpencil",
@@ -2464,6 +2466,7 @@
   "rotifer-playground",
   "rpg-maker-mac-skill",
   "ru-marketplace-mcp",
+  "ruflo",
   "safe-find-dsh-plugins",
   "sage-mem",
   "sai",

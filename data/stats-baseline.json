@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T01:59:15.096Z",
+ "ts": "2026-08-21T03:18:02.051Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1155,6 +1155,7 @@
   "dsh-net-proxy",
   "dsh-netcafe",
   "dsh-netdoctor",
+  "dsh-niulai-pet",
   "dsh-nocturne-memory",
   "dsh-node-nav",
   "dsh-noema",
@@ -1803,6 +1804,7 @@
   "dsh-test-runner",
   "dsh-test-workbench",
   "dsh-testgen",
+  "dsh-tether",
   "dsh-theme-cyberpunk2077",
   "dsh-theme-endfield",
   "dsh-theme-firefly",
@@ -2145,6 +2147,7 @@
   "dsh-youmind-plugin",
   "dsh-yuzuha-prompts-manager",
   "dsh-zen",
+  "dsh-zen-remote",
   "dsh-zh-hant-hk",
   "dsh-zh-output",
   "dsh-zotero",

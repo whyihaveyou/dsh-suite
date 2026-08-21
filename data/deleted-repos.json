@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T14:55:38.973Z",
+  "generated_at": "2026-08-21T15:50:20.912Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -236,6 +236,15 @@
       "lastKnownUrl": "https://github.com/walavave/dsh-git"
     },
     {
+      "repo": "wjy9902/dsh-web-default-session",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-21T14:55:38.953Z",
+      "lastDetectedAt": "2026-08-21T15:50:20.896Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/wjy9902/dsh-web-default-session"
+    },
+    {
       "repo": "yeshimei/dsh-sound",
       "seen": 2,
       "firstDetectedAt": "2026-08-14T19:22:19.301Z",
@@ -279,15 +288,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "wjy9902/dsh-web-default-session",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-21T14:55:38.953Z",
-      "lastDetectedAt": "2026-08-21T14:55:38.953Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/wjy9902/dsh-web-default-session"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T04:55:00.694Z",
+  "generated_at": "2026-08-21T01:59:14.999Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -245,6 +245,24 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
+      "repo": "Anil-matcha/awesome-deepseek-harness",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-21T01:59:14.844Z",
+      "lastDetectedAt": "2026-08-21T01:59:14.844Z",
+      "lastStars": 964,
+      "lastPush": "2026-08-20",
+      "lastKnownUrl": "https://github.com/Anil-matcha/awesome-deepseek-harness"
+    },
+    {
+      "repo": "Anil-matcha/awesome-dsh-plugin",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-21T01:59:14.844Z",
+      "lastDetectedAt": "2026-08-21T01:59:14.844Z",
+      "lastStars": 964,
+      "lastPush": "2026-08-20",
+      "lastKnownUrl": "https://github.com/Anil-matcha/awesome-dsh-plugin"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -252,6 +270,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "hyls9527/dsh-plugins",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-21T01:59:14.843Z",
+      "lastDetectedAt": "2026-08-21T01:59:14.843Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/hyls9527/dsh-plugins"
     }
   ]
 }

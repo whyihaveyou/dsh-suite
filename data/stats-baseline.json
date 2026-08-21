@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T15:50:21.001Z",
+ "ts": "2026-08-21T16:54:08.470Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -449,6 +449,7 @@
   "dsh-bisect-debug",
   "dsh-black-whale",
   "dsh-blackjack",
+  "dsh-bloom-theme",
   "dsh-blue-whale",
   "dsh-blue-whale-maid",
   "dsh-board",
@@ -1013,6 +1014,7 @@
   "dsh-llm-newapi",
   "dsh-llm-oauth",
   "dsh-llm-proxy",
+  "dsh-llm-verifier",
   "dsh-llm-vision-bridge",
   "dsh-llm-wechat",
   "dsh-llm-wiki",
@@ -1111,6 +1113,7 @@
   "dsh-minimal-v3",
   "dsh-minimal-vision",
   "dsh-miraculous-standard",
+  "dsh-mmem",
   "dsh-mmx-bridge",
   "dsh-mneme",
   "dsh-mnemon",
@@ -2410,6 +2413,7 @@
   "pa-dsh",
   "pack-agent",
   "paper-plane-x",
+  "papi",
   "paste-to-workspace",
   "pawin-brain-deepseek-harness",
   "peanut-dsh-plugin",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T20:41:36.272Z",
+ "ts": "2026-08-22T21:37:56.373Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1628,8 +1628,10 @@
   "dsh-roleplay-preset",
   "dsh-ros2",
   "dsh-router-flash",
+  "dsh-router-standard",
   "dsh-routines",
   "dsh-routing-suite",
+  "dsh-routing-suite-yjh051108",
   "dsh-rss",
   "dsh-rtk-optimizer",
   "dsh-rules-manager",
@@ -2475,6 +2477,7 @@
   "powercontext-dsh",
   "ppt-design-skill",
   "pptfast",
+  "pptpress",
   "preset-center",
   "primordial-soup",
   "prismrelay-mcp",

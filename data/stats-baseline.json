@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T14:39:52.158Z",
+ "ts": "2026-08-22T15:36:39.418Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1166,6 +1166,7 @@
   "dsh-multica-runtime-multica-ai",
   "dsh-multimodal",
   "dsh-multimodal-skill",
+  "dsh-multiple-chat-panels",
   "dsh-museai-tavern",
   "dsh-music-plugin",
   "dsh-mygo",

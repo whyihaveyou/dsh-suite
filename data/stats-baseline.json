@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T03:58:18.705Z",
+ "ts": "2026-08-22T04:51:20.630Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -341,6 +341,7 @@
   "dsh-all-search",
   "dsh-all-warmup",
   "dsh-anchored-flash",
+  "dsh-anchored-monitor",
   "dsh-anchored-standard",
   "dsh-anchored-standard-jungod1121",
   "dsh-android",
@@ -1956,6 +1957,7 @@
   "dsh-ui-desktop-pet",
   "dsh-ui-enhance",
   "dsh-ui-font",
+  "dsh-ui-harmonizer",
   "dsh-ui-preset-enhance",
   "dsh-ui-progress",
   "dsh-ui-progress-omdsh-dev",

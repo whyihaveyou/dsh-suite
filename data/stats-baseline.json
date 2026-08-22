@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-21T23:40:08.155Z",
+ "ts": "2026-08-22T01:51:36.310Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1635,6 +1635,7 @@
   "dsh-scroll-timeline",
   "dsh-search-boost",
   "dsh-search-mcp",
+  "dsh-secure-audit",
   "dsh-security-audit",
   "dsh-security-scan",
   "dsh-see-image",
@@ -1767,6 +1768,7 @@
   "dsh-stock-watch",
   "dsh-store",
   "dsh-story",
+  "dsh-strata",
   "dsh-stream-rules",
   "dsh-studio",
   "dsh-studio-euanguo",

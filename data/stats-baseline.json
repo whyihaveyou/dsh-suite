@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T07:01:02.454Z",
+ "ts": "2026-08-22T07:47:13.343Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -902,6 +902,7 @@
   "dsh-host-web-compat",
   "dsh-hotkeys",
   "dsh-hotplug-engine",
+  "dsh-hotplug-hub",
   "dsh-hotreload-plugin-manager",
   "dsh-hotswap",
   "dsh-html-canvas",

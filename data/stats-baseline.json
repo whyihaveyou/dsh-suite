@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T09:44:21.799Z",
+ "ts": "2026-08-22T10:41:51.499Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -819,6 +819,7 @@
   "dsh-find-skill",
   "dsh-firecrawl",
   "dsh-fleet-audit",
+  "dsh-flowglass",
   "dsh-focus-chat",
   "dsh-font",
   "dsh-for-vsc",
@@ -1043,6 +1044,7 @@
   "dsh-material-you",
   "dsh-math-team",
   "dsh-mattpocock-skills",
+  "dsh-mattpocock-skills-deck",
   "dsh-mc-agent",
   "dsh-mc-launcher",
   "dsh-mcp",
@@ -2297,6 +2299,7 @@
   "interaction-doc",
   "interest-memory",
   "internalcot",
+  "invoice-downloader",
   "iosdev",
   "ipollowork",
   "irmia-devkit-open",

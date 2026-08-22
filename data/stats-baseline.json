@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T13:02:48.765Z",
+ "ts": "2026-08-22T13:46:26.130Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1904,6 +1904,7 @@
   "dsh-tool-github",
   "dsh-tool-hackernews",
   "dsh-tool-hashline",
+  "dsh-tool-hongtou",
   "dsh-tool-json",
   "dsh-tool-markdown",
   "dsh-tool-monitor",
@@ -2074,6 +2075,7 @@
   "dsh-wallpaper",
   "dsh-wallpaper-chinarxq",
   "dsh-wallpaper-engine",
+  "dsh-wallpaper-engine-sakuraaa667",
   "dsh-wallpaper-rotator",
   "dsh-wallpaper-share",
   "dsh-wanghong-handwritten-ppt",
@@ -2439,6 +2441,7 @@
   "patentradar",
   "pawin-brain-deepseek-harness",
   "peanut-dsh-plugin",
+  "perfect-web-clone",
   "petdex",
   "phi",
   "pi-deepseek-anchor",
@@ -2500,6 +2503,7 @@
   "rpg-maker-mac-skill",
   "ru-marketplace-mcp",
   "ruflo",
+  "runtime36",
   "safe-find-dsh-plugins",
   "sage-mem",
   "sai",

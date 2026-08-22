@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T13:46:26.130Z",
+ "ts": "2026-08-22T14:39:52.158Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -570,6 +570,7 @@
   "dsh-codex-subscription",
   "dsh-codex-subscription-yequ172672",
   "dsh-codex-sync",
+  "dsh-codex-sync-walvez",
   "dsh-codex-tools",
   "dsh-codex-ui",
   "dsh-coding-companion",
@@ -634,6 +635,7 @@
   "dsh-cyber-sec",
   "dsh-cyberdog-speech-sherpa",
   "dsh-cyberpunk-theme",
+  "dsh-cyberworkstation",
   "dsh-dafeiyu",
   "dsh-daily-brief",
   "dsh-daily-fortune",
@@ -1528,6 +1530,7 @@
   "dsh-prime-agent",
   "dsh-product-delivery-workflow",
   "dsh-project-file-explorer",
+  "dsh-project-kanban",
   "dsh-projectmodel",
   "dsh-promotion-toolkit",
   "dsh-promotion-toolkit-lhmd",
@@ -2134,6 +2137,7 @@
   "dsh-wecom-notify",
   "dsh-weixin",
   "dsh-weneed",
+  "dsh-wenshan",
   "dsh-whale-animation",
   "dsh-whale-arcade",
   "dsh-whale-balance",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T03:09:13.402Z",
+ "ts": "2026-08-22T03:58:18.705Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -554,6 +554,7 @@
   "dsh-codex-auth",
   "dsh-codex-bridge",
   "dsh-codex-connect",
+  "dsh-codex-desktop",
   "dsh-codex-import",
   "dsh-codex-oauth",
   "dsh-codex-oauth-wnjxyk",
@@ -1026,6 +1027,7 @@
   "dsh-loop",
   "dsh-loop-dock",
   "dsh-lorebookmd",
+  "dsh-lovelyaudit",
   "dsh-lsp-actions",
   "dsh-mac-desktop",
   "dsh-mac-vision",
@@ -1187,6 +1189,7 @@
   "dsh-notify-windows",
   "dsh-notify-yangyongzhen",
   "dsh-novel-writer",
+  "dsh-novel-writer-siweina",
   "dsh-np-ppt",
   "dsh-ntfy",
   "dsh-oai-oauth",
@@ -2430,6 +2433,7 @@
   "pi-mm-vision",
   "pi-trace-extension",
   "pi2dsh",
+  "picgo",
   "picgo-core",
   "picturereader",
   "pilot-harness",

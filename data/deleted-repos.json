@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T03:09:13.330Z",
+  "generated_at": "2026-08-22T03:58:18.613Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -144,6 +144,15 @@
       "lastStars": 0,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/kanallas/api-cost-meter"
+    },
+    {
+      "repo": "KureKaruna/dsh-at",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-22T03:09:13.287Z",
+      "lastDetectedAt": "2026-08-22T03:58:18.598Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/KureKaruna/dsh-at"
     },
     {
       "repo": "LBurny/deepseek-harness-desktop",
@@ -297,15 +306,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "KureKaruna/dsh-at",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-22T03:09:13.287Z",
-      "lastDetectedAt": "2026-08-22T03:09:13.287Z",
-      "lastStars": 0,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/KureKaruna/dsh-at"
     }
   ]
 }

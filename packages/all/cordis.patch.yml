@@ -13,3 +13,12 @@
 - insert:
     - id: team-board
       name: '@dsh-suite/plugin-team-board'
+- insert:
+    - id: deus-mode
+      name: '@dsh-suite/plugin-deus'
+- insert:
+    - id: preset-center
+      name: '@dsh-suite/preset-center'
+- insert:
+    - id: skin-center
+      name: '@dsh-suite/themes'

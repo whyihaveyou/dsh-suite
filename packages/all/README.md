@@ -18,6 +18,9 @@ dsh plugin --profile <name> add @dsh-suite/all
 | 任务通知 | `@dsh-suite/plugin-notify` | 完成任务/出错/待审批时推送（IM webhook + 本机） |
 | 会话导出 | `@dsh-suite/plugin-session-export` | 会话导出为人类可读 Markdown/HTML |
 | 轻量任务板 | `@dsh-suite/plugin-team-board` | 会话级任务看板 |
+| 神模扳机 | `@dsh-suite/plugin-deus` | 极简提示词 A/B 实验台：一键注入 + 起手指纹判定 + Wilson CI 触发率统计（社区观察，未获官方证实） |
+| 中文预设 | `@dsh-suite/preset-center` | 中文开箱即用场景预设，一键应用 |
+| 皮肤中心 | `@dsh-suite/themes` | 151 款皮肤 + 试穿面板（收藏/最近/随机） |
 
 ## 版本节奏
 

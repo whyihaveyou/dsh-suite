@@ -1,7 +1,7 @@
 {
   "name": "@dsh-suite/all",
-  "version": "0.1.0",
-  "description": "DSH All-in-One：一键安装 DeepSeek Harness 第一方最佳插件全家桶（商店 / 通知 / 会话导出 / 任务板）。One-command install of the curated first-party DSH plugin suite (plugin-manager store / notify / session-export / team-board).",
+  "version": "0.2.0",
+  "description": "DSH All-in-One：一键安装 DeepSeek Harness 第一方最佳插件全家桶（商店 / 通知 / 会话导出 / 任务板 / 神模扳机 / 中文预设 / 皮肤中心）。One-command install of the curated first-party DSH plugin suite (plugin-manager store / notify / session-export / team-board / deus / preset-center / themes).",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -14,10 +14,13 @@
     }
   },
   "dependencies": {
-    "@dsh-suite/plugin-manager": "^0.4.0",
-    "@dsh-suite/plugin-notify": "^0.1.0",
-    "@dsh-suite/plugin-session-export": "^0.1.0",
-    "@dsh-suite/plugin-team-board": "^0.1.0"
+    "@dsh-suite/plugin-manager": "^0.8.2",
+    "@dsh-suite/plugin-notify": "^0.2.0",
+    "@dsh-suite/plugin-session-export": "^0.2.0",
+    "@dsh-suite/plugin-team-board": "^0.1.1",
+    "@dsh-suite/plugin-deus": "^0.4.0",
+    "@dsh-suite/preset-center": "^0.2.0",
+    "@dsh-suite/themes": "^0.3.0"
   },
   "files": [
     "lib",

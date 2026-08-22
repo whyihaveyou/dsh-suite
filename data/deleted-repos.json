@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T03:58:18.613Z",
+  "generated_at": "2026-08-22T18:50:18.522Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -306,6 +306,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "Nexus-Aethra/DSH-plugin-switch",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-22T18:50:18.506Z",
+      "lastDetectedAt": "2026-08-22T18:50:18.507Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/Nexus-Aethra/DSH-plugin-switch"
     }
   ]
 }

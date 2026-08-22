@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T11:36:53.217Z",
+ "ts": "2026-08-22T13:02:48.765Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -581,6 +581,7 @@
   "dsh-community-plugins",
   "dsh-compact-activity",
   "dsh-compaction-instant",
+  "dsh-compaction-instant-tsfreddie",
   "dsh-companion",
   "dsh-companion-yyh-001",
   "dsh-composer-expand",
@@ -747,6 +748,7 @@
   "dsh-easyrewrite",
   "dsh-easyssh",
   "dsh-eco-router",
+  "dsh-ecosystem-spec",
   "dsh-effort-config",
   "dsh-effort-slider",
   "dsh-effort-tweak",

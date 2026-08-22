@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T07:47:13.343Z",
+ "ts": "2026-08-22T08:49:26.138Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -109,6 +109,7 @@
   "clawock",
   "cleverer-dsh",
   "cli",
+  "clickvibe",
   "cloudbase-ai-toolkit",
   "co-engram",
   "cobsidian",
@@ -1620,6 +1621,7 @@
   "dsh-rss",
   "dsh-rtk-optimizer",
   "dsh-rules-manager",
+  "dsh-run2skill",
   "dsh-rust-sdk",
   "dsh-s1",
   "dsh-safe-delete",
@@ -2429,6 +2431,7 @@
   "paper-plane-x",
   "papi",
   "paste-to-workspace",
+  "patentradar",
   "pawin-brain-deepseek-harness",
   "peanut-dsh-plugin",
   "petdex",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-23T07:49:03.800Z",
+ "ts": "2026-08-23T08:50:34.189Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -912,6 +912,7 @@
   "dsh-her-eyes",
   "dsh-hermes-memory-bridge",
   "dsh-history",
+  "dsh-history-tree",
   "dsh-hiyori-skin",
   "dsh-home-ui",
   "dsh-honcho-sync",
@@ -2448,6 +2449,7 @@
   "openhanako",
   "openpencil",
   "openpets",
+  "openquantum",
   "openstory",
   "openviking",
   "orbis",

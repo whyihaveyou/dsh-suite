@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-22T23:36:10.782Z",
+ "ts": "2026-08-23T02:01:30.987Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -276,6 +276,7 @@
   "deepseekharnessremotegateway",
   "deepspider",
   "deeptide",
+  "deja-vu",
   "delivery-review-dsh-plugin",
   "design-playbook",
   "dhs-theme-plugin",
@@ -487,6 +488,7 @@
   "dsh-calculator",
   "dsh-calendar",
   "dsh-capability-inspector",
+  "dsh-capability-menu",
   "dsh-capability-receipt",
   "dsh-catppuccin",
   "dsh-catppuccin-theme",
@@ -714,6 +716,7 @@
   "dsh-desktop-snowcrescenter-tech",
   "dsh-desktop-sunshine-oneday",
   "dsh-desktop-tools",
+  "dsh-desktop-vibeinging",
   "dsh-desktop-window",
   "dsh-desktop-windowos",
   "dsh-desktop-xiaoyuxiaoyuqwq",
@@ -2321,6 +2324,7 @@
   "ironlaw",
   "iterate-plugin",
   "j-space-cognition-suite-v3-6",
+  "j-space-cognition-suite-v3-7",
   "jacobian",
   "jarvis-index",
   "jina-dsh-plugin",

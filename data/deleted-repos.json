@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T16:45:02.595Z",
+  "generated_at": "2026-08-23T17:36:15.615Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -173,6 +173,15 @@
       "lastKnownUrl": "https://github.com/lynkas/dsh-think-flow-flow"
     },
     {
+      "repo": "mianyoubiaoqing/MistyMoon-DSH",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-23T16:45:02.581Z",
+      "lastDetectedAt": "2026-08-23T17:36:15.493Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-20",
+      "lastKnownUrl": "https://github.com/mianyoubiaoqing/MistyMoon-DSH"
+    },
+    {
       "repo": "MoonGlassKitty/dsh-tailscale-sync",
       "seen": 2,
       "firstDetectedAt": "2026-08-19T08:56:40.516Z",
@@ -315,15 +324,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "mianyoubiaoqing/MistyMoon-DSH",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-23T16:45:02.581Z",
-      "lastDetectedAt": "2026-08-23T16:45:02.581Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-20",
-      "lastKnownUrl": "https://github.com/mianyoubiaoqing/MistyMoon-DSH"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-23T16:45:02.678Z",
+ "ts": "2026-08-23T17:36:15.711Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -822,6 +822,7 @@
   "dsh-file-panel",
   "dsh-file-preview",
   "dsh-file-review",
+  "dsh-file-review-tab",
   "dsh-file-upload",
   "dsh-file-upload-a903067276-rgb",
   "dsh-file-upload-hongming-huang",
@@ -2207,6 +2208,7 @@
   "dsh-workspace-hakunm",
   "dsh-workspace-mcp",
   "dsh-workspace-search",
+  "dsh-worktable",
   "dsh-worktree",
   "dsh-worktrees",
   "dsh-writing-remote",

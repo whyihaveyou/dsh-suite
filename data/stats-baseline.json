@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-23T14:41:26.339Z",
+ "ts": "2026-08-23T15:38:24.959Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -313,6 +313,7 @@
   "dsh-adb",
   "dsh-adhd-copilot",
   "dsh-ads",
+  "dsh-adult-tension",
   "dsh-advisor",
   "dsh-advisor-glangzh",
   "dsh-advisor-omdsh-dev",
@@ -1508,6 +1509,7 @@
   "dsh-plugins-cnzgray",
   "dsh-plugins-ephemeral-ai-lab",
   "dsh-plugins-finder",
+  "dsh-plugins-gityuanbao",
   "dsh-plugins-horizon215",
   "dsh-plugins-hub",
   "dsh-plugins-hyls9527",

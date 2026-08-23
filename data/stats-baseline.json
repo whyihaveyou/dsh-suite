@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-23T02:01:30.987Z",
+ "ts": "2026-08-23T03:17:12.663Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -175,6 +175,7 @@
   "deepseek-harness-desktop-chyra-moon",
   "deepseek-harness-desktop-cnskycn",
   "deepseek-harness-desktop-czzzlq",
+  "deepseek-harness-desktop-dsh-tauri-desk",
   "deepseek-harness-desktop-easyhoov",
   "deepseek-harness-desktop-feiyang-dev",
   "deepseek-harness-desktop-hairyf",
@@ -1226,6 +1227,7 @@
   "dsh-octo",
   "dsh-of-your-own",
   "dsh-office",
+  "dsh-office-tools",
   "dsh-oh-my-theme",
   "dsh-oil-creator",
   "dsh-omi-voice",

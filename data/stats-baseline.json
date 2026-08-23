@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-23T08:50:34.189Z",
+ "ts": "2026-08-23T09:44:42.434Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1219,6 +1219,7 @@
   "dsh-oauth-mcp-client",
   "dsh-observability",
   "dsh-observation-journal",
+  "dsh-obsidian",
   "dsh-obsidian-assistant",
   "dsh-obsidian-export",
   "dsh-obsidian-math",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-23T04:06:02.272Z",
+ "ts": "2026-08-23T04:54:16.519Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -635,6 +635,7 @@
   "dsh-crosstalk",
   "dsh-crw",
   "dsh-cue-plugin",
+  "dsh-custom-background",
   "dsh-custom-css",
   "dsh-custom-tool",
   "dsh-custom-workspace",
@@ -1870,6 +1871,7 @@
   "dsh-theme-palettes",
   "dsh-theme-plugin",
   "dsh-theme-taffy",
+  "dsh-theme-terraria",
   "dsh-theme-ti",
   "dsh-themes",
   "dsh-think-any-lang",

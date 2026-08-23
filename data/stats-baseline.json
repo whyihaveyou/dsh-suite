@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-23T13:47:56.728Z",
+ "ts": "2026-08-23T14:41:26.339Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -202,6 +202,7 @@
   "deepseek-harness-for-vscode",
   "deepseek-harness-genui",
   "deepseek-harness-gui",
+  "deepseek-harness-hello-kitty-suite",
   "deepseek-harness-henryz838978",
   "deepseek-harness-huggingface",
   "deepseek-harness-install",
@@ -2492,6 +2493,7 @@
   "ppt-design-skill",
   "pptfast",
   "pptpress",
+  "pptwise",
   "preset-center",
   "primordial-soup",
   "prismrelay-mcp",

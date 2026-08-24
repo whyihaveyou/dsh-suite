@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-24T04:11:49.520Z",
+ "ts": "2026-08-24T05:03:15.321Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2191,6 +2191,7 @@
   "dsh-window",
   "dsh-windows-ocr",
   "dsh-windows-readiness-proof",
+  "dsh-with-chatgpt",
   "dsh-with-pencil",
   "dsh-withskillhub",
   "dsh-wordbox",
@@ -2625,6 +2626,7 @@
   "url-manager",
   "vibe-skills",
   "vibemeter",
+  "vision-exp-tile",
   "vision-kit",
   "visual-to-editable-ppt-skill",
   "vocaloid-mcp",

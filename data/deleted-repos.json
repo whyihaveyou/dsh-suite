@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T04:11:49.422Z",
+  "generated_at": "2026-08-24T05:03:15.223Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -99,6 +99,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/echo-escape/dsh-workbench"
+    },
+    {
+      "repo": "fryghost/deepseek-eyes",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-24T04:11:49.410Z",
+      "lastDetectedAt": "2026-08-24T05:03:15.202Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/fryghost/deepseek-eyes"
     },
     {
       "repo": "hccccc01333/dsh-report-html",
@@ -324,15 +333,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "fryghost/deepseek-eyes",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-24T04:11:49.410Z",
-      "lastDetectedAt": "2026-08-24T04:11:49.410Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/fryghost/deepseek-eyes"
     }
   ]
 }

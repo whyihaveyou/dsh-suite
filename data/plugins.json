@@ -61384,7 +61384,7 @@
    "npm": null,
    "repo": "drscrewdriver/dsh-input-traffic",
    "url": "https://github.com/drscrewdriver/dsh-input-traffic",
-   "category": "ui",
+   "category": "session",
    "description": {
     "en": "Busy-time input queue for the DSH Web GUI: three-tier (now/next/later) planning, drag-to-reorder, interject/interrupt, batch clear, session freeze.",
     "zh": "DSH Web GUI 忙时输入队列：三档交通管制（现在/稍后/排队），拖拽重排、插话打断、批量清空、会话冻结"

@@ -20,6 +20,7 @@
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -313,8 +314,11 @@ const I18N = {
     lbSubtitle: 'Every number on this page is computed from data/plugins.json at build time.',
     lbBack: '← Directory', lbDir: 'Directory',
     lbTop: 'Top 50', lbTopHint: 'Curated plugins ranked by stars.',
-    lbRising: 'Rising', lbRisingHint: 'Biggest star gains vs the last snapshot.', lbTracked: 'tracking since',
+    lbRising: 'Rising', lbRisingHint: 'Biggest star gains over the past ~7 days.', lbTracked: 'tracking since',
     lbNoRising: 'No rising data yet — tracking just started.',
+    lbWeek: 'Weekly gain', lbWeekHint: 'Star gain over ~7 days (vs the snapshot ~7 days ago).',
+    lbAccumulating: 'data accumulating', lbNew: 'New star — listed under 7 days with strong growth',
+    lbColPlugin: 'Plugin', lbColCat: 'Category', lbColStars: 'Stars',
     lbCategory: 'Category distribution', lbCategoryHint: 'Curated plugins per category.',
     lbEco: 'Ecosystem overview', lbEcoHint: 'The long tail, in numbers.',
     ecoTotal: 'Total entries', ecoCurated: 'Curated', ecoWatch: 'Watchlist', ecoTotalStars: 'Total stars', ecoZero: '0-star ratio',
@@ -383,8 +387,11 @@ const I18N = {
     lbSubtitle: '本页所有数字构建期从 data/plugins.json 现算。',
     lbBack: '← 目录', lbDir: '目录',
     lbTop: '总榜 Top 50', lbTopHint: '按星数排名的精选插件。',
-    lbRising: '飙升榜', lbRisingHint: '相对上次快照涨幅最大的插件。', lbTracked: '数据自',
+    lbRising: '飙升榜', lbRisingHint: '近 7 天星数增量最大的插件。', lbTracked: '数据自',
     lbNoRising: '暂无涨幅数据——追踪刚开始。',
+    lbWeek: '周涨幅', lbWeekHint: '近 7 天星数增量（对比约 7 天前的快照）。',
+    lbAccumulating: '数据积累中', lbNew: '新星——收录 7 天内且涨幅亮眼',
+    lbColPlugin: '插件', lbColCat: '分类', lbColStars: '星数',
     lbCategory: '分类分布', lbCategoryHint: '各类目精选插件数。',
     lbEco: '生态总览', lbEcoHint: '长尾生态，用数字说话。',
     ecoTotal: '总条目', ecoCurated: '主目录', ecoWatch: '观察区', ecoTotalStars: '总星数', ecoZero: '0 星占比',
@@ -1114,22 +1121,49 @@ function lbChartBars(items) {
 }
 
 /** 榜单行 */
-function lbRow(p, t, rank, { delta } = {}) {
+function lbRow(p, t, rank, { delta, weekDelta, isNew } = {}) {
   const cat = CATEGORY_LABEL[p.category] || { en: p.category, zh: p.category };
   const catLabel = isZh(t) ? cat.zh : cat.en;
   const desc = isZh(t) ? p.desc_zh : p.desc_en;
-  const deltaBadge = (delta != null && delta > 0) ? `<span class="lb-delta">+${delta}</span>` : '';
+  const weekVal = weekDelta != null ? weekDelta : (delta != null ? delta : null);
+  const weekCell = weekVal != null
+    ? `<span class="lb-week" title="${esc(t.lbWeekHint)}">${weekVal > 0 ? '+' + weekVal : weekVal}</span>`
+    : `<span class="lb-week lb-week-none" title="${esc(t.lbWeekHint)}">${esc(t.lbAccumulating)}</span>`;
+  const newBadge = isNew ? `<span class="lb-new" title="${esc(t.lbNew)}">🔥</span> ` : '';
   const rankTop = rank <= 3 ? ' lb-rank-top' : '';
   return `  <div class="lb-row">
     <span class="lb-rank${rankTop}">${rank}</span>
     <div class="lb-main">
-      <a class="lb-name" href="${esc(p.url || REPO_URL)}" target="_blank" rel="noopener noreferrer">${esc(p.name)}</a>
+      <span class="lb-name-line">${newBadge}<a class="lb-name" href="${esc(p.url || REPO_URL)}" target="_blank" rel="noopener noreferrer">${esc(p.name)}</a></span>
       <span class="lb-desc">${esc(desc || '')}</span>
     </div>
     <span class="lb-cat">${esc(catLabel)}</span>
-    ${deltaBadge}
+    ${weekCell}
     <span class="lb-stars">★ ${fmtStars(p.stars)}</span>
   </div>`;
+}
+
+/** 周涨幅基线：git 历史里约 7 天前（[9d, 5d] 窗口内最新 commit）的 data/plugins.json 星数快照 */
+let weekBaseline = null;
+function loadWeekBaseline() {
+  if (weekBaseline) return weekBaseline;
+  try {
+    const since = new Date(Date.now() - 9 * 864e5).toISOString().slice(0, 10);
+    const until = new Date(Date.now() - 5 * 864e5).toISOString().slice(0, 10);
+    const log = execFileSync('git', ['log', '--since=' + since, '--until=' + until, '--format=%H %ct', '--', join(REPO_ROOT, 'data/plugins.json')], { encoding: 'utf8', maxBuffer: 1e7 }).trim().split('\n').filter(Boolean);
+    let sha = log[0] ? log[0].split(' ')[0] : '';
+    let ts = log[0] ? log[0].split(' ')[1] : '';
+    if (!sha) {
+      const all = execFileSync('git', ['log', '--format=%H %ct', '--', join(REPO_ROOT, 'data/plugins.json')], { encoding: 'utf8', maxBuffer: 1e7 }).trim().split('\n').filter(Boolean);
+      if (all.length) { const last = all[all.length - 1].split(' '); sha = last[0]; ts = last[1] || ''; }
+    }
+    if (!sha) { weekBaseline = { repoStars: {}, ids: new Set(), ts: '' }; return weekBaseline; }
+    const j = JSON.parse(execFileSync('git', ['show', sha + ':data/plugins.json'], { encoding: 'utf8', maxBuffer: 5e7 }));
+    const repoStars = {}; const ids = new Set();
+    for (const x of (j.plugins || [])) { ids.add(x.id); if (x.repo) repoStars[x.repo] = x.stars || 0; }
+    weekBaseline = { repoStars, ids, ts };
+  } catch (e) { weekBaseline = { repoStars: {}, ids: new Set(), ts: '' }; }
+  return weekBaseline;
 }
 
 function renderStarsPage(t, data, baseUrl, snapshot) {
@@ -1141,14 +1175,19 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
   const top50 = curated.slice(0, 50);
   const all = [...catalog, ...watchlist];
 
-  // 飙升榜：与快照 diff
-  const snapStars = (snapshot && snapshot.stars_by_repo) || {};
-  const snapDate = (snapshot && (snapshot.tracked_since || snapshot.snapshot_date)) || '';
-  const rising = all
-    .filter(p => p.repo && typeof snapStars[p.repo] === 'number')
-    .map(p => ({ p, delta: p.stars - snapStars[p.repo] }))
-    .filter(x => x.delta > 0)
-    .sort((a, b) => b.delta - a.delta)
+  // 飙升榜：近 7 天涨幅（git 基线快照）
+  const base = loadWeekBaseline();
+  const baseStars = base.repoStars;
+  const baseIds = base.ids;
+  const snapDate = base.ts ? new Date(Number(base.ts) * 1000).toISOString().slice(0, 10) : '';
+  const weekMeta = all.map(p => ({
+    p,
+    weekDelta: (p.repo && typeof baseStars[p.repo] === 'number') ? p.stars - baseStars[p.repo] : null,
+    isNew: !baseIds.has(p.id) && (p.stars || 0) >= 20,
+  }));
+  const rising = weekMeta
+    .filter(x => x.weekDelta != null && x.weekDelta > 0)
+    .sort((a, b) => b.weekDelta - a.weekDelta)
     .slice(0, 20);
 
   // 分类分布（仅主目录）
@@ -1191,12 +1230,13 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
   const risingRest = rising.slice(SHOW);
   const topShow = top50.slice(0, SHOW);
   const topRest = top50.slice(SHOW);
+  const weekOf = (id) => weekMeta.find(w => w.p.id === id) || { weekDelta: null, isNew: false };
   const risingRowsHtml = rising.length
-    ? risingShow.map((x, i) => lbRow(x.p, t, i + 1, { delta: x.delta })).join('\n')
+    ? risingShow.map((x, i) => lbRow(x.p, t, i + 1, { weekDelta: x.weekDelta, isNew: x.isNew })).join('\n')
     : `<p class="section-hint">${esc(t.lbNoRising)}</p>`;
-  const topRowsHtml = topShow.map((p, i) => lbRow(p, t, i + 1)).join('\n');
-  const risingRestHtml = risingRest.length ? `<div id="rising-rest" hidden>${risingRest.map((x, i) => lbRow(x.p, t, i + 1 + SHOW, { delta: x.delta })).join('\n')}</div>` : '';
-  const topRestHtml = topRest.length ? `<div id="top-rest" hidden>${topRest.map((p, i) => lbRow(p, t, i + 1 + SHOW)).join('\n')}</div>` : '';
+  const topRowsHtml = topShow.map((p, i) => lbRow(p, t, i + 1, weekOf(p.id))).join('\n');
+  const risingRestHtml = risingRest.length ? `<div id="rising-rest" hidden>${risingRest.map((x, i) => lbRow(x.p, t, i + 1 + SHOW, { weekDelta: x.weekDelta, isNew: x.isNew })).join('\n')}</div>` : '';
+  const topRestHtml = topRest.length ? `<div id="top-rest" hidden>${topRest.map((p, i) => lbRow(p, t, i + 1 + SHOW, weekOf(p.id))).join('\n')}</div>` : '';
   const expandBtn = (id) => `<button class="expand-btn" type="button" data-target="${id}" data-expand-label="${esc(t.expandAll)}" data-collapse-label="${esc(t.collapse)}">${esc(t.expandAll)}</button>`;
 
   const thisUrl = baseUrl + (isZ ? 'stars-zh.html' : 'stars.html');
@@ -1222,9 +1262,9 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
       <div class="lb-stat lb-stat-accent"><span class="lb-stat-num">${zeroRatio.toFixed(1)}%</span><span class="lb-stat-label">${esc(t.ecoZero)}</span></div>
     </div>`;
 
-  const topRows = top50.map((p, i) => lbRow(p, t, i + 1)).join('\n');
+  const topRows = top50.map((p, i) => lbRow(p, t, i + 1, weekOf(p.id))).join('\n');
   const risingRows = rising.length
-    ? rising.map((x, i) => lbRow(x.p, t, i + 1, { delta: x.delta })).join('\n')
+    ? rising.map((x, i) => lbRow(x.p, t, i + 1, { weekDelta: x.weekDelta, isNew: x.isNew })).join('\n')
     : `<p class="section-hint">${esc(t.lbNoRising)}</p>`;
 
   const risingHead = snapDate ? ` · ${esc(t.lbTracked)} <strong>${esc(snapDate)}</strong>` : '';
@@ -1292,6 +1332,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
 <section class="lb-section" id="top">
       <h2 class="section-title">${esc(t.lbTop)}</h2>
       <p class="section-hint">${esc(t.lbTopHint)}</p>
+      <div class="lb-head"><span class="lb-head-rank">#</span><span class="lb-head-main">${esc(t.lbColPlugin)}</span><span class="lb-head-cat">${esc(t.lbColCat)}</span><span class="lb-head-week">${esc(t.lbWeek)}</span><span class="lb-head-stars">${esc(t.lbColStars)}</span></div>
       <div class="lb-rows">${topRowsHtml}</div>
       ${topRestHtml}
       ${topRest.length ? expandBtn('top-rest') : ''}
@@ -1302,6 +1343,7 @@ function renderStarsPage(t, data, baseUrl, snapshot) {
 <section class="lb-section" id="rising">
       <h2 class="section-title">${esc(t.lbRising)}</h2>
       <p class="section-hint">${esc(t.lbRisingHint)}${risingHead}</p>
+      <div class="lb-head"><span class="lb-head-rank">#</span><span class="lb-head-main">${esc(t.lbColPlugin)}</span><span class="lb-head-cat">${esc(t.lbColCat)}</span><span class="lb-head-week">${esc(t.lbWeek)}</span><span class="lb-head-stars">${esc(t.lbColStars)}</span></div>
       <div class="lb-rows">${risingRowsHtml}</div>
       ${risingRestHtml}
       ${risingRest.length ? expandBtn('rising-rest') : ''}
@@ -1789,7 +1831,7 @@ function main() {
   console.log('[build] 产物: index.html, zh.html, stars.html, stars-zh.html, learn.html, learn-zh.html, catalog.json, sitemap.xml, robots.txt, .nojekyll');
   const totalEntries = catalog.length + watchlist.length;
   console.log(`[build] Star 榜校验: 总条目 ${totalEntries} = 主目录 ${catalog.length} + 观察区 ${watchlist.length} — ${totalEntries === catalog.length + watchlist.length ? 'OK' : 'MISMATCH'}`);
-  console.log(`[build] Star 榜校验: 总榜 Top ${Math.min(50, catalog.length)} / 飙升 Top ${(snapshot && snapshot.stars_by_repo) ? '20' : '0（无快照）'}`);
+  console.log(`[build] Star 榜校验: 总榜 Top ${Math.min(50, catalog.length)} / 周涨幅飙升 Top 20（git 基线）`);
 }
 
 main();

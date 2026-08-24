@@ -317,6 +317,15 @@ section { margin-bottom: 48px; }
 .lb-desc { color: var(--muted); font-size: 12.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .lb-cat { font-size: 11px; font-weight: 700; color: var(--brand-bright); background: var(--brand-soft); padding: 2px 8px; border-radius: var(--radius-badge); white-space: nowrap; }
 .lb-delta { font-size: 12px; font-weight: 700; color: var(--green); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.lb-week { font-size: 12px; font-weight: 700; color: var(--green); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.lb-week-none { color: var(--faint); font-weight: 600; }
+.lb-new { cursor: default; }
+.lb-name-line { display: flex; align-items: center; gap: 4px; min-width: 0; }
+.lb-head { display: flex; align-items: center; gap: 12px; padding: 2px 14px 6px; font-size: 11px; font-weight: 700; color: var(--faint); text-transform: uppercase; letter-spacing: .05em; }
+.lb-head-rank { width: 32px; text-align: center; flex-shrink: 0; }
+.lb-head-main { flex: 1; min-width: 0; }
+.lb-head-week { white-space: nowrap; }
+.lb-head-stars { white-space: nowrap; }
 .lb-stars { font-size: 13px; font-weight: 700; color: var(--yellow); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 .nav-lb { color: var(--muted); font-weight: 600; }
@@ -325,6 +334,7 @@ section { margin-bottom: 48px; }
 @media (max-width: 640px) {
   .lb-page { padding: 0 16px 48px; }
   .lb-cat { display: none; }
+  .lb-head-cat { display: none; }
   .lb-desc { white-space: normal; }
 }
 

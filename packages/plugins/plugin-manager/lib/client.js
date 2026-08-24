@@ -101,8 +101,8 @@ window.__ModuleLoader__.load({
     }
 
     const BADGE = {
-      ok: ['🟢 ok', '#3fb950'], broken: ['🔴 broken', '#f85149'],
-      unknown: ['⚪ unknown', '#8b949e'], unmaintained: ['⚫ unmaintained', '#8b949e'],
+      ok: ['🟢 ok', 'var(--dsw-alias-state-success-primary)'], broken: ['🔴 broken', 'var(--dsw-alias-state-error-primary)'],
+      unknown: ['⚪ unknown', 'var(--dsw-alias-label-secondary)'], unmaintained: ['⚫ unmaintained', 'var(--dsw-alias-label-secondary)'],
     }
 
     // v0.6 F-C: 中文别名搜索 —— 中文查询词映射英文关键词，与英文字段一起 AND 匹配
@@ -205,15 +205,15 @@ window.__ModuleLoader__.load({
           if (old) old.remove()
           const el = document.createElement('div')
           el.setAttribute('data-open-ext-toast', '1')
-          el.style.cssText = 'position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:99999;background:#161b22;border:1px solid #30363d;border-radius:10px;padding:10px 14px;max-width:min(520px,80vw);box-shadow:0 8px 24px rgba(0,0,0,0.5);display:flex;gap:10px;align-items:flex-start;'
+          el.style.cssText = 'position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:99999;background:var(--dsw-alias-bg-layer-1);border:1px solid var(--dsw-alias-border-l1);border-radius:10px;padding:10px 14px;max-width:min(520px,80vw);box-shadow:0 8px 24px rgba(0,0,0,0.5);display:flex;gap:10px;align-items:flex-start;'
           const sp = document.createElement('span')
-          sp.style.cssText = 'font-size:12px;color:#e6edf3;line-height:1.5;word-break:break-all;'
+          sp.style.cssText = 'font-size:12px;color:var(--dsw-alias-label-primary);line-height:1.5;word-break:break-all;'
           // 模块作用域拿不到 ctx.locale；shell/浏览器语言直接用 navigator.language 判定
           const isZh = ((typeof navigator !== 'undefined' && navigator.language) || '').toLowerCase().indexOf('zh') === 0
           sp.textContent = (isZh ? '🔗 链接已复制——到浏览器粘贴打开：' : '🔗 Link copied — paste it in your browser: ') + url
           const x = document.createElement('button')
           x.textContent = '×'
-          x.style.cssText = 'background:none;border:none;color:#8b949e;font-size:14px;cursor:pointer;flex-shrink:0;padding:0;'
+          x.style.cssText = 'background:none;border:none;color:var(--dsw-alias-label-secondary);font-size:14px;cursor:pointer;flex-shrink:0;padding:0;'
           x.onclick = () => el.remove()
           el.appendChild(sp); el.appendChild(x)
           // 挂 <html> 而非 <body>：dsh web 宿主挂在 body 上，重渲染会把 body 下外来节点清掉
@@ -237,39 +237,40 @@ window.__ModuleLoader__.load({
   }
   const CATEGORIES = ['all', 'tools', 'ui', 'session', 'llm', 'orchestration', 'utility', 'workflow', 'integration', 'skill', 'dev-tool', 'other']
 
-    // ---------- small UI helpers (dark theme, inline styles) ----------
+    // ---------- small UI helpers (theme-aware: colors use dsw CSS vars so the
+    // store follows the active light/dark theme instead of forcing dark) ----------
     const C = {
-      card: { background: '#161b22', border: '1px solid #30363d', borderRadius: '8px', padding: '14px', display: 'flex', flexDirection: 'column', gap: '8px', minHeight: '150px' },
+      card: { background: 'var(--dsw-alias-bg-layer-1)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '8px', padding: '14px', display: 'flex', flexDirection: 'column', gap: '8px', minHeight: '150px' },
       featWrap: { display: 'flex', gap: '12px', overflowX: 'auto', padding: '2px 2px 8px', marginBottom: '4px' },
-      featCard: { flex: '0 0 264px', background: '#161b22', border: '1px solid #1f6feb', borderRadius: '10px', overflow: 'hidden', cursor: 'pointer', display: 'flex', flexDirection: 'column' },
-      featImgBox: { width: '100%', height: '118px', background: '#0d1117' },
+      featCard: { flex: '0 0 264px', background: 'var(--dsw-alias-bg-layer-1)', border: '1px solid #1f6feb', borderRadius: '10px', overflow: 'hidden', cursor: 'pointer', display: 'flex', flexDirection: 'column' },
+      featImgBox: { width: '100%', height: '118px', background: 'var(--dsw-alias-bg-layer-2)' },
       featBody: { padding: '10px 12px', display: 'flex', flexDirection: 'column', gap: '6px' },
-      featDesc: { fontSize: '12px', color: '#8b949e', lineHeight: '1.4', display: '-webkit-box', WebkitLineClamp: '2', WebkitBoxOrient: 'vertical', overflow: 'hidden' },
-      name: { fontSize: '15px', fontWeight: '600', color: '#e6edf3', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' },
-      desc: { fontSize: '12px', color: '#8b949e', lineHeight: '1.4' },
-      descZh: { fontSize: '12px', color: '#6e7681', lineHeight: '1.4' },
-      meta: { fontSize: '11px', color: '#8b949e', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' },
+      featDesc: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary)', lineHeight: '1.4', display: '-webkit-box', WebkitLineClamp: '2', WebkitBoxOrient: 'vertical', overflow: 'hidden' },
+      name: { fontSize: '15px', fontWeight: '600', color: 'var(--dsw-alias-label-primary)', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' },
+      desc: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary)', lineHeight: '1.4' },
+      descZh: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary)', lineHeight: '1.4' },
+      meta: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' },
       btn: { background: '#238636', color: '#fff', border: 'none', borderRadius: '6px', padding: '6px 12px', fontSize: '12px', cursor: 'pointer', fontWeight: '600' },
-      btnGhost: { background: 'transparent', color: '#c9d1d9', border: '1px solid #30363d', borderRadius: '6px', padding: '6px 10px', fontSize: '12px', cursor: 'pointer' },
-      btnDisabled: { background: '#21262d', color: '#6e7681', border: '1px solid #30363d', borderRadius: '6px', padding: '6px 12px', fontSize: '12px', cursor: 'not-allowed' },
+      btnGhost: { background: 'transparent', color: 'var(--dsw-alias-label-primary)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', padding: '6px 10px', fontSize: '12px', cursor: 'pointer' },
+      btnDisabled: { background: 'var(--dsw-alias-bg-layer-2)', color: 'var(--dsw-alias-label-secondary)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', padding: '6px 12px', fontSize: '12px', cursor: 'not-allowed' },
       badge: (color) => ({ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '11px', color, border: '1px solid ' + color, borderRadius: '10px', padding: '1px 8px' }),
       toolbar: { display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '12px' },
-      input: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '6px', color: '#c9d1d9', padding: '7px 12px', fontSize: '13px', flex: '1', minWidth: '200px' },
-      select: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '6px', color: '#c9d1d9', padding: '7px 10px', fontSize: '13px' },
+      input: { background: 'var(--dsw-alias-bg-layer-2)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', color: 'var(--dsw-alias-label-primary)', padding: '7px 12px', fontSize: '13px', flex: '1', minWidth: '200px' },
+      select: { background: 'var(--dsw-alias-bg-layer-2)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', color: 'var(--dsw-alias-label-primary)', padding: '7px 10px', fontSize: '13px' },
       grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' },
-      status: { fontSize: '11px', color: '#6e7681', marginBottom: '12px' },
+      status: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)', marginBottom: '12px' },
       modalBack: { position: 'fixed', inset: '0', background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 99999 },
-      modal: { background: '#161b22', border: '1px solid #30363d', borderRadius: '10px', padding: '20px', width: '420px', maxWidth: '90vw' },
-      warn: { color: '#d29922', fontSize: '12px' },
+      modal: { background: 'var(--dsw-alias-bg-layer-1)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '10px', padding: '20px', width: '420px', maxWidth: '90vw' },
+      warn: { color: 'var(--dsw-alias-state-warn-primary)', fontSize: '12px' },
       drawerOverlay: { position: 'fixed', inset: '0', background: 'rgba(1,4,9,0.55)', zIndex: 99998, display: 'flex', justifyContent: 'flex-end' },
-      drawer: { width: '440px', maxWidth: '92vw', height: '100%', overflowY: 'auto', background: '#0d1117', borderLeft: '1px solid #30363d', padding: '18px', display: 'flex', flexDirection: 'column', gap: '12px', color: '#e6edf3' },
+      drawer: { width: '440px', maxWidth: '92vw', height: '100%', overflowY: 'auto', background: 'var(--dsw-alias-bg-layer-2)', borderLeft: '1px solid var(--dsw-alias-border-l1)', padding: '18px', display: 'flex', flexDirection: 'column', gap: '12px', color: 'var(--dsw-alias-label-primary)' },
       drawerTitle: { fontWeight: '700', fontSize: '16px', wordBreak: 'break-all', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' },
-      drawerMeta: { display: 'flex', gap: '12px', flexWrap: 'wrap', fontSize: '12px', color: '#8b949e' },
-      drawerDesc: { fontSize: '13px', color: '#c9d1d9', lineHeight: '1.6', whiteSpace: 'pre-wrap', overflowWrap: 'break-word' },
-      drawerSec: { fontSize: '11px', fontWeight: '700', color: '#8b949e', textTransform: 'uppercase', letterSpacing: '.4px', marginTop: '4px' },
-      riskChip: { display: 'inline-block', fontSize: '11.5px', padding: '2px 8px', borderRadius: '4px', background: 'rgba(210,153,34,0.15)', color: '#d29922', border: '1px solid rgba(210,153,34,0.4)', marginRight: '6px', marginBottom: '4px' },
-      cleanChip: { fontSize: '12px', color: '#3fb950' },
-      drawerFoot: { position: 'sticky', bottom: '-18px', background: '#0d1117', paddingTop: '10px', paddingBottom: '12px', borderTop: '1px solid #21262d', display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center', marginTop: 'auto' },
+      drawerMeta: { display: 'flex', gap: '12px', flexWrap: 'wrap', fontSize: '12px', color: 'var(--dsw-alias-label-secondary)' },
+      drawerDesc: { fontSize: '13px', color: 'var(--dsw-alias-label-primary)', lineHeight: '1.6', whiteSpace: 'pre-wrap', overflowWrap: 'break-word' },
+      drawerSec: { fontSize: '11px', fontWeight: '700', color: 'var(--dsw-alias-label-secondary)', textTransform: 'uppercase', letterSpacing: '.4px', marginTop: '4px' },
+      riskChip: { display: 'inline-block', fontSize: '11.5px', padding: '2px 8px', borderRadius: '4px', background: 'rgba(210,153,34,0.15)', color: 'var(--dsw-alias-state-warn-primary)', border: '1px solid rgba(210,153,34,0.4)', marginRight: '6px', marginBottom: '4px' },
+      cleanChip: { fontSize: '12px', color: 'var(--dsw-alias-state-success-primary)' },
+      drawerFoot: { position: 'sticky', bottom: '-18px', background: 'var(--dsw-alias-bg-layer-2)', paddingTop: '10px', paddingBottom: '12px', borderTop: '1px solid var(--dsw-alias-border-l1)', display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center', marginTop: 'auto' },
     }
 
     async function fetchJson(url) {
@@ -329,7 +330,7 @@ window.__ModuleLoader__.load({
         ref,
         onClick: () => setExpanded((e) => !e),
         title: expanded ? 'collapse' : 'expand',
-        style: { width: '100%', height: expanded ? 220 : 68, overflow: 'hidden', borderRadius: '6px', background: '#0d1117', cursor: 'zoom-in', border: '1px solid #21262d' },
+        style: { width: '100%', height: expanded ? 220 : 68, overflow: 'hidden', borderRadius: '6px', background: 'var(--dsw-alias-bg-layer-2)', cursor: 'zoom-in', border: '1px solid var(--dsw-alias-border-l1)' },
       },
         show
           ? h('img', {
@@ -338,7 +339,7 @@ window.__ModuleLoader__.load({
               onError: () => setFailed(true),
               style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' },
             })
-          : h('div', { style: { height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#30363d', fontSize: '11px' } }, '…'),
+          : h('div', { style: { height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--dsw-alias-label-secondary)', fontSize: '11px' } }, '…'),
       )
     }
 
@@ -658,7 +659,7 @@ window.__ModuleLoader__.load({
         h('select', { style: C.select, value: category, onChange: (e) => setCategory(e.target.value) },
           cats.map((c) => h('option', { key: c, value: c }, c === 'all' ? t('category') + ': ' + t('all') : c))),
         h('button', {
-          style: onlyOk ? { ...C.btnGhost, color: '#3fb950', borderColor: '#238636' } : C.btnGhost,
+          style: onlyOk ? { ...C.btnGhost, color: 'var(--dsw-alias-state-success-primary)', borderColor: '#238636' } : C.btnGhost,
           onClick: () => setOnlyOk(!onlyOk),
         }, t('onlyOk')),
         h('select', { style: C.select, value: sort, onChange: (e) => setSort(e.target.value) },
@@ -670,10 +671,10 @@ window.__ModuleLoader__.load({
 
       const status = h('div', { style: C.status },
         t('source') + ': catalog.json · ' + catalog.length + ' ' + t('plugins') + ' · ' + t('installedCount') + ': ' + installed.length, ' · ',
-        h('a', { href: feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' }), target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' })) }, style: { color: '#8b949e' } }, '💬 ' + t('feedbackStore')), ' · ',
-        h('a', { href: 'https://github.com/whyihaveyou/dsh-suite/issues/new?title=' + encodeURIComponent('投稿插件 / Plugin submission') + '&labels=plugin-submission', target: '_blank', rel: 'noreferrer', title: t('contributeTitle'), onClick: (e) => { e.preventDefault(); openExternal('https://github.com/whyihaveyou/dsh-suite/issues/new?title=' + encodeURIComponent('投稿插件 / Plugin submission') + '&labels=plugin-submission') }, style: { color: '#8b949e' } }, '📮 ' + t('contributeStore')))
+        h('a', { href: feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' }), target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(feedbackUrl({ repo: 'whyihaveyou/dsh-suite', name: 'plugin-manager / 商店' })) }, style: { color: 'var(--dsw-alias-label-secondary)' } }, '💬 ' + t('feedbackStore')), ' · ',
+        h('a', { href: 'https://github.com/whyihaveyou/dsh-suite/issues/new?title=' + encodeURIComponent('投稿插件 / Plugin submission') + '&labels=plugin-submission', target: '_blank', rel: 'noreferrer', title: t('contributeTitle'), onClick: (e) => { e.preventDefault(); openExternal('https://github.com/whyihaveyou/dsh-suite/issues/new?title=' + encodeURIComponent('投稿插件 / Plugin submission') + '&labels=plugin-submission') }, style: { color: 'var(--dsw-alias-label-secondary)' } }, '📮 ' + t('contributeStore')))
 
-      const viewBtn = (active) => ({ background: active ? '#30363d' : 'transparent', color: active ? '#e6edf3' : '#8b949e', border: '1px solid #30363d', borderRadius: '6px', padding: '6px 14px', fontSize: '13px', cursor: 'pointer' })
+      const viewBtn = (active) => ({ background: active ? 'var(--dsw-alias-bg-overlay)' : 'transparent', color: active ? 'var(--dsw-alias-label-primary)' : 'var(--dsw-alias-label-secondary)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', padding: '6px 14px', fontSize: '13px', cursor: 'pointer' })
       const viewToggle = h('div', { style: { display: 'flex', gap: '8px', marginBottom: '12px' } },
         h('button', { style: viewBtn(view === 'store'), onClick: () => setView('store') }, '🛍 ' + t('viewStore')),
         h('button', { style: viewBtn(view === 'installed'), onClick: () => { setView('installed'); loadInstalled(); loadUpdates() } }, '📦 ' + t('viewInstalled')),
@@ -684,33 +685,33 @@ window.__ModuleLoader__.load({
       const GROUPS = ['official', 'npm', 'git', 'self', 'other']
       const installedView = h('div', null,
         h('input', { style: { ...C.input, marginBottom: '12px', width: '100%' }, placeholder: t('searchInstalled'), value: instSearch, onChange: (e) => setInstSearch(e.target.value) }),
-        uninstallResult ? h('div', { style: uninstallResult.ok ? { color: '#3fb950', fontSize: '12px', fontWeight: '600', marginBottom: '10px' } : { color: '#f85149', fontSize: '11px', marginBottom: '10px', whiteSpace: 'pre-wrap' } }, uninstallResult.ok ? '✅ ' + t('uninstallDone') : '❌ ' + t('uninstallFailed') + ': ' + (uninstallResult.log || '')) : null,
-        updateResult ? h('div', { style: updateResult.ok ? { color: '#3fb950', fontSize: '12px', fontWeight: '600', marginBottom: '10px' } : { color: '#f85149', fontSize: '11px', marginBottom: '10px', whiteSpace: 'pre-wrap' } }, updateResult.ok ? '✅ ' + t('updateDone') : '❌ ' + t('updateFailed') + ': ' + (updateResult.log || updateResult.error || '')) : null,
+        uninstallResult ? h('div', { style: uninstallResult.ok ? { color: 'var(--dsw-alias-state-success-primary)', fontSize: '12px', fontWeight: '600', marginBottom: '10px' } : { color: 'var(--dsw-alias-state-error-primary)', fontSize: '11px', marginBottom: '10px', whiteSpace: 'pre-wrap' } }, uninstallResult.ok ? '✅ ' + t('uninstallDone') : '❌ ' + t('uninstallFailed') + ': ' + (uninstallResult.log || '')) : null,
+        updateResult ? h('div', { style: updateResult.ok ? { color: 'var(--dsw-alias-state-success-primary)', fontSize: '12px', fontWeight: '600', marginBottom: '10px' } : { color: 'var(--dsw-alias-state-error-primary)', fontSize: '11px', marginBottom: '10px', whiteSpace: 'pre-wrap' } }, updateResult.ok ? '✅ ' + t('updateDone') : '❌ ' + t('updateFailed') + ': ' + (updateResult.log || updateResult.error || '')) : null,
         instLoading && installedList.length === 0 ? h('div', { style: C.desc }, t('loading')) : null,
         GROUPS.map((g) => {
           const items = instFiltered.filter((e) => e.source === g)
           if (items.length === 0) return null
           return h('div', { key: g, style: { marginBottom: '16px' } },
             h('div', { style: { display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' } },
-              h('span', { style: { fontSize: '13px', fontWeight: '600', color: '#e6edf3' } }, srcLabel(g)),
-              h('span', { style: { fontSize: '11px', color: '#8b949e', background: '#21262d', padding: '1px 8px', borderRadius: '10px' } }, items.length)),
-            items.map((e) => h('div', { key: e.id || e.name, style: { display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 12px', background: '#161b22', border: '1px solid #30363d', borderRadius: '8px', marginBottom: '6px' } },
+              h('span', { style: { fontSize: '13px', fontWeight: '600', color: 'var(--dsw-alias-label-primary)' } }, srcLabel(g)),
+              h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)', background: 'var(--dsw-alias-bg-layer-2)', padding: '1px 8px', borderRadius: '10px' } }, items.length)),
+            items.map((e) => h('div', { key: e.id || e.name, style: { display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 12px', background: 'var(--dsw-alias-bg-layer-1)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '8px', marginBottom: '6px' } },
               h('div', { style: { flex: 1, minWidth: 0 } },
-                h('div', { style: { fontSize: '13px', color: '#e6edf3', wordBreak: 'break-all' } }, e.name),
+                h('div', { style: { fontSize: '13px', color: 'var(--dsw-alias-label-primary)', wordBreak: 'break-all' } }, e.name),
                 h('div', { style: { ...C.meta, gap: '10px' } },
                   e.version ? h('span', null, 'v' + e.version) : null,
                   h('span', null, srcLabel(e.source)),
-                  (updN(e.name) && updN(e.name).hasUpdate) ? h('span', { style: { color: '#d29922', fontWeight: '600' } }, '⬆ ' + t('update') + ' → v' + updN(e.name).latest) : null,
-                  h('span', { style: { color: e.enabled ? '#3fb950' : '#8b949e' } }, e.enabled ? t('enabled') : t('disabled')))),
+                  (updN(e.name) && updN(e.name).hasUpdate) ? h('span', { style: { color: 'var(--dsw-alias-state-warn-primary)', fontWeight: '600' } }, '⬆ ' + t('update') + ' → v' + updN(e.name).latest) : null,
+                  h('span', { style: { color: e.enabled ? 'var(--dsw-alias-state-success-primary)' : 'var(--dsw-alias-label-secondary)' } }, e.enabled ? t('enabled') : t('disabled')))),
               h('div', { style: { display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 } },
                 updating === e.name
-                  ? h('span', { style: { fontSize: '11px', color: '#8b949e' } }, t('updating'))
+                  ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)' } }, t('updating'))
                   : (updN(e.name) && updN(e.name).hasUpdate)
-                    ? h('button', { style: { color: '#d29922', border: '1px solid #d29922', borderRadius: '6px', background: 'transparent', padding: '5px 10px', fontSize: '12px', cursor: 'pointer' }, onClick: () => setUpdateConfirm(e) }, '⬆ ' + t('upgrade'))
+                    ? h('button', { style: { color: 'var(--dsw-alias-state-warn-primary)', border: '1px solid var(--dsw-alias-state-warn-primary)', borderRadius: '6px', background: 'transparent', padding: '5px 10px', fontSize: '12px', cursor: 'pointer' }, onClick: () => setUpdateConfirm(e) }, '⬆ ' + t('upgrade'))
                     : null,
                 uninstalling === e.name
-                  ? h('span', { style: { fontSize: '11px', color: '#8b949e' } }, t('uninstalling'))
-                  : h('button', { style: { color: '#f85149', border: '1px solid #f85149', borderRadius: '6px', background: 'transparent', padding: '5px 10px', fontSize: '12px', cursor: 'pointer' }, onClick: () => setUninstallConfirm(e) }, t('remove')))),
+                  ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)' } }, t('uninstalling'))
+                  : h('button', { style: { color: 'var(--dsw-alias-state-error-primary)', border: '1px solid var(--dsw-alias-state-error-primary)', borderRadius: '6px', background: 'transparent', padding: '5px 10px', fontSize: '12px', cursor: 'pointer' }, onClick: () => setUninstallConfirm(e) }, t('remove')))),
             ))
         }),
         installedList.length > 0 && instFiltered.length === 0 ? h('div', { style: C.desc }, '🔍 ' + t('empty') + ' "' + instSearch + '"') : null,
@@ -721,15 +722,15 @@ window.__ModuleLoader__.load({
         const e = uninstallConfirm
         uninstallModal = h('div', { style: C.modalBack, onClick: () => setUninstallConfirm(null) },
           h('div', { style: C.modal, onClick: (ev) => ev.stopPropagation() },
-            h('div', { style: { fontSize: '15px', fontWeight: '600', color: '#e6edf3', marginBottom: '10px' } }, t('uninstallTitle')),
-            h('div', { style: { fontSize: '13px', color: '#e6edf3', wordBreak: 'break-all', marginBottom: '6px' } }, e.name),
+            h('div', { style: { fontSize: '15px', fontWeight: '600', color: 'var(--dsw-alias-label-primary)', marginBottom: '10px' } }, t('uninstallTitle')),
+            h('div', { style: { fontSize: '13px', color: 'var(--dsw-alias-label-primary)', wordBreak: 'break-all', marginBottom: '6px' } }, e.name),
             h('div', { style: C.meta, marginBottom: '6px' },
               h('span', null, srcLabel(e.source)),
               e.version ? h('span', null, 'v' + e.version) : null),
             h('div', { style: { ...C.warn, marginBottom: '14px' } }, '⚠ ' + t('uninstallHint')),
             h('div', { style: { display: 'flex', gap: '8px', justifyContent: 'flex-end' } },
               h('button', { style: C.btnGhost, onClick: () => setUninstallConfirm(null) }, t('cancel')),
-              h('button', { style: { ...C.btn, background: '#da3633' }, onClick: () => { setUninstallConfirm(null); doUninstall(e) } }, t('confirm')))),
+              h('button', { style: { ...C.btn, background: 'var(--dsw-alias-state-error-primary)' }, onClick: () => { setUninstallConfirm(null); doUninstall(e) } }, t('confirm')))),
         )
       }
 
@@ -739,12 +740,12 @@ window.__ModuleLoader__.load({
         const upR = updN(e.name)
         updateModal = h('div', { style: C.modalBack, onClick: () => setUpdateConfirm(null) },
           h('div', { style: C.modal, onClick: (ev) => ev.stopPropagation() },
-            h('div', { style: { fontSize: '15px', fontWeight: '600', color: '#e6edf3', marginBottom: '10px' } }, t('confirmUpdate')),
-            h('div', { style: { fontSize: '13px', color: '#e6edf3', wordBreak: 'break-all', marginBottom: '6px' } }, e.name),
+            h('div', { style: { fontSize: '15px', fontWeight: '600', color: 'var(--dsw-alias-label-primary)', marginBottom: '10px' } }, t('confirmUpdate')),
+            h('div', { style: { fontSize: '13px', color: 'var(--dsw-alias-label-primary)', wordBreak: 'break-all', marginBottom: '6px' } }, e.name),
             h('div', { style: C.meta, marginBottom: '6px' },
               h('span', null, srcLabel(e.source)),
               e.version ? h('span', null, 'v' + e.version) : null),
-            upR ? h('div', { style: { color: '#3fb950', fontSize: '12px', marginBottom: '6px' } }, t('updateHint') + ' (v' + (upR.installed || e.version || '?') + ' → v' + upR.latest + ')') : null,
+            upR ? h('div', { style: { color: 'var(--dsw-alias-state-success-primary)', fontSize: '12px', marginBottom: '6px' } }, t('updateHint') + ' (v' + (upR.installed || e.version || '?') + ' → v' + upR.latest + ')') : null,
             h('div', { style: { ...C.desc, fontSize: '12px', marginBottom: '14px' } }, t('restartHint')),
             h('div', { style: { display: 'flex', gap: '8px', justifyContent: 'flex-end' } },
               h('button', { style: C.btnGhost, onClick: () => setUpdateConfirm(null) }, t('cancel')),
@@ -756,7 +757,7 @@ window.__ModuleLoader__.load({
       if (view === 'scenes') {
         return h('div', null,
           viewToggle,
-          h('div', { style: { fontSize: '12px', color: '#8b949e', marginBottom: '12px', lineHeight: '1.5' } }, t('sceneHint')),
+          h('div', { style: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary)', marginBottom: '12px', lineHeight: '1.5' } }, t('sceneHint')),
           SCENES.map((sc) => {
             const instCount = sc.items.filter((it) => isInstalled({ name: it.pkg }, names)).length
             const allIn = instCount === sc.items.length
@@ -766,31 +767,31 @@ window.__ModuleLoader__.load({
             return h('div', { key: sc.id, style: { ...C.card, marginBottom: '12px', minHeight: 0 } },
               h('div', { style: { display: 'flex', alignItems: 'center', gap: '8px' } },
                 h('span', { style: { fontSize: '20px' } }, sc.emoji),
-                h('span', { style: { fontSize: '15px', fontWeight: '700', color: '#e6edf3' } }, t('lang') === 'zh' ? sc.title.zh : sc.title.en),
-                h('span', { style: { fontSize: '11px', color: '#8b949e', background: '#21262d', padding: '1px 8px', borderRadius: '10px' } },
+                h('span', { style: { fontSize: '15px', fontWeight: '700', color: 'var(--dsw-alias-label-primary)' } }, t('lang') === 'zh' ? sc.title.zh : sc.title.en),
+                h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)', background: 'var(--dsw-alias-bg-layer-2)', padding: '1px 8px', borderRadius: '10px' } },
                   t('sceneItems') + ' ' + sc.items.length),
-                allIn ? h('span', { style: { marginLeft: 'auto', fontSize: '12px', color: '#3fb950', fontWeight: '600' } }, '✅ ' + t('sceneAllInstalled')) : null),
+                allIn ? h('span', { style: { marginLeft: 'auto', fontSize: '12px', color: 'var(--dsw-alias-state-success-primary)', fontWeight: '600' } }, '✅ ' + t('sceneAllInstalled')) : null),
               h('div', { style: C.desc }, t('lang') === 'zh' ? sc.blurb.zh : sc.blurb.en),
               sc.items.map((it) => {
                 const k = sc.id + '::' + it.pkg
                 const st = sceneResults[k]
                 const inst = isInstalled({ name: it.pkg }, names)
-                let mark = inst ? h('span', { style: { color: '#3fb950' } }, '✅') : h('span', { style: { color: '#6e7681' } }, '·')
-                if (st === 'ing') mark = h('span', { style: { color: '#d29922' } }, '⏳ ' + t('installing'))
-                else if (st === 'ok-already') mark = h('span', { style: { color: '#3fb950' } }, '✅ ' + t('installed'))
-                else if (st === 'ok') mark = h('span', { style: { color: '#3fb950' } }, '✔ ok')
-                else if ((st || '').startsWith('fail')) mark = h('span', { style: { color: '#f85149' }, title: st }, '❌ ' + String(st).slice(0, 80))
-                return h('div', { key: k, style: { display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '6px 0', borderTop: '1px dashed #21262d' } },
-                  h('span', { style: { fontFamily: 'ui-monospace, SFMono-Regular, monospace', fontSize: '12px', color: '#79c0ff', flexShrink: 0 } }, it.pkg),
-                  h('span', { style: { fontSize: '11px', color: '#8b949e', flex: 1, lineHeight: '1.4' } }, t('lang') === 'zh' ? it.note.zh : it.note.en),
+                let mark = inst ? h('span', { style: { color: 'var(--dsw-alias-state-success-primary)' } }, '✅') : h('span', { style: { color: 'var(--dsw-alias-label-secondary)' } }, '·')
+                if (st === 'ing') mark = h('span', { style: { color: 'var(--dsw-alias-state-warn-primary)' } }, '⏳ ' + t('installing'))
+                else if (st === 'ok-already') mark = h('span', { style: { color: 'var(--dsw-alias-state-success-primary)' } }, '✅ ' + t('installed'))
+                else if (st === 'ok') mark = h('span', { style: { color: 'var(--dsw-alias-state-success-primary)' } }, '✔ ok')
+                else if ((st || '').startsWith('fail')) mark = h('span', { style: { color: 'var(--dsw-alias-state-error-primary)' }, title: st }, '❌ ' + String(st).slice(0, 80))
+                return h('div', { key: k, style: { display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '6px 0', borderTop: '1px dashed var(--dsw-alias-border-l1)' } },
+                  h('span', { style: { fontFamily: 'ui-monospace, SFMono-Regular, monospace', fontSize: '12px', color: 'var(--dsw-alias-label-primary)', flexShrink: 0 } }, it.pkg),
+                  h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)', flex: 1, lineHeight: '1.4' } }, t('lang') === 'zh' ? it.note.zh : it.note.en),
                   h('span', { style: { fontSize: '11px', flexShrink: 0, maxWidth: '46%' } }, mark))
               }),
               h('div', { style: { display: 'flex', gap: '8px', alignItems: 'center', marginTop: 'auto' } },
                 allIn || sceneBusy === sc.id
                   ? h('button', { style: C.btnDisabled }, sceneBusy === sc.id ? t('installing') : t('sceneAllInstalled'))
                   : h('button', { style: C.btn, onClick: () => installScene(sc) }, '⬇ ' + t('sceneInstallAll')),
-                sc.presetGuide && (allIn || anyRes) ? h('span', { style: { fontSize: '11px', color: '#d29922', lineHeight: '1.4' } }, t('sceneGuidePreset')) : null),
-              anyRes && !anyFail && !allIn ? h('div', { style: { fontSize: '11px', color: '#8b949e' } }, t('sceneNeedRestart')) : null)
+                sc.presetGuide && (allIn || anyRes) ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-warn-primary)', lineHeight: '1.4' } }, t('sceneGuidePreset')) : null),
+              anyRes && !anyFail && !allIn ? h('div', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)' } }, t('sceneNeedRestart')) : null)
           }))
       }
 
@@ -813,21 +814,21 @@ window.__ModuleLoader__.load({
         const isBroken = p.compatStatus === 'broken'
         const installBtn = installedHere
           ? (hasUpdate
-              ? h('button', { key: 'i', style: { ...C.btnGhost, color: '#d29922', borderColor: '#d29922' }, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, '⬆ ' + t('upgrade'))
+              ? h('button', { key: 'i', style: { ...C.btnGhost, color: 'var(--dsw-alias-state-warn-primary)', borderColor: 'var(--dsw-alias-state-warn-primary)' }, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, '⬆ ' + t('upgrade'))
               : h('button', { key: 'i', style: C.btnDisabled }, '✅ ' + t('installed')))
           : busy
             ? h('button', { style: C.btnDisabled, key: 'i' }, t('installing'))
-            : h('button', { key: 'i', style: isBroken ? { ...C.btn, background: '#9e6a03' } : C.btn, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, t('install'))
+            : h('button', { key: 'i', style: isBroken ? { ...C.btn, background: 'var(--dsw-alias-state-warn-primary)' } : C.btn, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, t('install'))
 
         return h('div', { key: p.id || p.name, style: C.card, onClick: () => setDetail(p), title: t('dtOpen') },
           p.repo ? h(LazyImage, { src: p.ogLocal || ('https://opengraph.githubassets.com/1/' + p.repo), alt: p.repo }) : null,
           h('div', { style: C.name },
             h('span', null, p.name),
             p.compatStatus === 'unknown'
-              ? h('span', { title: t('unknownBadgeTitle'), style: { width: '7px', height: '7px', borderRadius: '50%', background: '#484f58', display: 'inline-block', marginLeft: '2px', flexShrink: '0' } })
+              ? h('span', { title: t('unknownBadgeTitle'), style: { width: '7px', height: '7px', borderRadius: '50%', background: 'var(--dsw-alias-label-secondary)', display: 'inline-block', marginLeft: '2px', flexShrink: '0' } })
               : h('span', { style: C.badge(bad[1]) }, bad[0]),
-            installedHere ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, '✅') : null,
-            hasUpdate ? h('span', { style: { fontSize: '11px', color: '#d29922', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + (upM && upM.latest ? ' → v' + upM.latest : '')) : null),
+            installedHere ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-success-primary)' } }, '✅') : null,
+            hasUpdate ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-warn-primary)', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + (upM && upM.latest ? ' → v' + upM.latest : '')) : null),
           // v0.6 F-D: desc 单语化 —— UI locale 取主语言、回退另一语言，卡片不再双行堆叠
           h('div', { style: C.desc }, (t('lang') === 'zh' ? (p.desc_zh || p.desc_en) : (p.desc_en || p.desc_zh)) || ''),
           h('div', { style: C.meta },
@@ -835,23 +836,23 @@ window.__ModuleLoader__.load({
             h('span', null, (p.stars || 0) + '★'),
             p.license ? h('span', null, p.license) : null),
           isBroken ? h('div', { style: C.warn }, '⚠ ' + t('broken')) : null,
-          res && res.ok === false ? h('div', { style: { color: '#f85149', fontSize: '11px', whiteSpace: 'pre-wrap', maxHeight: '90px', overflow: 'auto' } }, '❌ ' + t('installFailed') + ':' + '\n' + (res.log || '')) : null,
-          res && res.ok === false ? h('div', { style: { color: '#8b949e', fontSize: '11px', marginTop: '4px', display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' } }, t('failGuide'), h('button', { style: C.btnGhost, onClick: (e) => { e.stopPropagation(); copyText(pkgSpec(p.installCmd), () => {}) } }, '📋 ' + t('copy'))) : null,
-          res && res.ok === true && res.mounted === false ? h('div', { style: { color: '#d29922', fontSize: '11px', padding: '6px', border: '1px solid #9e6a03', borderRadius: '6px' } }, '⚠ ' + t('installedNotMounted') + ': ' + (res.installed || []).join(', ')) : null,
-          res && res.ok === true && res.mounted === true ? h('div', { style: { color: '#3fb950', fontSize: '12px', fontWeight: '700', padding: '8px', background: 'rgba(63,185,80,0.12)', border: '1px solid #238636', borderRadius: '6px' } }, '✅ ' + t('needRestart')) : null,
-          res && res.ok === true && res.mounted === true ? h('div', { style: { color: '#8b949e', fontSize: '11px', marginTop: '4px', lineHeight: '1.5' } }, t('guideAfterInstall')) : null,
+          res && res.ok === false ? h('div', { style: { color: 'var(--dsw-alias-state-error-primary)', fontSize: '11px', whiteSpace: 'pre-wrap', maxHeight: '90px', overflow: 'auto' } }, '❌ ' + t('installFailed') + ':' + '\n' + (res.log || '')) : null,
+          res && res.ok === false ? h('div', { style: { color: 'var(--dsw-alias-label-secondary)', fontSize: '11px', marginTop: '4px', display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' } }, t('failGuide'), h('button', { style: C.btnGhost, onClick: (e) => { e.stopPropagation(); copyText(pkgSpec(p.installCmd), () => {}) } }, '📋 ' + t('copy'))) : null,
+          res && res.ok === true && res.mounted === false ? h('div', { style: { color: 'var(--dsw-alias-state-warn-primary)', fontSize: '11px', padding: '6px', border: '1px solid var(--dsw-alias-state-warn-primary)', borderRadius: '6px' } }, '⚠ ' + t('installedNotMounted') + ': ' + (res.installed || []).join(', ')) : null,
+          res && res.ok === true && res.mounted === true ? h('div', { style: { color: 'var(--dsw-alias-state-success-primary)', fontSize: '12px', fontWeight: '700', padding: '8px', background: 'rgba(63,185,80,0.12)', border: '1px solid #238636', borderRadius: '6px' } }, '✅ ' + t('needRestart')) : null,
+          res && res.ok === true && res.mounted === true ? h('div', { style: { color: 'var(--dsw-alias-label-secondary)', fontSize: '11px', marginTop: '4px', lineHeight: '1.5' } }, t('guideAfterInstall')) : null,
           h('div', { style: { display: 'flex', gap: '8px', marginTop: 'auto' } },
             installBtn,
-            h('button', { style: copied === p.name ? { ...C.btnGhost, color: '#3fb950', borderColor: '#238636' } : C.btnGhost, onClick: (e) => { e.stopPropagation(); copyCmd(p) } }, copied === p.name ? '✓ ' + t('copied') : '📋')),
+            h('button', { style: copied === p.name ? { ...C.btnGhost, color: 'var(--dsw-alias-state-success-primary)', borderColor: '#238636' } : C.btnGhost, onClick: (e) => { e.stopPropagation(); copyCmd(p) } }, copied === p.name ? '✓ ' + t('copied') : '📋')),
           h('a', { href: feedbackUrl(p), target: '_blank', rel: 'noreferrer', title: t('feedbackTitle'), onClick: (e) => { e.stopPropagation(); e.preventDefault(); openExternal(feedbackUrl(p)) }, style: { ...C.btnGhost, padding: '1px 6px', fontSize: '11px', textDecoration: 'none' } }, '💬'),
         )
       })
 
       // v0.8 ②: 实时安装日志悬浮面板（真流式行；buffered 回退时仅显示「…」）
       const installPanel = installing
-        ? h('div', { style: { position: 'fixed', right: '16px', bottom: '16px', width: '380px', maxWidth: '70vw', background: '#0d1117', border: '1px solid #30363d', borderRadius: '10px', padding: '10px 12px', zIndex: '70', boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }, key: 'install-panel' },
-            h('div', { style: { fontSize: '12px', fontWeight: '700', color: '#e6edf3', marginBottom: '6px' } }, '⬇ ' + t('installing') + ' ' + installing),
-            h('div', { style: { fontFamily: 'ui-monospace, SFMono-Regular, monospace', fontSize: '10px', lineHeight: '1.45', color: '#8b949e', maxHeight: '120px', overflowY: 'auto', whiteSpace: 'pre-wrap', wordBreak: 'break-all' } },
+        ? h('div', { style: { position: 'fixed', right: '16px', bottom: '16px', width: '380px', maxWidth: '70vw', background: 'var(--dsw-alias-bg-layer-2)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '10px', padding: '10px 12px', zIndex: '70', boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }, key: 'install-panel' },
+            h('div', { style: { fontSize: '12px', fontWeight: '700', color: 'var(--dsw-alias-label-primary)', marginBottom: '6px' } }, '⬇ ' + t('installing') + ' ' + installing),
+            h('div', { style: { fontFamily: 'ui-monospace, SFMono-Regular, monospace', fontSize: '10px', lineHeight: '1.45', color: 'var(--dsw-alias-label-secondary)', maxHeight: '120px', overflowY: 'auto', whiteSpace: 'pre-wrap', wordBreak: 'break-all' } },
               installLog.length ? installLog.slice(-10).join('\n') : '…'))
         : null
 
@@ -867,13 +868,13 @@ window.__ModuleLoader__.load({
         const spec = pkgSpec(p.installCmd)
         modal = h('div', { style: C.modalBack, onClick: () => setConfirmPkg(null) },
           h('div', { style: C.modal, onClick: (e) => e.stopPropagation() },
-            h('div', { style: { fontSize: '15px', fontWeight: '600', color: '#e6edf3', marginBottom: '10px' } }, t('confirmTitle')),
+            h('div', { style: { fontSize: '15px', fontWeight: '600', color: 'var(--dsw-alias-label-primary)', marginBottom: '10px' } }, t('confirmTitle')),
             h('div', { style: C.desc, marginBottom: '6px' }, p.name),
             p.repo ? h('div', { style: C.meta, marginBottom: '6px' }, h('span', null, 'repo: ' + p.repo)) : null,
             h('div', { style: C.meta, marginBottom: '6px' },
               h('span', null, (p.stars || 0) + '★'),
               p.license ? h('span', null, p.license) : h('span', { style: C.warn }, t('unknownLicense'))),
-            (spec && updN(spec)) ? h('div', { style: { color: '#3fb950', fontSize: '12px', marginBottom: '6px' } }, t('updateHint') + ' (v' + ((updN(spec).installed) || '?') + ' → v' + updN(spec).latest + ')') : null,
+            (spec && updN(spec)) ? h('div', { style: { color: 'var(--dsw-alias-state-success-primary)', fontSize: '12px', marginBottom: '6px' } }, t('updateHint') + ' (v' + ((updN(spec).installed) || '?') + ' → v' + updN(spec).latest + ')') : null,
             h('div', { style: { ...C.desc, marginBottom: '14px', wordBreak: 'break-all' } }, spec),
             h('div', { style: { display: 'flex', gap: '8px', justifyContent: 'flex-end' } },
               h('button', { style: C.btnGhost, onClick: () => setConfirmPkg(null) }, t('cancel')),
@@ -885,9 +886,9 @@ window.__ModuleLoader__.load({
       if (manualCopy) {
         manualModal = h('div', { style: C.modalBack, onClick: () => setManualCopy(null) },
           h('div', { style: C.modal, onClick: (e) => e.stopPropagation() },
-            h('div', { style: { fontSize: '15px', fontWeight: '600', color: '#e6edf3', marginBottom: '10px' } }, t('manualCopyTitle')),
+            h('div', { style: { fontSize: '15px', fontWeight: '600', color: 'var(--dsw-alias-label-primary)', marginBottom: '10px' } }, t('manualCopyTitle')),
             h('div', { style: C.desc, marginBottom: '8px' }, t('manualCopyHint')),
-            h('div', { style: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '6px', padding: '10px', fontSize: '12px', color: '#c9d1d9', wordBreak: 'break-all', marginBottom: '14px' } }, manualCopy),
+            h('div', { style: { background: 'var(--dsw-alias-bg-layer-2)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', padding: '10px', fontSize: '12px', color: 'var(--dsw-alias-label-primary)', wordBreak: 'break-all', marginBottom: '14px' } }, manualCopy),
             h('div', { style: { display: 'flex', justifyContent: 'flex-end' } },
               h('button', { style: C.btnGhost, onClick: () => setManualCopy(null) }, t('cancel'))),
           ))
@@ -910,10 +911,10 @@ window.__ModuleLoader__.load({
             h('div', { style: C.drawerTitle },
               h('span', null, d.name),
               d.compatStatus === 'unknown'
-                ? h('span', { title: t('unknownBadgeTitle'), style: { width: '9px', height: '9px', borderRadius: '50%', background: '#484f58', display: 'inline-block' } })
+                ? h('span', { title: t('unknownBadgeTitle'), style: { width: '9px', height: '9px', borderRadius: '50%', background: 'var(--dsw-alias-label-secondary)', display: 'inline-block' } })
                 : h('span', { style: C.badge(dBad[1]) }, dBad[0]),
-              dInstalled ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, '✅ ' + t('installed')) : null,
-              dUpM ? h('span', { style: { fontSize: '11px', color: '#d29922', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + ' → v' + dUpM.latest) : null),
+              dInstalled ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-success-primary)' } }, '✅ ' + t('installed')) : null,
+              dUpM ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-warn-primary)', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + ' → v' + dUpM.latest) : null),
             h('div', null,
               h('div', { style: C.drawerSec }, t('dtMeta')),
               h('div', { style: C.drawerMeta },
@@ -932,7 +933,7 @@ window.__ModuleLoader__.load({
               h('div', { style: C.drawerSec }, t('dtCompat')),
               h('div', { style: C.drawerMeta },
                 d.compatStatus === 'unknown'
-                  ? h('span', { style: { color: '#8b949e' } }, t('unknownBadgeTitle'))
+                  ? h('span', { style: { color: 'var(--dsw-alias-label-secondary)' } }, t('unknownBadgeTitle'))
                   : h('span', { style: C.badge(dBad[1]) }, dBad[0]),
                 d.compat && d.compat.lastVerified ? h('span', null, '🕒 ' + d.compat.lastVerified) : null)),
             h('div', null,
@@ -957,8 +958,8 @@ window.__ModuleLoader__.load({
       if (showFeatured) {
         featuredEl = h('div', { style: { marginBottom: '14px' } },
           h('div', { style: { display: 'flex', alignItems: 'baseline', gap: '10px', margin: '2px 0 8px' } },
-            h('span', { style: { fontSize: '14px', fontWeight: '700', color: '#e6edf3' } }, t('featTitle')),
-            h('span', { style: { fontSize: '11px', color: '#6e7681' } }, t('featSub'))),
+            h('span', { style: { fontSize: '14px', fontWeight: '700', color: 'var(--dsw-alias-label-primary)' } }, t('featTitle')),
+            h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)' } }, t('featSub'))),
           h('div', { style: C.featWrap }, featuredList.slice().sort((a, b) => Number(isInstalled(a, names)) - Number(isInstalled(b, names))).map((p) => {
             const fInstalled = isInstalled(p, names)
             const fBusy = installing === p.name
@@ -969,9 +970,9 @@ window.__ModuleLoader__.load({
                 h('img', { src: p.ogLocal || ('https://opengraph.githubassets.com/1/' + p.repo), alt: p.repo, loading: 'lazy', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } }),
                 fInstalled ? h('div', { style: { position: 'absolute', top: '8px', right: '8px', background: 'rgba(35,134,54,0.92)', color: '#fff', fontSize: '11px', fontWeight: '700', padding: '2px 10px', borderRadius: '10px', pointerEvents: 'none' } }, '✓ ' + t('installed')) : null) : null,
               h('div', { style: C.featBody },
-                h('div', { style: { fontSize: '13px', fontWeight: '600', color: '#e6edf3', wordBreak: 'break-all' } }, p.name),
+                h('div', { style: { fontSize: '13px', fontWeight: '600', color: 'var(--dsw-alias-label-primary)', wordBreak: 'break-all' } }, p.name),
                 h('div', { style: C.featDesc }, fDesc),
-                h('div', { style: { fontSize: '11px', color: '#8b949e', display: 'flex', gap: '8px' } },
+                h('div', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)', display: 'flex', gap: '8px' } },
                   h('span', null, (p.stars || 0) + '★'),
                   h('span', null, p.author || '?')),
                 h('div', { style: { display: 'flex', gap: '8px', marginTop: 'auto' } },
@@ -987,7 +988,7 @@ window.__ModuleLoader__.load({
       // v0.7 F-G: 增量渲染哨兵 + 结果计数
       filtered.length > 0
         ? h('div', {
-            style: { textAlign: 'center', padding: '12px', color: '#8b949e', fontSize: '12px' },
+            style: { textAlign: 'center', padding: '12px', color: 'var(--dsw-alias-label-secondary)', fontSize: '12px' },
             ref: (el) => { sentinelRef.current = el },
           }, filtered.length > visible
               ? t('shownXofN').replace('{x}', Math.min(visible, filtered.length)).replace('{n}', filtered.length)
@@ -995,13 +996,13 @@ window.__ModuleLoader__.load({
         : null,
       // v0.7 F-I/M: watchlist/风险榜聚合条目 → 站外年报
       catalog.length > 0
-        ? h('div', { style: { textAlign: 'center', color: '#6e7681', fontSize: '11px', padding: '0 0 14px', display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' } },
+        ? h('div', { style: { textAlign: 'center', color: 'var(--dsw-alias-label-secondary)', fontSize: '11px', padding: '0 0 14px', display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' } },
             h('span', null, '🔎 ' + (watchMeta && watchMeta.total > 0
               ? t('watchReal')
                   .replace('{n}', watchMeta.total)
                   .replace('{r}', Object.entries(watchMeta.byReason || {}).sort((a, b) => b[1] - a[1]).slice(0, 4).map((kv) => kv[0] + ' ' + kv[1]).join(' · '))
               : t('watchLine').replace('{x}', watchStats[0]).replace('{y}', watchStats[1]))),
-            h('a', { href: t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html', target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html') }, style: { color: '#79c0ff', textDecoration: 'none' } }, t('watchLink')))
+            h('a', { href: t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html', target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html') }, style: { color: 'var(--dsw-alias-label-primary)', textDecoration: 'none' } }, t('watchLink')))
         : null,
       empty, modal, manualModal, drawerEl, installPanel)
     }

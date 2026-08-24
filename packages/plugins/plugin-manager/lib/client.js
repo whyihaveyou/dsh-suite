@@ -47,6 +47,7 @@ window.__ModuleLoader__.load({
       shownXofN: '已显示 {x} / 共 {n} 条 · 下拉继续加载', totalN: '共 {n} 条（已显示全部）',
       contributeStore: '投稿我的插件', contributeTitle: '把你的插件/主题投稿到目录（打开 GitHub issue）',
       watchLine: '兼容观测中 {x} 个 · 含风险点 {y} 个', watchLink: '每日兼容状态年报 ↗',
+      watchReal: '观测中 {n} 个（{r}）· 目录真实口径',
       featTitle: '⭐ 精选推荐', featSub: '策展人挑选 · 按星标排序',
       viewStore: '商店', viewInstalled: '已装管理',
       viewScenes: '场景组合',
@@ -86,6 +87,7 @@ window.__ModuleLoader__.load({
       shownXofN: 'Showing {x} / {n} — scroll for more', totalN: '{n} total (all shown)',
       contributeStore: 'Submit your plugin', contributeTitle: 'Submit your plugin/theme to the catalog (opens GitHub issue)',
       watchLine: '{x} compat-unverified · {y} with risk flags', watchLink: 'daily compat report ↗',
+      watchReal: '{n} under watch ({r}) · live catalog data',
       featTitle: '⭐ Featured', featSub: 'curator picks · sorted by stars',
       viewStore: 'Store', viewInstalled: 'Installed',
       viewScenes: 'Scenes',
@@ -289,6 +291,15 @@ window.__ModuleLoader__.load({
       return !!target && names.has(target)
     }
 
+    // v0.8.3 F-3: 第一方判定 —— @dsh-suite/* 或 repo=whyihaveyou/*。
+    // 默认排序时加 FP_STAR_BOOST 视星级（浮到 ~300★ 档位，见 filtered 里的注释）。
+    const FP_STAR_BOOST = 300
+    function isFirstParty(p) {
+      const nm = String(p && p.name || '')
+      const own = String(p && p.repo || '').toLowerCase()
+      return nm.startsWith('@dsh-suite/') || own.startsWith('whyihaveyou/')
+    }
+
     function pkgSpec(installCmd) {
       return String(installCmd || '').replace(/^dsh\s+plugin\s+add\s+/, '').trim()
     }
@@ -342,6 +353,7 @@ window.__ModuleLoader__.load({
       const [sort, setSort] = useState('stars')
       const [onlyOk, setOnlyOk] = useState(false) // v0.6 F-B
       const [detail, setDetail] = useState(null) // v0.6 F-A: 详情抽屉
+      const [watchMeta, setWatchMeta] = useState(null) // v0.8.3: catalog 观测榜真实口径
       const [installed, setInstalled] = useState([])
       const [installing, setInstalling] = useState(null)
       const [installLog, setInstallLog] = useState([]) // v0.8 ②: 安装实时日志行
@@ -369,9 +381,9 @@ window.__ModuleLoader__.load({
           try {
             const [cat, list] = await Promise.all([
               fetchCatalogPlugins(),
-              fetchJson('/plugin-manager/list').then((r) => (r.ok ? r.value : [])).catch(() => []),
+              fetchJson('/plugin-manager/list').then((r) => (Array.isArray(r) ? r : [])).catch(() => []),
             ])
-            if (alive) { setCatalog(cat); setInstalled(list); setLoading(false) }
+            if (alive) { setCatalog(cat.plugins || []); setInstalled(list); setWatchMeta(cat.watchMeta || null); setLoading(false) }
           } catch (e) {
             if (alive) { setError(e.message); setLoading(false) }
           }
@@ -384,7 +396,7 @@ window.__ModuleLoader__.load({
 
       function loadUpdates() {
         fetchJson('/plugin-manager/updates')
-          .then((r) => (r.ok ? r.value : []))
+          .then((r) => (Array.isArray(r) ? r : []))
           .then((v) => setUpdates(v))
           .catch(() => {})
       }
@@ -404,7 +416,11 @@ window.__ModuleLoader__.load({
           const tokens = alias ? q.split(/\s+/).concat(alias.toLowerCase().split(/\s+/)) : [q]
           return tokens.every((w) => w && hay.includes(w))
         })
-        if (sort === 'stars') list = list.slice().sort((a, b) => (b.stars || 0) - (a.stars || 0))
+        // v0.8.3 F-3: 第一方加权 —— 自有包星宿天然低（1-15★ 对生态 19k★ 量级），
+        // 按视星级浮到 ~300★ 档位塞进前两屏；不顶掉 300★+ 爆款，只是不沉底。
+        // 仅作用默认（stars）排序，用户切 updated/verified 时保持原生口径。
+        if (sort === 'stars') list = list.slice().sort((a, b) =>
+          ((b.stars || 0) + (isFirstParty(b) ? FP_STAR_BOOST : 0)) - ((a.stars || 0) + (isFirstParty(a) ? FP_STAR_BOOST : 0)))
         else if (sort === 'updated') list = list.slice().sort((a, b) => String(b.lastPush || '').localeCompare(String(a.lastPush || '')))
         else if (sort === 'verified') list = list.slice().sort((a, b) => String(b.compat?.lastVerified || b.lastVerified || '').localeCompare(String(a.compat?.lastVerified || a.lastVerified || '')))
         else if (sort === 'compat') { const rank = { ok: 0, unknown: 1, broken: 2, unmaintained: 3 }; list = list.slice().sort((a, b) => (rank[a.compatStatus] ?? 1) - (rank[b.compatStatus] ?? 1)) }
@@ -492,7 +508,7 @@ window.__ModuleLoader__.load({
           }
           setResults((r) => ({ ...r, [p.name]: data }))
           if (data.ok) {
-            const list = await fetchJson('/plugin-manager/list').then((r) => (r.ok ? r.value : [])).catch(() => [])
+            const list = await fetchJson('/plugin-manager/list').then((r) => (Array.isArray(r) ? r : [])).catch(() => [])
             setInstalled(list)
           }
         } catch (e) {
@@ -530,7 +546,7 @@ window.__ModuleLoader__.load({
           }
         } finally {
           setSceneBusy(null)
-          const list = await fetchJson('/plugin-manager/list').then((r) => (r.ok ? r.value : [])).catch(() => null)
+          const list = await fetchJson('/plugin-manager/list').then((r) => (Array.isArray(r) ? r : [])).catch(() => null)
           if (list) setInstalled(list)
           loadInstalled()
         }
@@ -573,16 +589,25 @@ window.__ModuleLoader__.load({
           const r = await fetch('/plugin-manager/catalog')
           if (r.ok) {
             const c = await r.json()
-            if (c && Array.isArray(c.plugins) && c.plugins.length) return c.plugins
+            if (c && Array.isArray(c.plugins) && c.plugins.length) return { plugins: c.plugins, watchMeta: c.watchMeta || null }
           }
         } catch { /* fall through */ }
         const c = await fetch(CATALOG_URL).then((r) => r.json())
-        return c.plugins || []
+        // v0.8.3: 完整 catalog.json 自带 watchlist 真实口径，现场聚合（与 host summarizeWatchlist 同口径）
+        const wl = Array.isArray(c.watchlist) ? c.watchlist : []
+        const byReason = {}
+        for (const w of wl) { const k = (w && w.watchReason) || 'other'; byReason[k] = (byReason[k] || 0) + 1 }
+        const totals = c.totals || {}
+        const total = typeof totals.watchlistCount === 'number' ? totals.watchlistCount
+          : typeof totals.watchlist === 'number' ? totals.watchlist
+          : wl.length
+        const watchMeta = (total > 0 || wl.length) ? { total, byReason } : null
+        return { plugins: c.plugins || [], watchMeta }
       }
       function loadInstalled() {
         setInstLoading(true)
         fetchJson('/plugin-manager/installed')
-          .then((r) => (r.ok ? r.value : []))
+          .then((r) => (Array.isArray(r) ? r : []))
           .then((v) => { setInstalledList(v); setInstLoading(false) })
           .catch(() => setInstLoading(false))
       }
@@ -934,12 +959,15 @@ window.__ModuleLoader__.load({
           h('div', { style: { display: 'flex', alignItems: 'baseline', gap: '10px', margin: '2px 0 8px' } },
             h('span', { style: { fontSize: '14px', fontWeight: '700', color: '#e6edf3' } }, t('featTitle')),
             h('span', { style: { fontSize: '11px', color: '#6e7681' } }, t('featSub'))),
-          h('div', { style: C.featWrap }, featuredList.map((p) => {
+          h('div', { style: C.featWrap }, featuredList.slice().sort((a, b) => Number(isInstalled(a, names)) - Number(isInstalled(b, names))).map((p) => {
             const fInstalled = isInstalled(p, names)
             const fBusy = installing === p.name
             const fDesc = (t('lang') === 'zh' ? (p.desc_zh || p.desc_en) : (p.desc_en || p.desc_zh)) || ''
-            return h('div', { key: 'feat-' + (p.id || p.name), style: C.featCard, onClick: () => setDetail(p), title: t('dtOpen') },
-              p.repo ? h('div', { style: C.featImgBox }, h('img', { src: p.ogLocal || ('https://opengraph.githubassets.com/1/' + p.repo), alt: p.repo, loading: 'lazy', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } })) : null,
+            // v0.8.3 F-2: 已装策绿卡绿边 + 图上 ✓ 角标 + 沉到策展区末尾（上方 slice().sort）
+            return h('div', { key: 'feat-' + (p.id || p.name), style: fInstalled ? { ...C.featCard, boxShadow: 'inset 0 0 0 1px #238636', opacity: 0.92 } : C.featCard, onClick: () => setDetail(p), title: t('dtOpen') },
+              p.repo ? h('div', { style: { ...C.featImgBox, position: 'relative' } },
+                h('img', { src: p.ogLocal || ('https://opengraph.githubassets.com/1/' + p.repo), alt: p.repo, loading: 'lazy', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } }),
+                fInstalled ? h('div', { style: { position: 'absolute', top: '8px', right: '8px', background: 'rgba(35,134,54,0.92)', color: '#fff', fontSize: '11px', fontWeight: '700', padding: '2px 10px', borderRadius: '10px', pointerEvents: 'none' } }, '✓ ' + t('installed')) : null) : null,
               h('div', { style: C.featBody },
                 h('div', { style: { fontSize: '13px', fontWeight: '600', color: '#e6edf3', wordBreak: 'break-all' } }, p.name),
                 h('div', { style: C.featDesc }, fDesc),
@@ -968,7 +996,11 @@ window.__ModuleLoader__.load({
       // v0.7 F-I/M: watchlist/风险榜聚合条目 → 站外年报
       catalog.length > 0
         ? h('div', { style: { textAlign: 'center', color: '#6e7681', fontSize: '11px', padding: '0 0 14px', display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' } },
-            h('span', null, '🔎 ' + t('watchLine').replace('{x}', watchStats[0]).replace('{y}', watchStats[1])),
+            h('span', null, '🔎 ' + (watchMeta && watchMeta.total > 0
+              ? t('watchReal')
+                  .replace('{n}', watchMeta.total)
+                  .replace('{r}', Object.entries(watchMeta.byReason || {}).sort((a, b) => b[1] - a[1]).slice(0, 4).map((kv) => kv[0] + ' ' + kv[1]).join(' · '))
+              : t('watchLine').replace('{x}', watchStats[0]).replace('{y}', watchStats[1]))),
             h('a', { href: t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html', target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(t('lang') === 'zh' ? 'https://whyihaveyou.github.io/dsh-suite/stars-zh.html' : 'https://whyihaveyou.github.io/dsh-suite/stars.html') }, style: { color: '#79c0ff', textDecoration: 'none' } }, t('watchLink')))
         : null,
       empty, modal, manualModal, drawerEl, installPanel)

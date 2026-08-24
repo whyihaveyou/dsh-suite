@@ -44,8 +44,28 @@ function renderTask(value: { id?: string; subject?: string; status?: string; own
   return [{ type: 'text' as const, text: `任务 ${value.id} [${value.status}] ${value.owner ? `@${value.owner} ` : ''}${value.subject}` }]
 }
 
+// Local structural types for the webServer request/response (no heavy typing deps).
+interface RequestLike {
+  on(ev: 'data' | 'end', cb: (c?: Buffer) => void): void
+}
+
+interface ResponseLike {
+  writeHead(status: number, headers?: Record<string, string>): void
+  end(body?: string): void
+}
+
+// webServer is the web-shell HTTP server service (plugin-manager exposes its routes
+// the same way); team-board's browser half reaches it for /team-board/* endpoints.
+declare module '@deepseek-ai/cordis' {
+  interface Context {
+    webServer: {
+      register(opts: { kind: 'exact'; path: string; handler: (req: unknown, res: ResponseLike) => void | Promise<void> }): () => void
+    }
+  }
+}
+
 export default class TeamBoardService extends Service {
-  static inject = ['tools', 'sessions']
+  static inject = ['tools', 'sessions', 'webServer']
 
   private board = new BoardStore()
   private journal?: Session
@@ -54,6 +74,7 @@ export default class TeamBoardService extends Service {
     super(ctx, 'teamBoard')
     this.restore()
     this.registerTools()
+    this.registerBoardRoutes()
     console.log(`[plugin-team-board] tools registered — task_create listed=${ctx.tools.get('task_create') !== undefined}`)
   }
 
@@ -99,6 +120,72 @@ export default class TeamBoardService extends Service {
 
   private persist(): void {
     this.journal?.append('board/snapshot', { tasks: this.board.snapshot() })
+  }
+
+  // --- board HTTP routes for the browser half ---
+  private registerBoardRoutes(): void {
+    this.ctx.webServer.register({
+      kind: 'exact',
+      path: '/team-board/list',
+      handler: (_req: unknown, res: ResponseLike) => {
+        this.json(res, { ok: true, value: this.board.list() })
+      },
+    })
+    this.ctx.webServer.register({
+      kind: 'exact',
+      path: '/team-board/update',
+      handler: async (req: unknown, res: ResponseLike) => {
+        const body = await this.readJsonBody(req as RequestLike)
+        if (!body || typeof body.id !== 'string') {
+          this.json(res, { ok: false, error: 'missing id' }, 400)
+          return
+        }
+        const patch: Record<string, unknown> = {}
+        const fields = ['subject', 'status', 'owner', 'deps'] as const
+        for (const k of fields) {
+          const v = (body as Record<string, unknown>)[k]
+          if (v !== undefined) patch[k] = v
+        }
+        const task = this.board.update(body.id, patch)
+        this.persist()
+        this.json(res, { ok: true, value: task })
+      },
+    })
+    this.ctx.webServer.register({
+      kind: 'exact',
+      path: '/team-board/create',
+      handler: async (req: unknown, res: ResponseLike) => {
+        const body = await this.readJsonBody(req as RequestLike)
+        if (!body || typeof body.subject !== 'string') {
+          this.json(res, { ok: false, error: 'missing subject' }, 400)
+          return
+        }
+        const task = this.board.create({ subject: body.subject, owner: body.owner as string | undefined, deps: body.deps as string[] | undefined })
+        this.persist()
+        this.json(res, { ok: true, value: task })
+      },
+    })
+  }
+
+  private json(res: ResponseLike, value: unknown, status = 200): void {
+    res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' })
+    res.end(JSON.stringify(value))
+  }
+
+  private readJsonBody(req: RequestLike): Promise<Record<string, unknown> | null> {
+    return new Promise((resolve) => {
+      const chunks: Buffer[] = []
+      let total = 0
+      ;(req as unknown as NodeJS.ReadableStream).on('data', (c: Buffer) => {
+        chunks.push(c)
+        total += c.length
+        if (total > 1 << 16) resolve(null)
+      })
+      ;(req as unknown as NodeJS.ReadableStream).on('end', () => {
+        const text = Buffer.concat(chunks).toString('utf8')
+        try { resolve(JSON.parse(text) as Record<string, unknown>) } catch { resolve(null) }
+      })
+    })
   }
 
   private registerTools(): void {

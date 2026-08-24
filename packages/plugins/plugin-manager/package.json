@@ -1,6 +1,6 @@
 {
   "name": "@dsh-suite/plugin-manager",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "DSH Web UI 插件应用商店：目录浏览/搜索/一键安装/兼容徽章/已装列表。A plugin store for DSH Web UI — catalog browse, search, one-click install, compat badges, installed list.",
   "type": "module",
   "main": "lib/index.js",

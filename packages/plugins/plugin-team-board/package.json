@@ -1,20 +1,31 @@
 {
   "name": "@dsh-suite/plugin-team-board",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "DSH plugin: a shared task board for multi-agent / subagent collaboration — create, claim, transition, and query tasks via a Cordis service key.",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "exports": {
     ".": "./dist/index.js",
-    "./board": "./dist/board.js"
+    "./board": "./dist/board.js",
+    "./client": "./lib/client.js"
   },
   "files": [
     "dist",
+    "lib",
     "cordis.patch.yml",
     "README.md"
   ],
   "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ],
+      "platform": "web"
+    },
     "bundle": {
       "patch": "./cordis.patch.yml"
     }

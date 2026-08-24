@@ -135,7 +135,24 @@ async function runInstall(pkg, profile, onLine) {
 
 // ---- trimmed catalog (cached 1h, panel-only fields) ----
 
-const catalogCache = { at: 0, plugins: null }
+const catalogCache = { at: 0, plugins: null, watchMeta: null }
+
+// v0.8.3: 观测榜真实口径 —— 从 catalog.json 的 watchlist/watchlistCount 聚合，
+// 随 trimmed catalog 一起下发，商店「观测聚合」区不再用 curated 现状顶替。
+function summarizeWatchlist(full) {
+  if (!full || typeof full !== 'object') return null
+  const wl = Array.isArray(full.watchlist) ? full.watchlist : []
+  const byReason = {}
+  for (const w of wl) {
+    const k = (w && w.watchReason) || 'other'
+    byReason[k] = (byReason[k] || 0) + 1
+  }
+  const totals = full.totals || {}
+  const total = typeof totals.watchlistCount === 'number' ? totals.watchlistCount
+    : typeof totals.watchlist === 'number' ? totals.watchlist
+    : wl.length
+  return total > 0 || wl.length ? { total, byReason } : null
+}
 
 function trimPlugin(p) {
   return {
@@ -158,6 +175,7 @@ async function fetchCatalog() {
   const plugins = (full.plugins || []).map(trimPlugin)
   catalogCache.at = Date.now()
   catalogCache.plugins = plugins
+  catalogCache.watchMeta = summarizeWatchlist(full)
   return plugins
 }
 
@@ -290,7 +308,7 @@ export function apply(ctx) {
       handler: async (req, res) => {
         try {
           const plugins = await fetchCatalog()
-          const body = Buffer.from(JSON.stringify({ plugins }), 'utf8')
+          const body = Buffer.from(JSON.stringify({ plugins, watchMeta: catalogCache.watchMeta || null }), 'utf8')
           const ae = String(req.headers['accept-encoding'] || '')
           let payload = body
           let encoding = null

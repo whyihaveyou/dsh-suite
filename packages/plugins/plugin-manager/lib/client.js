@@ -285,11 +285,39 @@ window.__ModuleLoader__.load({
       return s
     }
 
+    // v0.8.3 F-2b: 宿主桥路由统一 {ok, value} 信封（/list、/updates、/installed 均是）。
+    // 旧写法 Array.isArray(r) ? r : [] 把信封判空，installed/updates 永远为空 ——
+    // 表现为商店「installed: 0」、策绿卡不标已装、升级角标不出现；此处统一拆包。
+    function unwrapList(r) {
+      if (Array.isArray(r)) return r
+      if (r && Array.isArray(r.value)) return r.value
+      return []
+    }
+
     // v0.8 ③: 已装精确对齐 —— 仅全名精确相等（loader 名字即完整 npm 名）。
     // 旧实现近似子串互含把 152 对「同名异包」错标已装（如 dsh-remote ↔ @linxin666/dsh-remote-web-ui、dsh-web-ui ↔ dsh-web-ui-all）。
+    // v0.8.3 F-2a: 第一方别名匹配 —— loader 报 npm 全名（@dsh-suite/plugin-manager），catalog 记社区短名（plugin-manager）。
+    // 仅第一方（isFirstParty）条目放开 basename ↔ @dsh-suite/@whyihaveyou scope 的匹配；
+    // 第三方同名异包（@ls2qtk/deepsearch-mcp ↔ deepsearch-mcp）仍不命中，P0-2 修复不回退。
+    const FP_NPM_SCOPES = ['@dsh-suite', '@whyihaveyou']
     function isInstalled(plugin, names) {
       const target = String(plugin && plugin.name || '').trim()
-      return !!target && names.has(target)
+      if (!target) return false
+      if (names.has(target)) return true
+      if (!isFirstParty(plugin)) return false
+      const catScoped = target.startsWith('@')
+      const catBase = catScoped ? target.slice(target.lastIndexOf('/') + 1) : target
+      for (const inst of names) {
+        const i = String(inst || '')
+        if (i.startsWith('@')) {
+          if (catScoped) continue
+          const slash = i.lastIndexOf('/')
+          if (FP_NPM_SCOPES.includes(i.slice(0, slash)) && i.slice(slash + 1) === catBase) return true
+        } else if (catScoped && i === catBase) {
+          return true
+        }
+      }
+      return false
     }
 
     // v0.8.3 F-3: 第一方判定 —— @dsh-suite/* 或 repo=whyihaveyou/*。
@@ -382,7 +410,7 @@ window.__ModuleLoader__.load({
           try {
             const [cat, list] = await Promise.all([
               fetchCatalogPlugins(),
-              fetchJson('/plugin-manager/list').then((r) => (Array.isArray(r) ? r : [])).catch(() => []),
+              fetchJson('/plugin-manager/list').then(unwrapList).catch(() => []),
             ])
             if (alive) { setCatalog(cat.plugins || []); setInstalled(list); setWatchMeta(cat.watchMeta || null); setLoading(false) }
           } catch (e) {
@@ -397,7 +425,7 @@ window.__ModuleLoader__.load({
 
       function loadUpdates() {
         fetchJson('/plugin-manager/updates')
-          .then((r) => (Array.isArray(r) ? r : []))
+          .then(unwrapList)
           .then((v) => setUpdates(v))
           .catch(() => {})
       }
@@ -509,7 +537,7 @@ window.__ModuleLoader__.load({
           }
           setResults((r) => ({ ...r, [p.name]: data }))
           if (data.ok) {
-            const list = await fetchJson('/plugin-manager/list').then((r) => (Array.isArray(r) ? r : [])).catch(() => [])
+            const list = await fetchJson('/plugin-manager/list').then(unwrapList).catch(() => [])
             setInstalled(list)
           }
         } catch (e) {
@@ -547,7 +575,7 @@ window.__ModuleLoader__.load({
           }
         } finally {
           setSceneBusy(null)
-          const list = await fetchJson('/plugin-manager/list').then((r) => (Array.isArray(r) ? r : [])).catch(() => null)
+          const list = await fetchJson('/plugin-manager/list').then(unwrapList).catch(() => null)
           if (list) setInstalled(list)
           loadInstalled()
         }
@@ -608,7 +636,7 @@ window.__ModuleLoader__.load({
       function loadInstalled() {
         setInstLoading(true)
         fetchJson('/plugin-manager/installed')
-          .then((r) => (Array.isArray(r) ? r : []))
+          .then(unwrapList)
           .then((v) => { setInstalledList(v); setInstLoading(false) })
           .catch(() => setInstLoading(false))
       }

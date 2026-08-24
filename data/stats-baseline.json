@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-24T20:51:00.246Z",
+ "ts": "2026-08-24T21:47:14.571Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -207,6 +207,7 @@
   "deepseek-harness-gui",
   "deepseek-harness-hello-kitty-suite",
   "deepseek-harness-henryz838978",
+  "deepseek-harness-hub",
   "deepseek-harness-huggingface",
   "deepseek-harness-install",
   "deepseek-harness-lan",

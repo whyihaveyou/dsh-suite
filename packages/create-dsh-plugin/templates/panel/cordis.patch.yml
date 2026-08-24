@@ -1,0 +1,11 @@
+# {{PKG_NAME}} bundle layer — registers the HOST half into a profile.
+#
+# The BROWSER half needs no row here: the module loader auto-discovers the
+# client bundle from package.json `exports["./client"]` + `dsh.client` and
+# serves it at /plugins/<pkg>/client.js.
+#
+# PITFALL: `name` is a PACKAGE NAME (resolved via the profile's node_modules),
+# NOT a relative path.
+- insert:
+    - id: {{PLUGIN_ID}}
+      name: {{PKG_NAME}}

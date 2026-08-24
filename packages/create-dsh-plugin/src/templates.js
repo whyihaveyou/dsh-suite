@@ -1,6 +1,6 @@
 // Template registry + shared metadata for create-dsh-plugin.
 
-export const TEMPLATES = ['tool', 'events', 'webui']
+export const TEMPLATES = ['tool', 'events', 'webui', 'panel', 'preset-pack']
 
 export const TEMPLATE_META = {
   tool: {
@@ -27,6 +27,22 @@ export const TEMPLATE_META = {
     defaultPluginId: 'my-webui',
     defaultToolName: 'my_webui',
     asksToolName: true,
+  },
+  panel: {
+    id: 'panel',
+    label: 'panel',
+    description: 'dual-half plugin: host route + settings.section panel (distilled from skin-center/preset-center) / 双半插件：宿主路由 + 设置面板（源自皮肤中心/预设中心骨架）',
+    defaultPluginId: 'my-panel',
+    defaultToolName: null,
+    asksToolName: false,
+  },
+  'preset-pack': {
+    id: 'preset-pack',
+    label: 'preset-pack',
+    description: 'agent preset pack: presets/<id>/ structure + list/apply panel (distilled from preset-center) / 预设包：presets/<id>/ 结构 + 一键应用面板（源自预设中心骨架）',
+    defaultPluginId: 'my-presets',
+    defaultToolName: null,
+    asksToolName: false,
   },
 }
 

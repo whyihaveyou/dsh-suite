@@ -1,0 +1,9 @@
+# {{PKG_NAME}} bundle layer — registers the HOST half into a profile.
+#
+# The presets themselves (presets/<id>/) are plain data files; they become
+# visible to DSH only after the host half applies them into the user preset
+# root (see src/index.ts). The BROWSER half is auto-discovered from
+# `exports["./client"]` — no row needed here.
+- insert:
+    - id: {{PLUGIN_ID}}
+      name: {{PKG_NAME}}

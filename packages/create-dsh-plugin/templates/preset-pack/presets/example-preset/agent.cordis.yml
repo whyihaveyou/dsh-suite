@@ -1,0 +1,40 @@
+# {{PKG_NAME}} — example preset composition (minimal, teaching-grade).
+#
+# A preset = a `cordis` composition that ships a persona + the tools it needs.
+# The MINIMAL viable composition is: persona + agent-instructions + the tool
+# rows the persona actually uses. Rows are opt-in — omit what you do not need
+# (this example has no shell, no web, no delegation).
+#
+# IMPORTANT: `{{model}}` / `{{cwd}}` stay as-is — the host substitutes them per
+# session at load time.
+plugins:
+  - id: persona
+    name: '@deepseek-ai/dsh-persona'
+    config:
+      text: >-
+        You are an example assistant powered by the {{model}} model. Your working directory is {{cwd}}.
+
+        Keep replies short, specific and in the user's language. This preset is a
+        template — replace this persona with the one your pack is about.
+
+  - id: agent-instructions
+    name: '@deepseek-ai/dsh-agent-instructions'
+    config:
+      maxBytes: 65536
+
+  - id: tool-fs
+    name: '@deepseek-ai/dsh-tool-fs'
+
+  - id: tool-fs-search
+    name: '@deepseek-ai/dsh-tool-fs-search'
+
+  - id: skill-filesystem
+    name: '@deepseek-ai/dsh-skill-filesystem'
+    config:
+      workspaceRoot: '{{cwd}}'
+      enabled: true
+
+  - id: tool-skill
+    name: '@deepseek-ai/dsh-tool-skill'
+    config:
+      skillDirs: []

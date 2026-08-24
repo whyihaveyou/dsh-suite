@@ -28,7 +28,7 @@ npx create-dsh-plugin
 
 | Flag | Description |
 |---|---|
-| `-t, --template <tool\|events\|webui>` | Template variant (default `tool`) |
+| `-t, --template <tool\|events\|webui\|panel\|preset-pack>` | Template variant (default `tool`) |
 | `-n, --name <pkg>` | npm package name (derived from dir by default) |
 | `--plugin-id <id>` | cordis patch row id + plugin `name` export (derived from package name) |
 | `--tool-name <name>` | Tool name for `tool`/`webui` (derived from package name) |
@@ -45,6 +45,8 @@ npx create-dsh-plugin
 | `tool` | a `defineTool()` tool plugin (parameter + output schema) | `@deepseek-ai/dsh-tools` |
 | `events` | a lifecycle/event plugin (`ctx.on` + `ctx.effect`) | **none** |
 | `webui` | a tool with a UI **diff card** (`presentCall`/`presentResult`) — experimental | `@deepseek-ai/dsh-tools` |
+| `panel` | a **dual-half** plugin: host HTTP route (`ctx.webServer`) + `settings.section` panel in the Web UI — distilled from skin-center / preset-center | **none** (host) + client bundle |
+| `preset-pack` | an **agent preset pack**: `presets/<id>/` (preset.yml + agent.cordis.yml) + a one-click list/apply panel; applied presets appear in Settings → Agent presets **live, no restart** | **none** (host) + client bundle |
 
 Every generated project ships, out of the box:
 

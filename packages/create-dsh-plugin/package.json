@@ -1,6 +1,6 @@
 {
   "name": "create-dsh-plugin",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Scaffold a DeepSeek Harness (DSH) plugin in seconds — tool / events / webui templates, next-tag version pinning, and a built-in --verify smoke test.",
   "license": "MIT",
   "type": "module",

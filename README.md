@@ -1,7 +1,7 @@
 # dsh-suite
 
 ![GitHub stars](https://img.shields.io/github/stars/whyihaveyou/dsh-suite?style=flat-square&color=facc15)
-![Plugins](https://img.shields.io/badge/plugins-1724-facc15?style=flat-square)
+![Plugins](https://img.shields.io/badge/plugins-1728-facc15?style=flat-square)
 ![Daily compat](https://img.shields.io/github/actions/workflow/status/whyihaveyou/dsh-suite/compat.yml?branch=main&label=daily-compat-check&style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-3b82f6?style=flat-square)
 
@@ -233,7 +233,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-backup-sync](https://github.com/csiroqa/dsh-backup-sync) | 1 | ⚪ unknown | dsh-backup-sync — DSH 插件（工具） |
 | [dsh-auto](https://github.com/simon300000/dsh-auto) | 5 | ⚪ unknown | dsh-auto — DSH 插件（工具） |
 | [dsh-annotate](https://github.com/BrambleXu/dsh-annotate) | 8 | ⚪ unknown | dsh-annotate — DSH 插件（工具） |
-| [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | 41 | ⚪ unknown | dsh-codex-connect — DSH 插件（工具） |
+| [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | 41 | 🟢 ok (外部贡献者 franksong2702 实测验证（PR #16）) | 通过 ChatGPT OAuth 在 DeepSeek Harness 中使用 OpenAI Codex 模型。 |
 | [DSH-Decktop](https://github.com/JustGenius-s/DSH-Decktop) | 23 | ⚪ unknown | DSH-Decktop — DSH 插件（工具） |
 | [dsh-cad-review](https://github.com/dongsheng123132/dsh-cad-review) | 4 | ⚪ unknown | dsh-cad-review — DSH 插件（工具） |
 | [dsh-xai](https://github.com/MirDie/dsh-xai) | 2 | ⚪ unknown | dsh-xai — DSH 插件（工具） |
@@ -576,6 +576,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-portable](https://github.com/sqs404/dsh-portable) | 8 | ⚪ unknown | untranslated |
 | [dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) | 8 | ⚪ unknown | untranslated |
 | [dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) | 7 | ⚪ unknown | untranslated |
+| [dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) | 0 | ⚪ unknown | 强力卸载 DSH 插件：策略分级、批量原子操作、指纹快照、健康检查、并发锁与报告导出（事务化四段式+Saga 回滚） |
 
 ### 🧩 技能
 
@@ -1221,6 +1222,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-wallpaper_share](https://github.com/YRN-playmaker/dsh-wallpaper_share) | 9 | ⚪ unknown | untranslated |
 | [dsh-adult-tension](https://github.com/daha1216/dsh-adult-tension) | 9 | ⚪ unknown | untranslated |
 | [dsh-novel-writer](https://github.com/siweina/dsh-novel-writer) | 7 | ⚪ unknown | untranslated |
+| [dsh-sessions-manager](https://github.com/TOBYCAI/dsh-sessions-manager) | 0 | ⚪ unknown | DSH 设置面板会话管理器：归档/恢复/彻底删除/移动到其他工作区，带工作区标签与会话日期 |
+| [dsh-session-search-toggle](https://github.com/drscrewdriver/dsh-session-search-toggle) | 1 | ⚪ unknown | DSH web 侧边栏会话搜索增强：标题搜索与内容搜索一键切换，内容搜索按会话聚合展示标题与命中片段 |
 
 ### 🧠 模型
 
@@ -1473,7 +1476,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-loop](https://github.com/vlln/dsh-loop) | 5 | 🟢 ok | 定时循环（/loop 命令 + loop 工具） |
 | [dsh-plannotator](https://github.com/titanwings/dsh-plannotator) | 9 | 🟢 ok | 计划批注：选中计划原文逐条批注 |
 | [dsh-task-status](https://github.com/vlln/dsh-task-status) | 9 | ⚪ unknown | 后台任务状态条（进度 + 实时 tail） |
-| [dsh-work](https://github.com/vibeinging/dsh-work) | 625 | ⚪ unknown | 本地优先 DSH 插件工作台 |
+| [dsh-work](https://github.com/vibeinging/dsh-desktop) | 625 | ⚪ unknown | 本地优先 DSH 桌面工作台（原 dsh-work 更名 dsh-desktop） |
 | [dsh-advisor](https://github.com/btspoony/dsh-advisor) | 14 | 🟢 ok | 第二模型被动审查每轮并注入建议 |
 | [dsh-artifact](https://github.com/william-jin-cmu/dsh-artifact) | 1 | 🟢 ok | 文件交付协议：send_artifact 工具 |
 | [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research) | 18 | ⚪ unknown | 自适应深度研究编排插件 |
@@ -1666,6 +1669,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) | 10 | ⚪ unknown | untranslated |
 | [dsh-file-review-tab](https://github.com/Lzh3070/dsh-file-review-tab) | 8 | ⚪ unknown | untranslated |
 | [pptwise](https://github.com/liustack/pptwise) | 7 | ⚪ unknown | untranslated |
+| [dsh-lark-bridge](https://github.com/moyu-good/dsh-lark-bridge) | 1 | ⚪ unknown | 飞书/Lark IM 深度通道：原生思考过程、审批卡片、goal/todo 实时卡片、workflow 展开、会话检索、后台任务与子代理通知 |
 
 ### 🔌 桥接
 
@@ -1861,7 +1865,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) | 11 | ⚪ unknown | untranslated |
 
 > 徽章含义：🟢 兼容 · 🔴 不兼容 · ⚪ 未实测 · ⚫ 弃坑。
-> 共 1724 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
+> 共 1728 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
 <!-- CATALOG:END -->
 
 ## 兼容性

@@ -1,7 +1,7 @@
 # dsh-suite
 
 ![GitHub stars](https://img.shields.io/github/stars/whyihaveyou/dsh-suite?style=flat-square&color=facc15)
-![Plugins](https://img.shields.io/badge/plugins-1724-facc15?style=flat-square)
+![Plugins](https://img.shields.io/badge/plugins-1728-facc15?style=flat-square)
 ![Daily compat](https://img.shields.io/github/actions/workflow/status/whyihaveyou/dsh-suite/compat.yml?branch=main&label=daily-compat-check&style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-3b82f6?style=flat-square)
 
@@ -233,7 +233,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-backup-sync](https://github.com/csiroqa/dsh-backup-sync) | 1 | ⚪ unknown | DeepSeek Harness（DSH）备份/恢复 + 跨机同步插件：本地快照、WebDAV 推送/拉取、自动备份与失效归档清理。Snapshot backup, restore and cross-machine sync plugin for Deep… |
 | [dsh-auto](https://github.com/simon300000/dsh-auto) | 5 | ⚪ unknown | dsh Auto Approve |
 | [dsh-annotate](https://github.com/BrambleXu/dsh-annotate) | 8 | ⚪ unknown | Visual browser element annotation for DeepSeek Harness, capturing DOM, styles, accessibility data, comments, and viewport screens… |
-| [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | 41 | ⚪ unknown | ChatGPT OAuth and Codex models for DeepSeek Harness. |
+| [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | 41 | 🟢 ok (外部贡献者 franksong2702 实测验证（PR #16）) | ChatGPT OAuth and Codex models for DeepSeek Harness. |
 | [DSH-Decktop](https://github.com/JustGenius-s/DSH-Decktop) | 23 | ⚪ unknown | DSH-Decktop |
 | [dsh-cad-review](https://github.com/dongsheng123132/dsh-cad-review) | 4 | ⚪ unknown | Evidence-first ASCII DXF inspection and deterministic CAD rule review for DeepSeek Harness |
 | [dsh-xai](https://github.com/MirDie/dsh-xai) | 2 | ⚪ unknown | xAI Grok SuperGrok / X Premium OAuth for DeepSeek Harness |
@@ -576,6 +576,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-portable](https://github.com/sqs404/dsh-portable) | 8 | ⚪ unknown | DeepSeek Harness 免安装便携版（Windows）：官方 npm 包 + 内置 Node.js，双击 exe 即用，拷贝到任意 64 位 Windows 电脑独立运行 |
 | [dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) | 8 | ⚪ unknown | Connect DeepSeek Harness (dsh) to a local Obsidian vault: search, read, write, move, and trash notes. |
 | [dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) | 7 | ⚪ unknown | DeepSeek Harness SSH 运维插件：主对话驱动 SSH，带高危命令保护与右侧终端。 |
+| [dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) | 0 | ⚪ unknown | Transactional uninstall engine for DSH plugins: policy tiers, batch atomic ops, fingerprint snapshot, health check, concurrency l… |
 
 ### 🧩 Skills
 
@@ -1221,6 +1222,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-wallpaper_share](https://github.com/YRN-playmaker/dsh-wallpaper_share) | 9 | ⚪ unknown | 一键同步壁纸引擎各类动态场景壁纸的插件，设置应用启动项。A "wallpaper engine" synchronization plugin mounted on the deepseek harness can synchronize static wa… |
 | [dsh-adult-tension](https://github.com/daha1216/dsh-adult-tension) | 9 | ⚪ unknown | DeepSeek Harness 成年人(18+/adult)互动叙事 Skill：NPC 活人感（有记忆/立场/底线）、自带破甲、数百项素材库、随机开局可预锁、时间推进、全维 YAML 存档。 |
 | [dsh-novel-writer](https://github.com/siweina/dsh-novel-writer) | 7 | ⚪ unknown | DSH / DeepSeek Harness 小说写作助手插件：章节库管理、句式模式分析（九类句式/情感曲线/风格指纹）、风格自检、伏笔登记、批量导入、续写辅助。Novel writing assistant plugin for DeepSeek Harn… |
+| [dsh-sessions-manager](https://github.com/TOBYCAI/dsh-sessions-manager) | 0 | ⚪ unknown | Session manager in DSH settings: archive/restore/hard-delete/move to other workspace, with workspace tags and session dates. |
+| [dsh-session-search-toggle](https://github.com/drscrewdriver/dsh-session-search-toggle) | 1 | ⚪ unknown | DSH web sidebar session-search enhancement: one-click toggle between title search and content search; content results aggregated… |
 
 ### 🧠 LLM
 
@@ -1473,7 +1476,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-loop](https://github.com/vlln/dsh-loop) | 5 | 🟢 ok | Scheduled loop (/loop command + tool) |
 | [dsh-plannotator](https://github.com/titanwings/dsh-plannotator) | 9 | 🟢 ok | Plan annotator: annotate plan text line-by-line |
 | [dsh-task-status](https://github.com/vlln/dsh-task-status) | 9 | ⚪ unknown | Background task status bar |
-| [dsh-work](https://github.com/vibeinging/dsh-work) | 625 | ⚪ unknown | Local-first AI workbench for DSH plugins |
+| [dsh-work](https://github.com/vibeinging/dsh-desktop) | 625 | ⚪ unknown | Local-first AI workbench for DSH plugins |
 | [dsh-advisor](https://github.com/btspoony/dsh-advisor) | 14 | 🟢 ok | Second model passively reviews each turn and injects advice |
 | [dsh-artifact](https://github.com/william-jin-cmu/dsh-artifact) | 1 | 🟢 ok | File delivery protocol: send_artifact tool |
 | [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research) | 18 | ⚪ unknown | Adaptive deep-research orchestrator plugin |
@@ -1666,6 +1669,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) | 10 | ⚪ unknown | Configurable reasoning levels for hand-declared DSH llm-pi-ai models, with bilingual settings and subagent defaults. |
 | [dsh-file-review-tab](https://github.com/Lzh3070/dsh-file-review-tab) | 8 | ⚪ unknown | dsh-better-sidebar 侧边栏 Tab 版文件改动审查：行级红绿 diff + 撤销，chat 行深链（移植自 left0ver/dsh-file-review）/ Review agent file changes as a dsh-bett… |
 | [pptwise](https://github.com/liustack/pptwise) | 7 | ⚪ unknown | A real PowerPoint file. Not a picture of one. Tell your AI what to cover and pptwise builds an editable deck on your own machine.… |
+| [dsh-lark-bridge](https://github.com/moyu-good/dsh-lark-bridge) | 1 | ⚪ unknown | Feishu/Lark IM bot channel for DSH agents: native thinking, approval cards, goal/todo realtime cards, workflow unfold, session se… |
 
 ### 🔌 ACP
 
@@ -1861,7 +1865,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) | 11 | ⚪ unknown | 手机电脑dsh通知功能！移动端可用的通知！手机端ui交互优化！让手机端dsh真正可用。 |
 
 > Badges: 🟢 compatible · 🔴 broken · ⚪ unverified · ⚫ unmaintained.
-> 1724 entries total, grouped by category, sorted by ⭐ within each. Schema dictionary: [docs/catalog-schema.md](docs/catalog-schema.md).
+> 1728 entries total, grouped by category, sorted by ⭐ within each. Schema dictionary: [docs/catalog-schema.md](docs/catalog-schema.md).
 <!-- CATALOG:END -->
 
 ## Compatibility

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-24T05:03:15.321Z",
+ "ts": "2026-08-24T05:55:25.498Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1795,6 +1795,7 @@
   "dsh-split-panes",
   "dsh-spotlight",
   "dsh-ssh",
+  "dsh-ssh-ops",
   "dsh-ssh-plugin",
   "dsh-ssh-remote",
   "dsh-stall-guard",
@@ -2624,6 +2625,7 @@
   "unified-agent-memory",
   "upstream-radar",
   "url-manager",
+  "vibe-mathematics",
   "vibe-skills",
   "vibemeter",
   "vision-exp-tile",

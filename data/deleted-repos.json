@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:06:54.534Z",
+  "generated_at": "2026-08-24T10:56:26.409Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -317,6 +317,15 @@
       "lastKnownUrl": "https://github.com/yun520-1/deepseek-heartflow"
     },
     {
+      "repo": "zevorn/dsh-humanize",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-24T10:06:54.409Z",
+      "lastDetectedAt": "2026-08-24T10:56:26.249Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/zevorn/dsh-humanize"
+    },
+    {
       "repo": "zhulin025/LaoA-dshGF",
       "seen": 2,
       "firstDetectedAt": "2026-08-16T07:01:30.493Z",
@@ -333,15 +342,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "zevorn/dsh-humanize",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-24T10:06:54.409Z",
-      "lastDetectedAt": "2026-08-24T10:06:54.409Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/zevorn/dsh-humanize"
     }
   ]
 }

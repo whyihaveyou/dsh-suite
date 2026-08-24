@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-24T01:59:48.561Z",
+ "ts": "2026-08-24T03:18:26.238Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1839,6 +1839,7 @@
   "dsh-tailscale-console",
   "dsh-tailscale-gateway",
   "dsh-tailscale-sync",
+  "dsh-talk-map",
   "dsh-task-checklist",
   "dsh-task-console",
   "dsh-task-dag",

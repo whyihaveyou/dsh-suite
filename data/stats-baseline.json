@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-24T11:46:57.079Z",
+ "ts": "2026-08-24T13:15:48.383Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1172,6 +1172,7 @@
   "dsh-model-provider-label",
   "dsh-model-router",
   "dsh-model-selector",
+  "dsh-model-switch",
   "dsh-model-thinking",
   "dsh-modlens-installer",
   "dsh-money-view",
@@ -1598,6 +1599,7 @@
   "dsh-qwen-multimodal",
   "dsh-ramify",
   "dsh-randomuuid-polyfill",
+  "dsh-raw-html",
   "dsh-read-history",
   "dsh-read-image",
   "dsh-read-url",
@@ -1807,6 +1809,7 @@
   "dsh-stats-dashboard",
   "dsh-status-bar",
   "dsh-status-rotator",
+  "dsh-std",
   "dsh-stickers",
   "dsh-sticky-disclosure",
   "dsh-sticky-note",
@@ -2669,6 +2672,7 @@
   "zat-dsh-engine",
   "zeromd",
   "zerotoken-skill",
+  "zhihu-search",
   "zhuzhiliao",
   "zotero-harvest",
   "zotero-wave-rag"

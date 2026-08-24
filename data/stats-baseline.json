@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-24T09:07:46.242Z",
+ "ts": "2026-08-24T10:06:54.622Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -90,6 +90,7 @@
   "build-hos-mcp",
   "caliper",
   "catppuccin-dsh-theme",
+  "causal-memory",
   "caushell",
   "cc-notify-hooks",
   "ccteam",
@@ -1553,6 +1554,7 @@
   "dsh-precise-cache",
   "dsh-pref-kit",
   "dsh-preset-minimal-windows",
+  "dsh-preset-plus",
   "dsh-prime-agent",
   "dsh-product-delivery-workflow",
   "dsh-project-file-explorer",
@@ -2395,6 +2397,7 @@
   "mem9",
   "memmy-agent",
   "memos",
+  "memsearch",
   "memtrace-public",
   "meoo-cli",
   "metera",

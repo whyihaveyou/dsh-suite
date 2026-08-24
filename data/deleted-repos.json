@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T05:03:15.223Z",
+  "generated_at": "2026-08-24T10:06:54.534Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -333,6 +333,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "zevorn/dsh-humanize",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-24T10:06:54.409Z",
+      "lastDetectedAt": "2026-08-24T10:06:54.409Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/zevorn/dsh-humanize"
     }
   ]
 }

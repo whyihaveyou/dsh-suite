@@ -48,6 +48,53 @@ const NPM_PACKAGES = [
   '@dsh-suite/themes',
 ];
 
+// 4 个第一方 GitHub 仓（views/clones 14 天窗口，count/uniques；需仓库 push 权限，
+// CI 用 GITHUB_TOKEN，本地用 gh auth；失败置 0 不阻断数据点）
+const GH_REPOS = [
+  'whyihaveyou/dsh-suite',
+  'whyihaveyou/dsh-themes',
+  'whyihaveyou/dsh-plugin-tutorial',
+  'whyihaveyou/dsh-workstation',
+];
+
+/** 取 GitHub token：优先环境变量，本地回退 gh auth token */
+function githubToken() {
+  if (process.env.GH_TOKEN || process.env.GITHUB_TOKEN) return process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
+  try { return execSync('gh auth token', { encoding: 'utf8', timeout: 8000 }).trim(); } catch { return ''; }
+}
+
+/** 查各仓 traffic/views + traffic/clones（14 天窗口） */
+async function fetchGithubTraffic() {
+  const tok = githubToken();
+  const out = {};
+  await Promise.all(GH_REPOS.map(async (repo) => {
+    const item = { views: 0, viewsUnique: 0, clones: 0, clonesUnique: 0 };
+    for (const kind of ['views', 'clones']) {
+      try {
+        const ctl = new AbortController();
+        const t = setTimeout(() => ctl.abort(), 15000);
+        const res = await fetch(`https://api.github.com/repos/${repo}/traffic/${kind}`, {
+          headers: {
+            Authorization: `Bearer ${tok}`,
+            Accept: 'application/vnd.github+json',
+            'User-Agent': 'dsh-suite-stats',
+            'X-GitHub-Api-Version': '2022-11-28',
+          },
+          signal: ctl.signal,
+        });
+        if (res.ok) {
+          const j = await res.json();
+          item[kind] = j.count || 0;
+          item[`${kind}Unique`] = j.uniques || 0;
+        }
+        clearTimeout(t);
+      } catch { /* keep zeros */ }
+    }
+    out[repo] = item;
+  }));
+  return out;
+}
+
 /** 查各包 last-week 下载量（scoped 包名 URL 编码 %40scope%2Fname）；失败置 0 */
 async function fetchNpmDownloads() {
   const out = {};
@@ -118,6 +165,7 @@ async function currentPoint() {
     newEntriesToday: newToday,
   });
   point.npmDownloads = await fetchNpmDownloads();
+  point.githubTraffic = await fetchGithubTraffic();
   return point;
 }
 
@@ -171,10 +219,11 @@ async function main() {
   }
   // 追加当前实况点（同小时幂等：已有同 ts 前缀则不重复）
   const cur = await currentPoint();
+  const force = process.argv.includes('--force');
   const hourKey = cur.ts.slice(0, 13);
-  // backfill 模式忽略旧文件（全量重建），dedup 只看本批点
+  // backfill 模式忽略旧文件（全量重建），dedup 只看本批点；--force 强制追加（测试用）
   const pool = backfill ? lines : [...lines, ...existing];
-  const dup = pool.some((p) => p.ts && p.ts.slice(0, 13) === hourKey);
+  const dup = !force && pool.some((p) => p.ts && p.ts.slice(0, 13) === hourKey);
   if (!dup) lines.push(cur);
 
   // 合并既有文件中的点（保序去重后按 ts 排序写回）。

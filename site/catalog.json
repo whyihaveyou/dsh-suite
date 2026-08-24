@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-24T07:22:35.317Z",
+  "generated_at": "2026-08-24T07:50:18.469Z",
   "repo": "whyihaveyou/dsh-suite",
   "totals": {
     "curated": 1724,
@@ -23,7 +23,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": true,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": null,
@@ -386,9 +386,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @yejiming/dsh-data-agent",
       "watchReason": "",
@@ -670,9 +670,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-mnemon",
       "watchReason": "",
@@ -1232,9 +1232,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/UynajGI/dsh-ssh",
       "watchReason": ""
@@ -1571,7 +1571,7 @@
       "license": "unknown",
       "featured": true,
       "isOfficialBeta": false,
-      "compatStatus": "broken",
+      "compatStatus": "ok",
       "risk": {
         "installScript": false,
         "networkEgress": false,
@@ -1579,9 +1579,9 @@
         "noLicense": true
       },
       "evidence": {
-        "level": 1,
-        "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "level": 3,
+        "l3Verified": true,
+        "source": "compat layer3 (installed & assembled)"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -1762,9 +1762,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -1785,7 +1785,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -1810,7 +1810,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -1843,9 +1843,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -2345,9 +2345,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -2588,9 +2588,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -3168,7 +3168,7 @@
       "license": "unknown",
       "featured": true,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": {
         "installScript": true,
         "networkEgress": false,
@@ -3298,9 +3298,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @nanmicoder/dsh-agent-teams",
       "watchReason": "",
@@ -3329,9 +3329,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -3380,9 +3380,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/titanwings/dsh-plannotator",
       "watchReason": ""
@@ -3815,9 +3815,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @huiliyi37/dsh-tianshu-tui",
       "watchReason": "",
@@ -3876,9 +3876,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -3907,9 +3907,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -3938,9 +3938,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -4030,9 +4030,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @zseven-w/dsh-openpencil",
       "watchReason": "",
@@ -4092,9 +4092,9 @@
         "noLicense": true
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -4146,7 +4146,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": null,
@@ -4154,9 +4154,9 @@
         "noLicense": true
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add oh-my-dsh",
       "watchReason": "",
@@ -4391,9 +4391,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-launcher",
       "watchReason": "",
@@ -4474,7 +4474,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -4560,7 +4560,7 @@
       "license": "MIT",
       "featured": true,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": null,
@@ -4770,7 +4770,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": null,
@@ -4778,9 +4778,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @liustack/modlens",
       "watchReason": "",
@@ -4871,9 +4871,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-browser",
       "watchReason": "",
@@ -4902,9 +4902,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-chat-import",
       "watchReason": "",
@@ -5018,9 +5018,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/01Virex/dsh-status-rotator",
       "watchReason": ""
@@ -5115,7 +5115,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -5415,7 +5415,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": {
         "installScript": true,
         "networkEgress": true,
@@ -5609,9 +5609,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Mongfayi/dsh-recall",
       "watchReason": ""
@@ -6021,7 +6021,7 @@
       "license": "Apache-2.0",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -6557,7 +6557,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": false,
@@ -6588,7 +6588,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -6898,7 +6898,7 @@
       "license": "NOASSERTION",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -7037,9 +7037,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Tyan66666/billion-context-dsh",
       "watchReason": ""
@@ -7342,9 +7342,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/ben7am1n/dsh-browser",
       "watchReason": ""
@@ -7777,9 +7777,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/PerryLink/dsh-memento",
       "watchReason": "",
@@ -7978,9 +7978,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/moduqishi/dsh-opencode-usage",
       "watchReason": ""
@@ -8025,7 +8025,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -8078,9 +8078,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/PangYiMing/dsh-mobile-control",
       "watchReason": ""
@@ -8128,9 +8128,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/PerryLink/dsh-memento",
       "watchReason": "",
@@ -8404,9 +8404,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Jesse-njx/dsh-memory",
       "watchReason": ""
@@ -8734,9 +8734,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Scorp1o117/dsh-soul-md",
       "watchReason": ""
@@ -8881,7 +8881,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -8984,9 +8984,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/PerryLink/dsh-session-pin",
       "watchReason": ""
@@ -9106,7 +9106,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -9184,9 +9184,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/randerous/dsh-turn-budget",
       "watchReason": ""
@@ -9209,9 +9209,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/ben7am1n/dsh-mcp-proxy",
       "watchReason": ""
@@ -9284,9 +9284,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/YYTbit/dsh-plugin-vision-toolkit",
       "watchReason": ""
@@ -9681,7 +9681,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -9756,7 +9756,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -9789,9 +9789,9 @@
         "noLicense": true
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/TwotwoPiggy/dsh-balance",
       "watchReason": ""
@@ -9949,9 +9949,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Han-1413141/dsh-cost-meter",
       "watchReason": "",
@@ -10530,9 +10530,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/YYTbit/dsh-plugin-meta-memory",
       "watchReason": ""
@@ -10808,7 +10808,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -11036,9 +11036,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/gordonlu/dsh-context-lens",
       "watchReason": ""
@@ -12046,9 +12046,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/asdf17128/dsh-doctor",
       "watchReason": ""
@@ -12315,7 +12315,7 @@
       "url": "https://github.com/franksong2702/dsh-codex-connect",
       "category": "tools",
       "desc_en": "ChatGPT OAuth and Codex models for DeepSeek Harness.",
-      "desc_zh": "dsh-codex-connect — DSH 插件（工具）",
+      "desc_zh": "通过 ChatGPT OAuth 在 DeepSeek Harness 中使用 OpenAI Codex 模型。",
       "author": "franksong2702",
       "stars": 41,
       "lastPush": "2026-08-24",
@@ -12323,7 +12323,7 @@
       "license": "Apache-2.0",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": true,
@@ -12333,9 +12333,9 @@
       "evidence": {
         "level": 1,
         "l3Verified": false,
-        "source": "risk-scan; L3 pending compat layer2/3"
+        "source": "外部贡献者 franksong2702 实测验证（PR #16）; L1 已声明"
       },
-      "installCmd": "dsh plugin add git+https://github.com/franksong2702/dsh-codex-connect",
+      "installCmd": "dsh plugin --profile web add dsh-codex-connect@alpha",
       "watchReason": ""
     },
     {
@@ -12434,7 +12434,7 @@
       "license": "BSD-3-Clause",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": true,
@@ -12442,9 +12442,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-balance-meter",
       "watchReason": ""
@@ -12642,9 +12642,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/xu1132/dsh-plugin-hello",
       "watchReason": ""
@@ -13719,7 +13719,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -14072,9 +14072,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/wangxiang0605qvq/dsh-deepseek-balance",
       "watchReason": ""
@@ -14398,9 +14398,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-usage-stats",
       "watchReason": "",
@@ -14649,9 +14649,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/brittanistrehlowll-oss/dsh-quota-panel",
       "watchReason": ""
@@ -14674,9 +14674,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/dpskh/dsh-a2a",
       "watchReason": ""
@@ -14699,9 +14699,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/weijiafu14/pi2dsh",
       "watchReason": "",
@@ -14811,9 +14811,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/kinyokun/dsh-session-import",
       "watchReason": ""
@@ -14921,9 +14921,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-vision",
       "watchReason": "",
@@ -14947,9 +14947,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Yuuz12/dsh-webui-auth",
       "watchReason": ""
@@ -15024,7 +15024,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -15049,7 +15049,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -15124,7 +15124,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -16463,9 +16463,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/hccccc01333/dsh-excel-chat",
       "watchReason": ""
@@ -16613,9 +16613,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/PerryLink/dsh-doublecheck",
       "watchReason": ""
@@ -16763,9 +16763,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/DGPisces/deepseek-harness-openai-oauth",
       "watchReason": ""
@@ -16943,9 +16943,9 @@
         "noLicense": true
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add superpowers-dsh",
       "watchReason": "",
@@ -17796,9 +17796,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/flymysql/dsh-remote",
       "watchReason": ""
@@ -17821,9 +17821,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/hiyms/dsh-web-search-provider",
       "watchReason": ""
@@ -18771,9 +18771,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/yingjunnan/dsh-deepseek-quota",
       "watchReason": ""
@@ -19043,7 +19043,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -19318,9 +19318,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -19547,7 +19547,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": true,
@@ -20563,7 +20563,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -21405,7 +21405,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "broken",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -21633,9 +21633,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/werifu/dsh-oai-oauth",
       "watchReason": ""
@@ -21743,9 +21743,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add dsh-context",
       "watchReason": "",
@@ -21961,12 +21961,12 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/0lidaxiang/dsh-plugin-greet",
       "watchReason": ""
@@ -22236,7 +22236,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -22464,9 +22464,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/ChengChe106/dsh-session-cost",
       "watchReason": ""
@@ -22741,7 +22741,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -22916,7 +22916,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -22966,7 +22966,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -23144,9 +23144,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/c-ling/dsh-plugin-notify",
       "watchReason": ""
@@ -23191,7 +23191,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": {
         "installScript": false,
         "networkEgress": null,
@@ -23199,9 +23199,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @anysearch/anysearch-dsh",
       "watchReason": "",
@@ -23260,9 +23260,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "see README",
       "watchReason": "",
@@ -23286,9 +23286,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/skr311/dsh-codex-pet",
       "watchReason": ""
@@ -23488,7 +23488,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -23743,7 +23743,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -24490,7 +24490,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -24548,9 +24548,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/PC2005-cloud/dsh-pet",
       "watchReason": "",
@@ -24624,9 +24624,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/PixLunaLab/dsh-pixluna",
       "watchReason": ""
@@ -24674,9 +24674,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Mars-Sea/dsh-commandcode-provider",
       "watchReason": "",
@@ -24930,9 +24930,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/lanlandeli/dsh-usage-stats",
       "watchReason": ""
@@ -25030,9 +25030,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/yangyue1974/dsh-plugin-audiolib",
       "watchReason": ""
@@ -25330,9 +25330,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/V1ki/dsh-plugin-subscriptions",
       "watchReason": "",
@@ -25578,7 +25578,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -25792,9 +25792,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add @tencent-connect/dsh-qqbot",
       "watchReason": "",
@@ -25843,9 +25843,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/w769721503/dsh-plugin-store",
       "watchReason": ""
@@ -26094,9 +26094,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/elviszhang007/dsh-moyan",
       "watchReason": ""
@@ -26119,9 +26119,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/Terry12138qy/dsh-vision",
       "watchReason": ""
@@ -26469,9 +26469,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/drfccv/dsh-mcp-center",
       "watchReason": ""
@@ -26494,9 +26494,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/AHGGG/dsh-side-chat",
       "watchReason": ""
@@ -26591,7 +26591,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
         "level": 1,
@@ -26619,9 +26619,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/le-soleil-se-couche/dsh-skin-claude-code",
       "watchReason": ""
@@ -27191,12 +27191,12 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/feibi-mochi/deepseek-harness-wallet",
       "watchReason": "",
@@ -28151,9 +28151,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/ZRui-C/dsh-computer-use",
       "watchReason": ""
@@ -28276,9 +28276,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/NoNameLeGo/dsh-catppuccin",
       "watchReason": ""
@@ -28326,9 +28326,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/penguin-oo/dsh-bookmarks",
       "watchReason": ""
@@ -28376,9 +28376,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/xxxxxxxyu/dsh-notify-sound",
       "watchReason": ""
@@ -28626,9 +28626,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/nianpangzhi233/dsh-billing",
       "watchReason": ""
@@ -28776,9 +28776,9 @@
       "compatStatus": "ok",
       "risk": null,
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "risk-scan; L3 pending compat layer2/3"
       },
       "installCmd": "dsh plugin add git+https://github.com/2501136589/dsh-rewind",
       "watchReason": ""
@@ -29122,11 +29122,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Player-MINEPIG/dsh-tavern",
       "watchReason": ""
     },
@@ -29168,11 +29164,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/ZSeven-W/dsh-noema",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-noema.jpg"
@@ -29234,13 +29226,9 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Realyujie/dsh-us-stocks",
       "watchReason": ""
     },
@@ -29280,7 +29268,7 @@
       "license": "Apache-2.0",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Qinling-Melon-Farmers/dsh-memoir",
@@ -29406,7 +29394,7 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/609476965/dsh-LorebookMD",
@@ -29618,11 +29606,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/limbo947/DSH-recall-plugin",
       "watchReason": ""
     },
@@ -29853,11 +29837,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/deepforce/dsh-balance",
       "watchReason": ""
     },
@@ -29992,11 +29972,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Edge-Echo/dsh-mcp-bridge",
       "watchReason": ""
     },
@@ -30101,11 +30077,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/NanmiCoder/dsh-auto-mode",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-auto-mode.jpg"
@@ -30148,11 +30120,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/labmimors/dsh-mcp-lens",
       "watchReason": ""
     },
@@ -30299,11 +30267,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/SeverusZh/dsh-plugin-subagent-director",
       "watchReason": ""
     },
@@ -30450,11 +30414,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/2768651338/dsh-plugin-manager",
       "watchReason": ""
     },
@@ -30517,11 +30477,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Argonaut790/dsh-deepseek-vision",
       "watchReason": ""
     },
@@ -30668,11 +30624,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/jiezeng2004-design/dsh-chatgpt-bridge",
       "watchReason": ""
     },
@@ -30946,11 +30898,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/liceses/dsh-gitbash-preset",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-gitbash-preset.jpg"
@@ -31012,7 +30960,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/knlght/DSH-shutdown",
@@ -31075,7 +31023,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/AKS1st/dsh-mermaid",
@@ -31539,11 +31487,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/a903067276-rgb/dsh-hud",
       "watchReason": ""
     },
@@ -31837,11 +31781,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/lingtima/dsh-think-chinese",
       "watchReason": ""
     },
@@ -32030,11 +31970,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/HanaAyane/dsh-reasoning-effort",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-reasoning-effort.jpg"
@@ -32077,11 +32013,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/orxz/deepseek-harness-pets",
       "watchReason": ""
     },
@@ -32459,7 +32391,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/LiuMengxuan04/oh-my-dsh",
@@ -32545,11 +32477,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/chinaRXQ/dsh-wallpaper",
       "watchReason": ""
     },
@@ -32758,13 +32686,9 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Rianico/dsh-better-edit",
       "watchReason": ""
     },
@@ -32869,11 +32793,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/errorcode7/dsh-prompt-manager",
       "watchReason": ""
     },
@@ -32957,11 +32877,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/liqichen/dsh-plugin-manager",
       "watchReason": ""
     },
@@ -33001,7 +32917,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Owen718/snapgrep",
@@ -33087,11 +33003,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/RevolutionLA/dsh-dream-skin",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-dream-skin.jpg"
@@ -33174,7 +33086,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/agi-fans/oh-my-dsh",
@@ -33195,7 +33107,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/magian1127/deepseek-harness-zh_pro",
@@ -33258,7 +33170,7 @@
       "license": "NOASSERTION",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Jonah-Wu23/oh-my-dsh",
@@ -33386,11 +33298,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/xingyingyuzhui/dsh-liquid-glass",
       "watchReason": ""
     },
@@ -33494,13 +33402,9 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/amplifthq/oh-my-dsh",
       "watchReason": ""
     },
@@ -33647,11 +33551,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/zhxqc/dsh-oh-my-theme",
       "watchReason": ""
     },
@@ -33798,11 +33698,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/wenzetan/dsh-llm-newapi",
       "watchReason": ""
     },
@@ -33866,11 +33762,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Vncntvx/dsh-zotero",
       "watchReason": ""
     },
@@ -33891,11 +33783,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/MichengAI/dsh-skills-manager",
       "watchReason": ""
     },
@@ -33916,11 +33804,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/xiaoyuyu6420/dsh-backup",
       "watchReason": ""
     },
@@ -33968,9 +33852,9 @@
         "shellAccess": true
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核; L3 pending"
       },
       "installCmd": "dsh plugin add @struktoai/mirage-dsh",
       "watchReason": "",
@@ -34111,11 +33995,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/AITabby/dockyard-dsh",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dockyard-dsh.jpg"
@@ -34179,11 +34059,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/xmanrui/dsh-im",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-im.jpg"
@@ -34226,11 +34102,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/xmutfyh/dsh-plugin-writing-guard",
       "watchReason": ""
     },
@@ -34251,11 +34123,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/cocofhu/anime-find",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/anime-find.jpg"
@@ -34403,11 +34271,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/howmp/dsh-pentest",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-pentest.jpg"
@@ -34450,11 +34314,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/cn-scuo-oo/dsh-deepseek-quota",
       "watchReason": ""
     },
@@ -34581,11 +34441,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/shaobeichen/dsh-pocket",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-pocket.jpg"
@@ -34607,11 +34463,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/eri64/dsh-claude-ux",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-claude-ux.jpg"
@@ -34715,7 +34567,7 @@
       "license": "NOASSERTION",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Gumiho12345/dsh-plugin-net-access",
@@ -34786,9 +34638,9 @@
         "noLicense": false
       },
       "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（issue #8）; L1 已声明；smoke.mjs 验证 registry 产物 skill 发现"
       },
       "installCmd": "dsh plugin add @riffkit/dsh-plugin",
       "watchReason": ""
@@ -34873,11 +34725,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/ihuajiu/dsh-plugins-finder",
       "watchReason": ""
     },
@@ -34917,7 +34765,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Linjiangxian0203/dsh-remote-tunnel",
@@ -35022,13 +34870,9 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/dragonbaba/dsh-routing-suite",
       "watchReason": ""
     },
@@ -35049,11 +34893,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/PwnKY/dsh-session-link",
       "watchReason": ""
     },
@@ -35431,11 +35271,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/caoyiwei850/dsh-client-ui-skins",
       "watchReason": ""
     },
@@ -35498,11 +35334,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/zerob13/dsh-better-markdown",
       "watchReason": ""
     },
@@ -35857,7 +35689,7 @@
       "license": "BSD-3-Clause",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/lucky8197/dsh-devquest",
@@ -35901,11 +35733,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/54xkeee/dsh-vision",
       "watchReason": ""
     },
@@ -36052,11 +35880,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/mengyun233/dsh-codex-pet",
       "watchReason": ""
     },
@@ -36815,11 +36639,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/SZMY-haruhi/dsh-tavily",
       "watchReason": ""
     },
@@ -36903,11 +36723,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/ZSeven-W/dsh-crew",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-crew.jpg"
@@ -37096,7 +36912,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/jing-hy/picturereader",
@@ -37119,11 +36935,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/tpmoonchefryan/dsh-joi-channel-theme",
       "watchReason": ""
     },
@@ -37291,11 +37103,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/pengpengyi92/dsh-quant",
       "watchReason": ""
     },
@@ -37464,11 +37272,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/JMOKSZ/dsh-lark-bridge",
       "watchReason": ""
     },
@@ -37510,11 +37314,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/loster12520/dsh-btw",
       "watchReason": ""
     },
@@ -38145,11 +37945,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Fishquito7/dsh-skill-mcp-panel",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/dsh-skill-mcp-panel.jpg"
@@ -38466,7 +38262,7 @@
       "license": "NOASSERTION",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/JAdpp/dsh-whale-galgame",
@@ -38529,13 +38325,9 @@
       "license": "unknown",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "ok",
+      "compatStatus": "broken",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/pixellover1433/dsh-better-sidebar-lite",
       "watchReason": ""
     },
@@ -39124,7 +38916,7 @@
       "license": "BSD-3-Clause",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/lusblead/dsh-Kingdom",
@@ -39316,11 +39108,7 @@
       "isOfficialBeta": false,
       "compatStatus": "ok",
       "risk": null,
-      "evidence": {
-        "level": 3,
-        "l3Verified": true,
-        "source": "compat layer3 (installed & assembled)"
-      },
+      "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/d-dev0101/open-sea-skin",
       "watchReason": "",
       "ogLocal": "https://whyihaveyou.github.io/dsh-suite/assets/og-cache/open-sea-skin.jpg"
@@ -39657,7 +39445,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Totoro-qaq/dsh-plugin-bridge",
@@ -39722,7 +39510,7 @@
       "license": "GPL-3.0",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/CooStack/dsh-code-review",
@@ -39974,7 +39762,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Soren-ABT/dsh-knowledge",
@@ -40311,7 +40099,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/MingoZhou/dsh-replay",
@@ -40469,7 +40257,7 @@
       "name": "dsh-input-traffic",
       "repo": "drscrewdriver/dsh-input-traffic",
       "url": "https://github.com/drscrewdriver/dsh-input-traffic",
-      "category": "ui",
+      "category": "session",
       "desc_en": "Busy-time input queue for the DSH Web GUI: three-tier (now/next/later) planning, drag-to-reorder, interject/interrupt, batch clear, session freeze.",
       "desc_zh": "DSH Web GUI 忙时输入队列：三档交通管制（现在/稍后/排队），拖拽重排、插话打断、批量清空、会话冻结",
       "author": "drscrewdriver",
@@ -40816,7 +40604,7 @@
       "license": "NOASSERTION",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/lninghaha/dsh-coding-subscription-oauth",
@@ -41027,7 +40815,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/kanneiren/dsh-network-settings",
@@ -41407,7 +41195,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/jsdvjx/dsh-strata",
@@ -41472,7 +41260,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/yxxbc/dsh-balance-plugin",
@@ -41535,7 +41323,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Walvez/dsh-codex-sync",
@@ -41640,7 +41428,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/ExElectron/dsh-tool-hongtou",
@@ -41703,7 +41491,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Iwctwbh/dsh-flowglass",
@@ -41724,7 +41512,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/TsFreddie/dsh-compaction-instant",
@@ -41745,7 +41533,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "broken",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/qkycir-123/dsh-run2skill",
@@ -41829,7 +41617,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Physicolor/dsh-ui-harmonizer",
@@ -41892,7 +41680,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/Lzh3070/dsh-file-review-tab",
@@ -41913,7 +41701,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/wlj521/dsh-ui-tweaks",
@@ -41955,7 +41743,7 @@
       "license": "MIT",
       "featured": false,
       "isOfficialBeta": false,
-      "compatStatus": "unknown",
+      "compatStatus": "ok",
       "risk": null,
       "evidence": null,
       "installCmd": "dsh plugin add git+https://github.com/mingzeng21/dsh-obsidian",
@@ -65544,6 +65332,56 @@
         "@dsh-suite/all": 256,
         "@dsh-suite/plugin-deus": 270,
         "@dsh-suite/plugin-manager": 717
+      }
+    },
+    {
+      "ts": "2026-08-24T07:50:05.228Z",
+      "totalEntries": 2657,
+      "watchlistCount": 933,
+      "featuredCount": 21,
+      "totalStars": 703931,
+      "l3Count": 17,
+      "compatOk": 519,
+      "compatBroken": 71,
+      "compatUnknown": 2067,
+      "newEntriesToday": 0,
+      "deletedRepos": 37,
+      "npmDownloads": {
+        "@dsh-suite/plugin-session-export": 293,
+        "@dsh-suite/themes": 187,
+        "@dsh-suite/plugin-notify": 232,
+        "@dsh-suite/plugin-manager": 717,
+        "@dsh-suite/all": 256,
+        "create-dsh-plugin": 156,
+        "@dsh-suite/preset-center": 99,
+        "@dsh-suite/plugin-team-board": 294,
+        "@dsh-suite/plugin-deus": 270
+      },
+      "githubTraffic": {
+        "whyihaveyou/dsh-plugin-tutorial": {
+          "views": 54,
+          "viewsUnique": 28,
+          "clones": 63,
+          "clonesUnique": 44
+        },
+        "whyihaveyou/dsh-workstation": {
+          "views": 83,
+          "viewsUnique": 66,
+          "clones": 64,
+          "clonesUnique": 41
+        },
+        "whyihaveyou/dsh-themes": {
+          "views": 640,
+          "viewsUnique": 277,
+          "clones": 210,
+          "clonesUnique": 133
+        },
+        "whyihaveyou/dsh-suite": {
+          "views": 2656,
+          "viewsUnique": 1368,
+          "clones": 3095,
+          "clonesUnique": 564
+        }
       }
     }
   ]

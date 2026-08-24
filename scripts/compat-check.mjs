@@ -706,24 +706,29 @@ async function main() {
   // by risk-scan.mjs rewriting that field. Only written when layer 2/3 ran
   // (layer1-only runs leave the previous set intact).
   if (layer23.length && args.write) {
-    // Gate behind --write: compat-installed.json is a committed artifact that
-    // should only be maintained by the authoritative CI run (and explicit
-    // `--write` invocations), never clobbered by a partial debug run.
+    // Gate behind --write: compat-installed.json is a committed artifact
+    // (rolling L3-verified set consumed by site/build.mjs for evidence badges).
+    // UNION-merge with the previous file so a partial/debug run (e.g. a
+    // featured-only sweep) never clobbers the accumulated verified set:
+    // previous ids stay, this run's ids are added, same-id entries refresh.
+    const prev = (() => { try { return JSON.parse(readFileSync(INSTALLED_PATH, 'utf8')); } catch { return null; } })();
     const installed = layer23.filter((r) => r.layer3 && r.layer3.verdict === 'ok');
-    const installedIds = [...new Set(installed.map((r) => r.id))].sort();
     const verifiedAt = nowIso().slice(0, 10);
+    const entries = {};
+    if (prev && prev.entries && typeof prev.entries === 'object') Object.assign(entries, prev.entries);
+    for (const r of installed) {
+      entries[r.id] = { id: r.id, name: r.name, spec: r.spec, src: r.src || 'npm', verified_at: verifiedAt, layer: 3 };
+    }
+    const installedIds = Object.keys(entries).sort();
     const installedDoc = {
       generated_at: nowIso(),
       dshVersion,
       count: installedIds.length,
       ids: installedIds,
-      entries: Object.fromEntries(installed.map((r) => [
-        r.id,
-        { id: r.id, name: r.name, spec: r.spec, src: r.src || 'npm', verified_at: verifiedAt, layer: 3 },
-      ])),
+      entries,
     };
     writeFileSync(INSTALLED_PATH, JSON.stringify(installedDoc, null, 2) + '\n', 'utf8');
-    console.log(`\ncompat-installed: ${installedIds.length} entries L3-verified -> data/compat-installed.json`);
+    console.log(`\ncompat-installed: ${installedIds.length} entries L3-verified (merged ${prev ? Object.keys(prev.entries || {}).length : 0} previous + ${installed.length} new) -> data/compat-installed.json`);
   }
 
   // Human-readable output.

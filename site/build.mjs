@@ -61,6 +61,16 @@ function loadInstalledIds() {
   } catch { return new Set(); }
 }
 
+// data/compat-report.json — compat CI 矩阵报告（rc.x 队列实测基线）。
+// 构建期注入「兼容性快报」；缺文件时降级为目录聚合口径，不影响构建。
+const COMPAT_REPORT_PATH = resolve(REPO_ROOT, 'data', 'compat-report.json');
+function loadCompatReport() {
+  try { return JSON.parse(readFileSync(COMPAT_REPORT_PATH, 'utf8')); }
+  catch { return null; }
+}
+// 构建期一次性读入（缺文件 → null，renderCompatBrief 走目录聚合兜底）
+const compatReport = loadCompatReport();
+
 /* ------------------------------------------------------------------ */
 /* 分类 / 兼容 / 待审核原因 枚举（对齐 dsh-suite-architecture.md §4）    */
 /* ------------------------------------------------------------------ */
@@ -354,6 +364,21 @@ const I18N = {
     scnHint: 'Skip the 328-plugin scroll — six hand-picked combos for real jobs. One command to install.',
     comingSoon: 'Coming soon',
     justLaunched: 'Just launched',
+    compatBriefTitle: 'Compat bulletin',
+    compatBriefBaseline: 'Baseline DSH',
+    compatBriefCiSuffix: 'probed by compat CI',
+    compatBriefStatus: 'Catalog status',
+    compatBriefEntries: '{n} curated entries',
+    compatBriefVerified: 'Live-tested',
+    compatBriefRecent: 'as of {t}',
+    cardVerTitle: 'Live-tested on DSH',
+    dlgTitle: 'Plugin details',
+    dlgStatus: 'Compat status',
+    dlgEnv: 'Verified env',
+    dlgEnvNone: 'Not live-tested yet — fallback to CI re-checks',
+    dlgRepo: 'Repository',
+    dlgInstall: 'Install',
+    dlgClose: 'Close',
   },
   zh: {
     lang: 'zh-CN', hreflang: 'zh-CN', otherLang: 'en', otherHref: 'index.html', otherLabel: 'English',
@@ -427,6 +452,21 @@ const I18N = {
     scnHint: '别从 328 款插件里硬挑——按场景挑组合，一条命令装好基础款。',
     comingSoon: '即将上线',
     justLaunched: '刚上线',
+    compatBriefTitle: '兼容性快报',
+    compatBriefBaseline: '基准版本',
+    compatBriefCiSuffix: 'compat CI 当前探测基线',
+    compatBriefStatus: '目录兼容态',
+    compatBriefEntries: '收录 {n} 个条目',
+    compatBriefVerified: '已实测',
+    compatBriefRecent: '最近实测 {t}',
+    cardVerTitle: '实测环境',
+    dlgTitle: '插件详情',
+    dlgStatus: '兼容状态',
+    dlgEnv: '实测环境',
+    dlgEnvNone: '未做真机实测 — 等 compat CI 复试',
+    dlgRepo: '仓库',
+    dlgInstall: '安装',
+    dlgClose: '关闭',
   },
 };
 
@@ -480,6 +520,10 @@ function normalizeCurated(e) {
     featured: !!e.featured,
     isOfficialBeta: !!e.isOfficialBeta,
     compatStatus: (e.compat && e.compat.status) || 'unknown',
+    // 版本实用性：L2/L3 实测环境（DSH 版本 + 日期 + CI 备注）——详情抽屉 + 卡片 chip 使用
+    ...(e.compat && e.compat.dshVersion
+      ? { compatDshVersion: e.compat.dshVersion, compatLastVerified: e.compat.lastVerified || null, compatNote: e.compat.note || null }
+      : {}),
     risk: e.risk || null,
     evidence: e.evidence || null,
     installCmd: buildInstallCmd(e),
@@ -581,6 +625,9 @@ function renderCard(p, t, { featured = false, watch = false } = {}) {
   const desc = isZh(t) ? p.desc_zh : p.desc_en;
   const compat = COMPAT[p.compatStatus] || COMPAT.unknown;
   const compatLabel = isZh(t) ? compat.zh : compat.en;
+  const verChip = p.compatDshVersion
+    ? `<span class="badge badge-ver" title="${esc(t.cardVerTitle)}: DSH v${esc(p.compatDshVersion)}${p.compatLastVerified ? ' @ ' + esc(p.compatLastVerified) : ''}">v${esc(p.compatDshVersion)}</span>`
+    : '';
 
   const ribbons = [];
   if (featured) ribbons.push(`<span class="ribbon ribbon-featured">★ ${esc(t.badgeFeatured)}</span>`);
@@ -609,6 +656,7 @@ function renderCard(p, t, { featured = false, watch = false } = {}) {
     <p class="card-desc">${esc(desc || '')}</p>
     <div class="card-meta">
       ${compatBadge(p.compatStatus, t)}
+      ${verChip}
       ${watchBadge}
       ${langBadge}
       ${author}
@@ -702,6 +750,32 @@ ${cards}
 ${prodCards}
       </div>
     </section>`;
+}
+
+/**
+ * 兼容性快报（构建期注入）：基准版本（compat CI 当前探测的 dsh 版本）+
+ * 目录全量兼容态计数 + 最近实测时间。compat-report.json 缺失时降级为
+ * 目录聚合口径（版本 '—'，时间为 catalog 生成时间），不影响构建。
+ */
+function renderCompatBrief(data, t) {
+  const counts = { ok: 0, broken: 0, unknown: 0 };
+  for (const p of data.catalog) {
+    if (p.compatStatus === 'ok') counts.ok++;
+    else if (p.compatStatus === 'broken') counts.broken++;
+    else counts.unknown++;
+  }
+  const baseline = (compatReport && compatReport.dshVersion) ? 'v' + compatReport.dshVersion : '—';
+  const asOf = compatReport && compatReport.generated_at
+    ? compatReport.generated_at.slice(0, 10)
+    : '';
+  const asOfLabel = asOf ? `${esc(t.compatBriefRecent.replace('{t}', asOf))}` : '';
+  const statusLine = `${esc(t.compatBriefEntries.replace('{n}', String(data.catalog.length)))} · ✅ ${counts.ok} · ❌ ${counts.broken} · ⚪ ${counts.unknown}`;
+  return `<section class="compat-brief" aria-label="${esc(t.compatBriefTitle)}">
+  <span class="cb-title">${esc(t.compatBriefTitle)}</span>
+  <span class="cb-cell"><span class="cb-label">${esc(t.compatBriefBaseline)}</span><span class="cb-val cb-ver">DSH ${baseline}</span></span>
+  <span class="cb-cell"><span class="cb-label">${esc(t.compatBriefStatus)}</span><span class="cb-val">${statusLine}</span></span>
+  ${asOfLabel ? `<span class="cb-cell"><span class="cb-label">${esc(t.compatBriefVerified)}</span><span class="cb-val">${asOfLabel}</span></span>` : ''}
+</section>`;
 }
 
 function renderPage(t, data, baseUrl, snapshot) {
@@ -877,6 +951,8 @@ function renderPage(t, data, baseUrl, snapshot) {
         </figure>
       </div>
     </section>
+
+${renderCompatBrief(data, t)}
 
 ${renderScenarios(t, data)}
 

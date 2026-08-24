@@ -160,6 +160,7 @@ function trimPlugin(p) {
     desc_en: p.desc_en, desc_zh: p.desc_zh,
     author: p.author, stars: p.stars,
     category: p.category, compatStatus: p.compatStatus,
+    compatDshVersion: p.compatDshVersion || null, compatLastVerified: p.compatLastVerified || null,
     installCmd: p.installCmd, repo: p.repo, license: p.license,
     featured: !!p.featured,
     lastPush: p.lastPush || null,

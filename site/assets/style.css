@@ -328,6 +328,25 @@ section { margin-bottom: 48px; }
 .lb-head-stars { white-space: nowrap; }
 .lb-stars { font-size: 13px; font-weight: 700; color: var(--yellow); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
+.compat-brief {
+  display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: baseline;
+  margin: 18px 0 0; padding: 12px 16px; background: var(--surface);
+  border: 1px solid var(--border-soft); border-radius: var(--radius);
+  font-size: 13px;
+}
+.cb-title { font-weight: 800; color: var(--text); letter-spacing: .02em; }
+.cb-cell { display: inline-flex; gap: 8px; align-items: baseline; }
+.cb-label { color: var(--faint); font-size: 12px; }
+.cb-val { color: var(--text); font-variant-numeric: tabular-nums; }
+.cb-ver { font-weight: 700; color: var(--brand-bright); }
+.badge-ver {
+  font-size: 11px; font-weight: 600; color: var(--brand-bright);
+  background: var(--brand-soft); padding: 2px 7px; border-radius: var(--radius-badge);
+  white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+@media (max-width: 640px) {
+  .compat-brief { gap: 8px 14px; font-size: 12px; padding: 10px 12px; }
+}
 .nav-lb { color: var(--muted); font-weight: 600; }
 .nav-lb:hover { color: var(--brand-bright); text-decoration: none; }
 

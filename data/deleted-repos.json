@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T07:11:17.050Z",
+  "generated_at": "2026-08-25T08:01:15.423Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -81,6 +81,15 @@
       "lastStars": 2,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/Da-Mie/dsh-beacons"
+    },
+    {
+      "repo": "Deklan-Deng/Dcode",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-25T07:11:17.033Z",
+      "lastDetectedAt": "2026-08-25T08:01:15.316Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/Deklan-Deng/Dcode"
     },
     {
       "repo": "DreamZhongJu/dsh-codex-sync",
@@ -362,13 +371,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "Deklan-Deng/Dcode",
+      "repo": "tianji-qingtian/dsh-spec-loop",
       "seen": 1,
-      "firstDetectedAt": "2026-08-25T07:11:17.033Z",
-      "lastDetectedAt": "2026-08-25T07:11:17.033Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/Deklan-Deng/Dcode"
+      "firstDetectedAt": "2026-08-25T08:01:15.316Z",
+      "lastDetectedAt": "2026-08-25T08:01:15.316Z",
+      "lastStars": 6,
+      "lastPush": "2026-08-25",
+      "lastKnownUrl": "https://github.com/tianji-qingtian/dsh-spec-loop"
     }
   ]
 }

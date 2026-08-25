@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T08:01:15.423Z",
+  "generated_at": "2026-08-25T09:03:20.534Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -290,6 +290,15 @@
       "lastKnownUrl": "https://github.com/stushansusu/dsh-miku-skin"
     },
     {
+      "repo": "tianji-qingtian/dsh-spec-loop",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-25T08:01:15.316Z",
+      "lastDetectedAt": "2026-08-25T09:03:20.399Z",
+      "lastStars": 6,
+      "lastPush": "2026-08-25",
+      "lastKnownUrl": "https://github.com/tianji-qingtian/dsh-spec-loop"
+    },
+    {
       "repo": "walavave/dsh-git",
       "seen": 2,
       "firstDetectedAt": "2026-08-16T07:01:30.493Z",
@@ -369,15 +378,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "tianji-qingtian/dsh-spec-loop",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-25T08:01:15.316Z",
-      "lastDetectedAt": "2026-08-25T08:01:15.316Z",
-      "lastStars": 6,
-      "lastPush": "2026-08-25",
-      "lastKnownUrl": "https://github.com/tianji-qingtian/dsh-spec-loop"
     }
   ]
 }

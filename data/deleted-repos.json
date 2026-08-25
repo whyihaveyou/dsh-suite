@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T05:50:50.830Z",
+  "generated_at": "2026-08-25T07:11:17.050Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -299,6 +299,15 @@
       "lastKnownUrl": "https://github.com/wjy9902/dsh-web-default-session"
     },
     {
+      "repo": "Xplore-LAB/dsh-plugin-asmemory",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-25T05:50:50.672Z",
+      "lastDetectedAt": "2026-08-25T07:11:17.033Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/Xplore-LAB/dsh-plugin-asmemory"
+    },
+    {
       "repo": "yeshimei/dsh-sound",
       "seen": 2,
       "firstDetectedAt": "2026-08-14T19:22:19.301Z",
@@ -353,13 +362,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "Xplore-LAB/dsh-plugin-asmemory",
+      "repo": "Deklan-Deng/Dcode",
       "seen": 1,
-      "firstDetectedAt": "2026-08-25T05:50:50.672Z",
-      "lastDetectedAt": "2026-08-25T05:50:50.672Z",
+      "firstDetectedAt": "2026-08-25T07:11:17.033Z",
+      "lastDetectedAt": "2026-08-25T07:11:17.033Z",
       "lastStars": 1,
       "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/Xplore-LAB/dsh-plugin-asmemory"
+      "lastKnownUrl": "https://github.com/Deklan-Deng/Dcode"
     }
   ]
 }

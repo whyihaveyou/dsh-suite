@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-25T05:50:50.922Z",
+ "ts": "2026-08-25T07:11:17.147Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -915,6 +915,7 @@
   "dsh-habits",
   "dsh-hanako",
   "dsh-handbook",
+  "dsh-harbor",
   "dsh-harmony",
   "dsh-harmony-memorax-ai",
   "dsh-harness-mcp-server",
@@ -2212,6 +2213,7 @@
   "dsh-wiki",
   "dsh-wikilink",
   "dsh-win-computer-use",
+  "dsh-win-gitbash",
   "dsh-win-launchscript",
   "dsh-win-notify",
   "dsh-win-terminal-inspector",
@@ -2614,6 +2616,7 @@
   "spike-faye-lei-dsh-skills",
   "sprites-deepseek-plugin",
   "star-deepseek-harness-desktop",
+  "star-dsh-desktop",
   "stent",
   "stock-analysis-plugin",
   "succinix",

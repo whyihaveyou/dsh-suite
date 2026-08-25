@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T04:02:58.404Z",
+  "generated_at": "2026-08-25T04:56:29.300Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -263,6 +263,15 @@
       "lastKnownUrl": "https://github.com/Shmilyol/galgame-skin"
     },
     {
+      "repo": "sjh9714/dsh-what-changed",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-25T04:02:58.390Z",
+      "lastDetectedAt": "2026-08-25T04:56:29.077Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-19",
+      "lastKnownUrl": "https://github.com/sjh9714/dsh-what-changed"
+    },
+    {
       "repo": "stushansusu/dsh-miku-skin",
       "seen": 2,
       "firstDetectedAt": "2026-08-18T13:09:21.533Z",
@@ -342,15 +351,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "sjh9714/dsh-what-changed",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-25T04:02:58.390Z",
-      "lastDetectedAt": "2026-08-25T04:02:58.390Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-19",
-      "lastKnownUrl": "https://github.com/sjh9714/dsh-what-changed"
     }
   ]
 }

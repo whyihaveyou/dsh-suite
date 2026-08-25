@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-25T09:03:20.623Z",
+ "ts": "2026-08-25T09:54:40.897Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -406,6 +406,7 @@
   "dsh-audio-dub",
   "dsh-audit-bundle",
   "dsh-aura-scheduler",
+  "dsh-auth-gateway",
   "dsh-authinone",
   "dsh-auto",
   "dsh-auto-approval",

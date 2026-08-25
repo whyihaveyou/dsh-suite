@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-25T13:14:30.313Z",
+ "ts": "2026-08-25T14:07:28.107Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -22,6 +22,7 @@
   "agent-team",
   "agent-vision-toolkit",
   "agentcat",
+  "agentdebugx",
   "agentframe-v3",
   "agentkey",
   "agentrq",
@@ -1033,6 +1034,7 @@
   "dsh-launcher-snowcrescenter-tech",
   "dsh-launcher-tttnny",
   "dsh-launcher-wep-56",
+  "dsh-layered-memory",
   "dsh-layout-tools",
   "dsh-lazy-tools",
   "dsh-learn-everything",

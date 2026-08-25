@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-25T01:55:22.818Z",
+ "ts": "2026-08-25T03:15:38.646Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -591,6 +591,7 @@
   "dsh-codex-ui",
   "dsh-coding-companion",
   "dsh-coding-subscription-oauth",
+  "dsh-comfyui",
   "dsh-command-opt",
   "dsh-commandcode-go-provider",
   "dsh-commandcode-provider",
@@ -610,6 +611,7 @@
   "dsh-computer-use-xiaoheizi1212",
   "dsh-computer-use-zrui-c",
   "dsh-config-manager",
+  "dsh-console",
   "dsh-container",
   "dsh-context",
   "dsh-context-doctor",

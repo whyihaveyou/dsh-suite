@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T09:03:20.534Z",
+  "generated_at": "2026-08-25T16:58:39.014Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -378,6 +378,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "Nicholas023/vision-exp-tile",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-25T16:58:38.926Z",
+      "lastDetectedAt": "2026-08-25T16:58:38.927Z",
+      "lastStars": 13,
+      "lastPush": "2026-08-24",
+      "lastKnownUrl": "https://github.com/Nicholas023/vision-exp-tile"
     }
   ]
 }

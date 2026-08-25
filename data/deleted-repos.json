@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T04:56:29.300Z",
+  "generated_at": "2026-08-25T05:50:50.830Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -351,6 +351,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "Xplore-LAB/dsh-plugin-asmemory",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-25T05:50:50.672Z",
+      "lastDetectedAt": "2026-08-25T05:50:50.672Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/Xplore-LAB/dsh-plugin-asmemory"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-25T04:56:29.406Z",
+ "ts": "2026-08-25T05:50:50.922Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -972,6 +972,7 @@
   "dsh-imggenerate",
   "dsh-import-agents",
   "dsh-index",
+  "dsh-infinite-gen-2",
   "dsh-inline-images",
   "dsh-input-history",
   "dsh-input-history-omdsh-dev",

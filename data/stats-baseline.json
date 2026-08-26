@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-26T15:58:02.317Z",
+ "ts": "2026-08-26T17:02:21.894Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -89,6 +89,7 @@
   "blue",
   "brooks-lint",
   "browser-bridge",
+  "browser4",
   "browserskill",
   "build-hos-mcp",
   "caliper",
@@ -1651,6 +1652,7 @@
   "dsh-remote-blank-not-black",
   "dsh-remote-hyna-hla",
   "dsh-remote-ide",
+  "dsh-remote-mobile",
   "dsh-remote-sandbox",
   "dsh-remote-ssh",
   "dsh-remote-ssh-zhangfengshun",

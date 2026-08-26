@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T03:21:03.637Z",
+  "generated_at": "2026-08-26T04:58:50.874Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -236,6 +236,15 @@
       "lastKnownUrl": "https://github.com/ohtokaah-sys/dsh-plugins"
     },
     {
+      "repo": "openma-ai/deepseek-harness-typescript-sdk",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-26T03:21:03.620Z",
+      "lastDetectedAt": "2026-08-26T04:58:50.759Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/openma-ai/deepseek-harness-typescript-sdk"
+    },
+    {
       "repo": "rabbitknight/dsh-tui",
       "seen": 2,
       "firstDetectedAt": "2026-08-17T16:47:43.274Z",
@@ -387,15 +396,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "openma-ai/deepseek-harness-typescript-sdk",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-26T03:21:03.620Z",
-      "lastDetectedAt": "2026-08-26T03:21:03.621Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/openma-ai/deepseek-harness-typescript-sdk"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-26T17:02:21.894Z",
+ "ts": "2026-08-26T19:22:32.915Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2261,6 +2261,7 @@
   "dsh-workspace-search",
   "dsh-worktable",
   "dsh-worktree",
+  "dsh-worktree-panel",
   "dsh-worktrees",
   "dsh-writing-remote",
   "dsh-wsl-bridge",

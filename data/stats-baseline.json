@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-25T23:41:16.871Z",
+ "ts": "2026-08-26T02:01:15.202Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -655,6 +655,7 @@
   "dsh-cue-plugin",
   "dsh-custom-background",
   "dsh-custom-css",
+  "dsh-custom-skin",
   "dsh-custom-tool",
   "dsh-custom-workspace",
   "dsh-cyber-particle",

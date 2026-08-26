@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-26T14:10:45.872Z",
+ "ts": "2026-08-26T15:58:02.317Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1934,6 +1934,7 @@
   "dsh-tianshu-build",
   "dsh-tianshu-tui",
   "dsh-tianshu-tui-placeholder",
+  "dsh-tidychat",
   "dsh-tier-router",
   "dsh-tiered-approval",
   "dsh-timeline",

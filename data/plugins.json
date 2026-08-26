@@ -65295,8 +65295,57 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto"
-  }
- ],
+  },
+    {
+      "id": "dsh-tmux-cc",
+      "name": "dsh-tmux-cc",
+      "npm": "",
+      "repo": "adrianleb/dsh-tmux-cc",
+      "url": "https://github.com/adrianleb/dsh-tmux-cc",
+      "category": "ui",
+      "description": {
+        "en": "Persistent tmux control-mode cockpit for DSH Web that mirrors native panes in a dock.",
+        "zh": "为 DSH Web 提供持久的 tmux 控制模式驾驶舱，在停靠栏中镜像原生窗格。"
+      },
+      "author": "adrianleb",
+      "stars": 0,
+      "license": "MIT",
+      "tags": [
+        "tmux",
+        "terminal",
+        "ui"
+      ],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "^4.0.1",
+        "node": ">=22.6"
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin --profile web add github:adrianleb/dsh-tmux-cc",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "TypeScript",
+      "sourceNote": "",
+      "last_push": "2026-08-26",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "author submission"
+      },
+      "risk": {
+        "installScript": false,
+        "networkEgress": null,
+        "shellAccess": true,
+        "noLicense": false
+      },
+      "installNote": "Requires tmux on the DSH host. Access to the DSH Web port is shell-equivalent for that user's tmux sessions."
+    }
+],
  "watchlist": [
   {
    "id": "openbiliclaw",

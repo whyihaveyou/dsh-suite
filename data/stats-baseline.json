@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-26T10:55:09.412Z",
+ "ts": "2026-08-26T11:48:27.457Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -462,6 +462,7 @@
   "dsh-better-chat-history",
   "dsh-better-deepseek",
   "dsh-better-edit",
+  "dsh-better-input",
   "dsh-better-markdown",
   "dsh-better-sidebar",
   "dsh-better-sidebar-lite",

@@ -1,7 +1,7 @@
 # dsh-suite
 
 ![GitHub stars](https://img.shields.io/github/stars/whyihaveyou/dsh-suite?style=flat-square&color=facc15)
-![Plugins](https://img.shields.io/badge/plugins-1769-facc15?style=flat-square)
+![Plugins](https://img.shields.io/badge/plugins-1774-facc15?style=flat-square)
 ![Daily compat](https://img.shields.io/github/actions/workflow/status/whyihaveyou/dsh-suite/compat.yml?branch=main&label=daily-compat-check&style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-3b82f6?style=flat-square)
 
@@ -59,14 +59,14 @@ npm create dsh-plugin@latest my-plugin
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 6182 | 🟢 ok | DSH Web UI 插件与皮肤合集：任务板、Git 面板等 |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 2968 | 🟢 ok | 侧边栏完整工作台：文件渲染/终端/Git/子代理 |
-| [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 1745 | ⚪ unknown | DSH Web 鲸鱼娘皮肤系列（深海女仆工坊） |
-| [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 835 | 🟢 ok | 给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原 |
+| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 6246 | 🟢 ok | DSH Web UI 插件与皮肤合集：任务板、Git 面板等 |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 3002 | 🟢 ok | 侧边栏完整工作台：文件渲染/终端/Git/子代理 |
+| [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 1762 | ⚪ unknown | DSH Web 鲸鱼娘皮肤系列（深海女仆工坊） |
+| [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 836 | 🟢 ok | 给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原 |
 | [dsh_workflow](https://github.com/icetomoyo/dsh_workflow) | 108 | 🟢 ok | 把 Claude Code 的 UltraCode 模式带给 DSH，多 Agent 调度可治理 |
-| [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 101 | 🟢 ok | 对话回退：回滚会话与工作区状态 |
+| [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 103 | 🟢 ok | 对话回退：回滚会话与工作区状态 |
 | [mstar-harness](https://github.com/btspoony/mstar-harness) | 57 | ⚪ unknown | Skill 驱动的 Harness/Loop 工程工作流插件 |
-| [ui-status-label](https://github.com/alingalingling/ui-status-label) | 40 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | 自定义「鲸鱼娘」思考状态的显示 |
+| [ui-status-label](https://github.com/alingalingling/ui-status-label) | 42 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | 自定义「鲸鱼娘」思考状态的显示 |
 | [dsh-share](https://github.com/hellodigua/dsh-share) | 35 | 🟢 ok | DSH 对话分享插件 |
 | [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) | 24 | 🟢 ok | Monaco 编辑器创建沙箱 JS 工具 |
 | [distill](https://github.com/LoserFox/distill) | 23 | ⚪ unknown | 自动对话蒸馏：后台 subagent 反省 + 技能更新 |
@@ -97,17 +97,17 @@ npm create dsh-plugin@latest my-plugin
 | [telegram](https://github.com/LoserFox/telegram) | 7 | ⚪ unknown | Telegram Bot API 桥接（长轮询） |
 | [agent-knock-knock](https://github.com/scotthuang/agent-knock-knock) | 4 | ⚪ unknown | OpenClaw 插件：共享 tmux 控制本地 Codex/Claude Code |
 | [dsh-bash-encoding](https://github.com/lhh010/dsh-bash-encoding) | 7 | ⚪ unknown | bash 输出编码自动识别（UTF-16LE/UTF-8/GBK） |
-| [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) | 171 | 🟢 ok | 连数据库、写 SQL 的插件 |
+| [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) | 175 | 🟢 ok | 连数据库、写 SQL 的插件 |
 | [dsh-doctor](https://github.com/coppynight/dsh-doctor) | 6 | 🟢 ok | flutter-doctor 风格诊断与安全自动修复 |
 | [dsh-interconnect](https://github.com/Chinesezjc/dsh-interconnect) | 34 | 🟢 ok | 跨实例消息/事件交接插件 |
 | [dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) | 55 | ⚪ unknown | OpenBiliClaw 内容推荐 Agent 接入 DSH |
 | [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) | 28 | 🟢 ok | 扫描插件仓库清单协议/patch 格式/构建陷阱 |
 | [dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) | 14 | ⚪ unknown | 本机安全审计：配置/插件来源/会话/网络暴露面 |
 | [dsh-tool-csv](https://github.com/omdsh-dev/dsh-tool-csv) | 4 | ⚪ unknown | CSV 解析/查询/统计/转换工具 |
-| [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) | 27 | ⚪ unknown | 零依赖工具包合集（time/encoding/json/csv/regex） |
+| [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) | 28 | ⚪ unknown | 零依赖工具包合集（time/encoding/json/csv/regex） |
 | [atomstudio](https://github.com/AtomicsLaboratory/atomstudio) | 0 | ⚪ unknown | 可执行文档工程环境 |
 | [dsh-cc-connect](https://github.com/whiteguo233/dsh-cc-connect) | 3 | ⚪ unknown | 通过 cc-connect 远程使用 DSH |
-| [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) | 237 | 🟢 ok | Mnemon 三层记忆体深度集成 |
+| [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) | 248 | 🟢 ok | Mnemon 三层记忆体深度集成 |
 | [dsh-paseo](https://github.com/renat3u/dsh-paseo) | 3 | ⚪ unknown | DSH 的 paseo 插件扩展支持 |
 | [dsh-plugin-dev](https://github.com/omdsh-dev/dsh-plugin-dev) | 13 | ⚪ unknown | DSH 插件开发踩坑档案（skill+文档） |
 | [dsh-tool-calculator](https://github.com/omdsh-dev/dsh-tool-calculator) | 8 | ⚪ unknown | 安全数学表达式求值器 |
@@ -124,14 +124,14 @@ npm create dsh-plugin@latest my-plugin
 | [zotero-harvest](https://github.com/Fisfzy/zotero-harvest) | 5 | ⚪ unknown | Zotero 文献采集入库插件（OpenAlex/arXiv/Crossref） |
 | [dsh-harness-ops](https://github.com/fakechris/dsh-harness-ops) | 13 | ⚪ unknown | DSH 运维工具箱：每日快照 A/B 双槽轮换、一键回滚 |
 | [dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) | 7 | ⚪ unknown | 检查→修复→复查的对抗式闭环插件 |
-| [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) | 22 | ⚪ unknown | OpenMAIC：课堂/幻灯片/交互式组件 |
+| [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) | 23 | ⚪ unknown | OpenMAIC：课堂/幻灯片/交互式组件 |
 | [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) | 43 | ⚪ unknown | MineRU 文档解析工具 |
 | [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) | 3 | ⚪ unknown | 编辑用户与内置系统提示段（实时预览） |
 | [dsh-scholar](https://github.com/lzszq/dsh-scholar) | 25 | 🟢 ok | dsh-scholar（文献相关） |
 | [dsh-ssh](https://github.com/UynajGI/dsh-ssh) | 8 | 🟢 ok | SSH 远程执行：ProxyJump 链、SFTP |
 | [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) | 3 | 🟢 ok | 按 agent 按需工具发现与渐进 schema 披露 |
 | [dsh-webbridge](https://github.com/bill9109/dsh-webbridge) | 4 | ⚪ unknown | DSH 结合 Kimi WebBridge |
-| [ego-browser](https://github.com/Fisfzy/ego-browser) | 49 | ⚪ unknown | 把 ego-lite 浏览器接入 DSH（给 Agent 用的 Chromium） |
+| [ego-browser](https://github.com/Fisfzy/ego-browser) | 50 | ⚪ unknown | 把 ego-lite 浏览器接入 DSH（给 Agent 用的 Chromium） |
 | [math-lean](https://github.com/Fisfzy/math-lean) | 1 | ⚪ unknown | Lean 内核验证的数学推理插件 |
 | [plugin-template](https://github.com/omdsh-dev/plugin-template) | 12 | ⚪ unknown | 官方 turtle ui 仓库派生的插件模板 |
 | [Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) | 0 | ⚪ unknown | Qwen-MM-Plugins 支持 |
@@ -139,17 +139,17 @@ npm create dsh-plugin@latest my-plugin
 | [sandbox-nono](https://github.com/omdsh-dev/sandbox-nono) | 3 | ⚪ unknown | nono 沙盒支持 |
 | [web-components](https://github.com/omdsh-dev/web-components) | 2 | ⚪ unknown | web-components 支持 |
 | [zotero-wave-rag](https://github.com/Fisfzy/zotero-wave-rag) | 3 | ⚪ unknown | 面向 Zotero 论文库的浪潮式 RAG 检索 |
-| [modsearch](https://github.com/liustack/modsearch) | 291 | ⚪ unknown | DeepSeek Harness 的联网搜索插件。 |
-| [dsh-browser](https://github.com/Lum1104/dsh-browser) | 469 | 🟢 ok | Chrome 侧边栏扩展，让 DSH 操控浏览器。 |
+| [modsearch](https://github.com/liustack/modsearch) | 295 | ⚪ unknown | DeepSeek Harness 的联网搜索插件。 |
+| [dsh-browser](https://github.com/Lum1104/dsh-browser) | 474 | 🟢 ok | Chrome 侧边栏扩展，让 DSH 操控浏览器。 |
 | [dsh-openapi](https://github.com/Degurechaff57/dsh-openapi) | 4 | ⚪ unknown | 安全 OpenAPI 3.x 发现与 API 调用工具。 |
 | [dsh-better-browser](https://github.com/titanwings/dsh-better-browser) | 10 | ⚪ unknown | 通过 Kimi WebBridge 让 agent 操作用户已登录浏览器。 |
 | [dsh-worktree](https://github.com/FlashingChen/dsh-worktree) | 7 | ⚪ unknown | Codex 风格永久 git worktree 插件。 |
 | [graycode-for-dsh](https://github.com/Komeiji-Shiki/graycode-for-dsh) | 5 | ⚪ unknown | graycode 编码工具。 |
-| [dsh-expression](https://github.com/yyh-001/dsh-expression) | 55 | 🟢 ok | 找得到、发得出 —— DSH 表情包插件：语义搜图，只发真实文件，走 companion QQ 通道 |
+| [dsh-expression](https://github.com/yyh-001/dsh-expression) | 60 | 🟢 ok | 找得到、发得出 —— DSH 表情包插件：语义搜图，只发真实文件，走 companion QQ 通道 |
 | [dsh-director-toolkit](https://github.com/lhmd/dsh-director-toolkit) | 7 | ⚪ unknown | dsh-director-toolkit — DSH 插件（工具） |
 | [codex-plugin-dsh](https://github.com/wingoo/codex-plugin-dsh) | 8 | ⚪ unknown | codex-plugin-dsh — DSH 插件（工具） |
 | [dsh-prompt-persona](https://github.com/Xilin3/dsh-prompt-persona) | 13 | ⚪ unknown | dsh-prompt-persona — DSH 插件（工具） |
-| [dsh-tool-policy](https://github.com/Drifter-yh/dsh-tool-policy) | 3 | ⚪ unknown | dsh-tool-policy — DSH 插件（工具） |
+| [dsh-tool-policy](https://github.com/Drifter-yh/dsh-tool-policy) | 4 | ⚪ unknown | dsh-tool-policy — DSH 插件（工具） |
 | [dsh-plugin-graph](https://github.com/erduotong/dsh-plugin-graph) | 2 | 🟢 ok | 一个Deepseek Harness的插件关系图谱可视化插件 |
 | [dsh-research-notes](https://github.com/fff122/dsh-research-notes) | 3 | ⚪ unknown | dsh-research-notes — DSH 插件（工具） |
 | [nowledge-mem-deepseek-harness](https://github.com/nowledge-co/nowledge-mem-deepseek-harness) | 6 | ⚪ unknown | nowledge-mem-deepseek-harness — DSH 插件（工具） |
@@ -162,7 +162,7 @@ npm create dsh-plugin@latest my-plugin
 | [deepseek-pet](https://github.com/keleus/deepseek-pet) | 42 | ⚪ unknown | 在你的deepseek-harness上养一只吃白饭的大蓝鲸 |
 | [dsh-index](https://github.com/Sunrisepeak/dsh-index) | 3 | ⚪ unknown | dsh-index — DSH 插件（工具） |
 | [dsh-web-search-firecrawl](https://github.com/yangzhe1003/dsh-web-search-firecrawl) | 2 | ⚪ unknown | dsh-web-search-firecrawl — DSH 插件（工具） |
-| [dsh-plugin-template](https://github.com/bugmaker2/dsh-plugin-template) | 36 | ⚪ unknown | dsh-plugin-template — DSH 插件（工具） |
+| [dsh-plugin-template](https://github.com/bugmaker2/dsh-plugin-template) | 39 | ⚪ unknown | dsh-plugin-template — DSH 插件（工具） |
 | [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) | 8 | 🟢 ok | dsh-composer-history — DSH 插件（工具） |
 | [dsh-fun-ticker](https://github.com/omdsh-dev/dsh-fun-ticker) | 5 | ⚪ unknown | DSH 行情跑马灯插件：可自选标的的加密/汇率/A股/指数/港美股跑马灯，免 key 数据源，宿主代理+缓存 |
 | [jumpserver-dsh](https://github.com/jumpserver-east/jumpserver-dsh) | 2 | ⚪ unknown | jumpserver-dsh — DSH 插件（工具） |
@@ -177,7 +177,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-scout](https://github.com/omdsh-dev/dsh-scout) | 2 | 🟢 ok | 面向 DeepSeek Harness 的只读环境探测插件，为智能体提供运行环境、软件版本、系统资源、端口、服务、硬件及工作区信息。 |
 | [dsh-screenshot-diff](https://github.com/PangYiMing/dsh-screenshot-diff) | 1 | 🟢 ok | dsh-screenshot-diff — DSH 插件（工具） |
 | [dsh-turn-index](https://github.com/Simon314620/dsh-turn-index) | 3 | ⚪ unknown | deepseek harness的侧边栏对话轮次索引插件 |
-| [dsh-mobile-control](https://github.com/PangYiMing/dsh-mobile-control) | 3 | 🟢 ok | dsh-mobile-control — DSH 插件（工具） |
+| [dsh-mobile-control](https://github.com/PangYiMing/dsh-mobile-control) | 4 | 🟢 ok | dsh-mobile-control — DSH 插件（工具） |
 | [dsh-hub](https://github.com/coderPerseus/dsh-hub) | 2 | ⚪ unknown | dsh-hub — DSH 插件（工具） |
 | [dsh-tool-monitor](https://github.com/yoke233/dsh-tool-monitor) | 1 | ⚪ unknown | dsh-tool-monitor — DSH 插件（工具） |
 | [dsh-suggest-prompt](https://github.com/studyzy/dsh-suggest-prompt) | 3 | ⚪ unknown | dsh-suggest-prompt — DSH 插件（工具） |
@@ -233,7 +233,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-backup-sync](https://github.com/csiroqa/dsh-backup-sync) | 1 | ⚪ unknown | dsh-backup-sync — DSH 插件（工具） |
 | [dsh-auto](https://github.com/simon300000/dsh-auto) | 5 | ⚪ unknown | dsh-auto — DSH 插件（工具） |
 | [dsh-annotate](https://github.com/BrambleXu/dsh-annotate) | 10 | ⚪ unknown | dsh-annotate — DSH 插件（工具） |
-| [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | 53 | 🟢 ok (外部贡献者 franksong2702 实测验证（PR #16）) | 通过 ChatGPT OAuth 在 DeepSeek Harness 中使用 OpenAI Codex 模型。 |
+| [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | 56 | 🟢 ok (外部贡献者 franksong2702 实测验证（PR #16）) | 通过 ChatGPT OAuth 在 DeepSeek Harness 中使用 OpenAI Codex 模型。 |
 | [DSH-Decktop](https://github.com/JustGenius-s/DSH-Decktop) | 23 | ⚪ unknown | DSH-Decktop — DSH 插件（工具） |
 | [dsh-cad-review](https://github.com/dongsheng123132/dsh-cad-review) | 4 | ⚪ unknown | dsh-cad-review — DSH 插件（工具） |
 | [dsh-xai](https://github.com/MirDie/dsh-xai) | 2 | ⚪ unknown | dsh-xai — DSH 插件（工具） |
@@ -262,7 +262,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-tool-hashline](https://github.com/InklingYoshi584/dsh-tool-hashline) | 2 | ⚪ unknown | 哈希锚定读写工具：read/edit/grep 每一行都带内容指纹，改没改一目了然。 |
 | [dsh-view-modes](https://github.com/NigelYao/dsh-view-modes) | 4 | ⚪ unknown | 视图模式：Verbose / Normal / Summary 三档切换。 |
 | [dsh-codex-oauth](https://github.com/Babulubobo/dsh-codex-oauth) | 2 | 🟢 ok | 用 ChatGPT（Codex Pro/Plus）订阅跑 DSH。 |
-| [dsh-figma-to-lottie](https://github.com/zimai233/dsh-figma-to-lottie) | 2 | ⚪ unknown | Figma/SVG 转 Lottie 动画：SVG 路径直接编成动画。 |
+| [dsh-figma-to-lottie](https://github.com/zimai233/dsh-figma-to-lottie) | 3 | ⚪ unknown | Figma/SVG 转 Lottie 动画：SVG 路径直接编成动画。 |
 | [opencode-usage](https://github.com/AmaTsumeAkira/opencode-usage) | 1 | ⚪ unknown | OpenCode Go 订阅额度徽章插件（dsh bundle） | OpenCode Go quota badge plugin for dsh |
 | [dsh-plugin-git-inspect](https://github.com/Wanbinyu/dsh-plugin-git-inspect) | 1 | ⚪ unknown | 只读 Git 检查工具：安全地查看仓库状态。 |
 | [dsh-html-canvas](https://github.com/Jinsong-Zhou/dsh-html-canvas) | 2 | ⚪ unknown | 把 AI 生成的 HTML 变成可点击编辑的画布。 |
@@ -308,7 +308,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-code-lens](https://github.com/lisycotana/dsh-code-lens) | 0 | ⚪ unknown | code 模式子派发可观测性：工具调用链路可见。 |
 | [dsh-subprocess-inherit-environment](https://github.com/zhangzujian/dsh-subprocess-inherit-environment) | 2 | ⚪ unknown | 把完整 Harness 环境变量透传给子进程（可拆卸的调试向插件）。 |
 | [dsh-doctor-windows](https://github.com/sublatesublate-design/dsh-doctor-windows) | 0 | 🟢 ok | Windows 环境诊断：DSH 在 Windows 上的问题排查。 |
-| [MuseAI](https://github.com/yejiming/MuseAI) | 620 | ⚪ unknown | 创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用） |
+| [MuseAI](https://github.com/yejiming/MuseAI) | 621 | ⚪ unknown | 创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用） |
 | [dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) | 19 | 🟢 ok | UX 体检插件：扫描 React + TypeScript 源码里的交互问题，定位到具体位置并给出修复建议。 |
 | [dsh-plugin-automations](https://github.com/Sev7een/dsh-plugin-automations) | 3 | ⚪ unknown | 定时任务插件：Web profile 里安排计划任务。 |
 | [dsh-web-search-tavily](https://github.com/nitrazepam01/dsh-web-search-tavily) | 2 | ⚪ unknown | Tavily 搜索源 bundle：热切换、免配置接入。 |
@@ -320,8 +320,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-credentials-system](https://github.com/khiqwq/dsh-credentials-system) | 0 | ⚪ unknown | 系统绑定加密凭证 provider：凭据跟系统用户绑定。 |
 | [dsh-plugins](https://github.com/wsxwj123/dsh-plugins) | 8 | ⚪ unknown | 插件集合（独立包，一个仓库管理）。 |
 | [deepseek-harness-cli](https://github.com/soolaugust/deepseek-harness-cli) | 4 | ⚪ unknown | 交互式终端 agent（DeepSeek Harness 分支）：一切皆插件。 |
-| [dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) | 8 | 🟢 ok | 对话栏左侧常驻大纲：快速定位每次 user 提问与最后 assistant 回复（DeepSeek Harness 插件） |
-| [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) | 29 | ⚪ unknown | 让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。 |
+| [dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) | 9 | 🟢 ok | 对话栏左侧常驻大纲：快速定位每次 user 提问与最后 assistant 回复（DeepSeek Harness 插件） |
+| [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) | 31 | ⚪ unknown | 让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。 |
 | [mindspace-dsh-local-rag](https://github.com/Spirtxiaoqi7/mindspace-dsh-local-rag) | 3 | ⚪ unknown | 本地混合 RAG：ARPM 派生，检索增强全在本机完成。 |
 | [dsh-mcp-pack](https://github.com/mengyaoi/dsh-mcp-pack) | 2 | ⚪ unknown | 常用 MCP server 一键接入 DeepSeek Harness (dsh) 的 .cordis.yml 清单合集，开箱即用，零代码。 |
 | [upstream-radar](https://github.com/MicroMilo/upstream-radar) | 8 | ⚪ unknown | 上游雷达：持续监控 DSH 插件的漏洞与破坏性变更影响。 |
@@ -337,8 +337,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-pet](https://github.com/Vulcan626/dsh-pet) | 3 | 🟢 ok | 社区版 DeepSeek 桌宠客户端插件。 |
 | [dsh-win-launchscript](https://github.com/NaNExist/dsh-win-launchscript) | 1 | ⚪ unknown | 适用于 Windows 的 DeepSeek Harness（DSH）一键启动脚本，自动启动 Web 服务、打开浏览器，并在关闭窗口后停止服务。 |
 | [dsh-model-provider-label](https://github.com/haiyoucuv/dsh-model-provider-label) | 0 | ⚪ unknown | 模型选择器同时显示 provider 显示名与模型名，同名模型不再混淆。 |
-| [dsh-pub](https://github.com/dsh-pub/dsh-pub) | 2 | ⚪ unknown | dsh.pub 双语、源码背书的 DSH 插件注册表与安装器。 |
-| [anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) | 287 | 🟢 ok | AnySearch 联网搜索接入：给 DSH 配上 AnySearch 的搜索 provider 和进阶搜索工具。 |
+| [dsh-pub](https://github.com/dsh-pub/dsh-pub) | 3 | ⚪ unknown | dsh.pub 双语、源码背书的 DSH 插件注册表与安装器。 |
+| [anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) | 295 | 🟢 ok | AnySearch 联网搜索接入：给 DSH 配上 AnySearch 的搜索 provider 和进阶搜索工具。 |
 | [dsh-toy](https://github.com/c3ll256/dsh-toy) | 63 | 🟢 ok | 玩具控制协议（TCP）：用 DSH 控制可编程玩具，给 agent 加一点实体交互的玩法。 |
 | [dsh-conv-search](https://github.com/beijingwahw/dsh-conv-search) | 3 | ⚪ unknown | dsh-conv-search（对话内文本搜索）— in-conversation text search plugin for DeepSeek Harness (Ctrl+F, match case, whole word, streaming-awar… |
 | [dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa) | 6 | 🟢 ok | 零配置 Exa 网页搜索源：无 key 匿名模式接入。 |
@@ -353,8 +353,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-mcp-manager](https://github.com/HenC49/dsh-mcp-manager) | 1 | 🔴 broken (failed once, retried — install failed (exit 1):     at runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-9h8shc) | 一个 DeepSeek Harness MCP 配置页 |
 | [dsh-nebulagraph-v5](https://github.com/xiajingchun/dsh-nebulagraph-v5) | 4 | ⚪ unknown | 连接 Nebula v5 图数据库的插件。 |
 | [dsh-plugin-text-translation](https://github.com/1738348785/dsh-plugin-text-translation) | 3 | ⚪ unknown | 文本与文档翻译插件：标签防爆遮罩保护代码/占位符，批量翻译 i18n 文案不破坏结构。 |
-| [dsh-overleaf](https://github.com/fly233338/dsh-overleaf) | 8 | ⚪ unknown | Overleaf 写作接入：通过 OverleafMCP 让 DSH 直接读写你的 LaTeX 项目和文档。 |
-| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 426 | 🟢 ok | DeepSeek Harness 桌面宠物插件 + 完整素材生成链：AI 提示词 → 绿幕视频 → 透明动画 → 可安装插件，从零到宠物全流程可复现 |
+| [dsh-overleaf](https://github.com/fly233338/dsh-overleaf) | 9 | ⚪ unknown | Overleaf 写作接入：通过 OverleafMCP 让 DSH 直接读写你的 LaTeX 项目和文档。 |
+| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 440 | 🟢 ok | DeepSeek Harness 桌面宠物插件 + 完整素材生成链：AI 提示词 → 绿幕视频 → 透明动画 → 可安装插件，从零到宠物全流程可复现 |
 | [dsh-humanizer](https://github.com/DEEP-IOS/dsh-humanizer) | 7 | 🟢 ok | DeepSeek Harness原生中文文本人工智能痕迹消除与多重审核对抗工作流 |
 | [dsh-pixluna](https://github.com/PixLunaLab/dsh-pixluna) | 3 | 🟢 ok | dsh-plugin-pixluna | 让 DSH 自己看涩图！ |
 | [dsh-deepseek-billing](https://github.com/golitter/dsh-deepseek-billing) | 3 | ⚪ unknown | 在 DSH 中查看 DeepSeek API 账户余额及计费信息 |
@@ -369,10 +369,10 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-tool-somark](https://github.com/saurtone/dsh-tool-somark) | 3 | ⚪ unknown | SoMark 文档解析工具（somark_parse）。 |
 | [dsh-mcp-settings](https://github.com/xluomo/dsh-mcp-settings) | 2 | ⚪ unknown | dsh mcp服务器配置管理 |
 | [dsh-terminal](https://github.com/dongsheng123132/dsh-terminal) | 2 | 🟢 ok | 持久交互式终端模式。 |
-| [dsh-anchored-standard](https://github.com/xiaobright/dsh-anchored-standard) | 3775 | ⚪ unknown | 两段式 Agent 预设：先用精简配置快速启动，再切换到完整 Standard 工具集，兼顾启动速度与全功能。 |
+| [dsh-anchored-standard](https://github.com/xiaobright/dsh-anchored-standard) | 3778 | ⚪ unknown | 两段式 Agent 预设：先用精简配置快速启动，再切换到完整 Standard 工具集，兼顾启动速度与全功能。 |
 | [dsh-whalito-desk](https://github.com/entireyu/dsh-whalito-desk) | 2 | ⚪ unknown | 鲸仔 Whalito，DeepSeek Harness 桌面助手。这是由DSH + DS-V4-Pro-0813开发的tauri桌面程序。 |
 | [dsh-browser](https://github.com/xylt369/dsh-browser) | 10 | 🟢 ok | 浏览器能力：有头 Edge/Playwright 驱动、SSRF 安全导航、无障碍树点击、权限门。 |
-| [dsh-qqbot](https://github.com/tencent-connect/dsh-qqbot) | 78 | 🟢 ok | 让 QQ 机器人接入 DeepSeek Harness（dsh）的官方插件 |
+| [dsh-qqbot](https://github.com/tencent-connect/dsh-qqbot) | 79 | 🟢 ok | 让 QQ 机器人接入 DeepSeek Harness（dsh）的官方插件 |
 | [dsh-plugin-store](https://github.com/w769721503/dsh-plugin-store) | 6 | 🟢 ok | DeepSeek Harness 插件商店：浏览、搜索、筛选并一键安装 dsh-plugin 生态插件 |
 | [dsh-office](https://github.com/omdsh-dev/dsh-office) | 16 | 🟢 ok | 办公三件套！Office document tools for DeepSeek Harness (dsh): generate, read, and edit spreadsheets (.xlsx), PDFs, and presentations (.… |
 | [dsh-plugins](https://github.com/kestiny18/dsh-plugins) | 2 | ⚪ unknown | 社区插件 monorepo（独立发布的多个 DSH 插件）。 |
@@ -395,7 +395,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-satori](https://github.com/Ri0n72Y/dsh-satori) | 2 | 🟢 ok | 连接 DSH 与 Satori 服务器，获得 IM 能力。 |
 | [dsh-pi](https://github.com/TGYD-helige/dsh-pi) | 4 | ⚪ unknown | 在 DSH 里跑可信的 Pi 扩展：兼容宿主直接运行未经修改的 Pi extensions。 |
 | [dsh-hotplug-engine](https://github.com/AnothetLoice/dsh-hotplug-engine) | 2 | 🟢 ok | 插件安装/回滚/审计服务化：热插拔引擎。 |
-| [dsh-claude-provider](https://github.com/MoFeng2223/dsh-claude-provider) | 35 | ⚪ unknown | 自定义 Claude provider：DSH 里用 Claude 模型。 |
+| [dsh-claude-provider](https://github.com/MoFeng2223/dsh-claude-provider) | 33 | ⚪ unknown | 自定义 Claude provider：DSH 里用 Claude 模型。 |
 | [dsh-plugin-working-status](https://github.com/Abyss-Seeker/dsh-plugin-working-status) | 8 | ⚪ unknown | 把思考状态里那句 "Deep diving..." 改成你喜欢的任何话。超轻量级。 |
 | [dsh-mcp-admin](https://github.com/kairoz9/dsh-mcp-admin) | 5 | ⚪ unknown | MCP 管理：设置页查看 /mcp 状态，按 profile 管理 MCP 服务器。 |
 | [dsh-plugin-manager](https://github.com/monk233/dsh-plugin-manager) | 4 | 🟢 ok | DSH 插件管理, 一键启用/禁用插件 |
@@ -423,7 +423,7 @@ npm create dsh-plugin@latest my-plugin
 | [douyin-plugin-dsh-plugin](https://github.com/chu557/douyin-plugin-dsh-plugin) | 4 | ⚪ unknown | 在使用dsh等待的过程中刷抖音 |
 | [dsh-go-rotator](https://github.com/echo-xianyu/dsh-go-rotator) | 4 | ⚪ unknown | OpenCode Go 订阅 key 轮换器：多 key 自动切换防限流。 |
 | [dsh-voice-mic](https://github.com/Zachary7456/dsh-voice-mic) | 2 | ⚪ unknown | DeepSeek Harness (dsh) 语音输入插件：麦克风按钮/快捷键录音，实时转写回填输入框。三种识别引擎：浏览器 Web Speech、本地 SenseVoice/Paraformer 离线后端（一键部署）、OpenAI 兼容云端 ASR API。 |
-| [deepseek-harness-for-vscode](https://github.com/skymecode/deepseek-harness-for-vscode) | 76 | ⚪ unknown | deepseek-harness 的 VS Code 社区扩展。 |
+| [deepseek-harness-for-vscode](https://github.com/skymecode/deepseek-harness-for-vscode) | 80 | ⚪ unknown | deepseek-harness 的 VS Code 社区扩展。 |
 | [DSH-EvoResearch](https://github.com/Karbo123/DSH-EvoResearch) | 14 | ⚪ unknown | 自进化科研工作流 |
 | [dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) | 17 | 🟢 ok | 排队消息增强面板：编辑、删除、插话、排序，批量删除带确认。 |
 | [dsh-auto-mode](https://github.com/NanmiCoder/dsh-auto-mode) | 131 | 🟢 ok | 安全的自动授权：在「每次都要点批准」和「无脑全放开」之间加一档，按规则自动放行常规操作。 |
@@ -459,30 +459,30 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-forge](https://github.com/zhn1100/dsh-forge) | 4 | ⚪ unknown | 可复现的 DSH 插件开发环境。 |
 | [oh-my-dsh](https://github.com/LiuMengxuan04/oh-my-dsh) | 10 | ⚪ unknown | Oh My DSH (DSH Autopilot): durable, bounded autonomous development for DeepSeek Harness |
 | [LaoA-dshGF](https://github.com/zhulin025/LaoA-dshGF) | 2 | ⚪ unknown | DeepSeek Harness 赛博女友插件 |
-| [dsh-free-search](https://github.com/DDDMUC/dsh-free-search) | 64 | ⚪ unknown | Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed |
+| [dsh-free-search](https://github.com/DDDMUC/dsh-free-search) | 69 | ⚪ unknown | Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed |
 | [dsh-better-edit](https://github.com/Rianico/dsh-better-edit) | 18 | 🟢 ok | Hash-anchored read/edit/batch_edit/undo_last_edit tools for DeepSeek Harness (dsh) — dsh port of pi-hashline-edit-lsz |
 | [dsh-prompt-manager](https://github.com/errorcode7/dsh-prompt-manager) | 6 | 🟢 ok | DeepSeekHarness的提示词管理器插件 |
 | [snapgrep](https://github.com/Owen718/snapgrep) | 8 | 🟢 ok | An in-process trigram index that makes code search in Pi&DSH 20-70x faster than ripgrep, with identical results and no sidecar pr… |
 | [pi-deepseek-anchor](https://github.com/kxh4892636/pi-deepseek-anchor) | 14 | ⚪ unknown | pi extension: DeepSeek V4 Pro Minimal-anchored bootstrap, then full Standard tools (port of dsh-anchored-standard) |
-| [deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) | 22 | ⚪ unknown | untranslated |
+| [deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) | 23 | ⚪ unknown | untranslated |
 | [dsh-surfing-plugin](https://github.com/cyijun/dsh-surfing-plugin) | 15 | ⚪ unknown | untranslated |
 | [DSH-changeproof](https://github.com/Apageoflove/DSH-changeproof) | 6 | ⚪ unknown | untranslated |
-| [dsh-save-money](https://github.com/zhu168/dsh-save-money) | 33 | ⚪ unknown | untranslated |
+| [dsh-save-money](https://github.com/zhu168/dsh-save-money) | 34 | ⚪ unknown | untranslated |
 | [oh-my-dsh](https://github.com/amplifthq/oh-my-dsh) | 13 | 🟢 ok | untranslated |
 | [Deepseek-Harness-for-VS-Code](https://github.com/Vithrive/Deepseek-Harness-for-VS-Code) | 10 | ⚪ unknown | untranslated |
 | [dsh-file-upload](https://github.com/GLFzr/dsh-file-upload) | 9 | 🟢 ok | untranslated |
 | [dsh-minimal-anchored](https://github.com/KDB-Wind/dsh-minimal-anchored) | 7 | ⚪ unknown | untranslated |
 | [dsh-search-boost](https://github.com/Mr-remon219/dsh-search-boost) | 13 | ⚪ unknown | untranslated |
-| [dsh-win32](https://github.com/sjh9714/dsh-win32) | 20 | 🟢 ok | untranslated |
+| [dsh-win32](https://github.com/sjh9714/dsh-win32) | 22 | 🟢 ok | untranslated |
 | [dsh-plugin-store](https://github.com/0xKcyzz/dsh-plugin-store) | 6 | 🟢 ok | untranslated |
-| [dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) | 9 | 🟢 ok | untranslated |
+| [dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) | 11 | 🟢 ok | untranslated |
 | [dockyard-dsh](https://github.com/AITabby/dockyard-dsh) | 79 | 🟢 ok | untranslated |
 | [deepseek-harness-workbench-plugin](https://github.com/loadingvx/deepseek-harness-workbench-plugin) | 27 | ⚪ unknown | untranslated |
 | [dsh-permgate](https://github.com/MrWeiCodes/dsh-permgate) | 5 | ⚪ unknown | untranslated |
 | [anime-find](https://github.com/cocofhu/anime-find) | 163 | 🟢 ok | untranslated |
 | [DSH-Think-zh](https://github.com/Len7183/DSH-Think-zh) | 14 | ⚪ unknown | untranslated |
 | [dsh-anchored-standard](https://github.com/Jungod1121/dsh-anchored-standard) | 24 | ⚪ unknown | untranslated |
-| [dsh-pentest](https://github.com/howmp/dsh-pentest) | 268 | 🟢 ok | untranslated |
+| [dsh-pentest](https://github.com/howmp/dsh-pentest) | 289 | 🟢 ok | untranslated |
 | [dsh-md-notes](https://github.com/XieZongChen/dsh-md-notes) | 15 | 🟢 ok | untranslated |
 | [dsh-claude-ux](https://github.com/eri64/dsh-claude-ux) | 65 | 🟢 ok | untranslated |
 | [dsh-pref-kit](https://github.com/gameswu/dsh-pref-kit) | 5 | ⚪ unknown | untranslated |
@@ -498,15 +498,15 @@ npm create dsh-plugin@latest my-plugin
 | [deepseek-harness-auth](https://github.com/taichuy/deepseek-harness-auth) | 23 | 🟢 ok | untranslated |
 | [dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) | 6 | 🟢 ok | untranslated |
 | [deepseek-harness-Install](https://github.com/yu-wenchao/deepseek-harness-Install) | 6 | ⚪ unknown | untranslated |
-| [dsh-plugin-subhub](https://github.com/kinoward/dsh-plugin-subhub) | 5 | ⚪ unknown | untranslated |
+| [dsh-plugin-subhub](https://github.com/kinoward/dsh-plugin-subhub) | 6 | ⚪ unknown | untranslated |
 | [dsh-ikun-pet](https://github.com/eric-song-dev/dsh-ikun-pet) | 10 | 🟢 ok | untranslated |
 | [dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) | 9 | 🟢 ok | untranslated |
 | [dsh-plugin-integration](https://github.com/MutaLucem/dsh-plugin-integration) | 11 | ⚪ unknown | untranslated |
-| [helm-d](https://github.com/ADWMC/helm-d) | 24 | ⚪ unknown | untranslated |
+| [helm-d](https://github.com/ADWMC/helm-d) | 26 | ⚪ unknown | untranslated |
 | [dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) | 15 | 🔴 broken (failed once, retried — install failed (exit 1):     at runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-9h8shc) | untranslated |
 | [dsh-vault](https://github.com/feiyang-dev/dsh-vault) | 3 | 🟢 ok | untranslated |
 | [dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) | 5 | 🟢 ok | untranslated |
-| [dsh-voice-ai-girlfriend](https://github.com/beiyege-01/dsh-voice-ai-girlfriend) | 40 | ⚪ unknown | untranslated |
+| [dsh-voice-ai-girlfriend](https://github.com/beiyege-01/dsh-voice-ai-girlfriend) | 44 | ⚪ unknown | untranslated |
 | [dsh-tool-autoexpand](https://github.com/better-er/dsh-tool-autoexpand) | 9 | ⚪ unknown | untranslated |
 | [dsh-conversation-outline](https://github.com/lzbaclz/dsh-conversation-outline) | 7 | 🟢 ok | untranslated |
 | [deepseek-aix](https://github.com/PHoenixs57/deepseek-aix) | 6 | ⚪ unknown | untranslated |
@@ -526,67 +526,69 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-hub-DSH](https://github.com/ARFCON/dsh-hub-DSH) | 4 | ⚪ unknown | untranslated |
 | [deepseek-harness-provider](https://github.com/lo2589/deepseek-harness-provider) | 5 | ⚪ unknown | untranslated |
 | [dsh-ai4scholar](https://github.com/literaf/dsh-ai4scholar) | 12 | 🟢 ok | untranslated |
-| [webdsh](https://github.com/futrime/webdsh) | 21 | ⚪ unknown | untranslated |
-| [dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 193 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [webdsh](https://github.com/futrime/webdsh) | 26 | ⚪ unknown | untranslated |
+| [dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 195 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [deepseek-harness-sdr-plugin](https://github.com/Xuxchloris/deepseek-harness-sdr-plugin) | 24 | ⚪ unknown | untranslated |
 | [dsh-plugin-gather](https://github.com/lilwhich/dsh-plugin-gather) | 10 | ⚪ unknown | untranslated |
-| [dsh-meme](https://github.com/yyh-001/dsh-meme) | 55 | ⚪ unknown | untranslated |
+| [dsh-meme](https://github.com/yyh-001/dsh-meme) | 60 | ⚪ unknown | untranslated |
 | [oss-prompt-optimizer](https://github.com/seven282/oss-prompt-optimizer) | 9 | 🟢 ok | untranslated |
 | [DSH-Encrypt](https://github.com/yauntyour/DSH-Encrypt) | 7 | ⚪ unknown | untranslated |
 | [dsh-grafana](https://github.com/guhanfei-ai/dsh-grafana) | 8 | ⚪ unknown | untranslated |
 | [Caushell](https://github.com/fatmo666/Caushell) | 6 | ⚪ unknown | untranslated |
-| [dsh-univer-office](https://github.com/dream-num/dsh-univer-office) | 157 | 🟢 ok | untranslated |
+| [dsh-univer-office](https://github.com/dream-num/dsh-univer-office) | 171 | 🟢 ok | untranslated |
 | [dsh-wallpaper-rotator](https://github.com/liceses/dsh-wallpaper-rotator) | 8 | ⚪ unknown | untranslated |
 | [DSH-money-view](https://github.com/tyche66/DSH-money-view) | 6 | ⚪ unknown | untranslated |
 | [dsh-selection-ask](https://github.com/lzbaclz/dsh-selection-ask) | 6 | ⚪ unknown | untranslated |
 | [dsh-trail](https://github.com/ayahunter/dsh-trail) | 7 | ⚪ unknown | untranslated |
 | [dsh-plugins](https://github.com/Ephemeral-AI-Lab/dsh-plugins) | 48 | ⚪ unknown | untranslated |
 | [rapid-mlx-dsh-provider](https://github.com/raullenchai/rapid-mlx-dsh-provider) | 22 | ⚪ unknown | untranslated |
-| [dsh-taskboard](https://github.com/cloader/dsh-taskboard) | 21 | ⚪ unknown | untranslated |
-| [dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice) | 61 | ⚪ unknown | untranslated |
+| [dsh-taskboard](https://github.com/cloader/dsh-taskboard) | 22 | ⚪ unknown | untranslated |
+| [dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice) | 63 | ⚪ unknown | untranslated |
 | [forgeax-dsh-game-plugin](https://github.com/ForgeaX-Games/forgeax-dsh-game-plugin) | 6 | ⚪ unknown | untranslated |
-| [dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) | 65 | ⚪ unknown | untranslated |
+| [dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) | 83 | ⚪ unknown | untranslated |
 | [dsh-effort-slider](https://github.com/2768651338/dsh-effort-slider) | 13 | ⚪ unknown | untranslated |
 | [dsh-xiaotangyuan-game](https://github.com/qimidandapigu/dsh-xiaotangyuan-game) | 10 | ⚪ unknown | untranslated |
 | [deepseek-harness-quota-monitor](https://github.com/marisa-4219/deepseek-harness-quota-monitor) | 7 | ⚪ unknown | untranslated |
 | [dsh-ears](https://github.com/WizisCool/dsh-ears) | 11 | 🟢 ok | untranslated |
-| [dsh-oil-creator](https://github.com/oil-oil/dsh-oil-creator) | 150 | ⚪ unknown | untranslated |
+| [dsh-oil-creator](https://github.com/oil-oil/dsh-oil-creator) | 154 | ⚪ unknown | untranslated |
 | [dsh-serial-console](https://github.com/InfinitePersistence/dsh-serial-console) | 6 | ⚪ unknown | untranslated |
 | [ramify-dsh](https://github.com/yanglongyun/ramify-dsh) | 11 | ⚪ unknown | untranslated |
-| [custom-first-control-prompt](https://github.com/WM-CODER/custom-first-control-prompt) | 43 | ⚪ unknown | untranslated |
+| [custom-first-control-prompt](https://github.com/WM-CODER/custom-first-control-prompt) | 44 | ⚪ unknown | untranslated |
 | [dsh-firecrawl](https://github.com/firecrawl/dsh-firecrawl) | 10 | 🟢 ok | untranslated |
 | [dsh-trapstreet](https://github.com/trapstreet/dsh-trapstreet) | 1 | 🟢 ok | 告诉你装的插件里哪些真的在跑：进程内直读 loader 树，并把当前配置拿去公开评测板跑分（带无插件对照） |
 | [garmin-connect-plugin-for-dsh](https://github.com/Likenttt/garmin-connect-plugin-for-dsh) | 10 | ⚪ unknown | untranslated |
 | [wallpaper-plugin](https://github.com/Ayase34/wallpaper-plugin) | 8 | ⚪ unknown | untranslated |
 | [dsh-tether](https://github.com/zexadev/dsh-tether) | 25 | ⚪ unknown | untranslated |
 | [dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) | 23 | ⚪ unknown | untranslated |
-| [dsh-server-login](https://github.com/pointer-a/dsh-server-login) | 9 | ⚪ unknown | untranslated |
+| [dsh-server-login](https://github.com/pointer-a/dsh-server-login) | 10 | ⚪ unknown | untranslated |
 | [dsh-plugin-pack-web](https://github.com/baihejiangnan/dsh-plugin-pack-web) | 8 | ⚪ unknown | untranslated |
-| [dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) | 38 | ⚪ unknown | untranslated |
+| [dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) | 42 | ⚪ unknown | untranslated |
 | [dsh-tabbit](https://github.com/Tabbit-Browser/dsh-tabbit) | 96 | 🟢 ok | untranslated |
 | [dsh-ros2](https://github.com/StvLi/dsh-ros2) | 7 | ⚪ unknown | untranslated |
 | [DeepSeek-Harness-Browser](https://github.com/tonyd2wild/DeepSeek-Harness-Browser) | 13 | ⚪ unknown | untranslated |
 | [stent](https://github.com/omdsh-dev/stent) | 18 | ⚪ unknown | untranslated |
 | [dsh-plugin-collection](https://github.com/daha1216/dsh-plugin-collection) | 10 | ⚪ unknown | untranslated |
 | [dsh-one-gateway](https://github.com/TiantianFlow/dsh-one-gateway) | 13 | ⚪ unknown | untranslated |
-| [dsh-secure-audit](https://github.com/PensiveFei/dsh-secure-audit) | 42 | ⚪ unknown | untranslated |
+| [dsh-secure-audit](https://github.com/PensiveFei/dsh-secure-audit) | 43 | ⚪ unknown | untranslated |
 | [Invoice-Downloader](https://github.com/EthanYoQ/Invoice-Downloader) | 141 | ⚪ unknown | untranslated |
 | [dsh-hotplug-hub](https://github.com/ARFCON/dsh-hotplug-hub) | 26 | ⚪ unknown | untranslated |
-| [dsh-wenshan](https://github.com/xuedai-mayi/dsh-wenshan) | 36 | ⚪ unknown | untranslated |
-| [dsh-portable](https://github.com/sqs404/dsh-portable) | 11 | ⚪ unknown | untranslated |
+| [dsh-wenshan](https://github.com/xuedai-mayi/dsh-wenshan) | 40 | ⚪ unknown | untranslated |
+| [dsh-portable](https://github.com/sqs404/dsh-portable) | 12 | ⚪ unknown | untranslated |
 | [dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) | 10 | 🟢 ok | untranslated |
-| [dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) | 11 | ⚪ unknown | untranslated |
+| [dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) | 13 | ⚪ unknown | untranslated |
 | [dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) | 1 | ⚪ unknown | 强力卸载 DSH 插件：策略分级、批量原子操作、指纹快照、健康检查、并发锁与报告导出（事务化四段式+Saga 回滚） |
-| [dsh-preset-plus](https://github.com/Rain-kl/dsh-preset-plus) | 33 | ⚪ unknown | untranslated |
+| [dsh-preset-plus](https://github.com/Rain-kl/dsh-preset-plus) | 39 | ⚪ unknown | untranslated |
 | [dsh-console](https://github.com/cofy-x/dsh-console) | 19 | ⚪ unknown | untranslated |
 | [dsh-prompt-optimizer](https://github.com/Y1X1n/dsh-prompt-optimizer) | 8 | ⚪ unknown | untranslated |
 | [dsh-turn-fold](https://github.com/CH4ACKO3/dsh-turn-fold) | 9 | ⚪ unknown | untranslated |
-| [dsh-automation](https://github.com/MichengAI/dsh-automation) | 9 | 🟢 ok | untranslated |
-| [dsh-infinite-gen-2](https://github.com/Minglink/dsh-infinite-gen-2) | 492 | ⚪ unknown | untranslated |
-| [dsh-harbor](https://github.com/ZSeven-W/dsh-harbor) | 23 | ⚪ unknown | untranslated |
+| [dsh-automation](https://github.com/MichengAI/dsh-automation) | 10 | 🟢 ok | untranslated |
+| [dsh-infinite-gen-2](https://github.com/Minglink/dsh-infinite-gen-2) | 519 | ⚪ unknown | untranslated |
+| [dsh-harbor](https://github.com/ZSeven-W/dsh-harbor) | 24 | ⚪ unknown | untranslated |
 | [marisa-distro](https://github.com/LoserFox/marisa-distro) | 8 | ⚪ unknown | untranslated |
 | [dsh-vscode-review](https://github.com/Tlyer233/dsh-vscode-review) | 8 | ⚪ unknown | untranslated |
 | [dshline](https://github.com/riesbri/dshline) | 8 | ⚪ unknown | untranslated |
+| [dsh-w-plugin-ecosystem](https://github.com/wzxaaaa/dsh-w-plugin-ecosystem) | 11 | ⚪ unknown | untranslated |
+| [dsh-artifact](https://github.com/sumarilkkxx/dsh-artifact) | 10 | ⚪ unknown | untranslated |
 
 ### 🧩 技能
 
@@ -607,14 +609,14 @@ npm create dsh-plugin@latest my-plugin
 | [rpg-maker-mac-skill](https://github.com/HomophonicFate/rpg-maker-mac-skill) | 1 | ⚪ unknown | rpg-maker-mac-skill — DSH 插件（技能） |
 | [dsh-skill-manager](https://github.com/JimmyJin2006/dsh-skill-manager) | 0 | 🟢 ok | 在设置界面管理你已有的技能！ |
 | [dsh-plugin-longgraph](https://github.com/levi-qiao/dsh-plugin-longgraph) | 5 | ⚪ unknown | 长图/循环图/循环收敛自动生成（社区插件）。 |
-| [superpowers-dsh](https://github.com/LayneChai/superpowers-dsh) | 94 | 🟢 ok | Superpowers 技能包移植版：TDD、调试、规划、协作等经典工作流技能，装进 DSH 直接用。 |
+| [superpowers-dsh](https://github.com/LayneChai/superpowers-dsh) | 97 | 🟢 ok | Superpowers 技能包移植版：TDD、调试、规划、协作等经典工作流技能，装进 DSH 直接用。 |
 | [dsh-skill-viewer](https://github.com/Fishquito7/dsh-skill-viewer) | 107 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | 技能管理面板：在设置页直接启用/停用、删除、添加 Skills，不用改配置文件。 |
 | [dsh-PaddleOCR-Skills](https://github.com/Aidenwu0209/dsh-PaddleOCR-Skills) | 4 | ⚪ unknown | PaddleOCR 技能包：原生工具 + GUI 配置界面。 |
 | [dsh-capability-receipt](https://github.com/dongsheng123132/dsh-capability-receipt) | 4 | ⚪ unknown | 技能加载收据：内容寻址记录 DSH 实际加载了哪些技能。 |
 | [dsh-Unlimited-OCR-Skill](https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill) | 1 | ⚪ unknown | Unlimited-OCR 技能：原生工具 + GUI 配置。 |
 | [DeepSeek-Harness-Skill](https://github.com/itmoqing/DeepSeek-Harness-Skill) | 6 | ⚪ unknown | 这是一个Codex/Claude来进行任务发布给DeepSeek Harness干活的工作流的Skill，能实现并发，多个工作区一起执行 |
 | [dsh-plugin-rdk](https://github.com/D-Robotics/dsh-plugin-rdk) | 1 | ⚪ unknown | D-Robotics RDK (地瓜机器人) integration for DeepSeek Harness — native RDK skill catalog, rdk_skills browser tool, and rdk_board_detect… |
-| [dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) | 82 | ⚪ unknown | 逆向技能全家桶（85 个 SKILL.md）：逆向工程、授权渗透和安全研究的工作流，打包成插件。 |
+| [dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) | 88 | ⚪ unknown | 逆向技能全家桶（85 个 SKILL.md）：逆向工程、授权渗透和安全研究的工作流，打包成插件。 |
 | [dsh-skill-manager](https://github.com/Lanxing6480/dsh-skill-manager) | 3 | 🟢 ok | Deepseek Harness 的Skill管理插件 |
 | [dsh-skills-manager](https://github.com/xiaoxianyu-office/dsh-skills-manager) | 4 | 🟢 ok | DSH Skills 管理器：设置页系统/用户技能分类，用户技能开关/编辑/删除/新建。Skills manager for DeepSeek Harness: system/user skill management (toggle/edit/delete… |
 | [dsh-skill-remote](https://github.com/CSY656/dsh-skill-remote) | 1 | ⚪ unknown | 远程技能源：从 skills.sh/GitHub 安装技能。 |
@@ -624,13 +626,13 @@ npm create dsh-plugin@latest my-plugin
 | [iterate-plugin](https://github.com/jingzhao-l/iterate-plugin) | 3 | 🟢 ok | DeepSeek Harness (dsh) 插件：把 iterate 技能落成自治闭环代码迭代 — 多轮并行审查、确定性去重收敛、原子修复+验证自停、meta-review 一致性审计、dry-run 只读审查。由 iterate-skill 主仓库统一维… |
 | [dsh-design-skills](https://github.com/zhaiyateng/dsh-design-skills) | 19 | ⚪ unknown | 设计审美技能包：6 套风格（暗色 SaaS、苹果极简等），让 vibe-coding 出来的网站告别 AI 味。 |
 | [dsh-plugin-cas-kb](https://github.com/niuniu-869/dsh-plugin-cas-kb) | 2 | ⚪ unknown | 中国会计准则/税法条款级查询 bundle + 引用锚定技能。 |
-| [dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) | 4 | ⚪ unknown | DSH 视频创作技能插件：注册 HyperFrames by HeyGen 官方移植技能五件套（HTML 写视频/CLI/注册表/网址转视频/GSAP），安装即用。· HyperFrames skill plugin for DeepSeek Harness. |
+| [dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) | 5 | ⚪ unknown | DSH 视频创作技能插件：注册 HyperFrames by HeyGen 官方移植技能五件套（HTML 写视频/CLI/注册表/网址转视频/GSAP），安装即用。· HyperFrames skill plugin for DeepSeek Harness. |
 | [dsh-hud](https://github.com/a903067276-rgb/dsh-hud) | 9 | 🟢 ok | HUD 状态面板：git 状态、MCP 服务器、技能、模型与 token 用量悬浮窗。 |
 | [dsh-SkillsManagePlugins](https://github.com/z-col/dsh-SkillsManagePlugins) | 3 | ⚪ unknown | DSH Skills 可视化管理器：在 DSH Web 界面可视化查看、编辑、创建、删除 Skills（用户级 ~/.dsh/skills 与项目级 .dsh/skills） |
 | [dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager) | 12 | 🟢 ok | DSH 插件管理器:在 DeepSeek Harness 设置面板内嵌 GUI,管理 MCP 服务 / Skills / 内置插件包,改动热生效无需重启 |
 | [dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) | 22 | 🟢 ok | untranslated |
 | [riffkit-dsh-plugin](https://github.com/riffkit/dsh-plugin) | 1 | 🟢 ok | 复刻已跑赢的短视频：给一个源（TikTok 链接 / 上传视频 / 已分析模板），后端把它的情绪公式 riff 成你自己的 AI 视频（可发布的短视频 / UGC 广告素材）。 |
-| [dsh-movein](https://github.com/sjh9714/dsh-movein) | 13 | ⚪ unknown | untranslated |
+| [dsh-movein](https://github.com/sjh9714/dsh-movein) | 15 | ⚪ unknown | untranslated |
 | [dsh_plugin_swift_cycle](https://github.com/Solismuchengxue/dsh_plugin_swift_cycle) | 21 | ⚪ unknown | untranslated |
 | [cleverer-dsh](https://github.com/Classicoke/cleverer-dsh) | 11 | ⚪ unknown | untranslated |
 | [dsh-skill-picker](https://github.com/a735624258/dsh-skill-picker) | 25 | 🟢 ok | untranslated |
@@ -645,21 +647,22 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-skills](https://github.com/arch3rPro/dsh-skills) | 4 | 🟢 ok | untranslated |
 | [dsh-withskillhub](https://github.com/lhwu1/dsh-withskillhub) | 6 | ⚪ unknown | untranslated |
 | [dshscan](https://github.com/shaoshi20/dshscan) | 9 | ⚪ unknown | untranslated |
-| [new-litigation-visualization](https://github.com/MiaoQichuan/new-litigation-visualization) | 47 | ⚪ unknown | untranslated |
-| [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh) | 197 | ⚪ unknown | untranslated |
+| [new-litigation-visualization](https://github.com/MiaoQichuan/new-litigation-visualization) | 48 | ⚪ unknown | untranslated |
+| [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh) | 205 | ⚪ unknown | untranslated |
 | [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) | 25 | 🟢 ok | untranslated |
 | [dsh-run2skill](https://github.com/qkycir-123/dsh-run2skill) | 10 | ⚪ unknown | untranslated |
-| [dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) | 18 | ⚪ unknown | untranslated |
-| [oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh) | 197 | ⚪ unknown | untranslated |
+| [dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) | 19 | ⚪ unknown | untranslated |
+| [oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh) | 205 | ⚪ unknown | untranslated |
+| [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | 9 | ⚪ unknown | untranslated |
 
 ### 🎨 界面
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 6182 | 🟢 ok | DSH Web UI 插件与皮肤合集：任务板、Git 面板等 |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 2968 | 🟢 ok | 侧边栏完整工作台：文件渲染/终端/Git/子代理 |
-| [ui-status-label](https://github.com/alingalingling/ui-status-label) | 40 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | 自定义「鲸鱼娘」思考状态的显示 |
-| [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 1745 | ⚪ unknown | DSH Web 鲸鱼娘皮肤系列（深海女仆工坊） |
+| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 6246 | 🟢 ok | DSH Web UI 插件与皮肤合集：任务板、Git 面板等 |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 3002 | 🟢 ok | 侧边栏完整工作台：文件渲染/终端/Git/子代理 |
+| [ui-status-label](https://github.com/alingalingling/ui-status-label) | 42 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | 自定义「鲸鱼娘」思考状态的显示 |
+| [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 1762 | ⚪ unknown | DSH Web 鲸鱼娘皮肤系列（深海女仆工坊） |
 | [dsh-focus-chat](https://github.com/dingyi222666/dsh-focus-chat) | 22 | 🟢 ok | 「聚焦会话」精简会话视图 |
 | [dsh-side-panel](https://github.com/ccq1/dsh-side-panel) | 16 | 🟢 ok | DSH 侧边栏：文件浏览器、终端、Git 审查 |
 | [dsh-ui-progress](https://github.com/lhh010/dsh-ui-progress) | 8 | ⚪ unknown | 会话进度条：todos 进度/实时 token 速率 |
@@ -667,25 +670,25 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) | 101 | 🟢 ok | 选中批注：选文字→批注→随消息发送 |
 | [dsh-chat-width](https://github.com/chen-001/dsh-chat-width) | 7 | ⚪ unknown | 调整 DSH 回复宽度 |
 | [dsh-companion](https://github.com/william-jin-cmu/dsh-companion) | 5 | ⚪ unknown | 常驻桌面助手：全局唤起/定时自动化/插件市场 |
-| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 346 | 🟢 ok | 会话内联渲染交互式 UI 组件 |
+| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 354 | 🟢 ok | 会话内联渲染交互式 UI 组件 |
 | [dsh-input-history](https://github.com/lhh010/dsh-input-history) | 4 | ⚪ unknown | Ctrl+Up/Down 召回已发送消息 |
 | [dsh-navbar](https://github.com/vlln/dsh-navbar) | 59 | ⚪ unknown | 对话节点导航条（右缘节点串跳转） |
 | [dsh-paste-input](https://github.com/lhh010/dsh-paste-input) | 10 | ⚪ unknown | Ctrl+V 粘贴/拖拽/选文件增强 |
 | [dsh-plugin-background](https://github.com/gameswu/dsh-plugin-background) | 11 | ⚪ unknown | DSH 壁纸插件 |
 | [tonghuashun-webui](https://github.com/renat3u/tonghuashun-webui) | 18 | ⚪ unknown | 仿同花顺的webui插件 |
-| [dsh-deepcel](https://github.com/Small-tailqwq/dsh-deepcel) | 14 | ⚪ unknown | 模仿 Excel 的 DSH 皮肤 |
+| [dsh-deepcel](https://github.com/Small-tailqwq/dsh-deepcel) | 15 | ⚪ unknown | 模仿 Excel 的 DSH 皮肤 |
 | [dsh-deeplink](https://github.com/qyw233/dsh-deeplink) | 4 | ⚪ unknown | 深链插件：?session=/?workspace= 直接打开 |
 | [dsh-diff-viewer](https://github.com/lehhair/dsh-diff-viewer) | 24 | ⚪ unknown | PiUI 风格 diff 查看器，替换原生 DiffBlock |
 | [dsh-drag-and-drop](https://github.com/bill9109/dsh-drag-and-drop) | 23 | ⚪ unknown | 跨平台文件拖拽与原始路径插入 |
-| [dsh-qq2006](https://github.com/LaplaceYoung/dsh-qq2006) | 22 | ⚪ unknown | QQ2006 皮肤插件 |
+| [dsh-qq2006](https://github.com/LaplaceYoung/dsh-qq2006) | 24 | ⚪ unknown | QQ2006 皮肤插件 |
 | [dsh-session-notification](https://github.com/dingyi222666/dsh-session-notification) | 16 | ⚪ unknown | 会话完成等四状态通知 |
-| [dsh-spotlight](https://github.com/0xsline/dsh-spotlight) | 17 | ⚪ unknown | 键盘优先的命令面板 |
+| [dsh-spotlight](https://github.com/0xsline/dsh-spotlight) | 18 | ⚪ unknown | 键盘优先的命令面板 |
 | [dsh-ths-skin](https://github.com/AdamPlatin123/dsh-ths-skin) | 3 | ⚪ unknown | 同花顺行情终端风格皮肤 + K 线面板 |
 | [dsh-tps](https://github.com/Small-tailqwq/dsh-tps) | 1 | ⚪ unknown | TPS 皮肤插件 |
 | [dsh-ultra-ui](https://github.com/havingautism/dsh-ultra-ui) | 3 | ⚪ unknown | (无描述) |
 | [dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) | 23 | ⚪ unknown | DSH 桌面通知提醒 |
 | [ex-setting](https://github.com/omdsh-dev/ex-setting) | 2 | ⚪ unknown | DSH 设置扩展 |
-| [whale-girl](https://github.com/vlln/whale-girl) | 285 | 🟢 ok | QQ 宠物形态的桌面宠物插件 |
+| [whale-girl](https://github.com/vlln/whale-girl) | 288 | 🟢 ok | QQ 宠物形态的桌面宠物插件 |
 | [dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) | 55 | 🟢 ok | 替换 DSH 状态显示的 web 插件。 |
 | [dsh-ramify](https://github.com/yanglongyun/dsh-ramify) | 11 | ⚪ unknown | 创意分支画布插件：树状工作区生成、对比。 |
 | [dsh-xiaohei](https://github.com/opensetk/dsh-xiaohei) | 4 | ⚪ unknown | dsh 的罗小黑皮肤插件。 |
@@ -704,7 +707,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-web-search-firecrawl](https://github.com/crayonlu/dsh-web-search-firecrawl) | 2 | ⚪ unknown | dsh-web-search-firecrawl — DSH 插件（界面） |
 | [dsh-web-background](https://github.com/BruceWu1126/dsh-web-background) | 2 | ⚪ unknown | dsh-web-background — DSH 插件（界面） |
 | [dsh-skins](https://github.com/Moeblack/dsh-skins) | 3 | 🟢 ok | dsh-skins — DSH 插件（界面） |
-| [dsh-portable-tavern](https://github.com/XCNXNXNX/dsh-portable-tavern) | 20 | 🟢 ok | DeepSeek Harness 的「便携酒馆」插件：RPG 式 SillyTavern V2/V3 角色卡生成器 + 酒馆角色扮演聊天。支持世界书、角色卡 JSON/PNG 导入导出、面板主题与本地音乐。独立插件，仅依赖官方 @deepseek-ai SD… |
+| [dsh-portable-tavern](https://github.com/XCNXNXNX/dsh-portable-tavern) | 21 | 🟢 ok | DeepSeek Harness 的「便携酒馆」插件：RPG 式 SillyTavern V2/V3 角色卡生成器 + 酒馆角色扮演聊天。支持世界书、角色卡 JSON/PNG 导入导出、面板主题与本地音乐。独立插件，仅依赖官方 @deepseek-ai SD… |
 | [dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) | 7 | 🟢 ok | dsh-builtin-toggles — DSH 插件（界面） |
 | [dsh-science](https://github.com/omdsh-dev/dsh-science) | 8 | ⚪ unknown | dsh-science — DSH 插件（界面） |
 | [dsh-skin](https://github.com/KinGao294/dsh-skin) | 19 | 🟢 ok | dsh-skin — DSH 插件（界面） |
@@ -731,7 +734,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-funpack](https://github.com/lvyuchuiyi/dsh-funpack) | 6 | ⚪ unknown | 趣味功能合集：夸夸、运势、战报、番茄钟、摸鱼提醒、沉浸氛围、成就赛季、桌宠语音、Live2D、Boss 隐身和代码花园一包集齐。 |
 | [dsh-ui-quote-selection](https://github.com/nekogpt/dsh-ui-quote-selection) | 4 | ⚪ unknown | 选中即引用：聊天里选中文字一键「引用到输入框」，针对这段话继续提问，省去复制粘贴。 |
 | [dsh-whale-subagent](https://github.com/1while1/dsh-whale-subagent) | 2 | ⚪ unknown | 鲸娘主题子代理巢：每个派出去的 subagent 变成一张可见卡片（像素动画）。 |
-| [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | 6 | 🟢 ok | 发布前双重检查：拷问需求、测试实现、防翻车。 |
+| [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | 7 | 🟢 ok | 发布前双重检查：拷问需求、测试实现、防翻车。 |
 | [dsh-plugin-manager](https://github.com/MAXeaglet/dsh-plugin-manager) | 3 | 🟢 ok | DSH 插件管理器：桌面 GUI + CLI，管理 dsh 的 profile、插件与一键启动 dsh web (Tauri 2 + Node CLI) |
 | [dsh-client-shortcuts](https://github.com/blue-a11y/dsh-client-shortcuts) | 2 | ⚪ unknown | 全局键盘快捷键插件：快捷键直达常用操作。 |
 | [dsh-dashboard](https://github.com/baiyun200/dsh-dashboard) | 1 | 🟢 ok | DSH 插件看板 · DeepSeek Harness 插件生态可视化（shadcn/ui，每日自动构建部署） |
@@ -775,12 +778,12 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-file-explorer](https://github.com/joejojoking-cloud/dsh-file-explorer) | 19 | ⚪ unknown | 文件浏览器：右侧可拖拽的文件树，支持 Markdown 渲染、语法高亮、面板内编辑和 VS Code 集成。 |
 | [dsh-thinking-status-customizer](https://github.com/Dbi-Eshuh/dsh-thinking-status-customizer) | 5 | ⚪ unknown | 用生命周期安全的 CSS 自定义 DSH Web 的思考状态显示。 |
 | [dsh-whale-pet](https://github.com/Er1c0v0/dsh-whale-pet) | 5 | 🟢 ok | 鲸娘桌宠（非官方）。 |
-| [dsh-outline](https://github.com/urzeye/dsh-outline) | 15 | 🟢 ok | DeepSeek Harness（DSH）Web GUI 的实时大纲插件 |
+| [dsh-outline](https://github.com/urzeye/dsh-outline) | 16 | 🟢 ok | DeepSeek Harness（DSH）Web GUI 的实时大纲插件 |
 | [dsh-zen](https://github.com/zealot00/dsh-zen) | 1 | ⚪ unknown | 禅模式：一键沉浸专注，把复杂隔离在系统内部。 |
 | [dsh-plugins](https://github.com/linqunxun/dsh-plugins) | 2 | ⚪ unknown | 客户端 UI 插件合集（作者个人集）。 |
 | [dhs-theme-plugin](https://github.com/kongxiangyiren/dhs-theme-plugin) | 2 | ⚪ unknown | dsh 主题管理插件 |
 | [DPwhale-plugin](https://github.com/zed1902209846-dotcom/DPwhale-plugin) | 1 | ⚪ unknown | 用 deepseek-harness 的创造模式做的小桌宠插件，每次对话随机出现名字，听说抽到梁神有特殊效果哦/The small table pet plugin made with the deepseek-harness creation mode r… |
-| [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report) | 30 | 🟢 ok | 鲸鱼记事本 — 你的 Agent 年度报告：从会话事件日志生成日报/周报/月报/年报，任意区间、只读不改写 |
+| [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report) | 31 | 🟢 ok | 鲸鱼记事本 — 你的 Agent 年度报告：从会话事件日志生成日报/周报/月报/年报，任意区间、只读不改写 |
 | [dsh-password-prompt](https://github.com/MagicCrazyMan/dsh-password-prompt) | 2 | ⚪ unknown | Web GUI 掩码密码面板：password_prompt 工具，安全输入敏感信息。 |
 | [Better_Deepseek_Harkness](https://github.com/silencieuxzero/Better_Deepseek_Harkness) | 4 | ⚪ unknown | 更好的deepseek harness，为webui进行了一些拓展 |
 | [claude-parchment-theme](https://github.com/RayYeung1989/claude-parchment-theme) | 2 | ⚪ unknown | 一款 Claude 风格的 dsh插件：为 DSH WebUI 打造，暖羊皮纸 Parchment 色板、Terracotta 品牌色与衬线字体 |
@@ -810,8 +813,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-tavily-search-provider](https://github.com/xiaohj233/dsh-tavily-search-provider) | 2 | ⚪ unknown | Tavily 搜索 provider：完整搜索控制映射、免 key。 |
 | [dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) | 23 | 🟢 ok | 文本优先的浏览器与 macOS 后台控制：用文字指挥浏览器和电脑。 |
 | [dsh-commit-review](https://github.com/the-qian/dsh-commit-review) | 4 | ⚪ unknown | 一个 DSH 插件：为 Web GUI 增加 /commit 与 /review 两个斜杠命令 |
-| [dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin) | 20 | 🟢 ok | DeepSeek Harness Web GUI 的 Catppuccin 主题插件：Latte / Frappé / Macchiato / Mocha 四种风味一键切换 |
-| [dsh-sidebar-qa](https://github.com/ChenRuoT/dsh-sidebar-qa) | 36 | ⚪ unknown | 一个基于DSH-better-sidebar的侧边栏提问tab，实现类codex的侧边提问或claude code的/btw功能 |
+| [dsh-catppuccin](https://github.com/NoNameLeGo/dsh-catppuccin) | 21 | 🟢 ok | DeepSeek Harness Web GUI 的 Catppuccin 主题插件：Latte / Frappé / Macchiato / Mocha 四种风味一键切换 |
+| [dsh-sidebar-qa](https://github.com/ChenRuoT/dsh-sidebar-qa) | 35 | ⚪ unknown | 一个基于DSH-better-sidebar的侧边栏提问tab，实现类codex的侧边提问或claude code的/btw功能 |
 | [dsh-boot-guard](https://github.com/SaiSenBox/dsh-boot-guard) | 4 | 🟢 ok | 启动救援控制台：插件坏了导致 Web UI 起不来时，用不依赖 loader 的控制台救场。 |
 | [dsh-plugin-qr-connect](https://github.com/mervyn-teo/dsh-plugin-qr-connect) | 3 | 🟢 ok | 二维码侧栏按钮：扫码把移动设备连到 DSH。 |
 | [dsh-blue-whale](https://github.com/starslittle/dsh-blue-whale) | 7 | ⚪ unknown | DeepSeek Chat 官方蓝鲸配色皮肤，亮/暗色跟随系统。 |
@@ -820,11 +823,11 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-client-ui-skin-claude](https://github.com/PAKIKNOWLEDGE/dsh-client-ui-skin-claude) | 9 | ⚪ unknown | Claude 风格皮肤：暖黑画布 + Anthropic 配色。 |
 | [deepseek-skin-studio](https://github.com/JueMing2049/deepseek-skin-studio) | 1 | ⚪ unknown (原生插件通道 beta；书签/CDP 注入为主) | DSH 换肤工作室：一张图一套皮肤；书签/CDP/原生三通道注入 + 可视化工坊 + 13 套内置主题 + DSH-SKIN-SPEC 导出。 |
 | [dsh-whale-font](https://github.com/kxSenlin/dsh-whale-font) | 3 | ⚪ unknown | 把 DeepSeek Harness 对话里的主语人称「我/你/I/me」渲染成 DeepSeek 蓝鲸图标（DSH 插件） |
-| [dsh-scroll-timeline](https://github.com/invalidnaaaame/dsh-scroll-timeline) | 5 | ⚪ unknown | ChatGPT 风格侧栏滚动时间轴：磁性吸附的时间刻度条。 |
+| [dsh-scroll-timeline](https://github.com/invalidnaaaame/dsh-scroll-timeline) | 6 | ⚪ unknown | ChatGPT 风格侧栏滚动时间轴：磁性吸附的时间刻度条。 |
 | [dafy-whale-theme](https://github.com/DViridescent/dafy-whale-theme) | 8 | ⚪ unknown | DeepSeek Harness 蓝色大肥鱼主题插件：海洋配色、鱼群、气泡、吉祥物与品牌替换 |
 | [dsh-skin-appearance](https://github.com/Vim0x3c/dsh-skin-appearance) | 5 | ⚪ unknown | DeepSeek Harness 外观定制插件：八套内置主题 + 自定义壁纸（透明度/模糊），Host 设置持久化 | Appearance plugin for dsh web |
 | [deepseek-harness-GUI](https://github.com/festoney8/deepseek-harness-GUI) | 5 | 🟢 ok | DeepSeek Harness 超级轻量启动器，基于 Tauri 封装桌面版 APP，支持升级 DSH 内核、提供免安装便携版 |
-| [dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) | 17 | 🟢 ok | 一个自定义主题插件，包括背景图（大小和位置），主界面和设置界面（透明度，色轮全色主题色）插件 |
+| [dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) | 18 | 🟢 ok | 一个自定义主题插件，包括背景图（大小和位置），主界面和设置界面（透明度，色轮全色主题色）插件 |
 | [dsh-meow-cat](https://github.com/dsh-pub/dsh-meow-cat) | 2 | ⚪ unknown | 回合结束一只小猫跑过界面底部并喵一声。 |
 | [maid-atelier-ui-bundle](https://github.com/flaricy/maid-atelier-ui-bundle) | 3 | ⚪ unknown | Maid Atelier 主题 + 实用文件/预览/Git/终端侧面板。 |
 | [dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) | 6 | ⚪ unknown | 底部终端面板：交互式多标签终端。 |
@@ -837,7 +840,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-snapshot](https://github.com/DfsyJian/dsh-snapshot) | 2 | 🟢 ok | 文件自动快照 + 一键回滚：侧栏时间轴查看历史版本。 |
 | [deepseek-harness-pets](https://github.com/orxz/deepseek-harness-pets) | 2 | 🟢 ok | 这是一个专为 DeepSeek-Harness 定制的桌宠皮肤包， DeepSeek 的标志性“大鲸鱼”等宠物养成。 |
 | [plugin-switch](https://github.com/cynch18/plugin-switch) | 5 | ⚪ unknown | GUI 直接启停插件：不用重启服务器，面板点一下开关。 |
-| [dsh-liang-skin](https://github.com/kingOfSoySauce/dsh-liang-skin) | 144 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree (client-inject skin may need web restart)) | 滑动变祖器皮肤：滑块控制『梁圣等级』（自适应推理强度），梗图风 DSH 皮肤 |
+| [dsh-liang-skin](https://github.com/kingOfSoySauce/dsh-liang-skin) | 146 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree (client-inject skin may need web restart)) | 滑动变祖器皮肤：滑块控制『梁圣等级』（自适应推理强度），梗图风 DSH 皮肤 |
 | [dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) | 4 | 🟢 ok | DeepSeek Harness Web GUI 皮肤切换插件：设置界面一键切换已安装皮肤 |
 | [dsh-font](https://github.com/tianyhjg-lab/dsh-font) | 12 | ⚪ unknown | Font switcher for DeepSeek Harness Web GUI: 99 UI fonts + 31 code fonts with CJK-Latin pairing, instant apply, localStorage persi… |
 | [dsh-maid-whale-webUI](https://github.com/yunxiiQwQ/dsh-maid-whale-webUI) | 25 | ⚪ unknown | DeepSeek Harness Web UI 鲸鱼女仆主题插件 |
@@ -845,7 +848,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-terminal](https://github.com/mervyn-teo/dsh-plugin-terminal) | 3 | ⚪ unknown | DeepSeek Harness Web plugin: a real PTY terminal in a VS Code-style collapsible footer panel |
 | [QAQ](https://github.com/WTStarMark/QAQ) | 5 | ⚪ unknown | QAQ: a launch resilience guard for DeepSeek Harness (DSH). Supervises dsh web, reads the real DOM via headless Chrome + CDP to ca… |
 | [dsh-opencodego-usage](https://github.com/BeiZi6/dsh-opencodego-usage) | 8 | ⚪ unknown | DSH Web GUI plugin: OpenCodeGo quota breathing light + liquid-glass panel with rolling/weekly/monthly progress bars (作者 Xu Yuansh… |
-| [dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) | 115 | 🟢 ok | DeepSeek Harness 换肤 / 壁纸 / 主题包插件 (dsh-plugin) — 8 套 Mirage 主题、每用户强调色、壁纸2.0、主题包导入导出/分享链接、收藏与随机，纯原生 token 系统实现。 |
+| [dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) | 119 | 🟢 ok | DeepSeek Harness 换肤 / 壁纸 / 主题包插件 (dsh-plugin) — 8 套 Mirage 主题、每用户强调色、壁纸2.0、主题包导入导出/分享链接、收藏与随机，纯原生 token 系统实现。 |
 | [dsh-file-mention](https://github.com/hucj09/dsh-file-mention) | 2 | ⚪ unknown | DSH (DeepSeek Harness) Web GUI 插件：输入 @ 引用工作区文件，体验类似 Claude Code 的 @file。 |
 | [dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077) | 25 | ⚪ unknown | untranslated |
 | [dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) | 11 | 🟢 ok | untranslated |
@@ -855,21 +858,21 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-oh-my-theme](https://github.com/zhxqc/dsh-oh-my-theme) | 7 | 🟢 ok | untranslated |
 | [reef](https://github.com/huey1in/reef) | 19 | ⚪ unknown | untranslated |
 | [deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) | 107 | ⚪ unknown | untranslated |
-| [dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) | 56 | 🟢 ok | 为 DeepSeek Harness Web UI 提供流畅流式渲染和丝滑滚动。 |
-| [voyager](https://github.com/Nagi-ovo/voyager) | 19847 | ⚪ unknown | untranslated |
-| [dsh-im](https://github.com/xmanrui/dsh-im) | 888 | 🟢 ok | untranslated |
+| [dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) | 58 | 🟢 ok | 为 DeepSeek Harness Web UI 提供流畅流式渲染和丝滑滚动。 |
+| [voyager](https://github.com/Nagi-ovo/voyager) | 19855 | ⚪ unknown | untranslated |
+| [dsh-im](https://github.com/xmanrui/dsh-im) | 900 | 🟢 ok | untranslated |
 | [dsh-gui](https://github.com/kipozannaki/dsh-gui) | 3 | ⚪ unknown | untranslated |
 | [dsh-unread-dot](https://github.com/Bing-Bryan/dsh-unread-dot) | 4 | ⚪ unknown | untranslated |
 | [dsh-plugin-vscode-sidebar](https://github.com/gameswu/dsh-plugin-vscode-sidebar) | 8 | ⚪ unknown | untranslated |
 | [dsh-routing-suite](https://github.com/dragonbaba/dsh-routing-suite) | 18 | 🟢 ok | untranslated |
 | [Better_Deepseek_Harness](https://github.com/silencieuxzero/Better_Deepseek_Harness) | 4 | ⚪ unknown | untranslated |
 | [MistyMoon-DSH](https://github.com/mianyoubiaoqing/MistyMoon-DSH) | 3 | ⚪ unknown | untranslated |
-| [dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) | 11 | ⚪ unknown | untranslated |
+| [dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) | 12 | ⚪ unknown | untranslated |
 | [dsh-download-progress](https://github.com/Fro2en12/dsh-download-progress) | 3 | ⚪ unknown | untranslated |
-| [dsh-vscode](https://github.com/Lixxx1/dsh-vscode) | 19 | ⚪ unknown | untranslated |
+| [dsh-vscode](https://github.com/Lixxx1/dsh-vscode) | 20 | ⚪ unknown | untranslated |
 | [dsh-jupyter](https://github.com/kikulmj/dsh-jupyter) | 6 | ⚪ unknown | untranslated |
 | [dsh-client-ui-writing](https://github.com/x2802490130-prog/dsh-client-ui-writing) | 4 | 🟢 ok | untranslated |
-| [dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) | 20 | ⚪ unknown | untranslated |
+| [dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) | 21 | ⚪ unknown | untranslated |
 | [Dsh-FileExplorer](https://github.com/bearllfleed/Dsh-FileExplorer) | 5 | ⚪ unknown | untranslated |
 | [dsh-devquest](https://github.com/lucky8197/dsh-devquest) | 7 | 🟢 ok | untranslated |
 | [dsh-mobile](https://github.com/cindyguyuehu123/dsh-mobile) | 5 | 🟢 ok | untranslated |
@@ -877,31 +880,31 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-uisfx](https://github.com/XanthanL/dsh-plugin-uisfx) | 4 | ⚪ unknown | untranslated |
 | [dsh-live2d-companion](https://github.com/Tisitan/dsh-live2d-companion) | 8 | ⚪ unknown | untranslated |
 | [dsh-web-restart](https://github.com/1123762794/dsh-web-restart) | 6 | ⚪ unknown | untranslated |
-| [dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) | 39 | ⚪ unknown | untranslated |
+| [dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) | 40 | ⚪ unknown | untranslated |
 | [dsh-ui-font](https://github.com/warmwine/dsh-ui-font) | 8 | ⚪ unknown | untranslated |
 | [dsh-thinking-notifier](https://github.com/6-debug-6/dsh-thinking-notifier) | 4 | ⚪ unknown | untranslated |
 | [dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) | 12 | 🟢 ok | untranslated |
 | [dsh-openai-oauth](https://github.com/AdonisSheldon/dsh-openai-oauth) | 7 | 🟢 ok | untranslated |
-| [dsh-client-ui-skin-denia](https://github.com/Ewnscat-ya/dsh-client-ui-skin-denia) | 29 | ⚪ unknown | untranslated |
+| [dsh-client-ui-skin-denia](https://github.com/Ewnscat-ya/dsh-client-ui-skin-denia) | 30 | ⚪ unknown | untranslated |
 | [dsh-whale-animation](https://github.com/LeemanCheung/dsh-whale-animation) | 7 | ⚪ unknown | untranslated |
 | [dsh-client-ui-custom](https://github.com/yoli-mi/dsh-client-ui-custom) | 22 | ⚪ unknown | untranslated |
 | [dsh-gui](https://github.com/EricXu20266/dsh-gui) | 8 | ⚪ unknown | untranslated |
 | [dsh-skin-manager](https://github.com/xiaoyangcheng84-svg/dsh-skin-manager) | 6 | 🟢 ok | untranslated |
-| [dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui) | 43 | ⚪ unknown | untranslated |
+| [dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui) | 46 | ⚪ unknown | untranslated |
 | [dsh-remote](https://github.com/Hyna-hla/dsh-remote) | 9 | 🟢 ok | untranslated |
 | [dsh-web-tools](https://github.com/A3Boy/dsh-web-tools) | 20 | ⚪ unknown | untranslated |
-| [dsh-whale-galgame](https://github.com/JAdpp/dsh-whale-galgame) | 17 | ⚪ unknown | untranslated |
+| [dsh-whale-galgame](https://github.com/JAdpp/dsh-whale-galgame) | 18 | ⚪ unknown | untranslated |
 | [dsh-better-sidebar-lite](https://github.com/pixellover1433/dsh-better-sidebar-lite) | 6 | 🟢 ok | untranslated |
-| [DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 1086 | ⚪ unknown | untranslated |
+| [DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 1138 | ⚪ unknown | untranslated |
 | [dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette) | 16 | ⚪ unknown | untranslated |
 | [dsh-whale-meter](https://github.com/Shiye-10Pages/dsh-whale-meter) | 10 | ⚪ unknown | untranslated |
-| [dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme) | 24 | ⚪ unknown | untranslated |
+| [dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme) | 25 | ⚪ unknown | untranslated |
 | [dsh-beauty-skins](https://github.com/XieRW/dsh-beauty-skins) | 101 | ⚪ unknown | untranslated |
 | [open-sea-skin](https://github.com/d-dev0101/open-sea-skin) | 193 | 🟢 ok | untranslated |
-| [dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) | 12 | ⚪ unknown | untranslated |
+| [dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) | 14 | ⚪ unknown | untranslated |
 | [dsh-md-quiz](https://github.com/MrElysium/dsh-md-quiz) | 7 | ⚪ unknown | untranslated |
-| [ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) | 7 | ⚪ unknown | untranslated |
-| [dsh-vscode](https://github.com/Fengze233/dsh-vscode) | 21 | ⚪ unknown | untranslated |
+| [ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) | 8 | ⚪ unknown | untranslated |
+| [dsh-vscode](https://github.com/Fengze233/dsh-vscode) | 22 | ⚪ unknown | untranslated |
 | [dsh-prompt-optimize](https://github.com/1847123733/dsh-prompt-optimize) | 6 | ⚪ unknown | untranslated |
 | [dsh-undo-savepoint](https://github.com/lire1131/dsh-undo-savepoint) | 130 | ⚪ unknown | untranslated |
 | [dsh-code-review](https://github.com/CooStack/dsh-code-review) | 6 | ⚪ unknown | untranslated |
@@ -909,7 +912,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-aemeath](https://github.com/hachimi-ai/dsh-aemeath) | 6 | ⚪ unknown | untranslated |
 | [dsh-tavily](https://github.com/moguiyu/dsh-tavily) | 6 | 🟢 ok | untranslated |
 | [dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) | 38 | ⚪ unknown | untranslated |
-| [dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield) | 45 | ⚪ unknown | untranslated |
+| [dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield) | 50 | ⚪ unknown | untranslated |
 | [dsh-plugin-tavily](https://github.com/1624318455/dsh-plugin-tavily) | 6 | ⚪ unknown | untranslated |
 | [dsh-skin-alphacoders](https://github.com/sakka6868/dsh-skin) | 3 | 🟢 ok | 用 Alphacoders 热门壁纸当 DSH Web 背景：图库、搜索、本地上传、按主题换壁纸、收藏与自动更换 |
 | [dsh-xueqiu](https://github.com/kangjinghang/dsh-xueqiu) | 8 | 🟢 ok | untranslated |
@@ -917,10 +920,10 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) | 15 | 🟢 ok | untranslated |
 | [dsh-imessage](https://github.com/photon-hq/dsh-imessage) | 10 | 🟢 ok | untranslated |
 | [dsh-obsidian-math](https://github.com/maple110011/dsh-obsidian-math) | 6 | ⚪ unknown | untranslated |
-| [dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) | 23 | 🟢 ok | untranslated |
-| [dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) | 13 | ⚪ unknown | untranslated |
-| [dsh-android](https://github.com/ZSeven-W/dsh-android) | 119 | ⚪ unknown | untranslated |
-| [dsh_theme_terraria](https://github.com/10086ggqq/dsh_theme_terraria) | 24 | ⚪ unknown | untranslated |
+| [dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) | 24 | 🟢 ok | untranslated |
+| [dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) | 14 | ⚪ unknown | untranslated |
+| [dsh-android](https://github.com/ZSeven-W/dsh-android) | 120 | ⚪ unknown | untranslated |
+| [dsh_theme_terraria](https://github.com/10086ggqq/dsh_theme_terraria) | 25 | ⚪ unknown | untranslated |
 | [dsh-ui-tweaks](https://github.com/wlj521/dsh-ui-tweaks) | 12 | 🟢 ok | untranslated |
 | [dsh-anchored-monitor](https://github.com/Aik358/dsh-anchored-monitor) | 11 | ⚪ unknown | untranslated |
 | [dsh-history-tree](https://github.com/z953218350/dsh-history-tree) | 13 | ⚪ unknown | untranslated |
@@ -928,11 +931,11 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-monitor](https://github.com/JacksonZ8/dsh-monitor) | 0 | 🟢 ok | 会话内可拖动进度监视器，只追踪长时间多批次工作（后台任务与工作流），显示进度条、done/total 计数与动态 ETA。 |
 | [dsh-history](https://github.com/chenproton/dsh-history) | 10 | 🟢 ok | untranslated |
 | [dsh-toolbox](https://github.com/HiWhaleW/dsh-toolbox) | 29 | 🟢 ok | untranslated |
-| [dsh-comfyui](https://github.com/fandc520/dsh-comfyui) | 25 | 🟢 ok | untranslated |
-| [dsh-uiskin-theme](https://github.com/chouxiaohuai/dsh-uiskin-theme) | 12 | ⚪ unknown | untranslated |
+| [dsh-comfyui](https://github.com/fandc520/dsh-comfyui) | 27 | 🟢 ok | untranslated |
+| [dsh-uiskin-theme](https://github.com/chouxiaohuai/dsh-uiskin-theme) | 13 | ⚪ unknown | untranslated |
 | [dsh-custom-background](https://github.com/StarryHui/dsh-custom-background) | 8 | ⚪ unknown | untranslated |
-| [dsh-win-gitbash](https://github.com/buhuikongpan/dsh-win-gitbash) | 8 | ⚪ unknown | untranslated |
-| [dsh-custom-skin](https://github.com/SLin-code/dsh-custom-skin) | 28 | ⚪ unknown | untranslated |
+| [dsh-win-gitbash](https://github.com/buhuikongpan/dsh-win-gitbash) | 9 | ⚪ unknown | untranslated |
+| [dsh-custom-skin](https://github.com/SLin-code/dsh-custom-skin) | 32 | ⚪ unknown | untranslated |
 | [deepseek-harness-angelina-themes](https://github.com/bilbillm/deepseek-harness-angelina-themes) | 9 | ⚪ unknown | untranslated |
 
 ### 🐋 皮肤
@@ -946,9 +949,9 @@ npm create dsh-plugin@latest my-plugin
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
 | [pi-discuss-mode](https://github.com/zwrong/pi-discuss-mode) | 11 | ⚪ unknown | Pi Coding Agent 的只读讨论模式 |
-| [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 101 | 🟢 ok | 对话回退：回滚会话与工作区状态 |
+| [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 103 | 🟢 ok | 对话回退：回滚会话与工作区状态 |
 | [dsh-share](https://github.com/hellodigua/dsh-share) | 35 | 🟢 ok | DSH 对话分享插件 |
-| [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) | 43 | 🟢 ok | 分支式消息编辑、reroll、版本时间线 |
+| [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) | 44 | 🟢 ok | 分支式消息编辑、reroll、版本时间线 |
 | [dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) | 20 | ⚪ unknown | 上下文注入审计：AGENTS.md/技能/tool schema token 成本 |
 | [dsh-session-health](https://github.com/omdsh-dev/dsh-session-health) | 9 | 🟢 ok | 多帧 zstd 会话文件帧级扫描诊断 |
 | [dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) | 11 | ⚪ unknown | 自进化：agent 在会话内给自己长出/剪掉能力 |
@@ -973,7 +976,7 @@ npm create dsh-plugin@latest my-plugin
 | [context-vista](https://github.com/GooodWei/context-vista) | 12 | 🟢 ok | 为 DeepSeek Harness 提供右侧悬浮栏以及 /context 命令，用环形图实时展示当前上下文 token 用量与分配，compact指令效果，同时支持估算费用消耗，对标 Claude Code 的 /context。 |
 | [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | 10 | 🟢 ok | dsh-claude-move — DSH 插件（会话） |
 | [dsh-ergonomics](https://github.com/hisaniwo/dsh-ergonomics) | 2 | 🟢 ok | DSH 会话人体工学：/new 一键新会话 + 输入历史 ↑↓ 回溯 |
-| [dsh-model-config-sync](https://github.com/LiangYin233/dsh-model-config-sync) | 16 | ⚪ unknown | DSH 高级模型配置器：为 DeepSeek Harness 提供将 pi-ai 预设模型的上下文、输出上限、推理挡位一键应用到自定义提供商的能力。 |
+| [dsh-model-config-sync](https://github.com/LiangYin233/dsh-model-config-sync) | 18 | ⚪ unknown | DSH 高级模型配置器：为 DeepSeek Harness 提供将 pi-ai 预设模型的上下文、输出上限、推理挡位一键应用到自定义提供商的能力。 |
 | [dsh-undo](https://github.com/LingLambda/dsh-undo) | 4 | ⚪ unknown | dsh-undo — DSH 插件（会话） |
 | [dsh-session-timeline](https://github.com/XiLuovo/dsh-session-timeline) | 5 | ⚪ unknown | DeepSeek Harness 会话时间轴插件：横短横线波浪、当前消息定位、点击跳转、圆角预览 tooltip、可收起/展开 |
 | [dsh-plugins](https://github.com/Yihong89/dsh-plugins) | 3 | ⚪ unknown | dsh-plugins — DSH 插件（会话） |
@@ -981,15 +984,15 @@ npm create dsh-plugin@latest my-plugin
 | [billion-context-dsh](https://github.com/Tyan66666/billion-context-dsh) | 48 | 🟢 ok | billion-context-dsh — DSH 插件（会话） |
 | [dsh-session-pins](https://github.com/alooshxl/dsh-session-pins) | 3 | ⚪ unknown | dsh-session-pins — DSH 插件（会话） |
 | [dsh-cue-plugin](https://github.com/unnnnoooo/dsh-cue-plugin) | 6 | ⚪ unknown | DeepSeek Harness 的跨会话引用(cue)插件 |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | 63 | 🟢 ok | dsh-memento — DSH 插件（会话） |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | 64 | 🟢 ok | dsh-memento — DSH 插件（会话） |
 | [dsh-archive-viewer](https://github.com/keepermttl/dsh-archive-viewer) | 4 | ⚪ unknown | DeepSeek Harness 归档会话管理插件：查看/恢复已归档会话（回到原工作区分组）+ 右上角一键关闭 dsh。MIT 许可，欢迎收录到任何插件合集，注明出处即可。 |
 | [dsh-memory](https://github.com/ben7am1n/dsh-memory) | 1 | 🟢 ok | dsh-memory — DSH 插件（会话） |
 | [dsh-plugins](https://github.com/hyls9527/dsh-plugins) | 3 | ⚪ unknown | dsh-plugins — DSH 插件（会话） |
 | [dsh-opencode-usage](https://github.com/moduqishi/dsh-opencode-usage) | 1 | 🟢 ok | dsh-opencode-usage — DSH 插件（会话） |
 | [dsh-session-hub](https://github.com/Asaiuta/dsh-session-hub) | 4 | 🟢 ok | dsh-session-hub — DSH 插件（会话） |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | 63 | 🟢 ok | dsh-memento — DSH 插件（会话） |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | 64 | 🟢 ok | dsh-memento — DSH 插件（会话） |
 | [dsh-archive-viewer](https://github.com/keepermttl/dsh-archive-viewer) | 4 | ⚪ unknown | DeepSeek Harness 归档会话管理插件：查看/恢复已归档会话（回到原工作区分组）+ 右上角一键关闭 dsh。MIT 许可，欢迎收录到任何插件合集，注明出处即可。 |
-| [dsh-codex-provider](https://github.com/Hu9956/dsh-codex-provider) | 8 | 🟢 ok | dsh-codex-provider — DSH 插件（会话） |
+| [dsh-codex-provider](https://github.com/Hu9956/dsh-codex-provider) | 9 | 🟢 ok | dsh-codex-provider — DSH 插件（会话） |
 | [dsh-memory](https://github.com/Jesse-njx/dsh-memory) | 2 | 🟢 ok | dsh-memory — DSH 插件（会话） |
 | [dsh-workbench](https://github.com/echo-escape/dsh-workbench) | 1 | 🟢 ok | 这是一个用于展示和分享为开发的各类插件（Plugins）与技能（Skills）的集合。您可以在这里浏览并发现能增强您 DSH 体验的扩展！ |
 | [dsh-codex-import](https://github.com/918154429/dsh-codex-import) | 1 | ⚪ unknown | dsh-codex-import — DSH 插件（会话） |
@@ -999,8 +1002,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-mcp-proxy](https://github.com/ben7am1n/dsh-mcp-proxy) | 1 | 🟢 ok | dsh-mcp-proxy — DSH 插件（会话） |
 | [dsh-nocturne-memory](https://github.com/RealAlexandreAI/dsh-nocturne-memory) | 2 | 🟢 ok | dsh-nocturne-memory — DSH 插件（会话） |
 | [dsh-balance](https://github.com/TwotwoPiggy/dsh-balance) | 11 | 🟢 ok | dsh-balance — DSH 插件（会话） |
-| [dsh-mneme](https://github.com/modusensus/dsh-mneme) | 54 | ⚪ unknown | Mneme——把记忆主权还给人的记忆插件：SQLite + 可人工编辑的 Markdown 双写，autoDream 在梦境中巩固记忆，106 个测试护航。 |
-| [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) | 203 | 🟢 ok | DeepSeek Harness 会话费用统计插件:本会话费用、当日费用、历史记录与官方价格同步 |
+| [dsh-mneme](https://github.com/modusensus/dsh-mneme) | 57 | ⚪ unknown | Mneme——把记忆主权还给人的记忆插件：SQLite + 可人工编辑的 Markdown 双写，autoDream 在梦境中巩固记忆，106 个测试护航。 |
+| [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) | 209 | 🟢 ok | DeepSeek Harness 会话费用统计插件:本会话费用、当日费用、历史记录与官方价格同步 |
 | [dsh-claude-mem](https://github.com/Bleed00/dsh-claude-mem) | 2 | ⚪ unknown | dsh-claude-mem — DSH 插件（会话） |
 | [dsh-revive](https://github.com/omdsh-dev/dsh-revive) | 4 | ⚪ unknown | DSH 一键复活：重启后给所有被打断的会话自动发送「继续」指令（/revive 命令 + revive_sessions 工具 + 浏览器一键按钮） |
 | [dsh-plugin-wepre](https://github.com/shujiTech/dsh-plugin-wepre) | 1 | ⚪ unknown | dsh-plugin-wepre — DSH 插件（会话） |
@@ -1049,7 +1052,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-token-panel](https://github.com/juhe291/dsh-token-panel) | 7 | 🟢 ok | Token 角落仪表盘：实时看会话的 token 压力、分模型成本、日/月用量和趋势曲线。 |
 | [dsh-plugin-usage-dashboard](https://github.com/hnmrxz/dsh-plugin-usage-dashboard) | 2 | ⚪ unknown | 用量与费用看板：底部状态栏显示会话级 token 与花费。 |
 | [dsh-token-monitor](https://github.com/zhangzheng25/dsh-token-monitor) | 7 | ⚪ unknown | Token 用量设置页：今日/7 天/30 天统计 + GitHub 风格 90 天贡献图。 |
-| [dsh-system-proxy](https://github.com/khiqwq/dsh-system-proxy) | 4 | ⚪ unknown | 出站网络路由：按目标主机和上下文在直连/HTTP(S)/SOCKS4/5 代理间选路，支持分主机/provider/插件规则。 |
+| [dsh-system-proxy](https://github.com/khiqwq/dsh-system-proxy) | 5 | ⚪ unknown | 出站网络路由：按目标主机和上下文在直连/HTTP(S)/SOCKS4/5 代理间选路，支持分主机/provider/插件规则。 |
 | [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) | 6 | 🟢 ok | 后台长任务 agent：启动可续跑的子 agent，Web 界面实时看进度。 |
 | [dsh-rewind](https://github.com/dpskh/dsh-rewind) | 3 | 🟢 ok | 把 checkpoint 之后的探索折叠成自动报告，重新开始。 |
 | [dsh-side-chat](https://github.com/KarlOfLaw/dsh-side-chat) | 2 | 🟢 ok | 主会话感知的并行侧边聊天：右侧开独立子会话，按需理解主对话。 |
@@ -1069,7 +1072,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-mcp-adapter](https://github.com/NexusAgentX/dsh-mcp-adapter) | 1 | 🟢 ok | MCP 适配器：一个代理工具代替堆一堆 MCP schema。 |
 | [dsh-session-analyst](https://github.com/dmsobtl/dsh-session-analyst) | 0 | 🟢 ok | DSH 插件：Agent 会话质量分析 —— 工具成功率、token 效率、冗余调用检测、跨会话回归对比。PS：上传文件有点问题，等我重新整理下 |
 | [dsh-tmcra-memory](https://github.com/reshuibuduo/dsh-tmcra-memory) | 1 | ⚪ unknown | TMCRA Agent 长期记忆系统的 DeepSeek Harness 接入插件：跨对话延续项目记忆，自动沉淀项目知识与工作经验。 |
-| [dsh-plugin-cc](https://github.com/cpj-dev/dsh-plugin-cc) | 75 | ⚪ unknown | 把 DSH 桥进 Claude Code：让 Claude Code 做代码评审、提意见、派任务，还能导入会话。 |
+| [dsh-plugin-cc](https://github.com/cpj-dev/dsh-plugin-cc) | 83 | ⚪ unknown | 把 DSH 桥进 Claude Code：让 Claude Code 做代码评审、提意见、派任务，还能导入会话。 |
 | [dsh-plugin-langfuse](https://github.com/linyp/dsh-plugin-langfuse) | 11 | 🟢 ok | Langfuse 可观测性：把 agent 会话导出为 OpenTelemetry 链路树送到 Langfuse。 |
 | [dsh-git-credentials](https://github.com/revive/dsh-git-credentials) | 2 | ⚪ unknown | GitLab/GitHub API token 不进入模型上下文：凭证安全隔离。 |
 | [dsh-usage-footer](https://github.com/1514100951/dsh-usage-footer) | 4 | ⚪ unknown | DSH web 用量/费用悬浮按钮插件：账户余额、峰谷时段、今日/本会话消费估算与 token 统计（含设置开关） |
@@ -1087,11 +1090,11 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-agentmemory](https://github.com/elementor-i/dsh-agentmemory) | 4 | ⚪ unknown | agentmemory 集成：完整 memory_* 工具、自动捕获钩子、本地 REST 服务的上下文注入。 |
 | [dsh-agent-compact](https://github.com/jonah791/dsh-agent-compact) | 2 | ⚪ unknown | agent 驱动的会话压缩：agent 自己总结自己的对话历史。 |
 | [dsh-multi-tenant](https://github.com/GuoMonth/dsh-multi-tenant) | 7 | 🟢 ok | 多租户 SaaS 扩展：租户身份、会话隔离、授权、租户感知 MCP 和审计。 |
-| [dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) | 38 | ⚪ unknown | DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每日反思、可视化面板与设置页,支持继承其他 AI 工具的历史记忆。 |
+| [dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) | 40 | ⚪ unknown | DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每日反思、可视化面板与设置页,支持继承其他 AI 工具的历史记忆。 |
 | [dsh-sidebar-mode](https://github.com/Meredith2328/dsh-sidebar-mode) | 3 | ⚪ unknown | 把默认的四种模式切换塞进「新会话」按钮里，新会话创建更方便（标准/PTC/创造/极简，与设置双向同步） |
-| [dsh-context](https://github.com/bowenliang123/dsh-context) | 1072 | 🟢 ok | 上下文洞察面板：Web 界面加一个 Context 标签页，直观看到模型上下文窗口里装了什么、怎么变化的。 |
+| [dsh-context](https://github.com/bowenliang123/dsh-context) | 1094 | 🟢 ok | 上下文洞察面板：Web 界面加一个 Context 标签页，直观看到模型上下文窗口里装了什么、怎么变化的。 |
 | [dsh-sidechain](https://github.com/omdsh-dev/dsh-sidechain) | 10 | ⚪ unknown | DSH 侧会话插件：/side 持续性侧会话（Codex 风格）与 /btw 一次性侧问（Claude 风格）——在临时 fork 中运行、不写入主会话历史；Web UI 右侧链面板内嵌对话，主会话保持不变 |
-| [dsh-provider-model-configurator](https://github.com/LiangYin233/dsh-provider-model-configurator) | 16 | ⚪ unknown | DSH 高级模型配置器：为 DeepSeek Harness 提供将 pi-ai 预设模型的上下文、输出上限、推理挡位一键应用到自定义提供商的能力。 |
+| [dsh-provider-model-configurator](https://github.com/LiangYin233/dsh-provider-model-configurator) | 18 | ⚪ unknown | DSH 高级模型配置器：为 DeepSeek Harness 提供将 pi-ai 预设模型的上下文、输出上限、推理挡位一键应用到自定义提供商的能力。 |
 | [dsh-plugin-deepseek-pricing](https://github.com/Dasooul03/dsh-plugin-deepseek-pricing) | 3 | ⚪ unknown | DSH Price Monitor（价格监控）· DeepSeek 实时定价、峰谷自动切换与会话费用监控的 dsh 插件 |
 | [dsh-client-ui-monitor](https://github.com/Auran-Lu/dsh-client-ui-monitor) | 3 | ⚪ unknown | 用于监控当前会话额度消耗、预估费用及当前API余额/Used to monitor the current session's quota consumption, estimated costs, and current API balance. |
 | [dsh-plugin-consult](https://github.com/biuboomc/dsh-plugin-consult) | 3 | ⚪ unknown | 同行咨询：和另一个会话的分叉对话，不污染原会话。 |
@@ -1119,7 +1122,7 @@ npm create dsh-plugin@latest my-plugin
 | [Liltloom](https://github.com/Adkid-Zephyr/Liltloom) | 4 | ⚪ unknown | 语织：中文优先、用户可控的 AI 写作风格记忆层，让 AI 学会你的表达，需要时再调用。Chinese-first style memory for AI; DeepSeek Harness adapter included. |
 | [dsh-ops-kit](https://github.com/LeslieWylie/dsh-ops-kit) | 3 | ⚪ unknown | 可复用的运维组合包：证据驱动的记忆、编排、行为规范等能力一包配齐。 |
 | [dsh-session-tree](https://github.com/ZhengQingJing/dsh-session-tree) | 3 | 🟢 ok | Git 式不可变会话分支：像 commit 一样给会话打分支，安全回溯不用怕改坏。 |
-| [blender](https://github.com/CheshireJCat/blender) | 20 | ⚪ unknown | Blender 3D 全流程：建模、重建、渲染、校验、导出一站式，聊天里指挥 Blender 干活。 |
+| [blender](https://github.com/CheshireJCat/blender) | 21 | ⚪ unknown | Blender 3D 全流程：建模、重建、渲染、校验、导出一站式，聊天里指挥 Blender 干活。 |
 | [dsh-usage-stats](https://github.com/lanlandeli/dsh-usage-stats) | 11 | 🟢 ok | DeepSeek Harness 精美 Token 数据面板：趋势图、活跃热力图、模型用量分析与 CSV/JSON 导出。 |
 | [dsh-balance-tide](https://github.com/huanyuLv/dsh-balance-tide) | 8 | ⚪ unknown | DeepSeek Harness (DSH) Web 插件: 余额 + 峰谷计价潮汐提示。显示 DeepSeek 账户余额与本会话花费, 并在余额前提示当前峰/谷价格档位、距切换倒计时与使用建议。 |
 | [dsh-plugin-window-stats](https://github.com/wellorbetter/dsh-plugin-window-stats) | 2 | ⚪ unknown | 跨会话进度与 token 看板：每个会话的进展一目了然。 |
@@ -1141,7 +1144,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) | 12 | 🟢 ok | 消息收藏夹：逐条收藏助手回复（带笔记/标签）、跨会话中心、一键导出 Markdown。 |
 | [dsh-usage-plugin](https://github.com/feiyang-dev/dsh-usage-plugin) | 37 | 🟢 ok | DeepSeek Harness 用量与消耗插件（dsh-usage）—— 每次调用的 token 用量/缓存命中统计、峰谷计费、余额查询、CSV/JSON/PNG 导出，可经桌面端一键安装或命令行 dsh plugin add 安装。 |
 | [dsh-billing-glass](https://github.com/linkingoscar/dsh-billing-glass) | 3 | ⚪ unknown | 液态玻璃计费浮层：provider 余额、花费实时可见。 |
-| [dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) | 38 | 🟢 ok | 多 agent 时空记忆图谱：跨会话持久记忆。 |
+| [dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) | 40 | 🟢 ok | 多 agent 时空记忆图谱：跨会话持久记忆。 |
 | [dsh-noema](https://github.com/ZSeven-W/dsh-noema) | 126 | 🟢 ok | Noema 长期记忆：持久、可检查的 agent 记忆，带召回工具和设置页。 |
 | [dsh-memoir](https://github.com/Qinling-Melon-Farmers/dsh-memoir) | 22 | ⚪ unknown | DSH 项目持久化记忆插件（TypeScript）：会话归纳 + 经验教训沉淀，写入 PROJECT_MEMORY.md 与全局索引；每轮工作结束自动提醒蒸馏、自动注入未来 AGENTS；附 Web GUI 记忆面板（项目/全局 tab、检索、手动记录/删除… |
 | [dsh-LorebookMD](https://github.com/609476965/dsh-LorebookMD) | 18 | 🟢 ok | 跑团/小说创作：导入酒馆角色卡与世界书为本地 Markdown，按设定驱动创作。 |
@@ -1153,7 +1156,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-headroom](https://github.com/wjxn13/dsh-headroom) | 5 | ⚪ unknown | Headroom 上下文压缩代理集成：一键检测、安装、启动。 |
 | [dsh-mcp-lens](https://github.com/labmimors/dsh-mcp-lens) | 5 | 🟢 ok | 缩减 DeepSeek Harness 的 MCP 上下文：将 1,000 个远程工具收进 2 个精确 Schema 接口，并附 V4 Flash 小规模成本实测。 |
 | [dsh-subagent-admission](https://github.com/yha9806/dsh-subagent-admission) | 3 | ⚪ unknown | 共享生命周期准入协议与参考策略内核（面向子代理）。 |
-| [dsh-browser](https://github.com/wqty123/dsh-browser) | 28 | 🟢 ok | 共享真实浏览器插件：多个 agent 共用一个浏览器。 |
+| [dsh-browser](https://github.com/wqty123/dsh-browser) | 29 | 🟢 ok | 共享真实浏览器插件：多个 agent 共用一个浏览器。 |
 | [dsh-chatgpt-bridge](https://github.com/jiezeng2004-design/dsh-chatgpt-bridge) | 13 | 🟢 ok | MCP 桥：让 ChatGPT Web 创建、查看、继续并控制 DSH 会话。 |
 | [dsh-cloak-browser](https://github.com/maxiaovivi/dsh-cloak-browser) | 5 | ⚪ unknown | 原生 CloakBrowser 工具：隔离浏览器会话、快照、交互、安全路由。 |
 | [dsh-files](https://github.com/taxueseek/dsh-files) | 27 | ⚪ unknown | 双面插件：会话隔离的文件上传（彩色卡片）+ 文档读取工具（text/PDF/DOCX/XLSX）。 |
@@ -1168,7 +1171,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-delete-session](https://github.com/dream12347/dsh-delete-session) | 52 | ⚪ unknown | Delete DSH conversation sessions from a Settings panel/在设置面板中增加删除会话管理以便删除无用会话 |
 | [dsh-md-preview](https://github.com/LeslieWylie/dsh-md-preview) | 2 | 🟢 ok | 把 Markdown 渲染成自包含 HTML。 |
 | [dsh-Friend](https://github.com/wanghehe123/dsh-Friend) | 2 | ⚪ unknown | 人格化伴侣插件 for DeepSeek Harness：角色卡、语音、Live2D、本地记忆与工作陪伴。 |
-| [dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) | 63 | ⚪ unknown | DeepSeek Harness Web UI 移动端适配插件:窄屏下侧边栏变为 overlay 抽屉,会话独占全宽。 |
+| [dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) | 65 | ⚪ unknown | DeepSeek Harness Web UI 移动端适配插件:窄屏下侧边栏变为 overlay 抽屉,会话独占全宽。 |
 | [dsh-habits](https://github.com/DimitriLIAN/dsh-habits) | 2 | ⚪ unknown | 习惯编辑器：从 Web 设置页编辑用户全局 AGENTS.md。 |
 | [dsh-failure-capsule](https://github.com/YiHarvest/dsh-failure-capsule) | 5 | 🟢 ok | 本地优先故障证据包：失败时自动记录当时发生了什么、项目状态与环境。 |
 | [dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) | 25 | 🟢 ok | DSH 消息撤回插件：回到发送该消息时的状态 |
@@ -1180,7 +1183,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions) | 7 | 🟢 ok | untranslated |
 | [dsh-roleplay-preset](https://github.com/oliblue-evan/dsh-roleplay-preset) | 19 | ⚪ unknown | untranslated |
 | [dsh-plugin](https://github.com/loongsuite/dsh-plugin) | 17 | 🟢 ok | untranslated |
-| [dsh-Remote](https://github.com/Blank-not-black/dsh-Remote) | 29 | 🟢 ok | untranslated |
+| [dsh-Remote](https://github.com/Blank-not-black/dsh-Remote) | 31 | 🟢 ok | untranslated |
 | [dsh-agentsoul](https://github.com/yuhui-sama/dsh-agentsoul) | 3 | ⚪ unknown | untranslated |
 | [dsh-prompt-rail](https://github.com/Zzzzkd/dsh-prompt-rail) | 8 | ⚪ unknown | untranslated |
 | [dsh-ocgo-lite](https://github.com/OK-wx/dsh-ocgo-lite) | 11 | ⚪ unknown | untranslated |
@@ -1190,7 +1193,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-agent-compact](https://github.com/MimicHunterZ/dsh-agent-compact) | 5 | ⚪ unknown | untranslated |
 | [dsh-apex-standard](https://github.com/rinDBeans/dsh-apex-standard) | 11 | ⚪ unknown | untranslated |
 | [dsh-self-improved](https://github.com/madage/dsh-self-improved) | 9 | 🟢 ok | untranslated |
-| [dsh-bottom-info-bar](https://github.com/songoao25/dsh-bottom-info-bar) | 15 | ⚪ unknown | untranslated |
+| [dsh-bottom-info-bar](https://github.com/songoao25/dsh-bottom-info-bar) | 16 | ⚪ unknown | untranslated |
 | [dsh-board](https://github.com/dfkai/dsh-board) | 8 | ⚪ unknown | untranslated |
 | [dsh-web-remote](https://github.com/godchen520/dsh-web-remote) | 8 | ⚪ unknown | untranslated |
 | [dsh-agent-memory](https://github.com/Culeot/dsh-agent-memory) | 6 | 🟢 ok | untranslated |
@@ -1199,7 +1202,7 @@ npm create dsh-plugin@latest my-plugin
 | [deepddw](https://github.com/ccch713/deepddw) | 9 | ⚪ unknown | untranslated |
 | [dsh-session-context-menu](https://github.com/baihejiangnan/dsh-session-context-menu) | 20 | ⚪ unknown | untranslated |
 | [dsh-client-ui-obsidian-memory](https://github.com/detongz/dsh-client-ui-obsidian-memory) | 14 | 🟢 ok | untranslated |
-| [dsh-change-review](https://github.com/cirelir/dsh-change-review) | 11 | ⚪ unknown | untranslated |
+| [dsh-change-review](https://github.com/cirelir/dsh-change-review) | 10 | ⚪ unknown | untranslated |
 | [dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) | 6 | ⚪ unknown | untranslated |
 | [dsh-model-meta-autofill](https://github.com/QJAG1024/dsh-model-meta-autofill) | 5 | 🟢 ok | untranslated |
 | [dsh-JujutsuKaisen-rainlove](https://github.com/haxi8/dsh-JujutsuKaisen-rainlove) | 5 | ⚪ unknown | untranslated |
@@ -1207,7 +1210,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-session-pause](https://github.com/watericetangcw/dsh-session-pause) | 4 | ⚪ unknown | untranslated |
 | [dsh-island](https://github.com/cdxiaodong/dsh-island) | 8 | ⚪ unknown | untranslated |
 | [dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) | 7 | ⚪ unknown | untranslated |
-| [dsh-remote](https://github.com/xgone/dsh-remote) | 49 | 🟢 ok | untranslated |
+| [dsh-remote](https://github.com/xgone/dsh-remote) | 50 | 🟢 ok | untranslated |
 | [dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) | 9 | ⚪ unknown | untranslated |
 | [dsh-miraculous-standard](https://github.com/rinDBeans/dsh-miraculous-standard) | 11 | ⚪ unknown | untranslated |
 | [dsh-acp](https://github.com/dushaobindoudou/dsh-acp) | 7 | ⚪ unknown | untranslated |
@@ -1215,55 +1218,56 @@ npm create dsh-plugin@latest my-plugin
 | [tencentcloud-agentobs-sdk-dsh](https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh) | 11 | ⚪ unknown | untranslated |
 | [dsh-quota-meter](https://github.com/ai-shushu/dsh-quota-meter) | 16 | ⚪ unknown | untranslated |
 | [dsh-plugin-merge-tool-calls](https://github.com/HuanLinOTO/dsh-plugin-merge-tool-calls) | 7 | ⚪ unknown | untranslated |
-| [MemOS](https://github.com/MemTensor/MemOS) | 11012 | ⚪ unknown | untranslated |
-| [dsh-plugin-bridge](https://github.com/Totoro-qaq/dsh-plugin-bridge) | 140 | 🟢 ok | untranslated |
+| [MemOS](https://github.com/MemTensor/MemOS) | 11031 | ⚪ unknown | untranslated |
+| [dsh-plugin-bridge](https://github.com/Totoro-qaq/dsh-plugin-bridge) | 144 | 🟢 ok | untranslated |
 | [dsh-eli-mode](https://github.com/CeilCelia/dsh-eli-mode) | 7 | 🟢 ok | untranslated |
-| [dsh-trace-compare](https://github.com/lamost423/dsh-trace-compare) | 50 | 🟢 ok | 执行轨迹可视化：主干、失败支路、折返点与子代理支路画在同一根墙钟时间轴上；支持上传 1–2 个 session log 同轴对比，或在会话页签实时看迷宫生长。 |
-| [dsh-sandbox-escalation-fix](https://github.com/JUSTMONIKA2022/dsh-sandbox-escalation-fix) | 25 | ⚪ unknown | untranslated |
+| [dsh-trace-compare](https://github.com/lamost423/dsh-trace-compare) | 52 | 🟢 ok | 执行轨迹可视化：主干、失败支路、折返点与子代理支路画在同一根墙钟时间轴上；支持上传 1–2 个 session log 同轴对比，或在会话页签实时看迷宫生长。 |
+| [dsh-sandbox-escalation-fix](https://github.com/JUSTMONIKA2022/dsh-sandbox-escalation-fix) | 26 | ⚪ unknown | untranslated |
 | [dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) | 16 | 🟢 ok | untranslated |
-| [dsh-turn-delete](https://github.com/hanshenmesen/dsh-turn-delete) | 104 | 🟢 ok | untranslated |
-| [dsh-tavern](https://github.com/chen731215-dev/dsh-tavern) | 37 | ⚪ unknown | untranslated |
+| [dsh-turn-delete](https://github.com/hanshenmesen/dsh-turn-delete) | 105 | 🟢 ok | untranslated |
+| [dsh-tavern](https://github.com/chen731215-dev/dsh-tavern) | 39 | ⚪ unknown | untranslated |
 | [dsh-qq-bridge](https://github.com/xiaomengxinbb/dsh-qq-bridge) | 7 | 🟢 ok | untranslated |
 | [dsh-replay](https://github.com/MingoZhou/dsh-replay) | 9 | ⚪ unknown | untranslated |
 | [dsh-plugin-uw](https://github.com/lcgash/dsh-plugin-uw) | 10 | ⚪ unknown | untranslated |
 | [dsh-honcho-sync](https://github.com/nanpaidashi/dsh-honcho-sync) | 6 | ⚪ unknown | untranslated |
 | [dsh-input-traffic](https://github.com/drscrewdriver/dsh-input-traffic) | 4 | 🟢 ok | DSH Web GUI 忙时输入队列：三档交通管制（现在/稍后/排队），拖拽重排、插话打断、批量清空、会话冻结 |
 | [dsh-task-memory](https://github.com/wangyihao0001-oss/dsh-task-memory) | 6 | ⚪ unknown | untranslated |
-| [dsh-recall-unread](https://github.com/hg1048596-pixel/dsh-recall-unread) | 68 | ⚪ unknown | untranslated |
-| [dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) | 31 | ⚪ unknown | untranslated |
+| [dsh-recall-unread](https://github.com/hg1048596-pixel/dsh-recall-unread) | 75 | ⚪ unknown | untranslated |
+| [dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) | 33 | ⚪ unknown | untranslated |
 | [dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) | 23 | 🟢 ok | untranslated |
-| [dsh-rewind](https://github.com/SiriLee/dsh-rewind) | 16 | 🟢 ok | untranslated |
+| [dsh-rewind](https://github.com/SiriLee/dsh-rewind) | 19 | 🟢 ok | untranslated |
 | [dsh-Mmem](https://github.com/mianyoubiaoqing/dsh-Mmem) | 8 | ⚪ unknown | untranslated |
-| [dsh-strata](https://github.com/jsdvjx/dsh-strata) | 33 | 🟢 ok | untranslated |
-| [dsh-capability-menu](https://github.com/PKUfudawei/dsh-capability-menu) | 37 | ⚪ unknown | untranslated |
+| [dsh-strata](https://github.com/jsdvjx/dsh-strata) | 37 | 🟢 ok | untranslated |
+| [dsh-capability-menu](https://github.com/PKUfudawei/dsh-capability-menu) | 39 | ⚪ unknown | untranslated |
 | [dsh-talk-map](https://github.com/Tasihi89/dsh-talk-map) | 52 | ⚪ unknown | untranslated |
 | [dsh-flowglass](https://github.com/Iwctwbh/dsh-flowglass) | 14 | ⚪ unknown | untranslated |
 | [dsh-compaction-instant](https://github.com/TsFreddie/dsh-compaction-instant) | 11 | 🟢 ok | untranslated |
-| [dsh-multiple-chat-panels](https://github.com/WilliamShi666/dsh-multiple-chat-panels) | 12 | ⚪ unknown | untranslated |
+| [dsh-multiple-chat-panels](https://github.com/WilliamShi666/dsh-multiple-chat-panels) | 13 | ⚪ unknown | untranslated |
 | [dsh-wallpaper_share](https://github.com/YRN-playmaker/dsh-wallpaper_share) | 11 | ⚪ unknown | untranslated |
-| [dsh-adult-tension](https://github.com/daha1216/dsh-adult-tension) | 10 | ⚪ unknown | untranslated |
-| [dsh-novel-writer](https://github.com/siweina/dsh-novel-writer) | 8 | ⚪ unknown | untranslated |
-| [dsh-sessions-manager](https://github.com/TOBYCAI/dsh-sessions-manager) | 2 | ⚪ unknown | DSH 设置面板会话管理器：归档/恢复/彻底删除/移动到其他工作区，带工作区标签与会话日期 |
+| [dsh-adult-tension](https://github.com/daha1216/dsh-adult-tension) | 11 | ⚪ unknown | untranslated |
+| [dsh-novel-writer](https://github.com/siweina/dsh-novel-writer) | 9 | ⚪ unknown | untranslated |
+| [dsh-sessions-manager](https://github.com/TOBYCAI/dsh-sessions-manager) | 3 | ⚪ unknown | DSH 设置面板会话管理器：归档/恢复/彻底删除/移动到其他工作区，带工作区标签与会话日期 |
 | [dsh-session-search-toggle](https://github.com/drscrewdriver/dsh-session-search-toggle) | 2 | ⚪ unknown | DSH web 侧边栏会话搜索增强：标题搜索与内容搜索一键切换，内容搜索按会话聚合展示标题与命中片段 |
 | [dsh-what-changed](https://github.com/sjh9714/dsh-what-changed) | 2 | ⚪ unknown | 会话顶栏审阅本次会话 Agent 写过的所有文件与逐处改动，被权限拒绝的写入单独计数，另有工作区与 HEAD 对照。 |
 | [dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) | 18 | ⚪ unknown | untranslated |
 | [distill-kura](https://github.com/lna-lab/distill-kura) | 9 | ⚪ unknown | untranslated |
 | [StrataGate-AgentMemory](https://github.com/diqierjia/StrataGate-AgentMemory) | 8 | ⚪ unknown | untranslated |
 | [dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) | 10 | 🟢 ok | untranslated |
-| [dsh-maze](https://github.com/lamost423/dsh-maze) | 50 | 🟢 ok | untranslated |
-| [dsh-tidychat](https://github.com/BananaSoldier01/dsh-tidychat) | 9 | ⚪ unknown | untranslated |
+| [dsh-maze](https://github.com/lamost423/dsh-maze) | 52 | 🟢 ok | untranslated |
+| [dsh-tidychat](https://github.com/BananaSoldier01/dsh-tidychat) | 10 | ⚪ unknown | untranslated |
 | [dsh-worktree-panel](https://github.com/HeathHe/dsh-worktree-panel) | 8 | 🟢 ok | untranslated |
+| [dsh-kanban](https://github.com/alpacachen/dsh-kanban) | 8 | ⚪ unknown | untranslated |
 
 ### 🧠 模型
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 835 | 🟢 ok | 给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原 |
+| [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 836 | 🟢 ok | 给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原 |
 | [Deepseek-omnimodal](https://github.com/good-boy4069/Deepseek-omnimodal) | 4 | ⚪ unknown | 面向纯文本 Agent 的开源多模态 MCP |
-| [dsh-computer-use](https://github.com/Anionex/dsh-computer-use) | 32 | 🟢 ok | 电脑控制插件（Accessibility 观测 + 作用域权限） |
+| [dsh-computer-use](https://github.com/Anionex/dsh-computer-use) | 33 | 🟢 ok | 电脑控制插件（Accessibility 观测 + 作用域权限） |
 | [dsh-vision](https://github.com/william-jin-cmu/dsh-vision) | 35 | 🟢 ok | view_image 工具桥接任意 OpenAI 兼容 VLM |
-| [modlens](https://github.com/liustack/modlens) | 3700 | 🟢 ok | DeepSeek Harness 首个视觉插件，纯文本模型看图。 |
-| [agent-vision-toolkit](https://github.com/Anionex/agent-vision-toolkit) | 1108 | ⚪ unknown | 为纯文本模型看图设计的视觉工具箱与技能：多图理解、图片问答、UI 还原、GUI 自动化。 |
+| [modlens](https://github.com/liustack/modlens) | 3715 | 🟢 ok | DeepSeek Harness 首个视觉插件，纯文本模型看图。 |
+| [agent-vision-toolkit](https://github.com/Anionex/agent-vision-toolkit) | 1112 | ⚪ unknown | 为纯文本模型看图设计的视觉工具箱与技能：多图理解、图片问答、UI 还原、GUI 自动化。 |
 | [dsh-tool-turbo](https://github.com/Electricitysheep/dsh-tool-turbo) | 7 | ⚪ unknown | 每轮 reasoning_effort 优化器。 |
 | [dsh-plugin-cost-tracker](https://github.com/YYTbit/dsh-plugin-cost-tracker) | 3 | ⚪ unknown | DeepSeek Harness token 成本追踪器。 |
 | [dsh-cost](https://github.com/GiantGKL/dsh-cost) | 3 | 🟢 ok | DSH token 成本统计插件。 |
@@ -1320,7 +1324,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-vision](https://github.com/oil-oil/dsh-vision) | 88 | 🟢 ok | 给纯文本模型接近原生的识图能力：图片消息自动走视觉模型转成文字描述再进上下文。 |
 | [dsh-approval-ai](https://github.com/ang-XWBWZ/dsh-approval-ai) | 3 | ⚪ unknown | AI 审批应答：用统一 LLM 路由替人回答审批请求，带 fail-closed 策略检查。 |
 | [dsh-plugin](https://github.com/PicGo/dsh-plugin) | 4 | 🟢 ok | 图片/文件直传图床：基于 PicGo，在 DSH 里直接上传到自己的图床。 |
-| [dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) | 12 | 🟢 ok | 外观自定义：主题色板、壁纸背景、透明度/模糊、毛玻璃效果，实时预览自动保存。 |
+| [dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) | 13 | 🟢 ok | 外观自定义：主题色板、壁纸背景、透明度/模糊、毛玻璃效果，实时预览自动保存。 |
 | [dsh-vision-bridge](https://github.com/Xieweikang123/dsh-vision-bridge) | 1 | ⚪ unknown | 给纯文本模型装眼睛：粘贴图片自动识别成文字再交给模型。 |
 | [dsh-mimo-agent-tools](https://github.com/ch1bug/dsh-mimo-agent-tools) | 6 | ⚪ unknown | 小米 MiMo 搜索 + 多模态工具：把 MiMo API 变成 DSH 的搜索/识图能力。 |
 | [dsh-background](https://github.com/luoyu-xingu/dsh-background) | 3 | 🟢 ok | DeepSeek Harness Web 背景图片插件:本地图片路径替换网页背景,外观设置行 + 实时预览 |
@@ -1329,7 +1333,7 @@ npm create dsh-plugin@latest my-plugin
 | [DeepSeek-harness-weixin](https://github.com/sliverp/DeepSeek-harness-weixin) | 2 | 🟢 ok | 微信 ClawBot 通道插件：扫码登录，文本/图片消息驱动 DSH。 |
 | [dsh-api-usage-bar](https://github.com/hurry060215-tech/dsh-api-usage-bar) | 1 | ⚪ unknown | 缓存感知的 API token 用量条。 |
 | [dsh-image-reader](https://github.com/zcXie777/dsh-image-reader) | 2 | ⚪ unknown | 原生图片读取：read_image 工具 + 视觉模型后端，让纯文本 agent 看图。 |
-| [dsh-media-skills](https://github.com/akqwpeter-prog/dsh-media-skills) | 17 | ⚪ unknown | 给 DeepSeek Harness 装上「眼睛」和「画笔」——免费读图 + 免费生图 Skill。Eyes & brush for DeepSeek Harness: free image reading & generation. 👁️🎨 |
+| [dsh-media-skills](https://github.com/akqwpeter-prog/dsh-media-skills) | 18 | ⚪ unknown | 给 DeepSeek Harness 装上「眼睛」和「画笔」——免费读图 + 免费生图 Skill。Eyes & brush for DeepSeek Harness: free image reading & generation. 👁️🎨 |
 | [dsh-qwen-multimodal](https://github.com/wuwangmao/dsh-qwen-multimodal) | 0 | ⚪ unknown | Qwen 多模态桥：视觉(qwen3-vl) + 语音转文字(qwen3-asr) + 更多。 |
 | [vision_kit](https://github.com/Seom-ingit/vision_kit) | 0 | ⚪ unknown | 数学家教：结构化提取向量、矩阵与几何，让 agent 会教数学。 |
 | [dsh-plugin-file-manager](https://github.com/jasper-zsh/dsh-plugin-file-manager) | 0 | ⚪ unknown | 面向 DeepSeek Harness（DSH） Web 界面的会话文件管理器插件。它在会话标题栏增加“文件”入口，打开后展示该会话工作区的文件树、Git 状态，并支持直接预览文本、图片和视频。 |
@@ -1338,7 +1342,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-vision](https://github.com/237229953-create/dsh-vision) | 3 | 🟢 ok | 纯文本模型看图：图片消息自动桥接视觉模型转文字描述，原图保留在人类转录里，零新增凭据。 |
 | [dsh-vision-provider](https://github.com/libinyam/dsh-vision-provider) | 3 | ⚪ unknown | 纯配置包：给 DSH 接入任意 OpenAI 兼容的视觉模型。 |
 | [dsh-ccswitch-import-lite](https://github.com/chenhaolove89/dsh-ccswitch-import-lite) | 2 | ⚪ unknown | DeepSeek Harness 插件（精简版）：从 CCSWITCH 批量导入模型供应商，不含视觉描述 |
-| [dsh-llm-codebuddy](https://github.com/Axiaohungry/dsh-llm-codebuddy) | 22 | 🟢 ok | 在deepseek harness中使用workbuddy api，因为公司只提供workbuddy积分 |
+| [dsh-llm-codebuddy](https://github.com/Axiaohungry/dsh-llm-codebuddy) | 24 | 🟢 ok | 在deepseek harness中使用workbuddy api，因为公司只提供workbuddy积分 |
 | [dsh-container](https://github.com/NIyueeE/dsh-container) | 1 | ⚪ unknown | DSH 容器镜像：通用 dev-container 基础 + dsh 自动更新。 |
 | [dsh-cost-tracker](https://github.com/yflmq001/dsh-cost-tracker) | 3 | ⚪ unknown | token 费用追踪插件。 |
 | [dsh-vision-plugin](https://github.com/Xin-Zhang-IceMan/dsh-vision-plugin) | 1 | ⚪ unknown | DeepSeek Harness 视觉插件：让纯文本模型拥有视觉能力 / Vision plugin for DSH: vision_analyze tool + automatic image transcription for text-only mod… |
@@ -1353,7 +1357,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-task-models](https://github.com/TTTPOB/dsh-task-models) | 1 | ⚪ unknown | 逐任务选模型：给 subagent/subagent_fork 每次调用指定模型和推理强度。 |
 | [dsh-opencode-go-usage](https://github.com/Xenia0922/dsh-opencode-go-usage) | 14 | 🟢 ok | DeepSeek Harness 插件:OpenCode Go 用量与花费悬浮仪表盘(配额、逐请求成本、模型/来源分布) |
 | [dsh-calculator](https://github.com/bobcat848/dsh-calculator) | 5 | ⚪ unknown | 实时算账：DSH 每调一次 DeepSeek API 的花费即时计算给你看。 |
-| [dsh-green-meter](https://github.com/dclichang2022/dsh-green-meter) | 76 | 🔴 broken (failed once, retried — install failed (exit 1):     at runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-9h8shc) | 能耗与碳排放计量：看每次对话/请求的能耗、缓存减碳量和电费。 |
+| [dsh-green-meter](https://github.com/dclichang2022/dsh-green-meter) | 79 | 🔴 broken (failed once, retried — install failed (exit 1):     at runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-9h8shc) | 能耗与碳排放计量：看每次对话/请求的能耗、缓存减碳量和电费。 |
 | [DeepSeek-harness-dingtalk](https://github.com/sliverp/DeepSeek-harness-dingtalk) | 3 | 🟢 ok | 钉钉 Stream 通道插件：文字+图片消息驱动 DSH。 |
 | [dsh-plugin-describe-image](https://github.com/whitelonng/dsh-plugin-describe-image) | 6 | ⚪ unknown | describe_image 工具：通过 OpenAI 兼容 VLM 端点给纯文本模型补上识图能力。 |
 | [dsh-see-image](https://github.com/tiefeiyu/dsh-see-image) | 1 | ⚪ unknown | see_image 视觉工具：通过视觉模型描述图片。 |
@@ -1368,13 +1372,13 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-multimodal-skill](https://github.com/v587d/dsh-multimodal-skill) | 1 | ⚪ unknown | 给纯文本 LLM 一双慧眼。 一个 DeepSeek Harness（DSH）原生 skill + 零依赖 Python CLI， 为 DeepSeek 等纯文本模型补上图像理解与文档解析（OCR、表格、公式、PDF → Markdown）， 使用免费额度优… |
 | [dsh-plugin-github-market](https://github.com/w1661884010-jpg/dsh-plugin-github-market) | 1 | ⚪ unknown | 设置面板里浏览 GitHub dsh-plugin topic 仓库：模糊搜索 + 详情。 |
 | [dsh-xiapan-media](https://github.com/dongsheng123132/dsh-xiapan-media) | 3 | ⚪ unknown | 霞攀云媒体能力：原生视觉、gpt-image-2、Seedance 视频生成接进 DSH。 |
-| [TokenLedger](https://github.com/zh667/TokenLedger) | 164 | ⚪ unknown | Token 记账：对账 New API 与 Sub2API 中转站账单。 |
+| [TokenLedger](https://github.com/zh667/TokenLedger) | 166 | ⚪ unknown | Token 记账：对账 New API 与 Sub2API 中转站账单。 |
 | [dsh-conversation-cost](https://github.com/Ayaka157/dsh-conversation-cost) | 2 | ⚪ unknown | 在 DSH 对话底部统计行实时显示 DeepSeek 用量费用（人民币/美元双币，含缓存命中与峰谷定价） |
 | [glm4v-vision-mcp](https://github.com/ethanweave/glm4v-vision-mcp) | 2 | ⚪ unknown | GLM-4.6V 图像理解 MCP：识图/OCR/图表解析，原生接入 DeepSeek Harness（dsh-mcp-client），也兼容 Codex/Cline 等 |
 | [dsh-vision](https://github.com/linenxi-ctrl/dsh-vision) | 12 | 🟢 ok | 为 DeepSeek Harness 增加外挂识图模型：圆形鲸鱼按钮、发送图片识图自动回传、模型自主截图+识图工具、多协议自动适配、小白一键安装（未装 Node.js 自动下载） |
 | [dsh-vqa-agent](https://github.com/jypjypjypjyp/dsh-vqa-agent) | 2 | ⚪ unknown | DSH 插件:vqa_ask 双模型视觉问答 —— 主模型提问 → 视觉模型看图回答,UI 实时展示 QA 过程,支持多模态视觉模型选择 |
-| [dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) | 108 | 🟢 ok | Command Code 的 LLM provider（非官方）：实时模型目录、推理强度支持，Models 页有卡片。 |
-| [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) | 280 | 🟢 ok | 把 ChatGPT(Codex)、Claude、Grok(X Premium) 的订阅当 DSH 的模型 provider 用。 |
+| [dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) | 113 | 🟢 ok | Command Code 的 LLM provider（非官方）：实时模型目录、推理强度支持，Models 页有卡片。 |
+| [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) | 286 | 🟢 ok | 把 ChatGPT(Codex)、Claude、Grok(X Premium) 的订阅当 DSH 的模型 provider 用。 |
 | [dsh-gauge](https://github.com/noone89A/dsh-gauge) | 4 | 🟢 ok | 为 DeepSeek Harness Web UI 提供精确缓存命中率、token 用量与费用估算 |
 | [dsh-vision](https://github.com/Terry12138qy/dsh-vision) | 3 | 🟢 ok | DeepSeek Harness 识图插件：为不具备原生识图能力的模型提供识图能力（阿里云百炼 qwen3.5-omni-plus，失败自动切换智谱 glm-4.6v-flash）。由 claude-vision-skill 移植适配。 | Vision t… |
 | [dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) | 27 | 🟢 ok | DeepSeek Harness 插件：GitHub 风格用量热力图 + Token / 缓存命中 / 账户余额看板 + 工作区别名管理。 |
@@ -1383,7 +1387,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-vision-primitives](https://github.com/zouyuanqing/dsh-vision-primitives) | 2 | ⚪ unknown | 原生交互式视觉推理：精确像素级定位，让 agent 真正「看图说话」。 |
 | [deepseek-protocol-doctor](https://github.com/Whning0513/deepseek-protocol-doctor) | 2 | ⚪ unknown | 检查 DeepSeek 工具循环、reasoning_content、严格 schema 与 SSE 捕获。 |
 | [dsh-image-tools](https://github.com/xiaoxianyu-office/dsh-image-tools) | 3 | ⚪ unknown | DSH bundle plugin: chat-image bridge + read_image deny + conversational image_recognize for text-only main models | 纯文本主模型识图桥接与识图… |
-| [dsh-token-usage](https://github.com/LeemanCheung/dsh-token-usage) | 12 | 🟢 ok | Token 可观测性：持久统计模型用量，手动选择已接入模型生成用量与会话轨迹分析。 |
+| [dsh-token-usage](https://github.com/LeemanCheung/dsh-token-usage) | 13 | 🟢 ok | Token 可观测性：持久统计模型用量，手动选择已接入模型生成用量与会话轨迹分析。 |
 | [dsh-token-usage-calendar](https://github.com/Fiennes4590/dsh-token-usage-calendar) | 1 | ⚪ unknown | DeepSeek Harness（DSH）动态 Cordis Token 用量日历插件：真实日志聚合、日/周/月视图与深色模式 |
 | [dsh-conv-export](https://github.com/beijingwahw/dsh-conv-export) | 4 | ⚪ unknown | dsh-conv-export（对话导出）— export the current DeepSeek Harness conversation as Markdown, PDF, or a long PNG image |
 | [dsh-deepseek-vision-router](https://github.com/mochgolf/dsh-deepseek-vision-router) | 2 | ⚪ unknown | 透明图片预处理路由：给纯文本模型加视觉通道。 |
@@ -1409,22 +1413,22 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-token-activity](https://github.com/SnowNightt/dsh-token-activity) | 2 | ⚪ unknown | 用于展示最近365天的每日Token使用热力图，悬停任意日期查看当天使用过的全部模型及其Token用量。 |
 | [dsh-vision-bridge](https://github.com/lium970320/dsh-vision-bridge) | 1 | ⚪ unknown | DSH 视觉桥接插件：让无视觉能力的主模型看图（会话收图 + 自动转文字 + view_image 工具） |
 | [dsh-think-chinese](https://github.com/lingtima/dsh-think-chinese) | 0 | 🟢 ok | DSH 插件：让模型始终用中文进行内部推理与思考（think in Chinese）。 |
-| [dsh-reasoning-effort](https://github.com/HanaAyane/dsh-reasoning-effort) | 112 | 🟢 ok | DSH适用的Codex风格的思考强度滑块，以及大肥鱼跑步滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness |
+| [dsh-reasoning-effort](https://github.com/HanaAyane/dsh-reasoning-effort) | 116 | 🟢 ok | DSH适用的Codex风格的思考强度滑块，以及大肥鱼跑步滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness |
 | [dsh-vision-complete](https://github.com/Yts1919/dsh-vision-complete) | 42 | ⚪ unknown | 给 DeepSeek 补上「眼睛和耳朵」的多模态视觉插件：看图 / OCR / 物体检测 / 视频理解 / 语音转写 / 截图直读，一键安装（DSH 插件）。 |
 | [dsh-wallpaper](https://github.com/chinaRXQ/dsh-wallpaper) | 4 | 🟢 ok | Wallpaper skin for the DeepSeek Harness (dsh) web UI: image background with opacity, mask and blur controls. |
 | [dsh-auxiliary](https://github.com/dsh-plugins/dsh-auxiliary) | 6 | 🟢 ok | Auxiliary models for DeepSeek Harness: vision understanding and context compression through dedicated model routes. |
 | [dsh-minimal-turbo](https://github.com/ChangedenCZD/dsh-minimal-turbo) | 45 | ⚪ unknown | Deepseek Harness 极简模式 Windows适配，享用满血Deepseek-V4系列模型 |
 | [dsh-attachment-formats](https://github.com/linkingoscar/dsh-attachment-formats) | 3 | ⚪ unknown | Codex-style attachment formats for the DeepSeek Harness Web GUI: PDF text-layer extraction, Office text extraction, scanned-PDF O… |
-| [dsh-AuthInOne](https://github.com/Stormycry-cryp/dsh-AuthInOne) | 83 | ⚪ unknown | DeepSeek Harness plugin for OpenAI Codex account login, API and custom OpenAI-compatible providers, model switching, token usage… |
+| [dsh-AuthInOne](https://github.com/Stormycry-cryp/dsh-AuthInOne) | 86 | ⚪ unknown | DeepSeek Harness plugin for OpenAI Codex account login, API and custom OpenAI-compatible providers, model switching, token usage… |
 | [dsh-vision](https://github.com/reimu-create/dsh-vision) | 3 | 🟢 ok | DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-frie… |
 | [DeepSeek-harness-lark](https://github.com/sliverp/DeepSeek-harness-lark) | 3 | 🟢 ok | Feishu and Lark text and image channel plugin for DeepSeek Harness |
-| [dsh-client-masquerade](https://github.com/ymh0000123/dsh-client-masquerade) | 7 | ⚪ unknown | DeepSeek Harness dynamic plugin: masquerade a custom llm-pi-ai provider as Claude Code / Codex clients (spoofed identity headers). |
+| [dsh-client-masquerade](https://github.com/ymh0000123/dsh-client-masquerade) | 8 | ⚪ unknown | DeepSeek Harness dynamic plugin: masquerade a custom llm-pi-ai provider as Claude Code / Codex clients (spoofed identity headers). |
 | [dsh-reasoning-effort-hdbzq](https://github.com/flyemFSB/dsh-reasoning-effort-hdbzq) | 5 | ⚪ unknown | 滑动变祖器 |
 | [dsh-imggenerate](https://github.com/Bald0Wang/dsh-imggenerate) | 4 | ⚪ unknown | untranslated |
 | [dsh-llm-vision-bridge](https://github.com/Einskyle/dsh-llm-vision-bridge) | 4 | 🟢 ok | untranslated |
 | [dsh-llm-newapi](https://github.com/wenzetan/dsh-llm-newapi) | 6 | 🟢 ok | untranslated |
-| [deepseek-harness-studio](https://github.com/fufankeji/deepseek-harness-studio) | 528 | ⚪ unknown | untranslated |
-| [dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) | 25 | 🟢 ok | untranslated |
+| [deepseek-harness-studio](https://github.com/fufankeji/deepseek-harness-studio) | 537 | ⚪ unknown | untranslated |
+| [dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) | 26 | 🟢 ok | untranslated |
 | [dsh-plugin-multimodal](https://github.com/shinjiyu/dsh-plugin-multimodal) | 4 | ⚪ unknown | untranslated |
 | [dsh-mcp](https://github.com/ArvinQi/dsh-mcp) | 8 | ⚪ unknown | untranslated |
 | [dsh-read-url](https://github.com/2672243194/dsh-read-url) | 15 | ⚪ unknown | untranslated |
@@ -1439,24 +1443,24 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-sticky-notes](https://github.com/charrywhite/dsh-sticky-notes) | 7 | ⚪ unknown | untranslated |
 | [dsh-vision-plugin](https://github.com/Agents365-ai/dsh-vision-plugin) | 3 | ⚪ unknown | untranslated |
 | [dsh-weneed](https://github.com/Nwflower/dsh-weneed) | 5 | ⚪ unknown | untranslated |
-| [dsh-crew](https://github.com/ZSeven-W/dsh-crew) | 115 | 🟢 ok | untranslated |
-| [dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) | 17 | ⚪ unknown | untranslated |
-| [picturereader](https://github.com/jing-hy/picturereader) | 34 | ⚪ unknown | untranslated |
-| [dsh-imagegen](https://github.com/dickpy/dsh-imagegen) | 31 | ⚪ unknown | untranslated |
+| [dsh-crew](https://github.com/ZSeven-W/dsh-crew) | 117 | 🟢 ok | untranslated |
+| [dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) | 18 | ⚪ unknown | untranslated |
+| [picturereader](https://github.com/jing-hy/picturereader) | 35 | ⚪ unknown | untranslated |
+| [dsh-imagegen](https://github.com/dickpy/dsh-imagegen) | 34 | ⚪ unknown | untranslated |
 | [dsh-chat-imagine](https://github.com/corrinehu/dsh-chat-imagine) | 11 | ⚪ unknown | untranslated |
 | [dsh-deepseek-usage](https://github.com/mmzm0808/dsh-deepseek-usage) | 11 | 🟢 ok | untranslated |
 | [dsh-directorx](https://github.com/LaplaceYoung/dsh-directorx) | 15 | ⚪ unknown | untranslated |
 | [dsh-studio](https://github.com/jiuge2467/dsh-studio) | 11 | ⚪ unknown | untranslated |
 | [opencues](https://github.com/opencues/opencues) | 39 | ⚪ unknown | untranslated |
 | [dsh-live2d-mygo](https://github.com/U1s1-king/dsh-live2d-mygo) | 7 | ⚪ unknown | untranslated |
-| [dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) | 221 | 🟢 ok | untranslated |
+| [dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) | 235 | 🟢 ok | untranslated |
 | [dsh-mmx-bridge](https://github.com/welsione/dsh-mmx-bridge) | 10 | ⚪ unknown | untranslated |
-| [dsh-computer-use](https://github.com/988hj7tczd-oss/dsh-computer-use) | 15 | ⚪ unknown | untranslated |
+| [dsh-computer-use](https://github.com/988hj7tczd-oss/dsh-computer-use) | 17 | ⚪ unknown | untranslated |
 | [comm-protocol-hub](https://github.com/Thanksgiver233/comm-protocol-hub) | 16 | ⚪ unknown | untranslated |
 | [dsh-usage-plugin](https://github.com/Qiongkura/dsh-usage-plugin) | 4 | 🟢 ok | untranslated |
 | [dsh-skin](https://github.com/wei-806206088/dsh-skin) | 10 | ⚪ unknown | untranslated |
 | [dsh-minimal-vision](https://github.com/Flora233333/dsh-minimal-vision) | 6 | ⚪ unknown | untranslated |
-| [tongflow](https://github.com/tong-io/tongflow) | 938 | ⚪ unknown | untranslated |
+| [tongflow](https://github.com/tong-io/tongflow) | 941 | ⚪ unknown | untranslated |
 | [dsh-plugins](https://github.com/Horizon215/dsh-plugins) | 11 | ⚪ unknown | untranslated |
 | [dsh-visual-aid](https://github.com/shenyan-008/dsh-visual-aid) | 6 | ⚪ unknown | untranslated |
 | [dsh-modlens-installer](https://github.com/JR-JR07/dsh-modlens-installer) | 8 | ⚪ unknown | untranslated |
@@ -1464,21 +1468,22 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-llm-verifier](https://github.com/uson1x/dsh-plugin-llm-verifier) | 10 | ⚪ unknown | untranslated |
 | [dsh-thinking-levels](https://github.com/drscrewdriver/dsh-thinking-levels) | 4 | 🟢 ok | DSH 逐轮思考档位控制：Auto 依工具调用历史自动调度 low/high/max，或手动固定 off/low/high/max |
 | [dsh-free-vision](https://github.com/FuzzySoul/dsh-free-vision) | 8 | ⚪ unknown | untranslated |
-| [dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) | 17 | ⚪ unknown | untranslated |
+| [dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) | 18 | ⚪ unknown | untranslated |
 | [dsh-llm-verifier](https://github.com/Aa728848/dsh-llm-verifier) | 8 | 🟢 ok | untranslated |
 | [dsh-with-chatgpt](https://github.com/BeforeWave/dsh-with-chatgpt) | 33 | ⚪ unknown | untranslated |
-| [dsh-tool-hongtou](https://github.com/ExElectron/dsh-tool-hongtou) | 15 | 🟢 ok | untranslated |
+| [dsh-tool-hongtou](https://github.com/ExElectron/dsh-tool-hongtou) | 16 | 🟢 ok | untranslated |
 | [vision-exp-tile](https://github.com/Nicholas023/vision-exp-tile) | 13 | ⚪ unknown | untranslated |
-| [dsh-channels](https://github.com/wsz987/dsh-channels) | 9 | ⚪ unknown | untranslated |
-| [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 997 | ⚪ unknown (watchlist 占位→plugins；dsh.client 声明完整) | 给纯文本 DSH 智能体装上眼睛：内置免 key 免费视觉链 + 11 个像素级视觉工具，一条命令安装，无需 Python。 |
+| [dsh-channels](https://github.com/wsz987/dsh-channels) | 8 | ⚪ unknown | untranslated |
+| [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 1004 | ⚪ unknown (watchlist 占位→plugins；dsh.client 声明完整) | 给纯文本 DSH 智能体装上眼睛：内置免 key 免费视觉链 + 11 个像素级视觉工具，一条命令安装，无需 Python。 |
 | [dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) | 9 | ⚪ unknown | untranslated |
 | [dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) | 8 | ⚪ unknown | untranslated |
+| [dsh-galgame-generator](https://github.com/baisama-cloud/dsh-galgame-generator) | 8 | ⚪ unknown | untranslated |
 
 ### 🛡️ 沙箱
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [dsh-plugin-miliastra-toolbox](https://github.com/1475505/dsh-plugin-miliastra-toolbox) | 5 | ⚪ unknown | 将千星沙箱（原神千星奇域）知识库接入 Deepseek Harness 的插件 |
+| [dsh-plugin-miliastra-toolbox](https://github.com/1475505/dsh-plugin-miliastra-toolbox) | 6 | ⚪ unknown | 将千星沙箱（原神千星奇域）知识库接入 Deepseek Harness 的插件 |
 | [dsh-same-mode-sandbox-noop](https://github.com/zhangzujian/dsh-same-mode-sandbox-noop) | 4 | ⚪ unknown | dsh-same-mode-sandbox-noop — DSH 插件（沙箱） |
 | [dsh-shell-termux](https://github.com/kelai141/dsh-shell-termux) | 0 | ⚪ unknown | dsh 的安卓/Termux bash 能力提供者——显式 Termux 环境注入、探测诊断、诚实的应用域沙箱声明。 |
 | [dsh-bash-win](https://github.com/zimzaza4/dsh-bash-win) | 10 | ⚪ unknown | 在 Windows 环境中为 DeepSeek Harness 提供 Git Bash 与 WSL2 bash 工具,含 bwrap 沙箱、审批模式、后台任务 |
@@ -1494,17 +1499,17 @@ npm create dsh-plugin@latest my-plugin
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [openhanako](https://github.com/liliMozi/openhanako) | 6362 | ⚪ unknown | 带记忆、人格与自主性的个人 AI 智能体 |
-| [exo](https://github.com/exoharness/exo) | 886 | ⚪ unknown | 可递归自编辑自身的 agent+harness 架构 |
+| [openhanako](https://github.com/liliMozi/openhanako) | 6371 | ⚪ unknown | 带记忆、人格与自主性的个人 AI 智能体 |
+| [exo](https://github.com/exoharness/exo) | 889 | ⚪ unknown | 可递归自编辑自身的 agent+harness 架构 |
 | [synergy](https://github.com/SII-Holos/synergy) | 549 | ⚪ unknown | 面向 Open Agentic Web 的通用智能体 |
-| [ccteam](https://github.com/firstintent/ccteam) | 340 | ⚪ unknown | 把 Claude Code/Codex/Grok/Kimi 编成团队，Telegram/飞书指挥 |
+| [ccteam](https://github.com/firstintent/ccteam) | 351 | ⚪ unknown | 把 Claude Code/Codex/Grok/Kimi 编成团队，Telegram/飞书指挥 |
 | [MateBot](https://github.com/aresbit/MateBot) | 45 | ⚪ unknown | claudeclaw 复刻 |
 | [mstar-harness](https://github.com/btspoony/mstar-harness) | 57 | ⚪ unknown | Skill 驱动的 Harness/Loop 工程工作流插件 |
 | [dsh_workflow](https://github.com/icetomoyo/dsh_workflow) | 108 | 🟢 ok | 把 Claude Code 的 UltraCode 模式带给 DSH，多 Agent 调度可治理 |
 | [agents-go](https://github.com/zzir/agents-go) | 13 | ⚪ unknown | Go 语言多 agent 框架 |
 | [distill](https://github.com/LoserFox/distill) | 23 | ⚪ unknown | 自动对话蒸馏：后台 subagent 反省 + 技能更新 |
-| [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 1071 | 🟢 ok | AgentTeams 插件 |
-| [dsh-automation](https://github.com/titanwings/dsh-automation) | 81 | 🟢 ok | 让任务按计划在全新 Session 中运行定时任务 |
+| [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 1103 | 🟢 ok | AgentTeams 插件 |
+| [dsh-automation](https://github.com/titanwings/dsh-automation) | 82 | 🟢 ok | 让任务按计划在全新 Session 中运行定时任务 |
 | [dsh-loop](https://github.com/vlln/dsh-loop) | 5 | 🟢 ok | 定时循环（/loop 命令 + loop 工具） |
 | [dsh-plannotator](https://github.com/titanwings/dsh-plannotator) | 10 | 🟢 ok | 计划批注：选中计划原文逐条批注 |
 | [dsh-task-status](https://github.com/vlln/dsh-task-status) | 9 | ⚪ unknown | 后台任务状态条（进度 + 实时 tail） |
@@ -1520,7 +1525,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-product-subagents](https://github.com/shaokeyibb/dsh-plugin-product-subagents) | 18 | 🟢 ok | 角色化 Codex/Claude Code/ACP 子代理预设。 |
 | [dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) | 22 | 🟢 ok | Git 风格里程碑时间线插件。 |
 | [shopline-ai-toolkit-dsh](https://github.com/lunw/shopline-ai-toolkit-dsh) | 4 | ⚪ unknown | shopline-ai-toolkit-dsh — DSH 插件（编排） |
-| [dsh-playwright-cli](https://github.com/mitao-su/dsh-playwright-cli) | 2 | ⚪ unknown | dsh-playwright-cli — DSH 插件（编排） |
+| [dsh-playwright-cli](https://github.com/mitao-su/dsh-playwright-cli) | 3 | ⚪ unknown | dsh-playwright-cli — DSH 插件（编排） |
 | [dsh-review-loop](https://github.com/wuxiangru915/dsh-review-loop) | 2 | ⚪ unknown | dsh-review-loop — DSH 插件（编排） |
 | [securstack-dsh-plugin](https://github.com/securstack/securstack-dsh-plugin) | 3 | ⚪ unknown | securstack-dsh-plugin — DSH 插件（编排） |
 | [dsh-multi-cot](https://github.com/AprilWizard/dsh-multi-cot) | 2 | ⚪ unknown | dsh-multi-cot — DSH 插件（编排） |
@@ -1584,19 +1589,19 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-subagent-cwd](https://github.com/lynx-gt/dsh-subagent-cwd) | 3 | ⚪ unknown | 子代理派发增强：给 DSH 的子代理委派工具加料。 |
 | [dsh-self-evolution](https://github.com/Lhy723/dsh-self-evolution) | 2 | 🟢 ok | Benchmark-driven self-evolution for DeepSeek Harness · 冻结基准上的 Agent Profile 自我进化：评测 → 候选 → 严格接受/回滚 |
 | [dsh-test-workbench](https://github.com/dmsobtl/dsh-test-workbench) | 2 | ⚪ unknown | 基于 DeepSeek Harness 的测试工作台 Profile —— 开箱即用的 QA Agent。 |
-| [WorkbuddySkillGroups4DSH](https://github.com/darker2016/WorkbuddySkillGroups4DSH) | 1 | ⚪ unknown | WorkBuddy 专家团 Skill 开源包 → DeepSeek Harness (dsh) 插件式 skillgroups 包：44 个多角色专家团队 SKILL.md bundle，支持 ~/.dsh/skills 安装与 Cordis 插件注册。W… |
+| [WorkbuddySkillGroups4DSH](https://github.com/darker2016/WorkbuddySkillGroups4DSH) | 2 | ⚪ unknown | WorkBuddy 专家团 Skill 开源包 → DeepSeek Harness (dsh) 插件式 skillgroups 包：44 个多角色专家团队 SKILL.md bundle，支持 ~/.dsh/skills 安装与 Cordis 插件注册。W… |
 | [dsh-advisor](https://github.com/slhssb/dsh-advisor) | 1 | 🟢 ok | 独立模型顾问审查：每个工具步骤后给一次建议性审查。 |
 | [dsh-wsl-bridge](https://github.com/ch1bug/dsh-wsl-bridge) | 2 | ⚪ unknown | WSL agent 的 Windows 访问工具：win_ls/win_read/win_run 等。 |
-| [dsh-phone](https://github.com/railgun0325/dsh-phone) | 17 | ⚪ unknown | 让 DeepSeek Harness 的 agent 跑在手机里，通过 Magisk root 原生操作安卓系统（截图/点击/滑动/开应用）+ 移动端布局 + WebView APK |
+| [dsh-phone](https://github.com/railgun0325/dsh-phone) | 18 | ⚪ unknown | 让 DeepSeek Harness 的 agent 跑在手机里，通过 Magisk root 原生操作安卓系统（截图/点击/滑动/开应用）+ 移动端布局 + WebView APK |
 | [dsh-godot-tool](https://github.com/Fromlan/dsh-godot-tool) | 3 | ⚪ unknown | AI 驱动 Godot 4.x 编辑器：agent_rpc 插件 + DSH 接入。 |
 | [dsh-plugin-dated-folders](https://github.com/Aeanfx/dsh-plugin-dated-folders) | 0 | 🟢 ok | 本插件由 DeepSeek Harness AI 完全制作，人工仅辅助操作（账号/上传/2FA 发布）。Tidy by date — every file your agent generates is archived into a YYYY-MM-DD_… |
-| [dsh-kun-like-pet](https://github.com/liyupi/dsh-kun-like-pet) | 84 | 🟢 ok | Kun Like 桌宠 —— DeepSeek Harness 桌面宠物插件：右下角小坤宠随 Agent 工作状态切换 9 种动作，任务完成播放「你干嘛~哎哟」 |
-| [dsh-file-review](https://github.com/left0ver/dsh-file-review) | 27 | 🟢 ok | 改完就能审：agent 刚动过的文件直接看 diff，不用离开 DSH Web。 |
+| [dsh-kun-like-pet](https://github.com/liyupi/dsh-kun-like-pet) | 86 | 🟢 ok | Kun Like 桌宠 —— DeepSeek Harness 桌面宠物插件：右下角小坤宠随 Agent 工作状态切换 9 种动作，任务完成播放「你干嘛~哎哟」 |
+| [dsh-file-review](https://github.com/left0ver/dsh-file-review) | 29 | 🟢 ok | 改完就能审：agent 刚动过的文件直接看 diff，不用离开 DSH Web。 |
 | [embedded-workbench](https://github.com/AmethystLuna/embedded-workbench) | 3 | ⚪ unknown | 嵌入式 C/C++ AI 工程插件：固件技能（FreeRTOS、Keil、HardFault 调试）。 |
 | [dsh-workflow-worktree](https://github.com/lisycotana/dsh-workflow-worktree) | 0 | ⚪ unknown | 工作流 git worktree 隔离后端：每个写会话独立工作树。 |
 | [dsh-plugin-finder](https://github.com/meme-dog/dsh-plugin-finder) | 2 | ⚪ unknown | 会话内找插件：搜索 GitHub 社区 DSH 插件按 star 排序，每条带一键安装命令。 |
 | [Code2Skill](https://github.com/leechen298/Code2Skill) | 8 | ⚪ unknown | 从现有代码生成 Function、MCP、Agent Skill 和离线测试包。 |
-| [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 3012 | ⚪ unknown | 通用技能调度器：自动挑选最合适的本地 Skill 并编排整个 Harness 工作流，不用手动指定用哪个技能。 |
+| [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 3018 | ⚪ unknown | 通用技能调度器：自动挑选最合适的本地 Skill 并编排整个 Harness 工作流，不用手动指定用哪个技能。 |
 | [kph](https://github.com/ylouis8/kph) | 2 | ⚪ unknown | 基于dsh的量化研究agent，驱动真实回测与交易。 |
 | [dsh-skill-lord-serf](https://github.com/ttxl314/dsh-skill-lord-serf) | 1 | ⚪ unknown | DeepSeek Harness 插件：Lord/Serf 协议 0.5 技能，让 DSH 实现文件式多智能体编排（Lord 派活，Serf 干活）。 DeepSeek Harness plugin: Lord/Serf protocol 0.5 skill… |
 | [plugin-team-board](https://github.com/whyihaveyou/dsh-suite) | 7 | 🟢 ok | 多 agent 会话共享任务看板：跨 subagent 创建/认领/更新/查询任务，基于 append-only 会话日志持久化。 |
@@ -1618,14 +1623,14 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-agent-board](https://github.com/MiloMMIN/dsh-agent-board) | 2 | ⚪ unknown | 跨 Agent 工作台:dsh persistent plugin that watches Claude Code / Codex / Kimi Code / Pi / Hermes and continues their work with one cl… |
 | [dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench) | 8 | 🟢 ok | 可复现科学工作台：agent 驱动的计算、实验记录与复现流程，科研党友好。 |
 | [dsh-vscode](https://github.com/MJ-Chang/dsh-vscode) | 5 | ⚪ unknown | VS Code 右侧聊天 agent：能读、改、跑代码的 DSH 集成。 |
-| [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) | 62 | ⚪ unknown | 88 个可直接安装的 Agent 技能：覆盖研究与增长工作流，带 npm CLI 分发。 |
+| [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) | 65 | ⚪ unknown | 88 个可直接安装的 Agent 技能：覆盖研究与增长工作流，带 npm CLI 分发。 |
 | [dsh-plugin-acn](https://github.com/acnlabs/dsh-plugin-acn) | 3 | ⚪ unknown | 加入 ACN：agent 之间互相发现、发消息、协作。 |
 | [dsh-fleet-audit](https://github.com/LeslieWylie/dsh-fleet-audit) | 2 | ⚪ unknown | agent 集群卫生审计：凭据文件权限、内嵌 git 泄漏等。 |
 | [dsh-agent-hub](https://github.com/Luoye-1026/dsh-agent-hub) | 1 | ⚪ unknown | dsh-agent-hub是一个统一指挥本机 Agent的 DSH 插件，目前支持（Codex / Reasonix / Pi / DSH） |
 | [dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) | 6 | ⚪ unknown | 让 agent 打电话给你：问题通过真实电话语音提问，你语音回答。 |
 | [dsh-plugin-kit](https://github.com/OneZero-Y/dsh-plugin-kit) | 3 | ⚪ unknown | 独立 DSH 插件开发的技能与可运行模板。 |
 | [git-worktree](https://github.com/KHG420/git-worktree) | 2 | ⚪ unknown | 每个会话绑定独立 git 工作树：多会话同一项目并行互不干扰。 |
-| [godot-bridge](https://github.com/Smalldy/godot-bridge) | 17 | ⚪ unknown | Godot 4.x 游戏桥：启动并通过游戏内 TCP 服务器驱动运行中的游戏，替代手动操作。 |
+| [godot-bridge](https://github.com/Smalldy/godot-bridge) | 18 | ⚪ unknown | Godot 4.x 游戏桥：启动并通过游戏内 TCP 服务器驱动运行中的游戏，替代手动操作。 |
 | [dsh-billing](https://github.com/nianpangzhi233/dsh-billing) | 3 | 🟢 ok | 实时计费监控：token/花费计量、V4 峰谷价格。 |
 | [dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) | 9 | ⚪ unknown | 持久实时 DAG 拓扑：子代理与工作流的关系可视化。 |
 | [preset-center (场景预设)](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/preset-center) | 1 | 🟢 ok | 中文开箱即用预设全家桶：小红书笔记助手 / 中文文案润色 / 日报周报生成器，一键应用到官方 Agent presets，无需重启、选择器立即可见。 |
@@ -1646,7 +1651,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-finance](https://github.com/zhang787jun/dsh-finance) | 7 | ⚪ unknown | 财务与会计工作流（改编自 Anthropic Finance）：记账对账自动化。 |
 | [dsh-grok-geo](https://github.com/xuboboo/dsh-grok-geo) | 3 | ⚪ unknown | GEO 品牌审计技能包（grok-geo）。 |
 | [dsh-cluster](https://github.com/Lanxi26/dsh-cluster) | 2 | ⚪ unknown | 画布式多智能体协作插件 | Canvas-based multi-agent cooperation plugin for DeepSeek Harness |
-| [dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) | 12 | 🟢 ok | Live2D 桌宠插件 for DeepSeek Harness：Agent 状态镜像 + 互动陪伴，内置宽松许可预设模型 / Live2D pet plugin: agent state mirror + interactive companion wit… |
+| [dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) | 13 | 🟢 ok | Live2D 桌宠插件 for DeepSeek Harness：Agent 状态镜像 + 互动陪伴，内置宽松许可预设模型 / Live2D pet plugin: agent state mirror + interactive companion wit… |
 | [dsh-awiki](https://github.com/AgentConnect/dsh-awiki) | 12 | 🟢 ok | AWiki identity and messaging plugin for DeepSeek Harness |
 | [dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) | 8 | 🟢 ok | Writing engine for DeepSeek Harness: long-form web-novel orchestration with a separate DeepSeek key, lore management, semantic re… |
 | [oh-my-dsh](https://github.com/agi-fans/oh-my-dsh) | 25 | 🟢 ok | untranslated |
@@ -1654,26 +1659,26 @@ npm create dsh-plugin@latest my-plugin
 | [clawock](https://github.com/KCNyu/clawock) | 13 | ⚪ unknown | untranslated |
 | [mcp-sentinel](https://github.com/GCS-ZHN/mcp-sentinel) | 6 | ⚪ unknown | untranslated |
 | [ds-spec-loop](https://github.com/songyang0603/ds-spec-loop) | 38 | ⚪ unknown | untranslated |
-| [dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) | 141 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) | 148 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-global-rules](https://github.com/badai147/dsh-global-rules) | 11 | ⚪ unknown | untranslated |
 | [dsh-zotero](https://github.com/Vncntvx/dsh-zotero) | 10 | 🟢 ok | untranslated |
 | [dsh-ankh-guard](https://github.com/Khorsheed/dsh-ankh-guard) | 7 | ⚪ unknown | untranslated |
-| [caliper](https://github.com/edonadei/caliper) | 66 | ⚪ unknown | untranslated |
+| [caliper](https://github.com/edonadei/caliper) | 55 | ⚪ unknown | untranslated |
 | [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) | 108 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
-| [dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) | 8 | ⚪ unknown | untranslated |
+| [dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) | 9 | ⚪ unknown | untranslated |
 | [dsh-router-flash](https://github.com/xiaoxianyu-office/dsh-router-flash) | 14 | ⚪ unknown | untranslated |
 | [dsh-anchored-flash](https://github.com/ruler770525/dsh-anchored-flash) | 7 | ⚪ unknown | untranslated |
 | [dsh-loop-dock](https://github.com/euuuuuuzer/dsh-loop-dock) | 7 | ⚪ unknown | untranslated |
 | [dsh-chinese-traditional-wisdom-skill](https://github.com/dhicoc/dsh-chinese-traditional-wisdom-skill) | 27 | ⚪ unknown | untranslated |
 | [dsh-deepread](https://github.com/xiehuan123/dsh-deepread) | 39 | 🟢 ok | untranslated |
 | [kimi-tide](https://github.com/tafcear/kimi-tide) | 6 | ⚪ unknown | untranslated |
-| [dsh-plugin-guard](https://github.com/lxzy-7/dsh-plugin-guard) | 33 | ⚪ unknown | untranslated |
+| [dsh-plugin-guard](https://github.com/lxzy-7/dsh-plugin-guard) | 34 | ⚪ unknown | untranslated |
 | [dsh-file-upload](https://github.com/HongMing-Huang/dsh-file-upload) | 18 | 🟢 ok | untranslated |
 | [dsh-browser4](https://github.com/platonai/dsh-browser4) | 7 | 🟢 ok | untranslated |
 | [dsh-fate-spectrum](https://github.com/EchoUser005/dsh-fate-spectrum) | 9 | 🟢 ok | untranslated |
-| [dsh-agent-skills](https://github.com/minivv/dsh-agent-skills) | 11 | 🟢 ok | untranslated |
+| [dsh-agent-skills](https://github.com/minivv/dsh-agent-skills) | 12 | 🟢 ok | untranslated |
 | [dsh-plugin-mcp-manager](https://github.com/HuanLinOTO/dsh-plugin-mcp-manager) | 4 | ⚪ unknown | untranslated |
-| [dsh-quant](https://github.com/pengpengyi92/dsh-quant) | 23 | 🟢 ok | untranslated |
+| [dsh-quant](https://github.com/pengpengyi92/dsh-quant) | 24 | 🟢 ok | untranslated |
 | [dsh-ha-orchestrator](https://github.com/Saktawdi/dsh-ha-orchestrator) | 9 | 🟢 ok | untranslated |
 | [dsh-plugin-codegraph](https://github.com/CC19990113/dsh-plugin-codegraph) | 11 | ⚪ unknown | untranslated |
 | [toolshrink](https://github.com/unclecode/toolshrink) | 11 | ⚪ unknown | untranslated |
@@ -1687,26 +1692,26 @@ npm create dsh-plugin@latest my-plugin
 | [dshw](https://github.com/kermanx/dshw) | 8 | ⚪ unknown | untranslated |
 | [querit-plugins](https://github.com/querit-ai/querit-plugins) | 8 | ⚪ unknown | untranslated |
 | [dsh-Kingdom](https://github.com/lusblead/dsh-Kingdom) | 14 | ⚪ unknown | untranslated |
-| [dsh-evolve-modes](https://github.com/GraySilver/dsh-evolve-modes) | 127 | ⚪ unknown | untranslated |
+| [dsh-evolve-modes](https://github.com/GraySilver/dsh-evolve-modes) | 134 | ⚪ unknown | untranslated |
 | [hard-flash](https://github.com/Soulize/hard-flash) | 10 | ⚪ unknown | untranslated |
 | [dsh-virtual-product-team](https://github.com/songoao25/dsh-virtual-product-team) | 5 | ⚪ unknown | untranslated |
-| [dsh-ego-browser](https://github.com/Fisfzy/dsh-ego-browser) | 49 | ⚪ unknown | untranslated |
+| [dsh-ego-browser](https://github.com/Fisfzy/dsh-ego-browser) | 50 | ⚪ unknown | untranslated |
 | [dsh-ux](https://github.com/ayuanwong/dsh-ux) | 14 | ⚪ unknown | untranslated |
 | [dsh-agency-agents](https://github.com/MichengAI/dsh-agency-agents) | 22 | ⚪ unknown | untranslated |
 | [dsh-skill-7d-code-reviewer](https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer) | 9 | ⚪ unknown | untranslated |
 | [deep-read-summarize](https://github.com/PensiveFei/deep-read-summarize) | 23 | ⚪ unknown | untranslated |
 | [holdem](https://github.com/shinjiyu/holdem) | 10 | ⚪ unknown | untranslated |
 | [hedgehog](https://github.com/skyf0xx/hedgehog) | 32 | ⚪ unknown | untranslated |
-| [dsh-router-standard](https://github.com/yjh051108/dsh-router-standard) | 371 | ⚪ unknown | untranslated |
-| [dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) | 13 | ⚪ unknown | untranslated |
-| [dsh-file-review-tab](https://github.com/Lzh3070/dsh-file-review-tab) | 12 | 🟢 ok | untranslated |
+| [dsh-router-standard](https://github.com/yjh051108/dsh-router-standard) | 370 | ⚪ unknown | untranslated |
+| [dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) | 15 | ⚪ unknown | untranslated |
+| [dsh-file-review-tab](https://github.com/Lzh3070/dsh-file-review-tab) | 14 | 🟢 ok | untranslated |
 | [pptwise](https://github.com/liustack/pptwise) | 8 | ⚪ unknown | untranslated |
 | [dsh-lark-bridge](https://github.com/moyu-good/dsh-lark-bridge) | 2 | 🟢 ok | 飞书/Lark IM 深度通道：原生思考过程、审批卡片、goal/todo 实时卡片、workflow 展开、会话检索、后台任务与子代理通知 |
-| [dsh-raw-html](https://github.com/plolpl789/dsh-raw-html) | 19 | ⚪ unknown | untranslated |
+| [dsh-raw-html](https://github.com/plolpl789/dsh-raw-html) | 21 | ⚪ unknown | untranslated |
 | [dsh-model-switch](https://github.com/lincong1987/dsh-model-switch) | 10 | ⚪ unknown | untranslated |
 | [oh-my-knowledge](https://github.com/lizhiyao/oh-my-knowledge) | 18 | ⚪ unknown | untranslated |
-| [dsh-Mimir-Academic-research](https://github.com/1692775560/dsh-Mimir-Academic-research) | 86 | ⚪ unknown | untranslated |
-| [dsh-better-input](https://github.com/DIAG5/dsh-better-input) | 14 | 🟢 ok | untranslated |
+| [dsh-Mimir-Academic-research](https://github.com/1692775560/dsh-Mimir-Academic-research) | 91 | ⚪ unknown | untranslated |
+| [dsh-better-input](https://github.com/DIAG5/dsh-better-input) | 15 | 🟢 ok | untranslated |
 
 ### 🔌 桥接
 
@@ -1726,15 +1731,15 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-kimi-bridge](https://github.com/pandashere/dsh-kimi-bridge) | 1 | ⚪ unknown | dsh-kimi-bridge — DSH 插件（桥接） |
 | [deepseek-harness-lan](https://github.com/oitsukiii/deepseek-harness-lan) | 8 | ⚪ unknown | deepseek-harness-lan — DSH 插件（桥接） |
 | [jina-dsh-plugin](https://github.com/minatoAI/jina-dsh-plugin) | 1 | ⚪ unknown | jina-dsh-plugin — DSH 插件（桥接） |
-| [dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) | 9 | 🟢 ok | dsh-lsp-actions — DSH 插件（桥接） |
+| [dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) | 10 | 🟢 ok | dsh-lsp-actions — DSH 插件（桥接） |
 | [dsh-chrome](https://github.com/YJSoooooo/dsh-chrome) | 2 | ⚪ unknown | dsh-chrome — DSH 插件（桥接） |
 | [dsh-exa-mcp](https://github.com/MicroHEROX/dsh-exa-mcp) | 3 | ⚪ unknown | dsh-exa-mcp — DSH 插件（桥接） |
 | [dsh-switch](https://github.com/dongsheng123132/dsh-switch) | 3 | ⚪ unknown | dsh-switch — DSH 插件（桥接） |
 | [dsh-deepseek-balance](https://github.com/wangxiang0605qvq/dsh-deepseek-balance) | 0 | 🟢 ok | dsh-deepseek-balance — DSH 插件（桥接） |
-| [dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) | 126 | 🟢 ok | Token 用量热力图 + 分模型明细 + DeepSeek 账户余额，全部在一个 Web 面板里看。 |
-| [deepseek-harness-acp](https://github.com/openma-ai/deepseek-harness-acp) | 17 | ⚪ unknown | ACP 服务器实现：让外部工具通过 Agent Client Protocol 驱动 DSH。 |
+| [dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) | 128 | 🟢 ok | Token 用量热力图 + 分模型明细 + DeepSeek 账户余额，全部在一个 Web 面板里看。 |
+| [deepseek-harness-acp](https://github.com/openma-ai/deepseek-harness-acp) | 18 | ⚪ unknown | ACP 服务器实现：让外部工具通过 Agent Client Protocol 驱动 DSH。 |
 | [dsh-quota-panel](https://github.com/brittanistrehlowll-oss/dsh-quota-panel) | 4 | 🟢 ok | Provider 配额/余额角落面板：服务端凭证代理 + 配置驱动的显示。 |
-| [pi2dsh](https://github.com/weijiafu14/pi2dsh) | 168 | 🟢 ok | Bridge the Pi and DeepSeek Harness ecosystems: one Pi Host ABI runs unmodified Pi extensions as native DSH plugins. 打通 Pi 与 DSH 生… |
+| [pi2dsh](https://github.com/weijiafu14/pi2dsh) | 170 | 🟢 ok | Bridge the Pi and DeepSeek Harness ecosystems: one Pi Host ABI runs unmodified Pi extensions as native DSH plugins. 打通 Pi 与 DSH 生… |
 | [dsh-plugin-deepseek-balance](https://github.com/hnmrxz/dsh-plugin-deepseek-balance) | 5 | ⚪ unknown | 在 DeepSeek Harness (dsh) 底部状态栏实时显示 DeepSeek 账户余额。 |
 | [dsh-weather](https://github.com/sunshine-lang/dsh-weather) | 7 | ⚪ unknown | 天气工具：Open-Meteo 免费接口，实时天气 + 多日预报，无需 API key。 |
 | [dsh-pdf](https://github.com/sunshine-lang/dsh-pdf) | 7 | ⚪ unknown | PDF 工具箱：本地用 pdfjs-dist 提取文本、元数据和指定页，不联网不用 key。 |
@@ -1742,11 +1747,11 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugins](https://github.com/sunshine-lang/dsh-plugins) | 5 | ⚪ unknown | sunshine-lang 的 DSH 插件总入口：dsh-weather、dsh-pdf 等一包集齐。 |
 | [Dcode](https://github.com/Deklan-Deng/Dcode) | 1 | ⚪ unknown | Deepseek-harness 桌面端 |
 | [deepseek-harness-codex-bridge](https://github.com/Aloneswork/deepseek-harness-codex-bridge) | 2 | ⚪ unknown | Codex 主导、DSH 辅助的本地双向 MCP 协作桥。 |
-| [dsh-easyssh](https://github.com/chenw2759-wq/dsh-easyssh) | 26 | ⚪ unknown | 用于远程ssh快速相应，同时可以直接在前端操作/查看远程服务器上的信息与代码。 |
+| [dsh-easyssh](https://github.com/chenw2759-wq/dsh-easyssh) | 27 | ⚪ unknown | 用于远程ssh快速相应，同时可以直接在前端操作/查看远程服务器上的信息与代码。 |
 | [dsh-plugin-deepseek-balance](https://github.com/fishxcode/dsh-plugin-deepseek-balance) | 1 | ⚪ unknown | Web 客户端实时显示 DeepSeek API 余额。 |
-| [dsh-remote](https://github.com/flymysql/dsh-remote) | 37 | 🟢 ok | 远程接入助手：/remote 命令 + 设置页直接打印 SSH 隧道/反向隧道命令，远程工作区一键连。 |
+| [dsh-remote](https://github.com/flymysql/dsh-remote) | 38 | 🟢 ok | 远程接入助手：/remote 命令 + 设置页直接打印 SSH 隧道/反向隧道命令，远程工作区一键连。 |
 | [dsh-web-billing](https://github.com/bpc-oss/dsh-web-billing) | 13 | ⚪ unknown | 人民币/美元 token 计费：按官方政策自动计价，支持峰谷时段、逐消息台账和账户概览。 |
-| [dsh-spend](https://github.com/nonewind/dsh-spend) | 9 | 🟢 ok | 悬浮费用监控：多维统计、时序图、自动识别计费方案，实时盯着 token 和花费。 |
+| [dsh-spend](https://github.com/nonewind/dsh-spend) | 10 | 🟢 ok | 悬浮费用监控：多维统计、时序图、自动识别计费方案，实时盯着 token 和花费。 |
 | [dsh-Kimi-WebBridge](https://github.com/MicroHEROX/dsh-Kimi-WebBridge) | 3 | 🟢 ok | Kimi WebBridge：把用户真实浏览器（含登录态）交给 DSH agent 使用。 |
 | [dsh-randomuuid-polyfill](https://github.com/Lehmaning/dsh-randomuuid-polyfill) | 0 | ⚪ unknown | 在不安全源（纯 HTTP）补 crypto.randomUUID。 |
 | [dsh-deepseek-quota](https://github.com/yingjunnan/dsh-deepseek-quota) | 4 | 🟢 ok | 右下角悬浮 DeepSeek API 余额组件。 |
@@ -1756,16 +1761,16 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-llm-oauth](https://github.com/ziyou979/dsh-llm-oauth) | 7 | ⚪ unknown | OAuth/订阅制 LLM provider 全家桶：Grok、GitHub Copilot、OpenAI Codex、Anthropic、OpenRouter。 |
 | [dsh-lan-uuid-fix](https://github.com/Zenjibad/dsh-lan-uuid-fix) | 0 | ⚪ unknown | 不安全源补 crypto.randomUUID polyfill（bundle）。 |
 | [dsh-plugin-finder](https://github.com/ihuajiu/dsh-plugin-finder) | 3 | ⚪ unknown | 自然语言找插件：说需求，给你匹配 dsh.so 仓库的插件和安装命令。 |
-| [dsh-multi-user-gateway](https://github.com/AnkoCD/dsh-multi-user-gateway) | 16 | ⚪ unknown | 服务器端部署：DeepSeek Harness Web 多用户网关（登录门户 / 每用户实例隔离 / 交付文件抽屉）。部署于远程服务器，用户通过浏览器访问，非本机工具。 |
-| [deepseek-harness-mobile](https://github.com/sorsama/deepseek-harness-mobile) | 46 | ⚪ unknown | 安卓伴侣应用：聊天、目标、审批与通知，手机随时遥控 DSH。 |
+| [dsh-multi-user-gateway](https://github.com/AnkoCD/dsh-multi-user-gateway) | 17 | ⚪ unknown | 服务器端部署：DeepSeek Harness Web 多用户网关（登录门户 / 每用户实例隔离 / 交付文件抽屉）。部署于远程服务器，用户通过浏览器访问，非本机工具。 |
+| [deepseek-harness-mobile](https://github.com/sorsama/deepseek-harness-mobile) | 47 | ⚪ unknown | 安卓伴侣应用：聊天、目标、审批与通知，手机随时遥控 DSH。 |
 | [dsh-tailscale-console](https://github.com/evanfang0054/dsh-tailscale-console) | 1 | ⚪ unknown | 为 DeepSeek Harness 提供基于 Tailscale 的安全远程访问运营面板：一键健康检查、HTTPS 入口开关、macOS 代理绕过、中继服务器运维、ACL 生成。Tailscale remote-access control panel f… |
-| [dsh-server-deployment](https://github.com/AnkoCD/dsh-server-deployment) | 16 | ⚪ unknown | 服务器端部署：DeepSeek Harness Web 多用户网关（登录门户 / 每用户实例隔离 / 交付文件抽屉）。部署于远程服务器，用户通过浏览器访问，非本机工具。 |
+| [dsh-server-deployment](https://github.com/AnkoCD/dsh-server-deployment) | 17 | ⚪ unknown | 服务器端部署：DeepSeek Harness Web 多用户网关（登录门户 / 每用户实例隔离 / 交付文件抽屉）。部署于远程服务器，用户通过浏览器访问，非本机工具。 |
 | [dsh-balance-eta](https://github.com/fzlong/dsh-balance-eta) | 2 | ⚪ unknown | DeepSeek Harness 极简余额插件：余额 + 今日消耗 + 可用时长预测 + 低余额告警（仅 CNY，价格无关免维护） |
 | [dsh-think-any-lang](https://github.com/lco117/dsh-think-any-lang) | 3 | ⚪ unknown | DeepSeek Harness 插件：在「设置 → 通用」中选择模型推理思考（chain of thought）使用的语言。基于系统提示词实现，零额外调用、零延迟，支持 12 种语言。 |
-| [dsh-balance](https://github.com/crazywoola/dsh-balance) | 23 | 🟢 ok | 余额插件：设置页直接看 DeepSeek 账户余额。 |
+| [dsh-balance](https://github.com/crazywoola/dsh-balance) | 24 | 🟢 ok | 余额插件：设置页直接看 DeepSeek 账户余额。 |
 | [dsh-LAN](https://github.com/MrMu666/dsh-LAN) | 7 | ⚪ unknown | 为DeepSeek harness开启局域网访问及移动端页面的插件 |
 | [dsh-provider-billing](https://github.com/ZeroingIn/dsh-provider-billing) | 2 | 🟢 ok | Models 设置行内显示 provider 账户余额。 |
-| [dsh-IDE](https://github.com/chenw2759-wq/dsh-IDE) | 26 | ⚪ unknown | 这是一个ssh前端程序，可以让UI体现类似lab的功能！用于远程ssh快速相应，同时可以直接在前端操作/查看远程服务器上的信息与代码。 |
+| [dsh-IDE](https://github.com/chenw2759-wq/dsh-IDE) | 27 | ⚪ unknown | 这是一个ssh前端程序，可以让UI体现类似lab的功能！用于远程ssh快速相应，同时可以直接在前端操作/查看远程服务器上的信息与代码。 |
 | [dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) | 11 | 🟢 ok | DeepSeek 用量/成本/余额仪表盘：实时 token、费用估算、每轮图表、API 余额。 |
 | [dsh-remote-ide](https://github.com/harryopo/dsh-remote-ide) | 3 | ⚪ unknown | SSH 远程 IDE：连上 SSH 整个 IDE 跟着走，远程开发像本地一样。 |
 | [dsh-balance](https://github.com/linshule/dsh-balance) | 6 | 🟢 ok | DeepSeek API 账户余额实时显示插件（DSH Web GUI）：可拖拽左下角余额徽章 + 设置页 |
@@ -1775,7 +1780,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-balance-float](https://github.com/x2802490130-prog/dsh-balance-float) | 5 | 🟢 ok | DSH 悬浮余额/一键退出插件 |
 | [dsh-balance-monitor](https://github.com/Rainronin/dsh-balance-monitor) | 3 | 🟢 ok | 一个好看、简单、实用的余额监视器｜DeepSeek Harness 插件：官方余额快照 + ds_balance 工具 + Matrix 侧边栏徽章 |
 | [dsh-api-balance](https://github.com/ArcanePivot/dsh-api-balance) | 5 | ⚪ unknown | 宿主侧余额小组件：Web 界面直接查看 DeepSeek API 余额。 |
-| [dsh-balance-plugin](https://github.com/Francis-Xavier-code/dsh-balance-plugin) | 56 | 🟢 ok | deepSeek 余额监控与用量统计（DSH 动态 Cordis 插件）：余额监控 · 官方充值入口 · 用量统计 · 三方插件管理 |
+| [dsh-balance-plugin](https://github.com/Francis-Xavier-code/dsh-balance-plugin) | 57 | 🟢 ok | deepSeek 余额监控与用量统计（DSH 动态 Cordis 插件）：余额监控 · 官方充值入口 · 用量统计 · 三方插件管理 |
 | [dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) | 26 | ⚪ unknown | 局域网访问 Web 插件。 |
 | [hesi-dsh-plugins](https://github.com/qiuqiukof-oss/hesi-dsh-plugins) | 3 | ⚪ unknown | DeepSeek Harness (DSH) 插件 —— 圆桌讨论（Roundtable）与 一键执行流（Plan） Hesi 出品 · 同源实现 |
 | [dsh-api-balance](https://github.com/9Epuuuu/dsh-api-balance) | 2 | 🟢 ok | DSH Web 的 DeepSeek 账户余额读取。 |
@@ -1785,26 +1790,26 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-deepseek-quota](https://github.com/cn-scuo-oo/dsh-deepseek-quota) | 3 | 🟢 ok | untranslated |
 | [dsh-better-deepseek](https://github.com/EdgeTypE/dsh-better-deepseek) | 21 | 🟢 ok | untranslated |
 | [dsh-mobile-gate](https://github.com/Bernardxu123/dsh-mobile-gate) | 5 | ⚪ unknown | untranslated |
-| [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 691 | 🟢 ok | untranslated |
+| [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 705 | 🟢 ok | untranslated |
 | [dsh-plugins-finder](https://github.com/ihuajiu/dsh-plugins-finder) | 3 | 🟢 ok | untranslated |
 | [dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) | 5 | 🟢 ok | untranslated |
 | [model-usage-plugin](https://github.com/AKS1st/model-usage-plugin) | 8 | ⚪ unknown | untranslated |
 | [dsh-trajectory-governor](https://github.com/chunsi-w/dsh-trajectory-governor) | 10 | ⚪ unknown | untranslated |
-| [dsh-usage](https://github.com/Aisland-SJL/dsh-usage) | 44 | 🟢 ok | untranslated |
+| [dsh-usage](https://github.com/Aisland-SJL/dsh-usage) | 46 | 🟢 ok | untranslated |
 | [dsh-qq-bridge](https://github.com/TomoyoNatsume/dsh-qq-bridge) | 11 | 🟢 ok | untranslated |
-| [dsh-proxy](https://github.com/smanx/dsh-proxy) | 8 | ⚪ unknown | untranslated |
-| [dsh-damage-pulse](https://github.com/wssfk12138/dsh-damage-pulse) | 125 | ⚪ unknown | untranslated |
+| [dsh-proxy](https://github.com/smanx/dsh-proxy) | 9 | ⚪ unknown | untranslated |
+| [dsh-damage-pulse](https://github.com/wssfk12138/dsh-damage-pulse) | 133 | ⚪ unknown | untranslated |
 | [dsh-reminder](https://github.com/Aisland-SJL/dsh-reminder) | 15 | 🟢 ok | untranslated |
-| [dsh-mobile](https://github.com/saya-ch/dsh-mobile) | 155 | 🟢 ok | untranslated |
+| [dsh-mobile](https://github.com/saya-ch/dsh-mobile) | 158 | 🟢 ok | untranslated |
 | [harness-ui-enhancer](https://github.com/Physicolor/harness-ui-enhancer) | 10 | 🟢 ok | untranslated |
 | [dsh-liquid-glass-balance-card](https://github.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card) | 6 | ⚪ unknown | untranslated |
 | [dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) | 8 | ⚪ unknown | untranslated |
-| [dsh-speak](https://github.com/Alan2Z/dsh-speak) | 7 | ⚪ unknown | untranslated |
+| [dsh-speak](https://github.com/Alan2Z/dsh-speak) | 8 | ⚪ unknown | untranslated |
 | [sprites-deepseek-plugin](https://github.com/superfly/sprites-deepseek-plugin) | 7 | ⚪ unknown | untranslated |
-| [dsh-remote-web-gateway](https://github.com/summer1238/dsh-remote-web-gateway) | 148 | 🟢 ok | untranslated |
+| [dsh-remote-web-gateway](https://github.com/summer1238/dsh-remote-web-gateway) | 151 | 🟢 ok | untranslated |
 | [dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) | 14 | 🟢 ok | untranslated |
 | [dsh-zen-remote](https://github.com/KyoMio/dsh-zen-remote) | 7 | 🟢 ok | untranslated |
-| [dsh-balance-plugin](https://github.com/yxxbc/dsh-balance-plugin) | 56 | 🟢 ok | untranslated |
+| [dsh-balance-plugin](https://github.com/yxxbc/dsh-balance-plugin) | 57 | 🟢 ok | untranslated |
 | [dsh-ui-harmonizer](https://github.com/Physicolor/dsh-ui-harmonizer) | 10 | 🟢 ok | untranslated |
 | [dsh-auth-gateway](https://github.com/xbzbing/dsh-auth-gateway) | 8 | ⚪ unknown | untranslated |
 | [dsh-remote-mobile](https://github.com/IceApriler/dsh-remote-mobile) | 9 | ⚪ unknown | untranslated |
@@ -1820,35 +1825,35 @@ npm create dsh-plugin@latest my-plugin
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [EchoBird](https://github.com/edison7009/EchoBird) | 3130 | ⚪ unknown | 一键安装+切换 Claude Code/Codex/Kimi/Qwen 等 20+ 编码智能体 |
-| [awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins) | 1402 | ⚪ unknown | DSH 插件目录，带每日兼容性跟踪 |
+| [EchoBird](https://github.com/edison7009/EchoBird) | 3133 | ⚪ unknown | 一键安装+切换 Claude Code/Codex/Kimi/Qwen 等 20+ 编码智能体 |
+| [awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins) | 1413 | ⚪ unknown | DSH 插件目录，带每日兼容性跟踪 |
 | [deepseek-harness-applicants](https://github.com/Octo-o-o-o/deepseek-harness-applicants) | 54 | ⚪ unknown | DSH 内测申请者名单 |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 909 | ⚪ unknown | DSH 生态精选：插件、工具与基建 |
-| [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 238 | 🟢 ok | DSH 终端 UI（TUI） |
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 914 | ⚪ unknown | DSH 生态精选：插件、工具与基建 |
+| [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 239 | 🟢 ok | DSH 终端 UI（TUI） |
 | [agent-skills](https://github.com/GitHubxsy/agent-skills) | 21 | ⚪ unknown | 面向 AI 编码智能体的可复用 skills 合集 |
-| [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) | 483 | 🟢 ok | Codex 风格的 @ 文件引用：在输入框打 @ 就能搜索工作区文件并把内容直接带进对话。 |
+| [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) | 484 | 🟢 ok | Codex 风格的 @ 文件引用：在输入框打 @ 就能搜索工作区文件并把内容直接带进对话。 |
 | [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) | 54 | 🟢 ok | 一键用 VS Code 打开 DSH 的工作区目录，不用自己复制路径。 |
 | [dsh-notification](https://github.com/omdsh-dev/dsh-notification) | 77 | 🟢 ok | DSH 桌面通知：任务回合结束弹系统通知，可按结果类型和关键词自定义哪些才提醒。 |
-| [dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 569 | ⚪ unknown | 2005 年中文站点风格侧栏广告插件（恶搞） |
+| [dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 572 | ⚪ unknown | 2005 年中文站点风格侧栏广告插件（恶搞） |
 | [dsh-group-photo](https://github.com/SenmuuuuW/dsh-group-photo) | 17 | ⚪ unknown | DSH 内测收官合影墙：GitHub OAuth 零权限登录 + 冻结白名单校验的拍立得合影站（含 DSH Skill 包装） |
 | [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) | 153 | 🟢 ok | 把 DSH 接进 OpenPencil 设计工具：Agent 可以在设计稿上做预览和编辑，边聊边改设计。 |
-| [oh-dsh-desktop](https://github.com/hust-open-atom-club/oh-dsh-desktop) | 282 | 🔴 broken (dump-config exit=1 but plugin not found in composed tree) | 可扩展的 macOS DSH 工作台（原生 PTY） |
-| [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) | 218 | 🟢 ok | 对话内生成式 UI：把交互式 HTML 卡片画进会话 |
+| [oh-dsh-desktop](https://github.com/hust-open-atom-club/oh-dsh-desktop) | 285 | 🔴 broken (dump-config exit=1 but plugin not found in composed tree) | 可扩展的 macOS DSH 工作台（原生 PTY） |
+| [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) | 221 | 🟢 ok | 对话内生成式 UI：把交互式 HTML 卡片画进会话 |
 | [awesome-DSH-plugin](https://github.com/Alex-Yanggg/awesome-DSH-plugin) | 85 | ⚪ unknown | 精选 DSH 插件/扩展/工具列表 |
 | [oh-my-dsh](https://github.com/LaplaceYoung/oh-my-dsh) | 55 | 🟢 ok | 面向 DSH 的插件生态（700+ 插件） |
 | [dsh-gomoku](https://github.com/omdsh-dev/dsh-gomoku) | 15 | ⚪ unknown | 在 DSH 里与 AI 下五子棋 |
-| [dsh-web-review](https://github.com/CanglongCl/dsh-web-review) | 16 | ⚪ unknown | DeepSeek Harness Web GUI 的网页预览与元素批注插件，让 AI 根据可视化反馈直接修改前端源码。 |
+| [dsh-web-review](https://github.com/CanglongCl/dsh-web-review) | 17 | ⚪ unknown | DeepSeek Harness Web GUI 的网页预览与元素批注插件，让 AI 根据可视化反馈直接修改前端源码。 |
 | [dsh-emoji](https://github.com/hellodigua/dsh-emoji) | 42 | 🟢 ok | 为 AI 回复自动添加表情 |
 | [dsh-grok-tui](https://github.com/chen-001/dsh-grok-tui) | 11 | 🟢 ok | 用 grok-build 的 TUI 跑 DSH |
-| [dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) | 17 | ⚪ unknown | 写代码时账户同时亏钱的恶搞插件 |
+| [dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) | 18 | ⚪ unknown | 写代码时账户同时亏钱的恶搞插件 |
 | [Top](https://github.com/xiaohai-78/Top) | 4 | ⚪ unknown | dsh-external 插件生态每日榜单 |
-| [awesome-dsh-plugin](https://github.com/bruc3van/awesome-dsh-plugin) | 287 | ⚪ unknown | 双语 DSH 插件生态完整列表 |
-| [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | 181 | 🟢 ok | 基于 WebView2 的 DSH 启动器 |
+| [awesome-dsh-plugin](https://github.com/bruc3van/awesome-dsh-plugin) | 290 | ⚪ unknown | 双语 DSH 插件生态完整列表 |
+| [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | 182 | 🟢 ok | 基于 WebView2 的 DSH 启动器 |
 | [dsh-minigames](https://github.com/lhh010/dsh-minigames) | 27 | ⚪ unknown | 右侧小游戏面板（18 款离线小游戏） |
 | [dsh-stickers](https://github.com/william-jin-cmu/dsh-stickers) | 23 | ⚪ unknown | 双向表情贴纸插件 |
 | [oh-my-dsh](https://github.com/wangshunnn/oh-my-dsh) | 5 | 🟢 ok | DeepSeek harness 插件集 |
 | [orbis](https://github.com/icodesign/orbis) | 10 | ⚪ unknown | DSH 远程控制的移动客户端 |
-| [plugin-registry](https://github.com/vlln/plugin-registry) | 58 | ⚪ unknown | DSH 插件生态基建：浏览器面板管理官方 repository 插件 |
+| [plugin-registry](https://github.com/vlln/plugin-registry) | 57 | ⚪ unknown | DSH 插件生态基建：浏览器面板管理官方 repository 插件 |
 | [create-dsh-plugin](https://github.com/whyihaveyou/dsh-suite) | 3 | 🟢 ok | 一键脚手架生成 DeepSeek Harness (DSH) 插件：tool / events / webui 三套模板、next 标签版本锁定、内置 --verify 冒烟测试。 |
 | [dsh-101](https://github.com/bill9109/dsh-101) | 6 | ⚪ unknown | DSH 文档阅读模式 |
 | [dsh-desktop-electron](https://github.com/Void0312Aurora/dsh-desktop-electron) | 5 | ⚪ unknown | 跨平台 Electron 桌面壳（托盘常驻） |
@@ -1857,7 +1862,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-notebooks](https://github.com/havingautism/dsh-notebooks) | 4 | ⚪ unknown | (无描述) |
 | [dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) | 9 | ⚪ unknown | 模型生成时弹出小游戏菜单 |
 | [plugin-notify](https://github.com/whyihaveyou/dsh-suite) | 3 | 🟢 ok | 回合完成 / 出错 / 待审批时，把通知推到 IM webhook（飞书 / 企业微信 / 钉钉 / Slack / Discord / 自定义）+ 本机系统通知。 |
-| [dsh-lark-bot](https://github.com/PlutoKeating/dsh-lark-bot) | 34 | 🟢 ok | 把 DeepSeek Harness 桥接进飞书/Lark。 |
+| [dsh-lark-bot](https://github.com/PlutoKeating/dsh-lark-bot) | 35 | 🟢 ok | 把 DeepSeek Harness 桥接进飞书/Lark。 |
 | [dsh-win-notify](https://github.com/MuziIsabel/dsh-win-notify) | 4 | ⚪ unknown | 带声音的 Windows 通知插件。 |
 | [dsh-wechat-notify](https://github.com/wssfk12138/dsh-wechat-notify) | 8 | ⚪ unknown | 为 agent 新增 wechat_notify 工具的插件。 |
 | [dsh-lan](https://github.com/moxisuki/dsh-lan) | 6 | ⚪ unknown | 一条 overlay 把 dsh web 暴露到局域网。 |
@@ -1880,7 +1885,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-telegram-channel](https://github.com/hi-wenw/dsh-telegram-channel) | 10 | ⚪ unknown | Telegram 移动端远程：在手机上绑定并操作 DSH 的实时 Web 会话（Codex 风格）。 |
 | [dsh-plugin-notify](https://github.com/c-ling/dsh-plugin-notify) | 5 | 🟢 ok | DeepSeek Harness 消息提醒插件：回合结束或等待确认时向浏览器、系统、飞书/钉钉/企业微信/通用 Webhook 发送通知 |
 | [dsh-lark-link](https://github.com/amlyczz/dsh-lark-link) | 28 | 🟢 ok | 高可靠飞书桥接：扫码一键授权、多模式 agent、卡片式命令、零丢失发件箱。 |
-| [dsh-notification-center](https://github.com/610la/dsh-notification-center) | 9 | ⚪ unknown | DSH 通知中心插件：对话/任务完成、报错、等待批准等事件触发浏览器通知 + 21 种匹配音效 |
+| [dsh-notification-center](https://github.com/610la/dsh-notification-center) | 10 | ⚪ unknown | DSH 通知中心插件：对话/任务完成、报错、等待批准等事件触发浏览器通知 + 21 种匹配音效 |
 | [dsh-feishu-bridge](https://github.com/wz-heng/dsh-feishu-bridge) | 5 | ⚪ unknown | 飞书桥接：给飞书机器人发消息就跑一轮 DSH agent，回复原路返回。 |
 | [dsh-llm-wechat](https://github.com/sulfide2085/dsh-llm-wechat) | 6 | ⚪ unknown | DeepSeek Harness 微信网关适配插件：复用 DeepSeekAdapter + 流式 think 标签转译 |
 | [dsh-feishu](https://github.com/xmanrui/dsh-feishu) | 9 | ⚪ unknown | 通过扫码把飞书机器人接入DeepSeek Harness |
@@ -1894,19 +1899,19 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-schedule-tasks](https://github.com/uluckystar/dsh-schedule-tasks) | 2 | ⚪ unknown | DSH 定时任务插件:标准 cron 5 段式调度 + shell/通知触发动作 + Web 侧边栏管理面板。by MyDSH 社区 (mydsh.dev) |
 | [dsh-feishu-gateway](https://github.com/kriskwok/dsh-feishu-gateway) | 2 | ⚪ unknown | 飞书网关：从飞书跟 DSH agent 聊天（持久会话、/new、Markdown、主动推送）。 |
 | [dsh-fschannel](https://github.com/cershuang/dsh-fschannel) | 2 | ⚪ unknown | 飞书通道：新建会话选「连接飞书」，飞书消息直接进 DSH 会话。 |
-| [dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) | 73 | 🟢 ok | untranslated |
-| [dsh-lark](https://github.com/sugarforever/dsh-lark) | 25 | ⚪ unknown | untranslated |
+| [dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) | 74 | 🟢 ok | untranslated |
+| [dsh-lark](https://github.com/sugarforever/dsh-lark) | 26 | ⚪ unknown | untranslated |
 | [ax-feishu-bridge](https://github.com/AX1202/ax-feishu-bridge) | 38 | 🟢 ok | untranslated |
 | [dsh-lark-bridge](https://github.com/JMOKSZ/dsh-lark-bridge) | 5 | 🟢 ok | untranslated |
 | [dsh-feishu](https://github.com/PGZXB/dsh-feishu) | 26 | ⚪ unknown | untranslated |
 | [dsh-minecraft](https://github.com/Ruqii/dsh-minecraft) | 1 | 🟢 ok | 从 DSH 里玩真实 Minecraft：agent 驱动 Mineflayer bot 观察、行走、挖掘、合成、战斗，浏览器可实时观战 |
 | [dsh-lark-bridge](https://github.com/bihangchi9-creator/dsh-lark-bridge) | 36 | 🟢 ok | untranslated |
-| [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) | 19 | ⚪ unknown | untranslated |
+| [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) | 20 | ⚪ unknown | untranslated |
 | [harness-one](https://github.com/chumingjun/harness-one) | 15 | ⚪ unknown | untranslated |
-| [dsh-dingtalk](https://github.com/DingTalk-Real-AI/dsh-dingtalk) | 13 | ⚪ unknown | untranslated |
+| [dsh-dingtalk](https://github.com/DingTalk-Real-AI/dsh-dingtalk) | 14 | ⚪ unknown | untranslated |
 
 > 徽章含义：🟢 兼容 · 🔴 不兼容 · ⚪ 未实测 · ⚫ 弃坑。
-> 共 1769 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
+> 共 1774 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
 <!-- CATALOG:END -->
 
 ## 兼容性

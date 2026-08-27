@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T04:58:50.874Z",
+  "generated_at": "2026-08-27T20:33:43.591Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -396,6 +396,24 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "ihuajiu/dsh-plugin-finder",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-27T20:33:43.576Z",
+      "lastDetectedAt": "2026-08-27T20:33:43.576Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-24",
+      "lastKnownUrl": "https://github.com/ihuajiu/dsh-plugin-finder"
+    },
+    {
+      "repo": "ihuajiu/dsh-plugins-finder",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-27T20:33:43.576Z",
+      "lastDetectedAt": "2026-08-27T20:33:43.576Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-24",
+      "lastKnownUrl": "https://github.com/ihuajiu/dsh-plugins-finder"
     }
   ]
 }

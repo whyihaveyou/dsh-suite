@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-27T20:33:43.685Z",
+ "ts": "2026-08-28T05:27:46.842Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1315,6 +1315,7 @@
   "dsh-openviking",
   "dsh-ops-kit",
   "dsh-orchestrator",
+  "dsh-otel",
   "dsh-outdoor-theme",
   "dsh-outline",
   "dsh-output-styles",
@@ -2152,6 +2153,7 @@
   "dsh-voice-input",
   "dsh-voice-input-plugin",
   "dsh-voice-mic",
+  "dsh-voice-scribe",
   "dsh-voice-zhuiyueya",
   "dsh-vqa-agent",
   "dsh-vsc-integration",
@@ -2357,6 +2359,7 @@
   "goalfydata",
   "godot-bridge",
   "gongwen-skill",
+  "govard",
   "governed-workflow-for-dsh",
   "graph-memory",
   "graphlint",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:33:43.591Z",
+  "generated_at": "2026-08-28T05:27:46.748Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -135,6 +135,24 @@
       "lastStars": 3,
       "lastPush": "2026-08-13",
       "lastKnownUrl": "https://github.com/hyls9527/dsh-plugins"
+    },
+    {
+      "repo": "ihuajiu/dsh-plugin-finder",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-27T20:33:43.576Z",
+      "lastDetectedAt": "2026-08-28T05:27:46.733Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-24",
+      "lastKnownUrl": "https://github.com/ihuajiu/dsh-plugin-finder"
+    },
+    {
+      "repo": "ihuajiu/dsh-plugins-finder",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-27T20:33:43.576Z",
+      "lastDetectedAt": "2026-08-28T05:27:46.734Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-24",
+      "lastKnownUrl": "https://github.com/ihuajiu/dsh-plugins-finder"
     },
     {
       "repo": "je00/dsh-codex-agent-bridge",
@@ -396,24 +414,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "ihuajiu/dsh-plugin-finder",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-27T20:33:43.576Z",
-      "lastDetectedAt": "2026-08-27T20:33:43.576Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-24",
-      "lastKnownUrl": "https://github.com/ihuajiu/dsh-plugin-finder"
-    },
-    {
-      "repo": "ihuajiu/dsh-plugins-finder",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-27T20:33:43.576Z",
-      "lastDetectedAt": "2026-08-27T20:33:43.576Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-24",
-      "lastKnownUrl": "https://github.com/ihuajiu/dsh-plugins-finder"
     }
   ]
 }

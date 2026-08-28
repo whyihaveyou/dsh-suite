@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T05:27:46.748Z",
+  "generated_at": "2026-08-28T18:45:51.169Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -414,6 +414,24 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "hawkongz/doubao-vision-dsh",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-28T18:45:51.153Z",
+      "lastDetectedAt": "2026-08-28T18:45:51.154Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/hawkongz/doubao-vision-dsh"
+    },
+    {
+      "repo": "sparkmio/dsh-sfversion",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-28T18:45:51.154Z",
+      "lastDetectedAt": "2026-08-28T18:45:51.154Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/sparkmio/dsh-sfversion"
     }
   ]
 }

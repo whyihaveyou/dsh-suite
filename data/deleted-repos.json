@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T09:06:31.900Z",
+  "generated_at": "2026-08-29T18:33:16.804Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -441,6 +441,42 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "fff122/dsh-agent-arcade",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-29T18:33:16.793Z",
+      "lastDetectedAt": "2026-08-29T18:33:16.793Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/fff122/dsh-agent-arcade"
+    },
+    {
+      "repo": "fff122/dsh-prompt-presets",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-29T18:33:16.793Z",
+      "lastDetectedAt": "2026-08-29T18:33:16.793Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/fff122/dsh-prompt-presets"
+    },
+    {
+      "repo": "fff122/dsh-research-notes",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-29T18:33:16.792Z",
+      "lastDetectedAt": "2026-08-29T18:33:16.793Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/fff122/dsh-research-notes"
+    },
+    {
+      "repo": "fff122/dsh-task-checklist",
+      "seen": 1,
+      "firstDetectedAt": "2026-08-29T18:33:16.793Z",
+      "lastDetectedAt": "2026-08-29T18:33:16.793Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/fff122/dsh-task-checklist"
     }
   ]
 }

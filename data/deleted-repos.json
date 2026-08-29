@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T02:15:04.542Z",
+  "generated_at": "2026-08-29T09:06:31.900Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -63,6 +63,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-13",
       "lastKnownUrl": "https://github.com/bitterSmilezzz/dsh-skill-manager"
+    },
+    {
+      "repo": "cking000bigdemon/dsh-toolbelt",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-29T02:15:04.453Z",
+      "lastDetectedAt": "2026-08-29T09:06:31.714Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-25",
+      "lastKnownUrl": "https://github.com/cking000bigdemon/dsh-toolbelt"
     },
     {
       "repo": "D-Robotics/dsh-plugin-rdk",
@@ -432,15 +441,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "cking000bigdemon/dsh-toolbelt",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-29T02:15:04.453Z",
-      "lastDetectedAt": "2026-08-29T02:15:04.453Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-25",
-      "lastKnownUrl": "https://github.com/cking000bigdemon/dsh-toolbelt"
     }
   ]
 }

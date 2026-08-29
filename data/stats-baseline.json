@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-29T02:15:04.634Z",
+ "ts": "2026-08-29T09:06:31.999Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -857,6 +857,7 @@
   "dsh-filelens",
   "dsh-files",
   "dsh-filescope",
+  "dsh-filesnap",
   "dsh-filexplore",
   "dsh-finance",
   "dsh-find-plugin",
@@ -878,6 +879,7 @@
   "dsh-fun-ticker",
   "dsh-fun-typewriter",
   "dsh-fun-weather",
+  "dsh-fund-research",
   "dsh-funpack",
   "dsh-fusion",
   "dsh-gadgets",
@@ -1118,6 +1120,7 @@
   "dsh-mcp-manager-henc49",
   "dsh-mcp-manager-js2hou",
   "dsh-mcp-manager-nichts0v0",
+  "dsh-mcp-manager-ui",
   "dsh-mcp-pack",
   "dsh-mcp-panel",
   "dsh-mcp-proxy",
@@ -1173,6 +1176,7 @@
   "dsh-mindmap",
   "dsh-minecraft",
   "dsh-minecraft-dev",
+  "dsh-minecraft-ui",
   "dsh-mineru-parse-plugin",
   "dsh-mini-tui",
   "dsh-minigames",

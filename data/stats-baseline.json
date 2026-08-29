@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-28T18:45:51.272Z",
+ "ts": "2026-08-29T02:15:04.634Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1501,6 +1501,7 @@
   "dsh-plugin-publisher",
   "dsh-plugin-qr-connect",
   "dsh-plugin-quote-reply",
+  "dsh-plugin-radar",
   "dsh-plugin-rag",
   "dsh-plugin-rdk",
   "dsh-plugin-release",
@@ -1710,6 +1711,7 @@
   "dsh-safe-delete",
   "dsh-same-mode-sandbox-noop",
   "dsh-sandbox-escalation-fix",
+  "dsh-sandbox-escalation-fix-hakureimonika",
   "dsh-sandbox-escalation-fix-justmonika2022",
   "dsh-satori",
   "dsh-save-money",
@@ -2455,6 +2457,7 @@
   "matebot",
   "math-lean",
   "matlab-modelsim-vivado-plugin",
+  "mattpocock-skills-dsh",
   "mcp-for-stata",
   "mcp-sentinel",
   "mcp-server",

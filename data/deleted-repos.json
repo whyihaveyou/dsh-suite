@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T18:45:51.169Z",
+  "generated_at": "2026-08-29T02:15:04.542Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -117,6 +117,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/fryghost/deepseek-eyes"
+    },
+    {
+      "repo": "hawkongz/doubao-vision-dsh",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-28T18:45:51.153Z",
+      "lastDetectedAt": "2026-08-29T02:15:04.452Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/hawkongz/doubao-vision-dsh"
     },
     {
       "repo": "hccccc01333/dsh-report-html",
@@ -317,6 +326,15 @@
       "lastKnownUrl": "https://github.com/sjh9714/dsh-what-changed"
     },
     {
+      "repo": "sparkmio/dsh-sfversion",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-28T18:45:51.154Z",
+      "lastDetectedAt": "2026-08-29T02:15:04.453Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/sparkmio/dsh-sfversion"
+    },
+    {
       "repo": "stushansusu/dsh-miku-skin",
       "seen": 2,
       "firstDetectedAt": "2026-08-18T13:09:21.533Z",
@@ -416,22 +434,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "hawkongz/doubao-vision-dsh",
+      "repo": "cking000bigdemon/dsh-toolbelt",
       "seen": 1,
-      "firstDetectedAt": "2026-08-28T18:45:51.153Z",
-      "lastDetectedAt": "2026-08-28T18:45:51.154Z",
+      "firstDetectedAt": "2026-08-29T02:15:04.453Z",
+      "lastDetectedAt": "2026-08-29T02:15:04.453Z",
       "lastStars": 1,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/hawkongz/doubao-vision-dsh"
-    },
-    {
-      "repo": "sparkmio/dsh-sfversion",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-28T18:45:51.154Z",
-      "lastDetectedAt": "2026-08-28T18:45:51.154Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-16",
-      "lastKnownUrl": "https://github.com/sparkmio/dsh-sfversion"
+      "lastPush": "2026-08-25",
+      "lastKnownUrl": "https://github.com/cking000bigdemon/dsh-toolbelt"
     }
   ]
 }

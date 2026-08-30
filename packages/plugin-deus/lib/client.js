@@ -102,30 +102,44 @@ window.__ModuleLoader__.load({
       benchDefB: 'You are a world-class science writer; rehearse the answer three times in your head before speaking. Explain "entropy" to a bright middle-schooler in three sentences.',
     }
 
+    // DSH Web 样式契约（docs/web-styling.md）：全部颜色经 --dsw-alias-* 令牌引用；
+    // 暗色字面量仅作宿主早于令牌表时的兜底。无按主题分支的选择器，皮肤可自由覆写。
     const S = {
-      banner: { background: '#2d2406', border: '1px solid #9e6a03', borderRadius: '8px', padding: '10px 12px', fontSize: '12px', color: '#e3b341', lineHeight: '1.6', marginBottom: '14px' },
-      status: { fontSize: '11px', color: '#8b949e', marginBottom: '10px' },
-      card: { background: '#161b22', border: '1px solid #30363d', borderRadius: '10px', padding: '14px', marginBottom: '12px' },
+      banner: { background: 'var(--dsw-alias-state-warn-tertiary, #2d2406)', border: '1px solid var(--dsw-alias-state-warn-primary, #9e6a03)', borderRadius: '8px', padding: '10px 12px', fontSize: '12px', color: 'var(--dsw-alias-state-warn-label, #e3b341)', lineHeight: '1.6', marginBottom: '14px' },
+      status: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary, #8b949e)', marginBottom: '10px' },
+      card: { background: 'var(--dsw-alias-bg-layer-1, #161b22)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '10px', padding: '14px', marginBottom: '12px' },
       row: { display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap', marginTop: '10px' },
-      btn: { background: 'transparent', border: '1px solid #30363d', borderRadius: '6px', color: '#8b949e', padding: '6px 12px', fontSize: '13px', cursor: 'pointer' },
-      btnActive: { background: '#21262d', border: '1px solid #8b949e', borderRadius: '6px', color: '#e6edf3', padding: '6px 12px', fontSize: '13px', cursor: 'pointer' },
-      chip: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '20px', color: '#8b949e', padding: '2px 10px', fontSize: '11px' },
-      name: { fontSize: '14px', fontWeight: '700', color: '#e6edf3' },
-      desc: { fontSize: '12px', color: '#8b949e', marginTop: '4px', lineHeight: '1.5' },
-      h2: { fontSize: '13px', fontWeight: '600', color: '#e6edf3', margin: '18px 0 8px' },
-      table: { width: '100%', borderCollapse: 'collapse', fontSize: '12px', color: '#c9d1d9' },
-      th: { textAlign: 'left', padding: '6px 8px', borderBottom: '1px solid #30363d', color: '#8b949e', fontWeight: '600' },
-      td: { padding: '6px 8px', borderBottom: '1px solid #21262d' },
-      input: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '6px', color: '#e6edf3', padding: '6px 8px', fontSize: '12px', width: '100%', boxSizing: 'border-box' },
-      mono: { fontFamily: 'monospace', fontSize: '12px', color: '#c9d1d9' },
-      benchWrap: { width: '100%', background: '#0d1117', border: '1px solid #30363d', borderRadius: '10px', padding: '10px 12px', marginBottom: '6px' },
-      benchTa: { width: '100%', minHeight: '52px', background: '#161b22', border: '1px solid #30363d', borderRadius: '8px', color: '#c9d1d9', fontSize: '12px', padding: '6px 8px', boxSizing: 'border-box', resize: 'vertical' },
-      benchLabel: { fontSize: '11px', color: '#8b949e', margin: '6px 0 3px' },
+      btn: { background: 'transparent', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '6px', color: 'var(--dsw-alias-label-secondary, #8b949e)', padding: '6px 12px', fontSize: '13px', cursor: 'pointer' },
+      btnActive: { background: 'var(--dsw-alias-bg-layer-3, #21262d)', border: '1px solid var(--dsw-alias-label-secondary, #8b949e)', borderRadius: '6px', color: 'var(--dsw-alias-label-primary, #e6edf3)', padding: '6px 12px', fontSize: '13px', cursor: 'pointer' },
+      chip: { background: 'var(--dsw-alias-bg-layer-2, #0d1117)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '20px', color: 'var(--dsw-alias-label-secondary, #8b949e)', padding: '2px 10px', fontSize: '11px' },
+      name: { fontSize: '14px', fontWeight: '700', color: 'var(--dsw-alias-label-primary, #e6edf3)' },
+      desc: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary, #8b949e)', marginTop: '4px', lineHeight: '1.5' },
+      h2: { fontSize: '13px', fontWeight: '600', color: 'var(--dsw-alias-label-primary, #e6edf3)', margin: '18px 0 8px' },
+      table: { width: '100%', borderCollapse: 'collapse', fontSize: '12px', color: 'var(--dsw-alias-label-primary, #c9d1d9)' },
+      th: { textAlign: 'left', padding: '6px 8px', borderBottom: '1px solid var(--dsw-alias-border-l1, #30363d)', color: 'var(--dsw-alias-label-secondary, #8b949e)', fontWeight: '600' },
+      td: { padding: '6px 8px', borderBottom: '1px solid var(--dsw-alias-border-l1, #21262d)' },
+      input: { background: 'var(--dsw-alias-bg-layer-2, #0d1117)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '6px', color: 'var(--dsw-alias-label-primary, #e6edf3)', padding: '6px 8px', fontSize: '12px', width: '100%', boxSizing: 'border-box' },
+      mono: { fontFamily: 'monospace', fontSize: '12px', color: 'var(--dsw-alias-label-primary, #c9d1d9)' },
+      benchWrap: { width: '100%', background: 'var(--dsw-alias-bg-layer-2, #0d1117)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '10px', padding: '10px 12px', marginBottom: '6px' },
+      benchTa: { width: '100%', minHeight: '52px', background: 'var(--dsw-alias-bg-layer-1, #161b22)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '8px', color: 'var(--dsw-alias-label-primary, #c9d1d9)', fontSize: '12px', padding: '6px 8px', boxSizing: 'border-box', resize: 'vertical' },
+      benchLabel: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary, #8b949e)', margin: '6px 0 3px' },
       benchTable: { width: '100%', borderCollapse: 'collapse', fontSize: '11px', marginTop: '6px' },
-      benchCell: { border: '1px solid #21262d', padding: '3px 6px', textAlign: 'right', whiteSpace: 'nowrap' },
+      benchCell: { border: '1px solid var(--dsw-alias-border-l1, #21262d)', padding: '3px 6px', textAlign: 'right', whiteSpace: 'nowrap' },
       dock: { display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap', padding: '4px 0' },
-      dockChip: { background: '#161b22', border: '1px solid #30363d', borderRadius: '16px', color: '#8b949e', padding: '3px 12px', fontSize: '12px', cursor: 'pointer' },
+      dockChip: { background: 'var(--dsw-alias-bg-layer-1, #161b22)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '16px', color: 'var(--dsw-alias-label-secondary, #8b949e)', padding: '3px 12px', fontSize: '12px', cursor: 'pointer' },
     }
+
+    // 指纹分类强调色：god=紫 / med=绿 / pure=蓝 / unknown=灰。dsw 无图表系列令牌，
+    // 取语义最近的别名 + 字面量兜底。状态色统一走 state-* 令牌。
+    const CLS_ACCENT = {
+      god: 'var(--dsw-alias-state-business-primary, #d2a8ff)',
+      med: 'var(--dsw-alias-state-success-primary, #3fb950)',
+      pure: 'var(--dsw-alias-label-primary-bluish, #79c0ff)',
+      unknown: 'var(--dsw-alias-label-tertiary, #8b949e)',
+    }
+    const STATE_OK = 'var(--dsw-alias-state-success-primary, #3fb950)'
+    const STATE_ERR = 'var(--dsw-alias-state-error-primary, #f85149)'
+    const STATE_WARN = 'var(--dsw-alias-state-warn-primary, #d29922)'
 
     const pct = (ci) => `${(ci.rate * 100).toFixed(0)}% [${(ci.low * 100).toFixed(0)}–${(ci.high * 100).toFixed(0)}]`
 
@@ -136,7 +150,7 @@ window.__ModuleLoader__.load({
       return fetch(url).then((r) => r.json())
     }
 
-    const BENCH_CLS_COLORS = { god: '#d2a8ff', med: '#3fb950', pure: '#79c0ff', unknown: '#8b949e' }
+    const BENCH_CLS_COLORS = CLS_ACCENT
 
     function benchCellFmt(g, n) {
       if (!g || !n) return '—'
@@ -167,13 +181,13 @@ window.__ModuleLoader__.load({
             h('th', { style: S.benchCell }, t('colP')),
             h('th', { style: S.benchCell }, t('colSig')))),
           h('tbody', null, (report.comparison || []).map((row) => h('tr', { key: row.cls },
-            h('td', { style: { ...S.benchCell, textAlign: 'left', color: BENCH_CLS_COLORS[row.cls] || '#8b949e' } }, t('detected_' + row.cls)),
+            h('td', { style: { ...S.benchCell, textAlign: 'left', color: BENCH_CLS_COLORS[row.cls] || CLS_ACCENT.unknown } }, t('detected_' + row.cls)),
             h('td', { style: S.benchCell }, benchCellFmt(row.a, vA && vA.n)),
             h('td', { style: S.benchCell }, benchCellFmt(row.b, vB && vB.n)),
             h('td', { style: S.benchCell }, row.delta == null ? '—' : (row.delta >= 0 ? '+' : '') + Math.round(row.delta * 100) + 'pp'),
             h('td', { style: S.benchCell }, row.z == null ? '—' : Number(row.z).toFixed(2)),
             h('td', { style: S.benchCell }, row.p == null ? '—' : row.p < 0.001 ? '<0.001' : Number(row.p).toFixed(3)),
-            h('td', { style: { ...S.benchCell, color: '#d29922' } }, sig(row.p)),
+            h('td', { style: { ...S.benchCell, color: STATE_WARN } }, sig(row.p)),
           )))),
         vA && vA.prompt ? h('div', { style: { ...S.status, marginTop: '6px' } }, 'A: ' + JSON.stringify(vA.prompt)) : null,
         vB && vB.prompt ? h('div', { style: S.status }, 'B: ' + JSON.stringify(vB.prompt)) : null,
@@ -246,49 +260,49 @@ window.__ModuleLoader__.load({
         setEditing(null)
       }
 
-      return h('div', { style: { maxWidth: '860px' } },
-        h('div', { style: { fontSize: '14px', fontWeight: '600', color: '#e6edf3', marginBottom: '4px' } }, '⚗ ' + t('nav')),
+      return h('div', { style: { maxWidth: '860px' }, 'data-dsh-plugin': 'plugin-deus', 'data-dsh-surface': 'settings-modal' },
+        h('div', { style: { fontSize: '14px', fontWeight: '600', color: 'var(--dsw-alias-label-primary, #e6edf3)', marginBottom: '4px' } }, '⚗ ' + t('nav')),
         h('div', { style: S.status }, t('sub')),
-        h('div', { style: S.banner }, '⚠️ ' + t('honesty')),
-        err ? h('div', { style: { color: '#f85149', fontSize: '12px', marginBottom: '10px' } }, err) : null,
+        h('div', { style: S.banner, 'data-dsh-part': 'banner' }, '⚠️ ' + t('honesty')),
+        err ? h('div', { style: { color: STATE_ERR, fontSize: '12px', marginBottom: '10px' } }, err) : null,
         ver ? h('div', { style: { ...S.status, fontFamily: 'monospace' } },
           `${t('dshVer')}: ${ver.dsh} · ${t('pluginVer')}: ${ver.plugin} · ${t('logPath')}: ${ver.logPath}`) : null,
 
         h('div', { style: S.h2 }, t('presets')),
         h('div', { style: S.status }, t('presetsHint')),
-        presets.map((p) => h('div', { key: p.id, style: S.card },
+        presets.map((p) => h('div', { key: p.id, style: S.card, 'data-dsh-part': 'card' },
           h('div', { style: { display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap' } },
             h('span', { style: S.name }, p.label_zh),
-            h('span', { style: { fontSize: '11px', color: '#8b949e' } }, p.id),
-            p.builtin ? h('span', { style: S.chip }, 'built-in') : null,
+            h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary, #8b949e)' } }, p.id),
+            p.builtin ? h('span', { style: S.chip, 'data-dsh-part': 'chip' }, 'built-in') : null,
           ),
           h('div', { style: { ...S.mono, marginTop: '6px' } }, p.prompt === null ? t('empty') : JSON.stringify(p.prompt)),
           h('div', { style: S.row },
-            h('button', { style: copied === p.id ? S.btnActive : S.btn, onClick: () => copyPrompt(p) },
+            h('button', { style: copied === p.id ? S.btnActive : S.btn, 'data-dsh-part': 'button-ghost', onClick: () => copyPrompt(p) },
               copied === p.id ? '📋 ' + t('copied') : '📋 ' + t('copy')),
-            h('button', { style: S.btn, onClick: () => setEditing({ id: p.id, label_zh: p.label_zh, prompt: p.prompt === null ? '' : p.prompt }) }, '✏️ ' + t('edit')),
-            h('button', { style: S.btn, onClick: () => saveAll(presets.filter((x) => x.id !== p.id)) }, '🗑 ' + t('del')),
+            h('button', { style: S.btn, 'data-dsh-part': 'button-ghost', onClick: () => setEditing({ id: p.id, label_zh: p.label_zh, prompt: p.prompt === null ? '' : p.prompt }) }, '✏️ ' + t('edit')),
+            h('button', { style: S.btn, 'data-dsh-part': 'button-ghost', onClick: () => saveAll(presets.filter((x) => x.id !== p.id)) }, '🗑 ' + t('del')),
           ),
         )),
-        editing ? h('div', { style: S.card },
+        editing ? h('div', { style: S.card, 'data-dsh-part': 'card' },
           h('div', { style: S.status }, t('editId')),
-          h('input', { style: S.input, value: editing.id, onChange: (e) => setEditing({ ...editing, id: e.target.value }) }),
+          h('input', { style: S.input, 'data-dsh-part': 'input', value: editing.id, onChange: (e) => setEditing({ ...editing, id: e.target.value }) }),
           h('div', { style: { ...S.status, marginTop: '8px' } }, t('editLabel')),
-          h('input', { style: S.input, value: editing.label_zh, onChange: (e) => setEditing({ ...editing, label_zh: e.target.value }) }),
+          h('input', { style: S.input, 'data-dsh-part': 'input', value: editing.label_zh, onChange: (e) => setEditing({ ...editing, label_zh: e.target.value }) }),
           h('div', { style: { ...S.status, marginTop: '8px' } }, t('editPrompt')),
-          h('textarea', { style: { ...S.input, minHeight: '60px' }, value: editing.prompt, onChange: (e) => setEditing({ ...editing, prompt: e.target.value }) }),
+          h('textarea', { style: { ...S.input, minHeight: '60px' }, 'data-dsh-part': 'textarea', value: editing.prompt, onChange: (e) => setEditing({ ...editing, prompt: e.target.value }) }),
           h('div', { style: S.row },
-            h('button', { style: S.btnActive, onClick: commitEdit }, '💾 ' + t('save')),
-            h('button', { style: S.btn, onClick: () => setEditing(null) }, t('cancel')),
+            h('button', { style: S.btnActive, 'data-dsh-part': 'button-ghost', onClick: commitEdit }, '💾 ' + t('save')),
+            h('button', { style: S.btn, 'data-dsh-part': 'button-ghost', onClick: () => setEditing(null) }, t('cancel')),
           ),
         ) : h('div', { style: S.row },
-          h('button', { style: S.btn, onClick: () => setEditing({ id: '', label_zh: '', prompt: '' }) }, '➕ ' + t('add')),
-          h('button', { style: S.btn, onClick: resetPresets }, '↩ ' + t('resetPresets')),
+          h('button', { style: S.btn, 'data-dsh-part': 'button-ghost', onClick: () => setEditing({ id: '', label_zh: '', prompt: '' }) }, '➕ ' + t('add')),
+          h('button', { style: S.btn, 'data-dsh-part': 'button-ghost', onClick: resetPresets }, '↩ ' + t('resetPresets')),
         ),
 
         h('div', { style: S.h2 }, t('stats')),
         h('div', { style: S.status }, t('statsHint')),
-        h('div', { style: { ...S.status, color: '#7d8590' } }, t('measured')),
+        h('div', { style: { ...S.status, color: 'var(--dsw-alias-label-tertiary, #7d8590)' } }, t('measured')),
         h(Sparkline, { entries }),
         entries.length >= 4 ? h('div', { style: { ...S.status, fontSize: '10px' } }, t('trend')) : null,
         stats && stats.modes.length > 0
@@ -299,7 +313,7 @@ window.__ModuleLoader__.load({
               h('tbody', null, stats.modes.map((m) => h('tr', { key: m.mode },
                 h('td', { style: S.td }, m.mode),
                 h('td', { style: S.td }, m.n),
-                h('td', { style: { ...S.td, color: '#d2a8ff' } }, pct(m.godCI)),
+                h('td', { style: { ...S.td, color: CLS_ACCENT.god } }, pct(m.godCI)),
                 h('td', { style: S.td }, pct(m.medCI)),
                 h('td', { style: S.td }, pct(m.pureCI)),
               ))),
@@ -309,6 +323,7 @@ window.__ModuleLoader__.load({
           h('a', { href: '/deus/log.csv', download: 'deus-log.csv', style: { ...S.btn, textDecoration: 'none', display: 'inline-block' } }, '⬇ ' + t('exportCsv')),
           stats ? h('button', {
             style: copied === '__md' ? S.btnActive : S.btn,
+            'data-dsh-part': 'button-ghost',
             onClick: async () => {
               try {
                 await navigator.clipboard.writeText(buildMarkdownSummary(stats))
@@ -316,7 +331,7 @@ window.__ModuleLoader__.load({
               } catch {}
             },
           }, '📋 ' + (copied === '__md' ? t('mdCopied') : t('copyMd'))) : null,
-          h('button', { style: { ...S.btn, color: '#f85149', borderColor: '#f85149' }, onClick: resetLog }, '🗑 ' + t('resetLog')),
+          h('button', { style: { ...S.btn, color: STATE_ERR, borderColor: STATE_ERR }, 'data-dsh-part': 'button-ghost', onClick: resetLog }, '🗑 ' + t('resetLog')),
         ),
 
         h('div', { style: S.h2 }, t('anchor')),
@@ -324,7 +339,7 @@ window.__ModuleLoader__.load({
         anchor && anchor.agentPresets && h('div', { style: S.card },
           h('div', { style: S.status }, t('anchorPresetInstalled')),
           anchor.agentPresets.map((p) => h('div', { key: p.id, style: { display: 'flex', gap: '8px', alignItems: 'center', marginTop: '6px' } },
-            h('span', { style: { ...S.chip, color: p.installed ? '#3fb950' : '#f85149', borderColor: p.installed ? '#3fb950' : '#f85149' } }, p.installed ? '✓' : '✗'),
+            h('span', { style: { ...S.chip, color: p.installed ? STATE_OK : STATE_ERR, borderColor: p.installed ? STATE_OK : STATE_ERR }, 'data-dsh-part': 'chip' }, p.installed ? '✓' : '✗'),
             h('span', { style: S.name }, p.name || p.id),
             p.reason ? h('span', { style: S.status }, '(' + p.reason + ')') : null,
           )),
@@ -339,9 +354,9 @@ window.__ModuleLoader__.load({
                 h('td', { style: { ...S.td, ...S.mono } }, s.sessionId.slice(0, 8)),
                 h('td', { style: S.td }, s.preset),
                 h('td', { style: S.td }, s.total),
-                h('td', { style: { ...S.td, color: '#d2a8ff' } }, s.total ? Math.round(100 * s.god / s.total) + '%' : '—'),
+                h('td', { style: { ...S.td, color: CLS_ACCENT.god } }, s.total ? Math.round(100 * s.god / s.total) + '%' : '—'),
                 h('td', { style: S.td }, s.lastFp ? t('detected_' + s.lastFp) : '—'),
-                h('td', { style: { ...S.td, color: s.drifted ? '#f85149' : '#3fb950' } }, s.drifted ? '⚠ ' + t('drifted') : '⚓ ' + t('anchoredOn')),
+                h('td', { style: { ...S.td, color: s.drifted ? STATE_ERR : STATE_OK } }, s.drifted ? '⚠ ' + t('drifted') : '⚓ ' + t('anchoredOn')),
               ))),
             )
           : h('div', { style: S.status }, t('anchorNone')),
@@ -349,9 +364,9 @@ window.__ModuleLoader__.load({
         h('div', { style: S.h2 }, '🧪 ' + t('bench')),
         h('div', { style: S.status }, t('benchHint')),
         h('div', { style: S.row },
-          h('button', { style: S.btn, 'data-deus': 'bench-refresh', onClick: () => refreshBench(benchRunId) }, '🔄 ' + t('benchRefresh')),
+          h('button', { style: S.btn, 'data-deus': 'bench-refresh', 'data-dsh-part': 'button-ghost', onClick: () => refreshBench(benchRunId) }, '🔄 ' + t('benchRefresh')),
           benchData && benchData.runs && benchData.runs.length > 0 ? h('select', {
-            style: { ...S.input, width: 'auto' }, 'data-deus': 'bench-runs',
+            style: { ...S.input, width: 'auto' }, 'data-deus': 'bench-runs', 'data-dsh-part': 'select',
             value: benchRunId,
             onChange: (e) => { setBenchRunId(e.target.value); refreshBench(e.target.value) },
           },
@@ -368,10 +383,10 @@ window.__ModuleLoader__.load({
         entries.length === 0 ? h('div', { style: S.status }, t('noData'))
           : entries.slice(0, 10).map((e, i) => h('div', { key: i, style: { ...S.card, padding: '10px 12px' } },
               h('div', { style: { display: 'flex', gap: '8px', alignItems: 'baseline', flexWrap: 'wrap' } },
-                h('span', { style: S.chip }, e.prompt_mode),
-                h('span', { style: { ...S.chip, color: e.detected === 'god' ? '#d2a8ff' : e.detected === 'pure' ? '#79c0ff' : e.detected === 'med' ? '#3fb950' : '#8b949e' } },
+                h('span', { style: S.chip, 'data-dsh-part': 'chip' }, e.prompt_mode),
+                h('span', { style: { ...S.chip, color: e.detected === 'god' ? CLS_ACCENT.god : e.detected === 'pure' ? CLS_ACCENT.pure : e.detected === 'med' ? CLS_ACCENT.med : CLS_ACCENT.unknown }, 'data-dsh-part': 'chip' },
                   t('detected_' + (e.detected || 'unknown'))),
-                h('span', { style: { fontSize: '11px', color: '#8b949e' } }, e.ts),
+                h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-tertiary, #8b949e)' } }, e.ts),
               ),
               h('div', { style: { ...S.mono, marginTop: '6px', whiteSpace: 'pre-wrap' } }, e.first_sentence),
             )),
@@ -604,70 +619,72 @@ window.__ModuleLoader__.load({
       const UNANCHORED_PRESET_RE = /^(deus-|minimal)/
       const unanchored = !st && sessPreset && !UNANCHORED_PRESET_RE.test(sessPreset)
 
-      const benchPanel = benchOpen ? h('div', { style: S.benchWrap, 'data-deus': 'bench-panel' },
-        h('div', { style: { fontSize: '12px', fontWeight: 600, color: '#e6edf3' } }, '🧪 ' + t('bench')),
+      const benchPanel = benchOpen ? h('div', { style: S.benchWrap, 'data-deus': 'bench-panel', 'data-dsh-part': 'panel' },
+        h('div', { style: { fontSize: '12px', fontWeight: 600, color: 'var(--dsw-alias-label-primary, #e6edf3)' } }, '🧪 ' + t('bench')),
         h('div', { style: S.status }, t('benchHint')),
         h('div', { style: S.benchLabel }, t('benchA')),
         h('textarea', {
-          style: S.benchTa, 'data-deus': 'bench-a', value: benchA, disabled: benchRunning,
+          style: S.benchTa, 'data-deus': 'bench-a', 'data-dsh-part': 'textarea', value: benchA, disabled: benchRunning,
           onChange: (e) => { setBenchA(e.target.value); try { window.localStorage.setItem('deus.benchA', e.target.value) } catch { /* ignore */ } },
         }),
         h('div', { style: S.benchLabel }, t('benchB')),
         h('textarea', {
-          style: S.benchTa, 'data-deus': 'bench-b', value: benchB, disabled: benchRunning,
+          style: S.benchTa, 'data-deus': 'bench-b', 'data-dsh-part': 'textarea', value: benchB, disabled: benchRunning,
           onChange: (e) => { setBenchB(e.target.value); try { window.localStorage.setItem('deus.benchB', e.target.value) } catch { /* ignore */ } },
         }),
         h('div', { style: { ...S.row, marginTop: '8px', alignItems: 'center' } },
           h('span', { style: { ...S.benchLabel, margin: 0 } }, t('benchTimes')),
           h('input', {
             type: 'number', min: 1, max: 20, 'data-deus': 'bench-n', value: benchN, disabled: benchRunning,
-            style: { background: '#161b22', border: '1px solid #30363d', borderRadius: '8px', color: '#c9d1d9', fontSize: '12px', padding: '4px 6px', width: '60px' },
+            style: { background: 'var(--dsw-alias-bg-layer-1, #161b22)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '8px', color: 'var(--dsw-alias-label-primary, #c9d1d9)', fontSize: '12px', padding: '4px 6px', width: '60px' },
             onChange: (e) => setBenchN(e.target.value),
           }),
           benchRunning
-            ? h('button', { style: { ...S.btn, color: '#f85149', borderColor: '#f85149' }, 'data-deus': 'bench-abort', onClick: abortBench }, t('benchAbort'))
-            : h('button', { style: S.btnActive, 'data-deus': 'bench-run', onClick: runBench }, t('benchRun')),
+            ? h('button', { style: { ...S.btn, color: STATE_ERR, borderColor: STATE_ERR }, 'data-deus': 'bench-abort', 'data-dsh-part': 'button-ghost', onClick: abortBench }, t('benchAbort'))
+            : h('button', { style: S.btnActive, 'data-deus': 'bench-run', 'data-dsh-part': 'button-ghost', onClick: runBench }, t('benchRun')),
         ),
         benchProg ? h('div', { style: S.status, 'data-deus': 'bench-progress' },
           t('benchRunning') + ' · ' + t('benchProgress') + ': A ' + benchProg.a + '/' + benchProg.n + ' · B ' + benchProg.b + '/' + benchProg.n + ' · ' + benchProg.label + (benchProg.waiting ? ' ' + t('benchWaiting') : '')) : null,
-        benchNote ? h('div', { style: { ...S.status, color: '#d29922' }, 'data-deus': 'bench-note' }, benchNote) : null,
+        benchNote ? h('div', { style: { ...S.status, color: STATE_WARN }, 'data-deus': 'bench-note' }, benchNote) : null,
         benchReport ? h(BenchTable, { report: benchReport, t }) : null,
       ) : null
 
       const dockRow = h('div', { style: S.dock, title: t('dockHint') },
-        h('span', { style: { fontSize: '11px', color: '#8b949e' } }, '⚗'),
+        h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary, #8b949e)' } }, '⚗'),
         presets.map((p) => h('button', {
-          key: p.id, style: S.dockChip, title: t('dockHint'),
+          key: p.id, style: S.dockChip, 'data-dsh-part': 'chip', title: t('dockHint'),
           onClick: () => fire(p),
         }, (autoSend ? '🚀 ' : '⚡ ') + p.label_zh)),
         st ? h('button', {
-          style: { ...S.dockChip, color: st.drifted ? '#f85149' : '#3fb950', borderColor: st.drifted ? '#f85149' : '#3fb950' },
+          style: { ...S.dockChip, color: st.drifted ? STATE_ERR : STATE_OK, borderColor: st.drifted ? STATE_ERR : STATE_OK },
+          'data-dsh-part': 'chip',
           title: st.drifted ? t('reanchor') : t('dockAnchored'),
           onClick: st.drifted ? fireReanchor : undefined,
         }, st.drifted ? '⚠ ' + t('reanchor') : `⚓ ${t('dockAnchored')} ${st.god}/${st.total}`) : null,
         unanchored ? h('button', {
-          style: { ...S.dockChip, color: '#8b949e', borderColor: '#8b949e', borderStyle: 'dotted' },
+          style: { ...S.dockChip, color: 'var(--dsw-alias-label-secondary, #8b949e)', borderColor: 'var(--dsw-alias-border-l1, #8b949e)', borderStyle: 'dotted' },
+          'data-dsh-part': 'chip',
           title: t('unanchoredTitle'),
           onClick: () => setShowGuide((v) => !v),
         }, t('unanchored')) : null,
         unanchored && showGuide ? h('div', {
           style: {
-            fontSize: '11px', color: '#8b949e', lineHeight: 1.6, maxWidth: '520px',
-            borderLeft: '2px solid #8b949e', paddingLeft: '8px', margin: '2px 0',
+            fontSize: '11px', color: 'var(--dsw-alias-label-secondary, #8b949e)', lineHeight: 1.6, maxWidth: '520px',
+            borderLeft: '2px solid var(--dsw-alias-border-l1, #8b949e)', paddingLeft: '8px', margin: '2px 0',
           },
         }, t('guideText')) : null,
-        reanchorMsg ? h('span', { style: { fontSize: '11px', color: '#3fb950' } }, reanchorMsg) : null,
-        h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, title: t('autoSend'), onClick: toggleAuto },
+        reanchorMsg ? h('span', { style: { fontSize: '11px', color: STATE_OK } }, reanchorMsg) : null,
+        h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, 'data-dsh-part': 'chip', title: t('autoSend'), onClick: toggleAuto },
           (autoSend ? '☑ ' : '☐ ') + t('autoSend')),
-        st ? h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, title: t('autoReanchor'), onClick: toggleAutoReanchor },
+        st ? h('button', { style: { ...S.dockChip, borderStyle: 'dashed' }, 'data-dsh-part': 'chip', title: t('autoReanchor'), onClick: toggleAutoReanchor },
           (autoReanchor ? '☑ ' : '☐ ') + t('autoReanchor')) : null,
         h('button', {
-          style: { ...S.dockChip, borderStyle: 'dashed', color: benchOpen ? '#d2a8ff' : '#8b949e', borderColor: benchOpen ? '#d2a8ff' : '#30363d' },
-          title: t('bench'), 'data-deus': 'bench-chip',
+          style: { ...S.dockChip, borderStyle: 'dashed', color: benchOpen ? CLS_ACCENT.god : 'var(--dsw-alias-label-secondary, #8b949e)', borderColor: benchOpen ? CLS_ACCENT.god : 'var(--dsw-alias-border-l1, #30363d)' },
+          title: t('bench'), 'data-deus': 'bench-chip', 'data-dsh-part': 'chip',
           onClick: () => setBenchOpen((v) => !v),
         }, '🧪 ' + t('bench')),
       )
-      return h('div', { style: { width: '100%' } }, benchPanel, dockRow)
+      return h('div', { style: { width: '100%' }, 'data-dsh-plugin': 'plugin-deus', 'data-dsh-surface': 'chat-input' }, benchPanel, dockRow)
     }
 
     // v0.3: 触发率迷你趋势（最近 40 条日志分 10 桶的 god 率折线）
@@ -687,10 +704,11 @@ window.__ModuleLoader__.load({
       const xy = pts.map(([i, v]) => [P + (W - 2 * P) * i / (B - 1), H - P - (H - 2 * P) * v])
       const dAttr = xy.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ')
       return h('svg', { width: W, height: H, viewBox: `0 0 ${W} ${H}`, style: { display: 'block', margin: '4px 0 2px' } },
-        h('path', { d: `M${P},${H - P} L${W - P},${H - P}`, stroke: '#30363d', strokeWidth: 1, fill: 'none' }),
-        h('path', { d: `M${P},${P} L${W - P},${P}`, stroke: '#30363d', strokeWidth: 1, strokeDasharray: '3 3', fill: 'none' }),
-        h('path', { d: dAttr, stroke: '#d2a8ff', strokeWidth: 2, fill: 'none' }),
-        xy.map((p, i) => h('circle', { key: i, cx: p[0], cy: p[1], r: 2.5, fill: '#d2a8ff' })),
+        // var() 在 SVG 表现属性里不解析，必须走 style（CSS 层才能吃自定义属性）
+        h('path', { d: `M${P},${H - P} L${W - P},${H - P}`, style: { stroke: 'var(--dsw-alias-border-l1, #30363d)' }, strokeWidth: 1, fill: 'none' }),
+        h('path', { d: `M${P},${P} L${W - P},${P}`, style: { stroke: 'var(--dsw-alias-border-l1, #30363d)' }, strokeWidth: 1, strokeDasharray: '3 3', fill: 'none' }),
+        h('path', { d: dAttr, style: { stroke: CLS_ACCENT.god }, strokeWidth: 2, fill: 'none' }),
+        xy.map((p, i) => h('circle', { key: i, cx: p[0], cy: p[1], r: 2.5, style: { fill: CLS_ACCENT.god } })),
       )
     }
 
@@ -719,7 +737,7 @@ window.__ModuleLoader__.load({
       inject: ['slots', 'locale'],
       apply(ctx) {
         try {
-          try { window.__deusClient = '0.4.0' } catch { /* non-browser */ }
+          try { window.__deusClient = '0.4.1' } catch { /* non-browser */ }
           ctx.effect(() => ctx.locale.register(NS, { zh, en }), 'deus-mode: dicts')
           const t = ctx.locale.bind(NS)
           ctx.slots.inject('settings.section', () => ctx.slots.register({

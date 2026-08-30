@@ -30,6 +30,24 @@
 7. **统计导出与分享（v0.3）** — 面板一键导出 CSV、**复制 Markdown 摘要**（Wilson CI 表格 + 诚实声明 + 包链接，可直接发帖），并内嵌近期神版率迷你趋势图（最近 40 条日志分桶折线）。
 8. **提示词 A/B 实验台（v0.4）** — 设计文档的「纯噪音退路」转正：对话页 dock 的 🧪 **实验台**里输入**任意**提示词变体 A/B，各跑 N 次**真实会话注入**（每次试验自动点「新建会话」隔离上下文），宿主按提示词文本队列配对判定，产出**指纹分布对比表**——每类的 Wilson 95% CI、Δ(A−B)、两比例 z 检验与显著性标记。Settings 面板可回看/切换历史实验。deus 由此从「神模工具」升级为「提示词实验台」，神模只是第一个被测假设。
 
+## Theme & Skin Compatibility / 主题与皮肤兼容
+
+This plugin follows the DSH Web styling contract
+([`docs/web-styling.md`](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/web-styling.md)):
+every color routes through `--dsw-alias-*` design tokens (dark literals are kept
+only as fallbacks for hosts predating the alias table), with no per-theme CSS
+selectors.
+
+It also implements the [dsh-web Skin Center compatibility contract](https://github.com/zhu1090093659/dsh-web/tree/main/packages/skins/skin-center/contracts)
+at **L1 (token coverage)** and **L2 (semantic attributes)**: the settings panel
+root carries `data-dsh-plugin="plugin-deus"` + `data-dsh-surface="settings-modal"`,
+the composer dock root carries `data-dsh-surface="chat-input"`, and skin-relevant
+nodes are tagged with `data-dsh-part` (`banner` / `card` / `button-ghost` /
+`input` / `textarea` / `select` / `chip` / `panel`), so third-party skins get
+full restyle coverage without relying on unstable class names.
+
+本插件遵循 DSH Web 样式契约：全部颜色经 `--dsw-alias-*` 设计令牌引用（暗色字面量仅作旧宿主兜底），无按主题分支的 CSS 选择器；并实现 dsh-web 皮肤中心兼容契约 **L1（令牌覆盖）+ L2（语义属性）**——设置面板根节点输出 `data-dsh-plugin="plugin-deus"` + `data-dsh-surface="settings-modal"`，输入区 dock 根节点输出 `data-dsh-surface="chat-input"`，换肤相关节点标注 `data-dsh-part`，第三方皮肤无需依赖不稳定类名即可完整换肤。
+
 ## 安装 / Install
 
 ```bash

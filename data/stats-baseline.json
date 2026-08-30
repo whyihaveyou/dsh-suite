@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-30T12:56:55.326Z",
+ "ts": "2026-08-30T17:32:41.094Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -309,6 +309,7 @@
   "ds-api-usage",
   "ds-balance-card",
   "ds-forge",
+  "ds-harness-remote",
   "ds-image-skin",
   "ds-spec-loop",
   "ds-vision-plugin",
@@ -1845,6 +1846,7 @@
   "dsh-skins",
   "dsh-slack",
   "dsh-slice-agent-loop",
+  "dsh-smart-charts",
   "dsh-smarthome",
   "dsh-smooth-stream",
   "dsh-smooth-stream-laplacebit",
@@ -2468,6 +2470,7 @@
   "maid-atelier-ui-bundle",
   "makocode",
   "marisa-distro",
+  "marketingdashboard",
   "marketplace",
   "martty",
   "matebot",
@@ -2738,6 +2741,7 @@
   "wanjiqi-meme",
   "web-components",
   "webdsh",
+  "wegent",
   "weknora",
   "wemeet-openapi",
   "weshop-dsh-plugin",

@@ -6,8 +6,9 @@ import assert from 'node:assert/strict'
 import { spawnSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
+import { createNamingManifest, registryIdentityFromPackage } from '../src/naming.js'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const CLI = join(here, '..', 'src', 'cli.js')
@@ -39,13 +40,65 @@ test('--help renders bilingual usage', () => {
   assert.equal(r.status, 0)
   assert.match(r.stdout, /Usage/)
   assert.match(r.stdout, /用法/)
+  assert.match(r.stdout, /--registry-owner/)
+})
+
+test('builds deterministic community naming claims for every template surface', () => {
+  assert.deepEqual(registryIdentityFromPackage('@alice-labs/dsh-clock', 'alice-labs'), {
+    namespace: 'alice-labs',
+    name: 'clock',
+    coordinate: 'alice-labs/clock',
+    loaderId: 'alice-labs-clock',
+    toolName: 'alice_labs_clock',
+  })
+  const base = {
+    registryOwner: 'alice-labs',
+    registryName: 'clock',
+    name: '@alice-labs/dsh-clock',
+    pluginId: 'dsh-clock',
+  }
+  const tool = createNamingManifest({ ...base, template: 'tool', toolName: 'alice_clock_now' })
+  assert.equal(tool.plugin.coordinate, 'alice-labs/clock')
+  assert.deepEqual(tool.names.loaderIds, ['dsh-clock'])
+  assert.deepEqual(tool.names.tools, ['alice_clock_now'])
+
+  const events = createNamingManifest({ ...base, template: 'events' })
+  assert.deepEqual(events.names.events, ['session/event', 'tools/change', 'tools/pre-execute'])
+
+  const panel = createNamingManifest({ ...base, template: 'panel' })
+  assert.deepEqual(panel.names.routes, [{ kind: 'exact', path: '/dsh-clock/ping' }])
+
+  const presets = createNamingManifest({ ...base, template: 'preset-pack' })
+  assert.deepEqual(presets.names.routes.map((route) => route.path), [
+    '/dsh-clock/list',
+    '/dsh-clock/apply',
+    '/dsh-clock/remove',
+  ])
+  assert.throws(
+    () => createNamingManifest({ ...base, registryOwner: 'Not Valid', template: 'tool' }),
+    /--registry-owner/,
+  )
+})
+
+test('requires an owner when a registry name is supplied', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'dsh-scaffold-'))
+  try {
+    const r = runCli([dir, '-t', 'tool', '--registry-name', 'clock', '--yes'])
+    assert.notEqual(r.status, 0)
+    assert.match(r.stdout + r.stderr, /--registry-name requires --registry-owner/)
+    assert.doesNotMatch(r.stdout + r.stderr, /\n\s+at /, 'expected a concise CLI error without a stack trace')
+  } finally {
+    rmSync(dir, { recursive: true, force: true })
+  }
 })
 
 test('generates the tool template with a non-stale dsh-tools pin', () => {
-  const dir = generate('tool', 'verify-tool', ['--plugin-id', 'verify-tool', '--tool-name', 'verify_time'])
+  const dir = generate('tool', 'verify-tool', [
+    '--registry-owner', 'alice',
+  ])
   try {
     // No leftover {{token}} anywhere.
-    for (const f of ['package.json', 'cordis.patch.yml', 'src/index.ts', 'README.md', 'tsconfig.json']) {
+    for (const f of ['package.json', 'cordis.patch.yml', 'dsh-plugin.naming.json', 'src/index.ts', 'README.md', 'tsconfig.json']) {
       assert.ok(!read(dir, f).includes('{{'), `${f} has a leftover {{token}}`)
     }
     const pkg = JSON.parse(read(dir, 'package.json'))
@@ -55,9 +108,15 @@ test('generates the tool template with a non-stale dsh-tools pin', () => {
     assert.notEqual(dep, '0.0.1-rc.1', 'STALE dsh-tools version (npm latest tag) leaked through')
     assert.match(dep, /^\d+\.\d+\.\d+/, 'dsh-tools should be pinned exactly')
     assert.match(read(dir, 'cordis.patch.yml'), /- insert:/)
+    assert.match(read(dir, 'cordis.patch.yml'), /id: alice-verify-tool/, 'registry opt-in should use a collision-aware Loader ID')
     assert.match(read(dir, 'cordis.patch.yml'), /name: verify-tool/, 'patch name must be the package name')
     assert.match(read(dir, 'src/index.ts'), /defineTool/)
-    assert.match(read(dir, 'src/index.ts'), /export const name = 'verify-tool'/)
+    assert.match(read(dir, 'src/index.ts'), /export const name = 'alice-verify-tool'/)
+    const naming = JSON.parse(read(dir, 'dsh-plugin.naming.json'))
+    assert.equal(naming.policy, 'dsh-plugin-naming/v1')
+    assert.equal(naming.plugin.coordinate, 'alice/verify-tool')
+    assert.deepEqual(naming.names.loaderIds, ['alice-verify-tool'])
+    assert.deepEqual(naming.names.tools, ['alice_verify_tool'])
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }
@@ -66,6 +125,7 @@ test('generates the tool template with a non-stale dsh-tools pin', () => {
 test('generates the events template with zero runtime dependencies', () => {
   const dir = generate('events', 'verify-events', ['--plugin-id', 'verify-events'])
   try {
+    assert.equal(existsSync(join(dir, 'dsh-plugin.naming.json')), false, 'registry opt-out must not add a declaration')
     const pkg = JSON.parse(read(dir, 'package.json'))
     assert.deepEqual(pkg.dependencies ?? {}, {}, 'events template must have NO runtime deps')
     const dev = pkg.devDependencies['@deepseek-ai/dsh-tools']
@@ -73,6 +133,23 @@ test('generates the events template with zero runtime dependencies', () => {
     assert.notEqual(dev, '0.0.1-rc.1', 'STALE dsh-tools version leaked through')
     assert.match(read(dir, 'src/index.ts'), /ctx\.on\(/)
     assert.match(read(dir, 'src/index.ts'), /ctx\.effect\(/)
+  } finally {
+    rmSync(dir, { recursive: true, force: true })
+  }
+})
+
+test('registry opt-in preserves explicit plugin and tool names', () => {
+  const dir = generate('tool', 'verify-explicit', [
+    '--registry-owner', 'alice',
+    '--plugin-id', 'ExistingPluginName',
+    '--tool-name', 'existing_tool',
+  ])
+  try {
+    const naming = JSON.parse(read(dir, 'dsh-plugin.naming.json'))
+    assert.deepEqual(naming.names.pluginNames, ['ExistingPluginName'])
+    assert.deepEqual(naming.names.loaderIds, ['ExistingPluginName'])
+    assert.deepEqual(naming.names.tools, ['existing_tool'])
+    assert.match(read(dir, 'src/index.ts'), /export const name = 'ExistingPluginName'/)
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }

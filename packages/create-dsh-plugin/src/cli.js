@@ -9,6 +9,7 @@ import { TEMPLATES, TEMPLATE_META } from './templates.js'
 import { runWizard, pkgNameFromDir, pluginIdFromPkg, toolNameFromPkg } from './prompt.js'
 import { generate } from './generate.js'
 import { verify } from './verify.js'
+import { registryIdentityFromPackage } from './naming.js'
 
 function version() {
   try {
@@ -29,6 +30,8 @@ async function main() {
     template: flags.template,
     pluginId: flags['plugin-id'],
     toolName: flags['tool-name'],
+    registryOwner: flags['registry-owner'],
+    registryName: flags['registry-name'],
     verify: flags.verify === true ? true : undefined,
     skipInstall: flags['skip-install'] === true,
   }
@@ -49,14 +52,24 @@ async function main() {
     process.exit(1)
   }
 
-  // Fill remaining fields with safe defaults (bilingual note).
-  cfg.name = cfg.name || pkgNameFromDir(cfg.targetDir)
-  cfg.pluginId = cfg.pluginId || pluginIdFromPkg(cfg.name)
-  const meta = TEMPLATE_META[cfg.template]
-  if (meta.asksToolName) cfg.toolName = cfg.toolName || toolNameFromPkg(cfg.name)
-  cfg.verify = cfg.verify === true
-
   try {
+    // Fill remaining fields with safe defaults (bilingual note).
+    cfg.name = cfg.name || pkgNameFromDir(cfg.targetDir)
+    if (cfg.registryName && !cfg.registryOwner) {
+      throw new Error('--registry-name requires --registry-owner')
+    }
+    const meta = TEMPLATE_META[cfg.template]
+    const registryIdentity = cfg.registryOwner
+      ? registryIdentityFromPackage(cfg.name, cfg.registryOwner, cfg.registryName)
+      : null
+    if (registryIdentity) {
+      cfg.registryOwner = registryIdentity.namespace
+      cfg.registryName = registryIdentity.name
+    }
+    cfg.pluginId = cfg.pluginId || registryIdentity?.loaderId || pluginIdFromPkg(cfg.name)
+    if (meta.asksToolName) cfg.toolName = cfg.toolName || registryIdentity?.toolName || toolNameFromPkg(cfg.name)
+    cfg.verify = cfg.verify === true
+
     const result = await generate(cfg)
 
     if (cfg.verify) {
@@ -71,6 +84,9 @@ async function main() {
     console.log(paint(c.dim, '  # from the PARENT directory, install into a profile:'))
     console.log(paint(c.dim, `  dsh plugin --profile my-profile add ${addSpec}`))
     console.log(paint(c.dim, '  dsh --profile my-profile            # boot and watch the plugin load'))
+    if (cfg.registryOwner) {
+      console.log(paint(c.dim, '  # dsh-plugin.naming.json is a community declaration, not an ID reservation'))
+    }
     console.log('')
   } catch (e) {
     console.error(err(`✘ ${e?.message || String(e)}`))

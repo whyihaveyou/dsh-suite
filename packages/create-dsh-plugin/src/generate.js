@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { dirname, join, relative, resolve } from 'node:path'
 import { c, paint, ok, exists, writeFileDeep, readText, resolveDshVersions } from './util.js'
 import { TEMPLATE_META, PITFALLS } from './templates.js'
+import { createNamingManifest } from './naming.js'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const TEMPLATES_ROOT = resolve(here, '../templates')
@@ -73,11 +74,21 @@ export async function generate(cfg) {
     written.push(rel)
   }
 
+  const namingManifest = createNamingManifest(cfg)
+  if (namingManifest) {
+    const namingFile = 'dsh-plugin.naming.json'
+    await writeFileDeep(join(targetAbs, namingFile), `${JSON.stringify(namingManifest, null, 2)}\n`)
+    written.push(namingFile)
+  }
+
   console.log('')
   console.log(ok(`✔ Generated ${cfg.template} plugin in ${targetAbs} (生成完成)`))
   console.log(paint(c.dim, `  template: ${cfg.template}  package: ${cfg.name}  plugin-id: ${cfg.pluginId}`))
   console.log(paint(c.dim, `  @deepseek-ai/dsh-tools pinned to ${versions.dshTools} (next tag; latest is stale 0.0.1-rc.1)`))
   console.log(paint(c.dim, `  files: ${written.join(', ')}`))
+  if (namingManifest) {
+    console.log(paint(c.dim, `  community coordinate: ${namingManifest.plugin.coordinate} (not a reservation)`))
+  }
 
   return { cfg, versions, files: written, targetAbs }
 }

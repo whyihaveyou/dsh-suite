@@ -3,6 +3,7 @@ import { createInterface } from 'node:readline/promises'
 import { stdin as input, stdout as output } from 'node:process'
 import { c, paint } from './util.js'
 import { TEMPLATES, TEMPLATE_META } from './templates.js'
+import { registryIdentityFromPackage } from './naming.js'
 
 // Derive a valid npm package name from a directory name.
 export function pkgNameFromDir(dir) {
@@ -64,13 +65,28 @@ export async function runWizard(initial) {
     if (result.template && !TEMPLATES.includes(result.template)) result.template = 'tool'
 
     const meta = TEMPLATE_META[result.template]
+    if (!result.registryOwner) {
+      const owner = await ask(`${paint(c.bold, 'GitHub owner（可选，生成社区命名清单） optional registry owner')}: `)
+      result.registryOwner = owner || undefined
+    }
+    let registryIdentity = null
+    if (result.registryOwner) {
+      const derived = registryIdentityFromPackage(result.name, result.registryOwner, result.registryName)
+      if (!result.registryName) {
+        const registryName = await ask(`${paint(c.bold, '注册名 registry name')} (${derived.name}): `)
+        result.registryName = registryName || derived.name
+      }
+      registryIdentity = registryIdentityFromPackage(result.name, result.registryOwner, result.registryName)
+      result.registryOwner = registryIdentity.namespace
+      result.registryName = registryIdentity.name
+    }
     if (!result.pluginId) {
-      const autoId = pluginIdFromPkg(result.name)
+      const autoId = registryIdentity?.loaderId || pluginIdFromPkg(result.name)
       const id = await ask(`${paint(c.bold, '插件 id plugin id')} (${autoId}): `)
       result.pluginId = id || autoId
     }
     if (meta.asksToolName && !result.toolName) {
-      const autoTool = toolNameFromPkg(result.name)
+      const autoTool = registryIdentity?.toolName || toolNameFromPkg(result.name)
       const tn = await ask(`${paint(c.bold, '工具名 tool name')} (${autoTool}): `)
       result.toolName = tn || autoTool
     }

@@ -72,6 +72,10 @@ No config. Programmatic consumers call `ctx.teamBoard.createTask / claimTask / u
 
 ## 改动 / Changelog
 
+- **0.2.1**——DSH Web 样式契约适配（research/ui-compat-protocol.md）：面板颜色全部改经
+  `--dsw-alias-*` 设计令牌引用（保留暗色字面量仅作 token 缺失时的兜底），亮色主题不再破相；
+  根节点输出 `data-dsh-plugin="plugin-team-board"` + `data-dsh-surface="settings-modal"`，
+  卡片/列/按钮/徽章/输入框标 `data-dsh-part`（L2 语义属性，供皮肤中心完整换肤）。
 - **0.2.0**——可视化看板面板（Settings → Plugins → Team Board：三列分列 / 面板内创建 / 点按流转）；
   修复跨进程重启丢状态：`ctx.sessions` 实为纯内存存储（持久化插件只 flush 存活会话），
   仅靠 `board/snapshot` 日志在重启后恢复不了看板。现在每次变更同时写

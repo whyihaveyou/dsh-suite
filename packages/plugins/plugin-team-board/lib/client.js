@@ -23,15 +23,22 @@ window.__ModuleLoader__.load({
       actionDo: 'In progress', actionDone: 'Done', actionBack: 'Back to To do',
     }
 
+    // Style contract: all colors via --dsw-alias-* tokens (fallback literal = dark default,
+    // in case the host theme predates the alias table). No hardcoded accents, no per-theme
+    // selectors — skins and the host light/dark theme restyle through the tokens.
     const C = {
       grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '12px', marginTop: '12px' },
-      col: { background: '#161b22', border: '1px solid #30363d', borderRadius: '8px', padding: '14px 12px', minHeight: '220px' },
-      colHead: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px', fontWeight: '600', fontSize: '13px', color: '#e6edf3' },
-      count: { background: '#21262d', color: '#8b949e', fontSize: '12px', padding: '1px 8px', borderRadius: '10px' },
-      card: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '8px', padding: '10px', marginBottom: '12px', cursor: 'pointer' },
-      chip: { display: 'inline-block', padding: '1px 8px', borderRadius: '10px', fontSize: '11px', border: '1px solid #3fb950', background: 'rgba(63,185,80,0.1)' },
-      btn: { width: '100%', padding: '4px', background: 'rgba(59,130,246,0.08)', border: '1px solid #93b6f7', color: '#93b6f7', borderRadius: '6px', fontSize: '11px', cursor: 'pointer' },
-      input: { width: '100%', boxSizing: 'border-box', background: '#0d1117', color: '#dbe2ea', border: '1px solid #30363d', borderRadius: '8px', padding: '8px', fontSize: '13px', margin: '10px 0 16px' },
+      col: { background: 'var(--dsw-alias-bg-layer-2, #161b22)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '8px', padding: '14px 12px', minHeight: '220px' },
+      colHead: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px', fontWeight: '600', fontSize: '13px', color: 'var(--dsw-alias-label-primary, #e6edf3)' },
+      count: { background: 'var(--dsw-alias-bg-layer-1, #21262d)', color: 'var(--dsw-alias-label-secondary, #8b949e)', fontSize: '12px', padding: '1px 8px', borderRadius: '10px' },
+      card: { background: 'var(--dsw-alias-bg-layer-1, #0d1117)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '8px', padding: '10px', marginBottom: '12px', cursor: 'pointer' },
+      chip: { display: 'inline-block', padding: '1px 8px', borderRadius: '10px', fontSize: '11px', border: '1px solid var(--dsw-alias-state-success-primary, #3fb950)', color: 'var(--dsw-alias-state-success-primary, #3fb950)', background: 'transparent' },
+      // Card action = the panel's primary action: the contract's four-piece set, verbatim.
+      btn: { width: '100%', padding: '4px', background: 'var(--dsw-alias-button-primary-fill, rgba(59,130,246,0.15))', border: '1px solid var(--dsw-alias-button-primary-fill, #93b6f7)', color: 'var(--dsw-alias-label-primary-foreground, #93b6f7)', borderRadius: '6px', fontSize: '11px', cursor: 'pointer' },
+      btnGhost: { background: 'transparent', border: '1px solid var(--dsw-alias-border-l1, #30363d)', color: 'var(--dsw-alias-label-secondary, #8b949e)', borderRadius: '10px', padding: '1px 8px', fontSize: '11px', cursor: 'pointer', display: 'inline-block' },
+      input: { width: '100%', boxSizing: 'border-box', background: 'var(--dsw-alias-bg-layer-1, #0d1117)', color: 'var(--dsw-alias-label-primary, #dbe2ea)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '8px', padding: '8px', fontSize: '13px', margin: '10px 0 16px' },
+      title: { color: 'var(--dsw-alias-label-primary, #93b6f7)', marginTop: 0 },
+      muted: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary, #8b949e)' },
     }
 
     async function fetchJson(url, opts) {
@@ -90,31 +97,33 @@ window.__ModuleLoader__.load({
 
       const colsList = ['todo', 'doing', 'done'].map(status => {
         const list = grouped[status]
-        return h('div', { key: status, style: C.col },
+        return h('div', { key: status, style: C.col, 'data-dsh-part': 'panel' },
           h('div', { style: C.colHead },
             h('div', null, t(status)),
-            h('div', { style: C.count }, list.length)),
-          list.map((it) => h('div', { key: it.id, style: C.card },
-            h('div', { style: { marginBottom: '10px' } }, h('span', { style: C.chip }, t(it.status || 'todo'))),
-            h('div', { style: { fontSize: '12px', color: '#8b949e', marginBottom: '8px', wordBreak: 'break-word' } }, it.subject),
-            h('button', { style: { ...C.btn, opacity: busy === it.id ? 0.5 : 1 }, disabled: busy === it.id, onClick: () => move(it, actionFor(it).to) }, actionFor(it).label),
+            h('div', { style: C.count, 'data-dsh-part': 'badge' }, list.length)),
+          list.map((it) => h('div', { key: it.id, style: C.card, 'data-dsh-part': 'card' },
+            h('div', { style: { marginBottom: '10px' } }, h('span', { style: C.chip, 'data-dsh-part': 'chip' }, t(it.status || 'todo'))),
+            h('div', { style: { ...C.muted, marginBottom: '8px', wordBreak: 'break-word' } }, it.subject),
+            h('button', { style: { ...C.btn, opacity: busy === it.id ? 0.5 : 1 }, 'data-dsh-part': 'button-primary', disabled: busy === it.id, onClick: () => move(it, actionFor(it).to) }, actionFor(it).label),
           )),
         )
       })
 
-      const empty = tasks && tasks.length === 0 ? h('div', { style: { ...C.card, fontSize: '13px', color: '#8b949e' } }, t('empty')) : null
+      const empty = tasks && tasks.length === 0 ? h('div', { style: { ...C.card, ...C.muted, fontSize: '13px' }, 'data-dsh-part': 'empty-state' }, t('empty')) : null
 
-      const creator = creating ? h('div', { style: { width: '280px' } },
-        h('div', { style: { fontSize: '14px', fontWeight: 600, marginBottom: '8px' } }, t('create')),
-        h('input', { style: C.input, placeholder: t('subjectPlaceholder'), value: subject, onChange: (e) => setSubject(e.target.value), onKeyDown: (e) => { if (e.key === 'Enter') create() } }),
+      const creator = creating ? h('div', { style: { width: '280px' }, 'data-dsh-part': 'section' },
+        h('div', { style: { fontSize: '14px', fontWeight: 600, marginBottom: '8px', color: 'var(--dsw-alias-label-primary, #e6edf3)' } }, t('create')),
+        h('input', { style: C.input, 'data-dsh-part': 'input', placeholder: t('subjectPlaceholder'), value: subject, onChange: (e) => setSubject(e.target.value), onKeyDown: (e) => { if (e.key === 'Enter') create() } }),
         h('div', { style: { display: 'flex', gap: '8px' } },
-          h('button', { style: C.btn, onClick: create }, t('create')),
-          h('button', { style: { fontSize: '12px', color: '#8b949e', background: 'transparent', border: 'none', cursor: 'pointer' }, onClick: () => setCreating(false) }, t('cancel')),
-        )) : h('button', { style: C.chip, onClick: () => setCreating(true) }, t('create'))
+          h('button', { style: C.btn, 'data-dsh-part': 'button-primary', onClick: create }, t('create')),
+          h('button', { style: { ...C.muted, background: 'transparent', border: 'none', cursor: 'pointer' }, 'data-dsh-part': 'button-ghost', onClick: () => setCreating(false) }, t('cancel')),
+        )) : h('button', { style: C.btnGhost, 'data-dsh-part': 'button-ghost', onClick: () => setCreating(true) }, t('create'))
 
-      return h('div', null,
-        h('div', { style: { marginBottom: '10px' } }, h('h3', { style: { color: '#93b6f7', marginTop: 0 } }, t('title'))),
+      // L2 semantic attributes on the root: the panel lives in the Settings modal.
+      return h('div', { 'data-dsh-plugin': 'plugin-team-board', 'data-dsh-surface': 'settings-modal' },
+        h('div', { style: { marginBottom: '10px' } }, h('h3', { style: C.title }, t('title'))),
         creator,
+        empty,
         h('div', { style: C.grid }, ...colsList),
       )
     }

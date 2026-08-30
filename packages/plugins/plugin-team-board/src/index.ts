@@ -1,6 +1,9 @@
 import { Service, type Context } from '@deepseek-ai/cordis'
 import { defineTool } from '@deepseek-ai/dsh-tools'
 import { SessionId, type Session } from '@deepseek-ai/dsh-session'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { homedir } from 'node:os'
+import { dirname, join } from 'node:path'
 import { BoardStore, type Task, type TaskStatus } from './board.js'
 
 // Service key: other plugins / tools reach the shared board as ctx.teamBoard.
@@ -20,6 +23,15 @@ declare module '@deepseek-ai/dsh-session/types' {
 
 const BOARD_SESSION_ID = 'team-board'
 const STATUSES: readonly TaskStatus[] = ['todo', 'doing', 'done']
+
+// File-backed durability: ctx.sessions is an in-memory store (persistence plugins
+// only flush live sessions), so the journal session does NOT survive a process
+// restart on its own. The snapshot file does. The board/snapshot journal stays as
+// the in-band audit trail for live sessions.
+function boardFile(): string {
+  const home = process.env.DSH_HOME || join(homedir(), '.dsh')
+  return join(home, 'team-board', 'board.json')
+}
 
 const taskOutputSchema = {
   type: 'object',
@@ -101,16 +113,25 @@ export default class TeamBoardService extends Service {
     return this.board.list(filter)
   }
 
-  // --- durable snapshot via the sessions seam ---
+  // --- durable snapshot: file first (survives restart), journal as audit trail ---
   private restore(): void {
+    const file = boardFile()
+    if (existsSync(file)) {
+      try {
+        const tasks = JSON.parse(readFileSync(file, 'utf8'))
+        if (Array.isArray(tasks)) this.board = new BoardStore(tasks)
+      } catch { /* corrupt snapshot falls through to the journal path */ }
+    }
     const existing = this.ctx.sessions.get(SessionId(BOARD_SESSION_ID))
     if (existing) {
       this.journal = existing
-      for (let i = existing.events.length - 1; i >= 0; i--) {
-        const event = existing.events[i]
-        if (event.type === 'board/snapshot') {
-          this.board = new BoardStore(event.data.tasks)
-          break
+      if (this.board.list().length === 0) {
+        for (let i = existing.events.length - 1; i >= 0; i--) {
+          const event = existing.events[i]
+          if (event.type === 'board/snapshot') {
+            this.board = new BoardStore(event.data.tasks)
+            break
+          }
         }
       }
     } else {
@@ -120,6 +141,11 @@ export default class TeamBoardService extends Service {
 
   private persist(): void {
     this.journal?.append('board/snapshot', { tasks: this.board.snapshot() })
+    try {
+      const file = boardFile()
+      mkdirSync(dirname(file), { recursive: true })
+      writeFileSync(file, JSON.stringify(this.board.snapshot(), null, 2))
+    } catch { /* file durability is best-effort; the journal still covers live sessions */ }
   }
 
   // --- board HTTP routes for the browser half ---

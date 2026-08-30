@@ -106,3 +106,20 @@ No config. Programmatic consumers call `ctx.teamBoard.createTask / claimTask / u
 
 - MVP 为**单进程内**共享看板（跨进程/跨机器同步是 v2，架构蓝图 §5.3 已注明）。
 - 看板状态以「整板快照」形式持久化（每次写 O(n)），任务量级小（几十条）时足够；海量任务可改为 per-task 事件流。
+
+
+---
+
+## Theme & Skin Compatibility / 主题与皮肤兼容
+
+This plugin follows the DSH Web styling contract
+([`docs/web-styling.md`](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/web-styling.md)):
+all colors come from `--dsw-alias-*` design tokens (dark literals only as fallback), with no
+per-theme CSS selectors. It also implements the
+[dsh-web Skin Center compatibility contract](https://github.com/zhu1090093659/dsh-web/tree/main/packages/skins/skin-center/contracts)
+**L1 (token coverage) + L2 (semantic attributes)** — cards/columns/buttons/badges/inputs emit
+`data-dsh-part`, so third-party skins get full coverage without relying on unstable class names.
+
+本插件遵循 DSH Web 样式契约：颜色全部经 `--dsw-alias-*` 设计令牌引用（暗色字面量仅作兜底），无按主题分支的 CSS 选择器；
+并实现 dsh-web 皮肤中心兼容契约 **L1（令牌覆盖）+ L2（语义属性）**——卡片/列/按钮/徽章/输入框标注
+`data-dsh-part`，第三方皮肤无需依赖不稳定类名即可完整换肤。

@@ -109,3 +109,16 @@ npx -y @deepseek-ai/dsh web     # http://127.0.0.1:3080
 3. 已装匹配是近似子串（catalog.name ↔ 已装包名），非精确 npm 包名对齐。
 4. 卡片描述同时展示 en+zh（未按 UI locale 切换单语）。
 5. 启停 toggle 未做（设计规格明确推到后续迭代；卸载 v0.4 / 更新检测+一键升级 v0.5 已交付）。
+
+
+---
+
+## Theme & Skin Compatibility / 主题与皮肤兼容
+
+This plugin follows the DSH Web styling contract
+([`docs/web-styling.md`](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/web-styling.md)):
+all Store UI colors come from `--dsw-alias-*` design tokens, so the panel follows the host
+light/dark theme. L2 semantic attributes (`data-dsh-plugin/part/surface`) land in a follow-up.
+
+本插件遵循 DSH Web 样式契约：商店界面颜色全部经 `--dsw-alias-*` 设计令牌引用，跟随宿主亮/暗主题。
+L2 语义属性（`data-dsh-plugin/part/surface`）后续版本补齐。

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-29T21:47:02.958Z",
+ "ts": "2026-08-30T00:23:32.862Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -794,6 +794,7 @@
   "dsh-easyssh",
   "dsh-eco-router",
   "dsh-ecosystem-spec",
+  "dsh-edex-ui",
   "dsh-effort-config",
   "dsh-effort-slider",
   "dsh-effort-tweak",
@@ -2243,6 +2244,7 @@
   "dsh-whale-animation",
   "dsh-whale-arcade",
   "dsh-whale-balance",
+  "dsh-whale-desktop-launcher",
   "dsh-whale-font",
   "dsh-whale-galgame",
   "dsh-whale-meter",

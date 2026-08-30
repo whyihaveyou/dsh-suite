@@ -46,4 +46,19 @@ ls ~/.dsh/.agent-presets/example-preset/                      # 应用后文件�
 4. 应用写的是用户预设根（.agent-presets/），卸载插件不会自动移除已应用的
    预设——用户可在面板点「移除」或手动删目录。
 
+## Theme & Skin Compatibility / 主题与皮肤兼容
+
+This plugin follows the DSH Web styling contract
+([`docs/web-styling.md`](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/web-styling.md)):
+all colors come from `--dsw-alias-*` design tokens (literals only as fallbacks), with no
+per-theme CSS selectors. It also implements the
+[dsh-web Skin Center compatibility contract](https://github.com/zhu1090093659/dsh-web/tree/main/packages/skins/skin-center/contracts)
+**L1 (token coverage)** + **L2 (semantic attributes `data-dsh-plugin` / `data-dsh-part` / `data-dsh-surface`)**.
+
+本插件遵循 DSH Web 样式契约：全部颜色经 `--dsw-alias-*` 设计令牌引用（字面量仅作兜底），
+无按主题分支的 CSS 选择器；并实现 dsh-web 皮肤中心兼容契约 L1（令牌覆盖）+ L2（语义属性）。
+
+> 注意：`data-dsh-plugin` 是 dsh-web 维护的闭合枚举——发布前到
+> [dsh-web issues](https://github.com/zhu1090093659/dsh-web/issues) 注册你的插件 id，否则下游皮肤匹配不到。
+
 {{PITFALLS}}

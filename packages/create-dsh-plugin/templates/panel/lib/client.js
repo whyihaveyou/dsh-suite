@@ -35,11 +35,20 @@ window.__ModuleLoader__.load({
     let t = (k) => k
     const setT = (fn) => { t = fn }
 
+    // ── Styling contract / 样式契约 ─────────────────────────────────────
+    // All colors MUST go through --dsw-alias-* design tokens (official DSH Web
+    // styling contract, docs/web-styling.md); literal colors only as fallbacks
+    // for hosts predating the alias table. Never write [data-theme] selectors.
+    // Filled primary buttons use the four-piece set verbatim:
+    //   --dsw-alias-button-primary-fill / --dsw-alias-label-primary-foreground
+    //   (+ --dsw-alias-button-primary-hover / -dimmed when you have real CSS hover)
+    // 颜色一律走 --dsw-alias-* 令牌，字面量只作老宿主兜底；禁止按主题写分支选择器。
     const S = {
-      box: { padding: '4px 2px', color: '#c9d1d9', fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace' },
+      box: { padding: '4px 2px', color: 'var(--dsw-alias-label-primary, #c9d1d9)', fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace' },
       row: { margin: '10px 0 0', fontSize: '13px', lineHeight: '1.6' },
-      pre: { background: '#0d1117', border: '1px solid #30363d', borderRadius: '6px', padding: '10px 12px', fontSize: '12.5px', overflow: 'auto' },
-      hint: { fontSize: '12px', color: '#8b949e' },
+      pre: { background: 'var(--dsw-alias-bg-layer-1, #0d1117)', border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '6px', padding: '10px 12px', fontSize: '12.5px', overflow: 'auto' },
+      hint: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary, #8b949e)' },
+      error: { color: 'var(--dsw-alias-state-error-primary, #f85149)' },
     }
 
     function Panel() {
@@ -50,10 +59,15 @@ window.__ModuleLoader__.load({
           .then((data) => setState({ status: 'ok', data }))
           .catch(() => setState({ status: 'error', data: null }))
       }, [])
-      return h('div', { style: S.box },
+      // L2 semantic attributes (dsh-web skin-center contract): root carries
+      // data-dsh-plugin + data-dsh-surface; parts mark skinnable nodes.
+      // data-dsh-plugin 是 dsh-web 维护的闭合枚举——发布前到
+      // https://github.com/zhu1090093659/dsh-web/issues 注册你的插件 id，
+      // 否则下游皮肤匹配不到（等同于没标）。
+      return h('div', { style: S.box, 'data-dsh-plugin': '{{PLUGIN_ID}}', 'data-dsh-surface': 'settings-modal' },
         state.status === 'loading' ? h('div', { style: S.row }, t('loading'))
-          : state.status === 'error' ? h('div', { style: S.row, color: '#f85149' }, t('error'))
-          : h('pre', { style: S.pre }, JSON.stringify(state.data, null, 2)),
+          : state.status === 'error' ? h('div', { style: { ...S.row, ...S.error } }, t('error'))
+          : h('pre', { style: S.pre, 'data-dsh-part': 'code-block' }, JSON.stringify(state.data, null, 2)),
         h('p', { style: { ...S.hint, marginTop: '10px' } }, t('hint')),
       )
     }

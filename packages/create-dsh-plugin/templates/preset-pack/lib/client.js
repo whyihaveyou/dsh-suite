@@ -34,13 +34,19 @@ window.__ModuleLoader__.load({
     let t = (k) => k
     const setT = (fn) => { t = fn }
 
+    // ── Styling contract / 样式契约 ─────────────────────────────────────
+    // All colors via --dsw-alias-* tokens (official DSH Web styling contract);
+    // literals only as fallbacks. The apply CTA is a filled primary button →
+    // use the contract's four-piece set verbatim (fill + label-primary-foreground;
+    // hover/dimmed need real CSS :hover, see primary-action-tokens-v1).
+    // 颜色一律走 --dsw-alias-* 令牌；填充主按钮必须用契约四件套，禁止自带 accent 色。
     const S = {
-      box: { display: 'flex', flexDirection: 'column', gap: '10px', color: '#c9d1d9' },
-      card: { border: '1px solid #30363d', borderRadius: '8px', padding: '12px 14px', background: '#0d1117' },
-      name: { fontSize: '14px', fontWeight: '700', color: '#e6edf3' },
-      desc: { fontSize: '12.5px', color: '#8b949e', margin: '4px 0 8px' },
-      btn: { background: 'transparent', border: '1px solid #30363d', borderRadius: '6px', color: '#c9d1d9', padding: '5px 12px', fontSize: '12.5px', cursor: 'pointer' },
-      hint: { fontSize: '12px', color: '#8b949e' },
+      box: { display: 'flex', flexDirection: 'column', gap: '10px', color: 'var(--dsw-alias-label-primary, #c9d1d9)' },
+      card: { border: '1px solid var(--dsw-alias-border-l1, #30363d)', borderRadius: '8px', padding: '12px 14px', background: 'var(--dsw-alias-bg-layer-1, #0d1117)' },
+      name: { fontSize: '14px', fontWeight: '700', color: 'var(--dsw-alias-label-primary, #e6edf3)' },
+      desc: { fontSize: '12.5px', color: 'var(--dsw-alias-label-secondary, #8b949e)', margin: '4px 0 8px' },
+      btn: { background: 'var(--dsw-alias-button-primary-fill, #1f6feb)', border: '1px solid var(--dsw-alias-button-primary-fill, #1f6feb)', borderRadius: '6px', color: 'var(--dsw-alias-label-primary-foreground, #ffffff)', padding: '5px 12px', fontSize: '12.5px', cursor: 'pointer' },
+      hint: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary, #8b949e)' },
     }
 
     function Panel() {
@@ -59,12 +65,16 @@ window.__ModuleLoader__.load({
         }).then(() => refresh()).finally(() => setBusy(''))
       }
       if (!list) return h('div', { style: S.box }, t('loading'))
-      return h('div', { style: S.box },
-        list.map((p) => h('div', { key: p.id, style: S.card },
+      // L2 semantic attributes: root carries data-dsh-plugin (在 dsh-web 枚举注册你的
+      // 插件 id —— https://github.com/zhu1090093659/dsh-web/issues —— 否则皮肤匹配不到)
+      // + data-dsh-surface; parts mark skinnable nodes.
+      return h('div', { style: S.box, 'data-dsh-plugin': '{{PLUGIN_ID}}', 'data-dsh-surface': 'settings-modal' },
+        list.map((p) => h('div', { key: p.id, style: S.card, 'data-dsh-part': 'card' },
           h('div', { style: S.name }, p.name),
           h('div', { style: S.desc }, p.description || ''),
           h('button', {
             style: S.btn,
+            'data-dsh-part': 'button-primary',
             onClick: () => act(p.id, p.applied ? 'remove' : 'apply'),
             disabled: busy === p.id,
           }, p.applied ? t('applied') + ' · ' + t('remove') : t('apply')),

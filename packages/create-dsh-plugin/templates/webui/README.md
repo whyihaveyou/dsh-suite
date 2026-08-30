@@ -26,4 +26,15 @@ dsh --profile my-profile       # watch for: [{{PLUGIN_ID}}] registered "{{TOOL_N
 - `@deepseek-ai/dsh-tools`: `{{DSH_TOOLS_VERSION}}` (exact — the **`next`**-tag line).
 - `@deepseek-ai/cordis`: `^{{CORDIS_VERSION}}` (peerDependency — host provides it).
 
+## Theme & Skin Compatibility / 主题与皮肤兼容
+
+Tool cards render through the official conversation surface (`presentCall` / `presentResult`),
+so they follow the host theme automatically. If you later add a custom panel, follow the
+DSH Web styling contract: colors via `--dsw-alias-*` tokens only, and emit
+`data-dsh-plugin` / `data-dsh-part` / `data-dsh-surface` semantic attributes
+([dsh-web skin-center contracts](https://github.com/zhu1090093659/dsh-web/tree/main/packages/skins/skin-center/contracts)).
+
+工具卡片经官方会话面渲染（`presentCall` / `presentResult`），自动跟随宿主主题。
+若以后加自定义面板：颜色只用 `--dsw-alias-*` 令牌，并输出 `data-dsh-*` 语义属性（见上方契约链接）。
+
 {{PITFALLS}}

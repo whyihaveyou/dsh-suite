@@ -81,6 +81,17 @@ node src/cli.js --help          # no build step needed (zero-dep ESM)
 node --test test/               # (tests live under test/)
 ```
 
+## Theme & Skin Compatibility / 主题与皮肤兼容
+
+Generated plugins follow the DSH Web styling contract by default: UI templates route all
+colors through `--dsw-alias-*` tokens and emit `data-dsh-plugin` / `data-dsh-part` /
+`data-dsh-surface` semantic attributes (L1 + L2 of the
+[dsh-web skin-center contract](https://github.com/zhu1090093659/dsh-web/tree/main/packages/skins/skin-center/contracts));
+every generated README carries the declaration section.
+
+脚手架产出的插件默认符合 DSH Web 样式契约：UI 模板颜色一律走 `--dsw-alias-*` 令牌、
+输出 `data-dsh-*` 语义属性（dsh-web 皮肤中心契约 L1 + L2），生成的 README 自带声明节。
+
 ## Related / 相关
 
 - `docs/migration-guide.en.md` / `docs/migration-guide.zh-CN.md` — migrating Claude Code / OpenClaw plugins or scripts to DSH.

@@ -31,4 +31,15 @@ dsh --profile headless "run a probe"                          # session/event �
 - `@deepseek-ai/dsh-tools`: `{{DSH_TOOLS_VERSION}}` (exact — the **`next`**-tag line; npm `latest` is stale).
 - `@deepseek-ai/cordis`: `^{{CORDIS_VERSION}}` (peerDependency — host provides it; types-only in code).
 
+## Theme & Skin Compatibility / 主题与皮肤兼容
+
+This plugin has no host-rendered UI of its own (tool results render through the official
+chat surface), so it is compatible by construction. If you later add a panel, follow the
+DSH Web styling contract: colors via `--dsw-alias-*` tokens only, and emit
+`data-dsh-plugin` / `data-dsh-part` / `data-dsh-surface` semantic attributes
+([dsh-web skin-center contracts](https://github.com/zhu1090093659/dsh-web/tree/main/packages/skins/skin-center/contracts)).
+
+本插件没有自有宿主 UI（工具结果走官方聊天面渲染），天然兼容。若以后加面板：
+颜色只用 `--dsw-alias-*` 令牌，并输出 `data-dsh-*` 语义属性（见上方契约链接）。
+
 {{PITFALLS}}

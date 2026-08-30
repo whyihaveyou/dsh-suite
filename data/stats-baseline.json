@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-30T06:43:44.738Z",
+ "ts": "2026-08-30T12:56:55.326Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -388,6 +388,7 @@
   "dsh-approve-for-me",
   "dsh-archive-manager",
   "dsh-archive-manager-michengai",
+  "dsh-archive-manager-z953218350",
   "dsh-archive-viewer",
   "dsh-archive-viewer-csiroqa",
   "dsh-archive-viewer-keepermttl",
@@ -738,6 +739,7 @@
   "dsh-desktop-marcon0203",
   "dsh-desktop-mochinek0",
   "dsh-desktop-mrbbbaixue",
+  "dsh-desktop-myyangyunfan",
   "dsh-desktop-o-sakurajimamai-o",
   "dsh-desktop-ouyangyipeng",
   "dsh-desktop-oxygenaaaaa",
@@ -803,6 +805,7 @@
   "dsh-ego-browser-fisfzy",
   "dsh-egress-guard",
   "dsh-eli-mode",
+  "dsh-emacs",
   "dsh-email",
   "dsh-emoji",
   "dsh-encrypt",

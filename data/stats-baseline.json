@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-30T23:33:11.663Z",
+ "ts": "2026-08-31T05:38:34.459Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -29,6 +29,7 @@
   "agentrq",
   "agents-go",
   "ai-animation",
+  "ai-art-engine",
   "ai-inner-os",
   "ai-keyboard",
   "ai-monitor",
@@ -1683,6 +1684,7 @@
   "dsh-remote-ide",
   "dsh-remote-mobile",
   "dsh-remote-sandbox",
+  "dsh-remote-scspotato",
   "dsh-remote-ssh",
   "dsh-remote-ssh-zhangfengshun",
   "dsh-remote-tunnel",
@@ -2450,6 +2452,7 @@
   "kph",
   "laoa-dshgf",
   "last30days-skill-cn",
+  "launch-wechat-miniprogram",
   "leantoken",
   "learn-harness-engineering",
   "learn-hermes-agent",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-08-31T05:38:34.459Z",
+ "ts": "2026-08-31T13:54:27.160Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -766,6 +766,7 @@
   "dsh-dev-actions",
   "dsh-devkit",
   "dsh-devquest",
+  "dsh-diagram",
   "dsh-diff-viewer",
   "dsh-ding",
   "dsh-dingtalk",
@@ -1007,6 +1008,7 @@
   "dsh-index",
   "dsh-industry-research",
   "dsh-infinite-gen-2",
+  "dsh-infinite-gen-3",
   "dsh-inline-images",
   "dsh-input-history",
   "dsh-input-history-omdsh-dev",
@@ -1124,6 +1126,7 @@
   "dsh-mcp-admin",
   "dsh-mcp-bridge",
   "dsh-mcp-center",
+  "dsh-mcp-connector",
   "dsh-mcp-lens",
   "dsh-mcp-manager",
   "dsh-mcp-manager-1a125",

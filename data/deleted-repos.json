@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T13:54:27.062Z",
+  "generated_at": "2026-08-31T20:08:47.448Z",
   "repos": [
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -398,6 +398,15 @@
       "lastKnownUrl": "https://github.com/tianji-qingtian/dsh-spec-loop"
     },
     {
+      "repo": "urzeye/dsh-outline",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-31T13:54:26.968Z",
+      "lastDetectedAt": "2026-08-31T20:08:47.435Z",
+      "lastStars": 19,
+      "lastPush": "2026-08-26",
+      "lastKnownUrl": "https://github.com/urzeye/dsh-outline"
+    },
+    {
       "repo": "walavave/dsh-git",
       "seen": 2,
       "firstDetectedAt": "2026-08-16T07:01:30.493Z",
@@ -477,15 +486,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "urzeye/dsh-outline",
-      "seen": 1,
-      "firstDetectedAt": "2026-08-31T13:54:26.968Z",
-      "lastDetectedAt": "2026-08-31T13:54:26.968Z",
-      "lastStars": 19,
-      "lastPush": "2026-08-26",
-      "lastKnownUrl": "https://github.com/urzeye/dsh-outline"
     }
   ]
 }

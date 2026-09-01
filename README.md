@@ -597,7 +597,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-emacs](https://github.com/vritser/dsh-emacs) | 13 | ⚪ unknown | untranslated |
 | [dsh-smart-charts](https://github.com/hherosoul/dsh-smart-charts) | 10 | ⚪ unknown | untranslated |
 | [dsh-infinite-gen-3](https://github.com/Minglink/dsh-infinite-gen-3) | 729 | ⚪ unknown | untranslated |
-| [dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) | 9 | ⚪ unknown | untranslated |
+| [dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) | 9 | 🔴 broken (cordis 4.0.2 not in peer "4.0.1") | untranslated |
 
 ### 🧩 技能
 
@@ -1841,7 +1841,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-auth-gateway](https://github.com/xbzbing/dsh-auth-gateway) | 9 | ⚪ unknown | untranslated |
 | [dsh-remote-mobile](https://github.com/IceApriler/dsh-remote-mobile) | 11 | ⚪ unknown | untranslated |
 | [ds-harness-remote](https://github.com/liguobao/ds-harness-remote) | 138 | 🟢 ok | untranslated |
-| [dsh-remote](https://github.com/SCSpotato/dsh-remote) | 12 | ⚪ unknown | untranslated |
+| [dsh-remote](https://github.com/SCSpotato/dsh-remote) | 12 | 🟢 ok | untranslated |
 
 ### 📦 预设
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T03:11:56Z",
+  "generated_at": "2026-09-02T02:32:46Z",
   "dshVersion": "0.1.1-rc.2",
   "cordisVersion": "4.0.2",
   "nodeVersion": "24.19.0",
@@ -9,27 +9,27 @@
   "layer23_scope": "auto",
   "layer23_skipped": "dsh CLI probe failed after 2 attempts",
   "summary": {
-    "total": 2778,
-    "ok": 532,
+    "total": 2792,
+    "ok": 538,
     "broken": 16,
-    "unknown": 778,
-    "unavailable": 1452,
+    "unknown": 784,
+    "unavailable": 1454,
     "skipped": 0
   },
   "summary_catalog": {
-    "total": 1804,
-    "ok": 417,
+    "total": 1812,
+    "ok": 423,
     "broken": 13,
-    "unknown": 469,
-    "unavailable": 905,
+    "unknown": 472,
+    "unavailable": 904,
     "skipped": 0
   },
   "summary_watchlist": {
-    "total": 974,
+    "total": 980,
     "ok": 115,
     "broken": 3,
-    "unknown": 309,
-    "unavailable": 547,
+    "unknown": 312,
+    "unavailable": 550,
     "skipped": 0
   },
   "results": [
@@ -178,7 +178,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.10.0",
+      "pkgVersion": "0.10.1",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": null
@@ -640,8 +640,12 @@
       "name": "dsh-genui",
       "npmName": "dsh-genui",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=20"
     },
     {
       "id": "dsh-input-history",
@@ -821,7 +825,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.2.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -833,7 +837,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.1",
+      "pkgVersion": "0.4.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -1016,7 +1020,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.0",
+      "pkgVersion": "0.2.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -1451,7 +1455,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.1",
+      "pkgVersion": "0.3.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -1645,7 +1649,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "3.25.3",
+      "pkgVersion": "3.25.4",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.19"
@@ -1688,7 +1692,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.2",
+      "pkgVersion": "0.8.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22.13"
@@ -2202,8 +2206,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.1",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.3.2",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -2510,7 +2514,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.15",
+      "pkgVersion": "0.2.17",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -2542,8 +2546,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.2",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.6.3",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -2722,7 +2726,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.1",
+      "pkgVersion": "0.5.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -2797,8 +2801,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.0",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.5.1",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -2951,8 +2955,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.0",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.5.1",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -3124,7 +3128,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.11.4",
+      "pkgVersion": "0.12.0",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -3279,8 +3283,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.7.0",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.7.1",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -3650,7 +3654,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.7.4",
+      "pkgVersion": "1.7.6",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -3883,8 +3887,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.0",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.9.0",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -4503,7 +4507,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -4563,7 +4567,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.0-alpha.4.22",
+      "pkgVersion": "0.1.0-alpha.4.23",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -4623,8 +4627,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.1",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.4.2",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -4959,7 +4963,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.11.3",
+      "pkgVersion": "1.12.0",
       "peerCordis": "4.0.1 || 4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -5397,7 +5401,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.3.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -5481,7 +5485,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.11.3",
+      "pkgVersion": "1.12.0",
       "peerCordis": "4.0.1 || 4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -6113,8 +6117,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.7.0",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.7.1",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -6188,8 +6192,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.9.1",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.9.2",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -6786,7 +6790,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.10.6",
+      "pkgVersion": "1.10.20",
       "peerCordis": ">=4.0.0",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -6806,7 +6810,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -7286,7 +7290,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.3.9",
+      "pkgVersion": "1.3.10",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -7666,7 +7670,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.8.6",
+      "pkgVersion": "0.8.7",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -7769,10 +7773,10 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "2.6.5",
+      "pkgVersion": "2.6.7",
       "peerCordis": null,
       "peerDsh": null,
-      "nodeRange": ">=22.5"
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-voice-input",
@@ -8114,7 +8118,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.38.5",
+      "pkgVersion": "0.40.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -10242,7 +10246,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.11.4",
+      "pkgVersion": "0.12.0",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -10694,7 +10698,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.1",
+      "pkgVersion": "0.1.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -10856,7 +10860,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "2.12.2",
+      "pkgVersion": "2.12.3",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -11212,7 +11216,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "2.3.0",
+      "pkgVersion": "2.3.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -11974,7 +11978,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.3.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -11986,7 +11990,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -12390,8 +12394,12 @@
       "name": "dsh-knowledge-graph",
       "npmName": "dsh-knowledge-graph",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.3",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-update-checker-duntansen",
@@ -12400,7 +12408,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.4.18",
+      "pkgVersion": "1.4.19",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -12456,7 +12464,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.1",
+      "pkgVersion": "0.4.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -12491,7 +12499,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "2.3.0",
+      "pkgVersion": "2.3.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -12678,7 +12686,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.6.0",
+      "pkgVersion": "0.6.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -12889,7 +12897,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.9.0",
+      "pkgVersion": "0.9.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -12936,7 +12944,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.4.18",
+      "pkgVersion": "1.4.19",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -13273,7 +13281,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.1",
+      "pkgVersion": "0.4.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -13371,7 +13379,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.6.1",
+      "pkgVersion": "1.8.2",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -13674,7 +13682,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.4",
+      "pkgVersion": "0.1.6",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.19"
@@ -14161,7 +14169,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.4",
+      "pkgVersion": "0.3.5",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -14291,7 +14299,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.10.6",
+      "pkgVersion": "1.10.20",
       "peerCordis": ">=4.0.0",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -14468,8 +14476,12 @@
       "name": "dsh-sticky-notes",
       "npmName": "dsh-sticky-notes",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "1.0.1",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-agent-team-room",
@@ -15088,7 +15100,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.4.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -15116,7 +15128,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.4",
+      "pkgVersion": "0.3.5",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -15128,7 +15140,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.3",
+      "pkgVersion": "0.3.6",
       "peerCordis": ">=4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -15259,7 +15271,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.4",
+      "pkgVersion": "0.2.6",
       "peerCordis": ">=4.0.0 <5",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -15738,8 +15750,12 @@
       "name": "open-sea-skin",
       "npmName": "open-sea-skin",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.2.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=20"
     },
     {
       "id": "dsh-plugins-ephemeral-ai-lab",
@@ -15857,9 +15873,10 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.6.2",
       "peerCordis": null,
       "peerDsh": null,
-      "nodeRange": null
+      "nodeRange": ">=22"
     },
     {
       "id": "hard-flash",
@@ -16383,7 +16400,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.3",
+      "pkgVersion": "0.1.4",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -16434,7 +16451,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.4",
+      "pkgVersion": "0.3.5",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -16510,7 +16527,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.54",
+      "pkgVersion": "0.1.55",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -16735,7 +16752,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.8",
+      "pkgVersion": "0.2.9",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.0.0"
@@ -16795,7 +16812,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.2",
+      "pkgVersion": "0.1.3",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -16985,7 +17002,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.12.0",
+      "pkgVersion": "0.13.1",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -17005,7 +17022,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.2",
+      "pkgVersion": "0.2.3",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22.12.0"
@@ -17047,7 +17064,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "3.8.0",
+      "pkgVersion": "3.9.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.3"
@@ -17282,7 +17299,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "2.0.1",
+      "pkgVersion": "2.0.2",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -17466,7 +17483,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.9",
+      "pkgVersion": "0.2.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -17546,8 +17563,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.0",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.3.1",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -17590,7 +17607,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.7.1",
+      "pkgVersion": "0.8.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.15.0"
@@ -17602,8 +17619,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.0",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.3.1",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -17650,7 +17667,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.4.3",
+      "pkgVersion": "0.4.6",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -17743,8 +17760,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.0",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.4.1",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -17886,10 +17903,94 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.2",
+      "pkgVersion": "0.3.3",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^20.0.0 || ^22.0.0 || >=24"
+    },
+    {
+      "id": "dsh-mcp-manager-xxxyz",
+      "name": "@xxxyz/dsh-mcp-manager",
+      "npmName": "@xxxyz/dsh-mcp-manager",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "2.2.3",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-purge",
+      "name": "dsh-purge",
+      "npmName": "dsh-purge",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "sofagent",
+      "name": "sofagent",
+      "npmName": "sofagent",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-ultramath",
+      "name": "dsh-ultramath",
+      "npmName": "dsh-ultramath",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.6.3",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-ponytail",
+      "name": "dsh-ponytail",
+      "npmName": "dsh-ponytail",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.0",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-visual-workflow",
+      "name": "dsh-Visual-Workflow",
+      "npmName": "dsh-visual-workflow",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-data-quality",
+      "name": "dsh-data-quality",
+      "npmName": "dsh-data-quality",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.3.2",
+      "peerCordis": "^4.0.2",
+      "peerDsh": null,
+      "nodeRange": "^22.19.0 || >=24.0.0"
+    },
+    {
+      "id": "dsh-video-understand",
+      "name": "dsh-video-understand",
+      "npmName": "dsh-video-understand",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.5.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
     },
     {
       "id": "openbiliclaw",
@@ -18032,7 +18133,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.0.19",
+      "pkgVersion": "0.0.20",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -18230,7 +18331,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.4",
+      "pkgVersion": "0.3.5",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -18570,7 +18671,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.15.2",
+      "pkgVersion": "0.16.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=23.5.0 || ^22.13.0 || ^20.17.0"
@@ -18590,7 +18691,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.15",
+      "pkgVersion": "0.2.2",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -19073,7 +19174,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"undefined\" dsh=\">=0.1.0-rc.8 <0.2.0\")",
-      "pkgVersion": "0.3.1",
+      "pkgVersion": "0.3.2",
       "peerCordis": null,
       "peerDsh": ">=0.1.0-rc.8 <0.2.0",
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -19254,7 +19355,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.9.0",
+      "pkgVersion": "0.10.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -19702,8 +19803,11 @@
       "name": "dsh-code-check",
       "npmName": "dsh-code-check",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-netdoctor",
@@ -20037,8 +20141,8 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.1",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.6.2",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -20092,8 +20196,8 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.4",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.6.5",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -20352,7 +20456,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.2",
+      "pkgVersion": "0.6.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -20834,7 +20938,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.2",
+      "pkgVersion": "0.1.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -21191,8 +21295,8 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.2",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.6.3",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -21420,7 +21524,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.4.18",
+      "pkgVersion": "1.4.19",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -23281,7 +23385,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.11.4",
+      "pkgVersion": "0.12.0",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -23809,7 +23913,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.4",
+      "pkgVersion": "0.3.5",
       "peerCordis": "^4.0.1 || ^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -23956,7 +24060,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.8.8",
+      "pkgVersion": "0.8.10",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.15.0 || >=23.5.0"
@@ -24425,7 +24529,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.3",
+      "pkgVersion": "0.3.5",
       "peerCordis": ">=4.0.0 <5.0.0",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -24447,8 +24551,11 @@
       "name": "MisakaNet",
       "npmName": "misakanet",
       "section": "watchlist",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
     },
     {
       "id": "dsh-whale-pet-rongzi5",
@@ -25135,7 +25242,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.2.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -25274,7 +25381,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.4.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -25362,9 +25469,10 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.6.2",
       "peerCordis": null,
       "peerDsh": null,
-      "nodeRange": null
+      "nodeRange": ">=22"
     },
     {
       "id": "dsh-github-intelligence",
@@ -25865,7 +25973,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "3.8.0",
+      "pkgVersion": "3.9.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.3"
@@ -25944,7 +26052,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.8.8",
+      "pkgVersion": "0.8.10",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.15.0 || >=23.5.0"
@@ -26338,7 +26446,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.15",
+      "pkgVersion": "0.1.16",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -26419,7 +26527,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.4",
+      "pkgVersion": "0.3.5",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -26553,7 +26661,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.4",
+      "pkgVersion": "0.3.5",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -26893,7 +27001,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "0.2.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -27264,6 +27372,58 @@
       "id": "consensus-pipeline",
       "name": "consensus-pipeline",
       "npmName": "consensus-pipeline",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "blue-whale-harness",
+      "name": "Blue-Whale-Harness",
+      "npmName": "blue-whale-harness",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "deepseekgui",
+      "name": "DeepSeekGUI",
+      "npmName": "deepseekgui",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "awesome-deepseek-harness-awesome-deepseekharness",
+      "name": "awesome-deepseek-harness",
+      "npmName": "awesome-deepseek-harness",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "skill-anbeime",
+      "name": "skill",
+      "npmName": "skill",
+      "section": "watchlist",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "1.0.2",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "cnki-mcp",
+      "name": "cnki-mcp",
+      "npmName": "cnki-mcp",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "fn-os-apps",
+      "name": "fn-os-apps",
+      "npmName": "fn-os-apps",
       "section": "watchlist",
       "verdict": "unavailable",
       "note": "npm package not found (unpublished or GitHub-only)"

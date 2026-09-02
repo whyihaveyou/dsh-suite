@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-09-02T14:33:42.653Z",
+  "generated_at": "2026-09-02T18:46:46.298Z",
   "repos": [
+    {
+      "repo": "2436238575/dsh-turn-diff",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-02T14:33:42.498Z",
+      "lastDetectedAt": "2026-09-02T18:46:46.285Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-21",
+      "lastKnownUrl": "https://github.com/2436238575/dsh-turn-diff"
+    },
     {
       "repo": "Alexis-fish/dsh-worktrees",
       "seen": 2,
@@ -477,15 +486,6 @@
       "lastStars": 2,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
-    },
-    {
-      "repo": "2436238575/dsh-turn-diff",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-02T14:33:42.498Z",
-      "lastDetectedAt": "2026-09-02T14:33:42.498Z",
-      "lastStars": 0,
-      "lastPush": "2026-08-21",
-      "lastKnownUrl": "https://github.com/2436238575/dsh-turn-diff"
     },
     {
       "repo": "chokwinlee/deepseek-harness-desktop",

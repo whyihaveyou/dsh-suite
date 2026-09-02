@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-02T04:43:19.976Z",
+ "ts": "2026-09-02T09:41:43.832Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -88,6 +88,7 @@
   "better-deepseek-harness",
   "better-model-provider",
   "billion-context-dsh",
+  "biodsh",
   "bitfun",
   "blender",
   "blocker-notify",

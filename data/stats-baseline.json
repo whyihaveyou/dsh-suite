@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-02T00:18:05.823Z",
+ "ts": "2026-09-02T04:43:19.976Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1445,6 +1445,7 @@
   "dsh-plugin-dev-skill-truehooha",
   "dsh-plugin-dev-skills",
   "dsh-plugin-devecocli",
+  "dsh-plugin-developer-skill",
   "dsh-plugin-development",
   "dsh-plugin-diff-review",
   "dsh-plugin-directory",
@@ -1942,6 +1943,7 @@
   "dsh-tavern-chen731215-dev",
   "dsh-tavern-flizzywine",
   "dsh-tavern-player-minepig",
+  "dsh-tavern-v2",
   "dsh-tavily",
   "dsh-tavily-moguiyu",
   "dsh-tavily-search",
@@ -2606,6 +2608,7 @@
   "pi-discuss-mode",
   "pi-mm-vision",
   "pi-trace-extension",
+  "pi-web-ui",
   "pi2dsh",
   "picgo",
   "picgo-core",

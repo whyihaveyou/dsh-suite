@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-02T18:46:46.400Z",
+ "ts": "2026-09-02T21:53:14.508Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -983,6 +983,7 @@
   "dsh-html-canvas",
   "dsh-huadongbianzuqi",
   "dsh-hub",
+  "dsh-hub-cli",
   "dsh-hub-coderperseus",
   "dsh-hub-coderperseus-coderperseus",
   "dsh-hub-dsh",
@@ -2551,6 +2552,7 @@
   "new-litigation-visualization",
   "news-agent",
   "nightwhale",
+  "nixkits",
   "noatmark-dsh-plugin",
   "nocobase",
   "noletme",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-03T14:38:13.124Z",
+ "ts": "2026-09-03T18:43:13.502Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1142,6 +1142,7 @@
   "dsh-mcp-center",
   "dsh-mcp-connector",
   "dsh-mcp-lens",
+  "dsh-mcp-manage",
   "dsh-mcp-manager",
   "dsh-mcp-manager-1a125",
   "dsh-mcp-manager-fishlikewater",
@@ -1543,6 +1544,7 @@
   "dsh-plugin-session-delete",
   "dsh-plugin-session-import",
   "dsh-plugin-shiori-role",
+  "dsh-plugin-shop",
   "dsh-plugin-skills",
   "dsh-plugin-sleep",
   "dsh-plugin-smooth-stream",

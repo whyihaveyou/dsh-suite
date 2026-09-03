@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T18:46:46.298Z",
+  "generated_at": "2026-09-03T18:43:13.402Z",
   "repos": [
     {
       "repo": "2436238575/dsh-turn-diff",
@@ -488,6 +488,15 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
+      "repo": "Agents365-ai/dsh-vision-plugin",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-03T18:43:13.383Z",
+      "lastDetectedAt": "2026-09-03T18:43:13.383Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/Agents365-ai/dsh-vision-plugin"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -495,6 +504,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "jilian-dsh/dsh-rules-manager",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-03T18:43:13.383Z",
+      "lastDetectedAt": "2026-09-03T18:43:13.383Z",
+      "lastStars": 2,
+      "lastPush": "2026-09-03",
+      "lastKnownUrl": "https://github.com/jilian-dsh/dsh-rules-manager"
     }
   ]
 }

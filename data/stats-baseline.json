@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-03T04:42:42.632Z",
+ "ts": "2026-09-03T09:54:09.457Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1109,6 +1109,7 @@
   "dsh-llm-vision-bridge",
   "dsh-llm-wechat",
   "dsh-llm-wiki",
+  "dsh-llm-workbuddy",
   "dsh-llmwiki",
   "dsh-local-filetree",
   "dsh-logger-panel",
@@ -2642,6 +2643,7 @@
   "pptwise",
   "preset-center",
   "primordial-soup",
+  "prismflowagent",
   "prismrelay-mcp",
   "project-blueprint",
   "project-change-router-skill",
@@ -2765,6 +2767,7 @@
   "tydora",
   "ui-status-label",
   "unified-agent-memory",
+  "unity-plugin",
   "upstream-radar",
   "url-manager",
   "vibe-mathematics",

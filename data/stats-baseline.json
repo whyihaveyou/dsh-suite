@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-03T09:54:09.457Z",
+ "ts": "2026-09-03T14:38:13.124Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -52,6 +52,7 @@
   "ark-cli",
   "atlas-cloud-skills",
   "atomstudio",
+  "avernet",
   "awesome-ai-pedia",
   "awesome-deepseek-harness",
   "awesome-deepseek-harness-anil-matcha",
@@ -2062,6 +2063,7 @@
   "dsh-trace-compare",
   "dsh-track",
   "dsh-trading",
+  "dsh-trading-zhu1090093659",
   "dsh-trail",
   "dsh-trajectory-governance",
   "dsh-trajectory-governor",
@@ -2473,6 +2475,7 @@
   "jacobian",
   "jarvis-index",
   "jina-dsh-plugin",
+  "jingyun-dsh",
   "jnpz",
   "jumpserver-dsh",
   "k8e",
@@ -2599,6 +2602,7 @@
   "openhanako",
   "openpencil",
   "openpets",
+  "openpets-openpetshq",
   "openquantum",
   "openstory",
   "openviking",

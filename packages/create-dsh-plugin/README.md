@@ -17,6 +17,7 @@ npx create-dsh-plugin [project-dir] [options]
 
 # Non-interactive / 非交互
 npx create-dsh-plugin my-plugin -t tool
+npx create-dsh-plugin my-plugin -t tool --registry-owner your-github-owner
 npx create-dsh-plugin my-events -t events --yes --verify
 npx create-dsh-plugin my-webui -t webui -n my-webui --tool-name my_note --verify
 
@@ -32,6 +33,8 @@ npx create-dsh-plugin
 | `-n, --name <pkg>` | npm package name (derived from dir by default) |
 | `--plugin-id <id>` | cordis patch row id + plugin `name` export (derived from package name) |
 | `--tool-name <name>` | Tool name for `tool`/`webui` (derived from package name) |
+| `--registry-owner <github-owner>` | Generate an optional community `dsh-plugin.naming.json` declaration |
+| `--registry-name <slug>` | Override the coordinate slug derived from the package name |
 | `-y, --yes` | Skip prompts, use defaults |
 | `--verify` | After generation, build + install into a temp profile + dump-config |
 | `--skip-install` | Skip `pnpm install` inside the generated project |
@@ -54,6 +57,33 @@ Every generated project ships, out of the box:
 - `tsconfig.json` (pure ESM, `module: esnext` + `moduleResolution: bundler`).
 - `dsh.bundle` manifest + `cordis.patch.yml` (bundle distribution).
 - a `README.md` with the **10 pitfalls** (from a real, verified spike) + 防呆注释 in the code.
+
+## Community naming declaration / 社区命名清单
+
+Pass `--registry-owner <github-owner>` when the public repository owner is known. The scaffold then
+generates `dsh-plugin.naming.json` with the plugin coordinate, package, Loader ID, tool names, consumed
+event channels, and HTTP routes that are deterministically known from the selected template.
+When the caller does not override `--plugin-id` or `--tool-name`, this opt-in mode also derives
+collision-resistant defaults such as `owner-plugin` and `owner_plugin`.
+
+公开仓库 owner 已确定时，可传入 `--registry-owner <github-owner>`。脚手架会生成
+`dsh-plugin.naming.json`，记录能够从模板参数确定的插件 coordinate、package、Loader ID、
+tool、消费的 event channel 和 HTTP route。
+如果没有显式覆盖 `--plugin-id` 或 `--tool-name`，该模式还会生成 `owner-plugin` 和
+`owner_plugin` 形式的低碰撞默认名。
+
+This is an opt-in community coordination declaration, not an official Harness manifest and not an ID
+reservation. Validate it locally with the
+[`plugin-write` naming workflow](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/tree/main/skills/plugin-write),
+then optionally query reviewed registrations in
+[`dsh-plugin-registry`](https://github.com/zp-home/dsh-plugin-registry). No registry write occurs during
+scaffolding, and omitting the flag preserves the existing generated project exactly.
+
+这是可选的社区协调声明，不是 Harness 官方 manifest，也不会预留 ID。先使用
+[`plugin-write` 命名流程](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill/tree/main/skills/plugin-write)
+做本地校验，再按需查询
+[`dsh-plugin-registry`](https://github.com/zp-home/dsh-plugin-registry) 中经过审核的登记。
+脚手架不会写入中央仓库；不传该参数时，生成结果与原行为一致。
 
 ## Why the version pinning matters / 为什么锁 next 版本
 

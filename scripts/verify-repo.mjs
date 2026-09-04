@@ -3,7 +3,7 @@
  * verify-repo.mjs — repo-level CI quality gate (push / PR).
  *
  * Five checks, all zero-dependency (Node built-ins only):
- *   1. test    — packages/create-dsh-plugin smoke tests (`pnpm test`, 7 cases)
+ *   1. test    — packages/create-dsh-plugin smoke tests (`pnpm test`)
  *   2. build   — packages/plugins/* `tsc` build (every plugin with real sources)
  *   3. readme  — gen-readme idempotency: re-run and assert `git diff --exit-code`
  *   4. data    — data/plugins.json structural validation (id uniqueness, enum

@@ -9,6 +9,8 @@ export function parseArgs(argv) {
     name: { type: 'string', short: 'n' },
     'plugin-id': { type: 'string' },
     'tool-name': { type: 'string' },
+    'registry-owner': { type: 'string' },
+    'registry-name': { type: 'string' },
     yes: { type: 'boolean', short: 'y' },
     verify: { type: 'boolean' },
     'skip-install': { type: 'boolean' },
@@ -35,6 +37,8 @@ ${paint(c.cyan, 'Options / 选项')}
   -n, --name <pkg>           npm package name (默认由目录名推导)
       --plugin-id <id>       cordis patch row id + plugin name export (默认由包名推导)
       --tool-name <name>     Tool name for tool/webui templates (默认由包名推导)
+      --registry-owner <id>  GitHub owner for optional community naming declaration
+      --registry-name <id>   Coordinate slug (derived from package name by default)
   -y, --yes                  Skip prompts, use defaults (跳过向导用默认值)
       --verify               After generation: build + install into a temp profile + dump-config (生成后自动验证装载)
       --skip-install         Do not run package install inside the generated project
@@ -43,6 +47,7 @@ ${paint(c.cyan, 'Options / 选项')}
 
 ${paint(c.cyan, 'Examples / 示例')}
   npx create-dsh-plugin my-plugin -t tool
+  npx create-dsh-plugin my-plugin -t tool --registry-owner your-github-owner
   npx create-dsh-plugin my-events -t events --yes --verify
   npx create-dsh-plugin                            # interactive wizard / 交互向导
 `

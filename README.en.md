@@ -601,7 +601,7 @@ npm create dsh-plugin@latest my-plugin
 | [@xxxyz/dsh-mcp-manager](https://github.com/xxxyz/DeepSeekHarness-MCP-Manager) | 11 | ⚪ unknown (作者自报实测通过（Windows + npx 通道，2026-08-27）) | Dual manager for DSH — MCP servers (add/edit/enable/disable/restart/delete from Settings UI, JSON import/export, four mcp_manager… |
 | [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | 11 | 🟢 ok | DeepSeek Harness plugin: deterministic data profiling, cleaning, and verification (dsh-data-quality) |
 | [unity-plugin](https://github.com/opdsh/unity-plugin) | 14 | ⚪ unknown | DeepSeek Harness plugin: control the Unity Editor through the unity CLI |
-| [dsh-plugin-shop](https://github.com/LivXue/dsh-plugin-shop) | 102 | ⚪ unknown | The most comprehensive DeepSeek Harness plugin market — refreshed daily, sourced across the Internet, reviewed before publishing. |
+| [dsh-plugin-shop](https://github.com/LivXue/dsh-plugin-shop) | 102 | 🟢 ok | The most comprehensive DeepSeek Harness plugin market — refreshed daily, sourced across the Internet, reviewed before publishing. |
 
 ### 🧩 Skills
 
@@ -960,7 +960,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-minecraft-ui](https://github.com/TFboy1/dsh-minecraft-ui) | 12 | 🟢 ok | deepseek harness Minecraft UI |
 | [dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus) | 11 | ⚪ unknown | 基于DeepSeek-Balance-Whale-Widget开发，新增了三版不同的表情，需要那个版本的表情可以自己让agent帮你换，增加了火山coding plan额度查询，新增加台词自定义切换增加，增加了表情与台词手动切换 |
 | [dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) | 9 | ⚪ unknown | DeepSeek Harness Tavern Plugin - character card roleplay, worldbook management, preset switching, dark theme, memory summary, rel… |
-| [dsh-mcp-manage](https://github.com/null119/dsh-mcp-manage) | 12 | ⚪ unknown | DSH（DeepSeek Harness）Web GUI 插件：在设置页管理 MCP 服务器——列出已安装工具，添加/编辑/删除、启用/停用；组合配置提供的 MCP 同样可在运行时直接编辑、停用、移除并恢复，无需重启宿主。 |
+| [dsh-mcp-manage](https://github.com/null119/dsh-mcp-manage) | 12 | 🟢 ok | DSH（DeepSeek Harness）Web GUI 插件：在设置页管理 MCP 服务器——列出已安装工具，添加/编辑/删除、启用/停用；组合配置提供的 MCP 同样可在运行时直接编辑、停用、移除并恢复，无需重启宿主。 |
 
 ### 🐋 Skins
 
@@ -1514,7 +1514,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) | 16 | ⚪ unknown | Reasoning-effort editing for third-party models in DeepSeek Harness: per-model thinking levels with a knowledge base + protocol i… |
 | [dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 313 | ⚪ unknown | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ |
 | [dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) | 16 | 🟢 ok | Design-fidelity QA for DeepSeek Harness: lend any text-only model an eye, then judge whether the implementation matches the mock.… |
-| [dsh-llm-workbuddy](https://github.com/Axiaohungry/dsh-llm-workbuddy) | 28 | ⚪ unknown | 在deepseek harness中使用workbuddy api，因为公司只提供workbuddy积分 |
+| [dsh-llm-workbuddy](https://github.com/Axiaohungry/dsh-llm-workbuddy) | 28 | 🟢 ok | 在deepseek harness中使用workbuddy api，因为公司只提供workbuddy积分 |
 
 ### 🛡️ Sandbox
 
@@ -1724,7 +1724,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-doctor](https://github.com/zoahdev/dsh-plugin-doctor) | 7 | ⚪ unknown | Health checks for DeepSeek Harness plugins: manifest, patch, entry, build, pack, fresh-profile install verification — CLI + agent… |
 | [dsh-tavern](https://github.com/flizzywine/dsh-tavern) | 76 | ⚪ unknown | 基于 DeepSeek Harness（DSH）的 SillyTavern 类文字游戏 Agent，支持候选项生成、对话式人物卡编辑、剧本模式与素材抽取。 |
 | [dshelm](https://github.com/Altairpaca/dshelm) | 6 | ⚪ unknown | DSHelm — The batteries-included agent layer for DeepSeek Harness. OmO-inspired. DSH-native. Ecosystem-composable. |
-| [dsh-community-plugins](https://github.com/HubaKing/dsh-community-plugins) | 6 | ⚪ unknown | DeepSeek Harness (dsh) plugin: registers a global skill that teaches agents how to discover, evaluate and install community plugi… |
+| [dsh-community-plugins](https://github.com/HubaKing/dsh-community-plugins) | 6 | 🟢 ok | DeepSeek Harness (dsh) plugin: registers a global skill that teaches agents how to discover, evaluate and install community plugi… |
 | [dsh-octo](https://github.com/tokentopo-ai/dsh-octo) | 8 | ⚪ unknown | an heterogeneous multi-agent collaboration skill designed for dsh |
 | [dshw](https://github.com/kermanx/dshw) | 8 | ⚪ unknown | PR workflow plugin for DeepSeek Harness |
 | [querit-plugins](https://github.com/querit-ai/querit-plugins) | 8 | ⚪ unknown | Official Querit search plugins for AI agent harnesses: pi-querit (Pi extension), dsh-querit (DeepSeek Harness web seam), opencode… |

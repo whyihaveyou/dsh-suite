@@ -601,7 +601,7 @@ npm create dsh-plugin@latest my-plugin
 | [@xxxyz/dsh-mcp-manager](https://github.com/xxxyz/DeepSeekHarness-MCP-Manager) | 11 | ⚪ unknown (作者自报实测通过（Windows + npx 通道，2026-08-27）) | DSH 双管理器——MCP 服务管理（设置页新增/编辑/启停/重启/删除、JSON 导入导出、4 个 mcp_manager_* 模型工具、带闸门的本地 HTTP API）+ Skills 技能管理（启停面板、持久化、HMR 即时生效）。 |
 | [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | 11 | 🟢 ok | untranslated |
 | [unity-plugin](https://github.com/opdsh/unity-plugin) | 14 | ⚪ unknown | untranslated |
-| [dsh-plugin-shop](https://github.com/LivXue/dsh-plugin-shop) | 102 | ⚪ unknown | untranslated |
+| [dsh-plugin-shop](https://github.com/LivXue/dsh-plugin-shop) | 102 | 🟢 ok | untranslated |
 
 ### 🧩 技能
 
@@ -960,7 +960,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-minecraft-ui](https://github.com/TFboy1/dsh-minecraft-ui) | 12 | 🟢 ok | untranslated |
 | [dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus) | 11 | ⚪ unknown | untranslated |
 | [dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) | 9 | ⚪ unknown | untranslated |
-| [dsh-mcp-manage](https://github.com/null119/dsh-mcp-manage) | 12 | ⚪ unknown | untranslated |
+| [dsh-mcp-manage](https://github.com/null119/dsh-mcp-manage) | 12 | 🟢 ok | untranslated |
 
 ### 🐋 皮肤
 
@@ -1514,7 +1514,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) | 16 | ⚪ unknown | untranslated |
 | [dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 313 | ⚪ unknown | untranslated |
 | [dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) | 16 | 🟢 ok | untranslated |
-| [dsh-llm-workbuddy](https://github.com/Axiaohungry/dsh-llm-workbuddy) | 28 | ⚪ unknown | untranslated |
+| [dsh-llm-workbuddy](https://github.com/Axiaohungry/dsh-llm-workbuddy) | 28 | 🟢 ok | untranslated |
 
 ### 🛡️ 沙箱
 
@@ -1724,7 +1724,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-doctor](https://github.com/zoahdev/dsh-plugin-doctor) | 7 | ⚪ unknown | untranslated |
 | [dsh-tavern](https://github.com/flizzywine/dsh-tavern) | 76 | ⚪ unknown | untranslated |
 | [dshelm](https://github.com/Altairpaca/dshelm) | 6 | ⚪ unknown | untranslated |
-| [dsh-community-plugins](https://github.com/HubaKing/dsh-community-plugins) | 6 | ⚪ unknown | untranslated |
+| [dsh-community-plugins](https://github.com/HubaKing/dsh-community-plugins) | 6 | 🟢 ok | untranslated |
 | [dsh-octo](https://github.com/tokentopo-ai/dsh-octo) | 8 | ⚪ unknown | untranslated |
 | [dshw](https://github.com/kermanx/dshw) | 8 | ⚪ unknown | untranslated |
 | [querit-plugins](https://github.com/querit-ai/querit-plugins) | 8 | ⚪ unknown | untranslated |

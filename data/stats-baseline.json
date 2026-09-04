@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-04T09:43:49.496Z",
+ "ts": "2026-09-04T14:26:02.111Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1373,6 +1373,7 @@
   "dsh-pdf",
   "dsh-peer-link",
   "dsh-pentest",
+  "dsh-pentester",
   "dsh-permgate",
   "dsh-permission-rules",
   "dsh-persona-memory",
@@ -2216,6 +2217,7 @@
   "dsh-voice-scribe",
   "dsh-voice-zhuiyueya",
   "dsh-vqa-agent",
+  "dsh-vsc",
   "dsh-vsc-integration",
   "dsh-vscode",
   "dsh-vscode-fengze233",
@@ -2623,6 +2625,7 @@
   "pa-dsh",
   "pack-agent",
   "paper-plane-x",
+  "papermachine",
   "papi",
   "paste-to-workspace",
   "patentradar",

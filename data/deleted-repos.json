@@ -1,6 +1,15 @@
 {
-  "generated_at": "2026-09-04T14:26:02.015Z",
+  "generated_at": "2026-09-04T18:28:05.717Z",
   "repos": [
+    {
+      "repo": "0sour/dsh-plugins",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-04T14:26:01.994Z",
+      "lastDetectedAt": "2026-09-04T18:28:05.415Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/0sour/dsh-plugins"
+    },
     {
       "repo": "2436238575/dsh-turn-diff",
       "seen": 2,
@@ -180,6 +189,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/fryghost/deepseek-eyes"
+    },
+    {
+      "repo": "Gandufu/dsh-plugin",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-04T14:26:01.994Z",
+      "lastDetectedAt": "2026-09-04T18:28:05.415Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/Gandufu/dsh-plugin"
     },
     {
       "repo": "hawkongz/doubao-vision-dsh",
@@ -506,15 +524,6 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
-      "repo": "0sour/dsh-plugins",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-04T14:26:01.994Z",
-      "lastDetectedAt": "2026-09-04T14:26:01.994Z",
-      "lastStars": 0,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/0sour/dsh-plugins"
-    },
-    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -522,15 +531,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Gandufu/dsh-plugin",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-04T14:26:01.994Z",
-      "lastDetectedAt": "2026-09-04T14:26:01.994Z",
-      "lastStars": 0,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/Gandufu/dsh-plugin"
     }
   ]
 }

@@ -26,9 +26,19 @@ export async function exists(p) {
 
 // Spawn a command, capture stdout+stderr, never throw. Returns
 // { code, stdout, stderr } with code === -1 on spawn failure.
+// On Windows npm/pnpm/npx are .cmd shims; plain spawn() can't resolve them
+// without a shell, so force shell:true there (callers may still override).
+export function spawnOpts(opts = {}) {
+  return {
+    stdio: ['ignore', 'pipe', 'pipe'],
+    ...(process.platform === 'win32' ? { shell: true } : {}),
+    ...opts,
+  }
+}
+
 export function run(cmd, args, opts = {}) {
   return new Promise((resolve) => {
-    const child = spawn(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'], ...opts })
+    const child = spawn(cmd, args, spawnOpts(opts))
     let out = ''
     let errout = ''
     child.stdout.on('data', (d) => { out += d })

@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-08-29T21:47:02.840Z",
+  "generated_at": "2026-09-03T21:46:24.310Z",
   "repos": [
+    {
+      "repo": "2436238575/dsh-turn-diff",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-02T14:33:42.498Z",
+      "lastDetectedAt": "2026-09-02T18:46:46.285Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-21",
+      "lastKnownUrl": "https://github.com/2436238575/dsh-turn-diff"
+    },
+    {
+      "repo": "Agents365-ai/dsh-vision-plugin",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-03T18:43:13.383Z",
+      "lastDetectedAt": "2026-09-03T21:46:24.153Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/Agents365-ai/dsh-vision-plugin"
+    },
     {
       "repo": "Alexis-fish/dsh-worktrees",
       "seen": 2,
@@ -218,6 +236,15 @@
       "lastKnownUrl": "https://github.com/je00/dsh-codex-agent-bridge"
     },
     {
+      "repo": "jilian-dsh/dsh-rules-manager",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-03T18:43:13.383Z",
+      "lastDetectedAt": "2026-09-03T21:46:24.152Z",
+      "lastStars": 2,
+      "lastPush": "2026-09-03",
+      "lastKnownUrl": "https://github.com/jilian-dsh/dsh-rules-manager"
+    },
+    {
       "repo": "justinhuangai/deepagent",
       "seen": 2,
       "firstDetectedAt": "2026-08-17T05:52:20.287Z",
@@ -396,6 +423,15 @@
       "lastStars": 6,
       "lastPush": "2026-08-25",
       "lastKnownUrl": "https://github.com/tianji-qingtian/dsh-spec-loop"
+    },
+    {
+      "repo": "urzeye/dsh-outline",
+      "seen": 2,
+      "firstDetectedAt": "2026-08-31T13:54:26.968Z",
+      "lastDetectedAt": "2026-08-31T20:08:47.435Z",
+      "lastStars": 19,
+      "lastPush": "2026-08-26",
+      "lastKnownUrl": "https://github.com/urzeye/dsh-outline"
     },
     {
       "repo": "walavave/dsh-git",

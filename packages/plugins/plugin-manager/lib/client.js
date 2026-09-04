@@ -242,7 +242,7 @@ window.__ModuleLoader__.load({
     const C = {
       card: { background: 'var(--dsw-alias-bg-layer-1)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '8px', padding: '14px', display: 'flex', flexDirection: 'column', gap: '8px', minHeight: '150px' },
       featWrap: { display: 'flex', gap: '12px', overflowX: 'auto', padding: '2px 2px 8px', marginBottom: '4px' },
-      featCard: { flex: '0 0 264px', background: 'var(--dsw-alias-bg-layer-1)', border: '1px solid #1f6feb', borderRadius: '10px', overflow: 'hidden', cursor: 'pointer', display: 'flex', flexDirection: 'column' },
+      featCard: { flex: '0 0 264px', background: 'var(--dsw-alias-bg-layer-1)', border: '1px solid var(--dsw-alias-brand-primary)', borderRadius: '10px', overflow: 'hidden', cursor: 'pointer', display: 'flex', flexDirection: 'column' },
       featImgBox: { width: '100%', height: '118px', background: 'var(--dsw-alias-bg-layer-2)' },
       featBody: { padding: '10px 12px', display: 'flex', flexDirection: 'column', gap: '6px' },
       featDesc: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary)', lineHeight: '1.4', display: '-webkit-box', WebkitLineClamp: '2', WebkitBoxOrient: 'vertical', overflow: 'hidden' },
@@ -250,27 +250,41 @@ window.__ModuleLoader__.load({
       desc: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary)', lineHeight: '1.4' },
       descZh: { fontSize: '12px', color: 'var(--dsw-alias-label-secondary)', lineHeight: '1.4' },
       meta: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' },
-      btn: { background: '#238636', color: '#fff', border: 'none', borderRadius: '6px', padding: '6px 12px', fontSize: '12px', cursor: 'pointer', fontWeight: '600' },
+      // 契约 primary-action-tokens/v1：填充主按钮用四件套（fill/foreground/hover/dimmed），禁止硬编码 accent
+      btn: { background: 'var(--dsw-alias-button-primary-fill)', color: 'var(--dsw-alias-label-primary-foreground)', border: 'none', borderRadius: '6px', padding: '6px 12px', fontSize: '12px', cursor: 'pointer', fontWeight: '600' },
       btnGhost: { background: 'transparent', color: 'var(--dsw-alias-label-primary)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', padding: '6px 10px', fontSize: '12px', cursor: 'pointer' },
-      btnDisabled: { background: 'var(--dsw-alias-bg-layer-2)', color: 'var(--dsw-alias-label-secondary)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', padding: '6px 12px', fontSize: '12px', cursor: 'not-allowed' },
+      btnDisabled: { background: 'var(--dsw-alias-button-primary-dimmed)', color: 'var(--dsw-alias-label-primary-foreground)', border: 'none', borderRadius: '6px', padding: '6px 12px', fontSize: '12px', cursor: 'not-allowed' },
       badge: (color) => ({ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '11px', color, border: '1px solid ' + color, borderRadius: '10px', padding: '1px 8px' }),
       toolbar: { display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '12px' },
       input: { background: 'var(--dsw-alias-bg-layer-2)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', color: 'var(--dsw-alias-label-primary)', padding: '7px 12px', fontSize: '13px', flex: '1', minWidth: '200px' },
       select: { background: 'var(--dsw-alias-bg-layer-2)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '6px', color: 'var(--dsw-alias-label-primary)', padding: '7px 10px', fontSize: '13px' },
       grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' },
       status: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)', marginBottom: '12px' },
-      modalBack: { position: 'fixed', inset: '0', background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 99999 },
+      modalBack: { position: 'fixed', inset: '0', background: 'var(--dsw-alias-bg-overlay)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 99999 },
       modal: { background: 'var(--dsw-alias-bg-layer-1)', border: '1px solid var(--dsw-alias-border-l1)', borderRadius: '10px', padding: '20px', width: '420px', maxWidth: '90vw' },
       warn: { color: 'var(--dsw-alias-state-warn-primary)', fontSize: '12px' },
-      drawerOverlay: { position: 'fixed', inset: '0', background: 'rgba(1,4,9,0.55)', zIndex: 99998, display: 'flex', justifyContent: 'flex-end' },
+      drawerOverlay: { position: 'fixed', inset: '0', background: 'var(--dsw-alias-bg-overlay)', zIndex: 99998, display: 'flex', justifyContent: 'flex-end' },
       drawer: { width: '440px', maxWidth: '92vw', height: '100%', overflowY: 'auto', background: 'var(--dsw-alias-bg-layer-2)', borderLeft: '1px solid var(--dsw-alias-border-l1)', padding: '18px', display: 'flex', flexDirection: 'column', gap: '12px', color: 'var(--dsw-alias-label-primary)' },
       drawerTitle: { fontWeight: '700', fontSize: '16px', wordBreak: 'break-all', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' },
       drawerMeta: { display: 'flex', gap: '12px', flexWrap: 'wrap', fontSize: '12px', color: 'var(--dsw-alias-label-secondary)' },
       drawerDesc: { fontSize: '13px', color: 'var(--dsw-alias-label-primary)', lineHeight: '1.6', whiteSpace: 'pre-wrap', overflowWrap: 'break-word' },
       drawerSec: { fontSize: '11px', fontWeight: '700', color: 'var(--dsw-alias-label-secondary)', textTransform: 'uppercase', letterSpacing: '.4px', marginTop: '4px' },
-      riskChip: { display: 'inline-block', fontSize: '11.5px', padding: '2px 8px', borderRadius: '4px', background: 'rgba(210,153,34,0.15)', color: 'var(--dsw-alias-state-warn-primary)', border: '1px solid rgba(210,153,34,0.4)', marginRight: '6px', marginBottom: '4px' },
+      riskChip: { display: 'inline-block', fontSize: '11.5px', padding: '2px 8px', borderRadius: '4px', background: 'color-mix(in srgb, var(--dsw-alias-state-warn-primary) 15%, transparent)', color: 'var(--dsw-alias-state-warn-primary)', border: '1px solid color-mix(in srgb, var(--dsw-alias-state-warn-primary) 40%, transparent)', marginRight: '6px', marginBottom: '4px' },
       cleanChip: { fontSize: '12px', color: 'var(--dsw-alias-state-success-primary)' },
       drawerFoot: { position: 'sticky', bottom: '-18px', background: 'var(--dsw-alias-bg-layer-2)', paddingTop: '10px', paddingBottom: '12px', borderTop: '1px solid var(--dsw-alias-border-l1)', display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center', marginTop: 'auto' },
+    }
+
+    // 契约 primary-action-tokens/v1 消费：主按钮 = button-primary-fill + label-primary-foreground，
+    // hover 态换 button-primary-hover（内联样式写不了 :hover，用 hover state 切换）；
+    // disabled 态交给 C.btnDisabled（button-primary-dimmed）。定义在工厂作用域保证组件身份稳定。
+    function PrimaryBtn({ style, children, ...rest }) {
+      const [hov, setHov] = useState(false)
+      return h('button', {
+        ...rest,
+        style: { ...C.btn, ...(hov ? { background: 'var(--dsw-alias-button-primary-hover)' } : {}), ...(style || {}) },
+        onMouseEnter: (e) => { setHov(true); rest.onMouseEnter && rest.onMouseEnter(e) },
+        onMouseLeave: (e) => { setHov(false); rest.onMouseLeave && rest.onMouseLeave(e) },
+      }, children)
     }
 
     async function fetchJson(url) {
@@ -687,7 +701,7 @@ window.__ModuleLoader__.load({
         h('select', { style: C.select, value: category, onChange: (e) => setCategory(e.target.value) },
           cats.map((c) => h('option', { key: c, value: c }, c === 'all' ? t('category') + ': ' + t('all') : c))),
         h('button', {
-          style: onlyOk ? { ...C.btnGhost, color: 'var(--dsw-alias-state-success-primary)', borderColor: '#238636' } : C.btnGhost,
+          style: onlyOk ? { ...C.btnGhost, color: 'var(--dsw-alias-state-success-primary)', borderColor: 'var(--dsw-alias-state-success-primary)' } : C.btnGhost,
           onClick: () => setOnlyOk(!onlyOk),
         }, t('onlyOk')),
         h('select', { style: C.select, value: sort, onChange: (e) => setSort(e.target.value) },
@@ -777,7 +791,7 @@ window.__ModuleLoader__.load({
             h('div', { style: { ...C.desc, fontSize: '12px', marginBottom: '14px' } }, t('restartHint')),
             h('div', { style: { display: 'flex', gap: '8px', justifyContent: 'flex-end' } },
               h('button', { style: C.btnGhost, onClick: () => setUpdateConfirm(null) }, t('cancel')),
-              h('button', { style: C.btn, onClick: () => { setUpdateConfirm(null); doUpdate(e.name) } }, t('confirm')))),
+              h(PrimaryBtn, { onClick: () => { setUpdateConfirm(null); doUpdate(e.name) } }, t('confirm')))),
         )
       }
 
@@ -817,18 +831,18 @@ window.__ModuleLoader__.load({
               h('div', { style: { display: 'flex', gap: '8px', alignItems: 'center', marginTop: 'auto' } },
                 allIn || sceneBusy === sc.id
                   ? h('button', { style: C.btnDisabled }, sceneBusy === sc.id ? t('installing') : t('sceneAllInstalled'))
-                  : h('button', { style: C.btn, onClick: () => installScene(sc) }, '⬇ ' + t('sceneInstallAll')),
+                  : h(PrimaryBtn, { onClick: () => installScene(sc) }, '⬇ ' + t('sceneInstallAll')),
                 sc.presetGuide && (allIn || anyRes) ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-warn-primary)', lineHeight: '1.4' } }, t('sceneGuidePreset')) : null),
               anyRes && !anyFail && !allIn ? h('div', { style: { fontSize: '11px', color: 'var(--dsw-alias-label-secondary)' } }, t('sceneNeedRestart')) : null)
           }))
       }
 
-      if (view === 'installed') return h('div', null, viewToggle, installedView, uninstallModal, updateModal)
+      if (view === 'installed') return h('div', { 'data-dsh-plugin': 'plugin-manager', 'data-dsh-surface': 'settings-section', 'data-dsh-part': 'installed-view' }, viewToggle, installedView, uninstallModal, updateModal)
 
       if (loading) return h('div', null, toolbar, status, h('div', { style: C.desc }, t('loading')))
       if (error) return h('div', null, toolbar, status,
         h('div', { style: C.warn }, '⚠ ' + t('fetchError') + ' (' + error + ')'),
-        h('button', { style: C.btn, onClick: () => { setError(null); setLoading(true); setTimeout(() => location.reload(), 10) } }, t('retry')))
+        h(PrimaryBtn, { onClick: () => { setError(null); setLoading(true); setTimeout(() => location.reload(), 10) } }, t('retry')))
       if (catalog.length === 0) return h('div', null, toolbar, status, h('div', { style: C.desc }, t('emptyCatalog')))
 
       const cards = filtered.slice(0, visible).map((p) => { // v0.7 F-G: 只渲染前 visible 条
@@ -846,7 +860,7 @@ window.__ModuleLoader__.load({
               : h('button', { key: 'i', style: C.btnDisabled }, '✅ ' + t('installed')))
           : busy
             ? h('button', { style: C.btnDisabled, key: 'i' }, t('installing'))
-            : h('button', { key: 'i', style: isBroken ? { ...C.btn, background: 'var(--dsw-alias-state-warn-primary)' } : C.btn, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, t('install'))
+            : h(PrimaryBtn, { key: 'i', style: isBroken ? { background: 'var(--dsw-alias-state-warn-primary)' } : null, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, t('install'))
 
         return h('div', { key: p.id || p.name, style: C.card, onClick: () => setDetail(p), title: t('dtOpen') },
           p.repo ? h(LazyImage, { src: p.ogLocal || ('https://opengraph.githubassets.com/1/' + p.repo), alt: p.repo }) : null,
@@ -856,7 +870,7 @@ window.__ModuleLoader__.load({
               ? h('span', { title: t('unknownBadgeTitle'), style: { width: '7px', height: '7px', borderRadius: '50%', background: 'var(--dsw-alias-label-secondary)', display: 'inline-block', marginLeft: '2px', flexShrink: '0' } })
               : h('span', { style: C.badge(bad[1]) }, bad[0]),
             installedHere ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-success-primary)' } }, '✅') : null,
-            hasUpdate ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-warn-primary)', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + (upM && upM.latest ? ' → v' + upM.latest : '')) : null),
+            hasUpdate ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-warn-primary)', background: 'color-mix(in srgb, var(--dsw-alias-state-warn-primary) 15%, transparent)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + (upM && upM.latest ? ' → v' + upM.latest : '')) : null),
           // v0.6 F-D: desc 单语化 —— UI locale 取主语言、回退另一语言，卡片不再双行堆叠
           h('div', { style: C.desc }, (t('lang') === 'zh' ? (p.desc_zh || p.desc_en) : (p.desc_en || p.desc_zh)) || ''),
           h('div', { style: C.meta },
@@ -867,11 +881,11 @@ window.__ModuleLoader__.load({
           res && res.ok === false ? h('div', { style: { color: 'var(--dsw-alias-state-error-primary)', fontSize: '11px', whiteSpace: 'pre-wrap', maxHeight: '90px', overflow: 'auto' } }, '❌ ' + t('installFailed') + ':' + '\n' + (res.log || '')) : null,
           res && res.ok === false ? h('div', { style: { color: 'var(--dsw-alias-label-secondary)', fontSize: '11px', marginTop: '4px', display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' } }, t('failGuide'), h('button', { style: C.btnGhost, onClick: (e) => { e.stopPropagation(); copyText(pkgSpec(p.installCmd), () => {}) } }, '📋 ' + t('copy'))) : null,
           res && res.ok === true && res.mounted === false ? h('div', { style: { color: 'var(--dsw-alias-state-warn-primary)', fontSize: '11px', padding: '6px', border: '1px solid var(--dsw-alias-state-warn-primary)', borderRadius: '6px' } }, '⚠ ' + t('installedNotMounted') + ': ' + (res.installed || []).join(', ')) : null,
-          res && res.ok === true && res.mounted === true ? h('div', { style: { color: 'var(--dsw-alias-state-success-primary)', fontSize: '12px', fontWeight: '700', padding: '8px', background: 'rgba(63,185,80,0.12)', border: '1px solid #238636', borderRadius: '6px' } }, '✅ ' + t('needRestart')) : null,
+          res && res.ok === true && res.mounted === true ? h('div', { style: { color: 'var(--dsw-alias-state-success-primary)', fontSize: '12px', fontWeight: '700', padding: '8px', background: 'color-mix(in srgb, var(--dsw-alias-state-success-primary) 12%, transparent)', border: '1px solid var(--dsw-alias-state-success-primary)', borderRadius: '6px' } }, '✅ ' + t('needRestart')) : null,
           res && res.ok === true && res.mounted === true ? h('div', { style: { color: 'var(--dsw-alias-label-secondary)', fontSize: '11px', marginTop: '4px', lineHeight: '1.5' } }, t('guideAfterInstall')) : null,
           h('div', { style: { display: 'flex', gap: '8px', marginTop: 'auto' } },
             installBtn,
-            h('button', { style: copied === p.name ? { ...C.btnGhost, color: 'var(--dsw-alias-state-success-primary)', borderColor: '#238636' } : C.btnGhost, onClick: (e) => { e.stopPropagation(); copyCmd(p) } }, copied === p.name ? '✓ ' + t('copied') : '📋')),
+            h('button', { style: copied === p.name ? { ...C.btnGhost, color: 'var(--dsw-alias-state-success-primary)', borderColor: 'var(--dsw-alias-state-success-primary)' } : C.btnGhost, onClick: (e) => { e.stopPropagation(); copyCmd(p) } }, copied === p.name ? '✓ ' + t('copied') : '📋')),
           h('a', { href: feedbackUrl(p), target: '_blank', rel: 'noreferrer', title: t('feedbackTitle'), onClick: (e) => { e.stopPropagation(); e.preventDefault(); openExternal(feedbackUrl(p)) }, style: { ...C.btnGhost, padding: '1px 6px', fontSize: '11px', textDecoration: 'none' } }, '💬'),
         )
       })
@@ -942,7 +956,7 @@ window.__ModuleLoader__.load({
                 ? h('span', { title: t('unknownBadgeTitle'), style: { width: '9px', height: '9px', borderRadius: '50%', background: 'var(--dsw-alias-label-secondary)', display: 'inline-block' } })
                 : h('span', { style: C.badge(dBad[1]) }, dBad[0]),
               dInstalled ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-success-primary)' } }, '✅ ' + t('installed')) : null,
-              dUpM ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-warn-primary)', background: 'rgba(210,153,34,0.15)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + ' → v' + dUpM.latest) : null),
+              dUpM ? h('span', { style: { fontSize: '11px', color: 'var(--dsw-alias-state-warn-primary)', background: 'color-mix(in srgb, var(--dsw-alias-state-warn-primary) 15%, transparent)', padding: '1px 6px', borderRadius: '4px' } }, '⬆ ' + t('update') + ' → v' + dUpM.latest) : null),
             h('div', null,
               h('div', { style: C.drawerSec }, t('dtMeta')),
               h('div', { style: C.drawerMeta },
@@ -975,7 +989,7 @@ window.__ModuleLoader__.load({
             h('div', { style: C.drawerFoot },
               dInstalled && !dUpM
                 ? h('button', { style: C.btnDisabled }, '✅ ' + t('installed'))
-                : h('button', { style: C.btn, onClick: () => setConfirmPkg(d) }, dUpM ? '⬆ ' + t('upgrade') : t('install')),
+                : h(PrimaryBtn, { onClick: () => setConfirmPkg(d) }, dUpM ? '⬆ ' + t('upgrade') : t('install')),
               h('button', { style: C.btnGhost, onClick: () => copyText('dsh plugin add ' + dSpec, () => {}) }, '📋 ' + t('copy')),
               d.repo ? h('a', { href: 'https://github.com/' + d.repo, target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal('https://github.com/' + d.repo) }, style: { ...C.btnGhost, textDecoration: 'none', display: 'inline-block' } }, t('ghLink')) : null,
               h('a', { href: feedbackUrl(d), target: '_blank', rel: 'noreferrer', onClick: (e) => { e.preventDefault(); openExternal(feedbackUrl(d)) }, style: { ...C.btnGhost, textDecoration: 'none', display: 'inline-block' } }, '💬 ' + t('feedback')),
@@ -994,10 +1008,10 @@ window.__ModuleLoader__.load({
             const fBusy = installing === p.name
             const fDesc = (t('lang') === 'zh' ? (p.desc_zh || p.desc_en) : (p.desc_en || p.desc_zh)) || ''
             // v0.8.3 F-2: 已装策绿卡绿边 + 图上 ✓ 角标 + 沉到策展区末尾（上方 slice().sort）
-            return h('div', { key: 'feat-' + (p.id || p.name), style: fInstalled ? { ...C.featCard, boxShadow: 'inset 0 0 0 1px #238636', opacity: 0.92 } : C.featCard, onClick: () => setDetail(p), title: t('dtOpen') },
+            return h('div', { key: 'feat-' + (p.id || p.name), style: fInstalled ? { ...C.featCard, boxShadow: 'inset 0 0 0 1px var(--dsw-alias-state-success-primary)', opacity: 0.92 } : C.featCard, onClick: () => setDetail(p), title: t('dtOpen') },
               p.repo ? h('div', { style: { ...C.featImgBox, position: 'relative' } },
                 h('img', { src: p.ogLocal || ('https://opengraph.githubassets.com/1/' + p.repo), alt: p.repo, loading: 'lazy', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } }),
-                fInstalled ? h('div', { style: { position: 'absolute', top: '8px', right: '8px', background: 'rgba(35,134,54,0.92)', color: '#fff', fontSize: '11px', fontWeight: '700', padding: '2px 10px', borderRadius: '10px', pointerEvents: 'none' } }, '✓ ' + t('installed')) : null) : null,
+                fInstalled ? h('div', { style: { position: 'absolute', top: '8px', right: '8px', background: 'color-mix(in srgb, var(--dsw-alias-state-success-primary) 92%, transparent)', color: 'var(--dsw-alias-label-primary-foreground)', fontSize: '11px', fontWeight: '700', padding: '2px 10px', borderRadius: '10px', pointerEvents: 'none' } }, '✓ ' + t('installed')) : null) : null,
               h('div', { style: C.featBody },
                 h('div', { style: { fontSize: '13px', fontWeight: '600', color: 'var(--dsw-alias-label-primary)', wordBreak: 'break-all' } }, p.name),
                 h('div', { style: C.featDesc }, fDesc),
@@ -1009,11 +1023,11 @@ window.__ModuleLoader__.load({
                     ? h('button', { style: C.btnDisabled }, '✅ ' + t('installed'))
                     : fBusy
                       ? h('button', { style: C.btnDisabled }, t('installing'))
-                      : h('button', { style: C.btn, onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, t('install')))))
+                      : h(PrimaryBtn, { onClick: (e) => { e.stopPropagation(); setConfirmPkg(p) } }, t('install')))))
           })))
       }
 
-      return h('div', null, viewToggle, toolbar, status, featuredEl, h('div', { style: C.grid }, cards),
+      return h('div', { 'data-dsh-plugin': 'plugin-manager', 'data-dsh-surface': 'settings-section', 'data-dsh-part': 'store-view' }, viewToggle, toolbar, status, featuredEl, h('div', { style: C.grid }, cards),
       // v0.7 F-G: 增量渲染哨兵 + 结果计数
       filtered.length > 0
         ? h('div', {

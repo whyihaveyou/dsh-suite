@@ -9,6 +9,7 @@ import { dirname, join } from 'node:path'
 import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { createNamingManifest, registryIdentityFromPackage } from '../src/naming.js'
+import { spawnOpts } from '../src/util.js'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const CLI = join(here, '..', 'src', 'cli.js')
@@ -192,5 +193,15 @@ verifyTest('--verify: build + dsh plugin add + dump-config (needs pnpm + network
     assert.match(r.stdout, /VERIFY PASSED/)
   } finally {
     rmSync(dir, { recursive: true, force: true })
+  }
+})
+
+
+test('spawnOpts forces shell:true on Windows (.cmd shims for pnpm/npm/npx)', () => {
+  const opts = spawnOpts()
+  if (process.platform === 'win32') {
+    assert.equal(opts.shell, true, 'Windows needs shell:true to resolve pnpm.cmd / npm.cmd')
+  } else {
+    assert.notEqual(opts.shell, true, 'POSIX must not enable the shell')
   }
 })

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-04T00:10:11.831Z",
+ "ts": "2026-09-04T04:37:36.351Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1189,6 +1189,7 @@
   "dsh-meow-memory",
   "dsh-meow-smooth",
   "dsh-mermaid",
+  "dsh-mermaid-mrmolabs",
   "dsh-mermaid-preview",
   "dsh-message-edit",
   "dsh-message-navigator",
@@ -2002,6 +2003,8 @@
   "dsh-tiered-approval",
   "dsh-timeline",
   "dsh-timeline-houyanchao",
+  "dsh-timer-agent",
+  "dsh-tinyfish-search",
   "dsh-tmcra-memory",
   "dsh-tmux-cc",
   "dsh-todo-freshness-guard",

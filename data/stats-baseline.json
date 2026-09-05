@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-05T09:08:48.094Z",
+ "ts": "2026-09-05T12:46:38.778Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1689,6 +1689,7 @@
   "dsh-ramify",
   "dsh-randomuuid-polyfill",
   "dsh-raw-html",
+  "dsh-raw-html-v2",
   "dsh-read-history",
   "dsh-read-image",
   "dsh-read-url",
@@ -2210,6 +2211,7 @@
   "dsh-visual-plugin",
   "dsh-visual-workflow",
   "dsh-visualize",
+  "dsh-visualizer",
   "dsh-voice",
   "dsh-voice-3274375092",
   "dsh-voice-ai-girlfriend",

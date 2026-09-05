@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-05T00:10:13.590Z",
+ "ts": "2026-09-05T04:32:59.124Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -722,6 +722,7 @@
   "dsh-deepseek-quota-cn-scuo-oo",
   "dsh-deepseek-usage",
   "dsh-deepseek-usage-mmzm0808",
+  "dsh-deepseek-usage-panel",
   "dsh-deepseek-vision",
   "dsh-deepseek-vision-router",
   "dsh-deepseek-vision-siegfly",
@@ -924,6 +925,7 @@
   "dsh-git-identity",
   "dsh-git-plugin",
   "dsh-git-review",
+  "dsh-git-worktree",
   "dsh-gitbash-preset",
   "dsh-gitflow",
   "dsh-github",

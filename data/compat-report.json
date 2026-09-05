@@ -1,35 +1,37 @@
 {
-  "generated_at": "2026-09-04T02:34:30Z",
-  "dshVersion": "0.1.1-rc.2",
+  "generated_at": "2026-09-05T02:35:54Z",
+  "dshVersion": "0.1.2-rc.1",
   "cordisVersion": "4.0.2",
-  "nodeVersion": "24.19.0",
+  "nodeVersion": "24.20.0",
   "layers_run": [
-    1
+    1,
+    2,
+    3
   ],
   "layer23_scope": "auto",
-  "layer23_skipped": "dsh CLI probe failed after 2 attempts",
+  "layer23_skipped": null,
   "summary": {
-    "total": 2818,
-    "ok": 544,
+    "total": 2831,
+    "ok": 550,
     "broken": 15,
-    "unknown": 789,
-    "unavailable": 1470,
+    "unknown": 793,
+    "unavailable": 1473,
     "skipped": 0
   },
   "summary_catalog": {
-    "total": 1825,
-    "ok": 426,
+    "total": 1834,
+    "ok": 430,
     "broken": 13,
-    "unknown": 475,
+    "unknown": 480,
     "unavailable": 911,
     "skipped": 0
   },
   "summary_watchlist": {
-    "total": 993,
-    "ok": 118,
+    "total": 997,
+    "ok": 120,
     "broken": 2,
-    "unknown": 314,
-    "unavailable": 559,
+    "unknown": 313,
+    "unavailable": 562,
     "skipped": 0
   },
   "results": [
@@ -248,10 +250,10 @@
       "name": "dsh-mnemon",
       "npmName": "dsh-mnemon",
       "section": "catalog",
-      "verdict": "unknown",
-      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.4.7",
-      "peerCordis": null,
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.5.1",
+      "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
     },
@@ -1569,7 +1571,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.1",
+      "pkgVersion": "0.2.3",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -1688,7 +1690,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.3",
+      "pkgVersion": "0.9.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22.13"
@@ -2202,7 +2204,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.3",
+      "pkgVersion": "0.4.1",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -2538,7 +2540,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.5",
+      "pkgVersion": "0.7.0",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -2793,7 +2795,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.4",
+      "pkgVersion": "0.5.5",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -2947,7 +2949,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.4",
+      "pkgVersion": "0.5.5",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -3120,7 +3122,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.13.0",
+      "pkgVersion": "0.14.1",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -3275,7 +3277,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.7.3",
+      "pkgVersion": "0.7.4",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -3879,7 +3881,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.10.2",
+      "pkgVersion": "0.10.3",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -4559,7 +4561,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.0-alpha.4.25",
+      "pkgVersion": "0.1.0-alpha.4.26",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -4619,7 +4621,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.3",
+      "pkgVersion": "0.4.4",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -4955,7 +4957,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.12.0",
+      "pkgVersion": "1.13.1",
       "peerCordis": "4.0.1 || 4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -5477,7 +5479,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.12.0",
+      "pkgVersion": "1.13.1",
       "peerCordis": "4.0.1 || 4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -5854,7 +5856,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.6",
+      "pkgVersion": "0.1.7",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -6109,7 +6111,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.1",
+      "pkgVersion": "0.9.2",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -6121,7 +6123,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.34.1",
+      "pkgVersion": "0.36.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -6184,7 +6186,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.9.4",
+      "pkgVersion": "0.9.5",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -6615,7 +6617,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.12",
+      "pkgVersion": "0.8.13",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -7773,7 +7775,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "2.6.9",
+      "pkgVersion": "2.6.10",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -7865,7 +7867,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -8118,8 +8120,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.41.3",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.42.0",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -8909,7 +8911,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.7.0",
+      "pkgVersion": "0.8.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.11"
@@ -9479,7 +9481,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.0",
+      "pkgVersion": "0.6.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -9903,7 +9905,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.0.3",
+      "pkgVersion": "1.0.4",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -10210,7 +10212,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.8",
+      "pkgVersion": "0.3.10",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -10246,7 +10248,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.13.0",
+      "pkgVersion": "0.14.1",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -10860,7 +10862,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "2.12.3",
+      "pkgVersion": "3.2.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -11216,7 +11218,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "2.3.1",
+      "pkgVersion": "2.3.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -11498,7 +11500,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.1",
+      "pkgVersion": "0.5.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -11510,7 +11512,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.0",
+      "pkgVersion": "0.5.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -11879,7 +11881,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.3.0",
+      "pkgVersion": "0.3.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -12408,7 +12410,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.4.20",
+      "pkgVersion": "1.4.21",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -12464,7 +12466,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.0",
+      "pkgVersion": "0.6.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -12499,7 +12501,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "2.3.1",
+      "pkgVersion": "2.3.3",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -12944,7 +12946,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.4.20",
+      "pkgVersion": "1.4.21",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -13170,7 +13172,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.17.6",
+      "pkgVersion": "0.17.7",
       "peerCordis": ">=4.0.0 <5",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -13281,7 +13283,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.5.0",
+      "pkgVersion": "0.6.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -13379,7 +13381,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.9.1",
+      "pkgVersion": "2.0.1",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -13516,10 +13518,10 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.10.1",
+      "pkgVersion": "0.11.0",
       "peerCordis": "*",
       "peerDsh": null,
-      "nodeRange": null
+      "nodeRange": "^22.19.0 || >=24.0.0"
     },
     {
       "id": "dsh-workflow-omdsh-dev",
@@ -13556,7 +13558,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.12",
+      "pkgVersion": "0.8.13",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -13865,7 +13867,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.9.2",
+      "pkgVersion": "1.10.2",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -14169,7 +14171,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.8",
+      "pkgVersion": "0.3.9",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -14382,7 +14384,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.7.2",
+      "pkgVersion": "0.8.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.0.0"
@@ -14587,8 +14589,12 @@
       "name": "dsh-plugin-guard",
       "npmName": "dsh-plugin-guard",
       "section": "catalog",
-      "verdict": "unavailable",
-      "note": "npm package not found (unpublished or GitHub-only)"
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.1.1",
+      "peerCordis": "*",
+      "peerDsh": null,
+      "nodeRange": ">=18"
     },
     {
       "id": "dsh-weneed",
@@ -14843,7 +14849,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.12.2",
+      "pkgVersion": "0.12.4",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20.19.0"
@@ -14942,7 +14948,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.12",
+      "pkgVersion": "0.8.13",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -15128,7 +15134,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.8",
+      "pkgVersion": "0.3.9",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -15219,7 +15225,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.12",
+      "pkgVersion": "0.8.13",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -15433,7 +15439,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.1",
+      "pkgVersion": "0.1.4",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -15464,7 +15470,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.9.0",
+      "pkgVersion": "0.10.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20.11"
@@ -15524,7 +15530,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.13",
+      "pkgVersion": "0.2.14",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -16062,8 +16068,8 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.2",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.3.0",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
     },
@@ -16404,7 +16410,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.1.6",
+      "pkgVersion": "0.1.7",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -16455,7 +16461,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.8",
+      "pkgVersion": "0.3.9",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -16503,7 +16509,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "1.1.11",
+      "pkgVersion": "1.1.12",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -16678,7 +16684,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.24",
+      "pkgVersion": "0.4.25",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=24.0.0"
@@ -17068,7 +17074,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "3.9.0",
+      "pkgVersion": "3.9.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.3"
@@ -17139,7 +17145,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "2.1.1",
+      "pkgVersion": "2.1.2",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -17391,7 +17397,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.5.1",
+      "pkgVersion": "0.6.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -17463,7 +17469,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "2.0.0",
+      "pkgVersion": "2.1.0",
       "peerCordis": ">=4.0.1 <5",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -17511,7 +17517,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.4.3",
+      "pkgVersion": "1.5.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18.0.0"
@@ -17563,7 +17569,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.2",
+      "pkgVersion": "0.3.3",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -17619,7 +17625,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.3",
+      "pkgVersion": "0.3.4",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -17667,7 +17673,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.4.6",
+      "pkgVersion": "0.4.7",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -17748,7 +17754,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.1",
+      "pkgVersion": "0.2.2",
       "peerCordis": ">=4",
       "peerDsh": null,
       "nodeRange": "^22.19 || >=24"
@@ -17760,7 +17766,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.4.2",
+      "pkgVersion": "0.4.4",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -17855,7 +17861,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.8.12",
+      "pkgVersion": "0.8.13",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": null
@@ -17975,7 +17981,7 @@
       "section": "catalog",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.4",
+      "pkgVersion": "0.3.6",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -17999,7 +18005,7 @@
       "section": "catalog",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.63.4",
+      "pkgVersion": "0.64.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.19.0"
@@ -18120,6 +18126,107 @@
       "note": "npm package not found (unpublished or GitHub-only)"
     },
     {
+      "id": "dsh-tinyfish-search",
+      "name": "dsh-tinyfish-search",
+      "npmName": "dsh-tinyfish-search",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.2.1",
+      "peerCordis": ">=4.0.0 <5.0.0",
+      "peerDsh": null,
+      "nodeRange": ">=20"
+    },
+    {
+      "id": "dsh-mermaid-mrmolabs",
+      "name": "dsh-mermaid",
+      "npmName": "dsh-mermaid",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.3.1",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=22.19.0"
+    },
+    {
+      "id": "dsh-plugin-scaffold",
+      "name": "dsh-plugin-scaffold",
+      "npmName": "dsh-plugin-scaffold",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.4.5",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "web-background",
+      "name": "web-background",
+      "npmName": "web-background",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-plugin-memory",
+      "name": "dsh-plugin-memory",
+      "npmName": "dsh-plugin-memory",
+      "section": "catalog",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.5.2",
+      "peerCordis": "^4.0.1",
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "prompt-skill-armory",
+      "name": "prompt-skill-armory",
+      "npmName": "prompt-skill-armory",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "pkgVersion": "0.9.7",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": ">=18"
+    },
+    {
+      "id": "dsh-bloub-mood",
+      "name": "dsh-bloub-mood",
+      "npmName": "dsh-bloub-mood",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
+      "id": "dsh-vsc",
+      "name": "dsh-vsc",
+      "npmName": "dsh-vsc",
+      "section": "catalog",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-approval-gate",
+      "name": "dsh-approval-gate",
+      "npmName": "dsh-approval-gate",
+      "section": "catalog",
+      "verdict": "unknown",
+      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
+      "peerCordis": null,
+      "peerDsh": null,
+      "nodeRange": null
+    },
+    {
       "id": "openbiliclaw",
       "name": "OpenBiliClaw",
       "npmName": "openbiliclaw",
@@ -18142,7 +18249,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "3.11.2",
+      "pkgVersion": "3.12.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=24"
@@ -18458,7 +18565,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.8",
+      "pkgVersion": "0.3.9",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -18798,7 +18905,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.16.0",
+      "pkgVersion": "0.17.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=23.5.0 || ^22.13.0 || ^20.17.0"
@@ -18818,7 +18925,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.4",
+      "pkgVersion": "0.2.5",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -19301,7 +19408,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "unparseable peer range (cordis=\"undefined\" dsh=\">=0.1.0-rc.8 <0.2.0\")",
-      "pkgVersion": "0.3.3",
+      "pkgVersion": "0.3.4",
       "peerCordis": null,
       "peerDsh": ">=0.1.0-rc.8 <0.2.0",
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -19451,8 +19558,8 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.7.3",
-      "peerCordis": "^4.0.1",
+      "pkgVersion": "0.7.4",
+      "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": ">=20"
     },
@@ -20268,7 +20375,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.4",
+      "pkgVersion": "0.6.5",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -20323,7 +20430,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.9",
+      "pkgVersion": "0.6.10",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -20583,7 +20690,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.6",
+      "pkgVersion": "0.6.8",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -21422,7 +21529,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.6.6",
+      "pkgVersion": "0.6.7",
       "peerCordis": "^4.0.2",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -21651,7 +21758,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "1.4.20",
+      "pkgVersion": "1.4.21",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -23512,7 +23619,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.13.0",
+      "pkgVersion": "0.14.1",
       "peerCordis": "*",
       "peerDsh": null,
       "nodeRange": ">=22"
@@ -23936,8 +24043,8 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.3",
-      "peerCordis": ">=4.0.1",
+      "pkgVersion": "0.4.0",
+      "peerCordis": ">=4.0.2",
       "peerDsh": null,
       "nodeRange": ">=22"
     },
@@ -24656,7 +24763,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.7",
+      "pkgVersion": "0.3.8",
       "peerCordis": ">=4.0.0 <5.0.0",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -24858,7 +24965,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.1.6",
+      "pkgVersion": "0.1.8",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": null
@@ -25255,7 +25362,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "2.18.0",
+      "pkgVersion": "2.19.0",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -25540,7 +25647,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.0.15",
+      "pkgVersion": "0.0.16",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -26100,7 +26207,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "3.9.0",
+      "pkgVersion": "3.9.1",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=22.3"
@@ -26442,7 +26549,7 @@
       "section": "watchlist",
       "verdict": "unknown",
       "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.2.32",
+      "pkgVersion": "0.2.33",
       "peerCordis": null,
       "peerDsh": null,
       "nodeRange": ">=18"
@@ -26654,7 +26761,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.8",
+      "pkgVersion": "0.3.9",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -26762,10 +26869,10 @@
       "name": "dsh-mnemon",
       "npmName": "dsh-mnemon",
       "section": "watchlist",
-      "verdict": "unknown",
-      "note": "no @deepseek-ai/cordis or @deepseek-ai/dsh peer dep (cannot judge statically)",
-      "pkgVersion": "0.4.7",
-      "peerCordis": null,
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "0.5.1",
+      "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
     },
@@ -26788,7 +26895,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.3.8",
+      "pkgVersion": "0.3.9",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": "^22.19.0 || >=24.0.0"
@@ -27076,7 +27183,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.0",
+      "pkgVersion": "1.0.0",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -27490,7 +27597,7 @@
       "section": "watchlist",
       "verdict": "ok",
       "note": "",
-      "pkgVersion": "0.2.32",
+      "pkgVersion": "0.2.34",
       "peerCordis": "^4.0.1",
       "peerDsh": null,
       "nodeRange": ">=20"
@@ -27673,23 +27780,4819 @@
       "section": "watchlist",
       "verdict": "unavailable",
       "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-timer-agent",
+      "name": "dsh-timer-agent",
+      "npmName": "dsh-timer-agent",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-liketavern",
+      "name": "dsh-liketavern",
+      "npmName": "dsh-liketavern",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "papermachine",
+      "name": "papermachine",
+      "npmName": "papermachine",
+      "section": "watchlist",
+      "verdict": "unavailable",
+      "note": "npm package not found (unpublished or GitHub-only)"
+    },
+    {
+      "id": "dsh-pentester",
+      "name": "dsh-pentester",
+      "npmName": "dsh-pentester",
+      "section": "watchlist",
+      "verdict": "ok",
+      "note": "",
+      "pkgVersion": "2.4.0",
+      "peerCordis": "^4.0.0",
+      "peerDsh": null,
+      "nodeRange": "^22.19 || >=24"
     }
   ],
-  "layer2": [],
-  "layer3": [],
+  "layer2": [
+    {
+      "id": "open-managed-agents",
+      "name": "open-managed-agents",
+      "spec": "open-managed-agents",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 8425
+    },
+    {
+      "id": "role-model",
+      "name": "role-model",
+      "spec": "role-model",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 6803
+    },
+    {
+      "id": "dsh-data-agent",
+      "name": "dsh-data-agent",
+      "spec": "@yejiming/dsh-data-agent",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 5746
+    },
+    {
+      "id": "dsh-mnemon",
+      "name": "dsh-mnemon",
+      "spec": "dsh-mnemon",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4279
+    },
+    {
+      "id": "dsh-web-ui",
+      "name": "dsh-web-ui",
+      "spec": "@linxin666/dsh-web-ui-all",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 10396
+    },
+    {
+      "id": "dsh-better-sidebar",
+      "name": "DSH-better-sidebar",
+      "spec": "dsh-better-sidebar",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 7797
+    },
+    {
+      "id": "dsh-genui",
+      "name": "dsh-genui",
+      "spec": "dsh-genui",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2432
+    },
+    {
+      "id": "whale-girl",
+      "name": "whale-girl",
+      "spec": "whale-girl",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2450
+    },
+    {
+      "id": "dsh-turn-rewind",
+      "name": "dsh-turn-rewind",
+      "spec": "@anionex/dsh-turn-rewind",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4289
+    },
+    {
+      "id": "dsh-share",
+      "name": "dsh-share",
+      "spec": "dsh-share",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3118
+    },
+    {
+      "id": "plugin-session-export",
+      "name": "plugin-session-export",
+      "spec": "@dsh-suite/plugin-session-export",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2514
+    },
+    {
+      "id": "dsh-vision-toolkit",
+      "name": "dsh-vision-toolkit",
+      "spec": "@anionex/dsh-vision-toolkit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3131
+    },
+    {
+      "id": "openhanako",
+      "name": "openhanako",
+      "spec": "openhanako",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2244
+    },
+    {
+      "id": "exo",
+      "name": "exo",
+      "spec": "exo",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2052
+    },
+    {
+      "id": "synergy",
+      "name": "synergy",
+      "spec": "synergy",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2094
+    },
+    {
+      "id": "ccteam",
+      "name": "ccteam",
+      "spec": "ccteam",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 4511
+    },
+    {
+      "id": "distill",
+      "name": "distill",
+      "spec": "distill",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2095
+    },
+    {
+      "id": "dsh-agent-teams",
+      "name": "dsh-agent-teams",
+      "spec": "@nanmicoder/dsh-agent-teams",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2442
+    },
+    {
+      "id": "dsh-work",
+      "name": "dsh-work",
+      "spec": "dsh-work",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2161
+    },
+    {
+      "id": "awesome-dsh-plugins",
+      "name": "awesome-dsh-plugins",
+      "spec": "awesome-dsh-plugins",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2261
+    },
+    {
+      "id": "dsh-tianshu-tui",
+      "name": "dsh-tianshu-tui",
+      "spec": "@huiliyi37/dsh-tianshu-tui",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4060
+    },
+    {
+      "id": "dsh-at-file",
+      "name": "dsh-at-file",
+      "spec": "dsh-at-file",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1927
+    },
+    {
+      "id": "dsh-notification",
+      "name": "dsh-notification",
+      "spec": "dsh-notification",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2759
+    },
+    {
+      "id": "dsh-ads",
+      "name": "dsh-ads",
+      "spec": "dsh-ads",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2077
+    },
+    {
+      "id": "dsh-openpencil",
+      "name": "dsh-openpencil",
+      "spec": "@zseven-w/dsh-openpencil",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2914
+    },
+    {
+      "id": "dsh-visualize",
+      "name": "dsh-visualize",
+      "spec": "dsh-visualize",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2188
+    },
+    {
+      "id": "awesome-dsh-plugin",
+      "name": "awesome-DSH-plugin",
+      "spec": "awesome-dsh-plugin",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2105
+    },
+    {
+      "id": "oh-my-dsh",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 14026
+    },
+    {
+      "id": "awesome-dsh-plugin-bruc3van",
+      "name": "awesome-dsh-plugin",
+      "spec": "awesome-dsh-plugin",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 1796
+    },
+    {
+      "id": "dsh-launcher",
+      "name": "dsh-launcher",
+      "spec": "dsh-launcher",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2261
+    },
+    {
+      "id": "plugin-registry",
+      "name": "plugin-registry",
+      "spec": "plugin-registry",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2317
+    },
+    {
+      "id": "create-dsh-plugin",
+      "name": "create-dsh-plugin",
+      "spec": "create-dsh-plugin",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2014
+    },
+    {
+      "id": "plugin-notify",
+      "name": "plugin-notify",
+      "spec": "@dsh-suite/plugin-notify",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3918
+    },
+    {
+      "id": "modlens",
+      "name": "modlens",
+      "spec": "@liustack/modlens",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2348
+    },
+    {
+      "id": "modsearch",
+      "name": "modsearch",
+      "spec": "modsearch",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 4387
+    },
+    {
+      "id": "dsh-browser",
+      "name": "dsh-browser",
+      "spec": "dsh-browser",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3802
+    },
+    {
+      "id": "dsh-chat-import",
+      "name": "dsh-chat-import",
+      "spec": "dsh-chat-import",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3101
+    },
+    {
+      "id": "dsh-status-rotator",
+      "name": "dsh-status-rotator",
+      "spec": "dsh-status-rotator",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3243
+    },
+    {
+      "id": "dsh-expression",
+      "name": "dsh-expression",
+      "spec": "dsh-expression",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2294
+    },
+    {
+      "id": "billion-context-dsh",
+      "name": "billion-context-dsh",
+      "spec": "billion-context-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1964
+    },
+    {
+      "id": "dsh-memento",
+      "name": "dsh-memento",
+      "spec": "dsh-memento",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2375
+    },
+    {
+      "id": "dsh-memento-perrylink",
+      "name": "dsh-memento",
+      "spec": "dsh-memento",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1904
+    },
+    {
+      "id": "dsh-cost-meter",
+      "name": "dsh-cost-meter",
+      "spec": "dsh-cost-meter",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2604
+    },
+    {
+      "id": "dsh-auto-review",
+      "name": "dsh-auto-review",
+      "spec": "dsh-auto-review",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4845
+    },
+    {
+      "id": "dsh-codex",
+      "name": "dsh-codex",
+      "spec": "dsh-codex",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2339
+    },
+    {
+      "id": "dsh-codex-connect",
+      "name": "dsh-codex-connect",
+      "spec": "dsh-codex-connect",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2217
+    },
+    {
+      "id": "dsh-usage-stats",
+      "name": "dsh-usage-stats",
+      "spec": "dsh-usage-stats",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2525
+    },
+    {
+      "id": "pi2dsh",
+      "name": "pi2dsh",
+      "spec": "pi2dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4141
+    },
+    {
+      "id": "dsh-lark-omdsh-dev",
+      "name": "dsh-lark",
+      "spec": "dsh-lark",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 3843
+    },
+    {
+      "id": "dsh-vision-oil-oil",
+      "name": "dsh-vision",
+      "spec": "dsh-vision",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2553
+    },
+    {
+      "id": "superpowers-dsh",
+      "name": "superpowers-dsh",
+      "spec": "superpowers-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2504
+    },
+    {
+      "id": "dsh-remote",
+      "name": "dsh-remote",
+      "spec": "dsh-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4394
+    },
+    {
+      "id": "museai",
+      "name": "MuseAI",
+      "spec": "museai",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2715
+    },
+    {
+      "id": "dsh-kun-like-pet",
+      "name": "dsh-kun-like-pet",
+      "spec": "dsh-kun-like-pet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2438
+    },
+    {
+      "id": "dsh-undo-plugin",
+      "name": "dsh-undo-plugin",
+      "spec": "dsh-undo-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3426
+    },
+    {
+      "id": "plugin-manager",
+      "name": "plugin-manager",
+      "spec": "@dsh-suite/plugin-manager",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2314
+    },
+    {
+      "id": "dsh-green-meter",
+      "name": "dsh-green-meter",
+      "spec": "dsh-green-meter",
+      "src": "npm",
+      "verdict": "fail",
+      "note": "failed once, retried — install failed (exit 1):     at runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-F7ZVfRyo.js:122:22) |     at file:///home/runner/.npm/",
+      "elapsedMs": 1984
+    },
+    {
+      "id": "plugin-team-board",
+      "name": "plugin-team-board",
+      "spec": "@dsh-suite/plugin-team-board",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2464
+    },
+    {
+      "id": "dsh-context",
+      "name": "dsh-context",
+      "spec": "dsh-context",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2198
+    },
+    {
+      "id": "anysearch-dsh",
+      "name": "anysearch-dsh",
+      "spec": "@anysearch/anysearch-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2476
+    },
+    {
+      "id": "tokenledger",
+      "name": "TokenLedger",
+      "spec": "tokenledger",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2497
+    },
+    {
+      "id": "dsh-stock-watch",
+      "name": "dsh-stock-watch",
+      "spec": "dsh-stock-watch",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2144
+    },
+    {
+      "id": "dsh-pet-pc2005-cloud",
+      "name": "dsh-pet",
+      "spec": "dsh-pet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3643
+    },
+    {
+      "id": "dsh-commandcode-provider",
+      "name": "dsh-commandcode-provider",
+      "spec": "dsh-commandcode-provider",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2328
+    },
+    {
+      "id": "dsh-plugin-subscriptions",
+      "name": "dsh-plugin-subscriptions",
+      "spec": "dsh-plugin-subscriptions",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2313
+    },
+    {
+      "id": "dsh-qqbot",
+      "name": "dsh-qqbot",
+      "spec": "@tencent-connect/dsh-qqbot",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3052
+    },
+    {
+      "id": "deepseek-harness-wallet",
+      "name": "deepseek-harness-wallet",
+      "spec": "deepseek-harness-wallet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2483
+    },
+    {
+      "id": "dsh-plugin-tabbit-browser",
+      "name": "dsh-plugin",
+      "spec": "dsh-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2242
+    },
+    {
+      "id": "dsh-memory-furongjun-1999",
+      "name": "dsh-memory",
+      "spec": "dsh-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2345
+    },
+    {
+      "id": "all",
+      "name": "all (全家桶)",
+      "spec": "@dsh-suite/all",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3421
+    },
+    {
+      "id": "themes",
+      "name": "themes (皮肤中心)",
+      "spec": "@dsh-suite/themes",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2435
+    },
+    {
+      "id": "preset-center",
+      "name": "preset-center (场景预设)",
+      "spec": "@dsh-suite/preset-center",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2039
+    },
+    {
+      "id": "plugin-deus",
+      "name": "plugin-deus (神模扳机)",
+      "spec": "@dsh-suite/plugin-deus",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1997
+    },
+    {
+      "id": "dsh-auto-mode",
+      "name": "dsh-auto-mode",
+      "spec": "dsh-auto-mode",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1850
+    },
+    {
+      "id": "dsh-balance-plugin-francis-xavier-code",
+      "name": "dsh-balance-plugin",
+      "spec": "dsh-balance-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1853
+    },
+    {
+      "id": "dsh-web-mobile",
+      "name": "dsh-web-mobile",
+      "spec": "dsh-web-mobile",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1841
+    },
+    {
+      "id": "dsh-reasoning-effort",
+      "name": "dsh-reasoning-effort",
+      "spec": "dsh-reasoning-effort",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2132
+    },
+    {
+      "id": "dsh-free-search",
+      "name": "dsh-free-search",
+      "spec": "dsh-free-search",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3915
+    },
+    {
+      "id": "dsh-dream-skin",
+      "name": "dsh-dream-skin",
+      "spec": "dsh-dream-skin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1817
+    },
+    {
+      "id": "mirage-dsh",
+      "name": "mirage-dsh",
+      "spec": "@struktoai/mirage-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 7140
+    },
+    {
+      "id": "dsh-smooth-stream-laplacebit",
+      "name": "dsh-smooth-stream",
+      "spec": "dsh-smooth-stream",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2507
+    },
+    {
+      "id": "voyager",
+      "name": "voyager",
+      "spec": "voyager",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 3746
+    },
+    {
+      "id": "caliper",
+      "name": "caliper",
+      "spec": "caliper",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2823
+    },
+    {
+      "id": "dsh-notifier",
+      "name": "dsh-notifier",
+      "spec": "dsh-notifier",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3276
+    },
+    {
+      "id": "dsh-im",
+      "name": "dsh-im",
+      "spec": "dsh-im",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2356
+    },
+    {
+      "id": "dsh-pocket",
+      "name": "dsh-pocket",
+      "spec": "dsh-pocket",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2817
+    },
+    {
+      "id": "dsh-usage",
+      "name": "dsh-usage",
+      "spec": "dsh-usage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2784
+    },
+    {
+      "id": "dsh-crew",
+      "name": "dsh-crew",
+      "spec": "dsh-crew",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2198
+    },
+    {
+      "id": "dsh-damage-pulse",
+      "name": "dsh-damage-pulse",
+      "spec": "dsh-damage-pulse",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3010
+    },
+    {
+      "id": "dsh-remote-xgone",
+      "name": "dsh-remote",
+      "spec": "dsh-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4595
+    },
+    {
+      "id": "dsh-mobile-saya-ch",
+      "name": "dsh-mobile",
+      "spec": "dsh-mobile",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4004
+    },
+    {
+      "id": "dsh-image-gen",
+      "name": "dsh-image-gen",
+      "spec": "dsh-image-gen",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3935
+    },
+    {
+      "id": "dsh-meme",
+      "name": "dsh-meme",
+      "spec": "dsh-meme",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2937
+    },
+    {
+      "id": "dsh-tavern-flizzywine",
+      "name": "dsh-tavern",
+      "spec": "dsh-tavern",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2119
+    },
+    {
+      "id": "dsh-univer-office",
+      "name": "dsh-univer-office",
+      "spec": "dsh-univer-office",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4893
+    },
+    {
+      "id": "tongflow",
+      "name": "tongflow",
+      "spec": "tongflow",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2651
+    },
+    {
+      "id": "open-sea-skin",
+      "name": "open-sea-skin",
+      "spec": "open-sea-skin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2471
+    },
+    {
+      "id": "memos",
+      "name": "MemOS",
+      "spec": "memos",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2387
+    },
+    {
+      "id": "dsh-omi-voice",
+      "name": "dsh-omi-voice",
+      "spec": "dsh-omi-voice",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2556
+    },
+    {
+      "id": "dsh-plugin-bridge",
+      "name": "dsh-plugin-bridge",
+      "spec": "dsh-plugin-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2191
+    },
+    {
+      "id": "dsh-undo-savepoint",
+      "name": "dsh-undo-savepoint",
+      "spec": "dsh-undo-savepoint",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1982
+    },
+    {
+      "id": "dsh-trace-compare",
+      "name": "dsh-trace-compare",
+      "spec": "dsh-trace-compare",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3105
+    },
+    {
+      "id": "dsh-turn-delete",
+      "name": "dsh-turn-delete",
+      "spec": "dsh-turn-delete",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2216
+    },
+    {
+      "id": "dsh-ego-browser-fisfzy",
+      "name": "dsh-ego-browser",
+      "spec": "dsh-ego-browser",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2414
+    },
+    {
+      "id": "dsh-remote-web-gateway",
+      "name": "dsh-remote-web-gateway",
+      "spec": "dsh-remote-web-gateway",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2351
+    },
+    {
+      "id": "dsh-recall-unread",
+      "name": "dsh-recall-unread",
+      "spec": "dsh-recall-unread",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2204
+    },
+    {
+      "id": "dsh-config-manager",
+      "name": "dsh-config-manager",
+      "spec": "dsh-config-manager",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2665
+    },
+    {
+      "id": "dsh-network-settings",
+      "name": "dsh-network-settings",
+      "spec": "dsh-network-settings",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2266
+    },
+    {
+      "id": "dsh-tabbit",
+      "name": "dsh-tabbit",
+      "spec": "dsh-tabbit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2320
+    },
+    {
+      "id": "dsh-android",
+      "name": "dsh-android",
+      "spec": "dsh-android",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 1980
+    },
+    {
+      "id": "dsh-secure-audit",
+      "name": "dsh-secure-audit",
+      "spec": "dsh-secure-audit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2814
+    },
+    {
+      "id": "dsh-strata",
+      "name": "dsh-strata",
+      "spec": "dsh-strata",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2015
+    },
+    {
+      "id": "dsh-balance-plugin-yxxbc",
+      "name": "dsh-balance-plugin",
+      "spec": "dsh-balance-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1946
+    },
+    {
+      "id": "dsh-run2skill",
+      "name": "dsh-run2skill",
+      "spec": "dsh-run2skill",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3001
+    },
+    {
+      "id": "dsh-vision-router",
+      "name": "dsh-vision-router",
+      "spec": "dsh-vision-router",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4559
+    },
+    {
+      "id": "dsh-comfyui",
+      "name": "dsh-comfyui",
+      "spec": "dsh-comfyui",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2247
+    },
+    {
+      "id": "dsh-maze",
+      "name": "dsh-maze",
+      "spec": "dsh-maze",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2590
+    },
+    {
+      "id": "dsh-industry-research",
+      "name": "dsh-industry-research",
+      "spec": "dsh-industry-research",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3559
+    },
+    {
+      "id": "dsh-research-report",
+      "name": "dsh-research-report",
+      "spec": "dsh-research-report",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3566
+    },
+    {
+      "id": "dsh-creator",
+      "name": "DSH-Creator",
+      "spec": "dsh-creator",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2642
+    },
+    {
+      "id": "dsh-yolo",
+      "name": "dsh-yolo",
+      "spec": "dsh-yolo",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2058
+    },
+    {
+      "id": "ds-harness-remote",
+      "name": "ds-harness-remote",
+      "spec": "ds-harness-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3745
+    },
+    {
+      "id": "pi-web-ui",
+      "name": "pi-web-ui",
+      "spec": "pi-web-ui",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 6587
+    },
+    {
+      "id": "dsh-trading-zhu1090093659",
+      "name": "dsh-trading",
+      "spec": "dsh-trading",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2436
+    },
+    {
+      "id": "dsh-plugin-shop",
+      "name": "dsh-plugin-shop",
+      "spec": "dsh-plugin-shop",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2759
+    },
+    {
+      "id": "hologram",
+      "name": "HoloGram",
+      "spec": "hologram",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2357
+    },
+    {
+      "id": "dsh-focus-chat",
+      "name": "dsh-focus-chat",
+      "spec": "@dingyi222666/dsh-focus-chat",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3745
+    },
+    {
+      "id": "dsh-input-history",
+      "name": "dsh-input-history",
+      "spec": "dsh-input-history",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3056
+    },
+    {
+      "id": "dsh-drag-and-drop",
+      "name": "dsh-drag-and-drop",
+      "spec": "dsh-drag-and-drop",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2258
+    },
+    {
+      "id": "dsh-message-edit",
+      "name": "dsh-message-edit",
+      "spec": "dsh-message-edit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1997
+    },
+    {
+      "id": "dsh-session-health",
+      "name": "dsh-session-health",
+      "spec": "dsh-session-health",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2446
+    },
+    {
+      "id": "dsh-conversation-share",
+      "name": "dsh-conversation-share",
+      "spec": "dsh-conversation-share",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1863
+    },
+    {
+      "id": "dsh-tool-approval",
+      "name": "dsh-tool-approval",
+      "spec": "dsh-tool-approval",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2175
+    },
+    {
+      "id": "oh-my-dsh-wangshunnn",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 9247
+    },
+    {
+      "id": "dsh-launcher-snowcrescenter-tech",
+      "name": "dsh-launcher",
+      "spec": "dsh-launcher",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2016
+    },
+    {
+      "id": "dsh-companion-yyh-001",
+      "name": "dsh-companion",
+      "spec": "dsh-companion",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2278
+    },
+    {
+      "id": "dsh-plugin-product-subagents",
+      "name": "dsh-plugin-product-subagents",
+      "spec": "dsh-plugin-product-subagents",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2381
+    },
+    {
+      "id": "dsh-compaction-instant",
+      "name": "dsh-compaction-instant",
+      "spec": "dsh-compaction-instant",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2524
+    },
+    {
+      "id": "dsh-milestone",
+      "name": "dsh-milestone",
+      "spec": "dsh-milestone",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2430
+    },
+    {
+      "id": "dsh-onlyne",
+      "name": "dsh-onlyne",
+      "spec": "dsh-onlyne",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2667
+    },
+    {
+      "id": "dsh-hdc-bridge",
+      "name": "dsh-hdc-bridge",
+      "spec": "dsh-hdc-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2169
+    },
+    {
+      "id": "dsh-ergonomics",
+      "name": "dsh-ergonomics",
+      "spec": "dsh-ergonomics",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2190
+    },
+    {
+      "id": "dsh-plugin-pi-bridge",
+      "name": "dsh-plugin-pi-bridge",
+      "spec": "dsh-plugin-pi-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1985
+    },
+    {
+      "id": "dsh-superpowers",
+      "name": "dsh-superpowers",
+      "spec": "dsh-superpowers",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 13213
+    },
+    {
+      "id": "dsh-web-search-tavily",
+      "name": "dsh-web-search-tavily",
+      "spec": "dsh-web-search-tavily",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1916
+    },
+    {
+      "id": "dsh-pet",
+      "name": "dsh-pet",
+      "spec": "dsh-pet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1825
+    },
+    {
+      "id": "deepseek-harness-background",
+      "name": "deepseek-harness-background",
+      "spec": "deepseek-harness-background",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1930
+    },
+    {
+      "id": "dsh-prompt-presets",
+      "name": "dsh-prompt-presets",
+      "spec": "dsh-prompt-presets",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1784
+    },
+    {
+      "id": "dsh-plugin-auto-docs",
+      "name": "dsh-plugin-auto-docs",
+      "spec": "dsh-plugin-auto-docs",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1838
+    },
+    {
+      "id": "dsh-cloudflare-browser-run",
+      "name": "dsh-cloudflare-browser-run",
+      "spec": "dsh-cloudflare-browser-run",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1945
+    },
+    {
+      "id": "dsh-github",
+      "name": "dsh-github",
+      "spec": "dsh-github",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1893
+    },
+    {
+      "id": "dsh-deepseek-balance",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1868
+    },
+    {
+      "id": "qiushi-dsh-evidence-audit",
+      "name": "qiushi-dsh-evidence-audit",
+      "spec": "qiushi-dsh-evidence-audit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1853
+    },
+    {
+      "id": "dsh-plugin-verify",
+      "name": "dsh-plugin-verify",
+      "spec": "dsh-plugin-verify",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1809
+    },
+    {
+      "id": "dsh-schedule",
+      "name": "dsh-schedule",
+      "spec": "dsh-schedule",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 1898
+    },
+    {
+      "id": "dsh-vision-helper",
+      "name": "dsh-vision-helper",
+      "spec": "dsh-vision-helper",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1660
+    },
+    {
+      "id": "dsh-tool-browser-mashedpotato817",
+      "name": "dsh-tool-browser",
+      "spec": "dsh-tool-browser",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 5566
+    },
+    {
+      "id": "dsh-balance-monitor",
+      "name": "dsh-balance-monitor",
+      "spec": "dsh-balance-monitor",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1599
+    },
+    {
+      "id": "dsh-batch-regression",
+      "name": "dsh-batch-regression",
+      "spec": "dsh-batch-regression",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1902
+    },
+    {
+      "id": "dsh-agent-eval",
+      "name": "dsh-agent-eval",
+      "spec": "dsh-agent-eval",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2010
+    },
+    {
+      "id": "dsh-plugin-agent-dashboard",
+      "name": "dsh-plugin-agent-dashboard",
+      "spec": "dsh-plugin-agent-dashboard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2724
+    },
+    {
+      "id": "dsh-terminal",
+      "name": "dsh-terminal",
+      "spec": "dsh-terminal",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2298
+    },
+    {
+      "id": "dsh-skin",
+      "name": "dsh-skin",
+      "spec": "dsh-skin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2136
+    },
+    {
+      "id": "dsh-survey",
+      "name": "dsh-survey",
+      "spec": "dsh-survey",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2232
+    },
+    {
+      "id": "dsh-lsp-actions",
+      "name": "dsh-lsp-actions",
+      "spec": "dsh-lsp-actions",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2151
+    },
+    {
+      "id": "dsh-verification-receipt",
+      "name": "dsh-verification-receipt",
+      "spec": "dsh-verification-receipt",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2173
+    },
+    {
+      "id": "dsh-codex-subscription",
+      "name": "dsh-codex-subscription",
+      "spec": "dsh-codex-subscription",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2716
+    },
+    {
+      "id": "dsh-memory-amengclass",
+      "name": "dsh-memory",
+      "spec": "dsh-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2011
+    },
+    {
+      "id": "dsh-advisor-omdsh-dev",
+      "name": "dsh-advisor",
+      "spec": "dsh-advisor",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2507
+    },
+    {
+      "id": "dsh-codex-subscription-yequ172672",
+      "name": "dsh-codex-subscription",
+      "spec": "dsh-codex-subscription",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2216
+    },
+    {
+      "id": "dsh-tool-hashline",
+      "name": "dsh-tool-hashline",
+      "spec": "dsh-tool-hashline",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2253
+    },
+    {
+      "id": "dsh-codex-oauth",
+      "name": "dsh-codex-oauth",
+      "spec": "dsh-codex-oauth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2122
+    },
+    {
+      "id": "dsh-plugin",
+      "name": "dsh-plugin",
+      "spec": "dsh-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2091
+    },
+    {
+      "id": "opencode-usage",
+      "name": "opencode-usage",
+      "spec": "opencode-usage",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 7215
+    },
+    {
+      "id": "dsh-plugin-store",
+      "name": "dsh-plugin-store",
+      "spec": "dsh-plugin-store",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2370
+    },
+    {
+      "id": "dsh-dashboard-baiyun200",
+      "name": "dsh-dashboard",
+      "spec": "dsh-dashboard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2419
+    },
+    {
+      "id": "dsh-advisor-slhssb",
+      "name": "dsh-advisor",
+      "spec": "dsh-advisor",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2831
+    },
+    {
+      "id": "dsh-plugin-suxeca",
+      "name": "dsh-plugin",
+      "spec": "dsh-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2706
+    },
+    {
+      "id": "dsh-plugins-kazecreator",
+      "name": "dsh-plugins",
+      "spec": "dsh-plugins",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2978
+    },
+    {
+      "id": "dsh-vault",
+      "name": "dsh-vault",
+      "spec": "dsh-vault",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2442
+    },
+    {
+      "id": "dsh-skill-evolve",
+      "name": "dsh-skill-evolve",
+      "spec": "dsh-skill-evolve",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2482
+    },
+    {
+      "id": "dsh-deepseek-balance-dshiq04",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1750
+    },
+    {
+      "id": "dsh-codex-auth",
+      "name": "dsh-codex-auth",
+      "spec": "dsh-codex-auth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2547
+    },
+    {
+      "id": "dsh-ui-enhance",
+      "name": "Dsh-UI-Enhance",
+      "spec": "dsh-ui-enhance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2371
+    },
+    {
+      "id": "dsh-file-review",
+      "name": "dsh-file-review",
+      "spec": "dsh-file-review",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3155
+    },
+    {
+      "id": "dsh-ui-topbar-compact",
+      "name": "dsh-ui-topbar-compact",
+      "spec": "dsh-ui-topbar-compact",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 1991
+    },
+    {
+      "id": "dsh-plugins-wsxwj123",
+      "name": "dsh-plugins",
+      "spec": "dsh-plugins",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2167
+    },
+    {
+      "id": "dsh-drag-and-drop-omdsh-dev",
+      "name": "dsh-drag-and-drop",
+      "spec": "dsh-drag-and-drop",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1977
+    },
+    {
+      "id": "dsh-memory-u-illll",
+      "name": "dsh-memory",
+      "spec": "dsh-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2280
+    },
+    {
+      "id": "dsh-opencode-go-usage-xenia0922",
+      "name": "dsh-opencode-go-usage",
+      "spec": "dsh-opencode-go-usage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2234
+    },
+    {
+      "id": "dsh-multi-tenant",
+      "name": "dsh-multi-tenant",
+      "spec": "dsh-multi-tenant",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2120
+    },
+    {
+      "id": "dsh-session-export",
+      "name": "dsh-session-export",
+      "spec": "dsh-session-export",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1918
+    },
+    {
+      "id": "dsh-tool-user-memory",
+      "name": "dsh-tool-user-memory",
+      "spec": "dsh-tool-user-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2272
+    },
+    {
+      "id": "dsh-plugins-ceelog",
+      "name": "dsh-plugins",
+      "spec": "dsh-plugins",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2252
+    },
+    {
+      "id": "dsh-quote-annotate",
+      "name": "dsh-quote-annotate",
+      "spec": "dsh-quote-annotate",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2493
+    },
+    {
+      "id": "dsh-agy",
+      "name": "dsh-agy",
+      "spec": "dsh-agy",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2761
+    },
+    {
+      "id": "dsh-office",
+      "name": "dsh-office",
+      "spec": "dsh-office",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2135
+    },
+    {
+      "id": "dsh-skill-manager-lanxing6480",
+      "name": "dsh-skill-manager",
+      "spec": "dsh-skill-manager",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2047
+    },
+    {
+      "id": "dsh-agent-hub",
+      "name": "dsh-agent-hub",
+      "spec": "dsh-agent-hub",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1983
+    },
+    {
+      "id": "dsh-plugin-notify-huguangyu666",
+      "name": "dsh-plugin-notify",
+      "spec": "dsh-plugin-notify",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2257
+    },
+    {
+      "id": "dsh-openai-oauth",
+      "name": "dsh-openai-oauth",
+      "spec": "dsh-openai-oauth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 6900
+    },
+    {
+      "id": "dsh-satori",
+      "name": "dsh-satori",
+      "spec": "dsh-satori",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2295
+    },
+    {
+      "id": "prompt-optimizer",
+      "name": "prompt-optimizer",
+      "spec": "prompt-optimizer",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2234
+    },
+    {
+      "id": "dsh-utility-tools",
+      "name": "dsh-utility-tools",
+      "spec": "dsh-utility-tools",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2130
+    },
+    {
+      "id": "iterate-plugin",
+      "name": "iterate-plugin",
+      "spec": "iterate-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2263
+    },
+    {
+      "id": "dsh-boot-guard",
+      "name": "dsh-boot-guard",
+      "spec": "dsh-boot-guard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2148
+    },
+    {
+      "id": "dsh-lorebookmd",
+      "name": "dsh-LorebookMD",
+      "spec": "dsh-lorebookmd",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1893
+    },
+    {
+      "id": "dsh-advisor-glangzh",
+      "name": "dsh-advisor",
+      "spec": "dsh-advisor",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1823
+    },
+    {
+      "id": "dsh-queue-plus",
+      "name": "dsh-queue-plus",
+      "spec": "dsh-queue-plus",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2200
+    },
+    {
+      "id": "dsh-document-review",
+      "name": "dsh-document-review",
+      "spec": "dsh-document-review",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2508
+    },
+    {
+      "id": "dsh-lan-gate",
+      "name": "dsh-lan-gate",
+      "spec": "dsh-lan-gate",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2015
+    },
+    {
+      "id": "dsh-onebot",
+      "name": "dsh-onebot",
+      "spec": "dsh-onebot",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2267
+    },
+    {
+      "id": "dsh-side-chat-2031814001yuyue-tech",
+      "name": "dsh-side-chat",
+      "spec": "dsh-side-chat",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2427
+    },
+    {
+      "id": "pptfast",
+      "name": "pptfast",
+      "spec": "pptfast",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 3641
+    },
+    {
+      "id": "deepseek-harness-gui",
+      "name": "deepseek-harness-GUI",
+      "spec": "deepseek-harness-gui",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2917
+    },
+    {
+      "id": "dsh-shutdown",
+      "name": "DSH-shutdown",
+      "spec": "dsh-shutdown",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2186
+    },
+    {
+      "id": "dsh-whale-arcade",
+      "name": "dsh-whale-arcade",
+      "spec": "dsh-whale-arcade",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2109
+    },
+    {
+      "id": "dsh-api-balance-9epuuuu",
+      "name": "dsh-api-balance",
+      "spec": "dsh-api-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2005
+    },
+    {
+      "id": "dsh",
+      "name": "dsh",
+      "spec": "dsh",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2359
+    },
+    {
+      "id": "dsh-token-pricing",
+      "name": "dsh-token-pricing",
+      "spec": "dsh-token-pricing",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2503
+    },
+    {
+      "id": "dsh-crw",
+      "name": "dsh-crw",
+      "spec": "dsh-crw",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2213
+    },
+    {
+      "id": "dsh-forge",
+      "name": "dsh-forge",
+      "spec": "dsh-forge",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2074
+    },
+    {
+      "id": "dsh-font",
+      "name": "dsh-font",
+      "spec": "dsh-font",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2371
+    },
+    {
+      "id": "oh-my-dsh-agi-fans",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 9193
+    },
+    {
+      "id": "dsh-llm-vision-bridge",
+      "name": "dsh-llm-vision-bridge",
+      "spec": "dsh-llm-vision-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2861
+    },
+    {
+      "id": "dsh-plugin-store-0xkcyzz",
+      "name": "dsh-plugin-store",
+      "spec": "dsh-plugin-store",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2051
+    },
+    {
+      "id": "dsh-remote-blank-not-black",
+      "name": "dsh-Remote",
+      "spec": "dsh-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4430
+    },
+    {
+      "id": "dsh-remote-tunnel",
+      "name": "dsh-remote-tunnel",
+      "spec": "dsh-remote-tunnel",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2648
+    },
+    {
+      "id": "dsh-codex-oauth-wnjxyk",
+      "name": "dsh-codex-oauth",
+      "spec": "dsh-codex-oauth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2270
+    },
+    {
+      "id": "dsh-ikun-pet",
+      "name": "dsh-ikun-pet",
+      "spec": "dsh-ikun-pet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2812
+    },
+    {
+      "id": "dsh-skill-picker",
+      "name": "dsh-skill-picker",
+      "spec": "dsh-skill-picker",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2357
+    },
+    {
+      "id": "dsh-devquest",
+      "name": "dsh-devquest",
+      "spec": "dsh-devquest",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2223
+    },
+    {
+      "id": "weshop-dsh-plugin",
+      "name": "weshop-dsh-plugin",
+      "spec": "weshop-dsh-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4407
+    },
+    {
+      "id": "ax-feishu-bridge",
+      "name": "ax-feishu-bridge",
+      "spec": "ax-feishu-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3093
+    },
+    {
+      "id": "dsh-plugin-guard",
+      "name": "dsh-plugin-guard",
+      "spec": "dsh-plugin-guard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2292
+    },
+    {
+      "id": "picturereader",
+      "name": "picturereader",
+      "spec": "picturereader",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2376
+    },
+    {
+      "id": "dsh-agent-skills",
+      "name": "dsh-agent-skills",
+      "spec": "dsh-agent-skills",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2725
+    },
+    {
+      "id": "dsh-ha-orchestrator",
+      "name": "dsh-ha-orchestrator",
+      "spec": "dsh-ha-orchestrator",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2404
+    },
+    {
+      "id": "dsh-chat-imagine",
+      "name": "dsh-chat-imagine",
+      "spec": "dsh-chat-imagine",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2067
+    },
+    {
+      "id": "dsh-deepseek-usage-mmzm0808",
+      "name": "dsh-deepseek-usage",
+      "spec": "dsh-deepseek-usage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1875
+    },
+    {
+      "id": "dsh-remote-hyna-hla",
+      "name": "dsh-remote",
+      "spec": "dsh-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4090
+    },
+    {
+      "id": "dsh-whale-galgame",
+      "name": "dsh-whale-galgame",
+      "spec": "dsh-whale-galgame",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2321
+    },
+    {
+      "id": "minecraft-dev",
+      "name": "minecraft-dev",
+      "spec": "minecraft-dev",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1973
+    },
+    {
+      "id": "dsh-computer-use-988hj7tczd-oss",
+      "name": "dsh-computer-use",
+      "spec": "dsh-computer-use",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2396
+    },
+    {
+      "id": "dsh-whale-meter",
+      "name": "dsh-whale-meter",
+      "spec": "dsh-whale-meter",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2049
+    },
+    {
+      "id": "dsh-vscode-fengze233",
+      "name": "dsh-vscode",
+      "spec": "dsh-vscode",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 1953
+    },
+    {
+      "id": "dsh-prompt-optimize",
+      "name": "dsh-prompt-optimize",
+      "spec": "dsh-prompt-optimize",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1893
+    },
+    {
+      "id": "dsh-nested-followups",
+      "name": "dsh-nested-followups",
+      "spec": "dsh-nested-followups",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2420
+    },
+    {
+      "id": "dsh-qq-bridge-xiaomengxinbb",
+      "name": "dsh-qq-bridge",
+      "spec": "dsh-qq-bridge",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2565
+    },
+    {
+      "id": "dsh-replay",
+      "name": "dsh-replay",
+      "spec": "dsh-replay",
+      "src": "npm",
+      "verdict": "nobundle",
+      "note": "installed but declares no dsh.bundle (not a DSH plugin layer)",
+      "elapsedMs": 2062
+    },
+    {
+      "id": "dsh-thinking-levels",
+      "name": "dsh-thinking-levels",
+      "spec": "dsh-thinking-levels",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2142
+    },
+    {
+      "id": "dsh-web-startup-auth",
+      "name": "dsh-web-startup-auth",
+      "spec": "dsh-web-startup-auth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 3853
+    },
+    {
+      "id": "deep-read-summarize",
+      "name": "deep-read-summarize",
+      "spec": "deep-read-summarize",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1714
+    },
+    {
+      "id": "dsh-coding-subscription-oauth",
+      "name": "dsh-coding-subscription-oauth",
+      "spec": "dsh-coding-subscription-oauth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2183
+    },
+    {
+      "id": "dsh-personal-center",
+      "name": "dsh-personal-center",
+      "spec": "dsh-personal-center",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2993
+    },
+    {
+      "id": "dsh-imessage",
+      "name": "dsh-imessage",
+      "spec": "dsh-imessage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 5059
+    },
+    {
+      "id": "dsh-rewind-sirilee",
+      "name": "dsh-rewind",
+      "spec": "dsh-rewind",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2432
+    },
+    {
+      "id": "dsh-with-chatgpt",
+      "name": "dsh-with-chatgpt",
+      "spec": "dsh-with-chatgpt",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4391
+    },
+    {
+      "id": "dsh-ui-harmonizer",
+      "name": "dsh-ui-harmonizer",
+      "spec": "dsh-ui-harmonizer",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2650
+    },
+    {
+      "id": "dsh-mattpocock-skills-deck",
+      "name": "dsh-mattpocock-skills-deck",
+      "spec": "dsh-mattpocock-skills-deck",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2720
+    },
+    {
+      "id": "dsh-ui-tweaks",
+      "name": "dsh-ui-tweaks",
+      "spec": "dsh-ui-tweaks",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2551
+    },
+    {
+      "id": "dsh-novel-writer-siweina",
+      "name": "dsh-novel-writer",
+      "spec": "dsh-novel-writer",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4086
+    },
+    {
+      "id": "dsh-auth-gateway",
+      "name": "dsh-auth-gateway",
+      "spec": "dsh-auth-gateway",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2069
+    },
+    {
+      "id": "dsh-worktree-panel",
+      "name": "dsh-worktree-panel",
+      "spec": "dsh-worktree-panel",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2498
+    },
+    {
+      "id": "dsh-harness-one",
+      "name": "dsh-harness-one",
+      "spec": "dsh-harness-one",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4260
+    },
+    {
+      "id": "dsh-design-qa",
+      "name": "dsh-design-qa",
+      "spec": "dsh-design-qa",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2072
+    },
+    {
+      "id": "dsh-plugin-memory",
+      "name": "dsh-plugin-memory",
+      "spec": "dsh-plugin-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2112
+    }
+  ],
+  "layer3": [
+    {
+      "id": "open-managed-agents",
+      "name": "open-managed-agents",
+      "spec": "open-managed-agents",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "role-model",
+      "name": "role-model",
+      "spec": "role-model",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-data-agent",
+      "name": "dsh-data-agent",
+      "spec": "@yejiming/dsh-data-agent",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1653
+    },
+    {
+      "id": "dsh-mnemon",
+      "name": "dsh-mnemon",
+      "spec": "dsh-mnemon",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1821
+    },
+    {
+      "id": "dsh-web-ui",
+      "name": "dsh-web-ui",
+      "spec": "@linxin666/dsh-web-ui-all",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1239
+    },
+    {
+      "id": "dsh-better-sidebar",
+      "name": "DSH-better-sidebar",
+      "spec": "dsh-better-sidebar",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1344
+    },
+    {
+      "id": "dsh-genui",
+      "name": "dsh-genui",
+      "spec": "dsh-genui",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1729
+    },
+    {
+      "id": "whale-girl",
+      "name": "whale-girl",
+      "spec": "whale-girl",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1984
+    },
+    {
+      "id": "dsh-turn-rewind",
+      "name": "dsh-turn-rewind",
+      "spec": "@anionex/dsh-turn-rewind",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1018
+    },
+    {
+      "id": "dsh-share",
+      "name": "dsh-share",
+      "spec": "dsh-share",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1371
+    },
+    {
+      "id": "plugin-session-export",
+      "name": "plugin-session-export",
+      "spec": "@dsh-suite/plugin-session-export",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1039
+    },
+    {
+      "id": "dsh-vision-toolkit",
+      "name": "dsh-vision-toolkit",
+      "spec": "@anionex/dsh-vision-toolkit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 887
+    },
+    {
+      "id": "openhanako",
+      "name": "openhanako",
+      "spec": "openhanako",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "exo",
+      "name": "exo",
+      "spec": "exo",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "synergy",
+      "name": "synergy",
+      "spec": "synergy",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "ccteam",
+      "name": "ccteam",
+      "spec": "ccteam",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "distill",
+      "name": "distill",
+      "spec": "distill",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-agent-teams",
+      "name": "dsh-agent-teams",
+      "spec": "@nanmicoder/dsh-agent-teams",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1023
+    },
+    {
+      "id": "dsh-work",
+      "name": "dsh-work",
+      "spec": "dsh-work",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "awesome-dsh-plugins",
+      "name": "awesome-dsh-plugins",
+      "spec": "awesome-dsh-plugins",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-tianshu-tui",
+      "name": "dsh-tianshu-tui",
+      "spec": "@huiliyi37/dsh-tianshu-tui",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 984
+    },
+    {
+      "id": "dsh-at-file",
+      "name": "dsh-at-file",
+      "spec": "dsh-at-file",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1005
+    },
+    {
+      "id": "dsh-notification",
+      "name": "dsh-notification",
+      "spec": "dsh-notification",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1147
+    },
+    {
+      "id": "dsh-ads",
+      "name": "dsh-ads",
+      "spec": "dsh-ads",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-openpencil",
+      "name": "dsh-openpencil",
+      "spec": "@zseven-w/dsh-openpencil",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1306
+    },
+    {
+      "id": "dsh-visualize",
+      "name": "dsh-visualize",
+      "spec": "dsh-visualize",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1015
+    },
+    {
+      "id": "awesome-dsh-plugin",
+      "name": "awesome-DSH-plugin",
+      "spec": "awesome-dsh-plugin",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "oh-my-dsh",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1199
+    },
+    {
+      "id": "awesome-dsh-plugin-bruc3van",
+      "name": "awesome-dsh-plugin",
+      "spec": "awesome-dsh-plugin",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-launcher",
+      "name": "dsh-launcher",
+      "spec": "dsh-launcher",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 897
+    },
+    {
+      "id": "plugin-registry",
+      "name": "plugin-registry",
+      "spec": "plugin-registry",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "create-dsh-plugin",
+      "name": "create-dsh-plugin",
+      "spec": "create-dsh-plugin",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "plugin-notify",
+      "name": "plugin-notify",
+      "spec": "@dsh-suite/plugin-notify",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1619
+    },
+    {
+      "id": "modlens",
+      "name": "modlens",
+      "spec": "@liustack/modlens",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1693
+    },
+    {
+      "id": "modsearch",
+      "name": "modsearch",
+      "spec": "modsearch",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-browser",
+      "name": "dsh-browser",
+      "spec": "dsh-browser",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1196
+    },
+    {
+      "id": "dsh-chat-import",
+      "name": "dsh-chat-import",
+      "spec": "dsh-chat-import",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1293
+    },
+    {
+      "id": "dsh-status-rotator",
+      "name": "dsh-status-rotator",
+      "spec": "dsh-status-rotator",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1281
+    },
+    {
+      "id": "dsh-expression",
+      "name": "dsh-expression",
+      "spec": "dsh-expression",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1355
+    },
+    {
+      "id": "billion-context-dsh",
+      "name": "billion-context-dsh",
+      "spec": "billion-context-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 977
+    },
+    {
+      "id": "dsh-memento",
+      "name": "dsh-memento",
+      "spec": "dsh-memento",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1125
+    },
+    {
+      "id": "dsh-memento-perrylink",
+      "name": "dsh-memento",
+      "spec": "dsh-memento",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1086
+    },
+    {
+      "id": "dsh-cost-meter",
+      "name": "dsh-cost-meter",
+      "spec": "dsh-cost-meter",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1121
+    },
+    {
+      "id": "dsh-auto-review",
+      "name": "dsh-auto-review",
+      "spec": "dsh-auto-review",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1094
+    },
+    {
+      "id": "dsh-codex",
+      "name": "dsh-codex",
+      "spec": "dsh-codex",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1294
+    },
+    {
+      "id": "dsh-codex-connect",
+      "name": "dsh-codex-connect",
+      "spec": "dsh-codex-connect",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1312
+    },
+    {
+      "id": "dsh-usage-stats",
+      "name": "dsh-usage-stats",
+      "spec": "dsh-usage-stats",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 997
+    },
+    {
+      "id": "pi2dsh",
+      "name": "pi2dsh",
+      "spec": "pi2dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1233
+    },
+    {
+      "id": "dsh-lark-omdsh-dev",
+      "name": "dsh-lark",
+      "spec": "dsh-lark",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-vision-oil-oil",
+      "name": "dsh-vision",
+      "spec": "dsh-vision",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1376
+    },
+    {
+      "id": "superpowers-dsh",
+      "name": "superpowers-dsh",
+      "spec": "superpowers-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1026
+    },
+    {
+      "id": "dsh-remote",
+      "name": "dsh-remote",
+      "spec": "dsh-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1137
+    },
+    {
+      "id": "museai",
+      "name": "MuseAI",
+      "spec": "museai",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-kun-like-pet",
+      "name": "dsh-kun-like-pet",
+      "spec": "dsh-kun-like-pet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1197
+    },
+    {
+      "id": "dsh-undo-plugin",
+      "name": "dsh-undo-plugin",
+      "spec": "dsh-undo-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1358
+    },
+    {
+      "id": "plugin-manager",
+      "name": "plugin-manager",
+      "spec": "@dsh-suite/plugin-manager",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 988
+    },
+    {
+      "id": "dsh-green-meter",
+      "name": "dsh-green-meter",
+      "spec": "dsh-green-meter",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "plugin-team-board",
+      "name": "plugin-team-board",
+      "spec": "@dsh-suite/plugin-team-board",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1003
+    },
+    {
+      "id": "dsh-context",
+      "name": "dsh-context",
+      "spec": "dsh-context",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1819
+    },
+    {
+      "id": "anysearch-dsh",
+      "name": "anysearch-dsh",
+      "spec": "@anysearch/anysearch-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 983
+    },
+    {
+      "id": "tokenledger",
+      "name": "TokenLedger",
+      "spec": "tokenledger",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-stock-watch",
+      "name": "dsh-stock-watch",
+      "spec": "dsh-stock-watch",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1409
+    },
+    {
+      "id": "dsh-pet-pc2005-cloud",
+      "name": "dsh-pet",
+      "spec": "dsh-pet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1026
+    },
+    {
+      "id": "dsh-commandcode-provider",
+      "name": "dsh-commandcode-provider",
+      "spec": "dsh-commandcode-provider",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1196
+    },
+    {
+      "id": "dsh-plugin-subscriptions",
+      "name": "dsh-plugin-subscriptions",
+      "spec": "dsh-plugin-subscriptions",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1221
+    },
+    {
+      "id": "dsh-qqbot",
+      "name": "dsh-qqbot",
+      "spec": "@tencent-connect/dsh-qqbot",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1131
+    },
+    {
+      "id": "deepseek-harness-wallet",
+      "name": "deepseek-harness-wallet",
+      "spec": "deepseek-harness-wallet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1159
+    },
+    {
+      "id": "dsh-plugin-tabbit-browser",
+      "name": "dsh-plugin",
+      "spec": "dsh-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1325
+    },
+    {
+      "id": "dsh-memory-furongjun-1999",
+      "name": "dsh-memory",
+      "spec": "dsh-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1196
+    },
+    {
+      "id": "all",
+      "name": "all (全家桶)",
+      "spec": "@dsh-suite/all",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4244
+    },
+    {
+      "id": "themes",
+      "name": "themes (皮肤中心)",
+      "spec": "@dsh-suite/themes",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1052
+    },
+    {
+      "id": "preset-center",
+      "name": "preset-center (场景预设)",
+      "spec": "@dsh-suite/preset-center",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1091
+    },
+    {
+      "id": "plugin-deus",
+      "name": "plugin-deus (神模扳机)",
+      "spec": "@dsh-suite/plugin-deus",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1275
+    },
+    {
+      "id": "dsh-auto-mode",
+      "name": "dsh-auto-mode",
+      "spec": "dsh-auto-mode",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 895
+    },
+    {
+      "id": "dsh-balance-plugin-francis-xavier-code",
+      "name": "dsh-balance-plugin",
+      "spec": "dsh-balance-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 919
+    },
+    {
+      "id": "dsh-web-mobile",
+      "name": "dsh-web-mobile",
+      "spec": "dsh-web-mobile",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1194
+    },
+    {
+      "id": "dsh-reasoning-effort",
+      "name": "dsh-reasoning-effort",
+      "spec": "dsh-reasoning-effort",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 928
+    },
+    {
+      "id": "dsh-free-search",
+      "name": "dsh-free-search",
+      "spec": "dsh-free-search",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1380
+    },
+    {
+      "id": "dsh-dream-skin",
+      "name": "dsh-dream-skin",
+      "spec": "dsh-dream-skin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1101
+    },
+    {
+      "id": "mirage-dsh",
+      "name": "mirage-dsh",
+      "spec": "@struktoai/mirage-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1076
+    },
+    {
+      "id": "dsh-smooth-stream-laplacebit",
+      "name": "dsh-smooth-stream",
+      "spec": "dsh-smooth-stream",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1776
+    },
+    {
+      "id": "voyager",
+      "name": "voyager",
+      "spec": "voyager",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "caliper",
+      "name": "caliper",
+      "spec": "caliper",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-notifier",
+      "name": "dsh-notifier",
+      "spec": "dsh-notifier",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1306
+    },
+    {
+      "id": "dsh-im",
+      "name": "dsh-im",
+      "spec": "dsh-im",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1274
+    },
+    {
+      "id": "dsh-pocket",
+      "name": "dsh-pocket",
+      "spec": "dsh-pocket",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1430
+    },
+    {
+      "id": "dsh-usage",
+      "name": "dsh-usage",
+      "spec": "dsh-usage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1426
+    },
+    {
+      "id": "dsh-crew",
+      "name": "dsh-crew",
+      "spec": "dsh-crew",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1171
+    },
+    {
+      "id": "dsh-damage-pulse",
+      "name": "dsh-damage-pulse",
+      "spec": "dsh-damage-pulse",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1342
+    },
+    {
+      "id": "dsh-remote-xgone",
+      "name": "dsh-remote",
+      "spec": "dsh-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1099
+    },
+    {
+      "id": "dsh-mobile-saya-ch",
+      "name": "dsh-mobile",
+      "spec": "dsh-mobile",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1160
+    },
+    {
+      "id": "dsh-image-gen",
+      "name": "dsh-image-gen",
+      "spec": "dsh-image-gen",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 4283
+    },
+    {
+      "id": "dsh-meme",
+      "name": "dsh-meme",
+      "spec": "dsh-meme",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 850
+    },
+    {
+      "id": "dsh-tavern-flizzywine",
+      "name": "dsh-tavern",
+      "spec": "dsh-tavern",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1026
+    },
+    {
+      "id": "dsh-univer-office",
+      "name": "dsh-univer-office",
+      "spec": "dsh-univer-office",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1003
+    },
+    {
+      "id": "tongflow",
+      "name": "tongflow",
+      "spec": "tongflow",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "open-sea-skin",
+      "name": "open-sea-skin",
+      "spec": "open-sea-skin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1049
+    },
+    {
+      "id": "memos",
+      "name": "MemOS",
+      "spec": "memos",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-omi-voice",
+      "name": "dsh-omi-voice",
+      "spec": "dsh-omi-voice",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1069
+    },
+    {
+      "id": "dsh-plugin-bridge",
+      "name": "dsh-plugin-bridge",
+      "spec": "dsh-plugin-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1097
+    },
+    {
+      "id": "dsh-undo-savepoint",
+      "name": "dsh-undo-savepoint",
+      "spec": "dsh-undo-savepoint",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1125
+    },
+    {
+      "id": "dsh-trace-compare",
+      "name": "dsh-trace-compare",
+      "spec": "dsh-trace-compare",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1333
+    },
+    {
+      "id": "dsh-turn-delete",
+      "name": "dsh-turn-delete",
+      "spec": "dsh-turn-delete",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1371
+    },
+    {
+      "id": "dsh-ego-browser-fisfzy",
+      "name": "dsh-ego-browser",
+      "spec": "dsh-ego-browser",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1185
+    },
+    {
+      "id": "dsh-remote-web-gateway",
+      "name": "dsh-remote-web-gateway",
+      "spec": "dsh-remote-web-gateway",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1180
+    },
+    {
+      "id": "dsh-recall-unread",
+      "name": "dsh-recall-unread",
+      "spec": "dsh-recall-unread",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1412
+    },
+    {
+      "id": "dsh-config-manager",
+      "name": "dsh-config-manager",
+      "spec": "dsh-config-manager",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1064
+    },
+    {
+      "id": "dsh-network-settings",
+      "name": "dsh-network-settings",
+      "spec": "dsh-network-settings",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1050
+    },
+    {
+      "id": "dsh-tabbit",
+      "name": "dsh-tabbit",
+      "spec": "dsh-tabbit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 939
+    },
+    {
+      "id": "dsh-android",
+      "name": "dsh-android",
+      "spec": "dsh-android",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-secure-audit",
+      "name": "dsh-secure-audit",
+      "spec": "dsh-secure-audit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1069
+    },
+    {
+      "id": "dsh-strata",
+      "name": "dsh-strata",
+      "spec": "dsh-strata",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1151
+    },
+    {
+      "id": "dsh-balance-plugin-yxxbc",
+      "name": "dsh-balance-plugin",
+      "spec": "dsh-balance-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1346
+    },
+    {
+      "id": "dsh-run2skill",
+      "name": "dsh-run2skill",
+      "spec": "dsh-run2skill",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1173
+    },
+    {
+      "id": "dsh-vision-router",
+      "name": "dsh-vision-router",
+      "spec": "dsh-vision-router",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1141
+    },
+    {
+      "id": "dsh-comfyui",
+      "name": "dsh-comfyui",
+      "spec": "dsh-comfyui",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1081
+    },
+    {
+      "id": "dsh-maze",
+      "name": "dsh-maze",
+      "spec": "dsh-maze",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1345
+    },
+    {
+      "id": "dsh-industry-research",
+      "name": "dsh-industry-research",
+      "spec": "dsh-industry-research",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1138
+    },
+    {
+      "id": "dsh-research-report",
+      "name": "dsh-research-report",
+      "spec": "dsh-research-report",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1349
+    },
+    {
+      "id": "dsh-creator",
+      "name": "DSH-Creator",
+      "spec": "dsh-creator",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 872
+    },
+    {
+      "id": "dsh-yolo",
+      "name": "dsh-yolo",
+      "spec": "dsh-yolo",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1168
+    },
+    {
+      "id": "ds-harness-remote",
+      "name": "ds-harness-remote",
+      "spec": "ds-harness-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1093
+    },
+    {
+      "id": "pi-web-ui",
+      "name": "pi-web-ui",
+      "spec": "pi-web-ui",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-trading-zhu1090093659",
+      "name": "dsh-trading",
+      "spec": "dsh-trading",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-plugin-shop",
+      "name": "dsh-plugin-shop",
+      "spec": "dsh-plugin-shop",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1197
+    },
+    {
+      "id": "hologram",
+      "name": "HoloGram",
+      "spec": "hologram",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-focus-chat",
+      "name": "dsh-focus-chat",
+      "spec": "@dingyi222666/dsh-focus-chat",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1068
+    },
+    {
+      "id": "dsh-input-history",
+      "name": "dsh-input-history",
+      "spec": "dsh-input-history",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1073
+    },
+    {
+      "id": "dsh-drag-and-drop",
+      "name": "dsh-drag-and-drop",
+      "spec": "dsh-drag-and-drop",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1123
+    },
+    {
+      "id": "dsh-message-edit",
+      "name": "dsh-message-edit",
+      "spec": "dsh-message-edit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1828
+    },
+    {
+      "id": "dsh-session-health",
+      "name": "dsh-session-health",
+      "spec": "dsh-session-health",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 961
+    },
+    {
+      "id": "dsh-conversation-share",
+      "name": "dsh-conversation-share",
+      "spec": "dsh-conversation-share",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1437
+    },
+    {
+      "id": "dsh-tool-approval",
+      "name": "dsh-tool-approval",
+      "spec": "dsh-tool-approval",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1131
+    },
+    {
+      "id": "oh-my-dsh-wangshunnn",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1053
+    },
+    {
+      "id": "dsh-launcher-snowcrescenter-tech",
+      "name": "dsh-launcher",
+      "spec": "dsh-launcher",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1187
+    },
+    {
+      "id": "dsh-companion-yyh-001",
+      "name": "dsh-companion",
+      "spec": "dsh-companion",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1152
+    },
+    {
+      "id": "dsh-plugin-product-subagents",
+      "name": "dsh-plugin-product-subagents",
+      "spec": "dsh-plugin-product-subagents",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1560
+    },
+    {
+      "id": "dsh-compaction-instant",
+      "name": "dsh-compaction-instant",
+      "spec": "dsh-compaction-instant",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1515
+    },
+    {
+      "id": "dsh-milestone",
+      "name": "dsh-milestone",
+      "spec": "dsh-milestone",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1360
+    },
+    {
+      "id": "dsh-onlyne",
+      "name": "dsh-onlyne",
+      "spec": "dsh-onlyne",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-hdc-bridge",
+      "name": "dsh-hdc-bridge",
+      "spec": "dsh-hdc-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 940
+    },
+    {
+      "id": "dsh-ergonomics",
+      "name": "dsh-ergonomics",
+      "spec": "dsh-ergonomics",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-plugin-pi-bridge",
+      "name": "dsh-plugin-pi-bridge",
+      "spec": "dsh-plugin-pi-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1191
+    },
+    {
+      "id": "dsh-superpowers",
+      "name": "dsh-superpowers",
+      "spec": "dsh-superpowers",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 893
+    },
+    {
+      "id": "dsh-web-search-tavily",
+      "name": "dsh-web-search-tavily",
+      "spec": "dsh-web-search-tavily",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 907
+    },
+    {
+      "id": "dsh-pet",
+      "name": "dsh-pet",
+      "spec": "dsh-pet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 914
+    },
+    {
+      "id": "deepseek-harness-background",
+      "name": "deepseek-harness-background",
+      "spec": "deepseek-harness-background",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 880
+    },
+    {
+      "id": "dsh-prompt-presets",
+      "name": "dsh-prompt-presets",
+      "spec": "dsh-prompt-presets",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 868
+    },
+    {
+      "id": "dsh-plugin-auto-docs",
+      "name": "dsh-plugin-auto-docs",
+      "spec": "dsh-plugin-auto-docs",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 866
+    },
+    {
+      "id": "dsh-cloudflare-browser-run",
+      "name": "dsh-cloudflare-browser-run",
+      "spec": "dsh-cloudflare-browser-run",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 848
+    },
+    {
+      "id": "dsh-github",
+      "name": "dsh-github",
+      "spec": "dsh-github",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 859
+    },
+    {
+      "id": "dsh-deepseek-balance",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 886
+    },
+    {
+      "id": "qiushi-dsh-evidence-audit",
+      "name": "qiushi-dsh-evidence-audit",
+      "spec": "qiushi-dsh-evidence-audit",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 897
+    },
+    {
+      "id": "dsh-plugin-verify",
+      "name": "dsh-plugin-verify",
+      "spec": "dsh-plugin-verify",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 815
+    },
+    {
+      "id": "dsh-schedule",
+      "name": "dsh-schedule",
+      "spec": "dsh-schedule",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-vision-helper",
+      "name": "dsh-vision-helper",
+      "spec": "dsh-vision-helper",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 860
+    },
+    {
+      "id": "dsh-tool-browser-mashedpotato817",
+      "name": "dsh-tool-browser",
+      "spec": "dsh-tool-browser",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-balance-monitor",
+      "name": "dsh-balance-monitor",
+      "spec": "dsh-balance-monitor",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 903
+    },
+    {
+      "id": "dsh-batch-regression",
+      "name": "dsh-batch-regression",
+      "spec": "dsh-batch-regression",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 826
+    },
+    {
+      "id": "dsh-agent-eval",
+      "name": "dsh-agent-eval",
+      "spec": "dsh-agent-eval",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-plugin-agent-dashboard",
+      "name": "dsh-plugin-agent-dashboard",
+      "spec": "dsh-plugin-agent-dashboard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1222
+    },
+    {
+      "id": "dsh-terminal",
+      "name": "dsh-terminal",
+      "spec": "dsh-terminal",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1129
+    },
+    {
+      "id": "dsh-skin",
+      "name": "dsh-skin",
+      "spec": "dsh-skin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1088
+    },
+    {
+      "id": "dsh-survey",
+      "name": "dsh-survey",
+      "spec": "dsh-survey",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-lsp-actions",
+      "name": "dsh-lsp-actions",
+      "spec": "dsh-lsp-actions",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1204
+    },
+    {
+      "id": "dsh-verification-receipt",
+      "name": "dsh-verification-receipt",
+      "spec": "dsh-verification-receipt",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1075
+    },
+    {
+      "id": "dsh-codex-subscription",
+      "name": "dsh-codex-subscription",
+      "spec": "dsh-codex-subscription",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 948
+    },
+    {
+      "id": "dsh-memory-amengclass",
+      "name": "dsh-memory",
+      "spec": "dsh-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1394
+    },
+    {
+      "id": "dsh-advisor-omdsh-dev",
+      "name": "dsh-advisor",
+      "spec": "dsh-advisor",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1009
+    },
+    {
+      "id": "dsh-codex-subscription-yequ172672",
+      "name": "dsh-codex-subscription",
+      "spec": "dsh-codex-subscription",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1200
+    },
+    {
+      "id": "dsh-tool-hashline",
+      "name": "dsh-tool-hashline",
+      "spec": "dsh-tool-hashline",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-codex-oauth",
+      "name": "dsh-codex-oauth",
+      "spec": "dsh-codex-oauth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1229
+    },
+    {
+      "id": "dsh-plugin",
+      "name": "dsh-plugin",
+      "spec": "dsh-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1159
+    },
+    {
+      "id": "opencode-usage",
+      "name": "opencode-usage",
+      "spec": "opencode-usage",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-plugin-store",
+      "name": "dsh-plugin-store",
+      "spec": "dsh-plugin-store",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1297
+    },
+    {
+      "id": "dsh-dashboard-baiyun200",
+      "name": "dsh-dashboard",
+      "spec": "dsh-dashboard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1615
+    },
+    {
+      "id": "dsh-advisor-slhssb",
+      "name": "dsh-advisor",
+      "spec": "dsh-advisor",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1428
+    },
+    {
+      "id": "dsh-plugin-suxeca",
+      "name": "dsh-plugin",
+      "spec": "dsh-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1200
+    },
+    {
+      "id": "dsh-plugins-kazecreator",
+      "name": "dsh-plugins",
+      "spec": "dsh-plugins",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-vault",
+      "name": "dsh-vault",
+      "spec": "dsh-vault",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 985
+    },
+    {
+      "id": "dsh-skill-evolve",
+      "name": "dsh-skill-evolve",
+      "spec": "dsh-skill-evolve",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-deepseek-balance-dshiq04",
+      "name": "dsh-deepseek-balance",
+      "spec": "dsh-deepseek-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1131
+    },
+    {
+      "id": "dsh-codex-auth",
+      "name": "dsh-codex-auth",
+      "spec": "dsh-codex-auth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1029
+    },
+    {
+      "id": "dsh-ui-enhance",
+      "name": "Dsh-UI-Enhance",
+      "spec": "dsh-ui-enhance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 942
+    },
+    {
+      "id": "dsh-file-review",
+      "name": "dsh-file-review",
+      "spec": "dsh-file-review",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1398
+    },
+    {
+      "id": "dsh-ui-topbar-compact",
+      "name": "dsh-ui-topbar-compact",
+      "spec": "dsh-ui-topbar-compact",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-plugins-wsxwj123",
+      "name": "dsh-plugins",
+      "spec": "dsh-plugins",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-drag-and-drop-omdsh-dev",
+      "name": "dsh-drag-and-drop",
+      "spec": "dsh-drag-and-drop",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1085
+    },
+    {
+      "id": "dsh-memory-u-illll",
+      "name": "dsh-memory",
+      "spec": "dsh-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1161
+    },
+    {
+      "id": "dsh-opencode-go-usage-xenia0922",
+      "name": "dsh-opencode-go-usage",
+      "spec": "dsh-opencode-go-usage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1362
+    },
+    {
+      "id": "dsh-multi-tenant",
+      "name": "dsh-multi-tenant",
+      "spec": "dsh-multi-tenant",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 947
+    },
+    {
+      "id": "dsh-session-export",
+      "name": "dsh-session-export",
+      "spec": "dsh-session-export",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1008
+    },
+    {
+      "id": "dsh-tool-user-memory",
+      "name": "dsh-tool-user-memory",
+      "spec": "dsh-tool-user-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1075
+    },
+    {
+      "id": "dsh-plugins-ceelog",
+      "name": "dsh-plugins",
+      "spec": "dsh-plugins",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-quote-annotate",
+      "name": "dsh-quote-annotate",
+      "spec": "dsh-quote-annotate",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1094
+    },
+    {
+      "id": "dsh-agy",
+      "name": "dsh-agy",
+      "spec": "dsh-agy",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1028
+    },
+    {
+      "id": "dsh-office",
+      "name": "dsh-office",
+      "spec": "dsh-office",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1665
+    },
+    {
+      "id": "dsh-skill-manager-lanxing6480",
+      "name": "dsh-skill-manager",
+      "spec": "dsh-skill-manager",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1257
+    },
+    {
+      "id": "dsh-agent-hub",
+      "name": "dsh-agent-hub",
+      "spec": "dsh-agent-hub",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1020
+    },
+    {
+      "id": "dsh-plugin-notify-huguangyu666",
+      "name": "dsh-plugin-notify",
+      "spec": "dsh-plugin-notify",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1342
+    },
+    {
+      "id": "dsh-openai-oauth",
+      "name": "dsh-openai-oauth",
+      "spec": "dsh-openai-oauth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1648
+    },
+    {
+      "id": "dsh-satori",
+      "name": "dsh-satori",
+      "spec": "dsh-satori",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1132
+    },
+    {
+      "id": "prompt-optimizer",
+      "name": "prompt-optimizer",
+      "spec": "prompt-optimizer",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-utility-tools",
+      "name": "dsh-utility-tools",
+      "spec": "dsh-utility-tools",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1003
+    },
+    {
+      "id": "iterate-plugin",
+      "name": "iterate-plugin",
+      "spec": "iterate-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 999
+    },
+    {
+      "id": "dsh-boot-guard",
+      "name": "dsh-boot-guard",
+      "spec": "dsh-boot-guard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1675
+    },
+    {
+      "id": "dsh-lorebookmd",
+      "name": "dsh-LorebookMD",
+      "spec": "dsh-lorebookmd",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1082
+    },
+    {
+      "id": "dsh-advisor-glangzh",
+      "name": "dsh-advisor",
+      "spec": "dsh-advisor",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1136
+    },
+    {
+      "id": "dsh-queue-plus",
+      "name": "dsh-queue-plus",
+      "spec": "dsh-queue-plus",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1388
+    },
+    {
+      "id": "dsh-document-review",
+      "name": "dsh-document-review",
+      "spec": "dsh-document-review",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1029
+    },
+    {
+      "id": "dsh-lan-gate",
+      "name": "dsh-lan-gate",
+      "spec": "dsh-lan-gate",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1144
+    },
+    {
+      "id": "dsh-onebot",
+      "name": "dsh-onebot",
+      "spec": "dsh-onebot",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1106
+    },
+    {
+      "id": "dsh-side-chat-2031814001yuyue-tech",
+      "name": "dsh-side-chat",
+      "spec": "dsh-side-chat",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1208
+    },
+    {
+      "id": "pptfast",
+      "name": "pptfast",
+      "spec": "pptfast",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "deepseek-harness-gui",
+      "name": "deepseek-harness-GUI",
+      "spec": "deepseek-harness-gui",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1132
+    },
+    {
+      "id": "dsh-shutdown",
+      "name": "DSH-shutdown",
+      "spec": "dsh-shutdown",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1774
+    },
+    {
+      "id": "dsh-whale-arcade",
+      "name": "dsh-whale-arcade",
+      "spec": "dsh-whale-arcade",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1013
+    },
+    {
+      "id": "dsh-api-balance-9epuuuu",
+      "name": "dsh-api-balance",
+      "spec": "dsh-api-balance",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1071
+    },
+    {
+      "id": "dsh",
+      "name": "dsh",
+      "spec": "dsh",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-token-pricing",
+      "name": "dsh-token-pricing",
+      "spec": "dsh-token-pricing",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1014
+    },
+    {
+      "id": "dsh-crw",
+      "name": "dsh-crw",
+      "spec": "dsh-crw",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1100
+    },
+    {
+      "id": "dsh-forge",
+      "name": "dsh-forge",
+      "spec": "dsh-forge",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-font",
+      "name": "dsh-font",
+      "spec": "dsh-font",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "oh-my-dsh-agi-fans",
+      "name": "oh-my-dsh",
+      "spec": "oh-my-dsh",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1126
+    },
+    {
+      "id": "dsh-llm-vision-bridge",
+      "name": "dsh-llm-vision-bridge",
+      "spec": "dsh-llm-vision-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1284
+    },
+    {
+      "id": "dsh-plugin-store-0xkcyzz",
+      "name": "dsh-plugin-store",
+      "spec": "dsh-plugin-store",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1142
+    },
+    {
+      "id": "dsh-remote-blank-not-black",
+      "name": "dsh-Remote",
+      "spec": "dsh-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1080
+    },
+    {
+      "id": "dsh-remote-tunnel",
+      "name": "dsh-remote-tunnel",
+      "spec": "dsh-remote-tunnel",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2215
+    },
+    {
+      "id": "dsh-codex-oauth-wnjxyk",
+      "name": "dsh-codex-oauth",
+      "spec": "dsh-codex-oauth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1328
+    },
+    {
+      "id": "dsh-ikun-pet",
+      "name": "dsh-ikun-pet",
+      "spec": "dsh-ikun-pet",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1083
+    },
+    {
+      "id": "dsh-skill-picker",
+      "name": "dsh-skill-picker",
+      "spec": "dsh-skill-picker",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1377
+    },
+    {
+      "id": "dsh-devquest",
+      "name": "dsh-devquest",
+      "spec": "dsh-devquest",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1084
+    },
+    {
+      "id": "weshop-dsh-plugin",
+      "name": "weshop-dsh-plugin",
+      "spec": "weshop-dsh-plugin",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1344
+    },
+    {
+      "id": "ax-feishu-bridge",
+      "name": "ax-feishu-bridge",
+      "spec": "ax-feishu-bridge",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1081
+    },
+    {
+      "id": "dsh-plugin-guard",
+      "name": "dsh-plugin-guard",
+      "spec": "dsh-plugin-guard",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1185
+    },
+    {
+      "id": "picturereader",
+      "name": "picturereader",
+      "spec": "picturereader",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1199
+    },
+    {
+      "id": "dsh-agent-skills",
+      "name": "dsh-agent-skills",
+      "spec": "dsh-agent-skills",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1033
+    },
+    {
+      "id": "dsh-ha-orchestrator",
+      "name": "dsh-ha-orchestrator",
+      "spec": "dsh-ha-orchestrator",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1015
+    },
+    {
+      "id": "dsh-chat-imagine",
+      "name": "dsh-chat-imagine",
+      "spec": "dsh-chat-imagine",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 2664
+    },
+    {
+      "id": "dsh-deepseek-usage-mmzm0808",
+      "name": "dsh-deepseek-usage",
+      "spec": "dsh-deepseek-usage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 989
+    },
+    {
+      "id": "dsh-remote-hyna-hla",
+      "name": "dsh-remote",
+      "spec": "dsh-remote",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1724
+    },
+    {
+      "id": "dsh-whale-galgame",
+      "name": "dsh-whale-galgame",
+      "spec": "dsh-whale-galgame",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1500
+    },
+    {
+      "id": "minecraft-dev",
+      "name": "minecraft-dev",
+      "spec": "minecraft-dev",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1298
+    },
+    {
+      "id": "dsh-computer-use-988hj7tczd-oss",
+      "name": "dsh-computer-use",
+      "spec": "dsh-computer-use",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1127
+    },
+    {
+      "id": "dsh-whale-meter",
+      "name": "dsh-whale-meter",
+      "spec": "dsh-whale-meter",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1027
+    },
+    {
+      "id": "dsh-vscode-fengze233",
+      "name": "dsh-vscode",
+      "spec": "dsh-vscode",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-prompt-optimize",
+      "name": "dsh-prompt-optimize",
+      "spec": "dsh-prompt-optimize",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1063
+    },
+    {
+      "id": "dsh-nested-followups",
+      "name": "dsh-nested-followups",
+      "spec": "dsh-nested-followups",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1052
+    },
+    {
+      "id": "dsh-qq-bridge-xiaomengxinbb",
+      "name": "dsh-qq-bridge",
+      "spec": "dsh-qq-bridge",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-replay",
+      "name": "dsh-replay",
+      "spec": "dsh-replay",
+      "src": "npm",
+      "note": "",
+      "elapsedMs": 0
+    },
+    {
+      "id": "dsh-thinking-levels",
+      "name": "dsh-thinking-levels",
+      "spec": "dsh-thinking-levels",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1024
+    },
+    {
+      "id": "dsh-web-startup-auth",
+      "name": "dsh-web-startup-auth",
+      "spec": "dsh-web-startup-auth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 970
+    },
+    {
+      "id": "deep-read-summarize",
+      "name": "deep-read-summarize",
+      "spec": "deep-read-summarize",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1388
+    },
+    {
+      "id": "dsh-coding-subscription-oauth",
+      "name": "dsh-coding-subscription-oauth",
+      "spec": "dsh-coding-subscription-oauth",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1010
+    },
+    {
+      "id": "dsh-personal-center",
+      "name": "dsh-personal-center",
+      "spec": "dsh-personal-center",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1081
+    },
+    {
+      "id": "dsh-imessage",
+      "name": "dsh-imessage",
+      "spec": "dsh-imessage",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1203
+    },
+    {
+      "id": "dsh-rewind-sirilee",
+      "name": "dsh-rewind",
+      "spec": "dsh-rewind",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1349
+    },
+    {
+      "id": "dsh-with-chatgpt",
+      "name": "dsh-with-chatgpt",
+      "spec": "dsh-with-chatgpt",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1152
+    },
+    {
+      "id": "dsh-ui-harmonizer",
+      "name": "dsh-ui-harmonizer",
+      "spec": "dsh-ui-harmonizer",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1063
+    },
+    {
+      "id": "dsh-mattpocock-skills-deck",
+      "name": "dsh-mattpocock-skills-deck",
+      "spec": "dsh-mattpocock-skills-deck",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1833
+    },
+    {
+      "id": "dsh-ui-tweaks",
+      "name": "dsh-ui-tweaks",
+      "spec": "dsh-ui-tweaks",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1139
+    },
+    {
+      "id": "dsh-novel-writer-siweina",
+      "name": "dsh-novel-writer",
+      "spec": "dsh-novel-writer",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1089
+    },
+    {
+      "id": "dsh-auth-gateway",
+      "name": "dsh-auth-gateway",
+      "spec": "dsh-auth-gateway",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1212
+    },
+    {
+      "id": "dsh-worktree-panel",
+      "name": "dsh-worktree-panel",
+      "spec": "dsh-worktree-panel",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1082
+    },
+    {
+      "id": "dsh-harness-one",
+      "name": "dsh-harness-one",
+      "spec": "dsh-harness-one",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 704
+    },
+    {
+      "id": "dsh-design-qa",
+      "name": "dsh-design-qa",
+      "spec": "dsh-design-qa",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 1257
+    },
+    {
+      "id": "dsh-plugin-memory",
+      "name": "dsh-plugin-memory",
+      "spec": "dsh-plugin-memory",
+      "src": "npm",
+      "verdict": "ok",
+      "note": "",
+      "elapsedMs": 779
+    }
+  ],
   "layer2_summary": {
-    "total": 0,
-    "ok": 0,
+    "total": 267,
+    "ok": 219,
     "broken": 0,
-    "skipped": 0,
+    "skipped": 47,
     "notfound": 0,
-    "fail": 0
+    "fail": 1
   },
   "layer3_summary": {
-    "total": 0,
-    "ok": 0,
+    "total": 267,
+    "ok": 219,
     "broken": 0,
-    "skipped": 0,
+    "skipped": 48,
     "notfound": 0,
     "fail": 0
   }

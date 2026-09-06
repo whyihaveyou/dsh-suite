@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-06T17:05:53.874Z",
+ "ts": "2026-09-06T19:14:37.870Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -386,6 +386,7 @@
   "dsh-annotation",
   "dsh-annotation-plugin",
   "dsh-answer-pet",
+  "dsh-antibrow",
   "dsh-antigravity",
   "dsh-any-background",
   "dsh-apex-standard",
@@ -2766,6 +2767,7 @@
   "surfing-plugin",
   "synergy",
   "t1y-skills",
+  "tarocub",
   "task-passport",
   "telegram",
   "tencentcloud-agentobs-sdk-dsh",

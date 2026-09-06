@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-06T14:14:24.203Z",
+ "ts": "2026-09-06T17:05:53.874Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1056,6 +1056,7 @@
   "dsh-knowledge",
   "dsh-knowledge-graph",
   "dsh-knowledge-lemoncat7",
+  "dsh-krouter",
   "dsh-kuikly-expert",
   "dsh-kun-like-pet",
   "dsh-lan",
@@ -2288,6 +2289,7 @@
   "dsh-webui",
   "dsh-webui-auth",
   "dsh-webui-glass-theme",
+  "dsh-webui-kr-atg",
   "dsh-webui-market-plugin",
   "dsh-webui-pets",
   "dsh-wechat",

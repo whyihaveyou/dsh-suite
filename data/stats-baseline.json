@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-06T06:01:07.878Z",
+ "ts": "2026-09-06T11:00:25.728Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1485,6 +1485,7 @@
   "dsh-plugin-hello",
   "dsh-plugin-hub",
   "dsh-plugin-hub-dshplugin",
+  "dsh-plugin-hub-wingsky-1",
   "dsh-plugin-hub-yunhuantian",
   "dsh-plugin-image-wallpaper",
   "dsh-plugin-installer",
@@ -1527,6 +1528,7 @@
   "dsh-plugin-miliastra-toolbox",
   "dsh-plugin-mineru",
   "dsh-plugin-mm-vision",
+  "dsh-plugin-mobile-gateway",
   "dsh-plugin-msg-nav",
   "dsh-plugin-multimodal",
   "dsh-plugin-net-access",

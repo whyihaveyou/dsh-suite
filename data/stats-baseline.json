@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-06T01:01:32.236Z",
+ "ts": "2026-09-06T06:01:07.878Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -841,6 +841,7 @@
   "dsh-event-auditor",
   "dsh-everything-oauth",
   "dsh-evolve",
+  "dsh-evolve-in-git",
   "dsh-evolve-modes",
   "dsh-evoresearch",
   "dsh-exa-mcp",
@@ -1054,6 +1055,7 @@
   "dsh-kline",
   "dsh-knowledge",
   "dsh-knowledge-graph",
+  "dsh-knowledge-lemoncat7",
   "dsh-kuikly-expert",
   "dsh-kun-like-pet",
   "dsh-lan",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-07T10:22:51.852Z",
+ "ts": "2026-09-07T16:31:23.862Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1830,6 +1830,7 @@
   "dsh-session-stars",
   "dsh-session-timeline",
   "dsh-session-tree",
+  "dsh-session-tree-extension",
   "dsh-sessions-manager",
   "dsh-sfversion",
   "dsh-share",
@@ -2622,6 +2623,7 @@
   "open-record-replay",
   "open-sea-skin",
   "openbiliclaw",
+  "openbitfun",
   "opencode-usage",
   "opencode2dsh",
   "opencontext",

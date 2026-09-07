@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-07T04:45:16.120Z",
+ "ts": "2026-09-07T10:22:51.852Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -483,6 +483,7 @@
   "dsh-better-browser",
   "dsh-better-chat-history",
   "dsh-better-deepseek",
+  "dsh-better-display",
   "dsh-better-edit",
   "dsh-better-input",
   "dsh-better-markdown",
@@ -974,6 +975,7 @@
   "dsh-hdc-bridge",
   "dsh-header-status",
   "dsh-headroom",
+  "dsh-headroom-giter00",
   "dsh-heatmap",
   "dsh-her-eyes",
   "dsh-hermes-memory-bridge",

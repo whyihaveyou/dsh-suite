@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-06T23:57:40.279Z",
+ "ts": "2026-09-07T04:45:16.120Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -516,6 +516,7 @@
   "dsh-browser-bridge",
   "dsh-browser-companion",
   "dsh-browser-control",
+  "dsh-browser-control-caob23",
   "dsh-browser-duyefeng",
   "dsh-browser-playwright",
   "dsh-browser-wqty123",
@@ -1678,6 +1679,7 @@
   "dsh-pub",
   "dsh-purge",
   "dsh-push",
+  "dsh-qa",
   "dsh-qq-bot",
   "dsh-qq-bridge",
   "dsh-qq-bridge-xiaomengxinbb",
@@ -2779,6 +2781,7 @@
   "thoughtdag",
   "tianshu-tui",
   "tingly-box",
+  "tizhuang-agent-skills",
   "tkinter-desktop",
   "tmcra-agent-memory",
   "tmcra-deepseek-harness-memory",

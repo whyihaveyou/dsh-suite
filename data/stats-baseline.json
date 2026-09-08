@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-08T04:40:19.031Z",
+ "ts": "2026-09-08T09:45:07.218Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -161,6 +161,7 @@
   "deepagent",
   "deepagents-mini-harness",
   "deepddw",
+  "deepdeck",
   "deepjit",
   "deepsec",
   "deepseek-account",
@@ -520,6 +521,7 @@
   "dsh-browser-control",
   "dsh-browser-control-caob23",
   "dsh-browser-duyefeng",
+  "dsh-browser-nono-neko",
   "dsh-browser-playwright",
   "dsh-browser-wqty123",
   "dsh-browser-xylt369",
@@ -1051,6 +1053,7 @@
   "dsh-kanban",
   "dsh-kanban-alpacachen",
   "dsh-kanban-isolat-3k",
+  "dsh-kb-rag",
   "dsh-kb-sieve",
   "dsh-keepalive",
   "dsh-kimi-bridge",

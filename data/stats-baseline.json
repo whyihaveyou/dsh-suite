@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-08T14:36:44.338Z",
+ "ts": "2026-09-08T18:44:20.709Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1732,6 +1732,7 @@
   "dsh-remote-hyna-hla",
   "dsh-remote-ide",
   "dsh-remote-mobile",
+  "dsh-remote-mrrisega",
   "dsh-remote-sandbox",
   "dsh-remote-scspotato",
   "dsh-remote-ssh",
@@ -1947,6 +1948,7 @@
   "dsh-suggest-prompt",
   "dsh-suggested-replies",
   "dsh-super-injector",
+  "dsh-superpower",
   "dsh-superpowers",
   "dsh-supervisor",
   "dsh-surface-contract-proof",
@@ -2693,6 +2695,7 @@
   "prompt-optimizer",
   "prompt-skill-armory",
   "promptwall",
+  "prts-terrarchive",
   "puddingagent",
   "pwiki",
   "qa-skills",

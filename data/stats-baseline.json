@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-08T21:55:15.792Z",
+ "ts": "2026-09-09T00:18:36.852Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -678,6 +678,7 @@
   "dsh-cost-meter",
   "dsh-cost-tracker",
   "dsh-cot-summerization",
+  "dsh-council",
   "dsh-cowork",
   "dsh-creator",
   "dsh-credential-handoff",

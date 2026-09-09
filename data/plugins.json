@@ -4,7 +4,7 @@
     "generated_at": "2026-09-09T09:50:19.507Z",
     "source": "hourly refresh-stars (GitHub GraphQL)",
     "totals": {
-      "plugins": 1857,
+      "plugins": 1870,
       "watchlist": 1009
     },
     "category_mapping": {
@@ -68511,6 +68511,424 @@
         "networkEgress": false,
         "shellAccess": false,
         "noLicense": false
+      }
+    },
+    {
+      "id": "dsh-voice-goodandready",
+      "name": "dsh-voice-goodandready",
+      "npm": "@goodandready/dsh-voice",
+      "repo": "GooDAnDReaDY/dsh-voice",
+      "url": "https://github.com/GooDAnDReaDY/dsh-voice",
+      "category": "ui",
+      "description": {
+        "en": "Voice input for the web UI: streaming dictation chunked by pauses plus voice messages, each with its own multi-provider fallback chain.",
+        "zh": "Web UI 语音输入：按停顿分段的流式听写 + 语音消息，每条可配独立的多服务商回退链。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 3,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-voice",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-07",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-tts",
+      "name": "dsh-tts",
+      "npm": "@goodandready/dsh-tts",
+      "repo": "GooDAnDReaDY/dsh-tts",
+      "url": "https://github.com/GooDAnDReaDY/dsh-tts",
+      "category": "ui",
+      "description": {
+        "en": "Speaks agent replies aloud in the web UI through a provider fallback chain (OpenAI, ElevenLabs, Google, Azure, Groq, Deepgram, Edge, Piper, eSpeak).",
+        "zh": "Web UI 语音朗读助手回复：多服务商回退链（OpenAI/ElevenLabs/Google/Azure/Groq/Deepgram/Edge/Piper/eSpeak）。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 2,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-tts",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-07",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-image-gen-goodandready",
+      "name": "dsh-image-gen-goodandready",
+      "npm": "@goodandready/dsh-image-gen",
+      "repo": "GooDAnDReaDY/dsh-image-gen",
+      "url": "https://github.com/GooDAnDReaDY/dsh-image-gen",
+      "category": "tools",
+      "description": {
+        "en": "A generate_image tool backed by the FAL queue, any OpenAI-compatible images API, or a ChatGPT/Grok subscription, shown inline in the conversation.",
+        "zh": "generate_image 图像生成工具：走 FAL 队列 / 任意 OpenAI 兼容图像 API / ChatGPT·Grok 订阅，结果内联显示在会话里。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 3,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-image-gen",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-08",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-vision-bridge-goodandready",
+      "name": "dsh-vision-bridge-goodandready",
+      "npm": "@goodandready/dsh-vision-bridge",
+      "repo": "GooDAnDReaDY/dsh-vision-bridge",
+      "url": "https://github.com/GooDAnDReaDY/dsh-vision-bridge",
+      "category": "tools",
+      "description": {
+        "en": "Routes images to a vision model of your choice, so a text-only chat model does not fail a turn that contains a picture.",
+        "zh": "视觉桥：把图片路由给你选的视觉模型，纯文本模型遇到带图回合也不会失败。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 1,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-vision-bridge",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-07",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-grok-xsearch",
+      "name": "dsh-grok-xsearch",
+      "npm": "@goodandready/dsh-grok-xsearch",
+      "repo": "GooDAnDReaDY/dsh-grok-xsearch",
+      "url": "https://github.com/GooDAnDReaDY/dsh-grok-xsearch",
+      "category": "tools",
+      "description": {
+        "en": "An x_search tool for X/Twitter search, authenticated through a separate SuperGrok OAuth account.",
+        "zh": "X/Twitter 搜索工具（x_search），用独立的 SuperGrok OAuth 账号鉴权。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 0,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-grok-xsearch",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-08",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-key-rotation",
+      "name": "dsh-key-rotation",
+      "npm": "@goodandready/dsh-key-rotation",
+      "repo": "GooDAnDReaDY/dsh-key-rotation",
+      "url": "https://github.com/GooDAnDReaDY/dsh-key-rotation",
+      "category": "llm",
+      "description": {
+        "en": "A pool of API keys per provider: switches to the next key on quota or rate-limit errors, probes cooled keys for recovery, editable in Settings.",
+        "zh": "每服务商一个 API key 池：配额/限流错误自动切下一个 key，冷却后探测恢复，可在 Settings 里编辑。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 3,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-key-rotation",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-08",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-subscriptions",
+      "name": "dsh-subscriptions",
+      "npm": "@goodandready/dsh-subscriptions",
+      "repo": "GooDAnDReaDY/dsh-subscriptions",
+      "url": "https://github.com/GooDAnDReaDY/dsh-subscriptions",
+      "category": "llm",
+      "description": {
+        "en": "Registers ChatGPT Codex, Claude, Grok and Antigravity subscriptions as LLM providers through OAuth, with no API key.",
+        "zh": "把 ChatGPT Codex/Claude/Grok/Antigravity 订阅通过 OAuth 注册成 LLM 提供者，免 API key。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 1,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-subscriptions",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-08",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-model-sync",
+      "name": "dsh-model-sync",
+      "npm": "@goodandready/dsh-model-sync",
+      "repo": "GooDAnDReaDY/dsh-model-sync",
+      "url": "https://github.com/GooDAnDReaDY/dsh-model-sync",
+      "category": "llm",
+      "description": {
+        "en": "Synchronizes the model catalog of API-key providers from the provider itself instead of maintaining the list by hand.",
+        "zh": "模型目录自动同步：API-key 提供者的模型清单直接从服务商拉取，不再手工维护。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 0,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-model-sync",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-08",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-russian-lang",
+      "name": "dsh-russian-lang",
+      "npm": "@goodandready/dsh-russian-lang",
+      "repo": "GooDAnDReaDY/dsh-russian-lang",
+      "url": "https://github.com/GooDAnDReaDY/dsh-russian-lang",
+      "category": "ui",
+      "description": {
+        "en": "Russian as a third option in Settings - General - Language, translating the core and plugin locale namespaces at runtime.",
+        "zh": "Settings → General → Language 增加俄语选项：核心 + 30+ 插件 locale 命名空间运行时翻译（722+3989 键人工审校）。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 8,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-russian-lang",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "Python",
+      "last_push": "2026-09-09",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-lanmode",
+      "name": "dsh-lanmode",
+      "npm": "@goodandready/dsh-lanmode",
+      "repo": "GooDAnDReaDY/dsh-lanmode",
+      "url": "https://github.com/GooDAnDReaDY/dsh-lanmode",
+      "category": "utility",
+      "description": {
+        "en": "LAN and reverse-proxy access to the web UI: serves the settings service off localhost and supplies the web APIs a browser withholds over plain HTTP.",
+        "zh": "局域网/反代访问 Web UI：让 settings 服务脱离 localhost，补上浏览器在纯 HTTP 下不给的 Web API。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 3,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-lanmode",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-09",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
+      }
+    },
+    {
+      "id": "dsh-usage-guard",
+      "name": "dsh-usage-guard",
+      "npm": "@goodandready/dsh-usage-guard",
+      "repo": "GooDAnDReaDY/dsh-usage-guard",
+      "url": "https://github.com/GooDAnDReaDY/dsh-usage-guard",
+      "category": "session",
+      "description": {
+        "en": "Normalizes a malformed token-usage sample to zero before session history is folded, so an affected session does not replay as NaN.",
+        "zh": "会话 token 用量清洗：折叠历史前把畸形的 usage 样本归零，坏会话不再以 NaN 重放。"
+      },
+      "author": "GooDAnDReaDY",
+      "stars": 0,
+      "license": "MIT",
+      "tags": [],
+      "dsh": {
+        "minVersion": "",
+        "peerCordis": "",
+        "node": ""
+      },
+      "compat": {
+        "status": "unknown",
+        "dshVersion": "",
+        "lastVerified": "",
+        "note": ""
+      },
+      "install": "dsh plugin add @goodandready/dsh-usage-guard",
+      "featured": false,
+      "isOfficialBeta": false,
+      "language": "JavaScript",
+      "last_push": "2026-09-08",
+      "sourceNote": "投稿收录（issue #40）",
+      "evidence": {
+        "level": 1,
+        "l3Verified": false,
+        "source": "投稿审核（批量抽检 6/11）; L3 pending compat layer2/3"
       }
     }
   ],

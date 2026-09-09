@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-09T04:51:20.156Z",
+ "ts": "2026-09-09T09:50:19.597Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -297,6 +297,7 @@
   "deepseekharness-desktop",
   "deepseekharnessdesktop",
   "deepseekharnessdesktop-vault",
+  "deepseekharnessgreen",
   "deepseekharnessremotegateway",
   "deepspider",
   "deeptide",
@@ -1668,6 +1669,7 @@
   "dsh-promotion-toolkit-lhmd",
   "dsh-prompt-enhancer",
   "dsh-prompt-inject",
+  "dsh-prompt-library",
   "dsh-prompt-manager",
   "dsh-prompt-optimize",
   "dsh-prompt-optimizer",

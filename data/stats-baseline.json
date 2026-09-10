@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T04:52:21.738Z",
+ "ts": "2026-09-10T09:48:02.826Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1854,6 +1854,7 @@
   "dsh-session-tree",
   "dsh-session-tree-extension",
   "dsh-sessions-manager",
+  "dsh-setting-restart",
   "dsh-sfversion",
   "dsh-share",
   "dsh-shell-termux",
@@ -2140,6 +2141,7 @@
   "dsh-turn-delete",
   "dsh-turn-diff",
   "dsh-turn-fold",
+  "dsh-turn-fold-winter-and-you-gone",
   "dsh-turn-index",
   "dsh-turn-meta",
   "dsh-turn-navigator",

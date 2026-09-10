@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T18:28:05.717Z",
+  "generated_at": "2026-09-10T09:48:02.735Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -531,6 +531,24 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "songoao25/dsh-virtual-product-team",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-10T09:48:02.719Z",
+      "lastDetectedAt": "2026-09-10T09:48:02.719Z",
+      "lastStars": 5,
+      "lastPush": "2026-09-04",
+      "lastKnownUrl": "https://github.com/songoao25/dsh-virtual-product-team"
+    },
+    {
+      "repo": "Wechsels/dsh-zotero-wiki",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-10T09:48:02.719Z",
+      "lastDetectedAt": "2026-09-10T09:48:02.719Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Wechsels/dsh-zotero-wiki"
     }
   ]
 }

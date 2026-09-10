@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T14:31:19.506Z",
+ "ts": "2026-09-10T18:32:47.548Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -336,6 +336,7 @@
   "dsh-achievements",
   "dsh-acp",
   "dsh-acp-for-bitfun",
+  "dsh-acp-interactive",
   "dsh-acp-paseo",
   "dsh-acp-plugin",
   "dsh-action-parity",
@@ -910,6 +911,7 @@
   "dsh-forge",
   "dsh-free-search",
   "dsh-free-vision",
+  "dsh-freeroute",
   "dsh-friend",
   "dsh-from-scratch",
   "dsh-fschannel",

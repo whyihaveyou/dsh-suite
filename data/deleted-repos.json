@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T04:44:41.244Z",
+  "generated_at": "2026-09-11T09:46:28.107Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -216,6 +216,24 @@
       "lastStars": 3,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/hccccc01333/dsh-report-html"
+    },
+    {
+      "repo": "huiliyi37/dsh-tianshu-build",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-11T04:44:41.061Z",
+      "lastDetectedAt": "2026-09-11T09:46:27.953Z",
+      "lastStars": 47,
+      "lastPush": "2026-09-06",
+      "lastKnownUrl": "https://github.com/huiliyi37/dsh-tianshu-build"
+    },
+    {
+      "repo": "huiliyi37/dsh-tianshu-tui-placeholder",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-11T04:44:41.061Z",
+      "lastDetectedAt": "2026-09-11T09:46:27.952Z",
+      "lastStars": 47,
+      "lastPush": "2026-09-06",
+      "lastKnownUrl": "https://github.com/huiliyi37/dsh-tianshu-tui-placeholder"
     },
     {
       "repo": "hyls9527/dsh-plugins",
@@ -551,22 +569,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "huiliyi37/dsh-tianshu-build",
+      "repo": "yjm110517/content-to-editable-ppt-skill",
       "seen": 1,
-      "firstDetectedAt": "2026-09-11T04:44:41.061Z",
-      "lastDetectedAt": "2026-09-11T04:44:41.061Z",
-      "lastStars": 47,
-      "lastPush": "2026-09-06",
-      "lastKnownUrl": "https://github.com/huiliyi37/dsh-tianshu-build"
-    },
-    {
-      "repo": "huiliyi37/dsh-tianshu-tui-placeholder",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-11T04:44:41.061Z",
-      "lastDetectedAt": "2026-09-11T04:44:41.061Z",
-      "lastStars": 47,
-      "lastPush": "2026-09-06",
-      "lastKnownUrl": "https://github.com/huiliyi37/dsh-tianshu-tui-placeholder"
+      "firstDetectedAt": "2026-09-11T09:46:27.953Z",
+      "lastDetectedAt": "2026-09-11T09:46:27.953Z",
+      "lastStars": 1,
+      "lastPush": "2026-09-10",
+      "lastKnownUrl": "https://github.com/yjm110517/content-to-editable-ppt-skill"
     }
   ]
 }

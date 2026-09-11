@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T00:14:03.925Z",
+ "ts": "2026-09-11T04:44:41.344Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -46,6 +46,7 @@
   "anysearch-dsh",
   "api-cost-meter",
   "api-relay-audit",
+  "app",
   "archify",
   "argo",
   "aria",
@@ -1925,6 +1926,7 @@
   "dsh-smooth-stream-laplacebit",
   "dsh-snapshot",
   "dsh-solo-thinking",
+  "dsh-solution-explorer",
   "dsh-soul-md",
   "dsh-sound",
   "dsh-sound-effects-plugin",
@@ -2709,6 +2711,7 @@
   "plugin-team-board",
   "plugin-template",
   "polaris",
+  "postiz-agent",
   "powercontext-dsh",
   "ppt-design-skill",
   "pptfast",

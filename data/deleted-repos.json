@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T14:31:19.406Z",
+  "generated_at": "2026-09-11T04:44:41.244Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -549,6 +549,24 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "huiliyi37/dsh-tianshu-build",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-11T04:44:41.061Z",
+      "lastDetectedAt": "2026-09-11T04:44:41.061Z",
+      "lastStars": 47,
+      "lastPush": "2026-09-06",
+      "lastKnownUrl": "https://github.com/huiliyi37/dsh-tianshu-build"
+    },
+    {
+      "repo": "huiliyi37/dsh-tianshu-tui-placeholder",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-11T04:44:41.061Z",
+      "lastDetectedAt": "2026-09-11T04:44:41.061Z",
+      "lastStars": 47,
+      "lastPush": "2026-09-06",
+      "lastKnownUrl": "https://github.com/huiliyi37/dsh-tianshu-tui-placeholder"
     }
   ]
 }

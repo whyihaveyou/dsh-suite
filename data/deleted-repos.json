@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T09:46:28.107Z",
+  "generated_at": "2026-09-11T14:30:24.426Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -533,6 +533,15 @@
       "lastKnownUrl": "https://github.com/YisfL/dsh-desktop"
     },
     {
+      "repo": "yjm110517/content-to-editable-ppt-skill",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-11T09:46:27.953Z",
+      "lastDetectedAt": "2026-09-11T14:30:24.413Z",
+      "lastStars": 1,
+      "lastPush": "2026-09-10",
+      "lastKnownUrl": "https://github.com/yjm110517/content-to-editable-ppt-skill"
+    },
+    {
       "repo": "yun520-1/deepseek-heartflow",
       "seen": 2,
       "firstDetectedAt": "2026-08-17T13:55:14.753Z",
@@ -569,13 +578,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "yjm110517/content-to-editable-ppt-skill",
+      "repo": "extracurricular-ai/dsh-filesnap",
       "seen": 1,
-      "firstDetectedAt": "2026-09-11T09:46:27.953Z",
-      "lastDetectedAt": "2026-09-11T09:46:27.953Z",
-      "lastStars": 1,
-      "lastPush": "2026-09-10",
-      "lastKnownUrl": "https://github.com/yjm110517/content-to-editable-ppt-skill"
+      "firstDetectedAt": "2026-09-11T14:30:24.412Z",
+      "lastDetectedAt": "2026-09-11T14:30:24.413Z",
+      "lastStars": 43,
+      "lastPush": "2026-09-11",
+      "lastKnownUrl": "https://github.com/extracurricular-ai/dsh-filesnap"
     }
   ]
 }

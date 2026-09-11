@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T14:30:24.534Z",
+ "ts": "2026-09-11T18:37:25.494Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1557,6 +1557,7 @@
   "dsh-plugin-memory",
   "dsh-plugin-merge-tool-calls",
   "dsh-plugin-mermaid",
+  "dsh-plugin-message-edit",
   "dsh-plugin-meta-memory",
   "dsh-plugin-miliastra-toolbox",
   "dsh-plugin-mineru",

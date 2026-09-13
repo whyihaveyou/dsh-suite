@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-13T11:55:48.147Z",
+ "ts": "2026-09-13T16:20:57.285Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -55,6 +55,7 @@
   "ark-cli",
   "atlas-cloud-skills",
   "atomstudio",
+  "augmentor-dsh-extension-plugin",
   "avernet",
   "awesome-ai-pedia",
   "awesome-deepseek-harness",
@@ -307,6 +308,7 @@
   "deepseekharnessremotegateway",
   "deepspider",
   "deeptide",
+  "deepwiki-rs",
   "deja-vu",
   "delivery-review-dsh-plugin",
   "design-playbook",
@@ -2438,6 +2440,7 @@
   "dsh4vscode",
   "dshana",
   "dshbox",
+  "dshbox-wsk-build",
   "dshcockpit",
   "dshcode",
   "dshdesktopshell",
@@ -2552,6 +2555,7 @@
   "irmia-devkit-open",
   "ironlaw",
   "iterate-plugin",
+  "j-space-cognition-suite",
   "j-space-cognition-suite-v3-6",
   "j-space-cognition-suite-v3-7",
   "jacobian",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-13T01:04:40.412Z",
+ "ts": "2026-09-13T06:13:53.256Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2074,6 +2074,7 @@
   "dsh-token-activity",
   "dsh-token-cost",
   "dsh-token-monitor",
+  "dsh-token-optimizer",
   "dsh-token-panel",
   "dsh-token-pet",
   "dsh-token-pricing",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-13T06:13:53.256Z",
+ "ts": "2026-09-13T11:55:48.147Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -173,6 +173,7 @@
   "deepseek-aix",
   "deepseek-auto-evolving-harness",
   "deepseek-balance-whale-widget",
+  "deepseek-balance-whale-widget-bowl",
   "deepseek-billing-plugin",
   "deepseek-design",
   "deepseek-eyes",
@@ -999,6 +1000,7 @@
   "dsh-hermes-memory-bridge",
   "dsh-history",
   "dsh-history-chenproton",
+  "dsh-history-startnewlabs",
   "dsh-history-tree",
   "dsh-hiyori-skin",
   "dsh-home-ui",
@@ -1387,6 +1389,7 @@
   "dsh-opencode-go-usage-xenia0922",
   "dsh-opencode-go-usage-yumusb",
   "dsh-opencode-palette",
+  "dsh-opencode-session-id",
   "dsh-opencode-usage",
   "dsh-opencode-usage-vinyumao",
   "dsh-opencode-zen",
@@ -2433,6 +2436,7 @@
   "dsh-zotero-wiki",
   "dsh2wechat",
   "dsh4vscode",
+  "dshana",
   "dshbox",
   "dshcockpit",
   "dshcode",

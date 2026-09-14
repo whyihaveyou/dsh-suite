@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T18:37:25.400Z",
+  "generated_at": "2026-09-14T06:21:23.865Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -585,6 +585,33 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "cyanseek/dsh-landscape",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-14T06:21:23.849Z",
+      "lastDetectedAt": "2026-09-14T06:21:23.849Z",
+      "lastStars": 6,
+      "lastPush": "2026-09-13",
+      "lastKnownUrl": "https://github.com/cyanseek/dsh-landscape"
+    },
+    {
+      "repo": "cyanseek/dsh-native-playbook",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-14T06:21:23.850Z",
+      "lastDetectedAt": "2026-09-14T06:21:23.850Z",
+      "lastStars": 4,
+      "lastPush": "2026-09-12",
+      "lastKnownUrl": "https://github.com/cyanseek/dsh-native-playbook"
+    },
+    {
+      "repo": "cyanseek/dsh-tool-chaos",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-14T06:21:23.849Z",
+      "lastDetectedAt": "2026-09-14T06:21:23.849Z",
+      "lastStars": 4,
+      "lastPush": "2026-09-12",
+      "lastKnownUrl": "https://github.com/cyanseek/dsh-tool-chaos"
     }
   ]
 }

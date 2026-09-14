@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-14T01:08:30.300Z",
+ "ts": "2026-09-14T06:21:23.962Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -752,6 +752,7 @@
   "dsh-default-workspace-plugin",
   "dsh-defend",
   "dsh-delegate",
+  "dsh-delete-chat",
   "dsh-delete-session",
   "dsh-deliberation-presets",
   "dsh-design-qa",
@@ -2642,6 +2643,7 @@
   "mstar-harness",
   "multi-screen-wireframe",
   "multimodal-bridge",
+  "multisim-mcp",
   "museai",
   "my-better-dsh",
   "nano-cordis",

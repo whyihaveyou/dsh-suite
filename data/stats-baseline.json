@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-13T22:28:09.091Z",
+ "ts": "2026-09-14T01:08:30.300Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1154,6 +1154,7 @@
   "dsh-llm-wiki",
   "dsh-llm-workbuddy",
   "dsh-llmwiki",
+  "dsh-local-ai",
   "dsh-local-filetree",
   "dsh-logger-panel",
   "dsh-longbridge",

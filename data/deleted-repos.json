@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T14:07:31.354Z",
+  "generated_at": "2026-09-14T19:25:23.292Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -252,6 +252,24 @@
       "lastStars": 3,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/hccccc01333/dsh-report-html"
+    },
+    {
+      "repo": "huey1in/reef",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastDetectedAt": "2026-09-14T19:25:23.276Z",
+      "lastStars": 20,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/huey1in/reef"
+    },
+    {
+      "repo": "huey1in/trio",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastDetectedAt": "2026-09-14T19:25:23.276Z",
+      "lastStars": 20,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/huey1in/trio"
     },
     {
       "repo": "huiliyi37/dsh-tianshu-build",
@@ -596,6 +614,15 @@
       "lastKnownUrl": "https://github.com/zevorn/dsh-humanize"
     },
     {
+      "repo": "zhuiyueya/dsh-voice",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastDetectedAt": "2026-09-14T19:25:23.275Z",
+      "lastStars": 4,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/zhuiyueya/dsh-voice"
+    },
+    {
       "repo": "zhulin025/LaoA-dshGF",
       "seen": 2,
       "firstDetectedAt": "2026-08-16T07:01:30.493Z",
@@ -612,33 +639,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "huey1in/reef",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
-      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
-      "lastStars": 20,
-      "lastPush": "2026-08-16",
-      "lastKnownUrl": "https://github.com/huey1in/reef"
-    },
-    {
-      "repo": "huey1in/trio",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
-      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
-      "lastStars": 20,
-      "lastPush": "2026-08-16",
-      "lastKnownUrl": "https://github.com/huey1in/trio"
-    },
-    {
-      "repo": "zhuiyueya/dsh-voice",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
-      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
-      "lastStars": 4,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/zhuiyueya/dsh-voice"
     }
   ]
 }

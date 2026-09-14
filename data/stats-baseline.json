@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-14T14:07:31.441Z",
+ "ts": "2026-09-14T19:25:23.393Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -663,6 +663,7 @@
   "dsh-computer-use-xiaoheizi1212",
   "dsh-computer-use-zrui-c",
   "dsh-config-manager",
+  "dsh-connect-trae",
   "dsh-connect-workbuddy",
   "dsh-console",
   "dsh-container",
@@ -1545,6 +1546,7 @@
   "dsh-plugin-llm-codex",
   "dsh-plugin-llm-verifier",
   "dsh-plugin-longgraph",
+  "dsh-plugin-lookatstudy",
   "dsh-plugin-loongsuite",
   "dsh-plugin-manager",
   "dsh-plugin-manager-2768651338",
@@ -1709,6 +1711,7 @@
   "dsh-prompt-manager",
   "dsh-prompt-optimize",
   "dsh-prompt-optimizer",
+  "dsh-prompt-optimizer-westfox-awa",
   "dsh-prompt-persona",
   "dsh-prompt-polish",
   "dsh-prompt-presets",
@@ -2317,6 +2320,7 @@
   "dsh-web-attention-badge",
   "dsh-web-background",
   "dsh-web-billing",
+  "dsh-web-chat",
   "dsh-web-default-session",
   "dsh-web-enhanced",
   "dsh-web-file-uploader",

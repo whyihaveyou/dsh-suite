@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-14T06:21:23.962Z",
+ "ts": "2026-09-14T14:07:31.441Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -915,6 +915,7 @@
   "dsh-find-skill",
   "dsh-firecrawl",
   "dsh-fleet-audit",
+  "dsh-flow",
   "dsh-flowglass",
   "dsh-focus-chat",
   "dsh-font",
@@ -1698,6 +1699,7 @@
   "dsh-prime-agent",
   "dsh-product-delivery-workflow",
   "dsh-project-file-explorer",
+  "dsh-project-memory",
   "dsh-projectmodel",
   "dsh-promotion-toolkit",
   "dsh-promotion-toolkit-lhmd",
@@ -2780,6 +2782,7 @@
   "research-skills",
   "review-workflow",
   "riffkit-dsh-plugin",
+  "rish-app",
   "risk-rule-design",
   "rocketx",
   "role-model",

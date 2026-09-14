@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T06:21:23.865Z",
+  "generated_at": "2026-09-14T14:07:31.354Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -99,6 +99,33 @@
       "lastStars": 1,
       "lastPush": "2026-08-25",
       "lastKnownUrl": "https://github.com/cking000bigdemon/dsh-toolbelt"
+    },
+    {
+      "repo": "cyanseek/dsh-landscape",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-14T06:21:23.849Z",
+      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastStars": 6,
+      "lastPush": "2026-09-13",
+      "lastKnownUrl": "https://github.com/cyanseek/dsh-landscape"
+    },
+    {
+      "repo": "cyanseek/dsh-native-playbook",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-14T06:21:23.850Z",
+      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastStars": 4,
+      "lastPush": "2026-09-12",
+      "lastKnownUrl": "https://github.com/cyanseek/dsh-native-playbook"
+    },
+    {
+      "repo": "cyanseek/dsh-tool-chaos",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-14T06:21:23.849Z",
+      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastStars": 4,
+      "lastPush": "2026-09-12",
+      "lastKnownUrl": "https://github.com/cyanseek/dsh-tool-chaos"
     },
     {
       "repo": "D-Robotics/dsh-plugin-rdk",
@@ -587,31 +614,31 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "cyanseek/dsh-landscape",
+      "repo": "huey1in/reef",
       "seen": 1,
-      "firstDetectedAt": "2026-09-14T06:21:23.849Z",
-      "lastDetectedAt": "2026-09-14T06:21:23.849Z",
-      "lastStars": 6,
-      "lastPush": "2026-09-13",
-      "lastKnownUrl": "https://github.com/cyanseek/dsh-landscape"
+      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastStars": 20,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/huey1in/reef"
     },
     {
-      "repo": "cyanseek/dsh-native-playbook",
+      "repo": "huey1in/trio",
       "seen": 1,
-      "firstDetectedAt": "2026-09-14T06:21:23.850Z",
-      "lastDetectedAt": "2026-09-14T06:21:23.850Z",
-      "lastStars": 4,
-      "lastPush": "2026-09-12",
-      "lastKnownUrl": "https://github.com/cyanseek/dsh-native-playbook"
+      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastStars": 20,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/huey1in/trio"
     },
     {
-      "repo": "cyanseek/dsh-tool-chaos",
+      "repo": "zhuiyueya/dsh-voice",
       "seen": 1,
-      "firstDetectedAt": "2026-09-14T06:21:23.849Z",
-      "lastDetectedAt": "2026-09-14T06:21:23.849Z",
+      "firstDetectedAt": "2026-09-14T14:07:31.340Z",
+      "lastDetectedAt": "2026-09-14T14:07:31.340Z",
       "lastStars": 4,
-      "lastPush": "2026-09-12",
-      "lastKnownUrl": "https://github.com/cyanseek/dsh-tool-chaos"
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/zhuiyueya/dsh-voice"
     }
   ]
 }

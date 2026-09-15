@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-14T23:11:16.087Z",
+ "ts": "2026-09-15T01:31:48.620Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -756,6 +756,7 @@
   "dsh-delete-chat",
   "dsh-delete-session",
   "dsh-deliberation-presets",
+  "dsh-design-mode",
   "dsh-design-qa",
   "dsh-design-skills",
   "dsh-desk-pet",

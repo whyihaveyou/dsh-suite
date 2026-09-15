@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-15T07:49:09.512Z",
+ "ts": "2026-09-15T13:37:26.483Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -93,6 +93,7 @@
   "better-deepseek-harkness",
   "better-deepseek-harness",
   "better-model-provider",
+  "bifrost",
   "billion-context-dsh",
   "biodsh",
   "bitfun",
@@ -658,6 +659,7 @@
   "dsh-composer-polish",
   "dsh-computer-use",
   "dsh-computer-use-988hj7tczd-oss",
+  "dsh-computer-use-codex-style",
   "dsh-computer-use-geohotstan",
   "dsh-computer-use-win",
   "dsh-computer-use-xiaoheizi1212",
@@ -2686,6 +2688,7 @@
   "oh-my-knowledge",
   "oh-story-dsh",
   "oh-story-dsh-zenstory-ai",
+  "omaseek",
   "omdp",
   "omdsh",
   "omdsh-runtime",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:37:26.370Z",
+  "generated_at": "2026-09-16T06:06:41.939Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -648,6 +648,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "WinterOne-hub/ai-monitor",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-16T06:06:41.921Z",
+      "lastDetectedAt": "2026-09-16T06:06:41.921Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/WinterOne-hub/ai-monitor"
     }
   ]
 }

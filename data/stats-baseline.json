@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-16T06:06:42.043Z",
+ "ts": "2026-09-16T11:38:03.378Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1040,6 +1040,7 @@
   "dsh-ikun-pet",
   "dsh-im",
   "dsh-im-bridge",
+  "dsh-im-companion",
   "dsh-im-connect",
   "dsh-im-gateway",
   "dsh-im-gateway-zhuiyueya",
@@ -1712,6 +1713,7 @@
   "dsh-projectmodel",
   "dsh-promotion-toolkit",
   "dsh-promotion-toolkit-lhmd",
+  "dsh-prompt",
   "dsh-prompt-enhancer",
   "dsh-prompt-inject",
   "dsh-prompt-library",
@@ -2590,6 +2592,7 @@
   "knowledge-from-literature-and-bilibili",
   "knowlp-rag",
   "kph",
+  "lantaiagent",
   "laoa-dshgf",
   "last30days-skill-cn",
   "launch-wechat-miniprogram",
@@ -2907,6 +2910,7 @@
   "voyager",
   "vpshub",
   "vscode-deepseek-harness",
+  "walioffice-dsh-plugin",
   "wallpaper-plugin",
   "wanjiqi-meme",
   "web-background",

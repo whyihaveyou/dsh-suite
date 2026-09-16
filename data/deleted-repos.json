@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T06:06:41.939Z",
+  "generated_at": "2026-09-16T11:38:03.279Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -560,6 +560,15 @@
       "lastKnownUrl": "https://github.com/Wechsels/dsh-zotero-wiki"
     },
     {
+      "repo": "WinterOne-hub/ai-monitor",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-16T06:06:41.921Z",
+      "lastDetectedAt": "2026-09-16T11:38:03.260Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/WinterOne-hub/ai-monitor"
+    },
+    {
       "repo": "wjy9902/dsh-web-default-session",
       "seen": 2,
       "firstDetectedAt": "2026-08-21T14:55:38.953Z",
@@ -650,13 +659,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "WinterOne-hub/ai-monitor",
+      "repo": "PeanutsDou/peanut-dsh-plugin",
       "seen": 1,
-      "firstDetectedAt": "2026-09-16T06:06:41.921Z",
-      "lastDetectedAt": "2026-09-16T06:06:41.921Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/WinterOne-hub/ai-monitor"
+      "firstDetectedAt": "2026-09-16T11:38:03.259Z",
+      "lastDetectedAt": "2026-09-16T11:38:03.260Z",
+      "lastStars": 2,
+      "lastPush": "2026-09-15",
+      "lastKnownUrl": "https://github.com/PeanutsDou/peanut-dsh-plugin"
     }
   ]
 }

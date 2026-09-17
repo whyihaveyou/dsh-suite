@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-17T01:29:28.244Z",
+ "ts": "2026-09-17T07:43:46.075Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -963,6 +963,7 @@
   "dsh-git-review",
   "dsh-git-worktree",
   "dsh-gitbash-preset",
+  "dsh-gitbash-shell",
   "dsh-gitflow",
   "dsh-github",
   "dsh-github-connector",
@@ -1529,6 +1530,7 @@
   "dsh-plugin-finder",
   "dsh-plugin-finder-ihuajiu",
   "dsh-plugin-gather",
+  "dsh-plugin-gating-hub",
   "dsh-plugin-git-inspect",
   "dsh-plugin-github-io",
   "dsh-plugin-github-market",

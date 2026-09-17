@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-17T07:43:46.075Z",
+ "ts": "2026-09-17T13:32:11.006Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -344,6 +344,7 @@
   "dsh-2origin",
   "dsh-a2a",
   "dsh-academic-research",
+  "dsh-academic-research-skills",
   "dsh-academic-skill",
   "dsh-achievements",
   "dsh-acp",
@@ -1388,6 +1389,7 @@
   "dsh-one-gateway",
   "dsh-onebot",
   "dsh-onlyne",
+  "dsh-ontology",
   "dsh-oomol",
   "dsh-open-browser",
   "dsh-open-ecosystem",
@@ -1712,6 +1714,7 @@
   "dsh-preset-plus",
   "dsh-prime-agent",
   "dsh-product-delivery-workflow",
+  "dsh-project-brain",
   "dsh-project-file-explorer",
   "dsh-project-memory",
   "dsh-projectmodel",
@@ -2317,6 +2320,7 @@
   "dsh-vscode-lixxx1",
   "dsh-vscode-mj-chang",
   "dsh-vscode-review",
+  "dsh-vscodemode",
   "dsh-w-plugin-ecosystem",
   "dsh-wallpaper",
   "dsh-wallpaper-chinarxq",

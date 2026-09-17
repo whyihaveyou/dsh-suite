@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-17T18:18:12.429Z",
+ "ts": "2026-09-17T21:28:38.816Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1403,6 +1403,7 @@
   "dsh-openapi",
   "dsh-openbiliclaw",
   "dsh-openclaw-acp",
+  "dsh-opencode-go",
   "dsh-opencode-go-box",
   "dsh-opencode-go-quota",
   "dsh-opencode-go-usage",
@@ -2310,6 +2311,7 @@
   "dsh-voice-input",
   "dsh-voice-input-plugin",
   "dsh-voice-mic",
+  "dsh-voice-mode",
   "dsh-voice-scribe",
   "dsh-voice-zhuiyueya",
   "dsh-vqa-agent",

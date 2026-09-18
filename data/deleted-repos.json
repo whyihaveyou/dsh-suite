@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T16:59:06.183Z",
+  "generated_at": "2026-09-18T15:05:40.937Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -666,6 +666,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "Heyflyingpig/long-draft-input",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-18T15:05:40.921Z",
+      "lastDetectedAt": "2026-09-18T15:05:40.921Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/Heyflyingpig/long-draft-input"
     }
   ]
 }

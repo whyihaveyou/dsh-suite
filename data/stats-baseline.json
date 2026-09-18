@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-18T05:59:25.014Z",
+ "ts": "2026-09-18T11:19:05.121Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -930,6 +930,7 @@
   "dsh-flowglass",
   "dsh-focus-chat",
   "dsh-font",
+  "dsh-font-wangpaopaolab",
   "dsh-for-vsc",
   "dsh-forge",
   "dsh-free-search",
@@ -1898,6 +1899,7 @@
   "dsh-session-timeline",
   "dsh-session-tree",
   "dsh-session-tree-extension",
+  "dsh-session-workbench",
   "dsh-sessions-manager",
   "dsh-setting-restart",
   "dsh-sfversion",
@@ -2606,6 +2608,7 @@
   "kph",
   "lantaiagent",
   "laoa-dshgf",
+  "lark-agent-bridge",
   "last30days-skill-cn",
   "launch-wechat-miniprogram",
   "leantoken",
@@ -2805,6 +2808,7 @@
   "reasonix-hermes",
   "recruiting-copilot",
   "reef",
+  "relay-dsh-plugin-codex",
   "reme",
   "remoteops",
   "resanity",

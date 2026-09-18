@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-18T00:23:18.731Z",
+ "ts": "2026-09-18T05:59:25.014Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -185,6 +185,7 @@
   "deepseek-eyes",
   "deepseek-harness-acp",
   "deepseek-harness-action",
+  "deepseek-harness-android",
   "deepseek-harness-android-app",
   "deepseek-harness-angelina-themes",
   "deepseek-harness-applicants",
@@ -2489,6 +2490,7 @@
   "easydsh",
   "easyeda-agent",
   "echobird",
+  "echocat-skill-panel-3-0",
   "ego-browser",
   "embedded-workbench",
   "emoji-desktop-pet",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-20T06:20:39.967Z",
+ "ts": "2026-09-20T12:25:41.558Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -96,6 +96,7 @@
   "better-deepseek-harness",
   "better-model-provider",
   "bifrost",
+  "billion-context",
   "billion-context-dsh",
   "biodsh",
   "bitfun",
@@ -543,6 +544,7 @@
   "dsh-browser-control-caob23",
   "dsh-browser-duyefeng",
   "dsh-browser-nono-neko",
+  "dsh-browser-omdsh-dev",
   "dsh-browser-playwright",
   "dsh-browser-wqty123",
   "dsh-browser-xylt369",
@@ -1561,6 +1563,7 @@
   "dsh-plugin-interpreters",
   "dsh-plugin-jinji",
   "dsh-plugin-kit",
+  "dsh-plugin-kit-hyzyn",
   "dsh-plugin-knowledge-graph",
   "dsh-plugin-langfuse",
   "dsh-plugin-llm-codex",
@@ -2599,6 +2602,7 @@
   "j-space-cognition-suite-v3-7",
   "jacobian",
   "jarvis-index",
+  "jev-dsh-decision",
   "jina-dsh-plugin",
   "jingyun-dsh",
   "jnpz",

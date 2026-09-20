@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T19:30:16.732Z",
+  "generated_at": "2026-09-20T22:29:48.228Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -452,6 +452,15 @@
       "lastKnownUrl": "https://github.com/openma-ai/deepseek-harness-typescript-sdk"
     },
     {
+      "repo": "orriduck/dsh-tui",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-20T19:30:16.706Z",
+      "lastDetectedAt": "2026-09-20T22:29:48.004Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/orriduck/dsh-tui"
+    },
+    {
       "repo": "PeanutsDou/peanut-dsh-plugin",
       "seen": 2,
       "firstDetectedAt": "2026-09-16T11:38:03.259Z",
@@ -675,15 +684,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "orriduck/dsh-tui",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-20T19:30:16.706Z",
-      "lastDetectedAt": "2026-09-20T19:30:16.706Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/orriduck/dsh-tui"
     }
   ]
 }

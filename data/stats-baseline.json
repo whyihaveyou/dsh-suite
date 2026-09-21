@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-21T19:32:06.981Z",
+ "ts": "2026-09-21T23:21:13.978Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -597,6 +597,7 @@
   "dsh-claude-tui",
   "dsh-claude-ux",
   "dsh-clawrouter",
+  "dsh-click",
   "dsh-client-masquerade",
   "dsh-client-pricing",
   "dsh-client-shortcuts",

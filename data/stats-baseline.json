@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-21T01:09:09.021Z",
+ "ts": "2026-09-21T06:24:31.830Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -121,6 +121,7 @@
   "chimera",
   "chiral-pulse",
   "chrome-mcp-bridge-2026-skill",
+  "citeciter",
   "citeguard",
   "clamicro",
   "clarify-intent-and-establish-shared-understanding",
@@ -376,6 +377,7 @@
   "dsh-agent-memory",
   "dsh-agent-message",
   "dsh-agent-messaging",
+  "dsh-agent-plugins-market",
   "dsh-agent-relay",
   "dsh-agent-replay",
   "dsh-agent-skills",
@@ -2717,6 +2719,7 @@
   "oh-my-dsh",
   "oh-my-dsh-agi-fans",
   "oh-my-dsh-amplifthq",
+  "oh-my-dsh-gulagala001",
   "oh-my-dsh-jonah-wu23",
   "oh-my-dsh-like-study1",
   "oh-my-dsh-liumengxuan04",

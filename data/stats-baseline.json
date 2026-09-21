@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-20T22:29:48.328Z",
+ "ts": "2026-09-21T01:09:09.021Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2502,6 +2502,7 @@
   "easydsh",
   "easyeda-agent",
   "echobird",
+  "echocat-skill-panel",
   "echocat-skill-panel-3-0",
   "ego-browser",
   "embedded-workbench",

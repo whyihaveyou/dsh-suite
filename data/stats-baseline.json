@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-21T06:24:31.830Z",
+ "ts": "2026-09-21T14:13:12.734Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1337,6 +1337,7 @@
   "dsh-multimodal-skill",
   "dsh-multiple-chat-panels",
   "dsh-museai-tavern",
+  "dsh-music-player",
   "dsh-music-plugin",
   "dsh-mygo",
   "dsh-nailong-desktop-pet",
@@ -1723,6 +1724,7 @@
   "dsh-postmortem",
   "dsh-precise-cache",
   "dsh-pref-kit",
+  "dsh-preset-enhance",
   "dsh-preset-minimal-windows",
   "dsh-preset-plus",
   "dsh-prime-agent",
@@ -2443,6 +2445,7 @@
   "dsh-workbench-dpf555",
   "dsh-workbench-lee259",
   "dsh-workbuddy-connect",
+  "dsh-workbuddy-xdpool",
   "dsh-workflow",
   "dsh-workflow-omdsh-dev",
   "dsh-workflow-worktree",
@@ -2950,6 +2953,7 @@
   "web-background",
   "web-components",
   "webdsh",
+  "webnovel-writer",
   "wegent",
   "weknora",
   "wemeet-openapi",

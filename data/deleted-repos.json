@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T23:21:13.893Z",
+  "generated_at": "2026-09-22T01:41:26.690Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -650,6 +650,15 @@
       "lastKnownUrl": "https://github.com/yun520-1/deepseek-heartflow"
     },
     {
+      "repo": "zcx369658780/governed-workflow-for-dsh",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-21T23:21:13.736Z",
+      "lastDetectedAt": "2026-09-22T01:41:26.678Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-20",
+      "lastKnownUrl": "https://github.com/zcx369658780/governed-workflow-for-dsh"
+    },
+    {
       "repo": "zevorn/dsh-humanize",
       "seen": 2,
       "firstDetectedAt": "2026-08-24T10:06:54.409Z",
@@ -684,15 +693,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "zcx369658780/governed-workflow-for-dsh",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-21T23:21:13.736Z",
-      "lastDetectedAt": "2026-09-21T23:21:13.736Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-20",
-      "lastKnownUrl": "https://github.com/zcx369658780/governed-workflow-for-dsh"
     }
   ]
 }

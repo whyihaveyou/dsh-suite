@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-22T13:29:27.913Z",
+ "ts": "2026-09-22T18:09:22.064Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -855,6 +855,7 @@
   "dsh-ears",
   "dsh-easyrewrite",
   "dsh-easyssh",
+  "dsh-echocat-skill-panel",
   "dsh-eco-router",
   "dsh-ecosystem-spec",
   "dsh-edex-ui",
@@ -1466,6 +1467,7 @@
   "dsh-personalize",
   "dsh-pet",
   "dsh-pet-corner",
+  "dsh-pet-live2d",
   "dsh-pet-pc2005-cloud",
   "dsh-pet-remielle",
   "dsh-pet-vulcan626",

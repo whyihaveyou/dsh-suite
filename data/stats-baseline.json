@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-23T06:02:21.776Z",
+ "ts": "2026-09-23T11:41:11.216Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2626,6 +2626,7 @@
   "jacobian",
   "jarvis-index",
   "jev-dsh-decision",
+  "jevcore",
   "jina-dsh-plugin",
   "jingyun-dsh",
   "jnpz",
@@ -2889,6 +2890,7 @@
   "skillcorpus",
   "skills",
   "skills-link",
+  "skills-management",
   "skills-upstash",
   "slcatwujian-dsh-vision-plugin",
   "smartmoney-cub",

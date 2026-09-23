@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-23T17:03:17.711Z",
+ "ts": "2026-09-23T20:26:22.439Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2695,6 +2695,7 @@
   "mirage-dsh",
   "misakanet",
   "mistymoon-dsh",
+  "mneme",
   "mnemon",
   "mnemosyne",
   "mnemosyne-mnemosyneos",
@@ -2795,6 +2796,7 @@
   "pi2dsh",
   "picgo",
   "picgo-core",
+  "picoaide-harness",
   "picturereader",
   "pilot-harness",
   "plaindeck",

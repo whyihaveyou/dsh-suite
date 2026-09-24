@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-24T19:14:24.451Z",
+ "ts": "2026-09-24T22:29:18.802Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1806,6 +1806,7 @@
   "dsh-recommend",
   "dsh-record-replay",
   "dsh-recovery-proof",
+  "dsh-reddit-radar",
   "dsh-redteam-model",
   "dsh-reference-anything",
   "dsh-refined",

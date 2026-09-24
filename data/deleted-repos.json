@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T04:54:44.804Z",
+  "generated_at": "2026-09-24T10:05:43.772Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -587,6 +587,15 @@
       "lastKnownUrl": "https://github.com/Wechsels/dsh-zotero-wiki"
     },
     {
+      "repo": "Wha1eChai/dsh-supervisor",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-24T04:54:44.789Z",
+      "lastDetectedAt": "2026-09-24T10:05:43.608Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/Wha1eChai/dsh-supervisor"
+    },
+    {
       "repo": "WinterOne-hub/ai-monitor",
       "seen": 2,
       "firstDetectedAt": "2026-09-16T06:06:41.921Z",
@@ -686,6 +695,15 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
+      "repo": "CH4ACKO3/dsh-ui-workspace",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-24T10:05:43.608Z",
+      "lastDetectedAt": "2026-09-24T10:05:43.608Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/CH4ACKO3/dsh-ui-workspace"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -695,13 +713,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "Wha1eChai/dsh-supervisor",
+      "repo": "MoneShadow/DeepSeek-Harness-linux-",
       "seen": 1,
-      "firstDetectedAt": "2026-09-24T04:54:44.789Z",
-      "lastDetectedAt": "2026-09-24T04:54:44.789Z",
+      "firstDetectedAt": "2026-09-24T10:05:43.608Z",
+      "lastDetectedAt": "2026-09-24T10:05:43.608Z",
       "lastStars": 2,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/Wha1eChai/dsh-supervisor"
+      "lastPush": "2026-08-17",
+      "lastKnownUrl": "https://github.com/MoneShadow/DeepSeek-Harness-linux-"
     }
   ]
 }

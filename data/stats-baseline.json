@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-24T04:54:44.918Z",
+ "ts": "2026-09-24T10:05:43.896Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1727,6 +1727,7 @@
   "dsh-polyglot",
   "dsh-pomodoro",
   "dsh-ponytail",
+  "dsh-ponytail-mengyuil",
   "dsh-popout-sidebar",
   "dsh-port-guard",
   "dsh-portable",
@@ -2220,6 +2221,7 @@
   "dsh-turn-delete",
   "dsh-turn-diff",
   "dsh-turn-fold",
+  "dsh-turn-fold-memorax-ai",
   "dsh-turn-fold-winter-and-you-gone",
   "dsh-turn-index",
   "dsh-turn-meta",
@@ -2976,6 +2978,7 @@
   "webdsh",
   "webnovel-writer",
   "wegent",
+  "weiwen-law-dsh",
   "weknora",
   "wemeet-openapi",
   "weshop-dsh-plugin",

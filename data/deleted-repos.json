@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T10:05:43.772Z",
+  "generated_at": "2026-09-24T15:11:07.027Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -90,6 +90,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-13",
       "lastKnownUrl": "https://github.com/bitterSmilezzz/dsh-skill-manager"
+    },
+    {
+      "repo": "CH4ACKO3/dsh-ui-workspace",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-24T10:05:43.608Z",
+      "lastDetectedAt": "2026-09-24T15:11:06.828Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/CH4ACKO3/dsh-ui-workspace"
     },
     {
       "repo": "cking000bigdemon/dsh-toolbelt",
@@ -407,6 +416,15 @@
       "lastKnownUrl": "https://github.com/mianyoubiaoqing/MistyMoon-DSH"
     },
     {
+      "repo": "MoneShadow/DeepSeek-Harness-linux-",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-24T10:05:43.608Z",
+      "lastDetectedAt": "2026-09-24T15:11:06.828Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-17",
+      "lastKnownUrl": "https://github.com/MoneShadow/DeepSeek-Harness-linux-"
+    },
+    {
       "repo": "MoonGlassKitty/dsh-tailscale-sync",
       "seen": 2,
       "firstDetectedAt": "2026-08-19T08:56:40.516Z",
@@ -695,15 +713,6 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
-      "repo": "CH4ACKO3/dsh-ui-workspace",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-24T10:05:43.608Z",
-      "lastDetectedAt": "2026-09-24T10:05:43.608Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/CH4ACKO3/dsh-ui-workspace"
-    },
-    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -711,15 +720,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "MoneShadow/DeepSeek-Harness-linux-",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-24T10:05:43.608Z",
-      "lastDetectedAt": "2026-09-24T10:05:43.608Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-17",
-      "lastKnownUrl": "https://github.com/MoneShadow/DeepSeek-Harness-linux-"
     }
   ]
 }

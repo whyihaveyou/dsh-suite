@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-23T23:45:55.452Z",
+ "ts": "2026-09-24T04:54:44.918Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1442,6 +1442,7 @@
   "dsh-openviking",
   "dsh-ops-kit",
   "dsh-orchestrator",
+  "dsh-origin-plugin",
   "dsh-otel",
   "dsh-outdoor-theme",
   "dsh-outline",
@@ -2910,6 +2911,7 @@
   "stent",
   "stock-analysis-plugin",
   "stratagate-agentmemory",
+  "study-mate",
   "succinix",
   "sumsec-skills",
   "superdesign-skill",
@@ -2952,6 +2954,7 @@
   "ui-status-label",
   "unified-agent-memory",
   "unity-plugin",
+  "univer-workspace",
   "upstream-radar",
   "url-manager",
   "vibe-mathematics",

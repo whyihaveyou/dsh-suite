@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-25T01:34:16.560Z",
+ "ts": "2026-09-25T07:52:50.121Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -943,6 +943,7 @@
   "dsh-font-wangpaopaolab",
   "dsh-for-vsc",
   "dsh-forge",
+  "dsh-free-models-hub",
   "dsh-free-search",
   "dsh-free-vision",
   "dsh-freeroute",
@@ -1445,6 +1446,7 @@
   "dsh-orchestrator",
   "dsh-origin-plugin",
   "dsh-otel",
+  "dsh-our-free-model",
   "dsh-outdoor-theme",
   "dsh-outline",
   "dsh-output-styles",
@@ -2690,6 +2692,7 @@
   "meoo-cli",
   "metera",
   "miffan",
+  "miliastra-beyond-simulator",
   "minara-skills",
   "mindmemos",
   "mindspace-dsh-local-rag",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T15:11:07.027Z",
+  "generated_at": "2026-09-25T13:51:46.969Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -720,6 +720,60 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "csiroqa/dsh-archive-viewer",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/csiroqa/dsh-archive-viewer"
+    },
+    {
+      "repo": "csiroqa/dsh-backup-sync",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/csiroqa/dsh-backup-sync"
+    },
+    {
+      "repo": "csiroqa/dsh-command-opt",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/csiroqa/dsh-command-opt"
+    },
+    {
+      "repo": "csiroqa/dsh-hotkeys",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/csiroqa/dsh-hotkeys"
+    },
+    {
+      "repo": "csiroqa/dsh-plugin-usage-report",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/csiroqa/dsh-plugin-usage-report"
+    },
+    {
+      "repo": "csiroqa/dsh-schedule",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastDetectedAt": "2026-09-25T13:51:46.954Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/csiroqa/dsh-schedule"
     }
   ]
 }

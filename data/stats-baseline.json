@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-26T13:09:13.432Z",
+ "ts": "2026-09-26T17:14:22.220Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -383,6 +383,7 @@
   "dsh-agent-relay",
   "dsh-agent-replay",
   "dsh-agent-skills",
+  "dsh-agent-studio",
   "dsh-agent-team",
   "dsh-agent-team-gui",
   "dsh-agent-team-room",
@@ -1203,6 +1204,7 @@
   "dsh-mac-desktop",
   "dsh-mac-vision",
   "dsh-macos-desktop",
+  "dsh-maid-whale-ui",
   "dsh-maid-whale-webui",
   "dsh-market",
   "dsh-market-2bingling",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-26T07:45:05.516Z",
+ "ts": "2026-09-26T13:09:13.432Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1464,6 +1464,7 @@
   "dsh-password-prompt",
   "dsh-passwords",
   "dsh-paste-input",
+  "dsh-pause",
   "dsh-payload-capture",
   "dsh-pdf",
   "dsh-peer-link",

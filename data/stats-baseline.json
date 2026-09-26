@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-26T01:38:07.545Z",
+ "ts": "2026-09-26T07:45:05.516Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -558,6 +558,7 @@
   "dsh-btw-loster12520",
   "dsh-builtin-toggles",
   "dsh-cache-stabilizer",
+  "dsh-cad",
   "dsh-cad-review",
   "dsh-calculator",
   "dsh-calendar",
@@ -876,6 +877,7 @@
   "dsh-engram-relay",
   "dsh-enhance",
   "dsh-entity-dd",
+  "dsh-env-inspector",
   "dsh-envoy",
   "dsh-ergonomics",
   "dsh-ernie-image",
@@ -1300,6 +1302,7 @@
   "dsh-minimal-v3",
   "dsh-minimal-vision",
   "dsh-miraculous-standard",
+  "dsh-mirror",
   "dsh-mmem",
   "dsh-mmx-bridge",
   "dsh-mneme",
@@ -2931,6 +2934,7 @@
   "t1y-skills",
   "tarocub",
   "task-passport",
+  "taskbelay",
   "telegram",
   "tencentcloud-agentobs-sdk-dsh",
   "tencentmeeting-cli",

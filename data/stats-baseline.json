@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-27T01:30:59.062Z",
+ "ts": "2026-09-27T08:14:19.062Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -105,6 +105,7 @@
   "blocker-notify",
   "blue",
   "blue-whale-harness",
+  "brewreel",
   "brooks-lint",
   "browser-bridge",
   "browser4",
@@ -2889,6 +2890,7 @@
   "sapbuddy-dsh",
   "scientificfigurelibrary",
   "sealos-skills",
+  "search-boost",
   "sebastian-kitchen-board",
   "securstack-dsh-plugin",
   "seektty",

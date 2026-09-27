@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-27T14:02:56.598Z",
+ "ts": "2026-09-27T18:27:52.184Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -280,6 +280,7 @@
   "deepseek-harness-tui-openma-ai",
   "deepseek-harness-typescript-sdk",
   "deepseek-harness-ux",
+  "deepseek-harness-video-director",
   "deepseek-harness-vision-plugin",
   "deepseek-harness-vsc-extension",
   "deepseek-harness-wallet",
@@ -2916,6 +2917,7 @@
   "skills-management",
   "skills-upstash",
   "slcatwujian-dsh-vision-plugin",
+  "smart-dsh",
   "smartmoney-cub",
   "smokinggun",
   "snapgrep",
@@ -2987,6 +2989,7 @@
   "vocaloid-mcp",
   "vox-director",
   "voyager",
+  "voyager-voyager-crew",
   "vpshub",
   "vscode-deepseek-harness",
   "walioffice-dsh-plugin",

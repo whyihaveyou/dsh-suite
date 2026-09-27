@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-27T08:14:19.062Z",
+ "ts": "2026-09-27T14:02:56.598Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -471,6 +471,7 @@
   "dsh-auto-compact",
   "dsh-auto-continue",
   "dsh-auto-memory",
+  "dsh-auto-memory-asktheway",
   "dsh-auto-mode",
   "dsh-auto-review",
   "dsh-automation",
@@ -1883,6 +1884,7 @@
   "dsh-schedule",
   "dsh-schedule-tasks",
   "dsh-scholar",
+  "dsh-scholar-smilewhenever777",
   "dsh-sci",
   "dsh-science",
   "dsh-science-biociao",

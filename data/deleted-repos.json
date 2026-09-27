@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T08:14:18.953Z",
+  "generated_at": "2026-09-27T14:02:56.518Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -452,6 +452,15 @@
       "lastKnownUrl": "https://github.com/LBurny/deepseek-harness-desktop"
     },
     {
+      "repo": "luoyu-xingu/dsh-background",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-27T08:14:18.940Z",
+      "lastDetectedAt": "2026-09-27T14:02:56.504Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/luoyu-xingu/dsh-background"
+    },
+    {
       "repo": "lynkas/dsh-think-flow-flow",
       "seen": 2,
       "firstDetectedAt": "2026-08-15T19:36:29.831Z",
@@ -774,15 +783,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "luoyu-xingu/dsh-background",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-27T08:14:18.940Z",
-      "lastDetectedAt": "2026-09-27T08:14:18.940Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/luoyu-xingu/dsh-background"
     }
   ]
 }

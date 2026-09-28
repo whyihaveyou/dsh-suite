@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-28T00:50:11.250Z",
+ "ts": "2026-09-28T06:59:02.577Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -187,6 +187,7 @@
   "deepseek-billing-plugin",
   "deepseek-design",
   "deepseek-eyes",
+  "deepseek-harness",
   "deepseek-harness-acp",
   "deepseek-harness-action",
   "deepseek-harness-android",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T14:02:56.518Z",
+  "generated_at": "2026-09-28T06:59:02.471Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -783,6 +783,24 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "Kr-ATG/dsh-webui",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-28T06:59:02.458Z",
+      "lastDetectedAt": "2026-09-28T06:59:02.458Z",
+      "lastStars": 17,
+      "lastPush": "2026-08-27",
+      "lastKnownUrl": "https://github.com/Kr-ATG/dsh-webui"
+    },
+    {
+      "repo": "statem-li/dsh-webui",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-28T06:59:02.458Z",
+      "lastDetectedAt": "2026-09-28T06:59:02.458Z",
+      "lastStars": 17,
+      "lastPush": "2026-08-27",
+      "lastKnownUrl": "https://github.com/statem-li/dsh-webui"
     }
   ]
 }

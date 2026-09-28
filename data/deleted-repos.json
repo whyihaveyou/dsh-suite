@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T15:33:03.627Z",
+  "generated_at": "2026-09-28T22:05:05.677Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -614,6 +614,15 @@
       "lastKnownUrl": "https://github.com/sjh9714/dsh-what-changed"
     },
     {
+      "repo": "SnowCrescenter-tech/dsh-launcher",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-28T15:33:03.608Z",
+      "lastDetectedAt": "2026-09-28T22:05:05.661Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/SnowCrescenter-tech/dsh-launcher"
+    },
+    {
       "repo": "songoao25/dsh-virtual-product-team",
       "seen": 2,
       "firstDetectedAt": "2026-09-10T09:48:02.719Z",
@@ -803,13 +812,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "SnowCrescenter-tech/dsh-launcher",
+      "repo": "maxwell-feng/dsh-windows-ocr",
       "seen": 1,
-      "firstDetectedAt": "2026-09-28T15:33:03.608Z",
-      "lastDetectedAt": "2026-09-28T15:33:03.608Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/SnowCrescenter-tech/dsh-launcher"
+      "firstDetectedAt": "2026-09-28T22:05:05.661Z",
+      "lastDetectedAt": "2026-09-28T22:05:05.661Z",
+      "lastStars": 8,
+      "lastPush": "2026-09-13",
+      "lastKnownUrl": "https://github.com/maxwell-feng/dsh-windows-ocr"
     }
   ]
 }

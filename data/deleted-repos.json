@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T06:59:02.471Z",
+  "generated_at": "2026-09-28T15:33:03.627Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -434,6 +434,15 @@
       "lastKnownUrl": "https://github.com/kanallas/api-cost-meter"
     },
     {
+      "repo": "Kr-ATG/dsh-webui",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-28T06:59:02.458Z",
+      "lastDetectedAt": "2026-09-28T15:33:03.609Z",
+      "lastStars": 17,
+      "lastPush": "2026-08-27",
+      "lastKnownUrl": "https://github.com/Kr-ATG/dsh-webui"
+    },
+    {
       "repo": "KureKaruna/dsh-at",
       "seen": 2,
       "firstDetectedAt": "2026-08-22T03:09:13.287Z",
@@ -623,6 +632,15 @@
       "lastKnownUrl": "https://github.com/sparkmio/dsh-sfversion"
     },
     {
+      "repo": "statem-li/dsh-webui",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-28T06:59:02.458Z",
+      "lastDetectedAt": "2026-09-28T15:33:03.608Z",
+      "lastStars": 17,
+      "lastPush": "2026-08-27",
+      "lastKnownUrl": "https://github.com/statem-li/dsh-webui"
+    },
+    {
       "repo": "stushansusu/dsh-miku-skin",
       "seen": 2,
       "firstDetectedAt": "2026-08-18T13:09:21.533Z",
@@ -785,22 +803,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "Kr-ATG/dsh-webui",
+      "repo": "SnowCrescenter-tech/dsh-launcher",
       "seen": 1,
-      "firstDetectedAt": "2026-09-28T06:59:02.458Z",
-      "lastDetectedAt": "2026-09-28T06:59:02.458Z",
-      "lastStars": 17,
-      "lastPush": "2026-08-27",
-      "lastKnownUrl": "https://github.com/Kr-ATG/dsh-webui"
-    },
-    {
-      "repo": "statem-li/dsh-webui",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-28T06:59:02.458Z",
-      "lastDetectedAt": "2026-09-28T06:59:02.458Z",
-      "lastStars": 17,
-      "lastPush": "2026-08-27",
-      "lastKnownUrl": "https://github.com/statem-li/dsh-webui"
+      "firstDetectedAt": "2026-09-28T15:33:03.608Z",
+      "lastDetectedAt": "2026-09-28T15:33:03.608Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/SnowCrescenter-tech/dsh-launcher"
     }
   ]
 }

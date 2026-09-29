@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-29T08:35:19.568Z",
+ "ts": "2026-09-29T15:56:39.770Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -10,6 +10,7 @@
   "adhdgofly-dsh-ext",
   "aegis",
   "aflare",
+  "agent-body",
   "agent-context-editor",
   "agent-extensions",
   "agent-fix",
@@ -352,6 +353,7 @@
   "dsh-101",
   "dsh-1024store",
   "dsh-2origin",
+  "dsh-550c-boot",
   "dsh-a2a",
   "dsh-academic-research",
   "dsh-academic-research-skills",
@@ -1466,6 +1468,7 @@
   "dsh-outline",
   "dsh-output-styles",
   "dsh-overleaf",
+  "dsh-pack-plugin",
   "dsh-paddle-ocr",
   "dsh-paddleocr-skills",
   "dsh-page-preview",
@@ -2451,6 +2454,7 @@
   "dsh-whale-desktop-launcher",
   "dsh-whale-font",
   "dsh-whale-galgame",
+  "dsh-whale-girl-live2d",
   "dsh-whale-meter",
   "dsh-whale-musume",
   "dsh-whale-pet",

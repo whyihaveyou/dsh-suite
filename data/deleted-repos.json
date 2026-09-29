@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T02:01:53.312Z",
+  "generated_at": "2026-09-29T15:56:39.668Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -819,6 +819,33 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "invalidnaaaame/dsh-scroll-timeline",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-29T15:56:39.649Z",
+      "lastDetectedAt": "2026-09-29T15:56:39.649Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/invalidnaaaame/dsh-scroll-timeline"
+    },
+    {
+      "repo": "invalidnaaaame/dsh-side-workspace",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-29T15:56:39.650Z",
+      "lastDetectedAt": "2026-09-29T15:56:39.650Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/invalidnaaaame/dsh-side-workspace"
+    },
+    {
+      "repo": "WTStarMark/QAQ",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-29T15:56:39.649Z",
+      "lastDetectedAt": "2026-09-29T15:56:39.649Z",
+      "lastStars": 4,
+      "lastPush": "2026-08-21",
+      "lastKnownUrl": "https://github.com/WTStarMark/QAQ"
     }
   ]
 }

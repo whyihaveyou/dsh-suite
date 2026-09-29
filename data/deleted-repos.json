@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T15:56:39.668Z",
+  "generated_at": "2026-09-29T20:51:54.360Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -398,6 +398,24 @@
       "lastKnownUrl": "https://github.com/ihuajiu/dsh-plugins-finder"
     },
     {
+      "repo": "invalidnaaaame/dsh-scroll-timeline",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-29T15:56:39.649Z",
+      "lastDetectedAt": "2026-09-29T20:51:54.344Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/invalidnaaaame/dsh-scroll-timeline"
+    },
+    {
+      "repo": "invalidnaaaame/dsh-side-workspace",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-29T15:56:39.650Z",
+      "lastDetectedAt": "2026-09-29T20:51:54.345Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-23",
+      "lastKnownUrl": "https://github.com/invalidnaaaame/dsh-side-workspace"
+    },
+    {
       "repo": "je00/dsh-codex-agent-bridge",
       "seen": 2,
       "firstDetectedAt": "2026-08-15T09:42:03.402Z",
@@ -731,6 +749,15 @@
       "lastKnownUrl": "https://github.com/wjy9902/dsh-web-default-session"
     },
     {
+      "repo": "WTStarMark/QAQ",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-29T15:56:39.649Z",
+      "lastDetectedAt": "2026-09-29T20:51:54.344Z",
+      "lastStars": 4,
+      "lastPush": "2026-08-21",
+      "lastKnownUrl": "https://github.com/WTStarMark/QAQ"
+    },
+    {
       "repo": "Xplore-LAB/dsh-plugin-asmemory",
       "seen": 2,
       "firstDetectedAt": "2026-08-25T05:50:50.672Z",
@@ -821,31 +848,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "invalidnaaaame/dsh-scroll-timeline",
+      "repo": "emredeveloper/deepseek-harness-huggingface",
       "seen": 1,
-      "firstDetectedAt": "2026-09-29T15:56:39.649Z",
-      "lastDetectedAt": "2026-09-29T15:56:39.649Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-23",
-      "lastKnownUrl": "https://github.com/invalidnaaaame/dsh-scroll-timeline"
-    },
-    {
-      "repo": "invalidnaaaame/dsh-side-workspace",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-29T15:56:39.650Z",
-      "lastDetectedAt": "2026-09-29T15:56:39.650Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-23",
-      "lastKnownUrl": "https://github.com/invalidnaaaame/dsh-side-workspace"
-    },
-    {
-      "repo": "WTStarMark/QAQ",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-29T15:56:39.649Z",
-      "lastDetectedAt": "2026-09-29T15:56:39.649Z",
-      "lastStars": 4,
-      "lastPush": "2026-08-21",
-      "lastKnownUrl": "https://github.com/WTStarMark/QAQ"
+      "firstDetectedAt": "2026-09-29T20:51:54.344Z",
+      "lastDetectedAt": "2026-09-29T20:51:54.344Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/emredeveloper/deepseek-harness-huggingface"
     }
   ]
 }

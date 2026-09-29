@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-29T02:01:53.414Z",
+ "ts": "2026-09-29T08:35:19.568Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -13,6 +13,7 @@
   "agent-context-editor",
   "agent-extensions",
   "agent-fix",
+  "agent-guard",
   "agent-guild",
   "agent-handoff-skill",
   "agent-knock-knock",
@@ -1107,6 +1108,7 @@
   "dsh-jailbreak-mode",
   "dsh-jev",
   "dsh-jev-interceptor",
+  "dsh-jev-plugin",
   "dsh-jingle",
   "dsh-jingling",
   "dsh-joi-channel-theme",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T22:05:05.677Z",
+  "generated_at": "2026-09-29T02:01:53.312Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -479,6 +479,15 @@
       "lastKnownUrl": "https://github.com/lynkas/dsh-think-flow-flow"
     },
     {
+      "repo": "maxwell-feng/dsh-windows-ocr",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-28T22:05:05.661Z",
+      "lastDetectedAt": "2026-09-29T02:01:53.184Z",
+      "lastStars": 8,
+      "lastPush": "2026-09-13",
+      "lastKnownUrl": "https://github.com/maxwell-feng/dsh-windows-ocr"
+    },
+    {
       "repo": "mianyoubiaoqing/MistyMoon-DSH",
       "seen": 2,
       "firstDetectedAt": "2026-08-23T16:45:02.581Z",
@@ -810,15 +819,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "maxwell-feng/dsh-windows-ocr",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-28T22:05:05.661Z",
-      "lastDetectedAt": "2026-09-28T22:05:05.661Z",
-      "lastStars": 8,
-      "lastPush": "2026-09-13",
-      "lastKnownUrl": "https://github.com/maxwell-feng/dsh-windows-ocr"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-30T06:47:26.465Z",
+ "ts": "2026-09-30T13:48:22.961Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -427,6 +427,7 @@
   "dsh-api-balance",
   "dsh-api-balance-02muller25",
   "dsh-api-balance-9epuuuu",
+  "dsh-api-dashboard",
   "dsh-api-usage-bar",
   "dsh-apple-mode",
   "dsh-approval-ai",
@@ -1794,6 +1795,7 @@
   "dsh-purge",
   "dsh-push",
   "dsh-qa",
+  "dsh-qoder-connect",
   "dsh-qq-bot",
   "dsh-qq-bridge",
   "dsh-qq-bridge-xiaomengxinbb",

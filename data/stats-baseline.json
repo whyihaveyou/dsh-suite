@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-30T13:48:22.961Z",
+ "ts": "2026-09-30T19:24:30.469Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1801,6 +1801,7 @@
   "dsh-qq-bridge-xiaomengxinbb",
   "dsh-qq2006",
   "dsh-qqbot",
+  "dsh-qqbot-gcry13067381632-jpg",
   "dsh-qrcode",
   "dsh-quant",
   "dsh-quant-workspace",
@@ -2309,6 +2310,7 @@
   "dsh-usage-plugin-feiyang-dev",
   "dsh-usage-plugin-qiongkura",
   "dsh-usage-record",
+  "dsh-usage-statistics-panel",
   "dsh-usage-stats",
   "dsh-usage-stats-lanlandeli",
   "dsh-usage-stats-make0209",
@@ -2544,6 +2546,7 @@
   "dshfind",
   "dshlauncher",
   "dshline",
+  "dshm",
   "dshp",
   "dshscan",
   "dshvibelearning",

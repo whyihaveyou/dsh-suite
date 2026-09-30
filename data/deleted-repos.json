@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T00:31:38.944Z",
+  "generated_at": "2026-09-30T06:47:26.362Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -846,6 +846,15 @@
       "lastStars": 2,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
+    },
+    {
+      "repo": "becomeless/dsh-desktop-launcher",
+      "seen": 1,
+      "firstDetectedAt": "2026-09-30T06:47:26.345Z",
+      "lastDetectedAt": "2026-09-30T06:47:26.346Z",
+      "lastStars": 0,
+      "lastPush": "2026-09-05",
+      "lastKnownUrl": "https://github.com/becomeless/dsh-desktop-launcher"
     },
     {
       "repo": "chokwinlee/deepseek-harness-desktop",

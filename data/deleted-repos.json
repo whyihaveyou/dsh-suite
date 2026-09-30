@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T20:51:54.360Z",
+  "generated_at": "2026-09-30T00:31:38.944Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -234,6 +234,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/echo-escape/dsh-workbench"
+    },
+    {
+      "repo": "emredeveloper/deepseek-harness-huggingface",
+      "seen": 2,
+      "firstDetectedAt": "2026-09-29T20:51:54.344Z",
+      "lastDetectedAt": "2026-09-30T00:31:38.798Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/emredeveloper/deepseek-harness-huggingface"
     },
     {
       "repo": "extracurricular-ai/dsh-filesnap",
@@ -846,15 +855,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "emredeveloper/deepseek-harness-huggingface",
-      "seen": 1,
-      "firstDetectedAt": "2026-09-29T20:51:54.344Z",
-      "lastDetectedAt": "2026-09-29T20:51:54.344Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/emredeveloper/deepseek-harness-huggingface"
     }
   ]
 }

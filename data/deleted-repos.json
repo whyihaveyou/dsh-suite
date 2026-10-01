@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T13:19:32.808Z",
+  "generated_at": "2026-10-01T18:59:17.599Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -54,6 +54,15 @@
       "lastStars": 964,
       "lastPush": "2026-08-20",
       "lastKnownUrl": "https://github.com/Anil-matcha/awesome-dsh-plugin"
+    },
+    {
+      "repo": "bainianling/dsh-jailbreak-mode",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-01T13:19:32.788Z",
+      "lastDetectedAt": "2026-10-01T18:59:17.585Z",
+      "lastStars": 16,
+      "lastPush": "2026-09-19",
+      "lastKnownUrl": "https://github.com/bainianling/dsh-jailbreak-mode"
     },
     {
       "repo": "becomeless/dsh-desktop-launcher",
@@ -297,6 +306,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-13",
       "lastKnownUrl": "https://github.com/fff122/dsh-task-checklist"
+    },
+    {
+      "repo": "Fro2en12/dsh-download-progress",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-01T13:19:32.788Z",
+      "lastDetectedAt": "2026-10-01T18:59:17.585Z",
+      "lastStars": 2,
+      "lastPush": "2026-09-01",
+      "lastKnownUrl": "https://github.com/Fro2en12/dsh-download-progress"
     },
     {
       "repo": "fryghost/deepseek-eyes",
@@ -902,15 +920,6 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
-      "repo": "bainianling/dsh-jailbreak-mode",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-01T13:19:32.788Z",
-      "lastDetectedAt": "2026-10-01T13:19:32.788Z",
-      "lastStars": 16,
-      "lastPush": "2026-09-19",
-      "lastKnownUrl": "https://github.com/bainianling/dsh-jailbreak-mode"
-    },
-    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -918,15 +927,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Fro2en12/dsh-download-progress",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-01T13:19:32.788Z",
-      "lastDetectedAt": "2026-10-01T13:19:32.788Z",
-      "lastStars": 2,
-      "lastPush": "2026-09-01",
-      "lastKnownUrl": "https://github.com/Fro2en12/dsh-download-progress"
     }
   ]
 }

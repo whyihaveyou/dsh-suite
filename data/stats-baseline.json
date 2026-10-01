@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-30T23:54:13.352Z",
+ "ts": "2026-10-01T05:58:33.507Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1995,6 +1995,7 @@
   "dsh-skill-picker",
   "dsh-skill-remote",
   "dsh-skill-viewer",
+  "dsh-skillhub",
   "dsh-skillport",
   "dsh-skillradar",
   "dsh-skills",
@@ -2583,6 +2584,7 @@
   "flowboard",
   "flowix",
   "fn-os-apps",
+  "fnos-dsh",
   "forgeax-dsh-game-plugin",
   "forkprobe",
   "free-vision-skill",
@@ -2871,6 +2873,7 @@
   "qa-skills",
   "qaq",
   "qdd",
+  "qiaomu-rss-dsh",
   "qiushi-dsh-evidence-audit",
   "quantum-practices",
   "querit-plugins",

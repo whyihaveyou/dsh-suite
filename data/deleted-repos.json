@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T19:24:30.359Z",
+  "generated_at": "2026-10-01T05:58:33.415Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -873,6 +873,42 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "RealAlexandreAI/dsh-all-search",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastStars": 0,
+      "lastPush": "2026-09-30",
+      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-all-search"
+    },
+    {
+      "repo": "RealAlexandreAI/dsh-atuin",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastStars": 0,
+      "lastPush": "2026-09-24",
+      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-atuin"
+    },
+    {
+      "repo": "RealAlexandreAI/dsh-cloudflare-browser-run",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastStars": 0,
+      "lastPush": "2026-09-30",
+      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-cloudflare-browser-run"
+    },
+    {
+      "repo": "RealAlexandreAI/dsh-nocturne-memory",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastStars": 1,
+      "lastPush": "2026-09-30",
+      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-nocturne-memory"
     }
   ]
 }

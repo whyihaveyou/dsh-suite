@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T05:58:33.415Z",
+  "generated_at": "2026-10-01T13:19:32.808Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -614,6 +614,42 @@
       "lastKnownUrl": "https://github.com/rabbitknight/dsh-tui"
     },
     {
+      "repo": "RealAlexandreAI/dsh-all-search",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastDetectedAt": "2026-10-01T13:19:32.787Z",
+      "lastStars": 0,
+      "lastPush": "2026-09-30",
+      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-all-search"
+    },
+    {
+      "repo": "RealAlexandreAI/dsh-atuin",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastDetectedAt": "2026-10-01T13:19:32.788Z",
+      "lastStars": 0,
+      "lastPush": "2026-09-24",
+      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-atuin"
+    },
+    {
+      "repo": "RealAlexandreAI/dsh-cloudflare-browser-run",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastDetectedAt": "2026-10-01T13:19:32.787Z",
+      "lastStars": 0,
+      "lastPush": "2026-09-30",
+      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-cloudflare-browser-run"
+    },
+    {
+      "repo": "RealAlexandreAI/dsh-nocturne-memory",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
+      "lastDetectedAt": "2026-10-01T13:19:32.787Z",
+      "lastStars": 1,
+      "lastPush": "2026-09-30",
+      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-nocturne-memory"
+    },
+    {
       "repo": "Roy-oss1/dsh-lark",
       "seen": 2,
       "firstDetectedAt": "2026-08-14T19:22:19.301Z",
@@ -866,6 +902,15 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
+      "repo": "bainianling/dsh-jailbreak-mode",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-01T13:19:32.788Z",
+      "lastDetectedAt": "2026-10-01T13:19:32.788Z",
+      "lastStars": 16,
+      "lastPush": "2026-09-19",
+      "lastKnownUrl": "https://github.com/bainianling/dsh-jailbreak-mode"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -875,40 +920,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "RealAlexandreAI/dsh-all-search",
+      "repo": "Fro2en12/dsh-download-progress",
       "seen": 1,
-      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
-      "lastDetectedAt": "2026-10-01T05:58:33.383Z",
-      "lastStars": 0,
-      "lastPush": "2026-09-30",
-      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-all-search"
-    },
-    {
-      "repo": "RealAlexandreAI/dsh-atuin",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
-      "lastDetectedAt": "2026-10-01T05:58:33.383Z",
-      "lastStars": 0,
-      "lastPush": "2026-09-24",
-      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-atuin"
-    },
-    {
-      "repo": "RealAlexandreAI/dsh-cloudflare-browser-run",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
-      "lastDetectedAt": "2026-10-01T05:58:33.383Z",
-      "lastStars": 0,
-      "lastPush": "2026-09-30",
-      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-cloudflare-browser-run"
-    },
-    {
-      "repo": "RealAlexandreAI/dsh-nocturne-memory",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-01T05:58:33.383Z",
-      "lastDetectedAt": "2026-10-01T05:58:33.383Z",
-      "lastStars": 1,
-      "lastPush": "2026-09-30",
-      "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-nocturne-memory"
+      "firstDetectedAt": "2026-10-01T13:19:32.788Z",
+      "lastDetectedAt": "2026-10-01T13:19:32.788Z",
+      "lastStars": 2,
+      "lastPush": "2026-09-01",
+      "lastKnownUrl": "https://github.com/Fro2en12/dsh-download-progress"
     }
   ]
 }

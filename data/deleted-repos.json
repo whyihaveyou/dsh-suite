@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T15:53:52.548Z",
+  "generated_at": "2026-10-02T20:49:24.738Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -569,6 +569,15 @@
       "lastKnownUrl": "https://github.com/MoonGlassKitty/dsh-tailscale-sync"
     },
     {
+      "repo": "Muelsysel/DeepSeek-Harness-Desktop",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-02T15:53:52.533Z",
+      "lastDetectedAt": "2026-10-02T20:49:24.720Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Muelsysel/DeepSeek-Harness-Desktop"
+    },
+    {
       "repo": "Nexus-Aethra/DSH-plugin-switch",
       "seen": 2,
       "firstDetectedAt": "2026-08-22T18:50:18.506Z",
@@ -927,15 +936,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Muelsysel/DeepSeek-Harness-Desktop",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-02T15:53:52.533Z",
-      "lastDetectedAt": "2026-10-02T15:53:52.533Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/Muelsysel/DeepSeek-Harness-Desktop"
     }
   ]
 }

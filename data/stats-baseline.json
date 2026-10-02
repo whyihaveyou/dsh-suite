@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-02T02:20:04.694Z",
+ "ts": "2026-10-02T08:41:15.444Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -121,6 +121,7 @@
   "cc-safety-net",
   "ccteam",
   "cetus",
+  "cfkanban",
   "chat2skill",
   "chatgpt-gemini-timeline",
   "chimera",
@@ -2828,6 +2829,7 @@
   "paste-to-workspace",
   "patentradar",
   "pawin-brain-deepseek-harness",
+  "pbfuzz",
   "peanut-dsh-plugin",
   "perfect-web-clone",
   "petdex",

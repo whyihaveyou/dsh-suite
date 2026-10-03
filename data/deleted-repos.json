@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T20:49:24.738Z",
+  "generated_at": "2026-10-03T12:38:00.511Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -927,6 +927,24 @@
       "lastStars": 2,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
+    },
+    {
+      "repo": "axelfreeman/marketing-mindset",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-03T12:38:00.492Z",
+      "lastDetectedAt": "2026-10-03T12:38:00.492Z",
+      "lastStars": 28,
+      "lastPush": "2026-10-02",
+      "lastKnownUrl": "https://github.com/axelfreeman/marketing-mindset"
+    },
+    {
+      "repo": "baidd1011/dsh-code-impact",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-03T12:38:00.492Z",
+      "lastDetectedAt": "2026-10-03T12:38:00.492Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/baidd1011/dsh-code-impact"
     },
     {
       "repo": "chokwinlee/deepseek-harness-desktop",

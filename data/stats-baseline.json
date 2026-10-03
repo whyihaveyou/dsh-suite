@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-03T00:34:10.040Z",
+ "ts": "2026-10-03T06:36:46.279Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1011,6 +1011,7 @@
   "dsh-governance",
   "dsh-gpu",
   "dsh-grafana",
+  "dsh-graph",
   "dsh-green-meter",
   "dsh-grok-geo",
   "dsh-grok-tui",
@@ -3037,6 +3038,7 @@
   "whale-on-desk",
   "whale-purse",
   "whalefall",
+  "whaleisle",
   "whalekit",
   "widget-dock",
   "workbuddyskillgroups4dsh",

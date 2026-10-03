@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T12:38:00.511Z",
+  "generated_at": "2026-10-03T17:21:14.986Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -54,6 +54,24 @@
       "lastStars": 964,
       "lastPush": "2026-08-20",
       "lastKnownUrl": "https://github.com/Anil-matcha/awesome-dsh-plugin"
+    },
+    {
+      "repo": "axelfreeman/marketing-mindset",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-03T12:38:00.492Z",
+      "lastDetectedAt": "2026-10-03T17:21:14.929Z",
+      "lastStars": 28,
+      "lastPush": "2026-10-02",
+      "lastKnownUrl": "https://github.com/axelfreeman/marketing-mindset"
+    },
+    {
+      "repo": "baidd1011/dsh-code-impact",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-03T12:38:00.492Z",
+      "lastDetectedAt": "2026-10-03T17:21:14.928Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/baidd1011/dsh-code-impact"
     },
     {
       "repo": "bainianling/dsh-jailbreak-mode",
@@ -929,24 +947,6 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
-      "repo": "axelfreeman/marketing-mindset",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-03T12:38:00.492Z",
-      "lastDetectedAt": "2026-10-03T12:38:00.492Z",
-      "lastStars": 28,
-      "lastPush": "2026-10-02",
-      "lastKnownUrl": "https://github.com/axelfreeman/marketing-mindset"
-    },
-    {
-      "repo": "baidd1011/dsh-code-impact",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-03T12:38:00.492Z",
-      "lastDetectedAt": "2026-10-03T12:38:00.492Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/baidd1011/dsh-code-impact"
-    },
-    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -954,6 +954,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "w1661884010-jpg/dsh-plugin-github-market",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-03T17:21:14.928Z",
+      "lastDetectedAt": "2026-10-03T17:21:14.928Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-29",
+      "lastKnownUrl": "https://github.com/w1661884010-jpg/dsh-plugin-github-market"
     }
   ]
 }

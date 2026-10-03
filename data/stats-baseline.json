@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-03T12:38:00.626Z",
+ "ts": "2026-10-03T17:21:15.170Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -153,6 +153,7 @@
   "codex-switch",
   "coding-coach",
   "coding-tools-mcp",
+  "codingns4dsh",
   "colleague-skill",
   "comm-protocol-hub",
   "commontrustprotocol",
@@ -589,6 +590,7 @@
   "dsh-channels",
   "dsh-chat-imagine",
   "dsh-chat-import",
+  "dsh-chat-manager",
   "dsh-chat-outline",
   "dsh-chat-timeline",
   "dsh-chat-tools",
@@ -2275,6 +2277,7 @@
   "dsh-ui-progress",
   "dsh-ui-progress-omdsh-dev",
   "dsh-ui-quote-selection",
+  "dsh-ui-skin-loader",
   "dsh-ui-skins",
   "dsh-ui-spec",
   "dsh-ui-topbar-compact",

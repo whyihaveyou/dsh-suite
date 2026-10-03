@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T17:21:14.986Z",
+  "generated_at": "2026-10-03T21:18:28.730Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -812,6 +812,15 @@
       "lastKnownUrl": "https://github.com/urzeye/dsh-outline"
     },
     {
+      "repo": "w1661884010-jpg/dsh-plugin-github-market",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-03T17:21:14.928Z",
+      "lastDetectedAt": "2026-10-03T21:18:28.717Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-29",
+      "lastKnownUrl": "https://github.com/w1661884010-jpg/dsh-plugin-github-market"
+    },
+    {
       "repo": "walavave/dsh-git",
       "seen": 2,
       "firstDetectedAt": "2026-08-16T07:01:30.493Z",
@@ -954,15 +963,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "w1661884010-jpg/dsh-plugin-github-market",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-03T17:21:14.928Z",
-      "lastDetectedAt": "2026-10-03T17:21:14.928Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-29",
-      "lastKnownUrl": "https://github.com/w1661884010-jpg/dsh-plugin-github-market"
     }
   ]
 }

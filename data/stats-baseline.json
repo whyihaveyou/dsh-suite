@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-04T05:57:02.145Z",
+ "ts": "2026-10-04T12:25:42.911Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -761,6 +761,7 @@
   "dsh-decktop",
   "dsh-deep-research",
   "dsh-deep-whale",
+  "dsh-deepcanary",
   "dsh-deepcel",
   "dsh-deeplink",
   "dsh-deepread",
@@ -2427,6 +2428,7 @@
   "dsh-web-search-exa",
   "dsh-web-search-firecrawl",
   "dsh-web-search-firecrawl-crayonlu",
+  "dsh-web-search-free",
   "dsh-web-search-pro",
   "dsh-web-search-provider",
   "dsh-web-search-responses",
@@ -2676,6 +2678,7 @@
   "jarvis-index",
   "jev-dsh-decision",
   "jevcore",
+  "jevdo",
   "jina-dsh-plugin",
   "jingyun-dsh",
   "jnpz",
@@ -3048,6 +3051,7 @@
   "whalekit",
   "widget-dock",
   "workbuddyskillgroups4dsh",
+  "workdsh",
   "working-activity",
   "write-chinese-long-screenplay",
   "xiaoliuren-skill",

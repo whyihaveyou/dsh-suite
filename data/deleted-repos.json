@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T12:25:42.813Z",
+  "generated_at": "2026-10-04T17:38:32.437Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -650,6 +650,15 @@
       "lastKnownUrl": "https://github.com/PeanutsDou/peanut-dsh-plugin"
     },
     {
+      "repo": "Porphyrioon/ironlaw",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-04T12:25:42.796Z",
+      "lastDetectedAt": "2026-10-04T17:38:32.419Z",
+      "lastStars": 1,
+      "lastPush": "2026-09-16",
+      "lastKnownUrl": "https://github.com/Porphyrioon/ironlaw"
+    },
+    {
       "repo": "rabbitknight/dsh-tui",
       "seen": 2,
       "firstDetectedAt": "2026-08-17T16:47:43.274Z",
@@ -963,15 +972,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Porphyrioon/ironlaw",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-04T12:25:42.796Z",
-      "lastDetectedAt": "2026-10-04T12:25:42.796Z",
-      "lastStars": 1,
-      "lastPush": "2026-09-16",
-      "lastKnownUrl": "https://github.com/Porphyrioon/ironlaw"
     }
   ]
 }

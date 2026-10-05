@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T07:07:00.649Z",
+  "generated_at": "2026-10-05T16:04:32.930Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -965,6 +965,15 @@
       "lastKnownUrl": "https://github.com/zhulin025/LaoA-dshGF"
     },
     {
+      "repo": "zoumutou/dsh-cost-balance",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-05T07:07:00.629Z",
+      "lastDetectedAt": "2026-10-05T16:04:32.910Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -972,15 +981,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "zoumutou/dsh-cost-balance",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-05T07:07:00.629Z",
-      "lastDetectedAt": "2026-10-05T07:07:00.629Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
     }
   ]
 }

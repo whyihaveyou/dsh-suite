@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-05T07:07:00.755Z",
+ "ts": "2026-10-05T16:04:33.033Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -97,6 +97,7 @@
   "beauticode",
   "better-deepseek-harkness",
   "better-deepseek-harness",
+  "better-dsh-session-deletetool",
   "better-model-provider",
   "bifrost",
   "billion-context",
@@ -2605,6 +2606,7 @@
   "forkprobe",
   "free-vision-skill",
   "freestyle-dsh-theme",
+  "fujiang-dsh",
   "function-testing",
   "gal-view",
   "galgame-skin",

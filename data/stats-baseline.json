@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-05T00:59:08.159Z",
+ "ts": "2026-10-05T07:07:00.755Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -547,6 +547,7 @@
   "dsh-board",
   "dsh-book2skill",
   "dsh-bookmarks",
+  "dsh-boot-animation-pro",
   "dsh-boot-guard",
   "dsh-bottom-bar",
   "dsh-bottom-info-bar",
@@ -881,6 +882,7 @@
   "dsh-edex-ui",
   "dsh-effort-config",
   "dsh-effort-slider",
+  "dsh-effort-slider-yuhub233",
   "dsh-effort-tweak",
   "dsh-ego-browser",
   "dsh-ego-browser-fisfzy",
@@ -1474,6 +1476,7 @@
   "dsh-origin-plugin",
   "dsh-otel",
   "dsh-our-free-model",
+  "dsh-our-free-model-ebony-vinyl",
   "dsh-outdoor-theme",
   "dsh-outline",
   "dsh-output-styles",

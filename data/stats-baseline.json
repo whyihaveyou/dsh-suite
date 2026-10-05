@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-05T16:04:33.033Z",
+ "ts": "2026-10-05T22:41:22.995Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1219,6 +1219,7 @@
   "dsh-longbridge",
   "dsh-loop",
   "dsh-loop-dock",
+  "dsh-loop-guard",
   "dsh-lorebookmd",
   "dsh-lovelyaudit",
   "dsh-lowtide",
@@ -2443,6 +2444,7 @@
   "dsh-web-search-tavily-nitrazepam01",
   "dsh-web-search-tavily-szmy-haruhi",
   "dsh-web-startup-auth",
+  "dsh-web-studyhub",
   "dsh-web-text-drop",
   "dsh-web-theme-packs",
   "dsh-web-tools",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T03:02:09.591Z",
+  "generated_at": "2026-10-06T10:21:50.610Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -243,6 +243,15 @@
       "lastStars": 2,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/Da-Mie/dsh-beacons"
+    },
+    {
+      "repo": "Degurechaff57/dsh-openapi",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-06T03:02:09.572Z",
+      "lastDetectedAt": "2026-10-06T10:21:50.595Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/Degurechaff57/dsh-openapi"
     },
     {
       "repo": "Deklan-Deng/Dcode",
@@ -974,6 +983,15 @@
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
     },
     {
+      "repo": "aresbit/MateBot",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-06T10:21:50.594Z",
+      "lastDetectedAt": "2026-10-06T10:21:50.595Z",
+      "lastStars": 45,
+      "lastPush": "2026-05-24",
+      "lastKnownUrl": "https://github.com/aresbit/MateBot"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -981,15 +999,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Degurechaff57/dsh-openapi",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-06T03:02:09.572Z",
-      "lastDetectedAt": "2026-10-06T03:02:09.572Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/Degurechaff57/dsh-openapi"
     }
   ]
 }

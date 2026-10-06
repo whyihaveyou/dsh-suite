@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-06T10:21:50.717Z",
+ "ts": "2026-10-06T17:15:06.388Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1062,6 +1062,7 @@
   "dsh-hiyori-skin",
   "dsh-home-ui",
   "dsh-honcho-sync",
+  "dsh-host-rsi",
   "dsh-host-web-compat",
   "dsh-hotkeys",
   "dsh-hotplug-engine",

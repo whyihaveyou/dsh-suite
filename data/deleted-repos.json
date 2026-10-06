@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T10:21:50.610Z",
+  "generated_at": "2026-10-06T17:15:06.320Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -54,6 +54,15 @@
       "lastStars": 964,
       "lastPush": "2026-08-20",
       "lastKnownUrl": "https://github.com/Anil-matcha/awesome-dsh-plugin"
+    },
+    {
+      "repo": "aresbit/MateBot",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-06T10:21:50.594Z",
+      "lastDetectedAt": "2026-10-06T17:15:06.308Z",
+      "lastStars": 45,
+      "lastPush": "2026-05-24",
+      "lastKnownUrl": "https://github.com/aresbit/MateBot"
     },
     {
       "repo": "axelfreeman/marketing-mindset",
@@ -981,15 +990,6 @@
       "lastStars": 2,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
-    },
-    {
-      "repo": "aresbit/MateBot",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-06T10:21:50.594Z",
-      "lastDetectedAt": "2026-10-06T10:21:50.595Z",
-      "lastStars": 45,
-      "lastPush": "2026-05-24",
-      "lastKnownUrl": "https://github.com/aresbit/MateBot"
     },
     {
       "repo": "chokwinlee/deepseek-harness-desktop",

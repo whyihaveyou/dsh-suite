@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T17:15:06.320Z",
+  "generated_at": "2026-10-07T01:35:54.612Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -999,6 +999,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "festoney8/deepseek-harness-GUI",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-07T01:35:54.591Z",
+      "lastDetectedAt": "2026-10-07T01:35:54.591Z",
+      "lastStars": 6,
+      "lastPush": "2026-09-01",
+      "lastKnownUrl": "https://github.com/festoney8/deepseek-harness-GUI"
     }
   ]
 }

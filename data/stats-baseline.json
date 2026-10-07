@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-07T16:33:21.277Z",
+ "ts": "2026-10-07T22:03:34.267Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1411,6 +1411,7 @@
   "dsh-notifier",
   "dsh-notify",
   "dsh-notify-dshiq04",
+  "dsh-notify-me",
   "dsh-notify-on-complete",
   "dsh-notify-plugins",
   "dsh-notify-sound",
@@ -1733,6 +1734,7 @@
   "dsh-plugin-working-status",
   "dsh-plugin-workshop",
   "dsh-plugin-writing-guard",
+  "dsh-plugin-xiaomi-mimo-tts",
   "dsh-plugin-ya-workspace-sidebar",
   "dsh-plugin-yet-another-subagent",
   "dsh-pluginmanager",

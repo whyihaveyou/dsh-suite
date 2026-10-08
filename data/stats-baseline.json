@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-08T01:59:33.033Z",
+ "ts": "2026-10-08T09:02:19.766Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -398,6 +398,7 @@
   "dsh-agent-skills",
   "dsh-agent-studio",
   "dsh-agent-team",
+  "dsh-agent-team-contexera",
   "dsh-agent-team-gui",
   "dsh-agent-team-room",
   "dsh-agent-teams",
@@ -2431,6 +2432,7 @@
   "dsh-web-chat",
   "dsh-web-default-session",
   "dsh-web-enhanced",
+  "dsh-web-fetch-enhanced",
   "dsh-web-file-uploader",
   "dsh-web-lan-access",
   "dsh-web-mobile",
@@ -2583,6 +2585,7 @@
   "dshx",
   "dskin",
   "eac-desktop",
+  "eac-pack",
   "eac-skin-loader",
   "easydsh",
   "easyeda-agent",
@@ -2965,6 +2968,7 @@
   "shadow-vision",
   "shopline-ai-toolkit-dsh",
   "sidesight",
+  "sieve",
   "silk-background",
   "sivtr",
   "skill",

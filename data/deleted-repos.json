@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T01:59:32.751Z",
+  "generated_at": "2026-10-08T22:08:28.065Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1026,6 +1026,24 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "wangxiang0605qvq/dsh-auto-compact",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-08T22:08:28.048Z",
+      "lastDetectedAt": "2026-10-08T22:08:28.049Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-31",
+      "lastKnownUrl": "https://github.com/wangxiang0605qvq/dsh-auto-compact"
+    },
+    {
+      "repo": "wangxiang0605qvq/dsh-deepseek-balance",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-08T22:08:28.049Z",
+      "lastDetectedAt": "2026-10-08T22:08:28.049Z",
+      "lastStars": 0,
+      "lastPush": "2026-09-29",
+      "lastKnownUrl": "https://github.com/wangxiang0605qvq/dsh-deepseek-balance"
     }
   ]
 }

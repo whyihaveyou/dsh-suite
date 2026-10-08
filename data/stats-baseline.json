@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-08T16:32:38.931Z",
+ "ts": "2026-10-08T22:08:28.171Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -495,6 +495,7 @@
   "dsh-awiki",
   "dsh-background",
   "dsh-background-agents",
+  "dsh-background-by-model",
   "dsh-backup",
   "dsh-backup-sync",
   "dsh-balance",
@@ -1825,6 +1826,7 @@
   "dsh-qq2006",
   "dsh-qqbot",
   "dsh-qqbot-gcry13067381632-jpg",
+  "dsh-qqbot-zaofan-make",
   "dsh-qrcode",
   "dsh-quant",
   "dsh-quant-workspace",
@@ -2737,6 +2739,7 @@
   "loopx",
   "loopx-loopx-project",
   "loushang",
+  "luau-docs-oracle",
   "lujo-mcp",
   "lx-music-for-dsh",
   "maid-atelier-ui-bundle",

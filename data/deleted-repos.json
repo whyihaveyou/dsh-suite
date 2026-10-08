@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:03:34.161Z",
+  "generated_at": "2026-10-08T01:59:32.751Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -848,6 +848,24 @@
       "lastKnownUrl": "https://github.com/urzeye/dsh-outline"
     },
     {
+      "repo": "Vim0x3c/dsh-session-manager",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-07T22:03:34.145Z",
+      "lastDetectedAt": "2026-10-08T01:59:32.586Z",
+      "lastStars": 5,
+      "lastPush": "2026-08-21",
+      "lastKnownUrl": "https://github.com/Vim0x3c/dsh-session-manager"
+    },
+    {
+      "repo": "Vim0x3c/dsh-skin-appearance",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-07T22:03:34.144Z",
+      "lastDetectedAt": "2026-10-08T01:59:32.586Z",
+      "lastStars": 4,
+      "lastPush": "2026-08-20",
+      "lastKnownUrl": "https://github.com/Vim0x3c/dsh-skin-appearance"
+    },
+    {
       "repo": "w1661884010-jpg/dsh-plugin-github-market",
       "seen": 2,
       "firstDetectedAt": "2026-10-03T17:21:14.928Z",
@@ -1008,24 +1026,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Vim0x3c/dsh-session-manager",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-07T22:03:34.145Z",
-      "lastDetectedAt": "2026-10-07T22:03:34.145Z",
-      "lastStars": 5,
-      "lastPush": "2026-08-21",
-      "lastKnownUrl": "https://github.com/Vim0x3c/dsh-session-manager"
-    },
-    {
-      "repo": "Vim0x3c/dsh-skin-appearance",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-07T22:03:34.144Z",
-      "lastDetectedAt": "2026-10-07T22:03:34.145Z",
-      "lastStars": 4,
-      "lastPush": "2026-08-20",
-      "lastKnownUrl": "https://github.com/Vim0x3c/dsh-skin-appearance"
     }
   ]
 }

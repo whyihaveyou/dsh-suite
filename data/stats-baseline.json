@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-09T09:08:40.404Z",
+ "ts": "2026-10-09T16:17:02.720Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -899,6 +899,7 @@
   "dsh-emoji",
   "dsh-encrypt",
   "dsh-endfield-ui",
+  "dsh-engram",
   "dsh-engram-relay",
   "dsh-enhance",
   "dsh-entity-dd",
@@ -1482,6 +1483,7 @@
   "dsh-openpencil",
   "dsh-openscience",
   "dsh-openviking",
+  "dsh-ops",
   "dsh-ops-kit",
   "dsh-orchestrator",
   "dsh-origin-plugin",
@@ -1689,6 +1691,7 @@
   "dsh-plugin-rdk",
   "dsh-plugin-release",
   "dsh-plugin-review",
+  "dsh-plugin-save-token",
   "dsh-plugin-scaffold",
   "dsh-plugin-session-delete",
   "dsh-plugin-session-import",

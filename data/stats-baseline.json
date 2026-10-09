@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-09T02:13:55.750Z",
+ "ts": "2026-10-09T09:08:40.404Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1509,6 +1509,7 @@
   "dsh-pentester",
   "dsh-permgate",
   "dsh-permission-rules",
+  "dsh-persona-dafeiyu",
   "dsh-persona-memory",
   "dsh-personal-center",
   "dsh-personal-workbench",
@@ -1801,6 +1802,7 @@
   "dsh-prompt-inject",
   "dsh-prompt-library",
   "dsh-prompt-manager",
+  "dsh-prompt-market",
   "dsh-prompt-optimize",
   "dsh-prompt-optimizer",
   "dsh-prompt-optimizer-westfox-awa",
@@ -2753,6 +2755,7 @@
   "matebot",
   "math-lean",
   "matlab-modelsim-vivado-plugin",
+  "matrixmedia",
   "mattpocock-skills-dsh",
   "mayfly",
   "mcp-for-stata",

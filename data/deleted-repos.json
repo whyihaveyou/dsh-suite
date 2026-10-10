@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T20:59:19.094Z",
+  "generated_at": "2026-10-10T00:55:04.475Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -270,6 +270,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/Deklan-Deng/Dcode"
+    },
+    {
+      "repo": "diqierjia/StrataGate-AgentMemory",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-09T20:59:19.076Z",
+      "lastDetectedAt": "2026-10-10T00:55:04.458Z",
+      "lastStars": 129,
+      "lastPush": "2026-10-09",
+      "lastKnownUrl": "https://github.com/diqierjia/StrataGate-AgentMemory"
     },
     {
       "repo": "DreamZhongJu/dsh-codex-sync",
@@ -558,6 +567,15 @@
       "lastStars": 9,
       "lastPush": "2026-08-21",
       "lastKnownUrl": "https://github.com/LBurny/deepseek-harness-desktop"
+    },
+    {
+      "repo": "levi-qiao/dsh-plugin-longgraph",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-09T20:59:19.075Z",
+      "lastDetectedAt": "2026-10-10T00:55:04.458Z",
+      "lastStars": 4,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/levi-qiao/dsh-plugin-longgraph"
     },
     {
       "repo": "luoyu-xingu/dsh-background",
@@ -1044,24 +1062,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "diqierjia/StrataGate-AgentMemory",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-09T20:59:19.076Z",
-      "lastDetectedAt": "2026-10-09T20:59:19.076Z",
-      "lastStars": 129,
-      "lastPush": "2026-10-09",
-      "lastKnownUrl": "https://github.com/diqierjia/StrataGate-AgentMemory"
-    },
-    {
-      "repo": "levi-qiao/dsh-plugin-longgraph",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-09T20:59:19.075Z",
-      "lastDetectedAt": "2026-10-09T20:59:19.075Z",
-      "lastStars": 4,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/levi-qiao/dsh-plugin-longgraph"
     }
   ]
 }

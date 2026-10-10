@@ -17,6 +17,7 @@
 
 **🧭 Ecosystem / 生态**
 
+- 🗂️ [dsplugin.app](https://dsplugin.app/) — Unofficial community DeepSeek Harness plugin directory / registry; review source and Manifest/`dsh.bundle` before install
 - 🌐 [Directory](https://whyihaveyou.github.io/dsh-suite/) — browse every plugin online
 - 📖 [DSH Chinese docs · dsh-docs.com](https://dsh-docs.com) — Chinese tutorials & docs, no VPN needed
 - 📕 [DSH plugin dev guide](https://github.com/whyihaveyou/dsh-plugin-tutorial) — the bilingual book

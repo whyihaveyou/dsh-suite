@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T10:12:58.151Z",
+  "generated_at": "2026-10-21T15:19:27.745Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -36,6 +36,15 @@
       "lastStars": 3,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/Agents365-ai/dsh-vision-plugin"
+    },
+    {
+      "repo": "alexchenzl/dsh-plugin-directory",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-21T10:12:58.135Z",
+      "lastDetectedAt": "2026-10-21T15:19:27.731Z",
+      "lastStars": 29,
+      "lastPush": "2026-08-31",
+      "lastKnownUrl": "https://github.com/alexchenzl/dsh-plugin-directory"
     },
     {
       "repo": "Alexis-fish/dsh-worktrees",
@@ -641,6 +650,15 @@
       "lastKnownUrl": "https://github.com/KureKaruna/dsh-at"
     },
     {
+      "repo": "Lbryany/dsh-codebuddy",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-21T10:12:58.135Z",
+      "lastDetectedAt": "2026-10-21T15:19:27.730Z",
+      "lastStars": 4,
+      "lastPush": "2026-10-19",
+      "lastKnownUrl": "https://github.com/Lbryany/dsh-codebuddy"
+    },
+    {
       "repo": "LBurny/deepseek-harness-desktop",
       "seen": 2,
       "firstDetectedAt": "2026-08-22T01:51:36.192Z",
@@ -1199,15 +1217,6 @@
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
     },
     {
-      "repo": "alexchenzl/dsh-plugin-directory",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-21T10:12:58.135Z",
-      "lastDetectedAt": "2026-10-21T10:12:58.135Z",
-      "lastStars": 29,
-      "lastPush": "2026-08-31",
-      "lastKnownUrl": "https://github.com/alexchenzl/dsh-plugin-directory"
-    },
-    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -1215,15 +1224,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Lbryany/dsh-codebuddy",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-21T10:12:58.135Z",
-      "lastDetectedAt": "2026-10-21T10:12:58.135Z",
-      "lastStars": 4,
-      "lastPush": "2026-10-19",
-      "lastKnownUrl": "https://github.com/Lbryany/dsh-codebuddy"
     }
   ]
 }

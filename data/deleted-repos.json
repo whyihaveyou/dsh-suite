@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T19:24:07.534Z",
+  "generated_at": "2026-10-21T23:23:40.707Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -189,6 +189,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-25",
       "lastKnownUrl": "https://github.com/cking000bigdemon/dsh-toolbelt"
+    },
+    {
+      "repo": "corrinehu/dsh-workbuddy-connect",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-21T19:24:07.394Z",
+      "lastDetectedAt": "2026-10-21T23:23:40.694Z",
+      "lastStars": 1612,
+      "lastPush": "2026-10-20",
+      "lastKnownUrl": "https://github.com/corrinehu/dsh-workbuddy-connect"
     },
     {
       "repo": "csiroqa/dsh-archive-viewer",
@@ -1224,15 +1233,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "corrinehu/dsh-workbuddy-connect",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-21T19:24:07.394Z",
-      "lastDetectedAt": "2026-10-21T19:24:07.395Z",
-      "lastStars": 1612,
-      "lastPush": "2026-10-20",
-      "lastKnownUrl": "https://github.com/corrinehu/dsh-workbuddy-connect"
     }
   ]
 }

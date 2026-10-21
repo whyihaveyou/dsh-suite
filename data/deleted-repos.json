@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T23:56:48.019Z",
+  "generated_at": "2026-10-21T10:12:58.151Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1199,6 +1199,15 @@
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
     },
     {
+      "repo": "alexchenzl/dsh-plugin-directory",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-21T10:12:58.135Z",
+      "lastDetectedAt": "2026-10-21T10:12:58.135Z",
+      "lastStars": 29,
+      "lastPush": "2026-08-31",
+      "lastKnownUrl": "https://github.com/alexchenzl/dsh-plugin-directory"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -1206,6 +1215,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "Lbryany/dsh-codebuddy",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-21T10:12:58.135Z",
+      "lastDetectedAt": "2026-10-21T10:12:58.135Z",
+      "lastStars": 4,
+      "lastPush": "2026-10-19",
+      "lastKnownUrl": "https://github.com/Lbryany/dsh-codebuddy"
     }
   ]
 }

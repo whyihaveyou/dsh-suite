@@ -4,7 +4,7 @@
   "generated_at": "2026-10-20T23:56:48.021Z",
   "source": "hourly refresh-stars (GitHub GraphQL)",
   "totals": {
-   "plugins": 2086,
+   "plugins": 2087,
    "watchlist": 1098
   },
   "category_mapping": {
@@ -76058,6 +76058,57 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto"
+  },
+  {
+   "id": "dsh-connect-minimaxcode",
+   "name": "dsh-connect-minimaxcode",
+   "npm": "dsh-connect-minimaxcode",
+   "repo": "JeffTsuiCUG/dsh-connect-minimaxcode",
+   "url": "https://github.com/JeffTsuiCUG/dsh-connect-minimaxcode",
+   "category": "llm",
+   "description": {
+    "en": "Unofficial MiniMax Code provider: desktop sign-in reuse or your own OAuth device-code login, live model catalog, credits and daily check-in",
+    "zh": "非官方插件：复用桌面 App 登录态或自行 OAuth 设备码登录接入 MiniMax Code，动态模型目录、积分余额、每日签到。"
+   },
+   "author": "JeffTsuiCUG",
+   "stars": 0,
+   "license": "MIT",
+   "tags": [
+    "minimax",
+    "model-provider",
+    "anthropic-compatible",
+    "credits",
+    "checkin"
+   ],
+   "dsh": {
+    "minVersion": "0.2.1-rc.2",
+    "peerCordis": ">=4.0.4 <5.0.0",
+    "node": "^22.19.0 || >=24.0.0"
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "dsh plugin --profile desktop add dsh-connect-minimaxcode@0.5.1",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "TypeScript",
+   "sourceNote": "author submission",
+   "last_push": "2026-10-20",
+   "evidence": {
+    "level": 1,
+    "l3Verified": false,
+    "source": "author submission"
+   },
+   "risk": {
+    "installScript": false,
+    "networkEgress": null,
+    "shellAccess": false,
+    "noLicense": false
+   },
+   "installNote": "Reads the MiniMax Code desktop app's local sign-in on this machine, or signs in yourself via OAuth 2.0 device code in your own browser; the plugin never touches your password and keeps its own credentials in ~/.dsh/.minimaxcode-auth.json. Depends on MiniMax's non-public client interfaces, so a client update can break it. Unofficial plugin, not affiliated with MiniMax or DeepSeek; study and research use only, no support offered."
   }
  ],
  "watchlist": [

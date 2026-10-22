@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T04:50:19.737Z",
+  "generated_at": "2026-10-22T10:15:38.136Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -189,6 +189,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-25",
       "lastKnownUrl": "https://github.com/cking000bigdemon/dsh-toolbelt"
+    },
+    {
+      "repo": "cloveric/tarocub",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-22T04:50:19.582Z",
+      "lastDetectedAt": "2026-10-22T10:15:38.116Z",
+      "lastStars": 24,
+      "lastPush": "2026-10-17",
+      "lastKnownUrl": "https://github.com/cloveric/tarocub"
     },
     {
       "repo": "corrinehu/dsh-workbuddy-connect",
@@ -1233,15 +1242,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "cloveric/tarocub",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-22T04:50:19.582Z",
-      "lastDetectedAt": "2026-10-22T04:50:19.582Z",
-      "lastStars": 24,
-      "lastPush": "2026-10-17",
-      "lastKnownUrl": "https://github.com/cloveric/tarocub"
     }
   ]
 }

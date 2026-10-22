@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T23:23:40.707Z",
+  "generated_at": "2026-10-22T04:50:19.737Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1233,6 +1233,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "cloveric/tarocub",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-22T04:50:19.582Z",
+      "lastDetectedAt": "2026-10-22T04:50:19.582Z",
+      "lastStars": 24,
+      "lastPush": "2026-10-17",
+      "lastKnownUrl": "https://github.com/cloveric/tarocub"
     }
   ]
 }

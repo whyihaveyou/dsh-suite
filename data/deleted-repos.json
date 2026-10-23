@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T18:26:49.577Z",
+  "generated_at": "2026-10-23T22:15:23.157Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -27,6 +27,15 @@
       "lastStars": 0,
       "lastPush": "2026-08-21",
       "lastKnownUrl": "https://github.com/2436238575/dsh-turn-diff"
+    },
+    {
+      "repo": "adamkhalile/luau-docs-oracle",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-23T18:26:49.566Z",
+      "lastDetectedAt": "2026-10-23T22:15:23.019Z",
+      "lastStars": 72,
+      "lastPush": "2026-10-23",
+      "lastKnownUrl": "https://github.com/adamkhalile/luau-docs-oracle"
     },
     {
       "repo": "Agents365-ai/dsh-vision-plugin",
@@ -1251,15 +1260,6 @@
       "lastStars": 2,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
-    },
-    {
-      "repo": "adamkhalile/luau-docs-oracle",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-23T18:26:49.566Z",
-      "lastDetectedAt": "2026-10-23T18:26:49.566Z",
-      "lastStars": 72,
-      "lastPush": "2026-10-23",
-      "lastKnownUrl": "https://github.com/adamkhalile/luau-docs-oracle"
     },
     {
       "repo": "chokwinlee/deepseek-harness-desktop",

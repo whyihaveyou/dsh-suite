@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-23T07:36:24.599Z",
+ "ts": "2026-10-23T13:32:13.026Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1897,6 +1897,7 @@
   "dsh-qq-bot",
   "dsh-qq-bridge",
   "dsh-qq-bridge-xiaomengxinbb",
+  "dsh-qq-bridge-yuuyuko-uu",
   "dsh-qq-plugin",
   "dsh-qq2006",
   "dsh-qqbot",
@@ -3006,6 +3007,7 @@
   "plugin-template",
   "polaris",
   "postiz-agent",
+  "powercontext",
   "powercontext-dsh",
   "ppt-design-skill",
   "pptfast",

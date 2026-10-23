@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:20:22.243Z",
+  "generated_at": "2026-10-23T01:35:29.828Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1251,6 +1251,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "dragonbaba/dsh-routing-suite",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-23T01:35:29.325Z",
+      "lastDetectedAt": "2026-10-23T01:35:29.325Z",
+      "lastStars": 18,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/dragonbaba/dsh-routing-suite"
     }
   ]
 }

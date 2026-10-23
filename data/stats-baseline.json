@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-23T01:35:29.932Z",
+ "ts": "2026-10-23T07:36:24.599Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2141,6 +2141,7 @@
   "dsh-sound-effects-plugin",
   "dsh-soundscape",
   "dsh-speak",
+  "dsh-speak-up",
   "dsh-spec-loop",
   "dsh-specflow",
   "dsh-spend",
@@ -2896,6 +2897,7 @@
   "modsearch",
   "moji-docs",
   "molibot",
+  "molio",
   "moon-lovers-skill",
   "movo",
   "mstar-harness",

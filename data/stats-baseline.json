@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-23T22:15:23.257Z",
+ "ts": "2026-10-24T00:46:41.726Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -381,6 +381,7 @@
   "dsh-acp-interactive",
   "dsh-acp-paseo",
   "dsh-acp-plugin",
+  "dsh-action",
   "dsh-action-parity",
   "dsh-adb",
   "dsh-adhd-copilot",

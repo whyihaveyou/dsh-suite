@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T22:15:23.157Z",
+  "generated_at": "2026-10-24T18:13:31.781Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1269,6 +1269,42 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "Demogorgon314/dsh-resume-plugin",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-24T18:13:31.765Z",
+      "lastDetectedAt": "2026-10-24T18:13:31.765Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/Demogorgon314/dsh-resume-plugin"
+    },
+    {
+      "repo": "masknull/dsh-workbuddy-connect",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-24T18:13:31.765Z",
+      "lastDetectedAt": "2026-10-24T18:13:31.765Z",
+      "lastStars": 55,
+      "lastPush": "2026-10-21",
+      "lastKnownUrl": "https://github.com/masknull/dsh-workbuddy-connect"
+    },
+    {
+      "repo": "Potato1008ypy/dsh-purge-0.2.1rc2-fix",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-24T18:13:31.765Z",
+      "lastDetectedAt": "2026-10-24T18:13:31.765Z",
+      "lastStars": 52,
+      "lastPush": "2026-10-21",
+      "lastKnownUrl": "https://github.com/Potato1008ypy/dsh-purge-0.2.1rc2-fix"
+    },
+    {
+      "repo": "webkubor/dsh-mirror",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-24T18:13:31.765Z",
+      "lastDetectedAt": "2026-10-24T18:13:31.765Z",
+      "lastStars": 0,
+      "lastPush": "2026-10-21",
+      "lastKnownUrl": "https://github.com/webkubor/dsh-mirror"
     }
   ]
 }

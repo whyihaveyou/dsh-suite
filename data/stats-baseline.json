@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-25T06:12:35.010Z",
+ "ts": "2026-10-25T11:31:38.766Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1924,6 +1924,7 @@
   "dsh-qwen-mm",
   "dsh-qwen-multimodal",
   "dsh-qwen-paint",
+  "dsh-qwen-studio",
   "dsh-qwen38-local-qol",
   "dsh-ramify",
   "dsh-randomuuid-polyfill",
@@ -2647,6 +2648,7 @@
   "dsh-workspace-files",
   "dsh-workspace-hakunm",
   "dsh-workspace-mcp",
+  "dsh-workspace-recollection",
   "dsh-workspace-search",
   "dsh-worktable",
   "dsh-worktree",
@@ -3139,6 +3141,7 @@
   "tarocub",
   "task-passport",
   "taskbelay",
+  "tavernweave",
   "telegram",
   "tencentcloud-agentobs-sdk-dsh",
   "tencentmeeting-cli",

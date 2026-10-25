@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T20:54:06.999Z",
+  "generated_at": "2026-10-25T11:31:38.657Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1305,6 +1305,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "OoWJZZoO/dsh-read-image",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-25T11:31:38.639Z",
+      "lastDetectedAt": "2026-10-25T11:31:38.639Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/OoWJZZoO/dsh-read-image"
     }
   ]
 }

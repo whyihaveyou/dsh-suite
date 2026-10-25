@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T11:31:38.657Z",
+  "generated_at": "2026-10-25T16:21:52.351Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -830,6 +830,15 @@
       "lastKnownUrl": "https://github.com/ohtokaah-sys/dsh-plugins"
     },
     {
+      "repo": "OoWJZZoO/dsh-read-image",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-25T11:31:38.639Z",
+      "lastDetectedAt": "2026-10-25T16:21:52.099Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/OoWJZZoO/dsh-read-image"
+    },
+    {
       "repo": "openma-ai/deepseek-harness-typescript-sdk",
       "seen": 2,
       "firstDetectedAt": "2026-08-26T03:21:03.620Z",
@@ -1305,15 +1314,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "OoWJZZoO/dsh-read-image",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-25T11:31:38.639Z",
-      "lastDetectedAt": "2026-10-25T11:31:38.639Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/OoWJZZoO/dsh-read-image"
     }
   ]
 }

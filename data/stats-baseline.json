@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-25T11:31:38.766Z",
+ "ts": "2026-10-25T16:21:52.444Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -360,6 +360,7 @@
   "dr-agent-skills",
   "ds-api-usage",
   "ds-balance-card",
+  "ds-bot",
   "ds-forge",
   "ds-harness-remote",
   "ds-image-skin",
@@ -1852,6 +1853,7 @@
   "dsh-portable",
   "dsh-portable-launcher",
   "dsh-portable-tavern",
+  "dsh-posterflow-ai",
   "dsh-postmortem",
   "dsh-precise-cache",
   "dsh-pref-kit",
@@ -2287,6 +2289,7 @@
   "dsh-tinyfish-search",
   "dsh-tmcra-memory",
   "dsh-tmux-cc",
+  "dsh-to-figma",
   "dsh-todo-freshness-guard",
   "dsh-token-activity",
   "dsh-token-cost",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T16:21:52.351Z",
+  "generated_at": "2026-10-26T19:22:09.259Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1314,6 +1314,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "jadezane6634-ops/dsh-purge-flash",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-26T19:22:09.113Z",
+      "lastDetectedAt": "2026-10-26T19:22:09.113Z",
+      "lastStars": 151,
+      "lastPush": "2026-10-26",
+      "lastKnownUrl": "https://github.com/jadezane6634-ops/dsh-purge-flash"
     }
   ]
 }

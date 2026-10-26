@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-26T13:11:05.988Z",
+ "ts": "2026-10-26T19:22:09.380Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1554,6 +1554,7 @@
   "dsh-outdoor-theme",
   "dsh-outline",
   "dsh-output-styles",
+  "dsh-overdrive",
   "dsh-overleaf",
   "dsh-pack-plugin",
   "dsh-paddle-ocr",
@@ -2101,6 +2102,7 @@
   "dsh-sidebar-qa",
   "dsh-sidechain",
   "dsh-sidechain-omdsh-dev",
+  "dsh-sidenote",
   "dsh-sieve",
   "dsh-sight",
   "dsh-simplify",
@@ -2766,6 +2768,7 @@
   "geml",
   "geo-content-optimizer",
   "geochat",
+  "ghost",
   "ghostycode",
   "git-skills",
   "git-worktree",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T23:55:58.018Z",
+  "generated_at": "2026-10-27T10:37:04.339Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1314,6 +1314,15 @@
       "lastStars": 2,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
+    },
+    {
+      "repo": "bkMoon1024/dsh-ci-cd-bot",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-27T10:37:04.324Z",
+      "lastDetectedAt": "2026-10-27T10:37:04.324Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/bkMoon1024/dsh-ci-cd-bot"
     },
     {
       "repo": "chokwinlee/deepseek-harness-desktop",

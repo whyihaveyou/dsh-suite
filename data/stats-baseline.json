@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-28T01:24:33.054Z",
+ "ts": "2026-10-28T08:34:54.382Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1053,6 +1053,7 @@
   "dsh-gadgets",
   "dsh-galgame",
   "dsh-galgame-generator",
+  "dsh-game-daily",
   "dsh-game-material-master",
   "dsh-gatedflow",
   "dsh-gauge",
@@ -2413,6 +2414,7 @@
   "dsh-trapstreet",
   "dsh-tray",
   "dsh-trellis",
+  "dsh-tripo-studio",
   "dsh-tts",
   "dsh-tts-bridge",
   "dsh-tui",
@@ -3114,6 +3116,7 @@
   "qaq",
   "qdd",
   "qiaomu-rss-dsh",
+  "qiaomu-ui-learn-dsh",
   "qiushi-dsh-evidence-audit",
   "quantum-practices",
   "querit-plugins",

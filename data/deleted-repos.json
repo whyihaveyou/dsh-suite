@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T14:22:36.533Z",
+  "generated_at": "2026-10-29T20:20:13.793Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -686,6 +686,15 @@
       "lastKnownUrl": "https://github.com/kanallas/api-cost-meter"
     },
     {
+      "repo": "keepermttl/dsh-archive-viewer",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-29T14:22:36.514Z",
+      "lastDetectedAt": "2026-10-29T20:20:13.776Z",
+      "lastStars": 4,
+      "lastPush": "2026-09-26",
+      "lastKnownUrl": "https://github.com/keepermttl/dsh-archive-viewer"
+    },
+    {
       "repo": "kingsunb/dsh-model-plus",
       "seen": 2,
       "firstDetectedAt": "2026-10-19T15:40:59.240Z",
@@ -1332,15 +1341,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "keepermttl/dsh-archive-viewer",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-29T14:22:36.514Z",
-      "lastDetectedAt": "2026-10-29T14:22:36.515Z",
-      "lastStars": 4,
-      "lastPush": "2026-09-26",
-      "lastKnownUrl": "https://github.com/keepermttl/dsh-archive-viewer"
     }
   ]
 }

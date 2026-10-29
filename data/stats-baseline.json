@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-29T00:59:15.800Z",
+ "ts": "2026-10-29T07:08:15.902Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -179,6 +179,7 @@
   "cute-fat-fish-pet",
   "d-sh",
   "dafy-whale-theme",
+  "daruma",
   "dash",
   "dash-realchenwenqiao",
   "dashi-taskboard",
@@ -2215,6 +2216,7 @@
   "dsh-ssh-plugin",
   "dsh-ssh-remote",
   "dsh-stall-guard",
+  "dsh-startup-secret",
   "dsh-stats-dashboard",
   "dsh-status-bar",
   "dsh-status-rotator",

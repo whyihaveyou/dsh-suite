@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-29T07:08:15.902Z",
+ "ts": "2026-10-29T14:22:36.660Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1127,6 +1127,7 @@
   "dsh-header-status",
   "dsh-headroom",
   "dsh-headroom-giter00",
+  "dsh-heartbeat",
   "dsh-heatmap",
   "dsh-her-eyes",
   "dsh-hermes-memory-bridge",
@@ -2216,6 +2217,7 @@
   "dsh-ssh-plugin",
   "dsh-ssh-remote",
   "dsh-stall-guard",
+  "dsh-startup-screen",
   "dsh-startup-secret",
   "dsh-stats-dashboard",
   "dsh-status-bar",
@@ -2510,6 +2512,7 @@
   "dsh-user-message-navigation",
   "dsh-user-plugins-manager",
   "dsh-utility-tools",
+  "dsh-uumit-remote",
   "dsh-ux",
   "dsh-ux-ayuanwong",
   "dsh-ux-plus",
@@ -2939,6 +2942,7 @@
   "lx-music-for-dsh",
   "maid-atelier-ui-bundle",
   "makocode",
+  "malfoy-desktop",
   "marisa-distro",
   "marketing-mindset",
   "marketingdashboard",

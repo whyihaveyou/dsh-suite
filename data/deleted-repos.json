@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T20:20:13.793Z",
+  "generated_at": "2026-10-30T14:11:11.143Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1341,6 +1341,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "zdjmrq/dsh-attention-notifier",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-30T14:11:11.132Z",
+      "lastDetectedAt": "2026-10-30T14:11:11.133Z",
+      "lastStars": 1,
+      "lastPush": "2026-10-04",
+      "lastKnownUrl": "https://github.com/zdjmrq/dsh-attention-notifier"
     }
   ]
 }

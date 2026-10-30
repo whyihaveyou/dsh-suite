@@ -1,10 +1,10 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-30T07:08:46.920Z",
+  "generated_at": "2026-10-30T14:11:11.145Z",
   "source": "hourly refresh-stars (GitHub GraphQL)",
   "totals": {
-   "plugins": 2182,
+   "plugins": 2185,
    "watchlist": 1143
   },
   "category_mapping": {
@@ -201,7 +201,7 @@
    "isOfficialBeta": true,
    "language": "TypeScript",
    "sourceNote": "内测伙伴",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -272,7 +272,7 @@
     "zh": "BitFun 与 DSH ACP 交互对接"
    },
    "author": "bobleer",
-   "stars": 11,
+   "stars": 10,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -989,7 +989,7 @@
     "zh": "Mnemon 三层记忆体深度集成"
    },
    "author": "omdsh-dev",
-   "stars": 781,
+   "stars": 792,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1603,7 +1603,7 @@
    "isOfficialBeta": false,
    "language": "Shell",
    "sourceNote": "",
-   "last_push": "2026-09-18",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -1666,7 +1666,7 @@
     "zh": "OpenMAIC：课堂/幻灯片/交互式组件"
    },
    "author": "THU-MAIC",
-   "stars": 111,
+   "stars": 112,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -1951,7 +1951,7 @@
     "zh": "把 ego-lite 浏览器接入 DSH（给 Agent 用的 Chromium）"
    },
    "author": "Fisfzy",
-   "stars": 353,
+   "stars": 356,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2263,7 +2263,7 @@
     "zh": "DSH Web UI 插件与皮肤合集：任务板、Git 面板等"
    },
    "author": "zhu1090093659",
-   "stars": 9816,
+   "stars": 9846,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2308,7 +2308,7 @@
     "zh": "侧边栏完整工作台：文件渲染/终端/Git/子代理"
    },
    "author": "omdsh-dev",
-   "stars": 4744,
+   "stars": 4756,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2327,7 +2327,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -2398,7 +2398,7 @@
     "zh": "DSH Web 鲸鱼娘皮肤系列（深海女仆工坊）"
    },
    "author": "Small-tailqwq",
-   "stars": 2966,
+   "stars": 2973,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2743,7 +2743,7 @@
     "zh": "会话内联渲染交互式 UI 组件"
    },
    "author": "omdsh-dev",
-   "stars": 821,
+   "stars": 822,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -2826,7 +2826,7 @@
     "zh": "对话节点导航条（右缘节点串跳转）"
    },
    "author": "vlln",
-   "stars": 48,
+   "stars": 47,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3489,7 +3489,7 @@
     "zh": "QQ 宠物形态的桌面宠物插件"
    },
    "author": "vlln",
-   "stars": 399,
+   "stars": 400,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3714,7 +3714,7 @@
     "zh": "上下文注入审计：AGENTS.md/技能/tool schema token 成本"
    },
    "author": "Zhenyu98",
-   "stars": 62,
+   "stars": 63,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -3846,7 +3846,7 @@
     "zh": "跨会话长期记忆 + 后台自我进化（纯插件）"
    },
    "author": "csyangwen",
-   "stars": 466,
+   "stars": 467,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4325,7 +4325,7 @@
     "zh": "给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原"
    },
    "author": "Anionex",
-   "stars": 915,
+   "stars": 917,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4408,7 +4408,7 @@
     "zh": "电脑控制插件（Accessibility 观测 + 作用域权限）"
    },
    "author": "Anionex",
-   "stars": 81,
+   "stars": 82,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4543,7 +4543,7 @@
     "zh": "可递归自编辑自身的 agent+harness 架构"
    },
    "author": "exoharness",
-   "stars": 1541,
+   "stars": 1544,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4607,7 +4607,7 @@
    "isOfficialBeta": true,
    "language": "TypeScript",
    "sourceNote": "内测伙伴",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -4723,7 +4723,7 @@
     "zh": "Skill 驱动的 Harness/Loop 工程工作流插件"
    },
    "author": "btspoony",
-   "stars": 66,
+   "stars": 67,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4768,7 +4768,7 @@
     "zh": "把 Claude Code 的 UltraCode 模式带给 DSH，多 Agent 调度可治理"
    },
    "author": "icetomoyo",
-   "stars": 152,
+   "stars": 153,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -4903,7 +4903,7 @@
     "zh": "AgentTeams 插件"
    },
    "author": "NanmiCoder",
-   "stars": 2565,
+   "stars": 2582,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5012,7 +5012,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "",
-   "last_push": "2026-10-21",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -5486,7 +5486,7 @@
     "zh": "一键安装+切换 Claude Code/Codex/Kimi/Qwen 等 20+ 编码智能体"
    },
    "author": "edison7009",
-   "stars": 3464,
+   "stars": 3467,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5531,7 +5531,7 @@
     "zh": "DSH 插件目录，带每日兼容性跟踪"
    },
    "author": "AdamPlatin123",
-   "stars": 1488,
+   "stars": 1487,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5621,7 +5621,7 @@
     "zh": "DSH 生态精选：插件、工具与基建"
    },
    "author": "0xsline",
-   "stars": 1283,
+   "stars": 1284,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5666,7 +5666,7 @@
     "zh": "DSH 终端 UI（TUI）"
    },
    "author": "huiliyi37",
-   "stars": 295,
+   "stars": 296,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5756,7 +5756,7 @@
     "zh": "Codex 风格的 @ 文件引用：在输入框打 @ 就能搜索工作区文件并把内容直接带进对话。"
    },
    "author": "omdsh-dev",
-   "stars": 548,
+   "stars": 547,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5891,7 +5891,7 @@
     "zh": "2005 年中文站点风格侧栏广告插件（恶搞）"
    },
    "author": "Nagi-ovo",
-   "stars": 702,
+   "stars": 703,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -5981,7 +5981,7 @@
     "zh": "把 DSH 接进 OpenPencil 设计工具：Agent 可以在设计稿上做预览和编辑，边聊边改设计。"
    },
    "author": "ZSeven-W",
-   "stars": 199,
+   "stars": 200,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -6466,7 +6466,7 @@
     "zh": "双语 DSH 插件生态完整列表"
    },
    "author": "bruc3van",
-   "stars": 481,
+   "stars": 483,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -6601,7 +6601,7 @@
     "zh": "双向表情贴纸插件"
    },
    "author": "william-jin-cmu",
-   "stars": 24,
+   "stars": 25,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -7096,7 +7096,7 @@
     "zh": "DeepSeek Harness 首个视觉插件，纯文本模型看图。"
    },
    "author": "liustack",
-   "stars": 4638,
+   "stars": 4647,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -7141,7 +7141,7 @@
     "zh": "为纯文本模型看图设计的视觉工具箱与技能：多图理解、图片问答、UI 还原、GUI 自动化。"
    },
    "author": "Anionex",
-   "stars": 1251,
+   "stars": 1252,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -7186,7 +7186,7 @@
     "zh": "DeepSeek Harness 的联网搜索插件。"
    },
    "author": "liustack",
-   "stars": 877,
+   "stars": 879,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -7231,7 +7231,7 @@
     "zh": "Chrome 侧边栏扩展，让 DSH 操控浏览器。"
    },
    "author": "Lum1104",
-   "stars": 943,
+   "stars": 945,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -7276,7 +7276,7 @@
     "zh": "从 Claude Code/Codex/Reasonix 导入历史消息到 DSH。"
    },
    "author": "Nwflower",
-   "stars": 266,
+   "stars": 269,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -7447,7 +7447,7 @@
     "zh": "替换 DSH 状态显示的 web 插件。"
    },
    "author": "01Virex",
-   "stars": 217,
+   "stars": 218,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -8491,7 +8491,7 @@
     "zh": "找得到、发得出 —— DSH 表情包插件：语义搜图，只发真实文件，走 companion QQ 通道"
    },
    "author": "yyh-001",
-   "stars": 445,
+   "stars": 452,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -8510,7 +8510,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "新增",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -9231,7 +9231,7 @@
     "zh": "DSH 原生鸿蒙设备桥：hdc 工具让 Agent 完成截图-看图-装包-验证的闭环调试 / DSH-native HarmonyOS device bridge"
    },
    "author": "1na-ko",
-   "stars": 19,
+   "stars": 20,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -9916,7 +9916,7 @@
    "isOfficialBeta": false,
    "language": "Lua",
    "sourceNote": "新增",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -10486,7 +10486,7 @@
     "zh": "billion-context-dsh — DSH 插件（会话）"
    },
    "author": "Tyan66666",
-   "stars": 166,
+   "stars": 167,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -11709,7 +11709,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "新增",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -12241,7 +12241,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "新增",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -13064,7 +13064,7 @@
     "zh": "dsh-soul-md — DSH 插件（工具）"
    },
    "author": "Scorp1o117",
-   "stars": 21,
+   "stars": 22,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -14148,7 +14148,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "新增",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -14781,7 +14781,7 @@
     "zh": "Mneme——把记忆主权还给人的记忆插件：SQLite + 可人工编辑的 Markdown 双写，autoDream 在梦境中巩固记忆，106 个测试护航。"
    },
    "author": "modusensus",
-   "stars": 199,
+   "stars": 200,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -14800,7 +14800,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "新增",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -14901,7 +14901,7 @@
     "zh": "DeepSeek Harness 会话费用统计插件:本会话费用、当日费用、历史记录与官方价格同步"
    },
    "author": "Han-1413141",
-   "stars": 577,
+   "stars": 580,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -16915,7 +16915,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "新增",
-   "last_push": "2026-10-04",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -19292,7 +19292,7 @@
     "zh": "DeepSeek Harness DSH 提示词增强插件：✨ 一键优化草稿"
    },
    "author": "Fishsb",
-   "stars": 117,
+   "stars": 118,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -20097,7 +20097,7 @@
     "zh": "dsh-codex-subscription — DSH 插件（工具）"
    },
    "author": "WSL043",
-   "stars": 314,
+   "stars": 323,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -20249,7 +20249,7 @@
     "zh": "dsh-shift-router — DSH 插件（编排）"
    },
    "author": "green-dalii",
-   "stars": 4,
+   "stars": 5,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -20553,7 +20553,7 @@
     "zh": "把「记忆」带进 DeepSeek Harness：极简文本记忆系统（Markdown 日志 + 画像档案），以大模型为核心驱动。无需安装其他软件，无需编译，无第三方依赖。"
    },
    "author": "quan2005",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -20648,7 +20648,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "新增",
-   "last_push": "2026-09-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -21465,7 +21465,7 @@
     "zh": "DSH Web UI plugin: automatically sends \"继续\" (continue) when a request is interrupted by network errors or other non-human causes"
    },
    "author": "HsiangNianian",
-   "stars": 176,
+   "stars": 177,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -21484,7 +21484,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-27",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -21775,7 +21775,7 @@
     "zh": "ACP 服务器实现：让外部工具通过 Agent Client Protocol 驱动 DSH。"
    },
    "author": "openma-ai",
-   "stars": 56,
+   "stars": 55,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -22376,7 +22376,7 @@
     "zh": "GitHub Action 集成：AI 代码评审、CI 诊断、自动修复、Issue 转 PR 全流程自动化。"
    },
    "author": "Lixiaoyiao",
-   "stars": 52,
+   "stars": 56,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -23713,7 +23713,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-25",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -25488,7 +25488,7 @@
     "zh": "Superpowers 技能包移植版：TDD、调试、规划、协作等经典工作流技能，装进 DSH 直接用。"
    },
    "author": "LayneChai",
-   "stars": 129,
+   "stars": 130,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -25571,7 +25571,7 @@
     "zh": "技能管理面板：在设置页直接启用/停用、删除、添加 Skills，不用改配置文件。"
    },
    "author": "Fishquito7",
-   "stars": 239,
+   "stars": 240,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -26776,7 +26776,7 @@
     "zh": "远程接入助手：/remote 命令 + 设置页直接打印 SSH 隧道/反向隧道命令，远程工作区一键连。"
    },
    "author": "flymysql",
-   "stars": 210,
+   "stars": 215,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -27620,7 +27620,7 @@
     "zh": "让 DeepSeek Harness 的 agent 跑在手机里，通过 Magisk root 原生操作安卓系统（截图/点击/滑动/开应用）+ 移动端布局 + WebView APK"
    },
    "author": "railgun0325",
-   "stars": 39,
+   "stars": 41,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -28876,7 +28876,7 @@
     "zh": "创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用）"
    },
    "author": "yejiming",
-   "stars": 681,
+   "stars": 682,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -30925,7 +30925,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-20",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -31068,7 +31068,7 @@
     "zh": "通用技能调度器：自动挑选最合适的本地 Skill 并编排整个 Harness 工作流，不用手动指定用哪个技能。"
    },
    "author": "foryourhealth111-pixel",
-   "stars": 3782,
+   "stars": 3783,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -31423,7 +31423,7 @@
     "zh": "让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。"
    },
    "author": "slywalker2006",
-   "stars": 81,
+   "stars": 80,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -32183,7 +32183,7 @@
     "zh": "DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每日反思、可视化面板与设置页,支持继承其他 AI 工具的历史记忆。"
    },
    "author": "Aik358",
-   "stars": 172,
+   "stars": 170,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -32449,7 +32449,7 @@
     "zh": "安卓伴侣应用：聊天、目标、审批与通知，手机随时遥控 DSH。"
    },
    "author": "sorsama",
-   "stars": 230,
+   "stars": 231,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -32763,7 +32763,7 @@
     "zh": "上下文洞察面板：Web 界面加一个 Context 标签页，直观看到模型上下文窗口里装了什么、怎么变化的。"
    },
    "author": "bowenliang123",
-   "stars": 3869,
+   "stars": 3892,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -37000,7 +37000,7 @@
     "zh": "DeepSeek Harness 桌面宠物插件 + 完整素材生成链：AI 提示词 → 绿幕视频 → 透明动画 → 可安装插件，从零到宠物全流程可复现"
    },
    "author": "PC2005-cloud",
-   "stars": 4936,
+   "stars": 4995,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -37196,7 +37196,7 @@
     "zh": "Command Code 的 LLM provider（非官方）：实时模型目录、推理强度支持，Models 页有卡片。"
    },
    "author": "Mars-Sea",
-   "stars": 443,
+   "stars": 445,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -37215,7 +37215,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -37538,7 +37538,7 @@
     "zh": "Blender 3D 全流程：建模、重建、渲染、校验、导出一站式，聊天里指挥 Blender 干活。"
    },
    "author": "CheshireJCat",
-   "stars": 65,
+   "stars": 66,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -37981,7 +37981,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-01",
+   "last_push": "2026-10-30",
    "evidence": {
     "level": 1,
     "l3Verified": false,
@@ -38190,7 +38190,7 @@
     "zh": "把 ChatGPT(Codex)、Claude、Grok(X Premium) 的订阅当 DSH 的模型 provider 用。"
    },
    "author": "V1ki",
-   "stars": 532,
+   "stars": 534,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -38881,7 +38881,7 @@
     "zh": "让 QQ 机器人接入 DeepSeek Harness（dsh）的官方插件"
    },
    "author": "tencent-connect",
-   "stars": 449,
+   "stars": 456,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -39002,7 +39002,7 @@
     "zh": "逆向技能全家桶（85 个 SKILL.md）：逆向工程、授权渗透和安全研究的工作流，打包成插件。"
    },
    "author": "dhicoc",
-   "stars": 309,
+   "stars": 312,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -42429,7 +42429,7 @@
     "zh": "让 DSH 通过插件控制 Tabbit 浏览器：安装后 agent 可以驱动 Tabbit 做浏览器操作。"
    },
    "author": "Tabbit-Browser",
-   "stars": 117,
+   "stars": 120,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -43647,7 +43647,7 @@
     "zh": "多 agent 时空记忆图谱：跨会话持久记忆。"
    },
    "author": "FuRongJun-1999",
-   "stars": 537,
+   "stars": 540,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -43771,7 +43771,7 @@
     "zh": "皮肤中心：151 款昼夜成对皮肤一包打尽——网格预览、搜索、一键试穿，支持收藏、最近试穿与随机换肤。"
    },
    "author": "whyihaveyou",
-   "stars": 17,
+   "stars": 18,
    "license": "Apache-2.0",
    "tags": [
     "themes",
@@ -44017,7 +44017,7 @@
     "zh": "Noema 长期记忆：持久、可检查的 agent 记忆，带召回工具和设置页。"
    },
    "author": "ZSeven-W",
-   "stars": 134,
+   "stars": 135,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -44710,7 +44710,7 @@
     "zh": "DSH 消息撤回插件：回到发送该消息时的状态"
    },
    "author": "limbo947",
-   "stars": 47,
+   "stars": 49,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -44776,7 +44776,7 @@
     "zh": "Claude 风格皮肤：暖黑画布 + Anthropic 配色。"
    },
    "author": "PAKIKNOWLEDGE",
-   "stars": 16,
+   "stars": 15,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -45684,7 +45684,7 @@
     "zh": "DeepSeek Harness 蓝色大肥鱼主题插件：海洋配色、鱼群、气泡、吉祥物与品牌替换"
    },
    "author": "DViridescent",
-   "stars": 13,
+   "stars": 14,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -46641,7 +46641,7 @@
     "zh": "把 DSH 接进 Hana：作为进程外 subagent 使用，任务走 dsh web host 执行。"
    },
    "author": "Nyasers",
-   "stars": 59,
+   "stars": 58,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -47287,7 +47287,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-voice-3274375092",
@@ -48442,7 +48442,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-28"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-snapshot",
@@ -48951,7 +48951,7 @@
     "zh": "DSH 消息撤回插件：回到发送该消息时的状态"
    },
    "author": "limbo947",
-   "stars": 47,
+   "stars": 49,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -48984,7 +48984,7 @@
     "zh": "滑动变祖器皮肤：滑块控制『梁圣等级』（自适应推理强度），梗图风 DSH 皮肤"
    },
    "author": "kingOfSoySauce",
-   "stars": 341,
+   "stars": 342,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -49017,7 +49017,7 @@
     "zh": "Live2D 桌宠插件 for DeepSeek Harness：Agent 状态镜像 + 互动陪伴，内置宽松许可预设模型 / Live2D pet plugin: agent state mirror + interactive companion with curated…"
    },
    "author": "cyanfish-x",
-   "stars": 33,
+   "stars": 32,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -49182,7 +49182,7 @@
     "zh": "Manage DeepSeek Harness locally: run multiple DSH versions in isolated containers, open the UI in an embedded WebView, import plugins/skill…"
    },
    "author": "Nexus-Aethra",
-   "stars": 29,
+   "stars": 30,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -49399,7 +49399,7 @@
    "isOfficialBeta": false,
    "language": "TypeScript",
    "sourceNote": "auto",
-   "last_push": "2026-09-06"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-model-failover",
@@ -49512,7 +49512,7 @@
     "zh": "Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed"
    },
    "author": "DDDMUC",
-   "stars": 721,
+   "stars": 732,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -49531,7 +49531,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-better-edit",
@@ -50040,7 +50040,7 @@
     "zh": "DeepSeek Harness 换肤 / 壁纸 / 主题包插件 (dsh-plugin) — 8 套 Mirage 主题、每用户强调色、壁纸2.0、主题包导入导出/分享链接、收藏与随机，纯原生 token 系统实现。"
    },
    "author": "RevolutionLA",
-   "stars": 295,
+   "stars": 297,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -50059,7 +50059,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "auto",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-plan-graph",
@@ -50205,7 +50205,7 @@
     "zh": "untranslated"
    },
    "author": "magian1127",
-   "stars": 37,
+   "stars": 36,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -50337,7 +50337,7 @@
     "zh": "untranslated"
    },
    "author": "Airmetro",
-   "stars": 20,
+   "stars": 21,
    "last_push": "2026-10-21",
    "license": "MIT",
    "tags": [],
@@ -50733,7 +50733,7 @@
     "zh": "untranslated"
    },
    "author": "Vithrive",
-   "stars": 57,
+   "stars": 58,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -51063,7 +51063,7 @@
     "zh": "untranslated"
    },
    "author": "sjh9714",
-   "stars": 150,
+   "stars": 151,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -51261,7 +51261,7 @@
     "zh": "untranslated"
    },
    "author": "MichengAI",
-   "stars": 405,
+   "stars": 414,
    "last_push": "2026-10-29",
    "license": "Apache-2.0",
    "tags": [],
@@ -51360,7 +51360,7 @@
     "zh": "把 DSH 的 fs/shell 提供者换成 mirage 虚拟工作区：文件工具与 shell 命令作用于挂载的资源（RAM/磁盘/S3/Redis/Postgres/Slack/Gmail/Notion）而非宿主磁盘。"
    },
    "author": "strukto-ai",
-   "stars": 3755,
+   "stars": 3756,
    "license": "Apache-2.0",
    "tags": [
     "sandbox",
@@ -51410,7 +51410,7 @@
     "zh": "为 DeepSeek Harness Web UI 提供流畅流式渲染和丝滑滚动。"
    },
    "author": "Laplace-bit",
-   "stars": 90,
+   "stars": 91,
    "license": "MIT",
    "tags": [
     "ui",
@@ -51461,7 +51461,7 @@
     "zh": "untranslated"
    },
    "author": "Nagi-ovo",
-   "stars": 20495,
+   "stars": 20500,
    "last_push": "2026-10-30",
    "license": "GPL-3.0",
    "tags": [],
@@ -51494,7 +51494,7 @@
     "zh": "untranslated"
    },
    "author": "edonadei",
-   "stars": 225,
+   "stars": 226,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -51692,7 +51692,7 @@
     "zh": "untranslated"
    },
    "author": "xmanrui",
-   "stars": 2799,
+   "stars": 2825,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -51725,7 +51725,7 @@
     "zh": "untranslated"
    },
    "author": "MrWeiCodes",
-   "stars": 18,
+   "stars": 19,
    "last_push": "2026-10-18",
    "license": "MIT",
    "tags": [],
@@ -52253,7 +52253,7 @@
     "zh": "untranslated"
    },
    "author": "omdsh-dev",
-   "stars": 152,
+   "stars": 153,
    "last_push": "2026-10-14",
    "license": "MIT",
    "tags": [],
@@ -52286,7 +52286,7 @@
     "zh": "untranslated"
    },
    "author": "shaobeichen",
-   "stars": 2570,
+   "stars": 2583,
    "last_push": "2026-10-17",
    "license": "GPL-2.0",
    "tags": [],
@@ -52352,7 +52352,7 @@
     "zh": "untranslated"
    },
    "author": "Blank-not-black",
-   "stars": 67,
+   "stars": 69,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -53227,7 +53227,7 @@
     "zh": "untranslated"
    },
    "author": "yyxcnasd",
-   "stars": 45,
+   "stars": 46,
    "last_push": "2026-10-09",
    "license": "MIT",
    "tags": [],
@@ -53359,7 +53359,7 @@
     "zh": "untranslated"
    },
    "author": "madage",
-   "stars": 11,
+   "stars": 12,
    "last_push": "2026-08-15",
    "license": "MIT",
    "tags": [],
@@ -54646,7 +54646,7 @@
     "zh": "untranslated"
    },
    "author": "ADWMC",
-   "stars": 875,
+   "stars": 887,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -54680,7 +54680,7 @@
    },
    "author": "Js2Hou",
    "stars": 25,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -54878,7 +54878,7 @@
    },
    "author": "STARDUSTLC666",
    "stars": 29,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -54976,7 +54976,7 @@
     "zh": "untranslated"
    },
    "author": "beiyege-01",
-   "stars": 824,
+   "stars": 834,
    "last_push": "2026-10-24",
    "license": "NOASSERTION",
    "tags": [],
@@ -55109,7 +55109,7 @@
    },
    "author": "tafcear",
    "stars": 7,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -55603,7 +55603,7 @@
     "zh": "untranslated"
    },
    "author": "TomoyoNatsume",
-   "stars": 21,
+   "stars": 22,
    "last_push": "2026-09-07",
    "license": "MIT",
    "tags": [],
@@ -55901,7 +55901,7 @@
    },
    "author": "platonai",
    "stars": 10,
-   "last_push": "2026-10-26",
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -55966,8 +55966,8 @@
     "zh": "untranslated"
    },
    "author": "Sutera-Diffusus",
-   "stars": 185,
-   "last_push": "2026-10-29",
+   "stars": 186,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -56032,8 +56032,8 @@
     "zh": "untranslated"
    },
    "author": "syncable-dev",
-   "stars": 508,
-   "last_push": "2026-10-29",
+   "stars": 509,
+   "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -56462,7 +56462,7 @@
    },
    "author": "pengpengyi92",
    "stars": 58,
-   "last_push": "2026-10-26",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -56527,7 +56527,7 @@
     "zh": "untranslated"
    },
    "author": "wssfk12138",
-   "stars": 279,
+   "stars": 281,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -56626,7 +56626,7 @@
     "zh": "untranslated"
    },
    "author": "dickpy",
-   "stars": 154,
+   "stars": 155,
    "last_push": "2026-10-29",
    "license": "Apache-2.0",
    "tags": [],
@@ -57452,7 +57452,7 @@
    },
    "author": "STARDUSTLC666",
    "stars": 10,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -57550,7 +57550,7 @@
     "zh": "untranslated"
    },
    "author": "saya-ch",
-   "stars": 682,
+   "stars": 684,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -57781,7 +57781,7 @@
     "zh": "untranslated"
    },
    "author": "Fishquito7",
-   "stars": 239,
+   "stars": 240,
    "last_push": "2026-10-20",
    "license": "MIT",
    "tags": [],
@@ -57847,7 +57847,7 @@
     "zh": "untranslated"
    },
    "author": "Hyna-hla",
-   "stars": 16,
+   "stars": 17,
    "last_push": "2026-08-31",
    "license": "MIT",
    "tags": [],
@@ -57880,8 +57880,8 @@
     "zh": "untranslated"
    },
    "author": "elysia395",
-   "stars": 3972,
-   "last_push": "2026-10-28",
+   "stars": 4063,
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -58045,7 +58045,7 @@
     "zh": "untranslated"
    },
    "author": "shanliuling",
-   "stars": 940,
+   "stars": 948,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -58078,8 +58078,8 @@
     "zh": "untranslated"
    },
    "author": "yyh-001",
-   "stars": 445,
-   "last_push": "2026-10-29",
+   "stars": 452,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -58210,7 +58210,7 @@
     "zh": "untranslated"
    },
    "author": "SoDaZilla-zzz",
-   "stars": 6,
+   "stars": 5,
    "last_push": "2026-08-19",
    "license": "MIT",
    "tags": [],
@@ -58243,7 +58243,7 @@
     "zh": "untranslated"
    },
    "author": "flizzywine",
-   "stars": 1386,
+   "stars": 1395,
    "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
@@ -58507,7 +58507,7 @@
     "zh": "untranslated"
    },
    "author": "MeteorNOX",
-   "stars": 6541,
+   "stars": 6574,
    "last_push": "2026-10-11",
    "license": "unknown",
    "tags": [],
@@ -58573,8 +58573,8 @@
     "zh": "untranslated"
    },
    "author": "FeatherHunter",
-   "stars": 87,
-   "last_push": "2026-10-29",
+   "stars": 89,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -58837,7 +58837,7 @@
     "zh": "untranslated"
    },
    "author": "dream-num",
-   "stars": 642,
+   "stars": 645,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -59002,7 +59002,7 @@
     "zh": "untranslated"
    },
    "author": "Shiye-10Pages",
-   "stars": 14,
+   "stars": 13,
    "last_push": "2026-08-16",
    "license": "MIT",
    "tags": [],
@@ -59135,7 +59135,7 @@
    },
    "author": "niiang",
    "stars": 43,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -59596,7 +59596,7 @@
     "zh": "untranslated"
    },
    "author": "d-dev0101",
-   "stars": 386,
+   "stars": 385,
    "last_push": "2026-10-20",
    "license": "MIT",
    "tags": [],
@@ -59926,7 +59926,7 @@
     "zh": "untranslated"
    },
    "author": "MemTensor",
-   "stars": 12190,
+   "stars": 12197,
    "last_push": "2026-10-29",
    "license": "Apache-2.0",
    "tags": [],
@@ -60191,7 +60191,7 @@
    },
    "author": "lire1131",
    "stars": 193,
-   "last_push": "2026-10-20",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -60421,7 +60421,7 @@
     "zh": "untranslated"
    },
    "author": "SeaOf0",
-   "stars": 797,
+   "stars": 799,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -60685,7 +60685,7 @@
     "zh": "untranslated"
    },
    "author": "Fisfzy",
-   "stars": 353,
+   "stars": 356,
    "last_push": "2026-10-29",
    "license": "unknown",
    "tags": [],
@@ -60916,8 +60916,8 @@
     "zh": "untranslated"
    },
    "author": "MichengAI",
-   "stars": 246,
-   "last_push": "2026-10-29",
+   "stars": 247,
+   "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -61475,7 +61475,7 @@
     "zh": "untranslated"
    },
    "author": "Likenttt",
-   "stars": 51,
+   "stars": 52,
    "last_push": "2026-10-22",
    "license": "MIT",
    "tags": [],
@@ -61673,7 +61673,7 @@
     "zh": "untranslated"
    },
    "author": "GDWhisper",
-   "stars": 64,
+   "stars": 65,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -61740,7 +61740,7 @@
    },
    "author": "MichengAI",
    "stars": 195,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -61806,7 +61806,7 @@
    },
    "author": "PensiveFei",
    "stars": 36,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -62036,7 +62036,7 @@
     "zh": "untranslated"
    },
    "author": "worldwonderer",
-   "stars": 648,
+   "stars": 649,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -62069,8 +62069,8 @@
     "zh": "untranslated"
    },
    "author": "xiajiajun516",
-   "stars": 274,
-   "last_push": "2026-10-29",
+   "stars": 277,
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -62169,7 +62169,7 @@
    },
    "author": "skyf0xx",
    "stars": 47,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -62300,7 +62300,7 @@
     "zh": "untranslated"
    },
    "author": "Tabbit-Browser",
-   "stars": 117,
+   "stars": 120,
    "last_push": "2026-10-14",
    "license": "unknown",
    "tags": [],
@@ -62366,8 +62366,8 @@
     "zh": "untranslated"
    },
    "author": "SiriLee",
-   "stars": 216,
-   "last_push": "2026-10-28",
+   "stars": 219,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -62399,7 +62399,7 @@
     "zh": "untranslated"
    },
    "author": "StvLi",
-   "stars": 24,
+   "stars": 25,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -62531,7 +62531,7 @@
     "zh": "untranslated"
    },
    "author": "amlyczz",
-   "stars": 136,
+   "stars": 137,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -62796,7 +62796,7 @@
    },
    "author": "PensiveFei",
    "stars": 85,
-   "last_push": "2026-10-27",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -62894,7 +62894,7 @@
     "zh": "untranslated"
    },
    "author": "EthanYoQ",
-   "stars": 530,
+   "stars": 531,
    "last_push": "2026-09-25",
    "license": "Apache-2.0",
    "tags": [],
@@ -62994,7 +62994,7 @@
    },
    "author": "BeforeWave",
    "stars": 64,
-   "last_push": "2026-10-28",
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -63125,7 +63125,7 @@
     "zh": "untranslated"
    },
    "author": "PKUfudawei",
-   "stars": 92,
+   "stars": 93,
    "last_push": "2026-10-26",
    "license": "Apache-2.0",
    "tags": [],
@@ -63521,7 +63521,7 @@
     "zh": "untranslated"
    },
    "author": "FeatherHunter",
-   "stars": 263,
+   "stars": 264,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -63554,7 +63554,7 @@
     "zh": "untranslated"
    },
    "author": "daha1216",
-   "stars": 429,
+   "stars": 433,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -63653,7 +63653,7 @@
     "zh": "untranslated"
    },
    "author": "sqs404",
-   "stars": 24,
+   "stars": 25,
    "last_push": "2026-10-03",
    "license": "MIT",
    "tags": [],
@@ -63785,7 +63785,7 @@
     "zh": "untranslated"
    },
    "author": "wsz987",
-   "stars": 12,
+   "stars": 13,
    "last_push": "2026-09-11",
    "license": "MIT",
    "tags": [],
@@ -63937,7 +63937,7 @@
    "isOfficialBeta": false,
    "language": "JavaScript",
    "sourceNote": "manual",
-   "last_push": "2026-10-27"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-nuke-plugin",
@@ -64053,7 +64053,7 @@
     "zh": "给纯文本 DSH 智能体装上眼睛：内置免 key 免费视觉链 + 11 个像素级视觉工具，一条命令安装，无需 Python。"
    },
    "author": "ysr666",
-   "stars": 1197,
+   "stars": 1198,
    "license": "MIT",
    "tags": [
     "vision",
@@ -64318,7 +64318,7 @@
     "zh": "untranslated"
    },
    "author": "Rain-kl",
-   "stars": 217,
+   "stars": 216,
    "last_push": "2026-08-27",
    "license": "MIT",
    "tags": [],
@@ -64516,7 +64516,7 @@
     "zh": "untranslated"
    },
    "author": "zenstory-ai",
-   "stars": 648,
+   "stars": 649,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -64615,7 +64615,7 @@
     "zh": "untranslated"
    },
    "author": "fandc520",
-   "stars": 151,
+   "stars": 152,
    "last_push": "2026-10-25",
    "license": "MIT",
    "tags": [],
@@ -64747,7 +64747,7 @@
     "zh": "untranslated"
    },
    "author": "MichengAI",
-   "stars": 36,
+   "stars": 35,
    "last_push": "2026-10-28",
    "license": "Apache-2.0",
    "tags": [],
@@ -64813,7 +64813,7 @@
     "zh": "untranslated"
    },
    "author": "Minglink",
-   "stars": 3693,
+   "stars": 3712,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -64913,7 +64913,7 @@
    },
    "author": "LoserFox",
    "stars": 12,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -65474,7 +65474,7 @@
    },
    "author": "wzxaaaa",
    "stars": 21,
-   "last_push": "2026-10-19",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -65605,7 +65605,7 @@
     "zh": "untranslated"
    },
    "author": "baisama-cloud",
-   "stars": 17,
+   "stars": 18,
    "last_push": "2026-09-10",
    "license": "MIT",
    "tags": [],
@@ -66215,7 +66215,7 @@
     "zh": "untranslated"
    },
    "author": "Imzl-zl",
-   "stars": 38,
+   "stars": 39,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -66281,7 +66281,7 @@
     "zh": "untranslated"
    },
    "author": "louke6572",
-   "stars": 78,
+   "stars": 79,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -66315,7 +66315,7 @@
    },
    "author": "vritser",
    "stars": 41,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "GPL-3.0",
    "tags": [],
    "dsh": {
@@ -66380,7 +66380,7 @@
     "zh": "untranslated"
    },
    "author": "liguobao",
-   "stars": 970,
+   "stars": 1012,
    "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
@@ -66479,7 +66479,7 @@
     "zh": "untranslated"
    },
    "author": "Minglink",
-   "stars": 3693,
+   "stars": 3712,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -66545,7 +66545,7 @@
     "zh": "untranslated"
    },
    "author": "huangruiteng",
-   "stars": 6486,
+   "stars": 6487,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -66826,7 +66826,7 @@
     "zh": "untranslated"
    },
    "author": "GZX2211",
-   "stars": 58,
+   "stars": 59,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -66925,7 +66925,7 @@
     "zh": "untranslated"
    },
    "author": "xing-shuyin",
-   "stars": 350,
+   "stars": 353,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -67222,7 +67222,7 @@
     "zh": "untranslated"
    },
    "author": "zhu1090093659",
-   "stars": 288,
+   "stars": 289,
    "last_push": "2026-10-27",
    "license": "NOASSERTION",
    "tags": [],
@@ -67355,7 +67355,7 @@
    },
    "author": "maxwell-feng",
    "stars": 27,
-   "last_push": "2026-10-28",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -67585,7 +67585,7 @@
     "zh": "DeepSeek Harness 的原生 VS Code 扩展：侧栏面板 + 编辑器桥接（选中提问、审阅 agent 改动、批准与问题卡片）。纯协议客户端，不再起第二个服务。"
    },
    "author": "zhibailu",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "tags": [
     "vscode",
@@ -67634,7 +67634,7 @@
     "zh": "untranslated"
    },
    "author": "moon09300731",
-   "stars": 107,
+   "stars": 108,
    "last_push": "2026-08-20",
    "license": "MIT",
    "tags": [],
@@ -67700,7 +67700,7 @@
     "zh": "untranslated"
    },
    "author": "wloops",
-   "stars": 20,
+   "stars": 21,
    "last_push": "2026-10-19",
    "license": "MIT",
    "tags": [],
@@ -67865,7 +67865,7 @@
     "zh": "untranslated"
    },
    "author": "Clarklevis1995",
-   "stars": 129,
+   "stars": 131,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -67899,7 +67899,7 @@
    },
    "author": "HOWILLMAKEIT",
    "stars": 30,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -68064,7 +68064,7 @@
    },
    "author": "caob23",
    "stars": 50,
-   "last_push": "2026-10-24",
+   "last_push": "2026-10-30",
    "license": "AGPL-3.0",
    "tags": [],
    "dsh": {
@@ -68327,7 +68327,7 @@
     "zh": "untranslated"
    },
    "author": "LiPu-jpg",
-   "stars": 900,
+   "stars": 903,
    "last_push": "2026-10-28",
    "license": "Apache-2.0",
    "tags": [],
@@ -68426,7 +68426,7 @@
     "zh": "DeepSeek Harness 通用 MCP 连接器与连接器市场：支持 OAuth 2.0 PKCE、API Key、stdio/HTTP、mcpServers JSON 导入、工具与 Prompt。"
    },
    "author": "duhu2000",
-   "stars": 95,
+   "stars": 96,
    "license": "MIT",
    "tags": [
     "mcp",
@@ -68525,7 +68525,7 @@
     "zh": "Web UI 语音输入：按停顿分段的流式听写 + 语音消息，每条可配独立的多服务商回退链。"
    },
    "author": "GooDAnDReaDY",
-   "stars": 11,
+   "stars": 12,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -68563,7 +68563,7 @@
     "zh": "Web UI 语音朗读助手回复：多服务商回退链（OpenAI/ElevenLabs/Google/Azure/Groq/Deepgram/Edge/Piper/eSpeak）。"
    },
    "author": "GooDAnDReaDY",
-   "stars": 5,
+   "stars": 6,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -68619,7 +68619,7 @@
    "featured": false,
    "isOfficialBeta": false,
    "language": "JavaScript",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "sourceNote": "投稿收录（issue #40）",
    "evidence": {
     "level": 1,
@@ -68733,7 +68733,7 @@
    "featured": false,
    "isOfficialBeta": false,
    "language": "JavaScript",
-   "last_push": "2026-10-23",
+   "last_push": "2026-10-30",
    "sourceNote": "投稿收录（issue #40）",
    "evidence": {
     "level": 1,
@@ -68771,7 +68771,7 @@
    "featured": false,
    "isOfficialBeta": false,
    "language": "JavaScript",
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "sourceNote": "投稿收录（issue #40）",
    "evidence": {
     "level": 1,
@@ -68829,7 +68829,7 @@
     "zh": "Settings → General → Language 增加俄语选项：核心 + 30+ 插件 locale 命名空间运行时翻译（722+3989 键人工审校）。"
    },
    "author": "GooDAnDReaDY",
-   "stars": 51,
+   "stars": 52,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -69042,7 +69042,7 @@
     "zh": "untranslated"
    },
    "author": "Minglink",
-   "stars": 3693,
+   "stars": 3712,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -69339,8 +69339,8 @@
     "zh": "untranslated"
    },
    "author": "dingminhua",
-   "stars": 889,
-   "last_push": "2026-10-29",
+   "stars": 915,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -69438,8 +69438,8 @@
     "zh": "untranslated"
    },
    "author": "a86582751",
-   "stars": 209,
-   "last_push": "2026-10-28",
+   "stars": 210,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -69537,7 +69537,7 @@
     "zh": "untranslated"
    },
    "author": "Nyasers",
-   "stars": 59,
+   "stars": 58,
    "last_push": "2026-10-30",
    "license": "MPL-2.0",
    "tags": [],
@@ -69702,7 +69702,7 @@
     "zh": "untranslated"
    },
    "author": "WSK-build",
-   "stars": 379,
+   "stars": 391,
    "last_push": "2026-10-18",
    "license": "GPL-3.0",
    "tags": [],
@@ -69735,7 +69735,7 @@
     "zh": "untranslated"
    },
    "author": "Nyasers",
-   "stars": 59,
+   "stars": 58,
    "last_push": "2026-10-30",
    "license": "MPL-2.0",
    "tags": [],
@@ -69933,7 +69933,7 @@
     "zh": "untranslated"
    },
    "author": "dingminhua",
-   "stars": 176,
+   "stars": 177,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -70032,7 +70032,7 @@
     "zh": "untranslated"
    },
    "author": "PerryLink",
-   "stars": 17,
+   "stars": 18,
    "last_push": "2026-10-27",
    "license": "Apache-2.0",
    "tags": [],
@@ -70197,8 +70197,8 @@
     "zh": "untranslated"
    },
    "author": "FeatherHunter",
-   "stars": 83,
-   "last_push": "2026-10-29",
+   "stars": 86,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -70230,8 +70230,8 @@
     "zh": "untranslated"
    },
    "author": "FeatherHunter",
-   "stars": 36,
-   "last_push": "2026-10-29",
+   "stars": 37,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -70363,7 +70363,7 @@
    },
    "author": "Lenonss",
    "stars": 24,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -70461,7 +70461,7 @@
     "zh": "untranslated"
    },
    "author": "Duskriver",
-   "stars": 208,
+   "stars": 210,
    "last_push": "2026-10-23",
    "license": "MIT",
    "tags": [],
@@ -70528,7 +70528,7 @@
    },
    "author": "dphmoblie",
    "stars": 85,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -70692,8 +70692,8 @@
     "zh": "untranslated"
    },
    "author": "slow-stack",
-   "stars": 199,
-   "last_push": "2026-10-29",
+   "stars": 200,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -70725,7 +70725,7 @@
     "zh": "untranslated"
    },
    "author": "loopx-project",
-   "stars": 6486,
+   "stars": 6487,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -70824,7 +70824,7 @@
     "zh": "untranslated"
    },
    "author": "omdsh-dev",
-   "stars": 943,
+   "stars": 945,
    "last_push": "2026-10-01",
    "license": "MIT",
    "tags": [],
@@ -70923,7 +70923,7 @@
     "zh": "untranslated"
    },
    "author": "yyh-001",
-   "stars": 766,
+   "stars": 767,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -71056,7 +71056,7 @@
    },
    "author": "gulagala001",
    "stars": 45,
-   "last_push": "2026-10-28",
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -71121,7 +71121,7 @@
     "zh": "untranslated"
    },
    "author": "XDTrees",
-   "stars": 341,
+   "stars": 345,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -71253,7 +71253,7 @@
     "zh": "untranslated"
    },
    "author": "xohmai",
-   "stars": 40,
+   "stars": 41,
    "last_push": "2026-10-19",
    "license": "Apache-2.0",
    "tags": [],
@@ -71418,7 +71418,7 @@
     "zh": "untranslated"
    },
    "author": "A8Chann",
-   "stars": 61,
+   "stars": 63,
    "last_push": "2026-10-27",
    "license": "NOASSERTION",
    "tags": [],
@@ -71517,8 +71517,8 @@
     "zh": "untranslated"
    },
    "author": "slow-stack",
-   "stars": 199,
-   "last_push": "2026-10-29",
+   "stars": 200,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -71682,7 +71682,7 @@
     "zh": "untranslated"
    },
    "author": "universe-st",
-   "stars": 121,
+   "stars": 122,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -71748,7 +71748,7 @@
     "zh": "untranslated"
    },
    "author": "zouyuxuan122",
-   "stars": 51550,
+   "stars": 52308,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -71979,8 +71979,8 @@
     "zh": "untranslated"
    },
    "author": "LAU-MARS",
-   "stars": 31,
-   "last_push": "2026-10-29",
+   "stars": 32,
+   "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -72177,7 +72177,7 @@
     "zh": "untranslated"
    },
    "author": "voyager-crew",
-   "stars": 20495,
+   "stars": 20500,
    "last_push": "2026-10-30",
    "license": "GPL-3.0",
    "tags": [],
@@ -72277,7 +72277,7 @@
    },
    "author": "luobosibing2",
    "stars": 200,
-   "last_push": "2026-10-25",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -72343,7 +72343,7 @@
    },
    "author": "luobosibing2",
    "stars": 200,
-   "last_push": "2026-10-25",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -72375,7 +72375,7 @@
     "zh": "untranslated"
    },
    "author": "yannicksong0106",
-   "stars": 201,
+   "stars": 203,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -72639,7 +72639,7 @@
     "zh": "untranslated"
    },
    "author": "gcry13067381632-jpg",
-   "stars": 187,
+   "stars": 191,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -72705,7 +72705,7 @@
     "zh": "untranslated"
    },
    "author": "joeseesun",
-   "stars": 77,
+   "stars": 78,
    "last_push": "2026-10-28",
    "license": "GPL-3.0",
    "tags": [],
@@ -72738,7 +72738,7 @@
     "zh": "untranslated"
    },
    "author": "FNOSP",
-   "stars": 69,
+   "stars": 70,
    "last_push": "2026-10-30",
    "license": "AGPL-3.0",
    "tags": [],
@@ -72804,8 +72804,8 @@
     "zh": "untranslated"
    },
    "author": "kenryu42",
-   "stars": 1853,
-   "last_push": "2026-10-29",
+   "stars": 1856,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -72903,7 +72903,7 @@
     "zh": "untranslated"
    },
    "author": "jingyi0605",
-   "stars": 65,
+   "stars": 66,
    "last_push": "2026-10-27",
    "license": "GPL-3.0",
    "tags": [],
@@ -72936,7 +72936,7 @@
     "zh": "untranslated"
    },
    "author": "DSH-EAC",
-   "stars": 37,
+   "stars": 36,
    "last_push": "2026-10-05",
    "license": "MIT",
    "tags": [],
@@ -72970,7 +72970,7 @@
    },
    "author": "WSL043",
    "stars": 33,
-   "last_push": "2026-10-28",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -73002,7 +73002,7 @@
     "zh": "untranslated"
    },
    "author": "DSH-EAC",
-   "stars": 37,
+   "stars": 36,
    "last_push": "2026-10-05",
    "license": "MIT",
    "tags": [],
@@ -73101,7 +73101,7 @@
     "zh": "untranslated"
    },
    "author": "MochiNek0",
-   "stars": 49,
+   "stars": 51,
    "last_push": "2026-10-21",
    "license": "MIT",
    "tags": [],
@@ -73134,8 +73134,8 @@
     "zh": "untranslated"
    },
    "author": "sixtysevenlf",
-   "stars": 1468,
-   "last_push": "2026-10-29",
+   "stars": 1474,
+   "last_push": "2026-10-30",
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -73167,7 +73167,7 @@
     "zh": "untranslated"
    },
    "author": "Ebony-Vinyl",
-   "stars": 51550,
+   "stars": 52308,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -73200,7 +73200,7 @@
     "zh": "untranslated"
    },
    "author": "Yiheng-guo",
-   "stars": 64,
+   "stars": 66,
    "last_push": "2026-09-30",
    "license": "NOASSERTION",
    "tags": [],
@@ -73266,7 +73266,7 @@
     "zh": "untranslated"
    },
    "author": "c3cvld7aag",
-   "stars": 396,
+   "stars": 403,
    "last_push": "2026-10-03",
    "license": "NOASSERTION",
    "tags": [],
@@ -73332,7 +73332,7 @@
     "zh": "untranslated"
    },
    "author": "EricWang1358",
-   "stars": 154,
+   "stars": 155,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -73530,7 +73530,7 @@
     "zh": "untranslated"
    },
    "author": "Microqian2th",
-   "stars": 228,
+   "stars": 231,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -73662,7 +73662,7 @@
     "zh": "untranslated"
    },
    "author": "ppy-web",
-   "stars": 37,
+   "stars": 38,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -73728,7 +73728,7 @@
     "zh": "untranslated"
    },
    "author": "Sev7eEn7",
-   "stars": 106,
+   "stars": 108,
    "last_push": "2026-10-22",
    "license": "MIT",
    "tags": [],
@@ -73794,7 +73794,7 @@
     "zh": "untranslated"
    },
    "author": "Sev7eEn7",
-   "stars": 106,
+   "stars": 108,
    "last_push": "2026-10-22",
    "license": "MIT",
    "tags": [],
@@ -73827,7 +73827,7 @@
     "zh": "untranslated"
    },
    "author": "zaofan-make",
-   "stars": 187,
+   "stars": 191,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -73860,7 +73860,7 @@
     "zh": "untranslated"
    },
    "author": "HarmlessFunny",
-   "stars": 24,
+   "stars": 23,
    "last_push": "2026-10-25",
    "license": "MIT",
    "tags": [],
@@ -73926,8 +73926,8 @@
     "zh": "untranslated"
    },
    "author": "huaizhuanghub",
-   "stars": 88,
-   "last_push": "2026-10-28",
+   "stars": 90,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -73959,7 +73959,7 @@
     "zh": "untranslated"
    },
    "author": "T-Auto",
-   "stars": 4805,
+   "stars": 4844,
    "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
@@ -73992,7 +73992,7 @@
     "zh": "untranslated"
    },
    "author": "vibe-any",
-   "stars": 53,
+   "stars": 56,
    "last_push": "2026-10-24",
    "license": "MIT",
    "tags": [],
@@ -74058,7 +74058,7 @@
     "zh": "untranslated"
    },
    "author": "xcisxc29",
-   "stars": 356,
+   "stars": 359,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -74124,7 +74124,7 @@
     "zh": "untranslated"
    },
    "author": "Ebony-Vinyl",
-   "stars": 37,
+   "stars": 36,
    "last_push": "2026-10-05",
    "license": "MIT",
    "tags": [],
@@ -74223,7 +74223,7 @@
     "zh": "untranslated"
    },
    "author": "MichengAI",
-   "stars": 48,
+   "stars": 49,
    "last_push": "2026-10-28",
    "license": "Apache-2.0",
    "tags": [],
@@ -74256,7 +74256,7 @@
     "zh": "untranslated"
    },
    "author": "FeiZhuLulu",
-   "stars": 4565,
+   "stars": 4613,
    "last_push": "2026-10-29",
    "license": "Apache-2.0",
    "tags": [],
@@ -74322,8 +74322,8 @@
     "zh": "untranslated"
    },
    "author": "EternalNight996",
-   "stars": 95,
-   "last_push": "2026-10-28",
+   "stars": 96,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -74388,7 +74388,7 @@
     "zh": "untranslated"
    },
    "author": "BotHarness",
-   "stars": 397,
+   "stars": 408,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -74487,7 +74487,7 @@
     "zh": "untranslated"
    },
    "author": "Fei2411",
-   "stars": 4565,
+   "stars": 4613,
    "last_push": "2026-10-29",
    "license": "Apache-2.0",
    "tags": [],
@@ -74817,7 +74817,7 @@
     "zh": "untranslated"
    },
    "author": "fourzkw",
-   "stars": 53,
+   "stars": 54,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -74850,7 +74850,7 @@
     "zh": "untranslated"
    },
    "author": "zhu1090093659",
-   "stars": 30,
+   "stars": 33,
    "last_push": "2026-10-30",
    "license": "BSD-3-Clause",
    "tags": [],
@@ -74982,8 +74982,8 @@
     "zh": "untranslated"
    },
    "author": "fyjgtddco",
-   "stars": 35,
-   "last_push": "2026-10-29",
+   "stars": 37,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -75015,7 +75015,7 @@
     "zh": "untranslated"
    },
    "author": "XDTrees",
-   "stars": 341,
+   "stars": 345,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -75081,7 +75081,7 @@
     "zh": "untranslated"
    },
    "author": "c1overzz",
-   "stars": 1030,
+   "stars": 1047,
    "last_push": "2026-10-28",
    "license": "NOASSERTION",
    "tags": [],
@@ -75114,7 +75114,7 @@
     "zh": "untranslated"
    },
    "author": "WTStarMark",
-   "stars": 24,
+   "stars": 25,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -75148,7 +75148,7 @@
    },
    "author": "LingyeSoul",
    "stars": 6,
-   "last_push": "2026-10-28",
+   "last_push": "2026-10-30",
    "license": "GPL-3.0",
    "tags": [],
    "dsh": {
@@ -75213,7 +75213,7 @@
     "zh": "untranslated"
    },
    "author": "q253595422",
-   "stars": 66,
+   "stars": 67,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -75279,7 +75279,7 @@
     "zh": "untranslated"
    },
    "author": "lhuans",
-   "stars": 38,
+   "stars": 39,
    "last_push": "2026-10-09",
    "license": "MIT",
    "tags": [],
@@ -75345,7 +75345,7 @@
     "zh": "untranslated"
    },
    "author": "mmparko",
-   "stars": 2700,
+   "stars": 2727,
    "last_push": "2026-10-13",
    "license": "MIT",
    "tags": [],
@@ -75378,7 +75378,7 @@
     "zh": "untranslated"
    },
    "author": "Ebony-Vinyl",
-   "stars": 340,
+   "stars": 351,
    "last_push": "2026-10-25",
    "license": "AGPL-3.0",
    "tags": [],
@@ -75412,7 +75412,7 @@
    },
    "author": "iJetLi",
    "stars": 52,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -75477,7 +75477,7 @@
     "zh": "untranslated"
    },
    "author": "zuoyunlai",
-   "stars": 22,
+   "stars": 23,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -75741,7 +75741,7 @@
     "zh": "untranslated"
    },
    "author": "rongxingda",
-   "stars": 31,
+   "stars": 32,
    "last_push": "2026-10-22",
    "license": "Apache-2.0",
    "tags": [],
@@ -75807,7 +75807,7 @@
     "zh": "untranslated"
    },
    "author": "Alice-Marx",
-   "stars": 476,
+   "stars": 496,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -75840,8 +75840,8 @@
     "zh": "untranslated"
    },
    "author": "MindLab-Research",
-   "stars": 95,
-   "last_push": "2026-10-29",
+   "stars": 97,
+   "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -75906,8 +75906,8 @@
     "zh": "untranslated"
    },
    "author": "mo-n",
-   "stars": 24,
-   "last_push": "2026-10-29",
+   "stars": 25,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -76005,7 +76005,7 @@
     "zh": "untranslated"
    },
    "author": "berhbro",
-   "stars": 49,
+   "stars": 50,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -76071,7 +76071,7 @@
     "zh": "untranslated"
    },
    "author": "evilevil",
-   "stars": 179,
+   "stars": 186,
    "last_push": "2026-10-19",
    "license": "MIT",
    "tags": [],
@@ -76204,7 +76204,7 @@
    },
    "author": "gulagala001",
    "stars": 26,
-   "last_push": "2026-10-24",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -76237,7 +76237,7 @@
    },
    "author": "LarryE135",
    "stars": 87,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -76269,7 +76269,7 @@
     "zh": "untranslated"
    },
    "author": "realMisakaMikoto",
-   "stars": 46,
+   "stars": 49,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -76368,7 +76368,7 @@
     "zh": "untranslated"
    },
    "author": "InariNGT-Ofiicial",
-   "stars": 202,
+   "stars": 209,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -76401,8 +76401,8 @@
     "zh": "untranslated"
    },
    "author": "v587d",
-   "stars": 23,
-   "last_push": "2026-10-29",
+   "stars": 24,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -76467,7 +76467,7 @@
     "zh": "untranslated"
    },
    "author": "Yuuyuko-uu",
-   "stars": 400,
+   "stars": 408,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -76500,7 +76500,7 @@
     "zh": "untranslated"
    },
    "author": "Yuuyuko-uu",
-   "stars": 189,
+   "stars": 194,
    "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
@@ -76533,7 +76533,7 @@
     "zh": "untranslated"
    },
    "author": "Yuuyuko-uu",
-   "stars": 193,
+   "stars": 202,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -76566,7 +76566,7 @@
     "zh": "untranslated"
    },
    "author": "luweiyabo",
-   "stars": 23,
+   "stars": 24,
    "last_push": "2026-10-24",
    "license": "MIT",
    "tags": [],
@@ -76632,7 +76632,7 @@
     "zh": "untranslated"
    },
    "author": "Yuuyuko-uu",
-   "stars": 175,
+   "stars": 183,
    "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
@@ -76665,7 +76665,7 @@
     "zh": "untranslated"
    },
    "author": "Yuuyuko-uu",
-   "stars": 134,
+   "stars": 142,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -76731,7 +76731,7 @@
     "zh": "untranslated"
    },
    "author": "Lixiaoyiao",
-   "stars": 52,
+   "stars": 56,
    "last_push": "2026-10-23",
    "license": "MIT",
    "tags": [],
@@ -76764,7 +76764,7 @@
     "zh": "untranslated"
    },
    "author": "momasiku",
-   "stars": 130,
+   "stars": 131,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -76797,7 +76797,7 @@
     "zh": "untranslated"
    },
    "author": "insideyou-0501",
-   "stars": 55,
+   "stars": 56,
    "last_push": "2026-10-25",
    "license": "MIT",
    "tags": [],
@@ -76863,7 +76863,7 @@
     "zh": "untranslated"
    },
    "author": "blueziii",
-   "stars": 28,
+   "stars": 29,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -76896,7 +76896,7 @@
     "zh": "untranslated"
    },
    "author": "JialaoLiu",
-   "stars": 100,
+   "stars": 106,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -76930,7 +76930,7 @@
    },
    "author": "angelky7",
    "stars": 50,
-   "last_push": "2026-10-24",
+   "last_push": "2026-10-30",
    "license": "AGPL-3.0",
    "tags": [],
    "dsh": {
@@ -77094,7 +77094,7 @@
     "zh": "untranslated"
    },
    "author": "Fei2411",
-   "stars": 4565,
+   "stars": 4613,
    "last_push": "2026-10-29",
    "license": "Apache-2.0",
    "tags": [],
@@ -77160,7 +77160,7 @@
     "zh": "untranslated"
    },
    "author": "Duoasa",
-   "stars": 34,
+   "stars": 35,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -77259,7 +77259,7 @@
     "zh": "untranslated"
    },
    "author": "accomplish07zrh-eng",
-   "stars": 163,
+   "stars": 179,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -77292,7 +77292,7 @@
     "zh": "untranslated"
    },
    "author": "ChenYiming-aaa",
-   "stars": 22,
+   "stars": 23,
    "last_push": "2026-10-21",
    "license": "MIT",
    "tags": [],
@@ -77325,7 +77325,7 @@
     "zh": "untranslated"
    },
    "author": "12we21",
-   "stars": 26,
+   "stars": 27,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -77358,8 +77358,8 @@
     "zh": "untranslated"
    },
    "author": "kingcharleslzy-ai",
-   "stars": 3436,
-   "last_push": "2026-10-25",
+   "stars": 3561,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -77391,7 +77391,7 @@
     "zh": "untranslated"
    },
    "author": "LockyBee",
-   "stars": 29,
+   "stars": 32,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -77424,7 +77424,7 @@
     "zh": "untranslated"
    },
    "author": "seaison",
-   "stars": 32,
+   "stars": 33,
    "last_push": "2026-10-25",
    "license": "NOASSERTION",
    "tags": [],
@@ -77457,7 +77457,7 @@
     "zh": "untranslated"
    },
    "author": "g-yixuan",
-   "stars": 29,
+   "stars": 31,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -77523,7 +77523,7 @@
     "zh": "untranslated"
    },
    "author": "wonderandyou",
-   "stars": 31,
+   "stars": 33,
    "last_push": "2026-10-08",
    "license": "MIT",
    "tags": [],
@@ -77589,8 +77589,8 @@
     "zh": "untranslated"
    },
    "author": "SAOS-3624",
-   "stars": 222,
-   "last_push": "2026-10-29",
+   "stars": 256,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -77622,8 +77622,8 @@
     "zh": "untranslated"
    },
    "author": "SAOS-3624",
-   "stars": 222,
-   "last_push": "2026-10-29",
+   "stars": 256,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -77721,7 +77721,7 @@
     "zh": "untranslated"
    },
    "author": "xiaoxiao150",
-   "stars": 50,
+   "stars": 53,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -77754,8 +77754,8 @@
     "zh": "untranslated"
    },
    "author": "xbzbing",
-   "stars": 28,
-   "last_push": "2026-10-29",
+   "stars": 30,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -77788,7 +77788,7 @@
    },
    "author": "dingminhua",
    "stars": 29,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -77886,7 +77886,7 @@
     "zh": "untranslated"
    },
    "author": "xiaoso456",
-   "stars": 17,
+   "stars": 18,
    "last_push": "2026-10-26",
    "license": "NOASSERTION",
    "tags": [],
@@ -78315,7 +78315,7 @@
     "zh": "untranslated"
    },
    "author": "Jaylor-Wang",
-   "stars": 14,
+   "stars": 16,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -78415,7 +78415,7 @@
    },
    "author": "dingminhua",
    "stars": 12,
-   "last_push": "2026-10-26",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -78546,7 +78546,7 @@
     "zh": "untranslated"
    },
    "author": "nzl153",
-   "stars": 13,
+   "stars": 14,
    "last_push": "2026-10-02",
    "license": "MIT",
    "tags": [],
@@ -78711,7 +78711,7 @@
     "zh": "untranslated"
    },
    "author": "InariNGT-Ofiicial",
-   "stars": 16,
+   "stars": 17,
    "last_push": "2026-10-25",
    "license": "MIT",
    "tags": [],
@@ -78976,7 +78976,7 @@
    },
    "author": "gychen-NJU",
    "stars": 32,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -79008,7 +79008,7 @@
     "zh": "untranslated"
    },
    "author": "icyaaaww",
-   "stars": 37,
+   "stars": 38,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -79074,7 +79074,7 @@
     "zh": "untranslated"
    },
    "author": "huzhengcai471-crypto",
-   "stars": 170,
+   "stars": 174,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -79107,7 +79107,7 @@
     "zh": "untranslated"
    },
    "author": "Kanadego",
-   "stars": 23,
+   "stars": 24,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -79140,7 +79140,7 @@
     "zh": "untranslated"
    },
    "author": "xcw520",
-   "stars": 23,
+   "stars": 24,
    "last_push": "2026-10-25",
    "license": "MIT",
    "tags": [],
@@ -79173,7 +79173,7 @@
     "zh": "untranslated"
    },
    "author": "Elio896",
-   "stars": 37,
+   "stars": 77,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -79206,8 +79206,107 @@
     "zh": "untranslated"
    },
    "author": "regrevia",
-   "stars": 23,
+   "stars": 25,
    "last_push": "2026-10-29",
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto"
+  },
+  {
+   "id": "dsh-go",
+   "name": "dsh-Go",
+   "npm": null,
+   "repo": "ccch1mneyyy/dsh-Go",
+   "url": "https://github.com/ccch1mneyyy/dsh-Go",
+   "category": "tools",
+   "description": {
+    "en": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+    "zh": "untranslated"
+   },
+   "author": "ccch1mneyyy",
+   "stars": 1884,
+   "last_push": "2026-10-30",
+   "license": "AGPL-3.0",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "Dart",
+   "sourceNote": "auto"
+  },
+  {
+   "id": "dsh-prompt-rewriter",
+   "name": "dsh-prompt-rewriter",
+   "npm": null,
+   "repo": "huaguoxingkong/dsh-prompt-rewriter",
+   "url": "https://github.com/huaguoxingkong/dsh-prompt-rewriter",
+   "category": "tools",
+   "description": {
+    "en": "One-click prompt enhancement beside the DeepSeek Harness composer: rewrites a draft in place without sending it.",
+    "zh": "untranslated"
+   },
+   "author": "huaguoxingkong",
+   "stars": 33,
+   "last_push": "2026-10-30",
+   "license": "MIT",
+   "tags": [],
+   "dsh": {
+    "minVersion": "",
+    "peerCordis": "",
+    "node": ""
+   },
+   "compat": {
+    "status": "unknown",
+    "dshVersion": "",
+    "lastVerified": "",
+    "note": ""
+   },
+   "install": "",
+   "featured": false,
+   "isOfficialBeta": false,
+   "language": "JavaScript",
+   "sourceNote": "auto"
+  },
+  {
+   "id": "dsh-inject",
+   "name": "dsh-inject",
+   "npm": null,
+   "repo": "john-walks-slow/dsh-inject",
+   "url": "https://github.com/john-walks-slow/dsh-inject",
+   "category": "session",
+   "description": {
+    "en": "Advanced model-context injection and request-only rewriting for DeepSeek Harness with native Keysmith rules compatibility.",
+    "zh": "untranslated"
+   },
+   "author": "john-walks-slow",
+   "stars": 23,
+   "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -79241,7 +79340,7 @@
     "zh": "跨平台 AI 内容发现 Agent（B站/小红书/抖音等）"
    },
    "author": "whiteguo233",
-   "stars": 3629,
+   "stars": 3631,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -79275,7 +79374,7 @@
     "zh": "python 原生 AI 编码工作流 harness（多模型编排）"
    },
    "author": "zhnt",
-   "stars": 1916,
+   "stars": 1920,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -79309,7 +79408,7 @@
     "zh": "天枢：面向 DeepSeek V4 的终端编程智能体运行时（TUI）"
    },
    "author": "huiliyi37",
-   "stars": 1225,
+   "stars": 1226,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -79343,7 +79442,7 @@
     "zh": "从 0 复刻 WorkBuddy 桌面 AI 助手（24 章教程）"
    },
    "author": "adongwanai",
-   "stars": 496,
+   "stars": 497,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -79377,7 +79476,7 @@
     "zh": "来自 pi 的编码 Agent（子代理/哈希行编辑/权限门）"
    },
    "author": "pulseaiclub",
-   "stars": 757,
+   "stars": 765,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -79397,7 +79496,7 @@
    "language": "Go",
    "sourceNote": "蹭tag",
    "watchReason": "蹭tag",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "deepseek-harness-morlay",
@@ -80907,7 +81006,7 @@
     "zh": "（无描述）"
    },
    "author": "yjh051108",
-   "stars": 168,
+   "stars": 167,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -81179,7 +81278,7 @@
     "zh": "把离别化为温暖的 Skill（数字生命）。"
    },
    "author": "titanwings",
-   "stars": 26193,
+   "stars": 26209,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -81213,7 +81312,7 @@
     "zh": "新一代 source-available AI 工作台。"
    },
    "author": "Devin-AXIS",
-   "stars": 7314,
+   "stars": 7318,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -81233,7 +81332,7 @@
    "language": "HTML",
    "sourceNote": "新增",
    "watchReason": "蹭tag",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "deeptide",
@@ -81417,7 +81516,7 @@
     "zh": "补位 DSH 官方 TUI 空缺的终端界面，Claude Code 风格全屏交互。"
    },
    "author": "ccch1mneyyy",
-   "stars": 6241,
+   "stars": 6295,
    "license": "BSD-3-Clause",
    "tags": [],
    "dsh": {
@@ -81553,7 +81652,7 @@
     "zh": "用 agent 逆向工程任何东西。"
    },
    "author": "morluto",
-   "stars": 409149,
+   "stars": 410697,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -81587,7 +81686,7 @@
     "zh": "DSH 插件精选列表。"
    },
    "author": "awesome-dsh-plugin",
-   "stars": 21546,
+   "stars": 21608,
    "license": "CC0-1.0",
    "tags": [],
    "dsh": {
@@ -81689,7 +81788,7 @@
     "zh": "专为 agent 打造的多语言搜索工具。"
    },
    "author": "taxueseek",
-   "stars": 216,
+   "stars": 217,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -81757,7 +81856,7 @@
     "zh": "面向 agent 的纯数学：搜索例子与反例。"
    },
    "author": "morluto",
-   "stars": 340,
+   "stars": 341,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -81791,7 +81890,7 @@
     "zh": "DeepSeek Harness 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例。"
    },
    "author": "Electricitysheep",
-   "stars": 922,
+   "stars": 924,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -81995,7 +82094,7 @@
     "zh": "面向 agent 的代码智能：找到真正相关的代码。"
    },
    "author": "morluto",
-   "stars": 133,
+   "stars": 134,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -82131,7 +82230,7 @@
     "zh": "DeepSeek Harness 桌面端打包。"
    },
    "author": "wess09",
-   "stars": 128,
+   "stars": 129,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -82811,7 +82910,7 @@
     "zh": "DeepSeek Harness 社区 Docker 与 Kubernetes 打包。"
    },
    "author": "runzhliu",
-   "stars": 137,
+   "stars": 138,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -82981,7 +83080,7 @@
     "zh": "面向 agent 的贡献研究：检查仓库历史。"
    },
    "author": "morluto",
-   "stars": 28,
+   "stars": 27,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -83015,7 +83114,7 @@
     "zh": "DeepSeek Harness Web 的 Electron 桌面壳。"
    },
    "author": "ChisaAlter",
-   "stars": 198,
+   "stars": 199,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -83559,7 +83658,7 @@
     "zh": "dsh-plugin-guide — DSH 插件（其他）"
    },
    "author": "PerryLink",
-   "stars": 63,
+   "stars": 64,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -83661,7 +83760,7 @@
     "zh": "awesome-deepseek-harness-plugins — DSH 插件（其他）"
    },
    "author": "vvlife",
-   "stars": 10,
+   "stars": 11,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -83797,7 +83896,7 @@
     "zh": "awesome-deepseek-harness — DSH 插件（其他）"
    },
    "author": "libukai",
-   "stars": 339,
+   "stars": 341,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -84055,7 +84154,7 @@
    "language": "Rust",
    "sourceNote": "新增",
    "watchReason": "工具链",
-   "last_push": "2026-10-27"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-notify-windows",
@@ -84171,7 +84270,7 @@
     "zh": "dsh-email — DSH 插件（其他）"
    },
    "author": "STARDUSTLC666",
-   "stars": 27,
+   "stars": 30,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -84191,7 +84290,7 @@
    "language": "TypeScript",
    "sourceNote": "新增",
    "watchReason": "工具链",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-record-replay",
@@ -86347,7 +86446,7 @@
     "zh": "(无描述)"
    },
    "author": "ben7am1n",
-   "stars": 3,
+   "stars": 4,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -86551,7 +86650,7 @@
     "zh": "awesome-dsh-plugins — DSH 插件（其他）"
    },
    "author": "kejixiaoliang",
-   "stars": 70,
+   "stars": 71,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -87095,7 +87194,7 @@
     "zh": "dsh-permission-rules — DSH 插件（其他）"
    },
    "author": "PerryLink",
-   "stars": 135,
+   "stars": 136,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -87420,7 +87519,7 @@
    "language": "TypeScript",
    "sourceNote": "新增",
    "watchReason": "占位",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-plugin-dedup",
@@ -87468,7 +87567,7 @@
     "zh": "dsh-crosstalk — DSH 插件（其他）"
    },
    "author": "Jesse-njx",
-   "stars": 4,
+   "stars": 5,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -87828,7 +87927,7 @@
    "language": "TypeScript",
    "sourceNote": "新增",
    "watchReason": "占位",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-desktop-qingchunnh",
@@ -88794,7 +88893,7 @@
     "zh": "dsh 安卓壳 APK——WebView UI + 内嵌 Termux 运行时快照（解压即跑）、SAF 目录桥、保活服务、看门狗、运行时在线更新。"
    },
    "author": "kelai141",
-   "stars": 967,
+   "stars": 972,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -88896,7 +88995,7 @@
     "zh": "LLM-supervised persistent memory for AI agents — graph-based recall, cross-session knowledge, single binary. Works with Claude Code, OpenCl…"
    },
    "author": "mnemon-dev",
-   "stars": 672,
+   "stars": 673,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -89780,7 +89879,7 @@
     "zh": "The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场"
    },
    "author": "dsh-market",
-   "stars": 9750,
+   "stars": 9811,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -89800,7 +89899,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-portable-launcher",
@@ -90392,7 +90491,7 @@
     "zh": "DeepSeek Harness：鲸鱼娘桌宠！"
    },
    "author": "xiaoshihou514",
-   "stars": 59,
+   "stars": 60,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -90752,7 +90851,7 @@
    "language": "Rust",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-28"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-launcher-lifetime",
@@ -91480,7 +91579,7 @@
     "zh": "(无描述)"
    },
    "author": "acefun29",
-   "stars": 24,
+   "stars": 25,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -92568,7 +92667,7 @@
     "zh": "The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landin…"
    },
    "author": "nexu-io",
-   "stars": 104932,
+   "stars": 104989,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -92636,7 +92735,7 @@
     "zh": "Give any AI agent the ability to code"
    },
    "author": "xyTom",
-   "stars": 1219,
+   "stars": 1220,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -93676,7 +93775,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "蹭tag",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-multica-runtime-multica-ai",
@@ -94336,7 +94435,7 @@
     "zh": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion a…"
    },
    "author": "tt-a1i",
-   "stars": 91597,
+   "stars": 91723,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -94370,7 +94469,7 @@
     "zh": "The public gallery of animated pet for Codex, Claude Code, OpenCode y Gemini CLI"
    },
    "author": "crafter-station",
-   "stars": 4304,
+   "stars": 4305,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -94404,7 +94503,7 @@
     "zh": "基于官方 DeepSeek Harness 打造的 Electron 桌面端，深度适配 macOS 和 Windows，提供最佳的，开箱即用的体验。"
    },
    "author": "anywhere-labs",
-   "stars": 34095,
+   "stars": 34143,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -94424,7 +94523,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "flowix",
@@ -94438,7 +94537,7 @@
     "zh": "Notes for you, Memory for your agents."
    },
    "author": "text2future",
-   "stars": 490,
+   "stars": 491,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -94472,7 +94571,7 @@
     "zh": "(无描述)"
    },
    "author": "zhoushoujianwork",
-   "stars": 885,
+   "stars": 891,
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -94628,7 +94727,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "占位",
-   "last_push": "2026-10-28"
+   "last_push": "2026-10-30"
   },
   {
    "id": "interest-memory",
@@ -95614,7 +95713,7 @@
    "language": "JavaScript",
    "sourceNote": "auto",
    "watchReason": "蹭tag",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "mcp-server",
@@ -95716,7 +95815,7 @@
    "language": "JavaScript",
    "sourceNote": "auto",
    "watchReason": "蹭tag",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-balance-plugin",
@@ -95764,7 +95863,7 @@
     "zh": "DeepSeek Harness (DSH) 插件管理面板：一键启用/停用插件 + GitHub dsh-plugin 插件市场，带插件详情与一键安装 | Plugin manager & marketplace for DeepSeek Harness"
    },
    "author": "Noob-stupid",
-   "stars": 116,
+   "stars": 118,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -95784,7 +95883,7 @@
    "language": "JavaScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "url-manager",
@@ -96274,7 +96373,7 @@
     "zh": "(无描述)"
    },
    "author": "Phant0Meow",
-   "stars": 336,
+   "stars": 337,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -96682,7 +96781,7 @@
     "zh": "DeepSeek Harness 插件市场 · 持续收录 500+ DSH 插件：中文搜索 + 实用五维评分 + 一键安装。Web 版与 DSH 侧边栏插件双形态。Plugin marketplace for DeepSeek Harness: 500+ plugins, Ch…"
    },
    "author": "2BingLing",
-   "stars": 184,
+   "stars": 185,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -97110,7 +97209,7 @@
    "language": "JavaScript",
    "sourceNote": "auto",
    "watchReason": "占位",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-surface-contract-proof",
@@ -97192,7 +97291,7 @@
     "zh": "Desktop-native BigFish companion for DeepSeek Harness — real Agent status, always on top on Windows."
    },
    "author": "QCYTSN",
-   "stars": 555,
+   "stars": 562,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -97260,7 +97359,7 @@
     "zh": "AI code reviews grounded in 12 classic engineering books — decay risk diagnostics with book citations, severity labels, and 6 analysis mode…"
    },
    "author": "hyhmrright",
-   "stars": 1550,
+   "stars": 1552,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -97314,7 +97413,7 @@
    "language": "Go",
    "sourceNote": "auto",
    "watchReason": "蹭tag",
-   "last_push": "2026-10-28"
+   "last_push": "2026-10-30"
   },
   {
    "id": "agent-handoff-skill",
@@ -97654,7 +97753,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-gui",
@@ -98110,7 +98209,7 @@
     "zh": "Curated community plugin directory and live marketplace for DeepSeek Harness."
    },
    "author": "imsai-sh",
-   "stars": 336,
+   "stars": 337,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -98348,7 +98447,7 @@
     "zh": "WSL workspace support for DeepSeek Harness——无缝的 WSL 工作区使用体验，无需在 WSL 之中再安装一个dsh，安装该插件后在 GUI 里直接添加 WSL 工作区即可。WSL workspace support for DeepSe…"
    },
    "author": "6Mikao9",
-   "stars": 102,
+   "stars": 103,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -98368,7 +98467,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-25"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-docker",
@@ -99558,7 +99657,7 @@
    "language": "Python",
    "sourceNote": "auto",
    "watchReason": "占位",
-   "last_push": "2026-10-24"
+   "last_push": "2026-10-30"
   },
   {
    "id": "dsh-skill-manager-sulfide2085",
@@ -99640,7 +99739,7 @@
     "zh": "(无描述)"
    },
    "author": "CAPTAIN1275",
-   "stars": 41,
+   "stars": 42,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -100218,7 +100317,7 @@
     "zh": "The World's First Unified Virtual Filesystem For AI Agents"
    },
    "author": "strukto-ai",
-   "stars": 3755,
+   "stars": 3756,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -100252,7 +100351,7 @@
     "zh": "Make AI coding agents architecture-aware: baseline-first, evidence-verified, drift-checked, and safe across long tasks."
    },
    "author": "GanyuanRan",
-   "stars": 1405,
+   "stars": 1407,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -101462,7 +101561,7 @@
    "language": "TypeScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "graph-memory",
@@ -101510,7 +101609,7 @@
     "zh": "900+ pure-markdown skills for autonomous AI research, organized as 9 freely-composable packages over a 4-layer hierarchy (Campaign → Strate…"
    },
    "author": "yogsoth-ai",
-   "stars": 505,
+   "stars": 506,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -101700,7 +101799,7 @@
    "language": "JavaScript",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-29"
+   "last_push": "2026-10-30"
   },
   {
    "id": "deepseek-harness-web-docker",
@@ -101734,7 +101833,7 @@
    "language": "Shell",
    "sourceNote": "auto",
    "watchReason": "工具链",
-   "last_push": "2026-10-24"
+   "last_push": "2026-10-30"
   },
   {
    "id": "skill",
@@ -101884,7 +101983,7 @@
     "zh": "The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it into shippable, tasteful frontend. Install…"
    },
    "author": "superdesigndev",
-   "stars": 918,
+   "stars": 921,
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -101918,7 +102017,7 @@
     "zh": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn"
    },
    "author": "superdesigndev",
-   "stars": 6495,
+   "stars": 6539,
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -102462,7 +102561,7 @@
     "zh": "A zero-dependency, git-backed micro-lesson library for AI Agents to asynchronously share and search verified debugging experience. Python s…"
    },
    "author": "Ikalus1988",
-   "stars": 543,
+   "stars": 544,
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -102598,7 +102697,7 @@
     "zh": "一款专为 DeepSeek Harness 设计的原生 Android 客户端，支持聊天、审批、工作区、文件及模型管理。A native Android client for DeepSeek Harness with chat, approvals, workspace, f…"
    },
    "author": "Hakunm",
-   "stars": 29,
+   "stars": 30,
    "license": "AGPL-3.0",
    "tags": [],
    "dsh": {
@@ -102734,7 +102833,7 @@
     "zh": "untranslated"
    },
    "author": "ZSeven-W",
-   "stars": 6966,
+   "stars": 6971,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -102972,7 +103071,7 @@
     "zh": "untranslated"
    },
    "author": "freestylefly",
-   "stars": 35253,
+   "stars": 35272,
    "last_push": "2026-10-14",
    "license": "MIT",
    "tags": [],
@@ -103006,7 +103105,7 @@
     "zh": "untranslated"
    },
    "author": "freestylefly",
-   "stars": 962,
+   "stars": 964,
    "last_push": "2026-10-01",
    "license": "MIT",
    "tags": [],
@@ -103074,8 +103173,8 @@
     "zh": "untranslated"
    },
    "author": "Devin-AXIS",
-   "stars": 1635,
-   "last_push": "2026-10-29",
+   "stars": 1641,
+   "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -103142,7 +103241,7 @@
     "zh": "untranslated"
    },
    "author": "ningbainb",
-   "stars": 883,
+   "stars": 882,
    "last_push": "2026-10-30",
    "license": "BSD-3-Clause",
    "tags": [],
@@ -103278,7 +103377,7 @@
     "zh": "untranslated"
    },
    "author": "YaoApp",
-   "stars": 8208,
+   "stars": 8209,
    "last_push": "2026-10-19",
    "license": "NOASSERTION",
    "tags": [],
@@ -103312,7 +103411,7 @@
     "zh": "untranslated"
    },
    "author": "Q00",
-   "stars": 6293,
+   "stars": 6292,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -103346,7 +103445,7 @@
     "zh": "untranslated"
    },
    "author": "EthanYoQ",
-   "stars": 2037,
+   "stars": 2053,
    "last_push": "2026-10-29",
    "license": "GPL-3.0",
    "tags": [],
@@ -103653,7 +103752,7 @@
    },
    "author": "STARDUSTLC666",
    "stars": 10,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -103686,7 +103785,7 @@
     "zh": "untranslated"
    },
    "author": "amruthpillai",
-   "stars": 45084,
+   "stars": 45099,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -103720,7 +103819,7 @@
     "zh": "untranslated"
    },
    "author": "GCWing",
-   "stars": 3371,
+   "stars": 3397,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -103992,7 +104091,7 @@
     "zh": "untranslated"
    },
    "author": "linhut",
-   "stars": 93,
+   "stars": 95,
    "last_push": "2026-10-01",
    "license": "MIT",
    "tags": [],
@@ -104264,7 +104363,7 @@
     "zh": "untranslated"
    },
    "author": "volcengine",
-   "stars": 41173,
+   "stars": 41192,
    "last_push": "2026-10-30",
    "license": "AGPL-3.0",
    "tags": [],
@@ -104401,7 +104500,7 @@
    },
    "author": "vostride",
    "stars": 910,
-   "last_push": "2026-10-28",
+   "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -104604,7 +104703,7 @@
     "zh": "untranslated"
    },
    "author": "fwerkor",
-   "stars": 96,
+   "stars": 106,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -104706,7 +104805,7 @@
     "zh": "untranslated"
    },
    "author": "liguobao",
-   "stars": 970,
+   "stars": 1012,
    "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
@@ -104978,7 +105077,7 @@
     "zh": "untranslated"
    },
    "author": "hairyf",
-   "stars": 3367,
+   "stars": 3374,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -105522,7 +105621,7 @@
     "zh": "untranslated"
    },
    "author": "hashgraph-online",
-   "stars": 1024,
+   "stars": 1028,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -105862,7 +105961,7 @@
     "zh": "untranslated"
    },
    "author": "walkinglabs",
-   "stars": 22478,
+   "stars": 22533,
    "last_push": "2026-10-22",
    "license": "MIT",
    "tags": [],
@@ -105896,7 +105995,7 @@
     "zh": "untranslated"
    },
    "author": "Alisa0808",
-   "stars": 2529,
+   "stars": 2536,
    "last_push": "2026-10-05",
    "license": "MIT",
    "tags": [],
@@ -105930,7 +106029,7 @@
     "zh": "untranslated"
    },
    "author": "Awesome-AI-Pedia",
-   "stars": 510,
+   "stars": 511,
    "last_push": "2026-10-23",
    "license": "MIT",
    "tags": [],
@@ -106032,7 +106131,7 @@
     "zh": "untranslated"
    },
    "author": "Tencent",
-   "stars": 9796,
+   "stars": 9813,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -106440,7 +106539,7 @@
     "zh": "untranslated"
    },
    "author": "alibaba",
-   "stars": 646,
+   "stars": 647,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -106508,7 +106607,7 @@
     "zh": "untranslated"
    },
    "author": "Jesseovo",
-   "stars": 1999,
+   "stars": 2003,
    "last_push": "2026-10-27",
    "license": "NOASSERTION",
    "tags": [],
@@ -106644,7 +106743,7 @@
     "zh": "untranslated"
    },
    "author": "esengine",
-   "stars": 36000,
+   "stars": 36006,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -106712,7 +106811,7 @@
     "zh": "untranslated"
    },
    "author": "MemTensor",
-   "stars": 2162,
+   "stars": 2165,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -106780,7 +106879,7 @@
     "zh": "untranslated"
    },
    "author": "EverMind-AI",
-   "stars": 13711,
+   "stars": 13716,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -106814,7 +106913,7 @@
     "zh": "untranslated"
    },
    "author": "chuspeeism",
-   "stars": 3417,
+   "stars": 3419,
    "last_push": "2026-10-29",
    "license": "Apache-2.0",
    "tags": [],
@@ -106916,7 +107015,7 @@
     "zh": "untranslated"
    },
    "author": "kingOfSoySauce",
-   "stars": 283,
+   "stars": 285,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -107223,7 +107322,7 @@
    },
    "author": "Viy1204",
    "stars": 104,
-   "last_push": "2026-10-27",
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -107290,7 +107389,7 @@
     "zh": "untranslated"
    },
    "author": "Phant0Meow",
-   "stars": 336,
+   "stars": 337,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -107494,7 +107593,7 @@
     "zh": "untranslated"
    },
    "author": "akira399",
-   "stars": 104,
+   "stars": 105,
    "last_push": "2026-10-06",
    "license": "MIT",
    "tags": [],
@@ -107596,7 +107695,7 @@
     "zh": "untranslated"
    },
    "author": "mrpulor-gh",
-   "stars": 329,
+   "stars": 330,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -107936,7 +108035,7 @@
     "zh": "untranslated"
    },
    "author": "dshbox",
-   "stars": 67,
+   "stars": 68,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -108107,7 +108206,7 @@
    },
    "author": "rotifer-protocol",
    "stars": 6,
-   "last_push": "2026-10-28",
+   "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -108378,8 +108477,8 @@
     "zh": "untranslated"
    },
    "author": "FTShare-Lab",
-   "stars": 34,
-   "last_push": "2026-10-29",
+   "stars": 35,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -108651,7 +108750,7 @@
    },
    "author": "openma-ai",
    "stars": 81,
-   "last_push": "2026-10-27",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -108854,7 +108953,7 @@
     "zh": "untranslated"
    },
    "author": "sunchaokun",
-   "stars": 418,
+   "stars": 424,
    "last_push": "2026-09-16",
    "license": "MIT",
    "tags": [],
@@ -108956,7 +109055,7 @@
     "zh": "untranslated"
    },
    "author": "dshplugin",
-   "stars": 398,
+   "stars": 401,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -109024,7 +109123,7 @@
     "zh": "untranslated"
    },
    "author": "wenbin-wb",
-   "stars": 233,
+   "stars": 234,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -109160,7 +109259,7 @@
     "zh": "untranslated"
    },
    "author": "ExElectron",
-   "stars": 54,
+   "stars": 55,
    "last_push": "2026-08-27",
    "license": "MIT",
    "tags": [],
@@ -109262,7 +109361,7 @@
     "zh": "untranslated"
    },
    "author": "ZSeven-W",
-   "stars": 352,
+   "stars": 354,
    "last_push": "2026-09-24",
    "license": "MIT",
    "tags": [],
@@ -109398,7 +109497,7 @@
     "zh": "untranslated"
    },
    "author": "Clarklevis1995",
-   "stars": 693,
+   "stars": 695,
    "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
@@ -109466,7 +109565,7 @@
     "zh": "untranslated"
    },
    "author": "liangmianya",
-   "stars": 624,
+   "stars": 626,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -109534,8 +109633,8 @@
     "zh": "untranslated"
    },
    "author": "Tencent",
-   "stars": 35960,
-   "last_push": "2026-10-29",
+   "stars": 36031,
+   "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -109568,7 +109667,7 @@
     "zh": "untranslated"
    },
    "author": "FSMargoo",
-   "stars": 548,
+   "stars": 547,
    "last_push": "2026-09-01",
    "license": "MIT",
    "tags": [],
@@ -109704,7 +109803,7 @@
     "zh": "untranslated"
    },
    "author": "nocobase",
-   "stars": 24782,
+   "stars": 24790,
    "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
@@ -109738,7 +109837,7 @@
     "zh": "untranslated"
    },
    "author": "Grivn",
-   "stars": 781,
+   "stars": 793,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -109772,7 +109871,7 @@
     "zh": "untranslated"
    },
    "author": "ruvnet",
-   "stars": 80189,
+   "stars": 80245,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -109908,8 +110007,8 @@
     "zh": "untranslated"
    },
    "author": "Chael-Chael",
-   "stars": 22,
-   "last_push": "2026-10-23",
+   "stars": 23,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -109976,7 +110075,7 @@
     "zh": "untranslated"
    },
    "author": "Molunerfinn",
-   "stars": 27440,
+   "stars": 27441,
    "last_push": "2026-10-20",
    "license": "MIT",
    "tags": [],
@@ -110010,7 +110109,7 @@
     "zh": "untranslated"
    },
    "author": "titanwings",
-   "stars": 26193,
+   "stars": 26209,
    "last_push": "2026-10-13",
    "license": "MIT",
    "tags": [],
@@ -110044,7 +110143,7 @@
     "zh": "untranslated"
    },
    "author": "yjh051108",
-   "stars": 7002,
+   "stars": 7000,
    "last_push": "2026-09-18",
    "license": "unknown",
    "tags": [],
@@ -110078,7 +110177,7 @@
     "zh": "untranslated"
    },
    "author": "zhu1090093659",
-   "stars": 9816,
+   "stars": 9846,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -110112,7 +110211,7 @@
     "zh": "untranslated"
    },
    "author": "agentscope-ai",
-   "stars": 3722,
+   "stars": 3725,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -110180,7 +110279,7 @@
     "zh": "untranslated"
    },
    "author": "dsh-tauri-desk",
-   "stars": 3367,
+   "stars": 3374,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -110214,7 +110313,7 @@
     "zh": "untranslated"
    },
    "author": "vshulcz",
-   "stars": 1337,
+   "stars": 1340,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -110384,7 +110483,7 @@
     "zh": "untranslated"
    },
    "author": "yuc16",
-   "stars": 66,
+   "stars": 67,
    "last_push": "2026-08-29",
    "license": "unknown",
    "tags": [],
@@ -110486,7 +110585,7 @@
     "zh": "untranslated"
    },
    "author": "Aisland-SJL",
-   "stars": 816,
+   "stars": 817,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -110928,7 +111027,7 @@
     "zh": "untranslated"
    },
    "author": "zilliztech",
-   "stars": 2808,
+   "stars": 2809,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -111098,8 +111197,8 @@
     "zh": "untranslated"
    },
    "author": "anywhere-labs",
-   "stars": 34095,
-   "last_push": "2026-10-29",
+   "stars": 34143,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -111472,7 +111571,7 @@
     "zh": "untranslated"
    },
    "author": "Yu-tao-Li",
-   "stars": 330,
+   "stars": 351,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -111540,7 +111639,7 @@
     "zh": "untranslated"
    },
    "author": "platonai",
-   "stars": 1170,
+   "stars": 1171,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -111575,7 +111674,7 @@
    },
    "author": "gjj-star",
    "stars": 22,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -111812,7 +111911,7 @@
     "zh": "untranslated"
    },
    "author": "AdamPlatin123",
-   "stars": 1488,
+   "stars": 1487,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -111846,7 +111945,7 @@
     "zh": "untranslated"
    },
    "author": "Unclecheng-li",
-   "stars": 1672,
+   "stars": 1677,
    "last_push": "2026-10-26",
    "license": "MIT",
    "tags": [],
@@ -111914,8 +112013,8 @@
     "zh": "untranslated"
    },
    "author": "MichengAI",
-   "stars": 107,
-   "last_push": "2026-10-29",
+   "stars": 109,
+   "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -112084,7 +112183,7 @@
     "zh": "untranslated"
    },
    "author": "myYangyunfan",
-   "stars": 738,
+   "stars": 740,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -112288,7 +112387,7 @@
     "zh": "untranslated"
    },
    "author": "duhu2000",
-   "stars": 95,
+   "stars": 96,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -112458,7 +112557,7 @@
     "zh": "untranslated"
    },
    "author": "anbeime",
-   "stars": 8917,
+   "stars": 8934,
    "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
@@ -112492,7 +112591,7 @@
     "zh": "untranslated"
    },
    "author": "SepineTam",
-   "stars": 60,
+   "stars": 61,
    "last_push": "2026-10-28",
    "license": "GPL-3.0",
    "tags": [],
@@ -112730,7 +112829,7 @@
     "zh": "untranslated"
    },
    "author": "9livewolf",
-   "stars": 18,
+   "stars": 17,
    "last_push": "2026-08-27",
    "license": "unknown",
    "tags": [],
@@ -112764,8 +112863,8 @@
     "zh": "untranslated"
    },
    "author": "plastic-labs",
-   "stars": 7832,
-   "last_push": "2026-10-29",
+   "stars": 7835,
+   "last_push": "2026-10-30",
    "license": "AGPL-3.0",
    "tags": [],
    "dsh": {
@@ -112900,8 +112999,8 @@
     "zh": "untranslated"
    },
    "author": "OpenPetsHQ",
-   "stars": 1354,
-   "last_push": "2026-10-28",
+   "stars": 1353,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -112934,7 +113033,7 @@
     "zh": "untranslated"
    },
    "author": "inclusionAI",
-   "stars": 596,
+   "stars": 597,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -113036,7 +113135,7 @@
     "zh": "untranslated"
    },
    "author": "Amakurai",
-   "stars": 230,
+   "stars": 229,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -113138,7 +113237,7 @@
     "zh": "untranslated"
    },
    "author": "chenxiachan",
-   "stars": 720,
+   "stars": 719,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -113274,7 +113373,7 @@
     "zh": "untranslated"
    },
    "author": "GCWing",
-   "stars": 3371,
+   "stars": 3397,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -113376,7 +113475,7 @@
     "zh": "untranslated"
    },
    "author": "jo32",
-   "stars": 25,
+   "stars": 26,
    "last_push": "2026-10-17",
    "license": "MIT",
    "tags": [],
@@ -113478,7 +113577,7 @@
     "zh": "untranslated"
    },
    "author": "himovo",
-   "stars": 469,
+   "stars": 472,
    "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
@@ -113614,7 +113713,7 @@
     "zh": "untranslated"
    },
    "author": "reactive-resume",
-   "stars": 45084,
+   "stars": 45099,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -113649,7 +113748,7 @@
    },
    "author": "gitroomhq",
    "stars": 558,
-   "last_push": "2026-10-22",
+   "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
    "dsh": {
@@ -113682,7 +113781,7 @@
     "zh": "untranslated"
    },
    "author": "agentic-os-org",
-   "stars": 646,
+   "stars": 647,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -113818,7 +113917,7 @@
     "zh": "untranslated"
    },
    "author": "yinnho",
-   "stars": 56,
+   "stars": 55,
    "last_push": "2026-10-28",
    "license": "Apache-2.0",
    "tags": [],
@@ -113852,7 +113951,7 @@
     "zh": "untranslated"
    },
    "author": "reactive-resume",
-   "stars": 45084,
+   "stars": 45099,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -113920,7 +114019,7 @@
     "zh": "untranslated"
    },
    "author": "sopaco",
-   "stars": 3155,
+   "stars": 3156,
    "last_push": "2026-09-14",
    "license": "MIT",
    "tags": [],
@@ -114158,7 +114257,7 @@
     "zh": "untranslated"
    },
    "author": "wushi2333",
-   "stars": 24,
+   "stars": 25,
    "last_push": "2026-09-15",
    "license": "MIT",
    "tags": [],
@@ -114193,7 +114292,7 @@
    },
    "author": "BrokkAi",
    "stars": 18,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
    "dsh": {
@@ -114226,7 +114325,7 @@
     "zh": "untranslated"
    },
    "author": "acryldev",
-   "stars": 331,
+   "stars": 332,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -114261,7 +114360,7 @@
    },
    "author": "834063245-creator",
    "stars": 24,
-   "last_push": "2026-10-29",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -114294,7 +114393,7 @@
     "zh": "untranslated"
    },
    "author": "dsh-tauri",
-   "stars": 3367,
+   "stars": 3374,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -114362,8 +114461,8 @@
     "zh": "untranslated"
    },
    "author": "Noob-stupid",
-   "stars": 116,
-   "last_push": "2026-10-29",
+   "stars": 118,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -114464,7 +114563,7 @@
     "zh": "untranslated"
    },
    "author": "dataelement",
-   "stars": 16998,
+   "stars": 17026,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -114498,7 +114597,7 @@
     "zh": "untranslated"
    },
    "author": "ranxianglei",
-   "stars": 3389,
+   "stars": 3426,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -114600,7 +114699,7 @@
     "zh": "untranslated"
    },
    "author": "lingfengQAQ",
-   "stars": 7747,
+   "stars": 7756,
    "last_push": "2026-10-24",
    "license": "GPL-3.0",
    "tags": [],
@@ -114702,7 +114801,7 @@
     "zh": "untranslated"
    },
    "author": "Nwflower",
-   "stars": 394,
+   "stars": 400,
    "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],
@@ -114940,7 +115039,7 @@
     "zh": "untranslated"
    },
    "author": "Miaotofu01",
-   "stars": 1273,
+   "stars": 1277,
    "last_push": "2026-10-21",
    "license": "MIT",
    "tags": [],
@@ -114974,8 +115073,8 @@
     "zh": "untranslated"
    },
    "author": "anywhere-labs",
-   "stars": 2493,
-   "last_push": "2026-10-29",
+   "stars": 2513,
+   "last_push": "2026-10-30",
    "license": "unknown",
    "tags": [],
    "dsh": {
@@ -115042,7 +115141,7 @@
     "zh": "untranslated"
    },
    "author": "Finderchangchang",
-   "stars": 175,
+   "stars": 176,
    "last_push": "2026-10-12",
    "license": "Apache-2.0",
    "tags": [],
@@ -115076,7 +115175,7 @@
     "zh": "untranslated"
    },
    "author": "Mr-remon219",
-   "stars": 58,
+   "stars": 59,
    "last_push": "2026-10-18",
    "license": "MIT",
    "tags": [],
@@ -115212,7 +115311,7 @@
     "zh": "untranslated"
    },
    "author": "Andersen216",
-   "stars": 70,
+   "stars": 73,
    "last_push": "2026-10-20",
    "license": "MIT",
    "tags": [],
@@ -115246,8 +115345,8 @@
     "zh": "untranslated"
    },
    "author": "dsh-wsl-workspace-maintainers",
-   "stars": 102,
-   "last_push": "2026-10-25",
+   "stars": 103,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -115416,7 +115515,7 @@
     "zh": "untranslated"
    },
    "author": "ChisaAlter",
-   "stars": 198,
+   "stars": 199,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -115450,8 +115549,8 @@
     "zh": "untranslated"
    },
    "author": "DSH-EAC",
-   "stars": 2313,
-   "last_push": "2026-10-28",
+   "stars": 2318,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -115484,8 +115583,8 @@
     "zh": "untranslated"
    },
    "author": "DSH-EAC",
-   "stars": 2313,
-   "last_push": "2026-10-28",
+   "stars": 2318,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -115518,8 +115617,8 @@
     "zh": "untranslated"
    },
    "author": "techflag",
-   "stars": 279,
-   "last_push": "2026-10-18",
+   "stars": 282,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -115654,7 +115753,7 @@
     "zh": "untranslated"
    },
    "author": "chromoany",
-   "stars": 78,
+   "stars": 79,
    "last_push": "2026-10-29",
    "license": "MIT",
    "tags": [],
@@ -115756,7 +115855,7 @@
     "zh": "untranslated"
    },
    "author": "hanliang97",
-   "stars": 1161,
+   "stars": 1165,
    "last_push": "2026-10-29",
    "license": "GPL-2.0",
    "tags": [],
@@ -115824,7 +115923,7 @@
     "zh": "untranslated"
    },
    "author": "kenz1117",
-   "stars": 47,
+   "stars": 49,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -115858,8 +115957,8 @@
     "zh": "untranslated"
    },
    "author": "Ebony-Vinyl",
-   "stars": 2313,
-   "last_push": "2026-10-28",
+   "stars": 2318,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -115926,7 +116025,7 @@
     "zh": "untranslated"
    },
    "author": "KannaKuron",
-   "stars": 26,
+   "stars": 28,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -115960,7 +116059,7 @@
     "zh": "untranslated"
    },
    "author": "Imzl-zl",
-   "stars": 38,
+   "stars": 39,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -115994,7 +116093,7 @@
     "zh": "untranslated"
    },
    "author": "QingYunA",
-   "stars": 4811,
+   "stars": 4865,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -116096,7 +116195,7 @@
     "zh": "untranslated"
    },
    "author": "eleckoi",
-   "stars": 74,
+   "stars": 75,
    "last_push": "2026-10-29",
    "license": "AGPL-3.0",
    "tags": [],
@@ -116198,7 +116297,7 @@
     "zh": "untranslated"
    },
    "author": "tiwe0",
-   "stars": 124,
+   "stars": 125,
    "last_push": "2026-10-29",
    "license": "Apache-2.0",
    "tags": [],
@@ -116232,7 +116331,7 @@
     "zh": "untranslated"
    },
    "author": "delta-box",
-   "stars": 256,
+   "stars": 271,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -116300,7 +116399,7 @@
     "zh": "untranslated"
    },
    "author": "xcisxc29",
-   "stars": 43,
+   "stars": 44,
    "last_push": "2026-10-20",
    "license": "MIT",
    "tags": [],
@@ -116334,7 +116433,7 @@
     "zh": "untranslated"
    },
    "author": "Ianzhyh",
-   "stars": 45,
+   "stars": 46,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -116402,7 +116501,7 @@
     "zh": "untranslated"
    },
    "author": "ffyfox",
-   "stars": 34,
+   "stars": 35,
    "last_push": "2026-10-29",
    "license": "NOASSERTION",
    "tags": [],
@@ -116470,7 +116569,7 @@
     "zh": "untranslated"
    },
    "author": "iflytek",
-   "stars": 5338,
+   "stars": 5341,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -116539,7 +116638,7 @@
    },
    "author": "Rosynb666",
    "stars": 101,
-   "last_push": "2026-10-28",
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -116606,8 +116705,8 @@
     "zh": "untranslated"
    },
    "author": "polang233",
-   "stars": 95,
-   "last_push": "2026-10-29",
+   "stars": 98,
+   "last_push": "2026-10-30",
    "license": "GPL-3.0",
    "tags": [],
    "dsh": {
@@ -116674,7 +116773,7 @@
     "zh": "untranslated"
    },
    "author": "luowang-ui",
-   "stars": 72,
+   "stars": 74,
    "last_push": "2026-10-17",
    "license": "MIT",
    "tags": [],
@@ -116708,7 +116807,7 @@
     "zh": "untranslated"
    },
    "author": "ninetyhe-90",
-   "stars": 33,
+   "stars": 32,
    "last_push": "2026-10-22",
    "license": "MIT",
    "tags": [],
@@ -116844,7 +116943,7 @@
     "zh": "untranslated"
    },
    "author": "oceanbase",
-   "stars": 1399,
+   "stars": 1435,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -116878,7 +116977,7 @@
     "zh": "untranslated"
    },
    "author": "regrevia",
-   "stars": 96,
+   "stars": 97,
    "last_push": "2026-10-30",
    "license": "Apache-2.0",
    "tags": [],
@@ -116912,7 +117011,7 @@
     "zh": "untranslated"
    },
    "author": "LiarMTTT",
-   "stars": 193,
+   "stars": 194,
    "last_push": "2026-10-25",
    "license": "NOASSERTION",
    "tags": [],
@@ -116980,7 +117079,7 @@
     "zh": "untranslated"
    },
    "author": "Windsander",
-   "stars": 57,
+   "stars": 60,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -117286,8 +117385,8 @@
     "zh": "untranslated"
    },
    "author": "01men",
-   "stars": 26,
-   "last_push": "2026-10-29",
+   "stars": 28,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -117320,7 +117419,7 @@
     "zh": "untranslated"
    },
    "author": "cherrchen",
-   "stars": 16,
+   "stars": 17,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -117592,7 +117691,7 @@
     "zh": "untranslated"
    },
    "author": "dsh-ssh",
-   "stars": 15,
+   "stars": 16,
    "last_push": "2026-08-27",
    "license": "MIT",
    "tags": [],
@@ -117626,8 +117725,8 @@
     "zh": "untranslated"
    },
    "author": "XHR666",
-   "stars": 12,
-   "last_push": "2026-10-29",
+   "stars": 11,
+   "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
    "dsh": {
@@ -117660,7 +117759,7 @@
     "zh": "untranslated"
    },
    "author": "GDWhisper",
-   "stars": 55,
+   "stars": 56,
    "last_push": "2026-10-30",
    "license": "MIT",
    "tags": [],
@@ -117694,7 +117793,7 @@
     "zh": "untranslated"
    },
    "author": "joeseesun",
-   "stars": 69,
+   "stars": 72,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -117728,7 +117827,7 @@
     "zh": "untranslated"
    },
    "author": "azwosile",
-   "stars": 23,
+   "stars": 24,
    "last_push": "2026-10-15",
    "license": "MIT",
    "tags": [],
@@ -117762,7 +117861,7 @@
     "zh": "untranslated"
    },
    "author": "zhuyansen",
-   "stars": 1972,
+   "stars": 1979,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -117796,7 +117895,7 @@
     "zh": "untranslated"
    },
    "author": "zhuyansen",
-   "stars": 57,
+   "stars": 59,
    "last_push": "2026-10-28",
    "license": "MIT",
    "tags": [],
@@ -117932,7 +118031,7 @@
     "zh": "untranslated"
    },
    "author": "6shenhonghong9",
-   "stars": 639,
+   "stars": 651,
    "last_push": "2026-10-27",
    "license": "MIT",
    "tags": [],
@@ -117966,7 +118065,7 @@
     "zh": "untranslated"
    },
    "author": "uumit-ai",
-   "stars": 110,
+   "stars": 155,
    "last_push": "2026-10-21",
    "license": "MIT",
    "tags": [],
@@ -118000,7 +118099,7 @@
     "zh": "untranslated"
    },
    "author": "op7418",
-   "stars": 33,
+   "stars": 34,
    "last_push": "2026-10-29",
    "license": "NOASSERTION",
    "tags": [],
@@ -118068,7 +118167,7 @@
     "zh": "untranslated"
    },
    "author": "zkforge",
-   "stars": 24,
+   "stars": 25,
    "last_push": "2026-10-30",
    "license": "NOASSERTION",
    "tags": [],

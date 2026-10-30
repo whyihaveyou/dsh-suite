@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-30T07:08:47.023Z",
+ "ts": "2026-10-30T14:11:11.235Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1091,6 +1091,7 @@
   "dsh-github-login",
   "dsh-github-pivotstackintelligence",
   "dsh-global-rules",
+  "dsh-go",
   "dsh-go-rotator",
   "dsh-goal-mode-enhance",
   "dsh-godot-skill",
@@ -1194,6 +1195,7 @@
   "dsh-infinite-gen-2",
   "dsh-infinite-gen-3",
   "dsh-infinite-gen-4",
+  "dsh-inject",
   "dsh-inline-images",
   "dsh-input-history",
   "dsh-input-history-omdsh-dev",
@@ -1930,6 +1932,7 @@
   "dsh-prompt-presets",
   "dsh-prompt-profile",
   "dsh-prompt-rail",
+  "dsh-prompt-rewriter",
   "dsh-prompt-setting",
   "dsh-prompt-stash",
   "dsh-prompt-studio",

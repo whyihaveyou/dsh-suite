@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-30T01:02:22.592Z",
+ "ts": "2026-10-30T07:08:47.023Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -653,6 +653,7 @@
   "dsh-chrome-devtools",
   "dsh-ci-cd-bot",
   "dsh-ci-doctor",
+  "dsh-claude-desktop-theme",
   "dsh-claude-marketplace",
   "dsh-claude-mem",
   "dsh-claude-move",
@@ -2481,6 +2482,7 @@
   "dsh-undo-plugin",
   "dsh-undo-savepoint",
   "dsh-univer-office",
+  "dsh-unlag",
   "dsh-unlimited-ocr-skill",
   "dsh-unread-dot",
   "dsh-update-check",

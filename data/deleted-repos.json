@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T14:11:11.143Z",
+  "generated_at": "2026-10-30T19:24:56.660Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1271,6 +1271,15 @@
       "lastKnownUrl": "https://github.com/zcx369658780/governed-workflow-for-dsh"
     },
     {
+      "repo": "zdjmrq/dsh-attention-notifier",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-30T14:11:11.132Z",
+      "lastDetectedAt": "2026-10-30T19:24:56.643Z",
+      "lastStars": 1,
+      "lastPush": "2026-10-04",
+      "lastKnownUrl": "https://github.com/zdjmrq/dsh-attention-notifier"
+    },
+    {
       "repo": "zevorn/dsh-humanize",
       "seen": 2,
       "firstDetectedAt": "2026-08-24T10:06:54.409Z",
@@ -1341,15 +1350,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "zdjmrq/dsh-attention-notifier",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-30T14:11:11.132Z",
-      "lastDetectedAt": "2026-10-30T14:11:11.133Z",
-      "lastStars": 1,
-      "lastPush": "2026-10-04",
-      "lastKnownUrl": "https://github.com/zdjmrq/dsh-attention-notifier"
     }
   ]
 }

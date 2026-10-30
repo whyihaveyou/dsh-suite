@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-29T20:20:13.906Z",
+ "ts": "2026-10-30T01:02:22.592Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -992,6 +992,7 @@
   "dsh-factory-provider",
   "dsh-fail-logger",
   "dsh-failure-capsule",
+  "dsh-familiar-memory",
   "dsh-fate-spectrum",
   "dsh-feishu",
   "dsh-feishu-bot",
@@ -3249,6 +3250,7 @@
   "tokenbank",
   "tokenledger",
   "tokilake-ai-gateway",
+  "tomc",
   "tongflow",
   "tonghuashun-webui",
   "toolshrink",

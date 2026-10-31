@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T17:46:13.811Z",
+  "generated_at": "2026-10-31T21:37:05.155Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1082,6 +1082,15 @@
       "lastKnownUrl": "https://github.com/tianji-qingtian/dsh-spec-loop"
     },
     {
+      "repo": "Treasure-hub-agent/dsh-story",
+      "seen": 2,
+      "firstDetectedAt": "2026-10-31T17:46:13.798Z",
+      "lastDetectedAt": "2026-10-31T21:37:05.138Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Treasure-hub-agent/dsh-story"
+    },
+    {
       "repo": "urzeye/dsh-outline",
       "seen": 2,
       "firstDetectedAt": "2026-08-31T13:54:26.968Z",
@@ -1350,15 +1359,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "Treasure-hub-agent/dsh-story",
-      "seen": 1,
-      "firstDetectedAt": "2026-10-31T17:46:13.798Z",
-      "lastDetectedAt": "2026-10-31T17:46:13.798Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-15",
-      "lastKnownUrl": "https://github.com/Treasure-hub-agent/dsh-story"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-30T23:49:10.165Z",
+ "ts": "2026-10-31T05:43:22.460Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1192,6 +1192,7 @@
   "dsh-imggenerate",
   "dsh-import-agents",
   "dsh-improved-inline-edit",
+  "dsh-in-hand",
   "dsh-index",
   "dsh-industry-research",
   "dsh-infinite-gen-2",
@@ -2966,6 +2967,7 @@
   "mcp-for-stata",
   "mcp-sentinel",
   "mcp-server",
+  "mcp-server-fanqie",
   "mebular",
   "mellos-mapping",
   "mem9",

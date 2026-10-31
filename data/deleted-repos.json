@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T19:24:56.660Z",
+  "generated_at": "2026-10-31T17:46:13.811Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1350,6 +1350,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "Treasure-hub-agent/dsh-story",
+      "seen": 1,
+      "firstDetectedAt": "2026-10-31T17:46:13.798Z",
+      "lastDetectedAt": "2026-10-31T17:46:13.798Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/Treasure-hub-agent/dsh-story"
     }
   ]
 }

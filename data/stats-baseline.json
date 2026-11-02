@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-01T23:38:00.925Z",
+ "ts": "2026-11-02T06:05:48.688Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -588,6 +588,7 @@
   "dsh-board",
   "dsh-book2skill",
   "dsh-bookmarks",
+  "dsh-boot-animation",
   "dsh-boot-animation-pro",
   "dsh-boot-guard",
   "dsh-boot-suite",
@@ -2096,6 +2097,7 @@
   "dsh-security-audit",
   "dsh-security-scan",
   "dsh-see-image",
+  "dsh-see-now",
   "dsh-seismicx",
   "dsh-selection-ask",
   "dsh-self-checking-profile",
@@ -2997,6 +2999,7 @@
   "miliastra-beyond-simulator",
   "minara-skills",
   "mindmemos",
+  "mindsea",
   "mindspace-dsh-local-rag",
   "mindspace-dsh-session-memory",
   "minecraft-dev",

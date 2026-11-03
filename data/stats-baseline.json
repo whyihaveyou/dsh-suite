@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-03T15:11:02.730Z",
+ "ts": "2026-11-03T21:07:00.709Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -504,6 +504,7 @@
   "dsh-aura-scheduler",
   "dsh-aurabot-qq",
   "dsh-aurabot-qq-aureth-labs",
+  "dsh-auth-cookie-guard",
   "dsh-auth-gate",
   "dsh-auth-gateway",
   "dsh-authinone",
@@ -1969,6 +1970,7 @@
   "dsh-purge-021rc2",
   "dsh-purge-555bbbaaa",
   "dsh-purge-flash",
+  "dsh-purge-hunyisage",
   "dsh-purge-kingcharleslzy-ai",
   "dsh-purge-lanjingod",
   "dsh-purge-mmparko",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T15:11:02.591Z",
+  "generated_at": "2026-11-03T21:07:00.593Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -180,6 +180,15 @@
       "lastStars": 3,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/bkMoon1024/dsh-ci-cd-bot"
+    },
+    {
+      "repo": "CAPTAIN1275/dsh-ui-web",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-03T15:11:02.437Z",
+      "lastDetectedAt": "2026-11-03T21:07:00.576Z",
+      "lastStars": 43,
+      "lastPush": "2026-11-01",
+      "lastKnownUrl": "https://github.com/CAPTAIN1275/dsh-ui-web"
     },
     {
       "repo": "cerebrixos-org/tuning-engines-cli",
@@ -1350,15 +1359,6 @@
       "lastStars": 2,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
-    },
-    {
-      "repo": "CAPTAIN1275/dsh-ui-web",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-03T15:11:02.437Z",
-      "lastDetectedAt": "2026-11-03T15:11:02.437Z",
-      "lastStars": 43,
-      "lastPush": "2026-11-01",
-      "lastKnownUrl": "https://github.com/CAPTAIN1275/dsh-ui-web"
     },
     {
       "repo": "chokwinlee/deepseek-harness-desktop",

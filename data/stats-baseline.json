@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-02T23:32:44.019Z",
+ "ts": "2026-11-03T06:49:49.162Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -571,6 +571,7 @@
   "dsh-beyond-glass",
   "dsh-bg-new",
   "dsh-bili-humanism",
+  "dsh-bili-pond",
   "dsh-bili-scroll",
   "dsh-bilibili",
   "dsh-billing",
@@ -2274,6 +2275,7 @@
   "dsh-subscriptions",
   "dsh-suggest-prompt",
   "dsh-suggested-replies",
+  "dsh-super-code",
   "dsh-super-injector",
   "dsh-superpower",
   "dsh-superpowers",

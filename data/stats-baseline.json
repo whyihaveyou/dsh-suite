@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-03T06:49:49.162Z",
+ "ts": "2026-11-03T15:11:02.730Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -122,6 +122,7 @@
   "brooks-lint",
   "browser-bridge",
   "browser4",
+  "browserpaw",
   "browserskill",
   "build-hos-mcp",
   "caliper",
@@ -604,6 +605,7 @@
   "dsh-browser-anweat",
   "dsh-browser-ben7am1n",
   "dsh-browser-bridge",
+  "dsh-browser-cdp",
   "dsh-browser-companion",
   "dsh-browser-control",
   "dsh-browser-control-angelky7",
@@ -1338,6 +1340,7 @@
   "dsh-market",
   "dsh-market-2bingling",
   "dsh-marketplace",
+  "dsh-marktext",
   "dsh-material-you",
   "dsh-math-team",
   "dsh-mattpocock-skills",
@@ -3053,6 +3056,7 @@
   "novel-writer",
   "nowledge-mem-deepseek-harness",
   "nuphus-mcp",
+  "nuwa-skill",
   "octie-dsh-plugin",
   "odai",
   "oh-dsh",

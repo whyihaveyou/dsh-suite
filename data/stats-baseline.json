@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-03T21:07:00.709Z",
+ "ts": "2026-11-04T01:24:00.932Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -412,6 +412,7 @@
   "dsh-agent-budget",
   "dsh-agent-compact",
   "dsh-agent-compact-mimichunterz",
+  "dsh-agent-compare",
   "dsh-agent-eval",
   "dsh-agent-hub",
   "dsh-agent-memory",
@@ -2841,6 +2842,7 @@
   "fasthtml-desktop",
   "fdtd-mcp",
   "ff-toolkit",
+  "filens",
   "flameox",
   "flashcoder",
   "flowboard",

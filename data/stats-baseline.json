@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-04T01:24:00.932Z",
+ "ts": "2026-11-04T09:15:17.400Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1299,6 +1299,7 @@
   "dsh-lineage",
   "dsh-liquid-glass",
   "dsh-liquid-glass-balance-card",
+  "dsh-live-compact",
   "dsh-live-stats",
   "dsh-live2d-companion",
   "dsh-live2d-mygo",
@@ -2909,6 +2910,8 @@
   "honcho",
   "html-doc-center",
   "html-workbench",
+  "huashu-design",
+  "huashu-excel",
   "huaweicloud-devkit",
   "humanizer-ru",
   "hypr-agent-protal",

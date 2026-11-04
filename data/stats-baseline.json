@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-04T17:18:30.790Z",
+ "ts": "2026-11-04T22:41:48.631Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2613,6 +2613,7 @@
   "dsh-voice-input-plugin",
   "dsh-voice-mic",
   "dsh-voice-mode",
+  "dsh-voice-prompt-enhancer",
   "dsh-voice-scribe",
   "dsh-voice-zhuiyueya",
   "dsh-vqa-agent",
@@ -3318,6 +3319,7 @@
   "univer-workspace",
   "upstream-radar",
   "url-manager",
+  "verge-browser",
   "vibe-mathematics",
   "vibe-skills",
   "vibemeter",

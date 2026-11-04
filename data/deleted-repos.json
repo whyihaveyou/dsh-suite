@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T17:18:30.651Z",
+  "generated_at": "2026-11-04T22:41:48.550Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -965,6 +965,15 @@
       "lastKnownUrl": "https://github.com/RealAlexandreAI/dsh-nocturne-memory"
     },
     {
+      "repo": "RevolutionLA/dsh-dream-skin",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-04T17:18:30.638Z",
+      "lastDetectedAt": "2026-11-04T22:41:48.541Z",
+      "lastStars": 300,
+      "lastPush": "2026-11-04",
+      "lastKnownUrl": "https://github.com/RevolutionLA/dsh-dream-skin"
+    },
+    {
       "repo": "Roy-oss1/dsh-lark",
       "seen": 2,
       "firstDetectedAt": "2026-08-14T19:22:19.301Z",
@@ -1368,15 +1377,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "RevolutionLA/dsh-dream-skin",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-04T17:18:30.638Z",
-      "lastDetectedAt": "2026-11-04T17:18:30.638Z",
-      "lastStars": 300,
-      "lastPush": "2026-11-04",
-      "lastKnownUrl": "https://github.com/RevolutionLA/dsh-dream-skin"
     }
   ]
 }

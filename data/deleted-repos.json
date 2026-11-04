@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T21:07:00.593Z",
+  "generated_at": "2026-11-04T17:18:30.651Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1368,6 +1368,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "RevolutionLA/dsh-dream-skin",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-04T17:18:30.638Z",
+      "lastDetectedAt": "2026-11-04T17:18:30.638Z",
+      "lastStars": 300,
+      "lastPush": "2026-11-04",
+      "lastKnownUrl": "https://github.com/RevolutionLA/dsh-dream-skin"
     }
   ]
 }

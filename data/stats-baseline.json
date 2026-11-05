@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-05T03:32:11.008Z",
+ "ts": "2026-11-05T12:23:47.052Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -925,6 +925,7 @@
   "dsh-devkit",
   "dsh-devquest",
   "dsh-dfy",
+  "dsh-dfy-louke6572",
   "dsh-diagram",
   "dsh-diff-viewer",
   "dsh-ding",
@@ -1140,6 +1141,7 @@
   "dsh-habits",
   "dsh-hanako",
   "dsh-handbook",
+  "dsh-handraw-style",
   "dsh-harbor",
   "dsh-harmony",
   "dsh-harmony-memorax-ai",

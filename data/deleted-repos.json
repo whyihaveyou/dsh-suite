@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T22:41:48.550Z",
+  "generated_at": "2026-11-06T17:32:14.759Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1377,6 +1377,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "IceWhaleTech/filens",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-06T17:32:14.740Z",
+      "lastDetectedAt": "2026-11-06T17:32:14.740Z",
+      "lastStars": 200,
+      "lastPush": "2026-11-06",
+      "lastKnownUrl": "https://github.com/IceWhaleTech/filens"
     }
   ]
 }

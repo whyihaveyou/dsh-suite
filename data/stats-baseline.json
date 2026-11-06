@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-06T01:35:53.948Z",
+ "ts": "2026-11-06T09:27:14.752Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -31,6 +31,7 @@
   "agentcat",
   "agentdebugx",
   "agentero",
+  "agentero-dsh-plugin",
   "agentframe-v3",
   "agentkey",
   "agentrq",
@@ -1275,6 +1276,7 @@
   "dsh-lan-tool",
   "dsh-lan-uuid-fix",
   "dsh-landscape",
+  "dsh-language-bridge",
   "dsh-lanmode",
   "dsh-lark",
   "dsh-lark-bot",
@@ -3053,6 +3055,7 @@
   "model-usage-plugin",
   "modlens",
   "modsearch",
+  "modus",
   "moji-docs",
   "molibot",
   "molio",

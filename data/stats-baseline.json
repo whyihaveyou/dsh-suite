@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-07T10:11:56.495Z",
+ "ts": "2026-11-07T16:28:49.382Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1481,6 +1481,7 @@
   "dsh-mobile-gui-agent",
   "dsh-mobile-hanui",
   "dsh-mobile-nav",
+  "dsh-mobile-plugin",
   "dsh-mobile-saya-ch",
   "dsh-mobile-simonmedy",
   "dsh-mobile-thanksgiver233",
@@ -2053,6 +2054,7 @@
   "dsh-redteam-model",
   "dsh-reference-anything",
   "dsh-refined",
+  "dsh-reforge",
   "dsh-release-proof",
   "dsh-reloader",
   "dsh-reminder",
@@ -3231,6 +3233,7 @@
   "resanity",
   "research-skills",
   "review-workflow",
+  "rho",
   "riffkit-dsh-plugin",
   "rish-app",
   "risk-rule-design",

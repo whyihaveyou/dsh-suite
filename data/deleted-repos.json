@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:28:49.261Z",
+  "generated_at": "2026-11-07T20:55:05.978Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -603,6 +603,15 @@
       "lastStars": 47,
       "lastPush": "2026-09-06",
       "lastKnownUrl": "https://github.com/huiliyi37/dsh-tianshu-tui-placeholder"
+    },
+    {
+      "repo": "HunYiSage/dsh-purge",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-07T16:28:49.246Z",
+      "lastDetectedAt": "2026-11-07T20:55:05.962Z",
+      "lastStars": 20412,
+      "lastPush": "2026-11-07",
+      "lastKnownUrl": "https://github.com/HunYiSage/dsh-purge"
     },
     {
       "repo": "hyls9527/dsh-plugins",
@@ -1386,15 +1395,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "HunYiSage/dsh-purge",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-07T16:28:49.246Z",
-      "lastDetectedAt": "2026-11-07T16:28:49.246Z",
-      "lastStars": 20412,
-      "lastPush": "2026-11-07",
-      "lastKnownUrl": "https://github.com/HunYiSage/dsh-purge"
     }
   ]
 }

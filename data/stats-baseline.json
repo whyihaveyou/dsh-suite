@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-08T00:38:56.381Z",
+ "ts": "2026-11-08T07:22:56.829Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -828,6 +828,7 @@
   "dsh-cyberworkstation",
   "dsh-cyrene-theme",
   "dsh-dafeiyu",
+  "dsh-dafeiyu-life",
   "dsh-daily-brief",
   "dsh-daily-fortune",
   "dsh-daily-progress",
@@ -1948,6 +1949,7 @@
   "dsh-portable-tavern",
   "dsh-posterflow-ai",
   "dsh-postmortem",
+  "dsh-ppt",
   "dsh-precise-cache",
   "dsh-pref-kit",
   "dsh-prelude",
@@ -2177,6 +2179,7 @@
   "dsh-session-search",
   "dsh-session-search-toggle",
   "dsh-session-stars",
+  "dsh-session-superagent",
   "dsh-session-sync",
   "dsh-session-timeline",
   "dsh-session-tree",

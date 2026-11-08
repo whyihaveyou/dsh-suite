@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T15:15:23.198Z",
+  "generated_at": "2026-11-08T19:44:38.201Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -740,6 +740,15 @@
       "lastKnownUrl": "https://github.com/Kr-ATG/dsh-webui"
     },
     {
+      "repo": "kriskwok/dsh-feishu-gateway",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-08T15:15:23.182Z",
+      "lastDetectedAt": "2026-11-08T19:44:38.181Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-26",
+      "lastKnownUrl": "https://github.com/kriskwok/dsh-feishu-gateway"
+    },
+    {
       "repo": "KureKaruna/dsh-at",
       "seen": 2,
       "firstDetectedAt": "2026-08-22T03:09:13.287Z",
@@ -1395,15 +1404,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "kriskwok/dsh-feishu-gateway",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-08T15:15:23.182Z",
-      "lastDetectedAt": "2026-11-08T15:15:23.182Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-26",
-      "lastKnownUrl": "https://github.com/kriskwok/dsh-feishu-gateway"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T17:31:54.586Z",
+  "generated_at": "2026-11-10T01:33:52.314Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1118,6 +1118,24 @@
       "lastKnownUrl": "https://github.com/stushansusu/dsh-miku-skin"
     },
     {
+      "repo": "suimi8/dsh-cost-ledger",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-09T17:31:54.569Z",
+      "lastDetectedAt": "2026-11-10T01:33:52.294Z",
+      "lastStars": 1,
+      "lastPush": "2026-10-30",
+      "lastKnownUrl": "https://github.com/suimi8/dsh-cost-ledger"
+    },
+    {
+      "repo": "suimi8/dsh-test-runner",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-09T17:31:54.568Z",
+      "lastDetectedAt": "2026-11-10T01:33:52.294Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-13",
+      "lastKnownUrl": "https://github.com/suimi8/dsh-test-runner"
+    },
+    {
       "repo": "tianji-qingtian/dsh-spec-loop",
       "seen": 2,
       "firstDetectedAt": "2026-08-25T08:01:15.316Z",
@@ -1404,24 +1422,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "suimi8/dsh-cost-ledger",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-09T17:31:54.569Z",
-      "lastDetectedAt": "2026-11-09T17:31:54.569Z",
-      "lastStars": 1,
-      "lastPush": "2026-10-30",
-      "lastKnownUrl": "https://github.com/suimi8/dsh-cost-ledger"
-    },
-    {
-      "repo": "suimi8/dsh-test-runner",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-09T17:31:54.568Z",
-      "lastDetectedAt": "2026-11-09T17:31:54.569Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-13",
-      "lastKnownUrl": "https://github.com/suimi8/dsh-test-runner"
     }
   ]
 }

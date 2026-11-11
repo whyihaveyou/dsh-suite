@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-10T23:24:44.787Z",
+ "ts": "2026-11-11T06:23:00.366Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -46,6 +46,7 @@
   "ai-monitor",
   "ai-novel-writer",
   "ai-sdk-provider-dsh",
+  "aibanlv-bot",
   "aitoearn",
   "all",
   "allinluna",
@@ -3266,6 +3267,7 @@
   "rpg-maker-mac-skill",
   "ru-marketplace-mcp",
   "ruflo",
+  "ruic-dsh-purge",
   "runtime36",
   "safe-find-dsh-plugins",
   "sage-mem",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-12T11:12:47.290Z",
+ "ts": "2026-11-12T18:58:47.236Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1336,6 +1336,7 @@
   "dsh-live-compact",
   "dsh-live-compact-tranquillitatis-lab",
   "dsh-live-stats",
+  "dsh-live-vibecoding",
   "dsh-live2d-companion",
   "dsh-live2d-mygo",
   "dsh-live2d-pets",
@@ -2127,6 +2128,7 @@
   "dsh-rtk-optimizer",
   "dsh-rules-manager",
   "dsh-run2skill",
+  "dsh-runtime-log",
   "dsh-russian-lang",
   "dsh-rust-sdk",
   "dsh-s1",
@@ -3292,6 +3294,7 @@
   "search-boost",
   "sebastian-kitchen-board",
   "securstack-dsh-plugin",
+  "sedimem",
   "seektty",
   "seewxapkg",
   "ser2mcp",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T01:33:52.314Z",
+  "generated_at": "2026-11-13T08:00:54.969Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1415,6 +1415,15 @@
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
     },
     {
+      "repo": "BruceWu1126/dsh-web-background",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-13T08:00:54.953Z",
+      "lastDetectedAt": "2026-11-13T08:00:54.953Z",
+      "lastStars": 1,
+      "lastPush": "2026-09-02",
+      "lastKnownUrl": "https://github.com/BruceWu1126/dsh-web-background"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -1422,6 +1431,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "JasonJin2006/dsh-sound-effects-plugin",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-13T08:00:54.952Z",
+      "lastDetectedAt": "2026-11-13T08:00:54.953Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/JasonJin2006/dsh-sound-effects-plugin"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-13T00:27:15.492Z",
+ "ts": "2026-11-13T08:00:55.098Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -613,6 +613,7 @@
   "dsh-boot-animation-pro",
   "dsh-boot-guard",
   "dsh-boot-suite",
+  "dsh-bot",
   "dsh-bottom-bar",
   "dsh-bottom-info-bar",
   "dsh-bottom-stats",
@@ -2336,6 +2337,7 @@
   "dsh-suggested-replies",
   "dsh-super-code",
   "dsh-super-injector",
+  "dsh-super-kanban",
   "dsh-superpower",
   "dsh-superpowers",
   "dsh-supervisor",
@@ -3308,6 +3310,7 @@
   "shopline-ai-toolkit-dsh",
   "sidesight",
   "sieve",
+  "sift-light",
   "silk-background",
   "sivtr",
   "skill",

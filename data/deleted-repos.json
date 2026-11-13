@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T08:00:54.969Z",
+  "generated_at": "2026-11-13T16:27:12.405Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -180,6 +180,15 @@
       "lastStars": 3,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/bkMoon1024/dsh-ci-cd-bot"
+    },
+    {
+      "repo": "BruceWu1126/dsh-web-background",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-13T08:00:54.953Z",
+      "lastDetectedAt": "2026-11-13T16:27:12.162Z",
+      "lastStars": 1,
+      "lastPush": "2026-09-02",
+      "lastKnownUrl": "https://github.com/BruceWu1126/dsh-web-background"
     },
     {
       "repo": "CAPTAIN1275/dsh-ui-web",
@@ -675,6 +684,15 @@
       "lastStars": 151,
       "lastPush": "2026-10-26",
       "lastKnownUrl": "https://github.com/jadezane6634-ops/dsh-purge-flash"
+    },
+    {
+      "repo": "JasonJin2006/dsh-sound-effects-plugin",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-13T08:00:54.952Z",
+      "lastDetectedAt": "2026-11-13T16:27:12.162Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/JasonJin2006/dsh-sound-effects-plugin"
     },
     {
       "repo": "je00/dsh-codex-agent-bridge",
@@ -1415,15 +1433,6 @@
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
     },
     {
-      "repo": "BruceWu1126/dsh-web-background",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-13T08:00:54.953Z",
-      "lastDetectedAt": "2026-11-13T08:00:54.953Z",
-      "lastStars": 1,
-      "lastPush": "2026-09-02",
-      "lastKnownUrl": "https://github.com/BruceWu1126/dsh-web-background"
-    },
-    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -1431,15 +1440,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "JasonJin2006/dsh-sound-effects-plugin",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-13T08:00:54.952Z",
-      "lastDetectedAt": "2026-11-13T08:00:54.953Z",
-      "lastStars": 2,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/JasonJin2006/dsh-sound-effects-plugin"
     }
   ]
 }

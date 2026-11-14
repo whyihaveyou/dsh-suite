@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:10:26.209Z",
+  "generated_at": "2026-11-14T21:32:13.129Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -722,6 +722,24 @@
       "lastKnownUrl": "https://github.com/jilian-dsh/dsh-rules-manager"
     },
     {
+      "repo": "JimLiu/baoyu-design",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastDetectedAt": "2026-11-14T21:32:13.113Z",
+      "lastStars": 6426,
+      "lastPush": "2026-11-13",
+      "lastKnownUrl": "https://github.com/JimLiu/baoyu-design"
+    },
+    {
+      "repo": "JimLiu/open-artifacts",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastDetectedAt": "2026-11-14T21:32:13.114Z",
+      "lastStars": 6426,
+      "lastPush": "2026-11-13",
+      "lastKnownUrl": "https://github.com/JimLiu/open-artifacts"
+    },
+    {
       "repo": "justinhuangai/deepagent",
       "seen": 2,
       "firstDetectedAt": "2026-08-17T05:52:20.287Z",
@@ -1080,6 +1098,15 @@
       "lastStars": 2,
       "lastPush": "2026-08-15",
       "lastKnownUrl": "https://github.com/Shmilyol/galgame-skin"
+    },
+    {
+      "repo": "shuguang1994/project-blueprint",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastDetectedAt": "2026-11-14T21:32:13.114Z",
+      "lastStars": 23,
+      "lastPush": "2026-10-14",
+      "lastKnownUrl": "https://github.com/shuguang1994/project-blueprint"
     },
     {
       "repo": "sjh9714/dsh-what-changed",
@@ -1449,33 +1476,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "JimLiu/baoyu-design",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
-      "lastDetectedAt": "2026-11-14T17:10:26.195Z",
-      "lastStars": 6426,
-      "lastPush": "2026-11-13",
-      "lastKnownUrl": "https://github.com/JimLiu/baoyu-design"
-    },
-    {
-      "repo": "JimLiu/open-artifacts",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
-      "lastDetectedAt": "2026-11-14T17:10:26.195Z",
-      "lastStars": 6426,
-      "lastPush": "2026-11-13",
-      "lastKnownUrl": "https://github.com/JimLiu/open-artifacts"
-    },
-    {
-      "repo": "shuguang1994/project-blueprint",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
-      "lastDetectedAt": "2026-11-14T17:10:26.195Z",
-      "lastStars": 23,
-      "lastPush": "2026-10-14",
-      "lastKnownUrl": "https://github.com/shuguang1994/project-blueprint"
     }
   ]
 }

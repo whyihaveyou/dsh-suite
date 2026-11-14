@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T10:36:59.475Z",
+  "generated_at": "2026-11-14T17:10:26.209Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -576,6 +576,15 @@
       "lastStars": 2,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/Heyflyingpig/long-draft-input"
+    },
+    {
+      "repo": "huaizhuanghub/dsh-persona-dafeiyu",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-14T10:36:59.458Z",
+      "lastDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastStars": 127,
+      "lastPush": "2026-11-04",
+      "lastKnownUrl": "https://github.com/huaizhuanghub/dsh-persona-dafeiyu"
     },
     {
       "repo": "huey1in/reef",
@@ -1442,13 +1451,31 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "huaizhuanghub/dsh-persona-dafeiyu",
+      "repo": "JimLiu/baoyu-design",
       "seen": 1,
-      "firstDetectedAt": "2026-11-14T10:36:59.458Z",
-      "lastDetectedAt": "2026-11-14T10:36:59.458Z",
-      "lastStars": 127,
-      "lastPush": "2026-11-04",
-      "lastKnownUrl": "https://github.com/huaizhuanghub/dsh-persona-dafeiyu"
+      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastStars": 6426,
+      "lastPush": "2026-11-13",
+      "lastKnownUrl": "https://github.com/JimLiu/baoyu-design"
+    },
+    {
+      "repo": "JimLiu/open-artifacts",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastStars": 6426,
+      "lastPush": "2026-11-13",
+      "lastKnownUrl": "https://github.com/JimLiu/open-artifacts"
+    },
+    {
+      "repo": "shuguang1994/project-blueprint",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastDetectedAt": "2026-11-14T17:10:26.195Z",
+      "lastStars": 23,
+      "lastPush": "2026-10-14",
+      "lastKnownUrl": "https://github.com/shuguang1994/project-blueprint"
     }
   ]
 }

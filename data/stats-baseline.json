@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-14T10:36:59.602Z",
+ "ts": "2026-11-14T17:10:26.322Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1608,6 +1608,7 @@
   "dsh-oh-my-claude",
   "dsh-oh-my-theme",
   "dsh-oil-creator",
+  "dsh-oil-ui",
   "dsh-omi-voice",
   "dsh-one-click-launcher",
   "dsh-one-gateway",
@@ -3448,6 +3449,7 @@
   "yinchao-ai-music-skill",
   "yingliu-video-studio",
   "yolo-bot",
+  "youtube-transcript-skills",
   "zagens",
   "zat-dsh-engine",
   "zen-useragent",

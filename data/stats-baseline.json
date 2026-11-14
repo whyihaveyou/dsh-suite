@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-14T03:17:38.024Z",
+ "ts": "2026-11-14T10:36:59.602Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -59,6 +59,7 @@
   "anolisa",
   "anolisa-agentic-os-org",
   "answer-me-with-html",
+  "any-audio",
   "anysearch-dsh",
   "api-cost-meter",
   "api-relay-audit",
@@ -1072,6 +1073,7 @@
   "dsh-fish",
   "dsh-fish-buddy",
   "dsh-fish-memory",
+  "dsh-fish-soul",
   "dsh-flash-presets",
   "dsh-fleet-audit",
   "dsh-flow",
@@ -1651,6 +1653,7 @@
   "dsh-otel",
   "dsh-our-free-model",
   "dsh-our-free-model-ebony-vinyl",
+  "dsh-our-free-model-fish",
   "dsh-outdoor-theme",
   "dsh-outline",
   "dsh-output-styles",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-15T01:57:51.255Z",
+ "ts": "2026-11-15T09:28:36.631Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -760,6 +760,7 @@
   "dsh-coding-subscription-oauth",
   "dsh-comfyui",
   "dsh-comfyui-web",
+  "dsh-comfyui-workbench",
   "dsh-command-opt",
   "dsh-commandcode-go-provider",
   "dsh-commandcode-provider",
@@ -2969,6 +2970,7 @@
   "harness-session-delete",
   "harness-ui-enhancer",
   "harness-whale",
+  "hatoba",
   "hedgehog",
   "hello-dsh",
   "helloagents",

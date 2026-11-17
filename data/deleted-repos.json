@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T03:56:46.497Z",
+  "generated_at": "2026-11-17T13:29:57.677Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -423,6 +423,15 @@
       "lastStars": 43,
       "lastPush": "2026-09-11",
       "lastKnownUrl": "https://github.com/extracurricular-ai/dsh-filesnap"
+    },
+    {
+      "repo": "fanshong/dsh-docker-sidebar",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-17T03:56:46.334Z",
+      "lastDetectedAt": "2026-11-17T13:29:57.662Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/fanshong/dsh-docker-sidebar"
     },
     {
       "repo": "fengzhiyushui/dsh-desktop-window",
@@ -1469,6 +1478,15 @@
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
     },
     {
+      "repo": "Chance-Wu/dsh-change-center",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-17T13:29:57.661Z",
+      "lastDetectedAt": "2026-11-17T13:29:57.661Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/Chance-Wu/dsh-change-center"
+    },
+    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -1476,15 +1494,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "fanshong/dsh-docker-sidebar",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-17T03:56:46.334Z",
-      "lastDetectedAt": "2026-11-17T03:56:46.334Z",
-      "lastStars": 0,
-      "lastPush": "2026-08-14",
-      "lastKnownUrl": "https://github.com/fanshong/dsh-docker-sidebar"
     }
   ]
 }

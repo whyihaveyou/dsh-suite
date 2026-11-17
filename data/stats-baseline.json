@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T03:56:46.615Z",
+ "ts": "2026-11-17T13:29:57.803Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2396,6 +2396,7 @@
   "dsh-tdai-memory",
   "dsh-teacher",
   "dsh-team",
+  "dsh-team-control",
   "dsh-telegram",
   "dsh-telegram-channel",
   "dsh-telegram-relay",
@@ -2449,6 +2450,7 @@
   "dsh-tmux-cc",
   "dsh-to-figma",
   "dsh-todo-freshness-guard",
+  "dsh-todolist",
   "dsh-token-activity",
   "dsh-token-cost",
   "dsh-token-monitor",
@@ -3175,6 +3177,7 @@
   "omdsh-runtime",
   "omni",
   "omniops",
+  "oneclickvirt",
   "opc-nexus",
   "open-artifacts",
   "open-design",
@@ -3240,6 +3243,7 @@
   "plugin-switch",
   "plugin-team-board",
   "plugin-template",
+  "pointy",
   "polaris",
   "polymarket-proxy",
   "postiz-agent",

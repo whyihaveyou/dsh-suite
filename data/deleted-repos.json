@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T13:29:57.677Z",
+  "generated_at": "2026-11-17T22:27:06.914Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -216,6 +216,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/CH4ACKO3/dsh-ui-workspace"
+    },
+    {
+      "repo": "Chance-Wu/dsh-change-center",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-17T13:29:57.661Z",
+      "lastDetectedAt": "2026-11-17T22:27:06.713Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/Chance-Wu/dsh-change-center"
     },
     {
       "repo": "cking000bigdemon/dsh-toolbelt",
@@ -1478,15 +1487,6 @@
       "lastKnownUrl": "https://github.com/zoumutou/dsh-cost-balance"
     },
     {
-      "repo": "Chance-Wu/dsh-change-center",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-17T13:29:57.661Z",
-      "lastDetectedAt": "2026-11-17T13:29:57.661Z",
-      "lastStars": 1,
-      "lastPush": "2026-08-16",
-      "lastKnownUrl": "https://github.com/Chance-Wu/dsh-change-center"
-    },
-    {
       "repo": "chokwinlee/deepseek-harness-desktop",
       "seen": 1,
       "firstDetectedAt": "2026-08-17T01:57:16.596Z",
@@ -1494,6 +1494,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "onehumanbeing/esp32-iphone-agent",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-17T22:27:06.713Z",
+      "lastDetectedAt": "2026-11-17T22:27:06.713Z",
+      "lastStars": 5049,
+      "lastPush": "2026-11-16",
+      "lastKnownUrl": "https://github.com/onehumanbeing/esp32-iphone-agent"
     }
   ]
 }

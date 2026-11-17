@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T21:32:13.129Z",
+  "generated_at": "2026-11-17T03:56:46.497Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1476,6 +1476,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "fanshong/dsh-docker-sidebar",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-17T03:56:46.334Z",
+      "lastDetectedAt": "2026-11-17T03:56:46.334Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/fanshong/dsh-docker-sidebar"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-16T20:31:49.313Z",
+ "ts": "2026-11-17T03:56:46.615Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1573,6 +1573,7 @@
   "dsh-noema",
   "dsh-normify",
   "dsh-notebooks",
+  "dsh-notewall",
   "dsh-notifacation-frame",
   "dsh-notification",
   "dsh-notification-center",
@@ -3240,6 +3241,7 @@
   "plugin-team-board",
   "plugin-template",
   "polaris",
+  "polymarket-proxy",
   "postiz-agent",
   "powercontext",
   "powercontext-dsh",

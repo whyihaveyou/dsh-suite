@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T22:27:06.914Z",
+  "generated_at": "2026-11-18T04:23:38.106Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -956,6 +956,15 @@
       "lastKnownUrl": "https://github.com/ohtokaah-sys/dsh-plugins"
     },
     {
+      "repo": "onehumanbeing/esp32-iphone-agent",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-17T22:27:06.713Z",
+      "lastDetectedAt": "2026-11-18T04:23:38.092Z",
+      "lastStars": 5049,
+      "lastPush": "2026-11-16",
+      "lastKnownUrl": "https://github.com/onehumanbeing/esp32-iphone-agent"
+    },
+    {
       "repo": "OoWJZZoO/dsh-read-image",
       "seen": 2,
       "firstDetectedAt": "2026-10-25T11:31:38.639Z",
@@ -1496,13 +1505,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "onehumanbeing/esp32-iphone-agent",
+      "repo": "WSL043/dsh-chat-manager",
       "seen": 1,
-      "firstDetectedAt": "2026-11-17T22:27:06.713Z",
-      "lastDetectedAt": "2026-11-17T22:27:06.713Z",
-      "lastStars": 5049,
-      "lastPush": "2026-11-16",
-      "lastKnownUrl": "https://github.com/onehumanbeing/esp32-iphone-agent"
+      "firstDetectedAt": "2026-11-18T04:23:38.092Z",
+      "lastDetectedAt": "2026-11-18T04:23:38.092Z",
+      "lastStars": 45,
+      "lastPush": "2026-11-13",
+      "lastKnownUrl": "https://github.com/WSL043/dsh-chat-manager"
     }
   ]
 }

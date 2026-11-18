@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T04:23:38.106Z",
+  "generated_at": "2026-11-18T14:01:16.225Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1343,6 +1343,15 @@
       "lastKnownUrl": "https://github.com/wjy9902/dsh-web-default-session"
     },
     {
+      "repo": "WSL043/dsh-chat-manager",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-18T04:23:38.092Z",
+      "lastDetectedAt": "2026-11-18T14:01:16.102Z",
+      "lastStars": 45,
+      "lastPush": "2026-11-13",
+      "lastKnownUrl": "https://github.com/WSL043/dsh-chat-manager"
+    },
+    {
       "repo": "WTStarMark/QAQ",
       "seen": 2,
       "firstDetectedAt": "2026-09-29T15:56:39.649Z",
@@ -1503,15 +1512,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "WSL043/dsh-chat-manager",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-18T04:23:38.092Z",
-      "lastDetectedAt": "2026-11-18T04:23:38.092Z",
-      "lastStars": 45,
-      "lastPush": "2026-11-13",
-      "lastKnownUrl": "https://github.com/WSL043/dsh-chat-manager"
     }
   ]
 }

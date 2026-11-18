@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T04:23:38.245Z",
+ "ts": "2026-11-18T14:01:16.346Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -13,6 +13,7 @@
   "aflare",
   "agent-body",
   "agent-context-editor",
+  "agent-crop",
   "agent-extensions",
   "agent-fix",
   "agent-guard",
@@ -788,6 +789,7 @@
   "dsh-computer-use-zrui-c",
   "dsh-config-manager",
   "dsh-confirm-gate",
+  "dsh-connect-doubao",
   "dsh-connect-qoder",
   "dsh-connect-qoder-dingminhua",
   "dsh-connect-trae",
@@ -2830,6 +2832,7 @@
   "dsh-workspace-env",
   "dsh-workspace-explorer",
   "dsh-workspace-explorer-jiyr0119",
+  "dsh-workspace-explorer-tm5452",
   "dsh-workspace-files",
   "dsh-workspace-hakunm",
   "dsh-workspace-mcp",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-19T03:29:57.776Z",
+ "ts": "2026-11-19T13:10:06.549Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -2079,6 +2079,7 @@
   "dsh-read-history",
   "dsh-read-image",
   "dsh-read-url",
+  "dsh-realman-studio",
   "dsh-reasoning-effort",
   "dsh-reasoning-effort-hdbzq",
   "dsh-reasoning-settings",
@@ -3246,6 +3247,7 @@
   "pilot-harness",
   "plaindeck",
   "plugin-deus",
+  "plugin-fast-adapt",
   "plugin-manager",
   "plugin-notify",
   "plugin-registry",

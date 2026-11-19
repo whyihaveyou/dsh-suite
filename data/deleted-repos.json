@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T03:29:57.667Z",
+  "generated_at": "2026-11-19T13:10:06.455Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -423,6 +423,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-13",
       "lastKnownUrl": "https://github.com/emredeveloper/deepseek-harness-huggingface"
+    },
+    {
+      "repo": "EricWang1358/dsh-web-studyhub",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-19T03:29:57.644Z",
+      "lastDetectedAt": "2026-11-19T13:10:06.331Z",
+      "lastStars": 195,
+      "lastPush": "2026-11-18",
+      "lastKnownUrl": "https://github.com/EricWang1358/dsh-web-studyhub"
     },
     {
       "repo": "extracurricular-ai/dsh-filesnap",
@@ -1512,15 +1521,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "EricWang1358/dsh-web-studyhub",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-19T03:29:57.644Z",
-      "lastDetectedAt": "2026-11-19T03:29:57.644Z",
-      "lastStars": 195,
-      "lastPush": "2026-11-18",
-      "lastKnownUrl": "https://github.com/EricWang1358/dsh-web-studyhub"
     }
   ]
 }

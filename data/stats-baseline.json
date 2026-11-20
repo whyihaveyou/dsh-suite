@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-20T11:51:28.990Z",
+ "ts": "2026-11-20T20:22:52.097Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -47,6 +47,7 @@
   "ai-monitor",
   "ai-novel-writer",
   "ai-sdk-provider-dsh",
+  "ai4ai",
   "aibanlv-bot",
   "aitoearn",
   "all",
@@ -1812,6 +1813,7 @@
   "dsh-plugin-hub-wingsky-1",
   "dsh-plugin-hub-yunhuantian",
   "dsh-plugin-image-wallpaper",
+  "dsh-plugin-image-workbench",
   "dsh-plugin-index",
   "dsh-plugin-installer",
   "dsh-plugin-installer-showlibia",

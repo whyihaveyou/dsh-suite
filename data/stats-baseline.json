@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-19T21:36:51.278Z",
+ "ts": "2026-11-20T03:17:51.390Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -664,6 +664,7 @@
   "dsh-ccgui",
   "dsh-ccswitch-import",
   "dsh-ccswitch-import-lite",
+  "dsh-cdx-plus",
   "dsh-chameleon",
   "dsh-change-center",
   "dsh-change-review",
@@ -2811,6 +2812,7 @@
   "dsh-windows-mcp",
   "dsh-windows-ocr",
   "dsh-windows-readiness-proof",
+  "dsh-windows-superagent",
   "dsh-wish-specializer",
   "dsh-with-chatgpt",
   "dsh-with-pencil",
@@ -3401,6 +3403,7 @@
   "thinking-level-override",
   "thoughtdag",
   "tianshu-tui",
+  "timon",
   "tingly-box",
   "tizhuang-agent-skills",
   "tkinter-desktop",

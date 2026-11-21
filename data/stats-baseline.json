@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-20T20:22:52.097Z",
+ "ts": "2026-11-21T02:17:35.517Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1090,6 +1090,7 @@
   "dsh-fish",
   "dsh-fish-buddy",
   "dsh-fish-memory",
+  "dsh-fish-mochi-fish",
   "dsh-fish-soul",
   "dsh-flash-presets",
   "dsh-fleet-audit",
@@ -1231,6 +1232,7 @@
   "dsh-humanizer",
   "dsh-hyperframes",
   "dsh-ide",
+  "dsh-ide-git",
   "dsh-ikun-pet",
   "dsh-im",
   "dsh-im-bridge",

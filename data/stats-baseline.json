@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-21T09:56:31.944Z",
+ "ts": "2026-11-21T17:35:03.318Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -624,6 +624,7 @@
   "dsh-boot-guard",
   "dsh-boot-suite",
   "dsh-bot",
+  "dsh-bots",
   "dsh-bottom-bar",
   "dsh-bottom-info-bar",
   "dsh-bottom-stats",
@@ -1109,6 +1110,7 @@
   "dsh-friend",
   "dsh-from-scratch",
   "dsh-fschannel",
+  "dsh-fujiang-unrestricted",
   "dsh-full-remote",
   "dsh-fun-ticker",
   "dsh-fun-typewriter",
@@ -2831,6 +2833,7 @@
   "dsh-workbench",
   "dsh-workbench-dpf555",
   "dsh-workbench-lee259",
+  "dsh-workbuddy",
   "dsh-workbuddy-bridge",
   "dsh-workbuddy-connect",
   "dsh-workbuddy-connect-masknull",
@@ -3483,6 +3486,7 @@
   "workbuddyskillgroups4dsh",
   "workdsh",
   "working-activity",
+  "wow-gongwen-writing",
   "write-chinese-long-screenplay",
   "xiaoliuren-skill",
   "xskill",

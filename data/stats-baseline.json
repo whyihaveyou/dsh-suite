@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-22T03:17:36.216Z",
+ "ts": "2026-11-22T11:35:20.384Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -132,6 +132,7 @@
   "brewreel",
   "brooks-lint",
   "browser-bridge",
+  "browser-hands",
   "browser4",
   "browserpaw",
   "browserskill",
@@ -781,6 +782,7 @@
   "dsh-compact-activity",
   "dsh-compaction-instant",
   "dsh-compaction-instant-tsfreddie",
+  "dsh-compaction-weave",
   "dsh-companion",
   "dsh-companion-yyh-001",
   "dsh-composer-expand",
@@ -832,6 +834,7 @@
   "dsh-council",
   "dsh-cover-pipeline",
   "dsh-cowork",
+  "dsh-craft-anything",
   "dsh-creator",
   "dsh-credential-handoff",
   "dsh-credentials-keychain",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-22T11:35:20.384Z",
+ "ts": "2026-11-22T19:42:43.549Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -1655,6 +1655,7 @@
   "dsh-openapi",
   "dsh-openbiliclaw",
   "dsh-openclaw-acp",
+  "dsh-opencode-bridge",
   "dsh-opencode-go",
   "dsh-opencode-go-box",
   "dsh-opencode-go-quota",

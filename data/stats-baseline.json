@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-23T09:08:23.204Z",
+ "ts": "2026-11-23T21:28:15.202Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -393,6 +393,7 @@
   "ds-api-usage",
   "ds-balance-card",
   "ds-bot",
+  "ds-bot-fei-craft",
   "ds-forge",
   "ds-harness-remote",
   "ds-image-skin",
@@ -2155,6 +2156,7 @@
   "dsh-role-router",
   "dsh-roleplay",
   "dsh-roleplay-preset",
+  "dsh-roost",
   "dsh-ros2",
   "dsh-router-flash",
   "dsh-router-laya",
@@ -2343,6 +2345,7 @@
   "dsh-ssh-plugin",
   "dsh-ssh-remote",
   "dsh-stall-guard",
+  "dsh-stardew-blind-whale-farmer",
   "dsh-startup-screen",
   "dsh-startup-secret",
   "dsh-stats-dashboard",
@@ -3314,6 +3317,7 @@
   "qiushi-dsh-evidence-audit",
   "quantum-practices",
   "querit-plugins",
+  "questmeet-skill",
   "qwen-mm-plugins",
   "rabiroute",
   "ramify-dsh",

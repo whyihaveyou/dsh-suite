@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-24T06:05:59.966Z",
+ "ts": "2026-11-24T17:47:58.103Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -21,6 +21,7 @@
   "agent-handoff-skill",
   "agent-knock-knock",
   "agent-loop-workflow",
+  "agent-memory",
   "agent-plaza",
   "agent-qa",
   "agent-skills",
@@ -192,6 +193,7 @@
   "content-to-editable-ppt-skill",
   "context-vista",
   "contextgate",
+  "convenient-window-free",
   "cordis-course",
   "cordis-rs",
   "cospan",

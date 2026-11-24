@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T06:05:59.862Z",
+  "generated_at": "2026-11-24T17:47:58.005Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1334,6 +1334,15 @@
       "lastKnownUrl": "https://github.com/Wechsels/dsh-zotero-wiki"
     },
     {
+      "repo": "wenzetan/dsh-llm-newapi",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-24T06:05:59.744Z",
+      "lastDetectedAt": "2026-11-24T17:47:57.908Z",
+      "lastStars": 6,
+      "lastPush": "2026-10-10",
+      "lastKnownUrl": "https://github.com/wenzetan/dsh-llm-newapi"
+    },
+    {
       "repo": "Wha1eChai/dsh-supervisor",
       "seen": 2,
       "firstDetectedAt": "2026-09-24T04:54:44.789Z",
@@ -1532,13 +1541,22 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "wenzetan/dsh-llm-newapi",
+      "repo": "DfsyJian/dsh-snapshot",
       "seen": 1,
-      "firstDetectedAt": "2026-11-24T06:05:59.744Z",
-      "lastDetectedAt": "2026-11-24T06:05:59.744Z",
-      "lastStars": 6,
-      "lastPush": "2026-10-10",
-      "lastKnownUrl": "https://github.com/wenzetan/dsh-llm-newapi"
+      "firstDetectedAt": "2026-11-24T17:47:57.908Z",
+      "lastDetectedAt": "2026-11-24T17:47:57.908Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-15",
+      "lastKnownUrl": "https://github.com/DfsyJian/dsh-snapshot"
+    },
+    {
+      "repo": "webkubor/dsh-env-inspector",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-24T17:47:57.908Z",
+      "lastDetectedAt": "2026-11-24T17:47:57.908Z",
+      "lastStars": 3,
+      "lastPush": "2026-10-27",
+      "lastKnownUrl": "https://github.com/webkubor/dsh-env-inspector"
     }
   ]
 }

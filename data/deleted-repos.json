@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T21:28:15.077Z",
+  "generated_at": "2026-11-24T06:05:59.862Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -414,6 +414,15 @@
       "lastStars": 1,
       "lastPush": "2026-08-14",
       "lastKnownUrl": "https://github.com/echo-escape/dsh-workbench"
+    },
+    {
+      "repo": "edward-polat/final-cut-win",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-23T21:28:15.062Z",
+      "lastDetectedAt": "2026-11-24T06:05:59.744Z",
+      "lastStars": 430,
+      "lastPush": "2026-11-21",
+      "lastKnownUrl": "https://github.com/edward-polat/final-cut-win"
     },
     {
       "repo": "emredeveloper/deepseek-harness-huggingface",
@@ -1523,13 +1532,13 @@
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
     },
     {
-      "repo": "edward-polat/final-cut-win",
+      "repo": "wenzetan/dsh-llm-newapi",
       "seen": 1,
-      "firstDetectedAt": "2026-11-23T21:28:15.062Z",
-      "lastDetectedAt": "2026-11-23T21:28:15.062Z",
-      "lastStars": 430,
-      "lastPush": "2026-11-21",
-      "lastKnownUrl": "https://github.com/edward-polat/final-cut-win"
+      "firstDetectedAt": "2026-11-24T06:05:59.744Z",
+      "lastDetectedAt": "2026-11-24T06:05:59.744Z",
+      "lastStars": 6,
+      "lastPush": "2026-10-10",
+      "lastKnownUrl": "https://github.com/wenzetan/dsh-llm-newapi"
     }
   ]
 }

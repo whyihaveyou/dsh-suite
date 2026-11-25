@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-25T02:31:23.633Z",
+ "ts": "2026-11-25T12:58:33.245Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -990,6 +990,7 @@
   "dsh-doublecheck",
   "dsh-douyin",
   "dsh-douyin-agent",
+  "dsh-douyin-scroll",
   "dsh-douyin-tools",
   "dsh-download-progress",
   "dsh-download-server",

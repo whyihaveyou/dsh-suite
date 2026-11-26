@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-25T22:35:06.149Z",
+ "ts": "2026-11-26T05:07:14.745Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -228,6 +228,7 @@
   "deepseek-auto-evolving-harness",
   "deepseek-balance-whale-widget",
   "deepseek-balance-whale-widget-bowl",
+  "deepseek-balance-whale-widget-bowl-0x2fovo",
   "deepseek-billing-plugin",
   "deepseek-bot",
   "deepseek-bot-fei2411",
@@ -2947,6 +2948,7 @@
   "envoy",
   "eragear-code-copilot",
   "esp32-iphone-agent",
+  "everme",
   "everos",
   "everything-kiro",
   "evo-memory",
@@ -3456,6 +3458,7 @@
   "top",
   "touhou-hakurei",
   "toybox",
+  "treasure-map",
   "treg",
   "trio",
   "tuning-engines-cli",

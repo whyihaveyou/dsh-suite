@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-26T15:19:49.644Z",
+ "ts": "2026-11-26T23:56:34.658Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -695,6 +695,7 @@
   "dsh-checkpoint",
   "dsh-checkpoint-rewind",
   "dsh-cheso-design",
+  "dsh-chief",
   "dsh-chinese-mode",
   "dsh-chinese-traditional-wisdom-skill",
   "dsh-chrome",
@@ -2858,6 +2859,7 @@
   "dsh-workbuddy-trae-qoder-connect",
   "dsh-workbuddy-xdpool",
   "dsh-workflow",
+  "dsh-workflow-canvas",
   "dsh-workflow-lite",
   "dsh-workflow-omdsh-dev",
   "dsh-workflow-worktree",
@@ -2925,6 +2927,7 @@
   "dshwiki",
   "dshx",
   "dskin",
+  "dudu",
   "eac-design-world",
   "eac-desktop",
   "eac-desktop-ebony-vinyl",

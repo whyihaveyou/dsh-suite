@@ -1,7 +1,7 @@
 # dsh-suite
 
 ![GitHub stars](https://img.shields.io/github/stars/whyihaveyou/dsh-suite?style=flat-square&color=facc15)
-![Plugins](https://img.shields.io/badge/plugins-2303-facc15?style=flat-square)
+![Plugins](https://img.shields.io/badge/plugins-2307-facc15?style=flat-square)
 ![Daily compat](https://img.shields.io/github/actions/workflow/status/whyihaveyou/dsh-suite/compat.yml?branch=main&label=daily-compat-check&style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-3b82f6?style=flat-square)
 
@@ -59,18 +59,18 @@ npm create dsh-plugin@latest my-plugin
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 10656 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | DSH Web UI 插件与皮肤合集：任务板、Git 面板等 |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 5351 | 🟢 ok | 侧边栏完整工作台：文件渲染/终端/Git/子代理 |
-| [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 3152 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | DSH Web 鲸鱼娘皮肤系列（深海女仆工坊） |
+| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 10662 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | DSH Web UI 插件与皮肤合集：任务板、Git 面板等 |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 5356 | 🟢 ok | 侧边栏完整工作台：文件渲染/终端/Git/子代理 |
+| [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 3154 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | DSH Web 鲸鱼娘皮肤系列（深海女仆工坊） |
 | [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 951 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @anionex/dsh-vision-toolkit@0.1.51 is incompatible with dsh 0.2.2-rc.5: requi) | 给纯文本模型加视觉：图片问答、长截图 OCR、UI 还原 |
 | [dsh_workflow](https://github.com/icetomoyo/dsh_workflow) | 159 | 🟢 ok | 把 Claude Code 的 UltraCode 模式带给 DSH，多 Agent 调度可治理 |
-| [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 154 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @anionex/dsh-turn-rewind@0.3.13 is incompatible with dsh 0.2.2-rc.5: requirem) | 对话回退：回滚会话与工作区状态 |
+| [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 156 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @anionex/dsh-turn-rewind@0.3.13 is incompatible with dsh 0.2.2-rc.5: requirem) | 对话回退：回滚会话与工作区状态 |
 | [mstar-harness](https://github.com/btspoony/mstar-harness) | 74 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | Skill 驱动的 Harness/Loop 工程工作流插件 |
 | [ui-status-label](https://github.com/alingalingling/ui-status-label) | 52 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | 自定义「鲸鱼娘」思考状态的显示 |
 | [dsh-share](https://github.com/hellodigua/dsh-share) | 44 | 🟢 ok | DSH 对话分享插件 |
 | [distill](https://github.com/LoserFox/distill) | 27 | ⚪ unknown | 自动对话蒸馏：后台 subagent 反省 + 技能更新 |
 | [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) | 23 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | Monaco 编辑器创建沙箱 JS 工具 |
-| [themes (皮肤中心)](https://github.com/whyihaveyou/dsh-themes) | 18 | 🟢 ok | 皮肤中心：151 款昼夜成对皮肤一包打尽——网格预览、搜索、一键试穿，支持收藏、最近试穿与随机换肤。 |
+| [themes (皮肤中心)](https://github.com/whyihaveyou/dsh-themes) | 19 | 🟢 ok | 皮肤中心：151 款昼夜成对皮肤一包打尽——网格预览、搜索、一键试穿，支持收藏、最近试穿与随机换肤。 |
 | [all (全家桶)](https://github.com/whyihaveyou/dsh-suite) | 15 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: to accept the risk, run: dsh plugin --profile compat allow-version @dsh-suite/plugin-notify@0.2.0 --dsh-ver) | 全家桶聚合包：一次安装带入第一方全家桶——插件商店、IM 通知、会话导出、多 agent 任务板。 |
 | [dsh-acp-for-bitfun](https://github.com/bobleer/dsh-acp-for-bitfun) | 10 | 🟢 ok | BitFun 与 DSH ACP 交互对接 |
 | [plugin-manager](https://github.com/whyihaveyou/dsh-suite) | 7 | 🟢 ok | DSH Web UI 内置插件商店：浏览 dsh-suite 目录、搜索/筛选/排序、兼容徽章、一键安装——设置页插件区的 Store 标签页。 |
@@ -101,13 +101,13 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-doctor](https://github.com/coppynight/dsh-doctor) | 6 | 🟢 ok | flutter-doctor 风格诊断与安全自动修复 |
 | [dsh-interconnect](https://github.com/Chinesezjc/dsh-interconnect) | 43 | 🟢 ok | 跨实例消息/事件交接插件 |
 | [dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) | 77 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | OpenBiliClaw 内容推荐 Agent 接入 DSH |
-| [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) | 26 | 🟢 ok | 扫描插件仓库清单协议/patch 格式/构建陷阱 |
+| [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check) | 25 | 🟢 ok | 扫描插件仓库清单协议/patch 格式/构建陷阱 |
 | [dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) | 17 | 🟢 ok | 本机安全审计：配置/插件来源/会话/网络暴露面 |
 | [dsh-tool-csv](https://github.com/omdsh-dev/dsh-tool-csv) | 3 | ⚪ unknown | CSV 解析/查询/统计/转换工具 |
 | [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit) | 33 | ⚪ unknown | 零依赖工具包合集（time/encoding/json/csv/regex） |
 | [atomstudio](https://github.com/AtomicsLaboratory/atomstudio) | 0 | ⚪ unknown | 可执行文档工程环境 |
 | [dsh-cc-connect](https://github.com/whiteguo233/dsh-cc-connect) | 3 | ⚪ unknown | 通过 cc-connect 远程使用 DSH |
-| [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) | 1133 | 🟢 ok | Mnemon 三层记忆体深度集成 |
+| [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) | 1141 | 🟢 ok | Mnemon 三层记忆体深度集成 |
 | [dsh-paseo](https://github.com/renat3u/dsh-paseo) | 4 | ⚪ unknown | DSH 的 paseo 插件扩展支持 |
 | [dsh-plugin-dev](https://github.com/omdsh-dev/dsh-plugin-dev) | 16 | ⚪ unknown | DSH 插件开发踩坑档案（skill+文档） |
 | [dsh-tool-calculator](https://github.com/omdsh-dev/dsh-tool-calculator) | 8 | ⚪ unknown | 安全数学表达式求值器 |
@@ -122,7 +122,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-trace](https://github.com/vibeinging/dsh-trace) | 1 | ⚪ unknown | DSH 遥测后端：导出轮次/步骤/工具 |
 | [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro) | 4 | ⚪ unknown | microsandbox 支持 |
 | [zotero-harvest](https://github.com/Fisfzy/zotero-harvest) | 8 | ⚪ unknown | Zotero 文献采集入库插件（OpenAlex/arXiv/Crossref） |
-| [dsh-harness-ops](https://github.com/fakechris/dsh-harness-ops) | 17 | ⚪ unknown | DSH 运维工具箱：每日快照 A/B 双槽轮换、一键回滚 |
+| [dsh-harness-ops](https://github.com/fakechris/dsh-harness-ops) | 16 | ⚪ unknown | DSH 运维工具箱：每日快照 A/B 双槽轮换、一键回滚 |
 | [dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) | 7 | ⚪ unknown | 检查→修复→复查的对抗式闭环插件 |
 | [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) | 137 | 🟢 ok | OpenMAIC：课堂/幻灯片/交互式组件 |
 | [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) | 52 | 🟢 ok | MineRU 文档解析工具 |
@@ -131,7 +131,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-ssh](https://github.com/UynajGI/dsh-ssh) | 18 | 🟢 ok | SSH 远程执行：ProxyJump 链、SFTP |
 | [dsh-tool-search](https://github.com/vibeinging/dsh-tool-search) | 1 | 🟢 ok | 按 agent 按需工具发现与渐进 schema 披露 |
 | [dsh-webbridge](https://github.com/bill9109/dsh-webbridge) | 3 | 🟢 ok | DSH 结合 Kimi WebBridge |
-| [ego-browser](https://github.com/Fisfzy/ego-browser) | 586 | 🟢 ok | 把 ego-lite 浏览器接入 DSH（给 Agent 用的 Chromium） |
+| [ego-browser](https://github.com/Fisfzy/ego-browser) | 587 | 🟢 ok | 把 ego-lite 浏览器接入 DSH（给 Agent 用的 Chromium） |
 | [math-lean](https://github.com/Fisfzy/math-lean) | 0 | ⚪ unknown | Lean 内核验证的数学推理插件 |
 | [plugin-template](https://github.com/omdsh-dev/plugin-template) | 13 | ⚪ unknown | 官方 turtle ui 仓库派生的插件模板 |
 | [Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) | 0 | ⚪ unknown | Qwen-MM-Plugins 支持 |
@@ -140,7 +140,7 @@ npm create dsh-plugin@latest my-plugin
 | [web-components](https://github.com/omdsh-dev/web-components) | 1 | ⚪ unknown | web-components 支持 |
 | [zotero-wave-rag](https://github.com/Fisfzy/zotero-wave-rag) | 2 | ⚪ unknown | 面向 Zotero 论文库的浪潮式 RAG 检索 |
 | [modsearch](https://github.com/liustack/modsearch) | 1047 | ⚪ unknown | DeepSeek Harness 的联网搜索插件。 |
-| [dsh-browser](https://github.com/Lum1104/dsh-browser) | 1147 | 🟢 ok | Chrome 侧边栏扩展，让 DSH 操控浏览器。 |
+| [dsh-browser](https://github.com/Lum1104/dsh-browser) | 1148 | 🟢 ok | Chrome 侧边栏扩展，让 DSH 操控浏览器。 |
 | [dsh-openapi](https://github.com/Degurechaff57/dsh-openapi) | 3 | ⚪ unknown | 安全 OpenAPI 3.x 发现与 API 调用工具。 |
 | [dsh-better-browser](https://github.com/titanwings/dsh-better-browser) | 12 | ⚪ unknown | 通过 Kimi WebBridge 让 agent 操作用户已登录浏览器。 |
 | [dsh-worktree](https://github.com/FlashingChen/dsh-worktree) | 6 | ⚪ unknown | Codex 风格永久 git worktree 插件。 |
@@ -245,7 +245,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugins](https://github.com/ohtokaah-sys/dsh-plugins) | 0 | ⚪ unknown | dsh-plugins — DSH 插件（工具） |
 | [dsh-tool-chaos](https://github.com/cyanseek/dsh-tool-chaos) | 4 | ⚪ unknown | dsh-tool-chaos — DSH 插件（工具） |
 | [dsh-robotic-harness](https://github.com/dingkaihu63/dsh-robotic-harness) | 31 | ⚪ unknown | dsh-robotic-harness — DSH 插件（工具） |
-| [dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) | 544 | 🟢 ok | dsh-codex-subscription — DSH 插件（工具） |
+| [dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) | 547 | 🟢 ok | dsh-codex-subscription — DSH 插件（工具） |
 | [dsh-sticky-note](https://github.com/Meredith2328/dsh-sticky-note) | 48 | 🟢 ok | DSH 便签插件：随手记点子/感想/TODO，Markdown 预览 + 快捷键 + 历史归档，存储路径可配置 |
 | [dsh-gen3d](https://github.com/LuZhouheng/dsh-gen3d) | 1 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-gen3d@0.3.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepseek) | dsh-gen3d — DSH 插件（工具） |
 | [dsh-mdbox](https://github.com/Chi-hong22/dsh-mdbox) | 1 | ⚪ unknown | dsh-mdbox — DSH 插件（工具） |
@@ -277,7 +277,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-oauth-api](https://github.com/hahaha-taotao/dsh-oauth-api) | 1 | ⚪ unknown | 树外 OAuth 插件：Grok/xAI、Codex、Claude 订阅接入。 |
 | [dsh-plugin](https://github.com/acosmi/dsh-plugin) | 1 | 🔴 broken (cordis 4.1.0 not in peer "4.0.1") | 社区插件集合包。 |
 | [dsh-zh-output](https://github.com/YKennen/dsh-zh-output) | 2 | ⚪ unknown | DeepSeek Harness 中文输出插件：强制中文思考与输出的中文预设 |
-| [dsh-excel-chat](https://github.com/hccccc01333/dsh-excel-chat) | 14 | 🟢 ok | 跟 Excel 对话：用自然语言创建、编辑、修复、校验表格（单元格、公式、样式）。 |
+| [dsh-excel-chat](https://github.com/hccccc01333/dsh-excel-chat) | 15 | 🟢 ok | 跟 Excel 对话：用自然语言创建、编辑、修复、校验表格（单元格、公式、样式）。 |
 | [dsh-eyecare](https://github.com/Yummyxl/dsh-eyecare) | 2 | 🟢 ok | dsh护眼插件 |
 | [dsh-plugin-healthcheck](https://github.com/chenw2759-wq/dsh-plugin-healthcheck) | 14 | ⚪ unknown | 害怕插件装了就崩溃？用这个插件帮你检测插件是否正常/是否含木马！ |
 | [deepseek-harness-openai-oauth](https://github.com/DGPisces/deepseek-harness-openai-oauth) | 7 | 🟢 ok | GPT 模型接入：通过 Codex app-server 的 ChatGPT OAuth 把 GPT 模型当 provider 用。 |
@@ -308,7 +308,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-code-lens](https://github.com/lisycotana/dsh-code-lens) | 0 | ⚪ unknown | code 模式子派发可观测性：工具调用链路可见。 |
 | [dsh-subprocess-inherit-environment](https://github.com/zhangzujian/dsh-subprocess-inherit-environment) | 2 | ⚪ unknown | 把完整 Harness 环境变量透传给子进程（可拆卸的调试向插件）。 |
 | [dsh-doctor-windows](https://github.com/sublatesublate-design/dsh-doctor-windows) | 0 | 🟢 ok | Windows 环境诊断：DSH 在 Windows 上的问题排查。 |
-| [MuseAI](https://github.com/yejiming/MuseAI) | 720 | ⚪ unknown | 创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用） |
+| [MuseAI](https://github.com/yejiming/MuseAI) | 721 | ⚪ unknown | 创建你的 AI 角色，进入你的故事世界。和角色聊天、冒险、穿书，让每一次互动都留下羁绊（支持 DeepSeek Harness 插件，欢迎使用） |
 | [dsh-user-experience](https://github.com/DietCokewithSugar/dsh-user-experience) | 21 | 🟢 ok | UX 体检插件：扫描 React + TypeScript 源码里的交互问题，定位到具体位置并给出修复建议。 |
 | [dsh-plugin-automations](https://github.com/Sev7een/dsh-plugin-automations) | 2 | ⚪ unknown | 定时任务插件：Web profile 里安排计划任务。 |
 | [dsh-web-search-tavily](https://github.com/nitrazepam01/dsh-web-search-tavily) | 3 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-web-search-tavily@0.2.5 is incompatible with dsh 0.2.2-rc.5: requirements) | Tavily 搜索源 bundle：热切换、免配置接入。 |
@@ -354,7 +354,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-nebulagraph-v5](https://github.com/xiajingchun/dsh-nebulagraph-v5) | 3 | ⚪ unknown | 连接 Nebula v5 图数据库的插件。 |
 | [dsh-plugin-text-translation](https://github.com/1738348785/dsh-plugin-text-translation) | 2 | ⚪ unknown | 文本与文档翻译插件：标签防爆遮罩保护代码/占位符，批量翻译 i18n 文案不破坏结构。 |
 | [dsh-overleaf](https://github.com/fly233338/dsh-overleaf) | 14 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-overleaf@0.1.3 is incompatible with dsh 0.2.2-rc.5: requirements {"@deeps) | Overleaf 写作接入：通过 OverleafMCP 让 DSH 直接读写你的 LaTeX 项目和文档。 |
-| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 6758 | 🟢 ok | DeepSeek Harness 桌面宠物插件 + 完整素材生成链：AI 提示词 → 绿幕视频 → 透明动画 → 可安装插件，从零到宠物全流程可复现 |
+| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 6780 | 🟢 ok | DeepSeek Harness 桌面宠物插件 + 完整素材生成链：AI 提示词 → 绿幕视频 → 透明动画 → 可安装插件，从零到宠物全流程可复现 |
 | [dsh-humanizer](https://github.com/DEEP-IOS/dsh-humanizer) | 9 | 🟢 ok | DeepSeek Harness原生中文文本人工智能痕迹消除与多重审核对抗工作流 |
 | [dsh-pixluna](https://github.com/PixLunaLab/dsh-pixluna) | 5 | 🟢 ok | dsh-plugin-pixluna | 让 DSH 自己看涩图！ |
 | [dsh-deepseek-billing](https://github.com/golitter/dsh-deepseek-billing) | 2 | ⚪ unknown | 在 DSH 中查看 DeepSeek API 账户余额及计费信息 |
@@ -369,10 +369,10 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-tool-somark](https://github.com/saurtone/dsh-tool-somark) | 2 | ⚪ unknown | SoMark 文档解析工具（somark_parse）。 |
 | [dsh-mcp-settings](https://github.com/xluomo/dsh-mcp-settings) | 1 | 🟢 ok | dsh mcp服务器配置管理 |
 | [dsh-terminal](https://github.com/dongsheng123132/dsh-terminal) | 2 | 🟢 ok | 持久交互式终端模式。 |
-| [dsh-anchored-standard](https://github.com/xiaobright/dsh-anchored-standard) | 3705 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | 两段式 Agent 预设：先用精简配置快速启动，再切换到完整 Standard 工具集，兼顾启动速度与全功能。 |
+| [dsh-anchored-standard](https://github.com/xiaobright/dsh-anchored-standard) | 3704 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | 两段式 Agent 预设：先用精简配置快速启动，再切换到完整 Standard 工具集，兼顾启动速度与全功能。 |
 | [dsh-whalito-desk](https://github.com/entireyu/dsh-whalito-desk) | 3 | ⚪ unknown | 鲸仔 Whalito，DeepSeek Harness 桌面助手。这是由DSH + DS-V4-Pro-0813开发的tauri桌面程序。 |
 | [dsh-browser](https://github.com/xylt369/dsh-browser) | 14 | 🟢 ok | 浏览器能力：有头 Edge/Playwright 驱动、SSRF 安全导航、无障碍树点击、权限门。 |
-| [dsh-qqbot](https://github.com/tencent-connect/dsh-qqbot) | 632 | 🟢 ok | 让 QQ 机器人接入 DeepSeek Harness（dsh）的官方插件 |
+| [dsh-qqbot](https://github.com/tencent-connect/dsh-qqbot) | 633 | 🟢 ok | 让 QQ 机器人接入 DeepSeek Harness（dsh）的官方插件 |
 | [dsh-plugin-store](https://github.com/w769721503/dsh-plugin-store) | 6 | 🟢 ok | DeepSeek Harness 插件商店：浏览、搜索、筛选并一键安装 dsh-plugin 生态插件 |
 | [dsh-office](https://github.com/omdsh-dev/dsh-office) | 32 | 🟢 ok | 办公三件套！Office document tools for DeepSeek Harness (dsh): generate, read, and edit spreadsheets (.xlsx), PDFs, and presentations (.… |
 | [dsh-plugins](https://github.com/kestiny18/dsh-plugins) | 3 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | 社区插件 monorepo（独立发布的多个 DSH 插件）。 |
@@ -418,7 +418,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) | 8 | ⚪ unknown | 网页版聊天体验：编辑提问、重新生成、消息上直接翻版本，像在 deepseek.com 上聊天。 |
 | [dsh-us-stocks](https://github.com/Realyujie/dsh-us-stocks) | 9 | 🟢 ok | 美股数据工具：基于 yahoo-finance2 提供行情数据，让 agent 能查美股。 |
 | [dsh-zh-hant-hk](https://github.com/Argonaut790/dsh-zh-hant-hk) | 3 | ⚪ unknown | DeepSeek Harness plugin: Hong Kong Traditional Chinese wording (對話, 設定, 儲存) |
-| [dsh-chat-timeline](https://github.com/jjxjjjjiik-bot/dsh-chat-timeline) | 33 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-chat-timeline@0.1.5 is incompatible with dsh 0.2.2-rc.5: requirements {"@) | DeepSeek 官方网页右侧聊天导航栏（ScrollNav）的 1:1 移植。 |
+| [dsh-chat-timeline](https://github.com/jjxjjjjiik-bot/dsh-chat-timeline) | 32 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-chat-timeline@0.1.5 is incompatible with dsh 0.2.2-rc.5: requirements {"@) | DeepSeek 官方网页右侧聊天导航栏（ScrollNav）的 1:1 移植。 |
 | [dsh-doctor](https://github.com/astra3294/dsh-doctor) | 4 | 🟢 ok | 确定性诊断与恢复：DSH 出问题按图索骥排查修复。 |
 | [douyin-plugin-dsh-plugin](https://github.com/chu557/douyin-plugin-dsh-plugin) | 3 | ⚪ unknown | 在使用dsh等待的过程中刷抖音 |
 | [dsh-go-rotator](https://github.com/echo-xianyu/dsh-go-rotator) | 3 | ⚪ unknown | OpenCode Go 订阅 key 轮换器：多 key 自动切换防限流。 |
@@ -459,23 +459,23 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-forge](https://github.com/zhn1100/dsh-forge) | 4 | 🔴 broken (failed once, retried — install failed (exit 1):   code: 'Unknown system error -122', |   syscall: 'write' | } | Node.js v24.21.0) | 可复现的 DSH 插件开发环境。 |
 | [oh-my-dsh](https://github.com/LiuMengxuan04/oh-my-dsh) | 12 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | Oh My DSH (DSH Autopilot): durable, bounded autonomous development for DeepSeek Harness |
 | [LaoA-dshGF](https://github.com/zhulin025/LaoA-dshGF) | 2 | ⚪ unknown | DeepSeek Harness 赛博女友插件 |
-| [dsh-free-search](https://github.com/DDDMUC/dsh-free-search) | 1734 | 🟢 ok | Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed |
+| [dsh-free-search](https://github.com/DDDMUC/dsh-free-search) | 1748 | 🟢 ok | Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed |
 | [dsh-better-edit](https://github.com/Rianico/dsh-better-edit) | 49 | 🟢 ok | Hash-anchored read/edit/batch_edit/undo_last_edit tools for DeepSeek Harness (dsh) — dsh port of pi-hashline-edit-lsz |
 | [dsh-prompt-manager](https://github.com/errorcode7/dsh-prompt-manager) | 14 | 🟢 ok | DeepSeekHarness的提示词管理器插件 |
 | [snapgrep](https://github.com/Owen718/snapgrep) | 12 | 🟢 ok | An in-process trigram index that makes code search in Pi&DSH 20-70x faster than ripgrep, with identical results and no sidecar pr… |
 | [pi-deepseek-anchor](https://github.com/kxh4892636/pi-deepseek-anchor) | 14 | ⚪ unknown | pi extension: DeepSeek V4 Pro Minimal-anchored bootstrap, then full Standard tools (port of dsh-anchored-standard) |
-| [deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) | 37 | 🟢 ok | untranslated |
+| [deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) | 36 | 🟢 ok | untranslated |
 | [dsh-surfing-plugin](https://github.com/cyijun/dsh-surfing-plugin) | 19 | ⚪ unknown | untranslated |
 | [DSH-changeproof](https://github.com/Apageoflove/DSH-changeproof) | 5 | ⚪ unknown | untranslated |
 | [dsh-save-money](https://github.com/zhu168/dsh-save-money) | 38 | 🟢 ok | untranslated |
 | [oh-my-dsh](https://github.com/amplifthq/oh-my-dsh) | 20 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
-| [Deepseek-Harness-for-VS-Code](https://github.com/Vithrive/Deepseek-Harness-for-VS-Code) | 67 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [Deepseek-Harness-for-VS-Code](https://github.com/Vithrive/Deepseek-Harness-for-VS-Code) | 68 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-file-upload](https://github.com/GLFzr/dsh-file-upload) | 9 | 🟢 ok | untranslated |
 | [dsh-minimal-anchored](https://github.com/KDB-Wind/dsh-minimal-anchored) | 8 | ⚪ unknown | untranslated |
 | [dsh-search-boost](https://github.com/Mr-remon219/dsh-search-boost) | 20 | 🟢 ok | untranslated |
 | [dsh-win32](https://github.com/sjh9714/dsh-win32) | 173 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-win32@0.18.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepsee) | untranslated |
 | [dsh-plugin-store](https://github.com/0xKcyzz/dsh-plugin-store) | 6 | 🟢 ok | untranslated |
-| [dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) | 49 | 🟢 ok | untranslated |
+| [dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) | 51 | 🟢 ok | untranslated |
 | [dockyard-dsh](https://github.com/AITabby/dockyard-dsh) | 79 | 🟢 ok | untranslated |
 | [deepseek-harness-workbench-plugin](https://github.com/loadingvx/deepseek-harness-workbench-plugin) | 37 | ⚪ unknown | untranslated |
 | [dsh-permgate](https://github.com/MrWeiCodes/dsh-permgate) | 25 | ⚪ unknown | untranslated |
@@ -502,11 +502,11 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-ikun-pet](https://github.com/eric-song-dev/dsh-ikun-pet) | 11 | 🟢 ok | untranslated |
 | [dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) | 11 | 🟢 ok | untranslated |
 | [dsh-plugin-integration](https://github.com/MutaLucem/dsh-plugin-integration) | 10 | ⚪ unknown | untranslated |
-| [helm-d](https://github.com/ADWMC/helm-d) | 1533 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [helm-d](https://github.com/ADWMC/helm-d) | 1539 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) | 28 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-vault](https://github.com/feiyang-dev/dsh-vault) | 4 | 🟢 ok | untranslated |
 | [dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) | 5 | 🟢 ok | untranslated |
-| [dsh-voice-ai-girlfriend](https://github.com/beiyege-01/dsh-voice-ai-girlfriend) | 1110 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dsh-voice-ai-girlfriend](https://github.com/beiyege-01/dsh-voice-ai-girlfriend) | 1111 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-tool-autoexpand](https://github.com/better-er/dsh-tool-autoexpand) | 16 | 🔴 broken (node 24.22.3 not in engines ">=26.3.1") | untranslated |
 | [dsh-conversation-outline](https://github.com/lzbaclz/dsh-conversation-outline) | 7 | 🟢 ok | untranslated |
 | [deepseek-aix](https://github.com/PHoenixs57/deepseek-aix) | 7 | ⚪ unknown | untranslated |
@@ -527,7 +527,7 @@ npm create dsh-plugin@latest my-plugin
 | [deepseek-harness-provider](https://github.com/lo2589/deepseek-harness-provider) | 4 | ⚪ unknown | untranslated |
 | [dsh-ai4scholar](https://github.com/literaf/dsh-ai4scholar) | 51 | 🟢 ok | untranslated |
 | [webdsh](https://github.com/futrime/webdsh) | 38 | ⚪ unknown | untranslated |
-| [dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 8240 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 8264 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [deepseek-harness-sdr-plugin](https://github.com/Xuxchloris/deepseek-harness-sdr-plugin) | 37 | ⚪ unknown | untranslated |
 | [dsh-plugin-gather](https://github.com/lilwhich/dsh-plugin-gather) | 10 | ⚪ unknown | untranslated |
 | [dsh-meme](https://github.com/yyh-001/dsh-meme) | 608 | 🟢 ok | untranslated |
@@ -535,22 +535,22 @@ npm create dsh-plugin@latest my-plugin
 | [DSH-Encrypt](https://github.com/yauntyour/DSH-Encrypt) | 7 | ⚪ unknown | untranslated |
 | [dsh-grafana](https://github.com/guhanfei-ai/dsh-grafana) | 7 | 🟢 ok | untranslated |
 | [Caushell](https://github.com/fatmo666/Caushell) | 5 | ⚪ unknown | untranslated |
-| [dsh-univer-office](https://github.com/dream-num/dsh-univer-office) | 762 | 🟢 ok | untranslated |
+| [dsh-univer-office](https://github.com/dream-num/dsh-univer-office) | 764 | 🟢 ok | untranslated |
 | [dsh-wallpaper-rotator](https://github.com/liceses/dsh-wallpaper-rotator) | 6 | 🟢 ok | untranslated |
 | [DSH-money-view](https://github.com/tyche66/DSH-money-view) | 5 | ⚪ unknown | untranslated |
 | [dsh-selection-ask](https://github.com/lzbaclz/dsh-selection-ask) | 6 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-selection-ask@0.1.1 is incompatible with dsh 0.2.2-rc.5: requirements {"@) | untranslated |
 | [dsh-trail](https://github.com/ayahunter/dsh-trail) | 6 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-plugins](https://github.com/Ephemeral-AI-Lab/dsh-plugins) | 54 | ⚪ unknown | untranslated |
 | [rapid-mlx-dsh-provider](https://github.com/raullenchai/rapid-mlx-dsh-provider) | 68 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
-| [dsh-taskboard](https://github.com/cloader/dsh-taskboard) | 93 | 🟢 ok | untranslated |
+| [dsh-taskboard](https://github.com/cloader/dsh-taskboard) | 94 | 🟢 ok | untranslated |
 | [dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice) | 75 | 🟢 ok | untranslated |
 | [forgeax-dsh-game-plugin](https://github.com/ForgeaX-Games/forgeax-dsh-game-plugin) | 6 | ⚪ unknown | untranslated |
-| [dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) | 925 | 🟢 ok | untranslated |
+| [dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) | 926 | 🟢 ok | untranslated |
 | [dsh-effort-slider](https://github.com/2768651338/dsh-effort-slider) | 20 | 🟢 ok | untranslated |
 | [dsh-xiaotangyuan-game](https://github.com/qimidandapigu/dsh-xiaotangyuan-game) | 11 | ⚪ unknown | untranslated |
 | [deepseek-harness-quota-monitor](https://github.com/marisa-4219/deepseek-harness-quota-monitor) | 7 | 🟢 ok | untranslated |
 | [dsh-ears](https://github.com/WizisCool/dsh-ears) | 30 | 🟢 ok | untranslated |
-| [dsh-oil-creator](https://github.com/oil-oil/dsh-oil-creator) | 216 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [dsh-oil-creator](https://github.com/oil-oil/dsh-oil-creator) | 217 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-serial-console](https://github.com/InfinitePersistence/dsh-serial-console) | 12 | ⚪ unknown | untranslated |
 | [ramify-dsh](https://github.com/yanglongyun/ramify-dsh) | 21 | ⚪ unknown | untranslated |
 | [custom-first-control-prompt](https://github.com/WM-CODER/custom-first-control-prompt) | 79 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
@@ -558,7 +558,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-trapstreet](https://github.com/trapstreet/dsh-trapstreet) | 1 | 🟢 ok | 告诉你装的插件里哪些真的在跑：进程内直读 loader 树，并把当前配置拿去公开评测板跑分（带无插件对照） |
 | [garmin-connect-plugin-for-dsh](https://github.com/Likenttt/garmin-connect-plugin-for-dsh) | 59 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [wallpaper-plugin](https://github.com/Ayase34/wallpaper-plugin) | 14 | ⚪ unknown | untranslated |
-| [dsh-tether](https://github.com/zexadev/dsh-tether) | 105 | ⚪ unknown | untranslated |
+| [dsh-tether](https://github.com/zexadev/dsh-tether) | 106 | ⚪ unknown | untranslated |
 | [dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) | 114 | 🟢 ok | untranslated |
 | [dsh-server-login](https://github.com/pointer-a/dsh-server-login) | 34 | ⚪ unknown | untranslated |
 | [dsh-plugin-pack-web](https://github.com/baihejiangnan/dsh-plugin-pack-web) | 6 | ⚪ unknown | untranslated |
@@ -570,19 +570,19 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-collection](https://github.com/daha1216/dsh-plugin-collection) | 21 | ⚪ unknown | untranslated |
 | [dsh-one-gateway](https://github.com/TiantianFlow/dsh-one-gateway) | 13 | ⚪ unknown | untranslated |
 | [dsh-secure-audit](https://github.com/PensiveFei/dsh-secure-audit) | 86 | 🟢 ok | untranslated |
-| [Invoice-Downloader](https://github.com/EthanYoQ/Invoice-Downloader) | 559 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [Invoice-Downloader](https://github.com/EthanYoQ/Invoice-Downloader) | 560 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-hotplug-hub](https://github.com/ARFCON/dsh-hotplug-hub) | 28 | ⚪ unknown | untranslated |
 | [dsh-wenshan](https://github.com/xuedai-mayi/dsh-wenshan) | 93 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-portable](https://github.com/sqs404/dsh-portable) | 30 | 🟢 ok | untranslated |
 | [dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) | 59 | 🟢 ok | untranslated |
-| [dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) | 62 | 🟢 ok | untranslated |
+| [dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) | 63 | 🟢 ok | untranslated |
 | [dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) | 2 | ⚪ unknown | 强力卸载 DSH 插件：策略分级、批量原子操作、指纹快照、健康检查、并发锁与报告导出（事务化四段式+Saga 回滚） |
 | [dsh-preset-plus](https://github.com/Rain-kl/dsh-preset-plus) | 271 | 🟢 ok | untranslated |
 | [dsh-console](https://github.com/cofy-x/dsh-console) | 21 | 🟢 ok | untranslated |
 | [dsh-prompt-optimizer](https://github.com/Y1X1n/dsh-prompt-optimizer) | 34 | 🟢 ok | untranslated |
 | [dsh-turn-fold](https://github.com/CH4ACKO3/dsh-turn-fold) | 15 | 🟢 ok | untranslated |
 | [dsh-automation](https://github.com/MichengAI/dsh-automation) | 44 | 🟢 ok | untranslated |
-| [dsh-infinite-gen-2](https://github.com/Minglink/dsh-infinite-gen-2) | 4772 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dsh-infinite-gen-2](https://github.com/Minglink/dsh-infinite-gen-2) | 4782 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-harbor](https://github.com/ZSeven-W/dsh-harbor) | 31 | ⚪ unknown | untranslated |
 | [marisa-distro](https://github.com/LoserFox/marisa-distro) | 12 | ⚪ unknown | untranslated |
 | [dsh-vscode-review](https://github.com/Tlyer233/dsh-vscode-review) | 11 | ⚪ unknown | untranslated |
@@ -596,7 +596,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-yolo](https://github.com/hanshanyike/dsh-yolo) | 52 | 🟢 ok | untranslated |
 | [dsh-emacs](https://github.com/vritser/dsh-emacs) | 51 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-smart-charts](https://github.com/hherosoul/dsh-smart-charts) | 21 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-smart-charts@6.0.1 is incompatible with dsh 0.2.2-rc.5: requirements {"@d) | untranslated |
-| [dsh-infinite-gen-3](https://github.com/Minglink/dsh-infinite-gen-3) | 4772 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dsh-infinite-gen-3](https://github.com/Minglink/dsh-infinite-gen-3) | 4782 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) | 22 | 🔴 broken (cordis 4.1.0 not in peer "4.0.2") | untranslated |
 | [@xxxyz/dsh-mcp-manager](https://github.com/xxxyz/DeepSeekHarness-MCP-Manager) | 26 | 🟢 ok | DSH 双管理器——MCP 服务管理（设置页新增/编辑/启停/重启/删除、JSON 导入导出、4 个 mcp_manager_* 模型工具、带闸门的本地 HTTP API）+ Skills 技能管理（启停面板、持久化、HMR 即时生效）。 |
 | [dsh-data-quality](https://github.com/PerryLink/dsh-data-quality) | 56 | 🟢 ok | untranslated |
@@ -611,7 +611,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-superpower](https://github.com/Wenaixi/dsh-superpower) | 31 | 🟢 ok | untranslated |
 | [dsh-council](https://github.com/a1exsun/dsh-council) | 158 | ⚪ unknown | untranslated |
 | [dsh-prompt-library](https://github.com/master1Sun/dsh-prompt-library) | 18 | 🟢 ok | untranslated |
-| [dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) | 150 | 🟢 ok | DeepSeek Harness 通用 MCP 连接器与连接器市场：支持 OAuth 2.0 PKCE、API Key、stdio/HTTP、mcpServers JSON 导入、工具与 Prompt。 |
+| [dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) | 151 | 🟢 ok | DeepSeek Harness 通用 MCP 连接器与连接器市场：支持 OAuth 2.0 PKCE、API Key、stdio/HTTP、mcpServers JSON 导入、工具与 Prompt。 |
 | [dsh-image-gen-goodandready](https://github.com/GooDAnDReaDY/dsh-image-gen) | 16 | 🟢 ok | generate_image 图像生成工具：走 FAL 队列 / 任意 OpenAI 兼容图像 API / ChatGPT·Grok 订阅，结果内联显示在会话里。 |
 | [dsh-vision-bridge-goodandready](https://github.com/GooDAnDReaDY/dsh-vision-bridge) | 3 | 🟢 ok | 视觉桥：把图片路由给你选的视觉模型，纯文本模型遇到带图回合也不会失败。 |
 | [dsh-grok-xsearch](https://github.com/GooDAnDReaDY/dsh-grok-xsearch) | 5 | 🟢 ok | X/Twitter 搜索工具（x_search），用独立的 SuperGrok OAuth 账号鉴权。 |
@@ -619,19 +619,19 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-defend](https://github.com/PerryLink/dsh-defend) | 31 | 🟢 ok | untranslated |
 | [dsh-setting-restart](https://github.com/893413974-bit/dsh-setting-restart) | 22 | 🟢 ok | untranslated |
 | [dsh-improved-inline-edit](https://github.com/xiaosurongjia/dsh-improved-inline-edit) | 20 | ⚪ unknown | untranslated |
-| [dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) | 2049 | 🟢 ok | untranslated |
+| [dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) | 2061 | 🟢 ok | untranslated |
 | [dsh-plugin-message-edit](https://github.com/SpookySandwich/dsh-plugin-message-edit) | 33 | 🟢 ok | untranslated |
 | [dsh-plugin-tav2](https://github.com/Drhushi/dsh-plugin-tav2) | 24 | ⚪ unknown | untranslated |
 | [dsh-branchmark](https://github.com/zaizaizhao/dsh-branchmark) | 26 | 🔴 broken (cordis 4.1.0 not in peer "4.0.2") | untranslated |
 | [dsh-local-ai](https://github.com/PerryLink/dsh-local-ai) | 28 | 🟢 ok | untranslated |
-| [dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) | 286 | 🟢 ok | untranslated |
+| [dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) | 289 | 🟢 ok | untranslated |
 | [OmaSeek](https://github.com/claudejaune/OmaSeek) | 21 | ⚪ unknown | untranslated |
 | [clearai-dsh](https://github.com/Clearailhc/clearai-dsh) | 700 | 🟢 ok | untranslated |
 | [dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) | 33 | 🟢 ok | untranslated |
-| [dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) | 179 | 🟢 ok | untranslated |
+| [dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) | 180 | 🟢 ok | untranslated |
 | [dsh-im-companion](https://github.com/FeatherHunter/dsh-im-companion) | 54 | 🟢 ok | untranslated |
 | [walioffice-dsh-plugin](https://github.com/fuzhengwei/walioffice-dsh-plugin) | 12 | 🟢 ok | untranslated |
-| [dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | 368 | 🟢 ok | untranslated |
+| [dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | 369 | 🟢 ok | untranslated |
 | [DSH-X](https://github.com/yyh-001/DSH-X) | 789 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-jailbreak-mode](https://github.com/bainianling/dsh-jailbreak-mode) | 16 | ⚪ unknown | untranslated |
 | [CiteCiter](https://github.com/kirkchinese/CiteCiter) | 43 | ⚪ unknown | untranslated |
@@ -647,30 +647,30 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-scholar](https://github.com/smilewhenever777/dsh-scholar) | 21 | 🟢 ok | untranslated |
 | [deepseek-harness](https://github.com/YottaMeta/deepseek-harness) | 13 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Cannot validate installed package deepseek-harness: SyntaxError: Unexpected token '﻿) | untranslated |
 | [dsh-550c-boot](https://github.com/yannicksong0106/dsh-550c-boot) | 245 | 🟢 ok | untranslated |
-| [dshm](https://github.com/sol5766/dshm) | 120 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dshm](https://github.com/sol5766/dshm) | 121 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [qiaomu-rss-dsh](https://github.com/joeseesun/qiaomu-rss-dsh) | 126 | 🟢 ok | untranslated |
 | [fnos-dsh](https://github.com/FNOSP/fnos-dsh) | 128 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-std](https://github.com/T-Auto/dsh-std) | 165 | ⚪ unknown | untranslated |
 | [dsh-web-search-free](https://github.com/MochiNek0/dsh-web-search-free) | 69 | 🟢 ok | untranslated |
-| [fujiang-dsh](https://github.com/c3cvld7aag/fujiang-dsh) | 781 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [fujiang-dsh](https://github.com/c3cvld7aag/fujiang-dsh) | 785 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-web-studyhub](https://github.com/EricWang1358/dsh-web-studyhub) | 195 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
-| [dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) | 290 | 🟢 ok | untranslated |
+| [dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) | 289 | 🟢 ok | untranslated |
 | [dsh-piggy](https://github.com/CLICGGER-TYPES/dsh-piggy) | 35 | 🟢 ok | untranslated |
 | [dsh-plugin-xiaomi-mimo-tts](https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts) | 68 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-asr-plugin](https://github.com/huliux/dsh-asr-plugin) | 21 | ⚪ unknown | untranslated |
-| [dsh-pua](https://github.com/MichengAI/dsh-pua) | 79 | 🟢 ok | untranslated |
-| [DeepSeek-Bot](https://github.com/FeiZhuLulu/DeepSeek-Bot) | 9007 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
-| [DeepSeek-Bot](https://github.com/Fei2411/DeepSeek-Bot) | 9007 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dsh-pua](https://github.com/MichengAI/dsh-pua) | 80 | 🟢 ok | untranslated |
+| [DeepSeek-Bot](https://github.com/FeiZhuLulu/DeepSeek-Bot) | 9091 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [DeepSeek-Bot](https://github.com/Fei2411/DeepSeek-Bot) | 9091 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-chatgpt-sub](https://github.com/songoao25/dsh-chatgpt-sub) | 53 | 🟢 ok | untranslated |
 | [dsh-agnes-studio](https://github.com/zmm863-commits/dsh-agnes-studio) | 30 | 🟢 ok | untranslated |
 | [DeepSeek-splash-animation](https://github.com/KDDKBD/DeepSeek-splash-animation) | 55 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-router-laya](https://github.com/HapyRain/dsh-router-laya) | 33 | 🟢 ok | untranslated |
-| [dsh-paper-reader](https://github.com/GGboya/dsh-paper-reader) | 63 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-paper-reader@1.5.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@d) | untranslated |
+| [dsh-paper-reader](https://github.com/GGboya/dsh-paper-reader) | 64 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-paper-reader@1.5.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@d) | untranslated |
 | [DSH-SW-and-CAD](https://github.com/fyjgtddco/DSH-SW-and-CAD) | 68 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
-| [dsh-bili-scroll](https://github.com/c1overzz/dsh-bili-scroll) | 1479 | 🟢 ok | untranslated |
+| [dsh-bili-scroll](https://github.com/c1overzz/dsh-bili-scroll) | 1481 | 🟢 ok | untranslated |
 | [dsh-plugin-mesh](https://github.com/WTStarMark/dsh-plugin-mesh) | 39 | 🟢 ok | untranslated |
 | [dsh-deepseek-pet](https://github.com/Yoshino-JF/dsh-deepseek-pet) | 20 | ⚪ unknown | untranslated |
-| [dsh-purge](https://github.com/mmparko/dsh-purge) | 6076 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
+| [dsh-purge](https://github.com/mmparko/dsh-purge) | 6102 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
 | [dsh-providers-hub](https://github.com/iJetLi/dsh-providers-hub) | 196 | 🟢 ok | untranslated |
 | [lunheng-article-pipeline-dsh](https://github.com/zuoyunlai/lunheng-article-pipeline-dsh) | 28 | ⚪ unknown | untranslated |
 | [dsh-pdf-mineru](https://github.com/Yurzi/dsh-pdf-mineru) | 29 | 🟢 ok | untranslated |
@@ -687,19 +687,19 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-bili-humanism](https://github.com/InariNGT-Ofiicial/dsh-bili-humanism) | 282 | 🟢 ok | untranslated |
 | [capital-generation](https://github.com/v587d/capital-generation) | 41 | ⚪ unknown | untranslated |
 | [dsh-feiyu-mood](https://github.com/Yuuyuko-uu/dsh-feiyu-mood) | 278 | 🟢 ok | untranslated |
-| [dsh-speak-up](https://github.com/Yuuyuko-uu/dsh-speak-up) | 240 | 🟢 ok | untranslated |
+| [dsh-speak-up](https://github.com/Yuuyuko-uu/dsh-speak-up) | 242 | 🟢 ok | untranslated |
 | [DSH-action](https://github.com/Lixiaoyiao/DSH-action) | 67 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
-| [dsh-pilot](https://github.com/momasiku/dsh-pilot) | 219 | 🟢 ok | untranslated |
+| [dsh-pilot](https://github.com/momasiku/dsh-pilot) | 220 | 🟢 ok | untranslated |
 | [dsh-plugin-wps-office-next](https://github.com/sueccku/dsh-plugin-wps-office-next) | 33 | 🟢 ok | untranslated |
-| [dsh-baton](https://github.com/JialaoLiu/dsh-baton) | 260 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
-| [dsh-doyourweb](https://github.com/SheepofSheep/dsh-doyourweb) | 62 | 🟢 ok | untranslated |
-| [DS-Bot](https://github.com/Fei2411/DS-Bot) | 9007 | 🟢 ok | untranslated |
+| [dsh-baton](https://github.com/JialaoLiu/dsh-baton) | 264 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [dsh-doyourweb](https://github.com/SheepofSheep/dsh-doyourweb) | 63 | 🟢 ok | untranslated |
+| [DS-Bot](https://github.com/Fei2411/DS-Bot) | 9091 | 🟢 ok | untranslated |
 | [dsh-posterflow-ai](https://github.com/Something11235/dsh-posterflow-ai) | 25 | 🟢 ok | untranslated |
 | [dsh-computer-use](https://github.com/copylee711/dsh-computer-use) | 52 | 🟢 ok | untranslated |
-| [dsh-purge](https://github.com/kingcharleslzy-ai/dsh-purge) | 12925 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
+| [dsh-purge](https://github.com/kingcharleslzy-ai/dsh-purge) | 13041 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
 | [ghost](https://github.com/varsian/ghost) | 52 | 🔴 broken (failed once, retried — install failed (exit 254):  ENOENT  ENOENT: no such file or directory, open '/tmp/dsh-compat-WdUaLp/ghost/profiles/compat/components/tryg) | untranslated |
 | [dsh-progress-rules](https://github.com/Adamaik/dsh-progress-rules) | 41 | 🟢 ok | untranslated |
-| [dsh-connect-qoder](https://github.com/dingminhua/dsh-connect-qoder) | 103 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-connect-qoder@0.2.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@) | untranslated |
+| [dsh-connect-qoder](https://github.com/dingminhua/dsh-connect-qoder) | 104 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-connect-qoder@0.2.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@) | untranslated |
 | [dsh-vscode-workbench](https://github.com/tingfeng347/dsh-vscode-workbench) | 27 | 🟢 ok | untranslated |
 | [dsh-jev-tools](https://github.com/HorusJiang/dsh-jev-tools) | 13 | 🟢 ok | untranslated |
 | [dsh-wallpaper-engine](https://github.com/sakuraaa667/dsh-wallpaper-engine) | 14 | ⚪ unknown | untranslated |
@@ -709,49 +709,49 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-auto-retry](https://github.com/zxmqq1234/dsh-auto-retry) | 15 | 🟢 ok | untranslated |
 | [dsh-cover-pipeline](https://github.com/InariNGT-Ofiicial/dsh-cover-pipeline) | 29 | ⚪ unknown | untranslated |
 | [dsh-github-connect](https://github.com/Moon-shiyue/dsh-github-connect) | 18 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-github-connect@0.1.3 is incompatible with dsh 0.2.2-rc.5: requirements {") | untranslated |
-| [dsh-game-daily](https://github.com/gychen-NJU/dsh-game-daily) | 71 | 🟢 ok | untranslated |
+| [dsh-game-daily](https://github.com/gychen-NJU/dsh-game-daily) | 72 | 🟢 ok | untranslated |
 | [dsh-soul](https://github.com/icyaaaww/dsh-soul) | 123 | 🟢 ok | untranslated |
 | [dsh-startup-secret](https://github.com/huzhengcai471-crypto/dsh-startup-secret) | 218 | 🟢 ok | untranslated |
 | [dsh-dania-voice](https://github.com/xcw520/dsh-dania-voice) | 30 | 🟢 ok | untranslated |
-| [dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) | 32665 | ⚪ unknown | untranslated |
-| [dsh-prompt-rewriter](https://github.com/huaguoxingkong/dsh-prompt-rewriter) | 318 | 🟢 ok | untranslated |
+| [dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) | 32964 | ⚪ unknown | untranslated |
+| [dsh-prompt-rewriter](https://github.com/huaguoxingkong/dsh-prompt-rewriter) | 321 | 🟢 ok | untranslated |
 | [dsh-vscode](https://github.com/omdsh-dev/dsh-vscode) | 31 | ⚪ unknown | untranslated |
 | [dsh-qq-link](https://github.com/Yuuyuko-uu/dsh-qq-link) | 189 | 🟢 ok | untranslated |
 | [dafayu-pixiv-duty](https://github.com/kuroshio4396/dafayu-pixiv-duty) | 48 | ⚪ unknown | untranslated |
-| [dsh-purge](https://github.com/ZXEB/dsh-purge) | 638 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
+| [dsh-purge](https://github.com/ZXEB/dsh-purge) | 645 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
 | [dsh-infinite_canvas](https://github.com/NINKCH/dsh-infinite_canvas) | 128 | 🟢 ok | untranslated |
 | [dsh-purge](https://github.com/555bbbAAA/dsh-purge) | 80 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
 | [dsh-honcho](https://github.com/plastic-labs/dsh-honcho) | 36 | ⚪ unknown | untranslated |
-| [dsh-boot-animation](https://github.com/lxj5820/dsh-boot-animation) | 371 | 🟢 ok | untranslated |
-| [dsh-media-desk](https://github.com/woniuniuniu/dsh-media-desk) | 1745 | 🟢 ok | untranslated |
+| [dsh-boot-animation](https://github.com/lxj5820/dsh-boot-animation) | 374 | 🟢 ok | untranslated |
+| [dsh-media-desk](https://github.com/woniuniuniu/dsh-media-desk) | 1762 | 🟢 ok | untranslated |
 | [dsh-bili-pond](https://github.com/YOYOLnFu/dsh-bili-pond) | 30 | 🟢 ok | untranslated |
 | [dsh-auth-cookie-guard](https://github.com/jitianjiyan/dsh-auth-cookie-guard) | 44 | 🟢 ok | untranslated |
-| [dsh-live-compact](https://github.com/MerkyorLynn/dsh-live-compact) | 371 | 🟢 ok | untranslated |
+| [dsh-live-compact](https://github.com/MerkyorLynn/dsh-live-compact) | 373 | 🟢 ok | untranslated |
 | [dsh-voice-prompt-enhancer](https://github.com/Fishsb/dsh-voice-prompt-enhancer) | 135 | 🟢 ok | untranslated |
 | [dsh-handraw-style](https://github.com/yang0/dsh-handraw-style) | 92 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-aha-tutor](https://github.com/BaronCyrus/dsh-aha-tutor) | 52 | 🟢 ok | untranslated |
 | [dsh-prelude](https://github.com/dbcaskml183-dotcom/dsh-prelude) | 256 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh_douyin_tools](https://github.com/kdcadmin/dsh_douyin_tools) | 51 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
-| [dsh-grok-search](https://github.com/Lain-in-coding/dsh-grok-search) | 114 | 🟢 ok | untranslated |
+| [dsh-grok-search](https://github.com/Lain-in-coding/dsh-grok-search) | 115 | 🟢 ok | untranslated |
 | [dshgo](https://github.com/xiazhi88/dshgo) | 69 | 🟢 ok | untranslated |
 | [dsh-reforge](https://github.com/wang1299/dsh-reforge) | 104 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-reforge@0.1.0-alpha.2 is incompatible with dsh 0.2.2-rc.5: requirements {) | untranslated |
-| [dsh-breach](https://github.com/zhuchongba-01/dsh-breach) | 108 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-breach/-/dsh-breach-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). ) | untranslated |
-| [dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) | 51 | 🟢 ok | untranslated |
-| [dsh-deepseek-chat](https://github.com/xingxingbk-git/dsh-deepseek-chat) | 39 | 🟢 ok | untranslated |
-| [agy-staff](https://github.com/keli-wen/agy-staff) | 939 | 🟢 ok | untranslated |
-| [dsh-ensp](https://github.com/lizi600jin/dsh-ensp) | 266 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dsh-breach](https://github.com/zhuchongba-01/dsh-breach) | 109 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-breach/-/dsh-breach-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). ) | untranslated |
+| [dsh-ppt](https://github.com/STARDUSTLC666/dsh-ppt) | 52 | 🟢 ok | untranslated |
+| [dsh-deepseek-chat](https://github.com/xingxingbk-git/dsh-deepseek-chat) | 40 | 🟢 ok | untranslated |
+| [agy-staff](https://github.com/keli-wen/agy-staff) | 941 | 🟢 ok | untranslated |
+| [dsh-ensp](https://github.com/lizi600jin/dsh-ensp) | 279 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [moki-library-for-dsh](https://github.com/JKZeng-cell/moki-library-for-dsh) | 35 | ⚪ unknown | untranslated |
 | [polymarket-proxy](https://github.com/dennisyang1986/polymarket-proxy) | 160 | 🟢 ok | untranslated |
 | [pointy](https://github.com/pointylab/pointy) | 47 | ⚪ unknown | untranslated |
-| [dsh-video-workbench](https://github.com/Merziller/dsh-video-workbench) | 66 | 🟢 ok | untranslated |
-| [dsh-cdx-plus](https://github.com/Asuta/dsh-cdx-plus) | 92 | ⚪ unknown | untranslated |
+| [dsh-video-workbench](https://github.com/Merziller/dsh-video-workbench) | 68 | 🟢 ok | untranslated |
+| [dsh-cdx-plus](https://github.com/Asuta/dsh-cdx-plus) | 96 | ⚪ unknown | untranslated |
 | [chat-in-dsh](https://github.com/YinkaiYu/chat-in-dsh) | 48 | 🟢 ok | untranslated |
-| [knowledge-galaxy](https://github.com/Derek-Y-JQ/knowledge-galaxy) | 82 | 🟢 ok | untranslated |
-| [DS-Bot](https://github.com/Fei-Craft/DS-Bot) | 9007 | 🟢 ok | untranslated |
-| [dsh-niuma-broker](https://github.com/Nimbus318/dsh-niuma-broker) | 75 | 🟢 ok | untranslated |
-| [DSH-YS-pojia](https://github.com/yushang657/DSH-YS-pojia) | 89 | ⚪ unknown | untranslated |
-| [dsh-tiana](https://github.com/tianacloud/dsh-tiana) | 84 | ⚪ unknown | untranslated |
-| [dudu](https://github.com/weiwenhao/dudu) | 43 | ⚪ unknown | untranslated |
+| [knowledge-galaxy](https://github.com/Derek-Y-JQ/knowledge-galaxy) | 85 | 🟢 ok | untranslated |
+| [DS-Bot](https://github.com/Fei-Craft/DS-Bot) | 9091 | 🟢 ok | untranslated |
+| [dsh-niuma-broker](https://github.com/Nimbus318/dsh-niuma-broker) | 77 | 🟢 ok | untranslated |
+| [DSH-YS-pojia](https://github.com/yushang657/DSH-YS-pojia) | 144 | ⚪ unknown | untranslated |
+| [dsh-tiana](https://github.com/tianacloud/dsh-tiana) | 91 | ⚪ unknown | untranslated |
+| [dudu](https://github.com/weiwenhao/dudu) | 48 | ⚪ unknown | untranslated |
 
 ### 🧩 技能
 
@@ -779,7 +779,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-Unlimited-OCR-Skill](https://github.com/Aidenwu0209/dsh-Unlimited-OCR-Skill) | 1 | ⚪ unknown | Unlimited-OCR 技能：原生工具 + GUI 配置。 |
 | [DeepSeek-Harness-Skill](https://github.com/itmoqing/DeepSeek-Harness-Skill) | 5 | ⚪ unknown | 这是一个Codex/Claude来进行任务发布给DeepSeek Harness干活的工作流的Skill，能实现并发，多个工作区一起执行 |
 | [dsh-plugin-rdk](https://github.com/D-Robotics/dsh-plugin-rdk) | 1 | ⚪ unknown | D-Robotics RDK (地瓜机器人) integration for DeepSeek Harness — native RDK skill catalog, rdk_skills browser tool, and rdk_board_detect… |
-| [dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) | 362 | 🟢 ok | 逆向技能全家桶（85 个 SKILL.md）：逆向工程、授权渗透和安全研究的工作流，打包成插件。 |
+| [dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) | 363 | 🟢 ok | 逆向技能全家桶（85 个 SKILL.md）：逆向工程、授权渗透和安全研究的工作流，打包成插件。 |
 | [dsh-skill-manager](https://github.com/Lanxing6480/dsh-skill-manager) | 2 | 🟢 ok | Deepseek Harness 的Skill管理插件 |
 | [dsh-skills-manager](https://github.com/xiaoxianyu-office/dsh-skills-manager) | 3 | 🟢 ok | DSH Skills 管理器：设置页系统/用户技能分类，用户技能开关/编辑/删除/新建。Skills manager for DeepSeek Harness: system/user skill management (toggle/edit/delete… |
 | [dsh-skill-remote](https://github.com/CSY656/dsh-skill-remote) | 1 | ⚪ unknown | 远程技能源：从 skills.sh/GitHub 安装技能。 |
@@ -793,7 +793,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-hud](https://github.com/a903067276-rgb/dsh-hud) | 9 | 🟢 ok | HUD 状态面板：git 状态、MCP 服务器、技能、模型与 token 用量悬浮窗。 |
 | [dsh-SkillsManagePlugins](https://github.com/z-col/dsh-SkillsManagePlugins) | 2 | ⚪ unknown | DSH Skills 可视化管理器：在 DSH Web 界面可视化查看、编辑、创建、删除 Skills（用户级 ~/.dsh/skills 与项目级 .dsh/skills） |
 | [dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager) | 16 | 🟢 ok | DSH 插件管理器:在 DeepSeek Harness 设置面板内嵌 GUI,管理 MCP 服务 / Skills / 内置插件包,改动热生效无需重启 |
-| [dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) | 618 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-skills-manager@0.2.0 is incompatible with dsh 0.2.2-rc.5: requirements {") | untranslated |
+| [dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) | 622 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-skills-manager@0.2.0 is incompatible with dsh 0.2.2-rc.5: requirements {") | untranslated |
 | [riffkit-dsh-plugin](https://github.com/riffkit/dsh-plugin) | 1 | 🟢 ok | 复刻已跑赢的短视频：给一个源（TikTok 链接 / 上传视频 / 已分析模板），后端把它的情绪公式 riff 成你自己的 AI 视频（可发布的短视频 / UGC 广告素材）。 |
 | [dsh-movein](https://github.com/sjh9714/dsh-movein) | 18 | 🟢 ok | untranslated |
 | [dsh_plugin_swift_cycle](https://github.com/Solismuchengxue/dsh_plugin_swift_cycle) | 9 | ⚪ unknown | untranslated |
@@ -805,17 +805,17 @@ npm create dsh-plugin@latest my-plugin
 | [Jnpz](https://github.com/pazz11/Jnpz) | 14 | ⚪ unknown | untranslated |
 | [dsh-skill-manager](https://github.com/tuogusa/dsh-skill-manager) | 6 | 🟢 ok | untranslated |
 | [dsh-skill-mcp-panel](https://github.com/Fishquito7/dsh-skill-mcp-panel) | 289 | 🟢 ok | untranslated |
-| [minecraft-dev](https://github.com/sikadi233-hub/minecraft-dev) | 44 | 🟢 ok | untranslated |
+| [minecraft-dev](https://github.com/sikadi233-hub/minecraft-dev) | 45 | 🟢 ok | untranslated |
 | [dsh-skills-market](https://github.com/peiqi10086/dsh-skills-market) | 10 | ⚪ unknown | untranslated |
 | [dsh-skills](https://github.com/arch3rPro/dsh-skills) | 6 | 🟢 ok | untranslated |
 | [dsh-withskillhub](https://github.com/lhwu1/dsh-withskillhub) | 5 | ⚪ unknown | untranslated |
 | [dshscan](https://github.com/shaoshi20/dshscan) | 12 | ⚪ unknown | untranslated |
 | [new-litigation-visualization](https://github.com/MiaoQichuan/new-litigation-visualization) | 179 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
-| [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh) | 837 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh) | 839 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) | 31 | 🟢 ok | untranslated |
 | [dsh-run2skill](https://github.com/qkycir-123/dsh-run2skill) | 110 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-run2skill@1.0.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deep) | untranslated |
-| [dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) | 420 | 🟢 ok | untranslated |
-| [oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh) | 837 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) | 421 | 🟢 ok | untranslated |
+| [oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh) | 839 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) | 227 | 🟢 ok | untranslated |
 | [dsh-plugin-capabilities](https://github.com/qinyre/dsh-plugin-capabilities) | 16 | 🟢 ok | untranslated |
 | [dsh-ponytail](https://github.com/gongyijie85/dsh-ponytail) | 24 | 🟢 ok | untranslated |
@@ -825,24 +825,24 @@ npm create dsh-plugin@latest my-plugin
 | [echocat-skill-panel-3.0](https://github.com/VDERR/echocat-skill-panel-3.0) | 8 | 🟢 ok | untranslated |
 | [echocat-skill-panel](https://github.com/VDERR/echocat-skill-panel) | 8 | 🟢 ok | untranslated |
 | [dsh-echocat-skill-panel](https://github.com/VDERR/dsh-echocat-skill-panel) | 8 | 🟢 ok | untranslated |
-| [dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) | 2296 | 🟢 ok | untranslated |
+| [dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) | 2302 | 🟢 ok | untranslated |
 | [dsh-ponytail](https://github.com/Wenaixi/dsh-ponytail) | 52 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-ponytail@0.2.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deeps) | untranslated |
 | [dsh-mech-workbench](https://github.com/insideyou-0501/dsh-mech-workbench) | 63 | 🟢 ok | untranslated |
-| [dsh-ui-ux-pro-max](https://github.com/ChenYiming-aaa/dsh-ui-ux-pro-max) | 37 | 🟢 ok | untranslated |
+| [dsh-ui-ux-pro-max](https://github.com/ChenYiming-aaa/dsh-ui-ux-pro-max) | 38 | 🟢 ok | untranslated |
 | [dsh-preset-workshop](https://github.com/Zai-G/dsh-preset-workshop) | 18 | 🟢 ok | untranslated |
-| [dsh-guizang-design](https://github.com/op7418/dsh-guizang-design) | 1071 | 🟢 ok | untranslated |
-| [mcp-server-fanqie](https://github.com/fysh1010/mcp-server-fanqie) | 58 | ⚪ unknown | untranslated |
-| [dsh-purge-safe](https://github.com/CallMeGuLab/dsh-purge-safe) | 1045 | 🟢 ok | untranslated |
-| [dsh-realman-studio](https://github.com/liangdabiao/dsh-realman-studio) | 41 | ⚪ unknown | untranslated |
+| [dsh-guizang-design](https://github.com/op7418/dsh-guizang-design) | 1078 | 🟢 ok | untranslated |
+| [mcp-server-fanqie](https://github.com/fysh1010/mcp-server-fanqie) | 59 | ⚪ unknown | untranslated |
+| [dsh-purge-safe](https://github.com/CallMeGuLab/dsh-purge-safe) | 1067 | 🟢 ok | untranslated |
+| [dsh-realman-studio](https://github.com/liangdabiao/dsh-realman-studio) | 42 | ⚪ unknown | untranslated |
 
 ### 🎨 界面
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 10656 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | DSH Web UI 插件与皮肤合集：任务板、Git 面板等 |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 5351 | 🟢 ok | 侧边栏完整工作台：文件渲染/终端/Git/子代理 |
+| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 10662 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | DSH Web UI 插件与皮肤合集：任务板、Git 面板等 |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 5356 | 🟢 ok | 侧边栏完整工作台：文件渲染/终端/Git/子代理 |
 | [ui-status-label](https://github.com/alingalingling/ui-status-label) | 52 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | 自定义「鲸鱼娘」思考状态的显示 |
-| [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 3152 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | DSH Web 鲸鱼娘皮肤系列（深海女仆工坊） |
+| [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 3154 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | DSH Web 鲸鱼娘皮肤系列（深海女仆工坊） |
 | [dsh-focus-chat](https://github.com/dingyi222666/dsh-focus-chat) | 20 | 🟢 ok | 「聚焦会话」精简会话视图 |
 | [dsh-side-panel](https://github.com/ccq1/dsh-side-panel) | 16 | 🟢 ok | DSH 侧边栏：文件浏览器、终端、Git 审查 |
 | [dsh-ui-progress](https://github.com/lhh010/dsh-ui-progress) | 7 | 🟢 ok | 会话进度条：todos 进度/实时 token 速率 |
@@ -850,7 +850,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) | 173 | 🟢 ok | 选中批注：选文字→批注→随消息发送 |
 | [dsh-chat-width](https://github.com/chen-001/dsh-chat-width) | 6 | ⚪ unknown | 调整 DSH 回复宽度 |
 | [dsh-companion](https://github.com/william-jin-cmu/dsh-companion) | 4 | 🟢 ok | 常驻桌面助手：全局唤起/定时自动化/插件市场 |
-| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 1067 | 🟢 ok | 会话内联渲染交互式 UI 组件 |
+| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 1068 | 🟢 ok | 会话内联渲染交互式 UI 组件 |
 | [dsh-input-history](https://github.com/lhh010/dsh-input-history) | 3 | 🟢 ok | Ctrl+Up/Down 召回已发送消息 |
 | [dsh-navbar](https://github.com/vlln/dsh-navbar) | 46 | 🟢 ok | 对话节点导航条（右缘节点串跳转） |
 | [dsh-paste-input](https://github.com/lhh010/dsh-paste-input) | 9 | ⚪ unknown | Ctrl+V 粘贴/拖拽/选文件增强 |
@@ -860,7 +860,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-deeplink](https://github.com/qyw233/dsh-deeplink) | 4 | 🟢 ok | 深链插件：?session=/?workspace= 直接打开 |
 | [dsh-diff-viewer](https://github.com/lehhair/dsh-diff-viewer) | 24 | ⚪ unknown | PiUI 风格 diff 查看器，替换原生 DiffBlock |
 | [dsh-drag-and-drop](https://github.com/bill9109/dsh-drag-and-drop) | 21 | 🟢 ok | 跨平台文件拖拽与原始路径插入 |
-| [dsh-qq2006](https://github.com/LaplaceYoung/dsh-qq2006) | 32 | 🟢 ok | QQ2006 皮肤插件 |
+| [dsh-qq2006](https://github.com/LaplaceYoung/dsh-qq2006) | 33 | 🟢 ok | QQ2006 皮肤插件 |
 | [dsh-session-notification](https://github.com/dingyi222666/dsh-session-notification) | 35 | ⚪ unknown | 会话完成等四状态通知 |
 | [dsh-spotlight](https://github.com/0xsline/dsh-spotlight) | 23 | 🟢 ok | 键盘优先的命令面板 |
 | [dsh-ths-skin](https://github.com/AdamPlatin123/dsh-ths-skin) | 3 | ⚪ unknown | 同花顺行情终端风格皮肤 + K 线面板 |
@@ -869,7 +869,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) | 33 | 🟢 ok | DSH 桌面通知提醒 |
 | [ex-setting](https://github.com/omdsh-dev/ex-setting) | 1 | ⚪ unknown | DSH 设置扩展 |
 | [whale-girl](https://github.com/vlln/whale-girl) | 418 | 🟢 ok | QQ 宠物形态的桌面宠物插件 |
-| [dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) | 238 | 🟢 ok | 替换 DSH 状态显示的 web 插件。 |
+| [dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) | 239 | 🟢 ok | 替换 DSH 状态显示的 web 插件。 |
 | [dsh-ramify](https://github.com/yanglongyun/dsh-ramify) | 21 | ⚪ unknown | 创意分支画布插件：树状工作区生成、对比。 |
 | [dsh-xiaohei](https://github.com/opensetk/dsh-xiaohei) | 5 | ⚪ unknown | dsh 的罗小黑皮肤插件。 |
 | [dsh-xiaoyao-skins](https://github.com/147228/dsh-xiaoyao-skins) | 23 | ⚪ unknown | 夕小瑶 × DSH Web 皮肤合集、安装器与创作工具链。 |
@@ -1030,7 +1030,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-opencodego-usage](https://github.com/BeiZi6/dsh-opencodego-usage) | 8 | ⚪ unknown | DSH Web GUI plugin: OpenCodeGo quota breathing light + liquid-glass panel with rolling/weekly/monthly progress bars (作者 Xu Yuansh… |
 | [dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) | 300 | 🟢 ok | DeepSeek Harness 换肤 / 壁纸 / 主题包插件 (dsh-plugin) — 8 套 Mirage 主题、每用户强调色、壁纸2.0、主题包导入导出/分享链接、收藏与随机，纯原生 token 系统实现。 |
 | [dsh-file-mention](https://github.com/hucj09/dsh-file-mention) | 2 | 🟢 ok | DSH (DeepSeek Harness) Web GUI 插件：输入 @ 引用工作区文件，体验类似 Claude Code 的 @file。 |
-| [dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077) | 41 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077) | 42 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) | 23 | 🟢 ok | untranslated |
 | [dsh-liquid-glass](https://github.com/xingyingyuzhui/dsh-liquid-glass) | 15 | 🟢 ok | untranslated |
 | [whale-notify](https://github.com/Mochabafey/whale-notify) | 6 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
@@ -1039,8 +1039,8 @@ npm create dsh-plugin@latest my-plugin
 | [reef](https://github.com/huey1in/reef) | 20 | ⚪ unknown | untranslated |
 | [deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) | 129 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) | 102 | 🟢 ok | 为 DeepSeek Harness Web UI 提供流畅流式渲染和丝滑滚动。 |
-| [voyager](https://github.com/Nagi-ovo/voyager) | 20740 | ⚪ unknown | untranslated |
-| [dsh-im](https://github.com/xmanrui/dsh-im) | 3826 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-im@1.0.5 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepseek-ai) | untranslated |
+| [voyager](https://github.com/Nagi-ovo/voyager) | 20745 | ⚪ unknown | untranslated |
+| [dsh-im](https://github.com/xmanrui/dsh-im) | 3836 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-im@1.0.5 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepseek-ai) | untranslated |
 | [dsh-gui](https://github.com/kipozannaki/dsh-gui) | 4 | ⚪ unknown | untranslated |
 | [dsh-unread-dot](https://github.com/Bing-Bryan/dsh-unread-dot) | 3 | ⚪ unknown | untranslated |
 | [dsh-plugin-vscode-sidebar](https://github.com/gameswu/dsh-plugin-vscode-sidebar) | 7 | ⚪ unknown | untranslated |
@@ -1060,10 +1060,10 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-uisfx](https://github.com/XanthanL/dsh-plugin-uisfx) | 6 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-plugin-uisfx@0.1.1 is incompatible with dsh 0.2.2-rc.5: requirements {"@d) | untranslated |
 | [dsh-live2d-companion](https://github.com/Tisitan/dsh-live2d-companion) | 16 | ⚪ unknown | untranslated |
 | [dsh-web-restart](https://github.com/1123762794/dsh-web-restart) | 5 | ⚪ unknown | untranslated |
-| [dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) | 224 | 🟢 ok | untranslated |
+| [dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) | 225 | 🟢 ok | untranslated |
 | [dsh-ui-font](https://github.com/warmwine/dsh-ui-font) | 12 | 🟢 ok | untranslated |
 | [dsh-thinking-notifier](https://github.com/6-debug-6/dsh-thinking-notifier) | 4 | ⚪ unknown | untranslated |
-| [dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) | 23 | 🟢 ok | untranslated |
+| [dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) | 24 | 🟢 ok | untranslated |
 | [dsh-openai-oauth](https://github.com/AdonisSheldon/dsh-openai-oauth) | 10 | 🟢 ok | untranslated |
 | [dsh-client-ui-skin-denia](https://github.com/Ewnscat-ya/dsh-client-ui-skin-denia) | 58 | 🟢 ok | untranslated |
 | [dsh-whale-animation](https://github.com/LeemanCheung/dsh-whale-animation) | 7 | ⚪ unknown | untranslated |
@@ -1071,11 +1071,11 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-gui](https://github.com/EricXu20266/dsh-gui) | 9 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-skin-manager](https://github.com/xiaoyangcheng84-svg/dsh-skin-manager) | 7 | 🟢 ok | untranslated |
 | [dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui) | 99 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
-| [dsh-remote](https://github.com/Hyna-hla/dsh-remote) | 23 | 🟢 ok | untranslated |
+| [dsh-remote](https://github.com/Hyna-hla/dsh-remote) | 24 | 🟢 ok | untranslated |
 | [dsh-web-tools](https://github.com/A3Boy/dsh-web-tools) | 46 | ⚪ unknown | untranslated |
 | [dsh-whale-galgame](https://github.com/JAdpp/dsh-whale-galgame) | 46 | 🟢 ok | untranslated |
 | [dsh-better-sidebar-lite](https://github.com/pixellover1433/dsh-better-sidebar-lite) | 6 | 🟢 ok | untranslated |
-| [DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 7480 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 7486 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette) | 110 | 🟢 ok | untranslated |
 | [dsh-whale-meter](https://github.com/Shiye-10Pages/dsh-whale-meter) | 13 | 🟢 ok | untranslated |
 | [dsh-kimino-theme](https://github.com/niiang/dsh-kimino-theme) | 45 | 🟢 ok | untranslated |
@@ -1084,14 +1084,14 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) | 18 | 🟢 ok | untranslated |
 | [dsh-md-quiz](https://github.com/MrElysium/dsh-md-quiz) | 6 | ⚪ unknown | untranslated |
 | [ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) | 11 | ⚪ unknown | untranslated |
-| [dsh-vscode](https://github.com/Fengze233/dsh-vscode) | 52 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [dsh-vscode](https://github.com/Fengze233/dsh-vscode) | 53 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-prompt-optimize](https://github.com/1847123733/dsh-prompt-optimize) | 6 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-prompt-optimize@0.1.0 is incompatible with dsh 0.2.2-rc.5: requirements {) | untranslated |
 | [dsh-undo-savepoint](https://github.com/lire1131/dsh-undo-savepoint) | 209 | 🟢 ok | untranslated |
 | [dsh-code-review](https://github.com/CooStack/dsh-code-review) | 7 | 🟢 ok | untranslated |
-| [dsh-knowledge](https://github.com/Soren-ABT/dsh-knowledge) | 115 | 🟢 ok | untranslated |
+| [dsh-knowledge](https://github.com/Soren-ABT/dsh-knowledge) | 116 | 🟢 ok | untranslated |
 | [dsh-aemeath](https://github.com/hachimi-ai/dsh-aemeath) | 18 | 🟢 ok | untranslated |
 | [dsh-tavily](https://github.com/moguiyu/dsh-tavily) | 14 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-tavily@0.3.1 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepsee) | untranslated |
-| [dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) | 314 | 🟢 ok | untranslated |
+| [dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) | 315 | 🟢 ok | untranslated |
 | [dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield) | 180 | 🟢 ok | untranslated |
 | [dsh-plugin-tavily](https://github.com/1624318455/dsh-plugin-tavily) | 5 | ⚪ unknown | untranslated |
 | [dsh-skin-alphacoders](https://github.com/sakka6868/dsh-skin) | 2 | 🟢 ok | 用 Alphacoders 热门壁纸当 DSH Web 背景：图库、搜索、本地上传、按主题换壁纸、收藏与自动更换 |
@@ -1100,8 +1100,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) | 31 | 🟢 ok | untranslated |
 | [dsh-imessage](https://github.com/photon-hq/dsh-imessage) | 27 | 🟢 ok | untranslated |
 | [dsh-obsidian-math](https://github.com/maple110011/dsh-obsidian-math) | 9 | ⚪ unknown | untranslated |
-| [dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) | 246 | 🟢 ok | untranslated |
-| [dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) | 323 | 🟢 ok | untranslated |
+| [dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) | 251 | 🟢 ok | untranslated |
+| [dsh-bloom-theme](https://github.com/webkubor/dsh-bloom-theme) | 324 | 🟢 ok | untranslated |
 | [dsh-android](https://github.com/ZSeven-W/dsh-android) | 368 | ⚪ unknown | untranslated |
 | [dsh_theme_terraria](https://github.com/10086ggqq/dsh_theme_terraria) | 30 | ⚪ unknown | untranslated |
 | [dsh-ui-tweaks](https://github.com/wlj521/dsh-ui-tweaks) | 17 | 🟢 ok | untranslated |
@@ -1124,89 +1124,90 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-filesnap](https://github.com/extracurricular-ai/dsh-filesnap) | 43 | 🟢 ok | untranslated |
 | [dsh-minecraft-ui](https://github.com/TFboy1/dsh-minecraft-ui) | 21 | 🟢 ok | untranslated |
 | [dsh-whale-widget-plus](https://github.com/louke6572/dsh-whale-widget-plus) | 105 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
-| [dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) | 26 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) | 27 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-mcp-manage](https://github.com/null119/dsh-mcp-manage) | 23 | 🟢 ok | untranslated |
 | [dsh-raw-html-v2](https://github.com/plolpl789/dsh-raw-html-v2) | 98 | 🟢 ok | untranslated |
 | [dsh-voice-goodandready](https://github.com/GooDAnDReaDY/dsh-voice) | 17 | 🟢 ok | Web UI 语音输入：按停顿分段的流式听写 + 语音消息，每条可配独立的多服务商回退链。 |
 | [dsh-tts](https://github.com/GooDAnDReaDY/dsh-tts) | 6 | 🟢 ok | Web UI 语音朗读助手回复：多服务商回退链（OpenAI/ElevenLabs/Google/Azure/Groq/Deepgram/Edge/Piper/eSpeak）。 |
 | [dsh-russian-lang](https://github.com/GooDAnDReaDY/dsh-russian-lang) | 77 | 🟢 ok | Settings → General → Language 增加俄语选项：核心 + 30+ 插件 locale 命名空间运行时翻译（722+3989 键人工审校）。 |
-| [dsh-infinite-gen-4](https://github.com/Minglink/dsh-infinite-gen-4) | 4772 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [dsh-infinite-gen-4](https://github.com/Minglink/dsh-infinite-gen-4) | 4782 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-history](https://github.com/startnewlabs/dsh-history) | 14 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-history@0.1.25 is incompatible with dsh 0.2.2-rc.5: requirements {"@deeps) | untranslated |
 | [DeepSeek-Balance-Whale-Widget-Bowl](https://github.com/Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl) | 41 | ⚪ unknown | untranslated |
 | [augmentor-dsh-extension-plugin](https://github.com/ManoloRemiddi/augmentor-dsh-extension-plugin) | 29 | ⚪ unknown | untranslated |
-| [DSHBox](https://github.com/WSK-build/DSHBox) | 787 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [DSHBox](https://github.com/WSK-build/DSHBox) | 788 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-voice-mode](https://github.com/qishuilalala/dsh-voice-mode) | 37 | 🟢 ok | untranslated |
-| [deepseek-harness-android](https://github.com/dphmoblie/deepseek-harness-android) | 150 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [deepseek-harness-android](https://github.com/dphmoblie/deepseek-harness-android) | 153 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-font](https://github.com/WangPaoPaoLab/dsh-font) | 11 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-plugin-kit](https://github.com/hyzyn/dsh-plugin-kit) | 69 | ⚪ unknown | untranslated |
 | [oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) | 53 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-ponytail](https://github.com/MengYuil/dsh-ponytail) | 19 | 🟢 ok | untranslated |
 | [dsh-short-video-studio](https://github.com/fengyungithub/dsh-short-video-studio) | 46 | 🟢 ok | untranslated |
 | [dsh-maid-whale-UI](https://github.com/yunxiiQwQ/dsh-maid-whale-UI) | 47 | ⚪ unknown | untranslated |
-| [voyager](https://github.com/voyager-crew/voyager) | 20740 | ⚪ unknown | untranslated |
-| [DeepSeek-Harness-Video-Director](https://github.com/chiphoton/DeepSeek-Harness-Video-Director) | 73 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [voyager](https://github.com/voyager-crew/voyager) | 20745 | ⚪ unknown | untranslated |
+| [DeepSeek-Harness-Video-Director](https://github.com/chiphoton/DeepSeek-Harness-Video-Director) | 74 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [mayfly](https://github.com/Ephemeral-AI-Lab/mayfly) | 24 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-whale-girl-pet](https://github.com/yanzwzz/dsh-whale-girl-pet) | 53 | 🟢 ok | untranslated |
 | [dsh-api-dashboard](https://github.com/133563825as-ai/dsh-api-dashboard) | 27 | 🟢 ok | untranslated |
 | [dsh-ui-skin-loader](https://github.com/DSH-EAC/dsh-ui-skin-loader) | 40 | ⚪ unknown | untranslated |
 | [EAC-skin-loader](https://github.com/DSH-EAC/EAC-skin-loader) | 40 | ⚪ unknown | untranslated |
 | [dsh-deepcanary](https://github.com/Oscar-Williams/dsh-deepcanary) | 183 | 🟢 ok | untranslated |
-| [EAC-Pack](https://github.com/DSH-EAC/EAC-Pack) | 1367 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
-| [EAC-Pack](https://github.com/Ebony-Vinyl/EAC-Pack) | 1367 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [EAC-Pack](https://github.com/DSH-EAC/EAC-Pack) | 1379 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [EAC-Pack](https://github.com/Ebony-Vinyl/EAC-Pack) | 1379 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [EAC-skin-loader](https://github.com/Ebony-Vinyl/EAC-skin-loader) | 40 | ⚪ unknown | untranslated |
 | [dsh-cuigengji-plugin](https://github.com/mistnest/dsh-cuigengji-plugin) | 106 | 🟢 ok | untranslated |
 | [dsh-claude-theme](https://github.com/aklnaaw/dsh-claude-theme) | 34 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-motion-ui](https://github.com/Scorp1o117/dsh-motion-ui) | 48 | 🟢 ok | untranslated |
 | [dsh-skins](https://github.com/zhu1090093659/dsh-skins) | 42 | 🟢 ok | untranslated |
 | [dsh-comfyui-web](https://github.com/mangfufu/dsh-comfyui-web) | 26 | ⚪ unknown | untranslated |
-| [dsh-video-skin](https://github.com/Something11235/dsh-video-skin) | 139 | 🟢 ok | untranslated |
+| [dsh-video-skin](https://github.com/Something11235/dsh-video-skin) | 141 | 🟢 ok | untranslated |
 | [dsh-genui](https://github.com/lhuans/dsh-genui) | 71 | 🟢 ok | untranslated |
 | [dsh-prompt-enhance](https://github.com/rongxingda/dsh-prompt-enhance) | 44 | 🟢 ok | untranslated |
 | [dsh-cyrene-theme](https://github.com/berhbro/dsh-cyrene-theme) | 63 | 🟢 ok | untranslated |
 | [dsh-intelligent-ui](https://github.com/gulagala001/dsh-intelligent-ui) | 26 | 🟢 ok | untranslated |
-| [dsh-fish-memory](https://github.com/Yuuyuko-uu/dsh-fish-memory) | 554 | 🟢 ok | untranslated |
+| [dsh-fish-memory](https://github.com/Yuuyuko-uu/dsh-fish-memory) | 555 | 🟢 ok | untranslated |
 | [dsh-whale-pet](https://github.com/luweiyabo/dsh-whale-pet) | 32 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-whale-pet@0.1.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deep) | untranslated |
 | [dsh-mc-agent](https://github.com/blueziii/dsh-mc-agent) | 38 | ⚪ unknown | untranslated |
 | [DSH-Enhance](https://github.com/IndieXiaoLong/DSH-Enhance) | 44 | 🟢 ok | untranslated |
-| [dsh-plugin-eva-theme](https://github.com/seaison/dsh-plugin-eva-theme) | 53 | 🟢 ok | untranslated |
+| [dsh-plugin-eva-theme](https://github.com/seaison/dsh-plugin-eva-theme) | 54 | 🟢 ok | untranslated |
 | [dsh-cursor-subscription](https://github.com/orrinzeng/dsh-cursor-subscription) | 17 | 🟢 ok | untranslated |
 | [yolo-bot](https://github.com/cyancity/yolo-bot) | 15 | ⚪ unknown | untranslated |
-| [dsh-theme-prts](https://github.com/ash-qw/dsh-theme-prts) | 19 | ⚪ unknown | untranslated |
-| [dsh-boot-suite](https://github.com/LeeRolling/dsh-boot-suite) | 190 | 🟢 ok | untranslated |
+| [dsh-theme-prts](https://github.com/ash-qw/dsh-theme-prts) | 20 | ⚪ unknown | untranslated |
+| [dsh-boot-suite](https://github.com/LeeRolling/dsh-boot-suite) | 192 | 🟢 ok | untranslated |
 | [dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) | 14 | ⚪ unknown | untranslated |
 | [dsh-beyond-glass](https://github.com/LeoEthanZ/dsh-beyond-glass) | 12 | ⚪ unknown | untranslated |
-| [dsh-unlag](https://github.com/regrevia/dsh-unlag) | 124 | 🟢 ok | untranslated |
+| [dsh-unlag](https://github.com/regrevia/dsh-unlag) | 130 | 🟢 ok | untranslated |
 | [dsh-moe-lite](https://github.com/KurosawaGeeker/dsh-moe-lite) | 26 | ⚪ unknown | untranslated |
 | [dsh-fish-buddy](https://github.com/Yuuyuko-uu/dsh-fish-buddy) | 79 | 🟢 ok | untranslated |
 | [cyber-red-ui](https://github.com/huzhengcai471-crypto/cyber-red-ui) | 37 | ⚪ unknown | untranslated |
 | [dsh-dfy](https://github.com/louke6572/dsh-dfy) | 105 | 🟢 ok | untranslated |
-| [fairy-zzz-plugin](https://github.com/AssassinVIX/fairy-zzz-plugin) | 38 | ⚪ unknown | untranslated |
-| [dsh-live-compact](https://github.com/Tranquillitatis-Lab/dsh-live-compact) | 371 | 🟢 ok | untranslated |
-| [dsh-deep-ptc-mode](https://github.com/lishize20040802-rgb/dsh-deep-ptc-mode) | 81 | 🟢 ok | untranslated |
+| [fairy-zzz-plugin](https://github.com/AssassinVIX/fairy-zzz-plugin) | 39 | ⚪ unknown | untranslated |
+| [dsh-live-compact](https://github.com/Tranquillitatis-Lab/dsh-live-compact) | 373 | 🟢 ok | untranslated |
+| [dsh-deep-ptc-mode](https://github.com/lishize20040802-rgb/dsh-deep-ptc-mode) | 83 | 🟢 ok | untranslated |
 | [RuiC-dsh-purge](https://github.com/HRuiCcc/RuiC-dsh-purge) | 30 | ⚪ unknown | untranslated |
 | [dsh-oil-ui](https://github.com/oil-oil/dsh-oil-ui) | 282 | 🟢 ok | untranslated |
-| [dsh-ide-git](https://github.com/KannaKuron/dsh-ide-git) | 37 | 🟢 ok | untranslated |
+| [dsh-ide-git](https://github.com/KannaKuron/dsh-ide-git) | 39 | 🟢 ok | untranslated |
 | [DeepSeek-Balance-Whale-Widget-Bowl](https://github.com/0x2fovo/DeepSeek-Balance-Whale-Widget-Bowl) | 41 | ⚪ unknown | untranslated |
-| [dsh-chief](https://github.com/gluztm/dsh-chief) | 35 | ⚪ unknown | untranslated |
+| [dsh-chief](https://github.com/gluztm/dsh-chief) | 36 | ⚪ unknown | untranslated |
+| [dsh-liuli-ui-enhance](https://github.com/LilycleHeart/dsh-liuli-ui-enhance) | 34 | ⚪ unknown | untranslated |
 
 ### 🐋 皮肤
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [themes (皮肤中心)](https://github.com/whyihaveyou/dsh-themes) | 18 | 🟢 ok | 皮肤中心：151 款昼夜成对皮肤一包打尽——网格预览、搜索、一键试穿，支持收藏、最近试穿与随机换肤。 |
+| [themes (皮肤中心)](https://github.com/whyihaveyou/dsh-themes) | 19 | 🟢 ok | 皮肤中心：151 款昼夜成对皮肤一包打尽——网格预览、搜索、一键试穿，支持收藏、最近试穿与随机换肤。 |
 
 ### 💬 会话
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
 | [pi-discuss-mode](https://github.com/zwrong/pi-discuss-mode) | 10 | ⚪ unknown | Pi Coding Agent 的只读讨论模式 |
-| [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 154 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @anionex/dsh-turn-rewind@0.3.13 is incompatible with dsh 0.2.2-rc.5: requirem) | 对话回退：回滚会话与工作区状态 |
+| [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 156 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @anionex/dsh-turn-rewind@0.3.13 is incompatible with dsh 0.2.2-rc.5: requirem) | 对话回退：回滚会话与工作区状态 |
 | [dsh-share](https://github.com/hellodigua/dsh-share) | 44 | 🟢 ok | DSH 对话分享插件 |
 | [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) | 57 | 🟢 ok | 分支式消息编辑、reroll、版本时间线 |
 | [dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) | 75 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | 上下文注入审计：AGENTS.md/技能/tool schema token 成本 |
 | [dsh-session-health](https://github.com/omdsh-dev/dsh-session-health) | 9 | 🟢 ok | 多帧 zstd 会话文件帧级扫描诊断 |
 | [dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) | 13 | ⚪ unknown | 自进化：agent 在会话内给自己长出/剪掉能力 |
-| [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) | 908 | 🟢 ok | 跨会话长期记忆 + 后台自我进化（纯插件） |
+| [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) | 911 | 🟢 ok | 跨会话长期记忆 + 后台自我进化（纯插件） |
 | [dsh-web-archive](https://github.com/renat3u/dsh-web-archive) | 6 | ⚪ unknown | 折叠对话中无用消息（Think/Bash 等） |
 | [deepseek-manners](https://github.com/Moeblack/deepseek-manners) | 14 | ⚪ unknown | 给每条消息后注入感谢语 |
 | [dsh-agent-budget](https://github.com/vibeinging/dsh-agent-budget) | 1 | ⚪ unknown | 原生 agent 树 token 预算插件 |
@@ -1253,8 +1254,8 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-mcp-proxy](https://github.com/ben7am1n/dsh-mcp-proxy) | 0 | 🟢 ok | dsh-mcp-proxy — DSH 插件（会话） |
 | [dsh-nocturne-memory](https://github.com/RealAlexandreAI/dsh-nocturne-memory) | 1 | 🟢 ok | dsh-nocturne-memory — DSH 插件（会话） |
 | [dsh-balance](https://github.com/TwotwoPiggy/dsh-balance) | 12 | 🟢 ok | dsh-balance — DSH 插件（会话） |
-| [dsh-mneme](https://github.com/modusensus/dsh-mneme) | 261 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | Mneme——把记忆主权还给人的记忆插件：SQLite + 可人工编辑的 Markdown 双写，autoDream 在梦境中巩固记忆，106 个测试护航。 |
-| [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) | 757 | 🟢 ok | DeepSeek Harness 会话费用统计插件:本会话费用、当日费用、历史记录与官方价格同步 |
+| [dsh-mneme](https://github.com/modusensus/dsh-mneme) | 262 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | Mneme——把记忆主权还给人的记忆插件：SQLite + 可人工编辑的 Markdown 双写，autoDream 在梦境中巩固记忆，106 个测试护航。 |
+| [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) | 762 | 🟢 ok | DeepSeek Harness 会话费用统计插件:本会话费用、当日费用、历史记录与官方价格同步 |
 | [dsh-claude-mem](https://github.com/Bleed00/dsh-claude-mem) | 3 | ⚪ unknown | dsh-claude-mem — DSH 插件（会话） |
 | [dsh-revive](https://github.com/omdsh-dev/dsh-revive) | 4 | 🟢 ok | DSH 一键复活：重启后给所有被打断的会话自动发送「继续」指令（/revive 命令 + revive_sessions 工具 + 浏览器一键按钮） |
 | [dsh-plugin-wepre](https://github.com/shujiTech/dsh-plugin-wepre) | 0 | ⚪ unknown | dsh-plugin-wepre — DSH 插件（会话） |
@@ -1340,10 +1341,10 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-token-usage](https://github.com/samecorner/dsh-token-usage) | 1 | 🟢 ok | 对话 Token 用量分析标签页。 |
 | [dsh-agentmemory](https://github.com/elementor-i/dsh-agentmemory) | 4 | ⚪ unknown | agentmemory 集成：完整 memory_* 工具、自动捕获钩子、本地 REST 服务的上下文注入。 |
 | [dsh-agent-compact](https://github.com/jonah791/dsh-agent-compact) | 4 | ⚪ unknown | agent 驱动的会话压缩：agent 自己总结自己的对话历史。 |
-| [dsh-multi-tenant](https://github.com/GuoMonth/dsh-multi-tenant) | 32 | 🟢 ok | 多租户 SaaS 扩展：租户身份、会话隔离、授权、租户感知 MCP 和审计。 |
-| [dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) | 209 | 🟢 ok | DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每日反思、可视化面板与设置页,支持继承其他 AI 工具的历史记忆。 |
+| [dsh-multi-tenant](https://github.com/GuoMonth/dsh-multi-tenant) | 33 | 🟢 ok | 多租户 SaaS 扩展：租户身份、会话隔离、授权、租户感知 MCP 和审计。 |
+| [dsh-auto-memory](https://github.com/Aik358/dsh-auto-memory) | 210 | 🟢 ok | DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每日反思、可视化面板与设置页,支持继承其他 AI 工具的历史记忆。 |
 | [dsh-sidebar-mode](https://github.com/Meredith2328/dsh-sidebar-mode) | 2 | ⚪ unknown | 把默认的四种模式切换塞进「新会话」按钮里，新会话创建更方便（标准/PTC/创造/极简，与设置双向同步） |
-| [dsh-context](https://github.com/bowenliang123/dsh-context) | 5536 | 🟢 ok | 上下文洞察面板：Web 界面加一个 Context 标签页，直观看到模型上下文窗口里装了什么、怎么变化的。 |
+| [dsh-context](https://github.com/bowenliang123/dsh-context) | 5550 | 🟢 ok | 上下文洞察面板：Web 界面加一个 Context 标签页，直观看到模型上下文窗口里装了什么、怎么变化的。 |
 | [dsh-sidechain](https://github.com/omdsh-dev/dsh-sidechain) | 14 | ⚪ unknown | DSH 侧会话插件：/side 持续性侧会话（Codex 风格）与 /btw 一次性侧问（Claude 风格）——在临时 fork 中运行、不写入主会话历史；Web UI 右侧链面板内嵌对话，主会话保持不变 |
 | [dsh-provider-model-configurator](https://github.com/LiangYin233/dsh-provider-model-configurator) | 18 | ⚪ unknown | DSH 高级模型配置器：为 DeepSeek Harness 提供将 pi-ai 预设模型的上下文、输出上限、推理挡位一键应用到自定义提供商的能力。 |
 | [dsh-plugin-deepseek-pricing](https://github.com/Dasooul03/dsh-plugin-deepseek-pricing) | 3 | ⚪ unknown | DSH Price Monitor（价格监控）· DeepSeek 实时定价、峰谷自动切换与会话费用监控的 dsh 插件 |
@@ -1395,7 +1396,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) | 9 | 🟢 ok | 消息收藏夹：逐条收藏助手回复（带笔记/标签）、跨会话中心、一键导出 Markdown。 |
 | [dsh-usage-plugin](https://github.com/feiyang-dev/dsh-usage-plugin) | 38 | 🟢 ok | DeepSeek Harness 用量与消耗插件（dsh-usage）—— 每次调用的 token 用量/缓存命中统计、峰谷计费、余额查询、CSV/JSON/PNG 导出，可经桌面端一键安装或命令行 dsh plugin add 安装。 |
 | [dsh-billing-glass](https://github.com/linkingoscar/dsh-billing-glass) | 2 | ⚪ unknown | 液态玻璃计费浮层：provider 余额、花费实时可见。 |
-| [dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) | 755 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-memory@0.1.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepsee) | 多 agent 时空记忆图谱：跨会话持久记忆。 |
+| [dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) | 757 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-memory@0.1.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepsee) | 多 agent 时空记忆图谱：跨会话持久记忆。 |
 | [dsh-noema](https://github.com/ZSeven-W/dsh-noema) | 151 | 🟢 ok | Noema 长期记忆：持久、可检查的 agent 记忆，带召回工具和设置页。 |
 | [dsh-memoir](https://github.com/Qinling-Melon-Farmers/dsh-memoir) | 42 | 🟢 ok | DSH 项目持久化记忆插件（TypeScript）：会话归纳 + 经验教训沉淀，写入 PROJECT_MEMORY.md 与全局索引；每轮工作结束自动提醒蒸馏、自动注入未来 AGENTS；附 Web GUI 记忆面板（项目/全局 tab、检索、手动记录/删除… |
 | [dsh-LorebookMD](https://github.com/609476965/dsh-LorebookMD) | 23 | 🟢 ok | 跑团/小说创作：导入酒馆角色卡与世界书为本地 Markdown，按设定驱动创作。 |
@@ -1426,13 +1427,13 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-habits](https://github.com/DimitriLIAN/dsh-habits) | 1 | ⚪ unknown | 习惯编辑器：从 Web 设置页编辑用户全局 AGENTS.md。 |
 | [dsh-failure-capsule](https://github.com/YiHarvest/dsh-failure-capsule) | 7 | 🟢 ok | 本地优先故障证据包：失败时自动记录当时发生了什么、项目状态与环境。 |
 | [dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) | 55 | 🟢 ok | DSH 消息撤回插件：回到发送该消息时的状态 |
-| [DSHBox](https://github.com/Nexus-Aethra/DSHBox) | 34 | ⚪ unknown | Manage DeepSeek Harness locally: run multiple DSH versions in isolated containers, open the UI in an embedded WebView, import plu… |
+| [DSHBox](https://github.com/Nexus-Aethra/DSHBox) | 35 | ⚪ unknown | Manage DeepSeek Harness locally: run multiple DSH versions in isolated containers, open the UI in an embedded WebView, import plu… |
 | [dsh-memory-manager](https://github.com/tuanmaoOVO/dsh-memory-manager) | 2 | ⚪ unknown | dsh的记忆管理 |
 | [dsh-chat-tools](https://github.com/yj060464-commits/dsh-chat-tools) | 3 | ⚪ unknown | DeepSeek Harness headless 终端伴侣工具链：chat.sh 连续对话 REPL（决策点拍板/工作流实时透传/思考档位切换）+ 会话日志自动总结，零依赖纯 bash+Python |
 | [dsh-memory-system](https://github.com/zhujunpeng12/dsh-memory-system) | 7 | 🟢 ok | Local-first persistent memory infrastructure for DeepSeek Harness: hot bootstrap, Chinese-BM25 cold recall, lease-lock transactio… |
 | [dsh-sysmon](https://github.com/AKS1st/dsh-sysmon) | 2 | 🟢 ok | untranslated |
 | [dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions) | 7 | 🟢 ok | untranslated |
-| [dsh-roleplay-preset](https://github.com/oliblue-evan/dsh-roleplay-preset) | 36 | ⚪ unknown | untranslated |
+| [dsh-roleplay-preset](https://github.com/oliblue-evan/dsh-roleplay-preset) | 37 | ⚪ unknown | untranslated |
 | [dsh-plugin](https://github.com/loongsuite/dsh-plugin) | 32 | 🟢 ok | untranslated |
 | [dsh-Remote](https://github.com/Blank-not-black/dsh-Remote) | 91 | 🟢 ok | untranslated |
 | [dsh-agentsoul](https://github.com/yuhui-sama/dsh-agentsoul) | 5 | ⚪ unknown | untranslated |
@@ -1469,11 +1470,11 @@ npm create dsh-plugin@latest my-plugin
 | [tencentcloud-agentobs-sdk-dsh](https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh) | 15 | 🟢 ok | untranslated |
 | [dsh-quota-meter](https://github.com/ai-shushu/dsh-quota-meter) | 15 | 🟢 ok | untranslated |
 | [dsh-plugin-merge-tool-calls](https://github.com/HuanLinOTO/dsh-plugin-merge-tool-calls) | 7 | ⚪ unknown | untranslated |
-| [MemOS](https://github.com/MemTensor/MemOS) | 12520 | ⚪ unknown | untranslated |
+| [MemOS](https://github.com/MemTensor/MemOS) | 12521 | ⚪ unknown | untranslated |
 | [dsh-plugin-bridge](https://github.com/Totoro-qaq/dsh-plugin-bridge) | 168 | 🟢 ok | untranslated |
 | [dsh-eli-mode](https://github.com/CeilCelia/dsh-eli-mode) | 6 | 🟢 ok | untranslated |
 | [dsh-trace-compare](https://github.com/lamost423/dsh-trace-compare) | 98 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-trace-compare@0.7.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@) | 执行轨迹可视化：主干、失败支路、折返点与子代理支路画在同一根墙钟时间轴上；支持上传 1–2 个 session log 同轴对比，或在会话页签实时看迷宫生长。 |
-| [dsh-sandbox-escalation-fix](https://github.com/JUSTMONIKA2022/dsh-sandbox-escalation-fix) | 59 | 🟢 ok | untranslated |
+| [dsh-sandbox-escalation-fix](https://github.com/JUSTMONIKA2022/dsh-sandbox-escalation-fix) | 60 | 🟢 ok | untranslated |
 | [dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) | 55 | 🟢 ok | untranslated |
 | [dsh-turn-delete](https://github.com/hanshenmesen/dsh-turn-delete) | 110 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-turn-delete@0.1.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@de) | untranslated |
 | [dsh-tavern](https://github.com/chen731215-dev/dsh-tavern) | 38 | 🟢 ok | untranslated |
@@ -1484,9 +1485,9 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-input-traffic](https://github.com/drscrewdriver/dsh-input-traffic) | 6 | 🟢 ok | DSH Web GUI 忙时输入队列：三档交通管制（现在/稍后/排队），拖拽重排、插话打断、批量清空、会话冻结 |
 | [dsh-task-memory](https://github.com/wangyihao0001-oss/dsh-task-memory) | 5 | ⚪ unknown | untranslated |
 | [dsh-recall-unread](https://github.com/hg1048596-pixel/dsh-recall-unread) | 127 | 🟢 ok | untranslated |
-| [dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) | 387 | 🟢 ok | untranslated |
-| [dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) | 398 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-archive-manager@1.1.1 is incompatible with dsh 0.2.2-rc.5: requirements {) | untranslated |
-| [dsh-rewind](https://github.com/SiriLee/dsh-rewind) | 305 | 🟢 ok | untranslated |
+| [dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) | 391 | 🟢 ok | untranslated |
+| [dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) | 400 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-archive-manager@1.1.1 is incompatible with dsh 0.2.2-rc.5: requirements {) | untranslated |
+| [dsh-rewind](https://github.com/SiriLee/dsh-rewind) | 306 | 🟢 ok | untranslated |
 | [dsh-Mmem](https://github.com/mianyoubiaoqing/dsh-Mmem) | 5 | ⚪ unknown | untranslated |
 | [dsh-strata](https://github.com/jsdvjx/dsh-strata) | 95 | 🟢 ok | untranslated |
 | [dsh-capability-menu](https://github.com/PKUfudawei/dsh-capability-menu) | 160 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
@@ -1497,7 +1498,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-wallpaper_share](https://github.com/YRN-playmaker/dsh-wallpaper_share) | 32 | 🟢 ok | untranslated |
 | [dsh-adult-tension](https://github.com/daha1216/dsh-adult-tension) | 647 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-novel-writer](https://github.com/siweina/dsh-novel-writer) | 32 | 🟢 ok | untranslated |
-| [dsh-sessions-manager](https://github.com/TOBYCAI/dsh-sessions-manager) | 41 | 🟢 ok | DSH 设置面板会话管理器：归档/恢复/彻底删除/移动到其他工作区，带工作区标签与会话日期 |
+| [dsh-sessions-manager](https://github.com/TOBYCAI/dsh-sessions-manager) | 42 | 🟢 ok | DSH 设置面板会话管理器：归档/恢复/彻底删除/移动到其他工作区，带工作区标签与会话日期 |
 | [dsh-session-search-toggle](https://github.com/drscrewdriver/dsh-session-search-toggle) | 12 | ⚪ unknown | DSH web 侧边栏会话搜索增强：标题搜索与内容搜索一键切换，内容搜索按会话聚合展示标题与命中片段 |
 | [dsh-what-changed](https://github.com/sjh9714/dsh-what-changed) | 2 | 🟢 ok | 会话顶栏审阅本次会话 Agent 写过的所有文件与逐处改动，被权限拒绝的写入单独计数，另有工作区与 HEAD 对照。 |
 | [dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) | 110 | 🟢 ok | untranslated |
@@ -1509,7 +1510,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-worktree-panel](https://github.com/HeathHe/dsh-worktree-panel) | 9 | 🟢 ok | untranslated |
 | [dsh-kanban](https://github.com/alpacachen/dsh-kanban) | 26 | 🟢 ok | untranslated |
 | [dsh-auth-gate](https://github.com/TecFancy/dsh-auth-gate) | 21 | 🟢 ok | untranslated |
-| [dsh-sandbox-escalation-fix](https://github.com/HakureiMonika/dsh-sandbox-escalation-fix) | 59 | 🟢 ok | untranslated |
+| [dsh-sandbox-escalation-fix](https://github.com/HakureiMonika/dsh-sandbox-escalation-fix) | 60 | 🟢 ok | untranslated |
 | [dsh-mcp-manager-ui](https://github.com/Imzl-zl/dsh-mcp-manager-ui) | 49 | 🔴 broken (cordis 4.1.0 not in peer "~4.0.2") | untranslated |
 | [dsh-archive-manager](https://github.com/z953218350/dsh-archive-manager) | 12 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-archive-manager@1.1.1 is incompatible with dsh 0.2.2-rc.5: requirements {) | untranslated |
 | [dsh-video-understand](https://github.com/ilps2/dsh-video-understand) | 16 | 🟢 ok | untranslated |
@@ -1524,10 +1525,10 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-kb-rag](https://github.com/Breeze136/dsh-kb-rag) | 21 | 🟢 ok | untranslated |
 | [dsh-session-control](https://github.com/GooDAnDReaDY/dsh-session-control) | 1 | 🟢 ok | DSH 侧栏会话管理：置顶对话、搜索内容、读取归档记录、隐藏噪音。 |
 | [dsh-usage-guard](https://github.com/GooDAnDReaDY/dsh-usage-guard) | 0 | 🟢 ok | 会话 token 用量清洗：折叠历史前把畸形的 usage 样本归零，坏会话不再以 NaN 重放。 |
-| [clutch-dsh](https://github.com/Cerbur/clutch-dsh) | 48 | ⚪ unknown | untranslated |
+| [clutch-dsh](https://github.com/Cerbur/clutch-dsh) | 49 | ⚪ unknown | untranslated |
 | [dsh-memgas](https://github.com/quqxui/dsh-memgas) | 27 | 🟢 ok | untranslated |
 | [dsh-memory](https://github.com/hr98w/dsh-memory) | 35 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-memory@0.1.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepsee) | untranslated |
-| [dsh-nexttavern](https://github.com/a86582751/dsh-nexttavern) | 249 | 🟢 ok | untranslated |
+| [dsh-nexttavern](https://github.com/a86582751/dsh-nexttavern) | 254 | 🟢 ok | untranslated |
 | [dsh-token-optimizer](https://github.com/Zoria-Lind/dsh-token-optimizer) | 25 | 🟢 ok | untranslated |
 | [dsh-opencode-session-id](https://github.com/gausszhou/dsh-opencode-session-id) | 21 | ⚪ unknown | untranslated |
 | [dsh-project-memory](https://github.com/00080000/dsh-project-memory) | 35 | 🔴 broken (cordis 4.1.0 not in peer "4.0.1") | untranslated |
@@ -1538,7 +1539,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-project-brain](https://github.com/yj-liuzepeng/dsh-project-brain) | 91 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-project-brain@1.3.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@) | untranslated |
 | [dsh-session-workbench](https://github.com/PolinniZhong/dsh-session-workbench) | 47 | 🟢 ok | untranslated |
 | [dsh-memory-eternal](https://github.com/EternalNight996/dsh-memory-eternal) | 20 | 🟢 ok | untranslated |
-| [dsh-mneme](https://github.com/slow-stack/dsh-mneme) | 261 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [dsh-mneme](https://github.com/slow-stack/dsh-mneme) | 262 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [ScientificFigureLibrary](https://github.com/xuzhougeng/ScientificFigureLibrary) | 142 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-session-delete](https://github.com/xohmai/dsh-session-delete) | 48 | 🟢 ok | untranslated |
 | [dsh-opencode-session-header](https://github.com/beihzb/dsh-opencode-session-header) | 16 | 🟢 ok | untranslated |
@@ -1546,34 +1547,34 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-pet-live2d](https://github.com/A8Chann/dsh-pet-live2d) | 83 | 🟢 ok | untranslated |
 | [dsh-session-sync](https://github.com/PerryLink/dsh-session-sync) | 45 | 🟢 ok | untranslated |
 | [jevcore](https://github.com/PerryLink/jevcore) | 111 | ⚪ unknown | untranslated |
-| [mneme](https://github.com/slow-stack/mneme) | 261 | ⚪ unknown | untranslated |
+| [mneme](https://github.com/slow-stack/mneme) | 262 | ⚪ unknown | untranslated |
 | [dsh-mirror](https://github.com/webkubor/dsh-mirror) | 0 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-pause](https://github.com/better-er/dsh-pause) | 29 | 🔴 broken (node 24.22.3 not in engines ">=26.3.1") | untranslated |
 | [dsh-auto-memory](https://github.com/AskTheWay/dsh-auto-memory) | 137 | 🟢 ok | untranslated |
 | [agent-body](https://github.com/1420079678-ctrl/agent-body) | 19 | ⚪ unknown | untranslated |
-| [dsh-qoder-connect](https://github.com/masknull/dsh-qoder-connect) | 75 | 🟢 ok | untranslated |
-| [dsh-qqbot](https://github.com/gcry13067381632-jpg/dsh-qqbot) | 285 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-qqbot@1.0.2 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepseek) | untranslated |
-| [dsh-graph](https://github.com/miuzel/dsh-graph) | 27 | 🟢 ok | untranslated |
+| [dsh-qoder-connect](https://github.com/masknull/dsh-qoder-connect) | 76 | 🟢 ok | untranslated |
+| [dsh-qqbot](https://github.com/gcry13067381632-jpg/dsh-qqbot) | 286 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-qqbot@1.0.2 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepseek) | untranslated |
+| [dsh-graph](https://github.com/miuzel/dsh-graph) | 28 | 🟢 ok | untranslated |
 | [dsh-chat-manager](https://github.com/WSL043/dsh-chat-manager) | 45 | 🟢 ok | untranslated |
-| [dsh-boot-animation-pro](https://github.com/Yiheng-guo/dsh-boot-animation-pro) | 81 | 🟢 ok | untranslated |
+| [dsh-boot-animation-pro](https://github.com/Yiheng-guo/dsh-boot-animation-pro) | 82 | 🟢 ok | untranslated |
 | [better-dsh-session-deletetool](https://github.com/Lzcdebear/better-dsh-session-deletetool) | 42 | 🟢 ok | untranslated |
 | [dsh-streamfold](https://github.com/rezon-aki/dsh-streamfold) | 27 | 🟢 ok | untranslated |
 | [dsh-host-rsi](https://github.com/pk14742952-AD/dsh-host-rsi) | 40 | ⚪ unknown | untranslated |
 | [dsh-agent-team](https://github.com/Contexera/dsh-agent-team) | 114 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [sieve](https://github.com/Sev7eEn7/sieve) | 113 | ⚪ unknown | untranslated |
 | [dsh-sieve](https://github.com/Sev7eEn7/dsh-sieve) | 113 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-sieve@0.4.1 is incompatible with dsh 0.2.2-rc.5: requirements {"engines.d) | untranslated |
-| [dsh-qqbot](https://github.com/zaofan-make/dsh-qqbot) | 285 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-qqbot@1.0.2 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepseek) | untranslated |
+| [dsh-qqbot](https://github.com/zaofan-make/dsh-qqbot) | 286 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-qqbot@1.0.2 is incompatible with dsh 0.2.2-rc.5: requirements {"@deepseek) | untranslated |
 | [dsh-persona-dafeiyu](https://github.com/huaizhuanghub/dsh-persona-dafeiyu) | 127 | 🟢 ok | untranslated |
 | [dsh-tool-todo-plus](https://github.com/shuxidemosheng/dsh-tool-todo-plus) | 104 | 🟢 ok | untranslated |
 | [dsh-btw](https://github.com/MichengAI/dsh-btw) | 69 | 🟢 ok | untranslated |
-| [memory-eternal](https://github.com/EternalNight996/memory-eternal) | 228 | 🟢 ok | untranslated |
+| [memory-eternal](https://github.com/EternalNight996/memory-eternal) | 230 | 🟢 ok | untranslated |
 | [KRouter](https://github.com/398894496-arch/KRouter) | 78 | 🟢 ok | untranslated |
 | [dsh-cache-billing](https://github.com/better-er/dsh-cache-billing) | 19 | 🟢 ok | untranslated |
 | [dsh-plugin-execution-graph](https://github.com/liqiGeGe/dsh-plugin-execution-graph) | 20 | 🟢 ok | untranslated |
 | [dsh-prompt-setting](https://github.com/zangxx66/dsh-prompt-setting) | 32 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-prompt-setting@0.3.0 is incompatible with dsh 0.2.2-rc.5: requirements {") | untranslated |
 | [dsh-qwen38-local-qol](https://github.com/Yunado/dsh-qwen38-local-qol) | 26 | ⚪ unknown | untranslated |
 | [dsh-opencode-zen-free-provider](https://github.com/jiesou/dsh-opencode-zen-free-provider) | 41 | ⚪ unknown | untranslated |
-| [EAC-design-world](https://github.com/Ebony-Vinyl/EAC-design-world) | 1909 | 🟢 ok | untranslated |
+| [EAC-design-world](https://github.com/Ebony-Vinyl/EAC-design-world) | 1928 | 🟢 ok | untranslated |
 | [dsh-plugin-tool-management](https://github.com/ouli-1242/dsh-plugin-tool-management) | 63 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-plugin-tool-management@0.23.0 is incompatible with dsh 0.2.2-rc.5: requir) | untranslated |
 | [dsh-block-ptc](https://github.com/mengwEX/dsh-block-ptc) | 104 | 🟢 ok | untranslated |
 | [dsh-multitask](https://github.com/Senguk520/dsh-multitask) | 56 | 🟢 ok | untranslated |
@@ -1581,7 +1582,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-ptc-plus](https://github.com/muyuanjin/dsh-ptc-plus) | 27 | 🟢 ok | untranslated |
 | [DSH-to-Figma](https://github.com/Duoasa/DSH-to-Figma) | 115 | 🟢 ok | untranslated |
 | [dsh-purge-flash](https://github.com/jadezane6634-ops/dsh-purge-flash) | 151 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
-| [dsh-aurabot-qq](https://github.com/accomplish07zrh-eng/dsh-aurabot-qq) | 745 | 🟢 ok | untranslated |
+| [dsh-aurabot-qq](https://github.com/accomplish07zrh-eng/dsh-aurabot-qq) | 749 | 🟢 ok | untranslated |
 | [dsh-douyin-agent](https://github.com/LockyBee/dsh-douyin-agent) | 109 | 🟢 ok | untranslated |
 | [dsh-sidenote](https://github.com/g-yixuan/dsh-sidenote) | 59 | 🟢 ok | untranslated |
 | [wanxiang-knowledge](https://github.com/Minglink/wanxiang-knowledge) | 42 | ⚪ unknown | untranslated |
@@ -1596,26 +1597,26 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-inject](https://github.com/john-walks-slow/dsh-inject) | 87 | 🟢 ok | untranslated |
 | [mindsea](https://github.com/SQHLnb666/mindsea) | 25 | ⚪ unknown | untranslated |
 | [dsh-memewiki](https://github.com/thawline/dsh-memewiki) | 119 | 🟢 ok | untranslated |
-| [dsh-design-studio](https://github.com/OrderG-X/dsh-design-studio) | 162 | 🟢 ok | untranslated |
-| [dsh-game-studio](https://github.com/ZSeven-W/dsh-game-studio) | 950 | 🟢 ok | untranslated |
-| [agentero-dsh-plugin](https://github.com/poco-ai/agentero-dsh-plugin) | 260 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
-| [dsh-profile-stats](https://github.com/Lovenndme/dsh-profile-stats) | 59 | 🟢 ok | untranslated |
+| [dsh-design-studio](https://github.com/OrderG-X/dsh-design-studio) | 167 | 🟢 ok | untranslated |
+| [dsh-game-studio](https://github.com/ZSeven-W/dsh-game-studio) | 970 | 🟢 ok | untranslated |
+| [agentero-dsh-plugin](https://github.com/poco-ai/agentero-dsh-plugin) | 262 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [dsh-profile-stats](https://github.com/Lovenndme/dsh-profile-stats) | 60 | 🟢 ok | untranslated |
 | [dsh-mnemosyne](https://github.com/DSH-Raising-Plan/dsh-mnemosyne) | 32 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-mnemosyne@0.7.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@deep) | untranslated |
 | [dsh-session-superagent](https://github.com/MYCF711/dsh-session-superagent) | 53 | 🟢 ok | untranslated |
 | [dsh-dafeiyu-life](https://github.com/minedalang/dsh-dafeiyu-life) | 51 | 🟢 ok | untranslated |
-| [moa-plus](https://github.com/Burns1028/moa-plus) | 301 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
+| [moa-plus](https://github.com/Burns1028/moa-plus) | 310 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-xingxi](https://github.com/Yuuyuko-uu/dsh-xingxi) | 56 | 🟢 ok | untranslated |
 | [dsh-onebot-qq](https://github.com/YUsaltyfish/dsh-onebot-qq) | 318 | 🟢 ok | untranslated |
 | [dsh-gufa-code](https://github.com/liujiangnanchenjbguo/dsh-gufa-code) | 50 | 🟢 ok | untranslated |
 | [sedimem](https://github.com/Old-Friends-Gathering/sedimem) | 101 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-super-kanban](https://github.com/topmindspace/dsh-super-kanban) | 142 | 🟢 ok | untranslated |
-| [dsh-fish-soul](https://github.com/Britneycode/dsh-fish-soul) | 49 | 🟢 ok | untranslated |
+| [dsh-fish-soul](https://github.com/Britneycode/dsh-fish-soul) | 51 | 🟢 ok | untranslated |
 | [moxi-drama-studio](https://github.com/w1251788888-web/moxi-drama-studio) | 31 | ⚪ unknown | untranslated |
 | [dsh-download-server](https://github.com/Jestions-dev/dsh-download-server) | 332 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
-| [dsh-world](https://github.com/chenkezhen480/dsh-world) | 436 | 🟢 ok | untranslated |
-| [dsh-session-navigator](https://github.com/Anlerway/dsh-session-navigator) | 40 | 🟢 ok | untranslated |
+| [dsh-world](https://github.com/chenkezhen480/dsh-world) | 450 | 🟢 ok | untranslated |
+| [dsh-session-navigator](https://github.com/Anlerway/dsh-session-navigator) | 41 | 🟢 ok | untranslated |
 | [dsh-bots](https://github.com/kadaliao/dsh-bots) | 62 | 🟢 ok | untranslated |
-| [dsh-compaction-weave](https://github.com/NightFrost42/dsh-compaction-weave) | 73 | 🟢 ok | untranslated |
+| [dsh-compaction-weave](https://github.com/NightFrost42/dsh-compaction-weave) | 76 | 🟢 ok | untranslated |
 | [dsh-session-unfold](https://github.com/Yornii/dsh-session-unfold) | 70 | 🟢 ok | untranslated |
 
 ### 🧠 模型
@@ -1626,7 +1627,7 @@ npm create dsh-plugin@latest my-plugin
 | [Deepseek-omnimodal](https://github.com/good-boy4069/Deepseek-omnimodal) | 4 | ⚪ unknown | 面向纯文本 Agent 的开源多模态 MCP |
 | [dsh-computer-use](https://github.com/Anionex/dsh-computer-use) | 111 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @anionex/dsh-computer-use@0.3.9 is incompatible with dsh 0.2.2-rc.5: requirem) | 电脑控制插件（Accessibility 观测 + 作用域权限） |
 | [dsh-vision](https://github.com/william-jin-cmu/dsh-vision) | 31 | 🟢 ok | view_image 工具桥接任意 OpenAI 兼容 VLM |
-| [modlens](https://github.com/liustack/modlens) | 5093 | 🟢 ok | DeepSeek Harness 首个视觉插件，纯文本模型看图。 |
+| [modlens](https://github.com/liustack/modlens) | 5099 | 🟢 ok | DeepSeek Harness 首个视觉插件，纯文本模型看图。 |
 | [agent-vision-toolkit](https://github.com/Anionex/agent-vision-toolkit) | 1269 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | 为纯文本模型看图设计的视觉工具箱与技能：多图理解、图片问答、UI 还原、GUI 自动化。 |
 | [dsh-tool-turbo](https://github.com/Electricitysheep/dsh-tool-turbo) | 13 | ⚪ unknown | 每轮 reasoning_effort 优化器。 |
 | [dsh-plugin-cost-tracker](https://github.com/YYTbit/dsh-plugin-cost-tracker) | 2 | 🟢 ok | DeepSeek Harness token 成本追踪器。 |
@@ -1637,7 +1638,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-hdc-bridge](https://github.com/1na-ko/dsh-hdc-bridge) | 22 | 🟢 ok | DSH 原生鸿蒙设备桥：hdc 工具让 Agent 完成截图-看图-装包-验证的闭环调试 / DSH-native HarmonyOS device bridge |
 | [dsh-plugin-deepeye](https://github.com/Favio8/dsh-plugin-deepeye) | 3 | 🟢 ok | dsh-plugin-deepeye — DSH 插件（模型） |
 | [dsh-tiered-approval](https://github.com/Elaina-real/dsh-tiered-approval) | 0 | 🟢 ok | dsh-tiered-approval — DSH 插件（模型） |
-| [dsh-mcp-manager](https://github.com/hyqhyq3/dsh-mcp-manager) | 32 | ⚪ unknown | dsh-mcp-manager — DSH 插件（模型） |
+| [dsh-mcp-manager](https://github.com/hyqhyq3/dsh-mcp-manager) | 33 | ⚪ unknown | dsh-mcp-manager — DSH 插件（模型） |
 | [dsh-llm-codex-oauth](https://github.com/Player-MINEPIG/dsh-llm-codex-oauth) | 8 | 🟢 ok | 在 dsh（DeepSeek Harness）里使用你的 ChatGPT / Codex 订阅。插件通过 OpenAI Codex 的 OAuth 流程登录 ChatGPT 账号，把订阅额度暴露成 dsh 的 `codex-oauth` 模型提供方。 |
 | [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture) | 0 | ⚪ unknown | DSH 插件：捕捉每次上行模型 API payload，JSON 落盘 |
 | [doubao-vision-dsh](https://github.com/hawkongz/doubao-vision-dsh) | 1 | ⚪ unknown | 让纯文本模型通过桌面豆包看见聊天图片的 DeepSeek Harness 宿主插件(CDP 桥接,全预设生效,识别可取消) |
@@ -1702,7 +1703,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-vision](https://github.com/237229953-create/dsh-vision) | 2 | 🟢 ok | 纯文本模型看图：图片消息自动桥接视觉模型转文字描述，原图保留在人类转录里，零新增凭据。 |
 | [dsh-vision-provider](https://github.com/libinyam/dsh-vision-provider) | 2 | ⚪ unknown | 纯配置包：给 DSH 接入任意 OpenAI 兼容的视觉模型。 |
 | [dsh-ccswitch-import-lite](https://github.com/chenhaolove89/dsh-ccswitch-import-lite) | 2 | ⚪ unknown | DeepSeek Harness 插件（精简版）：从 CCSWITCH 批量导入模型供应商，不含视觉描述 |
-| [dsh-llm-codebuddy](https://github.com/Axiaohungry/dsh-llm-codebuddy) | 102 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-llm-codebuddy@1.3.10 is incompatible with dsh 0.2.2-rc.5: requirements {") | 在deepseek harness中使用workbuddy api，因为公司只提供workbuddy积分 |
+| [dsh-llm-codebuddy](https://github.com/Axiaohungry/dsh-llm-codebuddy) | 103 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-llm-codebuddy@1.3.10 is incompatible with dsh 0.2.2-rc.5: requirements {") | 在deepseek harness中使用workbuddy api，因为公司只提供workbuddy积分 |
 | [dsh-container](https://github.com/NIyueeE/dsh-container) | 3 | ⚪ unknown | DSH 容器镜像：通用 dev-container 基础 + dsh 自动更新。 |
 | [dsh-cost-tracker](https://github.com/yflmq001/dsh-cost-tracker) | 2 | 🟢 ok | token 费用追踪插件。 |
 | [dsh-vision-plugin](https://github.com/Xin-Zhang-IceMan/dsh-vision-plugin) | 1 | 🟢 ok | DeepSeek Harness 视觉插件：让纯文本模型拥有视觉能力 / Vision plugin for DSH: vision_analyze tool + automatic image transcription for text-only mod… |
@@ -1738,7 +1739,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-vision](https://github.com/linenxi-ctrl/dsh-vision) | 8 | 🟢 ok | 为 DeepSeek Harness 增加外挂识图模型：圆形鲸鱼按钮、发送图片识图自动回传、模型自主截图+识图工具、多协议自动适配、小白一键安装（未装 Node.js 自动下载） |
 | [dsh-vqa-agent](https://github.com/jypjypjypjyp/dsh-vqa-agent) | 2 | ⚪ unknown | DSH 插件:vqa_ask 双模型视觉问答 —— 主模型提问 → 视觉模型看图回答,UI 实时展示 QA 过程,支持多模态视觉模型选择 |
 | [dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) | 494 | 🟢 ok | Command Code 的 LLM provider（非官方）：实时模型目录、推理强度支持，Models 页有卡片。 |
-| [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) | 643 | 🟢 ok | 把 ChatGPT(Codex)、Claude、Grok(X Premium) 的订阅当 DSH 的模型 provider 用。 |
+| [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) | 645 | 🟢 ok | 把 ChatGPT(Codex)、Claude、Grok(X Premium) 的订阅当 DSH 的模型 provider 用。 |
 | [dsh-gauge](https://github.com/noone89A/dsh-gauge) | 4 | 🟢 ok | 为 DeepSeek Harness Web UI 提供精确缓存命中率、token 用量与费用估算 |
 | [dsh-vision](https://github.com/Terry12138qy/dsh-vision) | 4 | 🟢 ok | DeepSeek Harness 识图插件：为不具备原生识图能力的模型提供识图能力（阿里云百炼 qwen3.5-omni-plus，失败自动切换智谱 glm-4.6v-flash）。由 claude-vision-skill 移植适配。 | Vision t… |
 | [dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) | 33 | 🟢 ok | DeepSeek Harness 插件：GitHub 风格用量热力图 + Token / 缓存命中 / 账户余额看板 + 工作区别名管理。 |
@@ -1787,7 +1788,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-imggenerate](https://github.com/Bald0Wang/dsh-imggenerate) | 3 | ⚪ unknown | untranslated |
 | [dsh-llm-vision-bridge](https://github.com/Einskyle/dsh-llm-vision-bridge) | 3 | 🟢 ok | untranslated |
 | [dsh-llm-newapi](https://github.com/wenzetan/dsh-llm-newapi) | 6 | 🟢 ok | untranslated |
-| [deepseek-harness-studio](https://github.com/fufankeji/deepseek-harness-studio) | 731 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [deepseek-harness-studio](https://github.com/fufankeji/deepseek-harness-studio) | 732 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) | 50 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-plugin-writing-guard@2.0.1 is incompatible with dsh 0.2.2-rc.5: requireme) | untranslated |
 | [dsh-plugin-multimodal](https://github.com/shinjiyu/dsh-plugin-multimodal) | 4 | ⚪ unknown | untranslated |
 | [dsh-mcp](https://github.com/ArvinQi/dsh-mcp) | 44 | 🟢 ok | untranslated |
@@ -1806,14 +1807,14 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-crew](https://github.com/ZSeven-W/dsh-crew) | 226 | 🟢 ok | untranslated |
 | [dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) | 29 | 🟢 ok | untranslated |
 | [picturereader](https://github.com/jing-hy/picturereader) | 36 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin picturereader@3.3.3 is incompatible with dsh 0.2.2-rc.5: requirements {"@deep) | untranslated |
-| [dsh-imagegen](https://github.com/dickpy/dsh-imagegen) | 209 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [dsh-imagegen](https://github.com/dickpy/dsh-imagegen) | 210 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-chat-imagine](https://github.com/corrinehu/dsh-chat-imagine) | 8 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-chat-imagine@0.4.1 is incompatible with dsh 0.2.2-rc.5: requirements {"@d) | untranslated |
 | [dsh-deepseek-usage](https://github.com/mmzm0808/dsh-deepseek-usage) | 9 | 🟢 ok | untranslated |
 | [dsh-directorx](https://github.com/LaplaceYoung/dsh-directorx) | 52 | 🟢 ok | untranslated |
 | [dsh-studio](https://github.com/jiuge2467/dsh-studio) | 16 | ⚪ unknown | untranslated |
 | [opencues](https://github.com/opencues/opencues) | 75 | ⚪ unknown | untranslated |
 | [dsh-live2d-mygo](https://github.com/U1s1-king/dsh-live2d-mygo) | 13 | ⚪ unknown | untranslated |
-| [dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) | 1772 | 🟢 ok | untranslated |
+| [dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) | 1784 | 🟢 ok | untranslated |
 | [dsh-mmx-bridge](https://github.com/welsione/dsh-mmx-bridge) | 13 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-mmx-bridge@1.0.10 is incompatible with dsh 0.2.2-rc.5: requirements {"@de) | untranslated |
 | [dsh-computer-use](https://github.com/988hj7tczd-oss/dsh-computer-use) | 70 | 🟢 ok | untranslated |
 | [comm-protocol-hub](https://github.com/Thanksgiver233/comm-protocol-hub) | 16 | ⚪ unknown | untranslated |
@@ -1834,76 +1835,76 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-tool-hongtou](https://github.com/ExElectron/dsh-tool-hongtou) | 27 | 🟢 ok | untranslated |
 | [vision-exp-tile](https://github.com/Nicholas023/vision-exp-tile) | 13 | ⚪ unknown | untranslated |
 | [dsh-channels](https://github.com/wsz987/dsh-channels) | 15 | ⚪ unknown | untranslated |
-| [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 1305 | 🟢 ok | 给纯文本 DSH 智能体装上眼睛：内置免 key 免费视觉链 + 11 个像素级视觉工具，一条命令安装，无需 Python。 |
+| [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) | 1306 | 🟢 ok | 给纯文本 DSH 智能体装上眼睛：内置免 key 免费视觉链 + 11 个像素级视觉工具，一条命令安装，无需 Python。 |
 | [dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) | 34 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-antigravity@0.0.9 is incompatible with dsh 0.2.2-rc.5: requirements {"@de) | untranslated |
-| [dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) | 19 | ⚪ unknown | untranslated |
+| [dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) | 18 | ⚪ unknown | untranslated |
 | [dsh-galgame-generator](https://github.com/baisama-cloud/dsh-galgame-generator) | 20 | ⚪ unknown | untranslated |
 | [dsh-voice-scribe](https://github.com/PensiveFei/dsh-voice-scribe) | 36 | 🟢 ok | untranslated |
-| [opencode2dsh](https://github.com/FishBottle7/opencode2dsh) | 408 | 🟢 ok | untranslated |
+| [opencode2dsh](https://github.com/FishBottle7/opencode2dsh) | 407 | 🟢 ok | untranslated |
 | [dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) | 70 | 🟢 ok | untranslated |
 | [dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 10391 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
 | [dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) | 44 | 🟢 ok | untranslated |
-| [dsh-llm-workbuddy](https://github.com/Axiaohungry/dsh-llm-workbuddy) | 102 | 🟢 ok | untranslated |
+| [dsh-llm-workbuddy](https://github.com/Axiaohungry/dsh-llm-workbuddy) | 103 | 🟢 ok | untranslated |
 | [web-background](https://github.com/goatbroai/web-background) | 9 | ⚪ unknown | untranslated |
 | [dsh-deepseek-usage-panel](https://github.com/WeiyangPro/dsh-deepseek-usage-panel) | 9 | 🟢 ok | untranslated |
 | [dsh-better-display](https://github.com/aa2246740/dsh-better-display) | 106 | 🟢 ok | untranslated |
 | [dsh-key-rotation](https://github.com/GooDAnDReaDY/dsh-key-rotation) | 13 | 🟢 ok | 每服务商一个 API key 池：配额/限流错误自动切下一个 key，冷却后探测恢复，可在 Settings 里编辑。 |
 | [dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) | 28 | 🟢 ok | 把 ChatGPT Codex/Claude/Grok/Antigravity 订阅通过 OAuth 注册成 LLM 提供者，免 API key。 |
-| [dsh-model-sync](https://github.com/GooDAnDReaDY/dsh-model-sync) | 7 | 🟢 ok | 模型目录自动同步：API-key 提供者的模型清单直接从服务商拉取，不再手工维护。 |
+| [dsh-model-sync](https://github.com/GooDAnDReaDY/dsh-model-sync) | 8 | 🟢 ok | 模型目录自动同步：API-key 提供者的模型清单直接从服务商拉取，不再手工维护。 |
 | [dsh-freeroute](https://github.com/dushaobindoudou/dsh-freeroute) | 18 | 🟢 ok | untranslated |
 | [dsh-solution-explorer](https://github.com/xiaoksio/dsh-solution-explorer) | 13 | 🟢 ok | untranslated |
 | [dsh-bg-new](https://github.com/sz1698/dsh-bg-new) | 20 | ⚪ unknown | untranslated |
 | [dsh-web-chat](https://github.com/xmuwenxiang/dsh-web-chat) | 16 | ⚪ unknown | untranslated |
-| [dsh-browser](https://github.com/omdsh-dev/dsh-browser) | 1147 | 🟢 ok | untranslated |
+| [dsh-browser](https://github.com/omdsh-dev/dsh-browser) | 1148 | 🟢 ok | untranslated |
 | [dsh-deepseek-web-adapter](https://github.com/huermi/dsh-deepseek-web-adapter) | 21 | ⚪ unknown | untranslated |
-| [dsh-workbuddy-xdpool](https://github.com/XDTrees/dsh-workbuddy-xdpool) | 627 | 🟢 ok | untranslated |
+| [dsh-workbuddy-xdpool](https://github.com/XDTrees/dsh-workbuddy-xdpool) | 628 | 🟢 ok | untranslated |
 | [dsh-game-material-master](https://github.com/universe-st/dsh-game-material-master) | 191 | 🟢 ok | untranslated |
-| [dsh-our-free-model](https://github.com/zouyuxuan122/dsh-our-free-model) | 88156 | 🟢 ok | untranslated |
+| [dsh-our-free-model](https://github.com/zouyuxuan122/dsh-our-free-model) | 88618 | 🟢 ok | untranslated |
 | [dsh-free-models-hub](https://github.com/yu-wenchao/dsh-free-models-hub) | 41 | 🟢 ok | untranslated |
 | [deepseek-harness-jev](https://github.com/luobosibing2/deepseek-harness-jev) | 218 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-knit](https://github.com/PolinniZhong/dsh-knit) | 49 | 🟢 ok | untranslated |
 | [dsh-jev-plugin](https://github.com/luobosibing2/dsh-jev-plugin) | 218 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-usage-statistics-panel](https://github.com/HaoyueQin/dsh-usage-statistics-panel) | 28 | 🟢 ok | untranslated |
-| [dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 88156 | 🟢 ok | untranslated |
+| [dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 88618 | 🟢 ok | untranslated |
 | [dsh-loop-guard](https://github.com/MrWeiCodes/dsh-loop-guard) | 43 | 🔴 broken (cordis 4.1.0 not in peer "~4.0.4") | untranslated |
 | [dsh-factory-provider](https://github.com/Dalizi2026/dsh-factory-provider) | 25 | ⚪ unknown | untranslated |
 | [empty-fort-strategy](https://github.com/HuaJi2077/empty-fort-strategy) | 23 | ⚪ unknown | untranslated |
 | [dsh-background-by-model](https://github.com/HarmlessFunny/dsh-background-by-model) | 25 | 🟢 ok | untranslated |
-| [dsh-ops](https://github.com/T-Auto/dsh-ops) | 6027 | 🟢 ok | untranslated |
+| [dsh-ops](https://github.com/T-Auto/dsh-ops) | 6032 | 🟢 ok | untranslated |
 | [dsh-plugin-save-token](https://github.com/vibe-any/dsh-plugin-save-token) | 93 | 🟢 ok | untranslated |
 | [dsh-workbuddy-connect](https://github.com/masknull/dsh-workbuddy-connect) | 55 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-workbuddy-connect@0.7.9 is incompatible with dsh 0.2.2-rc.5: requirements) | untranslated |
-| [dsh-drawai](https://github.com/fourzkw/dsh-drawai) | 894 | 🟢 ok | untranslated |
+| [dsh-drawai](https://github.com/fourzkw/dsh-drawai) | 900 | 🟢 ok | untranslated |
 | [dsh-plugin-oauth-subs](https://github.com/xxww0098/dsh-plugin-oauth-subs) | 21 | ⚪ unknown | untranslated |
 | [deep-blend](https://github.com/pearjelly/deep-blend) | 102 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
-| [dsh-xdpool](https://github.com/XDTrees/dsh-xdpool) | 627 | 🟢 ok | untranslated |
+| [dsh-xdpool](https://github.com/XDTrees/dsh-xdpool) | 628 | 🟢 ok | untranslated |
 | [dsh-imagegen-video](https://github.com/q253595422/dsh-imagegen-video) | 124 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-qwen-paint](https://github.com/yanfei0725/dsh-qwen-paint) | 48 | 🟢 ok | untranslated |
 | [dsh-wish-specializer](https://github.com/WestFox-AwA/dsh-wish-specializer) | 152 | 🟢 ok | untranslated |
-| [dsh-workbuddy-trae-qoder-connect](https://github.com/chengshenyangtai/dsh-workbuddy-trae-qoder-connect) | 78 | 🟢 ok | untranslated |
+| [dsh-workbuddy-trae-qoder-connect](https://github.com/chengshenyangtai/dsh-workbuddy-trae-qoder-connect) | 79 | 🟢 ok | untranslated |
 | [dsh-roleplay](https://github.com/chinosk6/dsh-roleplay) | 24 | 🟢 ok | untranslated |
 | [dsh-purge-0.2.1rc2-fix](https://github.com/Potato1008ypy/dsh-purge-0.2.1rc2-fix) | 52 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
-| [dsh-flash-presets](https://github.com/LarryE135/dsh-flash-presets) | 233 | 🟢 ok | untranslated |
-| [dsh-qwen-studio](https://github.com/kingcharleslzy-ai/dsh-qwen-studio) | 624 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [dsh-flash-presets](https://github.com/LarryE135/dsh-flash-presets) | 234 | 🟢 ok | untranslated |
+| [dsh-qwen-studio](https://github.com/kingcharleslzy-ai/dsh-qwen-studio) | 636 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [cute-fat-fish-pet](https://github.com/12we21/cute-fat-fish-pet) | 42 | ⚪ unknown | untranslated |
 | [dsh-qwen-paint](https://github.com/wonderandyou/dsh-qwen-paint) | 104 | 🟢 ok | untranslated |
-| [dsh-video-storyboard](https://github.com/SAOS-3624/dsh-video-storyboard) | 606 | 🟢 ok | untranslated |
-| [dsh-video-storyboard](https://github.com/SAOS-3624/dsh-video-storyboard) | 606 | 🟢 ok | untranslated |
+| [dsh-video-storyboard](https://github.com/SAOS-3624/dsh-video-storyboard) | 608 | 🟢 ok | untranslated |
+| [dsh-video-storyboard](https://github.com/SAOS-3624/dsh-video-storyboard) | 608 | 🟢 ok | untranslated |
 | [vram-switcher](https://github.com/xiaoxiao150/vram-switcher) | 76 | 🟢 ok | untranslated |
-| [dsh-git-panel](https://github.com/xbzbing/dsh-git-panel) | 62 | 🟢 ok | untranslated |
+| [dsh-git-panel](https://github.com/xbzbing/dsh-git-panel) | 63 | 🟢 ok | untranslated |
 | [dsh-tool-antigravity](https://github.com/Jaylor-Wang/dsh-tool-antigravity) | 24 | 🟢 ok | untranslated |
 | [dsh-novel-solo](https://github.com/Tkingxiao/dsh-novel-solo) | 14 | 🟢 ok | untranslated |
 | [dsh-token-monitor](https://github.com/licyer/dsh-token-monitor) | 12 | 🟢 ok | untranslated |
 | [dsh-ui-auth](https://github.com/0QwQ0/dsh-ui-auth) | 16 | 🟢 ok | untranslated |
 | [dsh-kiro](https://github.com/dat-lequoc/dsh-kiro) | 19 | ⚪ unknown | untranslated |
-| [dsh-unrestricted](https://github.com/yexi-by/dsh-unrestricted) | 1417 | 🟢 ok | untranslated |
-| [dsh-see-now](https://github.com/SAOS-3624/dsh-see-now) | 777 | 🟢 ok | untranslated |
-| [dsh-super-code](https://github.com/ArtlexYoung/dsh-super-code) | 77 | 🟢 ok | untranslated |
+| [dsh-unrestricted](https://github.com/yexi-by/dsh-unrestricted) | 1424 | 🟢 ok | untranslated |
+| [dsh-see-now](https://github.com/SAOS-3624/dsh-see-now) | 782 | 🟢 ok | untranslated |
+| [dsh-super-code](https://github.com/ArtlexYoung/dsh-super-code) | 80 | 🟢 ok | untranslated |
 | [dsh-purge](https://github.com/HunYiSage/dsh-purge) | 20412 | 🔴 broken (failed once, retried — install failed (exit 1):  WARN  GET https://registry.npmjs.org/dsh-purge/-/dsh-purge-0.0.0-stage.tgz error (ERR_PNPM_TARBALL_EXTRACT). Wi) | untranslated |
-| [dsh-jailbreak](https://github.com/xqpsec/dsh-jailbreak) | 355 | 🟢 ok | untranslated |
+| [dsh-jailbreak](https://github.com/xqpsec/dsh-jailbreak) | 362 | 🟢 ok | untranslated |
 | [dsh-soundcheck](https://github.com/ALittleLov/dsh-soundcheck) | 32 | ⚪ unknown | untranslated |
 | [dsh-game-stack](https://github.com/yuanstarstar/dsh-game-stack) | 51 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-watch-together](https://github.com/SAOS-3624/dsh-watch-together) | 61 | 🟢 ok | untranslated |
-| [dsh-think-game](https://github.com/NorthGateChat/dsh-think-game) | 32 | 🟢 ok | untranslated |
+| [dsh-think-game](https://github.com/NorthGateChat/dsh-think-game) | 41 | 🟢 ok | untranslated |
 | [dsh-our-free-model-fish](https://github.com/Fish-under-sea/dsh-our-free-model-fish) | 39 | ⚪ unknown | untranslated |
 | [dsh-notewall](https://github.com/liaoangbo-droid/dsh-notewall) | 31 | ⚪ unknown | untranslated |
 | [dsh-enhance](https://github.com/wufeng0105/dsh-enhance) | 37 | 🟢 ok | untranslated |
@@ -1924,18 +1925,20 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-self-checking-profile](https://github.com/SLAPaper/dsh-self-checking-profile) | 0 | ⚪ unknown | 自带 Self Checking 沙箱模式的 web profile。 |
 | [dsh-yolo-mode](https://github.com/SeverusZh/dsh-yolo-mode) | 3 | 🟢 ok | 大模型自动裁决沙箱升权申请：常规操作自动放行，危险操作仍人工审批。 |
 | [dsh-approve-for-me](https://github.com/timeance/dsh-approve-for-me) | 21 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-approve-for-me@0.3.3 is incompatible with dsh 0.2.2-rc.5: requirements {") | untranslated |
-| [mirage-dsh](https://github.com/strukto-ai/mirage) | 3938 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @struktoai/mirage-dsh@0.0.8 is incompatible with dsh 0.2.2-rc.5: requirements) | 把 DSH 的 fs/shell 提供者换成 mirage 虚拟工作区：文件工具与 shell 命令作用于挂载的资源（RAM/磁盘/S3/Redis/Postgres/Slack/Gmail/Notion）而非宿主磁盘。 |
+| [mirage-dsh](https://github.com/strukto-ai/mirage) | 3941 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @struktoai/mirage-dsh@0.0.8 is incompatible with dsh 0.2.2-rc.5: requirements) | 把 DSH 的 fs/shell 提供者换成 mirage 虚拟工作区：文件工具与 shell 命令作用于挂载的资源（RAM/磁盘/S3/Redis/Postgres/Slack/Gmail/Notion）而非宿主磁盘。 |
 | [dsh-plugin-net-access](https://github.com/Gumiho12345/dsh-plugin-net-access) | 5 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-plugin-net-access@0.3.0 is incompatible with dsh 0.2.2-rc.5: requirements) | untranslated |
 | [miliastra-beyond-simulator](https://github.com/1475505/miliastra-beyond-simulator) | 107 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-mcp-apps-host](https://github.com/oriliz/dsh-mcp-apps-host) | 214 | 🟢 ok | untranslated |
 | [deepseek-harness-intelligent-ui](https://github.com/dreamfarer-space/deepseek-harness-intelligent-ui) | 57 | 🟢 ok | untranslated |
+| [miliastra-beyond-simulator](https://github.com/duduk233/miliastra-beyond-simulator) | 107 | ⚪ unknown | untranslated |
+| [dsh-plugin-miliastra-toolbox](https://github.com/duduk233/dsh-plugin-miliastra-toolbox) | 37 | ⚪ unknown | untranslated |
 
 ### 🎛️ 编排
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [openhanako](https://github.com/liliMozi/openhanako) | 6883 | ⚪ unknown | 带记忆、人格与自主性的个人 AI 智能体 |
-| [exo](https://github.com/exoharness/exo) | 1722 | ⚪ unknown | 可递归自编辑自身的 agent+harness 架构 |
+| [openhanako](https://github.com/liliMozi/openhanako) | 6885 | ⚪ unknown | 带记忆、人格与自主性的个人 AI 智能体 |
+| [exo](https://github.com/exoharness/exo) | 1723 | ⚪ unknown | 可递归自编辑自身的 agent+harness 架构 |
 | [synergy](https://github.com/SII-Holos/synergy) | 391 | ⚪ unknown | 面向 Open Agentic Web 的通用智能体 |
 | [ccteam](https://github.com/firstintent/ccteam) | 646 | ⚪ unknown | 把 Claude Code/Codex/Grok/Kimi 编成团队，Telegram/飞书指挥 |
 | [MateBot](https://github.com/aresbit/MateBot) | 45 | ⚪ unknown | claudeclaw 复刻 |
@@ -1943,7 +1946,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh_workflow](https://github.com/icetomoyo/dsh_workflow) | 159 | 🟢 ok | 把 Claude Code 的 UltraCode 模式带给 DSH，多 Agent 调度可治理 |
 | [agents-go](https://github.com/zzir/agents-go) | 13 | ⚪ unknown | Go 语言多 agent 框架 |
 | [distill](https://github.com/LoserFox/distill) | 27 | ⚪ unknown | 自动对话蒸馏：后台 subagent 反省 + 技能更新 |
-| [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 3109 | 🟢 ok | AgentTeams 插件 |
+| [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 3112 | 🟢 ok | AgentTeams 插件 |
 | [dsh-automation](https://github.com/titanwings/dsh-automation) | 103 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-automation@0.2.0-alpha.0 is incompatible with dsh 0.2.2-rc.5: requirement) | 让任务按计划在全新 Session 中运行定时任务 |
 | [dsh-loop](https://github.com/vlln/dsh-loop) | 8 | 🟢 ok | 定时循环（/loop 命令 + loop 工具） |
 | [dsh-plannotator](https://github.com/titanwings/dsh-plannotator) | 14 | 🟢 ok | 计划批注：选中计划原文逐条批注 |
@@ -1968,7 +1971,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-enhance](https://github.com/vcxmug/dsh-enhance) | 3 | 🟢 ok | dsh-enhance — DSH 插件（编排） |
 | [deepseek-harness-plugin-mcp](https://github.com/bobleer/deepseek-harness-plugin-mcp) | 2 | ⚪ unknown | deepseek-harness-plugin-mcp — DSH 插件（编排） |
 | [dsh-sound-effects-plugin](https://github.com/JasonJin2006/dsh-sound-effects-plugin) | 2 | ⚪ unknown | dsh-sound-effects-plugin — DSH 插件（编排） |
-| [deepseek-harness-fnos](https://github.com/techysy/deepseek-harness-fnos) | 94 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | DeepSeek Harness (DeepSeek 官方 agent 浏览器 UI) fnOS 应用 — 本地常驻服务, 官方统一网关接入 |
+| [deepseek-harness-fnos](https://github.com/techysy/deepseek-harness-fnos) | 93 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | DeepSeek Harness (DeepSeek 官方 agent 浏览器 UI) fnOS 应用 — 本地常驻服务, 官方统一网关接入 |
 | [dsh-agent-arcade](https://github.com/fff122/dsh-agent-arcade) | 1 | ⚪ unknown | dsh-agent-arcade — DSH 插件（编排） |
 | [dsh-skillport](https://github.com/Jesse-njx/dsh-skillport) | 7 | ⚪ unknown | dsh-skillport — DSH 插件（编排） |
 | [dsh-book2skill](https://github.com/omdsh-dev/dsh-book2skill) | 3 | ⚪ unknown | dsh-book2skill — DSH 插件（编排） |
@@ -2036,7 +2039,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-workflow-worktree](https://github.com/lisycotana/dsh-workflow-worktree) | 0 | ⚪ unknown | 工作流 git worktree 隔离后端：每个写会话独立工作树。 |
 | [dsh-plugin-finder](https://github.com/meme-dog/dsh-plugin-finder) | 2 | ⚪ unknown | 会话内找插件：搜索 GitHub 社区 DSH 插件按 star 排序，每条带一键安装命令。 |
 | [Code2Skill](https://github.com/leechen298/Code2Skill) | 13 | ⚪ unknown | 从现有代码生成 Function、MCP、Agent Skill 和离线测试包。 |
-| [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 3853 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | 通用技能调度器：自动挑选最合适的本地 Skill 并编排整个 Harness 工作流，不用手动指定用哪个技能。 |
+| [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 3854 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | 通用技能调度器：自动挑选最合适的本地 Skill 并编排整个 Harness 工作流，不用手动指定用哪个技能。 |
 | [kph](https://github.com/ylouis8/kph) | 2 | ⚪ unknown | 基于dsh的量化研究agent，驱动真实回测与交易。 |
 | [dsh-skill-lord-serf](https://github.com/ttxl314/dsh-skill-lord-serf) | 1 | ⚪ unknown | DeepSeek Harness 插件：Lord/Serf 协议 0.5 技能，让 DSH 实现文件式多智能体编排（Lord 派活，Serf 干活）。 DeepSeek Harness plugin: Lord/Serf protocol 0.5 skill… |
 | [plugin-team-board](https://github.com/whyihaveyou/dsh-suite) | 7 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin @dsh-suite/plugin-team-board@0.2.1 is incompatible with dsh 0.2.2-rc.5: requi) | 多 agent 会话共享任务看板：跨 subagent 创建/认领/更新/查询任务，基于 append-only 会话日志持久化。 |
@@ -2058,7 +2061,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-agent-board](https://github.com/MiloMMIN/dsh-agent-board) | 1 | 🟢 ok | 跨 Agent 工作台:dsh persistent plugin that watches Claude Code / Codex / Kimi Code / Pi / Hermes and continues their work with one cl… |
 | [dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench) | 11 | 🟢 ok | 可复现科学工作台：agent 驱动的计算、实验记录与复现流程，科研党友好。 |
 | [dsh-vscode](https://github.com/MJ-Chang/dsh-vscode) | 4 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | VS Code 右侧聊天 agent：能读、改、跑代码的 DSH 集成。 |
-| [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) | 212 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | 88 个可直接安装的 Agent 技能：覆盖研究与增长工作流，带 npm CLI 分发。 |
+| [sandbase-skills](https://github.com/sandbaseai/sandbase-skills) | 213 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | 88 个可直接安装的 Agent 技能：覆盖研究与增长工作流，带 npm CLI 分发。 |
 | [dsh-plugin-acn](https://github.com/acnlabs/dsh-plugin-acn) | 2 | ⚪ unknown | 加入 ACN：agent 之间互相发现、发消息、协作。 |
 | [dsh-fleet-audit](https://github.com/LeslieWylie/dsh-fleet-audit) | 1 | ⚪ unknown | agent 集群卫生审计：凭据文件权限、内嵌 git 泄漏等。 |
 | [dsh-agent-hub](https://github.com/Luoye-1026/dsh-agent-hub) | 1 | 🟢 ok | dsh-agent-hub是一个统一指挥本机 Agent的 DSH 插件，目前支持（Codex / Reasonix / Pi / DSH） |
@@ -2086,7 +2089,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-finance](https://github.com/zhang787jun/dsh-finance) | 12 | ⚪ unknown | 财务与会计工作流（改编自 Anthropic Finance）：记账对账自动化。 |
 | [dsh-grok-geo](https://github.com/xuboboo/dsh-grok-geo) | 3 | ⚪ unknown | GEO 品牌审计技能包（grok-geo）。 |
 | [dsh-cluster](https://github.com/Lanxi26/dsh-cluster) | 1 | ⚪ unknown | 画布式多智能体协作插件 | Canvas-based multi-agent cooperation plugin for DeepSeek Harness |
-| [dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) | 33 | 🟢 ok | Live2D 桌宠插件 for DeepSeek Harness：Agent 状态镜像 + 互动陪伴，内置宽松许可预设模型 / Live2D pet plugin: agent state mirror + interactive companion wit… |
+| [dsh-live2d-pets](https://github.com/cyanfish-x/dsh-live2d-pets) | 34 | 🟢 ok | Live2D 桌宠插件 for DeepSeek Harness：Agent 状态镜像 + 互动陪伴，内置宽松许可预设模型 / Live2D pet plugin: agent state mirror + interactive companion wit… |
 | [dsh-awiki](https://github.com/AgentConnect/dsh-awiki) | 19 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-awiki@0.2.0-rc.1 is incompatible with dsh 0.2.2-rc.5: requirements {"@dee) | AWiki identity and messaging plugin for DeepSeek Harness |
 | [dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) | 12 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-tool-writing@0.8.1 is incompatible with dsh 0.2.2-rc.5: requirements {"@d) | Writing engine for DeepSeek Harness: long-form web-novel orchestration with a separate DeepSeek key, lore management, semantic re… |
 | [oh-my-dsh](https://github.com/agi-fans/oh-my-dsh) | 34 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
@@ -2115,12 +2118,12 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-plugin-mcp-manager](https://github.com/HuanLinOTO/dsh-plugin-mcp-manager) | 4 | 🟢 ok | untranslated |
 | [dsh-quant](https://github.com/pengpengyi92/dsh-quant) | 77 | 🟢 ok | untranslated |
 | [dsh-ha-orchestrator](https://github.com/Saktawdi/dsh-ha-orchestrator) | 9 | 🟢 ok | untranslated |
-| [dsh-plugin-codegraph](https://github.com/CC19990113/dsh-plugin-codegraph) | 18 | 🟢 ok | untranslated |
+| [dsh-plugin-codegraph](https://github.com/CC19990113/dsh-plugin-codegraph) | 20 | 🟢 ok | untranslated |
 | [toolshrink](https://github.com/unclecode/toolshrink) | 10 | ⚪ unknown | untranslated |
 | [dsh-ffmpeg](https://github.com/STARDUSTLC666/dsh-ffmpeg) | 20 | 🟢 ok | untranslated |
 | [Flowboard](https://github.com/juntaoding/Flowboard) | 12 | ⚪ unknown | untranslated |
 | [dsh-plugin-doctor](https://github.com/zoahdev/dsh-plugin-doctor) | 6 | ⚪ unknown | untranslated |
-| [dsh-tavern](https://github.com/flizzywine/dsh-tavern) | 1776 | 🟢 ok | untranslated |
+| [dsh-tavern](https://github.com/flizzywine/dsh-tavern) | 1781 | 🟢 ok | untranslated |
 | [dshelm](https://github.com/Altairpaca/dshelm) | 9 | ⚪ unknown | untranslated |
 | [dsh-community-plugins](https://github.com/HubaKing/dsh-community-plugins) | 5 | 🟢 ok | untranslated |
 | [dsh-octo](https://github.com/tokentopo-ai/dsh-octo) | 7 | ⚪ unknown | untranslated |
@@ -2130,9 +2133,9 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-evolve-modes](https://github.com/GraySilver/dsh-evolve-modes) | 201 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [hard-flash](https://github.com/Soulize/hard-flash) | 10 | ⚪ unknown | untranslated |
 | [dsh-virtual-product-team](https://github.com/songoao25/dsh-virtual-product-team) | 5 | ⚪ unknown | untranslated |
-| [dsh-ego-browser](https://github.com/Fisfzy/dsh-ego-browser) | 586 | 🟢 ok | untranslated |
+| [dsh-ego-browser](https://github.com/Fisfzy/dsh-ego-browser) | 587 | 🟢 ok | untranslated |
 | [dsh-ux](https://github.com/ayuanwong/dsh-ux) | 15 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
-| [dsh-agency-agents](https://github.com/MichengAI/dsh-agency-agents) | 286 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-agency-agents@0.5.0 is incompatible with dsh 0.2.2-rc.5: requirements {"e) | untranslated |
+| [dsh-agency-agents](https://github.com/MichengAI/dsh-agency-agents) | 288 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-agency-agents@0.5.0 is incompatible with dsh 0.2.2-rc.5: requirements {"e) | untranslated |
 | [dsh-skill-7d-code-reviewer](https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer) | 14 | ⚪ unknown | untranslated |
 | [deep-read-summarize](https://github.com/PensiveFei/deep-read-summarize) | 58 | 🟢 ok | untranslated |
 | [holdem](https://github.com/shinjiyu/holdem) | 12 | ⚪ unknown | untranslated |
@@ -2149,10 +2152,10 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-better-input](https://github.com/DIAG5/dsh-better-input) | 27 | 🟢 ok | untranslated |
 | [dsh-watcher](https://github.com/aa2246740/dsh-watcher) | 126 | 🟢 ok | untranslated |
 | [mattpocock-skills-dsh](https://github.com/gongyijie85/mattpocock-skills-dsh) | 33 | 🟢 ok | untranslated |
-| [loopx](https://github.com/huangruiteng/loopx) | 6767 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [loopx](https://github.com/huangruiteng/loopx) | 6768 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [sofagent](https://github.com/KongFangXun/sofagent) | 56 | 🔴 broken (timeout after 120s (process killed)) | untranslated |
 | [dsh-ultramath](https://github.com/Andiii208/dsh-ultramath) | 44 | 🟢 ok | untranslated |
-| [dsh-Visual-Workflow](https://github.com/GZX2211/dsh-Visual-Workflow) | 80 | 🟢 ok | untranslated |
+| [dsh-Visual-Workflow](https://github.com/GZX2211/dsh-Visual-Workflow) | 81 | 🟢 ok | untranslated |
 | [pi-web-ui](https://github.com/xing-shuyin/pi-web-ui) | 403 | ⚪ unknown | untranslated |
 | [dsh-plugin-developer-skill](https://github.com/liangdabiao/dsh-plugin-developer-skill) | 47 | ⚪ unknown | untranslated |
 | [dsh-hub-cli](https://github.com/pax-beehive/dsh-hub-cli) | 273 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
@@ -2162,19 +2165,19 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-antibrow](https://github.com/antibrow/dsh-antibrow) | 14 | 🟢 ok | untranslated |
 | [dsh-qa](https://github.com/naodeng/dsh-qa) | 34 | 🟢 ok | untranslated |
 | [dsh-browser-control](https://github.com/caob23/dsh-browser-control) | 78 | 🟢 ok | untranslated |
-| [Openwrite](https://github.com/LiPu-jpg/Openwrite) | 1025 | ⚪ unknown | untranslated |
+| [Openwrite](https://github.com/LiPu-jpg/Openwrite) | 1028 | ⚪ unknown | untranslated |
 | [dshana](https://github.com/Nyasers/dshana) | 56 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [DSHana](https://github.com/Nyasers/DSHana) | 56 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [d.sh](https://github.com/SiriusNEO/d.sh) | 23 | ⚪ unknown | untranslated |
 | [dsh-gitbash-shell](https://github.com/KannaKuron/dsh-gitbash-shell) | 59 | 🟢 ok | untranslated |
 | [DSH_VsCodeMode](https://github.com/Lenonss/DSH_VsCodeMode) | 35 | ⚪ unknown | untranslated |
 | [dsh-ontology](https://github.com/tancheng33/dsh-ontology) | 24 | 🟢 ok | untranslated |
-| [loopx](https://github.com/loopx-project/loopx) | 6767 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
+| [loopx](https://github.com/loopx-project/loopx) | 6768 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [SmartMoney-Cub](https://github.com/myc0576/SmartMoney-Cub) | 26 | ⚪ unknown | untranslated |
 | [jev-dsh-decision](https://github.com/Devin-AXIS/jev-dsh-decision) | 277 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | untranslated |
 | [dsh-agent-studio](https://github.com/thissensen/dsh-agent-studio) | 52 | 🟢 ok | untranslated |
 | [dsh-skillhub](https://github.com/aa2246740/dsh-skillhub) | 50 | 🟢 ok | untranslated |
-| [cc-safety-net](https://github.com/kenryu42/cc-safety-net) | 2107 | 🟢 ok | untranslated |
+| [cc-safety-net](https://github.com/kenryu42/cc-safety-net) | 2109 | 🟢 ok | untranslated |
 | [Codingns4DSH](https://github.com/jingyi0605/Codingns4DSH) | 84 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [jevdo](https://github.com/yinhong-zhou/jevdo) | 29 | ⚪ unknown | untranslated |
 | [dsh-effort-slider](https://github.com/yuhub233/dsh-effort-slider) | 39 | 🟢 ok | untranslated |
@@ -2192,22 +2195,23 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-heartbeat](https://github.com/Kanadego/dsh-heartbeat) | 34 | 🟢 ok | untranslated |
 | [baoyu-design](https://github.com/JimLiu/baoyu-design) | 6426 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-browser-cdp](https://github.com/drscrewdriver/dsh-browser-cdp) | 47 | 🟢 ok | untranslated |
-| [dsh-agent-compare](https://github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare) | 512 | 🟢 ok | untranslated |
+| [dsh-agent-compare](https://github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare) | 519 | 🟢 ok | untranslated |
 | [dsh-hongguo](https://github.com/frostming/dsh-hongguo) | 206 | ⚪ unknown | untranslated |
-| [dsh-ccgui](https://github.com/zhukunpenglinyutong/dsh-ccgui) | 55 | 🟢 ok | untranslated |
-| [DSH-Spicy](https://github.com/kingcharleslzy-ai/DSH-Spicy) | 624 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [dsh-ccgui](https://github.com/zhukunpenglinyutong/dsh-ccgui) | 56 | 🟢 ok | untranslated |
+| [DSH-Spicy](https://github.com/kingcharleslzy-ai/DSH-Spicy) | 636 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [open-artifacts](https://github.com/JimLiu/open-artifacts) | 6426 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
-| [dsh-comfyui-workbench](https://github.com/YuChenLiao/dsh-comfyui-workbench) | 54 | 🟢 ok | untranslated |
+| [dsh-comfyui-workbench](https://github.com/YuChenLiao/dsh-comfyui-workbench) | 55 | 🟢 ok | untranslated |
 | [Parallax](https://github.com/AI4XE/Parallax) | 136 | ⚪ unknown | untranslated |
 | [omagents](https://github.com/omagents/omagents) | 361 | ⚪ unknown | untranslated |
-| [dsh-team-control](https://github.com/hunmer/dsh-team-control) | 45 | 🟢 ok | untranslated |
-| [agent-crop](https://github.com/oriliz/agent-crop) | 331 | 🟢 ok | untranslated |
-| [dsh-pstack](https://github.com/l246804/dsh-pstack) | 46 | 🟢 ok | untranslated |
-| [dsh-ego-browser](https://github.com/omdsh-dev/dsh-ego-browser) | 586 | 🟢 ok | untranslated |
+| [dsh-team-control](https://github.com/hunmer/dsh-team-control) | 46 | 🟢 ok | untranslated |
+| [agent-crop](https://github.com/oriliz/agent-crop) | 332 | 🟢 ok | untranslated |
+| [dsh-pstack](https://github.com/l246804/dsh-pstack) | 48 | 🟢 ok | untranslated |
+| [dsh-ego-browser](https://github.com/omdsh-dev/dsh-ego-browser) | 587 | 🟢 ok | untranslated |
 | [cospan](https://github.com/keli-wen/cospan) | 76 | 🟢 ok | untranslated |
 | [dsh-fish](https://github.com/mochi-fish/dsh-fish) | 196 | ⚪ unknown | untranslated |
-| [dsh-jailbreak-workflow](https://github.com/Minglink/dsh-jailbreak-workflow) | 1274 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [dsh-jailbreak-workflow](https://github.com/Minglink/dsh-jailbreak-workflow) | 1278 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [dsh-workflow-canvas](https://github.com/Wasabi2575/dsh-workflow-canvas) | 34 | ⚪ unknown | untranslated |
+| [dsh-superagent](https://github.com/LittleChenLiya/dsh-superagent) | 36 | ⚪ unknown | untranslated |
 
 ### 🔌 桥接
 
@@ -2245,7 +2249,7 @@ npm create dsh-plugin@latest my-plugin
 | [deepseek-harness-codex-bridge](https://github.com/Aloneswork/deepseek-harness-codex-bridge) | 2 | ⚪ unknown | Codex 主导、DSH 辅助的本地双向 MCP 协作桥。 |
 | [dsh-easyssh](https://github.com/chenw2759-wq/dsh-easyssh) | 45 | ⚪ unknown | 用于远程ssh快速相应，同时可以直接在前端操作/查看远程服务器上的信息与代码。 |
 | [dsh-plugin-deepseek-balance](https://github.com/fishxcode/dsh-plugin-deepseek-balance) | 0 | ⚪ unknown | Web 客户端实时显示 DeepSeek API 余额。 |
-| [dsh-remote](https://github.com/flymysql/dsh-remote) | 361 | 🟢 ok | 远程接入助手：/remote 命令 + 设置页直接打印 SSH 隧道/反向隧道命令，远程工作区一键连。 |
+| [dsh-remote](https://github.com/flymysql/dsh-remote) | 363 | 🟢 ok | 远程接入助手：/remote 命令 + 设置页直接打印 SSH 隧道/反向隧道命令，远程工作区一键连。 |
 | [dsh-web-billing](https://github.com/bpc-oss/dsh-web-billing) | 12 | ⚪ unknown | 人民币/美元 token 计费：按官方政策自动计价，支持峰谷时段、逐消息台账和账户概览。 |
 | [dsh-spend](https://github.com/nonewind/dsh-spend) | 8 | 🟢 ok | 悬浮费用监控：多维统计、时序图、自动识别计费方案，实时盯着 token 和花费。 |
 | [dsh-Kimi-WebBridge](https://github.com/MicroHEROX/dsh-Kimi-WebBridge) | 3 | 🟢 ok | Kimi WebBridge：把用户真实浏览器（含登录态）交给 DSH agent 使用。 |
@@ -2286,7 +2290,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-deepseek-quota](https://github.com/cn-scuo-oo/dsh-deepseek-quota) | 3 | 🟢 ok | untranslated |
 | [dsh-better-deepseek](https://github.com/EdgeTypE/dsh-better-deepseek) | 43 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-better-deepseek@0.1.0 is incompatible with dsh 0.2.2-rc.5: requirements {) | untranslated |
 | [dsh-mobile-gate](https://github.com/Bernardxu123/dsh-mobile-gate) | 6 | ⚪ unknown | untranslated |
-| [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 3186 | 🟢 ok | untranslated |
+| [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 3189 | 🟢 ok | untranslated |
 | [dsh-plugins-finder](https://github.com/ihuajiu/dsh-plugins-finder) | 3 | 🟢 ok | untranslated |
 | [dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) | 8 | 🟢 ok | untranslated |
 | [model-usage-plugin](https://github.com/AKS1st/model-usage-plugin) | 7 | 🟢 ok | untranslated |
@@ -2296,7 +2300,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-proxy](https://github.com/smanx/dsh-proxy) | 32 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-damage-pulse](https://github.com/wssfk12138/dsh-damage-pulse) | 291 | 🟢 ok | untranslated |
 | [dsh-reminder](https://github.com/Aisland-SJL/dsh-reminder) | 19 | 🟢 ok | untranslated |
-| [dsh-mobile](https://github.com/saya-ch/dsh-mobile) | 1010 | 🟢 ok | untranslated |
+| [dsh-mobile](https://github.com/saya-ch/dsh-mobile) | 1012 | 🟢 ok | untranslated |
 | [harness-ui-enhancer](https://github.com/Physicolor/harness-ui-enhancer) | 11 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin harness-ui-enhancer@0.6.3 is incompatible with dsh 0.2.2-rc.5: requirements {) | untranslated |
 | [dsh-liquid-glass-balance-card](https://github.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card) | 5 | 🟢 ok | untranslated |
 | [dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) | 12 | 🟢 ok | untranslated |
@@ -2309,12 +2313,12 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-ui-harmonizer](https://github.com/Physicolor/dsh-ui-harmonizer) | 11 | 🟢 ok | untranslated |
 | [dsh-auth-gateway](https://github.com/xbzbing/dsh-auth-gateway) | 24 | 🟢 ok | untranslated |
 | [dsh-remote-mobile](https://github.com/IceApriler/dsh-remote-mobile) | 54 | 🟢 ok | untranslated |
-| [ds-harness-remote](https://github.com/liguobao/ds-harness-remote) | 3829 | 🟢 ok | untranslated |
+| [ds-harness-remote](https://github.com/liguobao/ds-harness-remote) | 3858 | 🟢 ok | untranslated |
 | [dsh-remote](https://github.com/SCSpotato/dsh-remote) | 95 | 🟢 ok | untranslated |
-| [dsh-plugin-hub](https://github.com/wingsky-1/dsh-plugin-hub) | 32 | 🟢 ok | untranslated |
+| [dsh-plugin-hub](https://github.com/wingsky-1/dsh-plugin-hub) | 33 | 🟢 ok | untranslated |
 | [dsh-remote](https://github.com/mrRisega/dsh-remote) | 64 | 🟢 ok | untranslated |
 | [dsh-acp-interactive](https://github.com/ClickPM/dsh-acp-interactive) | 87 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-acp-interactive@0.2.1 is incompatible with dsh 0.2.2-rc.5: requirements {) | untranslated |
-| [dsh-think-translate](https://github.com/UncleK/dsh-think-translate) | 88 | 🟢 ok | untranslated |
+| [dsh-think-translate](https://github.com/UncleK/dsh-think-translate) | 89 | 🟢 ok | untranslated |
 | [dsh-origin-plugin](https://github.com/Fantasality/dsh-origin-plugin) | 50 | 🟢 ok | untranslated |
 | [dsh-model-fusion](https://github.com/aa2246740/dsh-model-fusion) | 75 | 🟢 ok | untranslated |
 | [dsh-connect-qoder](https://github.com/hdhgsysh/dsh-connect-qoder) | 24 | 🔴 broken (failed once, retried — install failed (exit 1): dsh: installation rejected: Plugin dsh-connect-qoder@0.2.0 is incompatible with dsh 0.2.2-rc.5: requirements {"@) | untranslated |
@@ -2324,11 +2328,11 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-workbuddy-bridge](https://github.com/dsh-plugin-lab/dsh-workbuddy-bridge) | 49 | 🟢 ok | untranslated |
 | [dsh-lan-tool](https://github.com/MrMu666/dsh-lan-tool) | 16 | 🟢 ok | untranslated |
 | [dsh-acp-paseo](https://github.com/ds-hu/dsh-acp-paseo) | 14 | 🟢 ok | untranslated |
-| [dsh-marktext](https://github.com/Roland0511/dsh-marktext) | 386 | 🟢 ok | untranslated |
+| [dsh-marktext](https://github.com/Roland0511/dsh-marktext) | 387 | 🟢 ok | untranslated |
 | [dsh-language-bridge](https://github.com/tonyzdev/dsh-language-bridge) | 60 | 🟢 ok | untranslated |
-| [dsh-mobile-plugin](https://github.com/WNLUO/dsh-mobile-plugin) | 357 | 🟢 ok | untranslated |
+| [dsh-mobile-plugin](https://github.com/WNLUO/dsh-mobile-plugin) | 374 | 🟢 ok | untranslated |
 | [dsh-locus-bridge](https://github.com/Kide-Lee/dsh-locus-bridge) | 58 | 🟢 ok | untranslated |
-| [dsh-craft-anything](https://github.com/Fanqi89/dsh-craft-anything) | 463 | 🟢 ok | untranslated |
+| [dsh-craft-anything](https://github.com/Fanqi89/dsh-craft-anything) | 467 | 🟢 ok | untranslated |
 
 ### 📦 预设
 
@@ -2341,10 +2345,10 @@ npm create dsh-plugin@latest my-plugin
 
 | 插件 | ⭐ | 兼容 | 描述 |
 |---|---|---|---|
-| [EchoBird](https://github.com/edison7009/EchoBird) | 3588 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | 一键安装+切换 Claude Code/Codex/Kimi/Qwen 等 20+ 编码智能体 |
-| [awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins) | 1509 | ⚪ unknown | DSH 插件目录，带每日兼容性跟踪 |
+| [EchoBird](https://github.com/edison7009/EchoBird) | 3590 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | 一键安装+切换 Claude Code/Codex/Kimi/Qwen 等 20+ 编码智能体 |
+| [awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins) | 1510 | ⚪ unknown | DSH 插件目录，带每日兼容性跟踪 |
 | [deepseek-harness-applicants](https://github.com/Octo-o-o-o/deepseek-harness-applicants) | 53 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | DSH 内测申请者名单 |
-| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1403 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | DSH 生态精选：插件、工具与基建 |
+| [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 1406 | 🔴 broken (dump-config exit=0 but plugin not found in composed tree) | DSH 生态精选：插件、工具与基建 |
 | [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 317 | 🟢 ok | DSH 终端 UI（TUI） |
 | [agent-skills](https://github.com/GitHubxsy/agent-skills) | 22 | ⚪ unknown | 面向 AI 编码智能体的可复用 skills 合集 |
 | [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) | 575 | 🟢 ok | Codex 风格的 @ 文件引用：在输入框打 @ 就能搜索工作区文件并把内容直接带进对话。 |
@@ -2422,17 +2426,17 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-feishu](https://github.com/PGZXB/dsh-feishu) | 38 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-minecraft](https://github.com/Ruqii/dsh-minecraft) | 1 | 🟢 ok | 从 DSH 里玩真实 Minecraft：agent 驱动 Mineflayer bot 观察、行走、挖掘、合成、战斗，浏览器可实时观战 |
 | [dsh-lark-bridge](https://github.com/bihangchi9-creator/dsh-lark-bridge) | 34 | 🟢 ok | untranslated |
-| [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) | 66 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
+| [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) | 67 | 🔴 broken (failed once, retried — install blocked by pnpm build-script policy (allowBuilds) — plugin likely OK, CI policy blocks git prepare scripts) | untranslated |
 | [harness-one](https://github.com/chumingjun/harness-one) | 34 | 🔴 broken (failed once, retried — install failed (exit 1):     at async runPlugin (file:///home/runner/.npm/_npx/1e7f6d9597241db0/node_modules/@deepseek-ai/dsh/lib/plugin-) | untranslated |
 | [dsh-dingtalk](https://github.com/DingTalk-Real-AI/dsh-dingtalk) | 31 | 🟢 ok | untranslated |
 | [dsh-harness-one](https://github.com/chumingjun/dsh-harness-one) | 34 | 🟢 ok | untranslated |
-| [dsh-wechat-article](https://github.com/aiworkskills/dsh-wechat-article) | 14 | ⚪ unknown | untranslated |
-| [dsh-plugin-mobile-gateway](https://github.com/Clarklevis1995/dsh-plugin-mobile-gateway) | 166 | 🟢 ok | untranslated |
+| [dsh-wechat-article](https://github.com/aiworkskills/dsh-wechat-article) | 15 | ⚪ unknown | untranslated |
+| [dsh-plugin-mobile-gateway](https://github.com/Clarklevis1995/dsh-plugin-mobile-gateway) | 168 | 🟢 ok | untranslated |
 | [tarocub](https://github.com/cloveric/tarocub) | 24 | ⚪ unknown | untranslated |
 | [dsh-lanmode](https://github.com/GooDAnDReaDY/dsh-lanmode) | 7 | 🟢 ok | 局域网/反代访问 Web UI：让 settings 服务脱离 localhost，补上浏览器在纯 HTTP 下不给的 Web API。 |
 | [lark-agent-bridge](https://github.com/bihangchi9-creator/lark-agent-bridge) | 34 | 🔴 broken (failed once, retried — install failed (exit 1):  ERR_PNPM_LINKED_PKG_DIR_NOT_FOUND  Could not install from "/tmp/dsh-compat-T0Ukz3/lark-agent-bridge/profiles/co) | untranslated |
 | [dsh-wechat](https://github.com/xcisxc29/dsh-wechat) | 445 | 🟢 ok | untranslated |
-| [DeepSeekBot](https://github.com/BotHarness/DeepSeekBot) | 1068 | 🟢 ok | untranslated |
+| [DeepSeekBot](https://github.com/BotHarness/DeepSeekBot) | 1074 | 🟢 ok | untranslated |
 | [dsh-plugin-notify-sounds](https://github.com/BillCx330/dsh-plugin-notify-sounds) | 40 | 🟢 ok | untranslated |
 | [dsh-selfwake](https://github.com/S3K926/dsh-selfwake) | 21 | ⚪ unknown | untranslated |
 | [dsh-plugins](https://github.com/klarkxy/dsh-plugins) | 33 | ⚪ unknown | untranslated |
@@ -2440,7 +2444,7 @@ npm create dsh-plugin@latest my-plugin
 | [dsh-windows-superagent](https://github.com/HiSeax/dsh-windows-superagent) | 138 | ⚪ unknown | untranslated |
 
 > 徽章含义：🟢 兼容 · 🔴 不兼容 · ⚪ 未实测 · ⚫ 弃坑。
-> 共 2303 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
+> 共 2307 个条目，按分类分表、类内按 ⭐ 降序。收录 / 字段词典见 [docs/catalog-schema.md](docs/catalog-schema.md)。
 <!-- CATALOG:END -->
 
 ## 兼容性

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T02:31:23.510Z",
+  "generated_at": "2026-11-27T19:02:14.190Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1557,6 +1557,15 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "MC5lan/dsh-multimodal",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-27T19:02:14.179Z",
+      "lastDetectedAt": "2026-11-27T19:02:14.179Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/MC5lan/dsh-multimodal"
     }
   ]
 }

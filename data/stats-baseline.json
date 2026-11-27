@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-27T08:36:26.512Z",
+ "ts": "2026-11-27T19:02:14.313Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -36,6 +36,7 @@
   "agentero-dsh-plugin",
   "agentframe-v3",
   "agentkey",
+  "agentmemory",
   "agentrq",
   "agents-anywhere",
   "agents-go",
@@ -2069,6 +2070,7 @@
   "dsh-purge-kingcharleslzy-ai",
   "dsh-purge-lanjingod",
   "dsh-purge-mmparko",
+  "dsh-purge-optimized",
   "dsh-purge-plus",
   "dsh-purge-realmisakamikoto",
   "dsh-purge-safe",

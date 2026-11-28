@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T19:02:14.190Z",
+  "generated_at": "2026-11-28T02:02:09.685Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -920,6 +920,15 @@
       "lastKnownUrl": "https://github.com/maxwell-feng/dsh-windows-ocr"
     },
     {
+      "repo": "MC5lan/dsh-multimodal",
+      "seen": 2,
+      "firstDetectedAt": "2026-11-27T19:02:14.179Z",
+      "lastDetectedAt": "2026-11-28T02:02:09.543Z",
+      "lastStars": 3,
+      "lastPush": "2026-08-16",
+      "lastKnownUrl": "https://github.com/MC5lan/dsh-multimodal"
+    },
+    {
       "repo": "mianyoubiaoqing/MistyMoon-DSH",
       "seen": 2,
       "firstDetectedAt": "2026-08-23T16:45:02.581Z",
@@ -1557,15 +1566,6 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
-    },
-    {
-      "repo": "MC5lan/dsh-multimodal",
-      "seen": 1,
-      "firstDetectedAt": "2026-11-27T19:02:14.179Z",
-      "lastDetectedAt": "2026-11-27T19:02:14.179Z",
-      "lastStars": 3,
-      "lastPush": "2026-08-16",
-      "lastKnownUrl": "https://github.com/MC5lan/dsh-multimodal"
     }
   ]
 }

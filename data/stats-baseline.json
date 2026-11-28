@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-28T02:02:09.787Z",
+ "ts": "2026-11-28T10:30:03.335Z",
  "ids": [
   "7d7d",
   "8x-skills",
@@ -800,6 +800,7 @@
   "dsh-computer-use-codex-style",
   "dsh-computer-use-copylee711",
   "dsh-computer-use-geohotstan",
+  "dsh-computer-use-ljl454",
   "dsh-computer-use-win",
   "dsh-computer-use-xiaoheizi1212",
   "dsh-computer-use-zrui-c",
@@ -2385,6 +2386,7 @@
   "dsh-subagent-monitor",
   "dsh-subagent-status",
   "dsh-subagent-tools",
+  "dsh-submodel",
   "dsh-subprocess-inherit-environment",
   "dsh-subscription-auth",
   "dsh-subscriptions",

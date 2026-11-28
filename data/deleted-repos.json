@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T02:02:09.685Z",
+  "generated_at": "2026-11-28T10:30:03.224Z",
   "repos": [
     {
       "repo": "0sour/dsh-plugins",
@@ -1566,6 +1566,42 @@
       "lastStars": 17,
       "lastPush": "2026-08-16",
       "lastKnownUrl": "https://github.com/chokwinlee/deepseek-harness-desktop"
+    },
+    {
+      "repo": "lonelymoon87/dsh-code-intel",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-28T10:30:03.101Z",
+      "lastDetectedAt": "2026-11-28T10:30:03.101Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-21",
+      "lastKnownUrl": "https://github.com/lonelymoon87/dsh-code-intel"
+    },
+    {
+      "repo": "lonelymoon87/dsh-gitflow",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-28T10:30:03.101Z",
+      "lastDetectedAt": "2026-11-28T10:30:03.101Z",
+      "lastStars": 1,
+      "lastPush": "2026-08-21",
+      "lastKnownUrl": "https://github.com/lonelymoon87/dsh-gitflow"
+    },
+    {
+      "repo": "lonelymoon87/dsh-vscode",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-28T10:30:03.101Z",
+      "lastDetectedAt": "2026-11-28T10:30:03.101Z",
+      "lastStars": 0,
+      "lastPush": "2026-08-21",
+      "lastKnownUrl": "https://github.com/lonelymoon87/dsh-vscode"
+    },
+    {
+      "repo": "TableRogue/dsh-message-navigator",
+      "seen": 1,
+      "firstDetectedAt": "2026-11-28T10:30:03.101Z",
+      "lastDetectedAt": "2026-11-28T10:30:03.101Z",
+      "lastStars": 2,
+      "lastPush": "2026-08-14",
+      "lastKnownUrl": "https://github.com/TableRogue/dsh-message-navigator"
     }
   ]
 }
